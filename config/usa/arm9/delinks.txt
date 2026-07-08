@@ -120,3 +120,8 @@ src/Combat/Main/GetCombatantWithFlag0x800.cpp:
 src/Combat/Main/ClearSubstructBytes.cpp:
     complete
     .text start:0x0200fb40 end:0x0200fb84
+
+
+src/Common/FlagBitChecks.cpp:
+    complete
+    .text start:0x02012390 end:0x02012430
