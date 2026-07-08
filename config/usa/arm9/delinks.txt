@@ -770,3 +770,23 @@ src/Combat/Main/IsField0x8bcNotZeroOrOne.cpp:
 src/Combat/Main/SetPtrAndShorts.cpp:
     complete
     .text start:0x02072aa8 end:0x02072ac4
+
+
+src/Combat/Main/AddVec3.cpp:
+    complete
+    .text start:0x020c2d90 end:0x020c2dc4
+
+
+src/Combat/Main/ClearFourWords.cpp:
+    complete
+    .text start:0x020c805c end:0x020c8074
+
+
+src/Combat/Main/InsertNodeAtHead.cpp:
+    complete
+    .text start:0x020c8768 end:0x020c8784
+
+
+src/Combat/Main/SetSubFields0x34And0x38.cpp:
+    complete
+    .text start:0x020bc1ec end:0x020bc210
