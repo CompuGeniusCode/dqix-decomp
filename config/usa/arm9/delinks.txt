@@ -790,3 +790,78 @@ src/Combat/Main/InsertNodeAtHead.cpp:
 src/Combat/Main/SetSubFields0x34And0x38.cpp:
     complete
     .text start:0x020bc1ec end:0x020bc210
+
+
+src/Combat/Main/CheckField0x14Bit0Clear.cpp:
+    complete
+    .text start:0x02088930 end:0x02088944
+
+
+src/Combat/Main/CheckFlag0x1ClearAndFlag0x40Clear.cpp:
+    complete
+    .text start:0x02088ab8 end:0x02088adc
+
+
+src/Combat/Main/CheckFlag0x80AndKind2.cpp:
+    complete
+    .text start:0x020886f8 end:0x02088724
+
+
+src/Combat/Main/ClearBitsInField8.cpp:
+    complete
+    .text start:0x0203b520 end:0x0203b534
+
+
+src/Combat/Main/ClearFlag0x40AndBytes.cpp:
+    complete
+    .text start:0x020890a4 end:0x020890c0
+
+
+src/Combat/Main/ClearFlag0x4AndBytes.cpp:
+    complete
+    .text start:0x02088c9c end:0x02088cb8
+
+
+src/Combat/Main/ClearTwoWordsAndByte.cpp:
+    complete
+    .text start:0x0205b20c end:0x0205b220
+
+
+src/Combat/Main/FindNodeByHalfwordKey.cpp:
+    complete
+    .text start:0x0206528c end:0x020652b4
+
+
+src/Combat/Main/GetChainedTableByte.cpp:
+    complete
+    .text start:0x020479fc end:0x02047a3c
+
+
+src/Combat/Main/GetElementStride0x14.cpp:
+    complete
+    .text start:0x0203f1c8 end:0x0203f1e4
+
+
+src/Combat/Main/GetField8Bits24And25.cpp:
+    complete
+    .text start:0x0206885c end:0x02068878
+
+
+src/Combat/Main/GetFields1a8And1ac.cpp:
+    complete
+    .text start:0x02053f58 end:0x02053f6c
+
+
+src/Combat/Main/InitSelfPointer.cpp:
+    complete
+    .text start:0x02042b1c end:0x02042b30
+
+
+src/Combat/Main/SetByteInRange.cpp:
+    complete
+    .text start:0x020465f0 end:0x02046608
+
+
+src/Combat/Main/SetOrClearFlag0x20.cpp:
+    complete
+    .text start:0x0205d5b8 end:0x0205d5d0
