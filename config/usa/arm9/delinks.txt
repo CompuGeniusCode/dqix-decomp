@@ -965,3 +965,38 @@ src/Combat/Main/ResetTrackerState.cpp:
 src/Combat/Main/SetToggleState.cpp:
     complete
     .text start:0x02021410 end:0x02021428
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x34.cpp:
+    complete
+    .text start:0x020a0780 end:0x020a07b0
+
+
+src/Combat/Main/CheckField0x8c0NotZeroOrOne.cpp:
+    complete
+    .text start:0x02068bdc end:0x02068bf4
+
+
+src/Combat/Main/ClearStructFields.cpp:
+    complete
+    .text start:0x02075d64 end:0x02075db0
+
+
+src/Combat/Main/FindElementByByte0xc4.cpp:
+    complete
+    .text start:0x02081da8 end:0x02081de0
+
+
+src/Combat/Main/GetPointerFromArray0xbd0.cpp:
+    complete
+    .text start:0x0207c5f8 end:0x0207c60c
+
+
+src/Combat/Main/InitFieldsWithDefaults.cpp:
+    complete
+    .text start:0x020a64bc end:0x020a64e8
+
+
+src/Combat/Main/ResetField270Block.cpp:
+    complete
+    .text start:0x020a28e0 end:0x020a2908
