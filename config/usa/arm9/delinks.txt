@@ -450,3 +450,28 @@ src/Combat/Main/TestBit6At0x2f4.cpp:
 src/Combat/Main/TestBitInArray0x8ec.cpp:
     complete
     .text start:0x02083b00 end:0x02083b28
+
+
+src/Combat/Main/AppendNodeToListField30.cpp:
+    complete
+    .text start:0x0206445c end:0x02064490
+
+
+src/Combat/Main/GetBits10And11.cpp:
+    complete
+    .text start:0x0205b174 end:0x0205b190
+
+
+src/Combat/Main/GetBits24And25.cpp:
+    complete
+    .text start:0x02068824 end:0x02068840
+
+
+src/Combat/Main/IncrementCounterUnlessFlagged.cpp:
+    complete
+    .text start:0x02053dd0 end:0x02053dfc
+
+
+src/Combat/Main/IsField440Empty.cpp:
+    complete
+    .text start:0x0205ce28 end:0x0205ce50
