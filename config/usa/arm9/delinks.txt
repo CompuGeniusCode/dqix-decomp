@@ -720,3 +720,53 @@ src/Combat/Main/SetRemappedBitAt0xa26.cpp:
 src/Combat/Main/TestBit7At0x2f4.cpp:
     complete
     .text start:0x020851ac end:0x020851d8
+
+
+src/Combat/Main/AddClamped24BitField.cpp:
+    complete
+    .text start:0x020a0720 end:0x020a0750
+
+
+src/Combat/Main/AppendCappedElement.cpp:
+    complete
+    .text start:0x0207c128 end:0x0207c164
+
+
+src/Combat/Main/Fill3WordsWithFF.cpp:
+    complete
+    .text start:0x020b0318 end:0x020b0334
+
+
+src/Combat/Main/Fill6BytesWithFF.cpp:
+    complete
+    .text start:0x020a18d4 end:0x020a18f4
+
+
+src/Combat/Main/FindNodeBySignedId.cpp:
+    complete
+    .text start:0x0206ef18 end:0x0206ef40
+
+
+src/Combat/Main/GetElementStride0x30.cpp:
+    complete
+    .text start:0x0207f700 end:0x0207f72c
+
+
+src/Combat/Main/GetListElement.cpp:
+    complete
+    .text start:0x020b780c end:0x020b7840
+
+
+src/Combat/Main/GetValueForType.cpp:
+    complete
+    .text start:0x020a4220 end:0x020a4244
+
+
+src/Combat/Main/IsField0x8bcNotZeroOrOne.cpp:
+    complete
+    .text start:0x02068bc4 end:0x02068bdc
+
+
+src/Combat/Main/SetPtrAndShorts.cpp:
+    complete
+    .text start:0x02072aa8 end:0x02072ac4
