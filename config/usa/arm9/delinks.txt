@@ -475,3 +475,23 @@ src/Combat/Main/IncrementCounterUnlessFlagged.cpp:
 src/Combat/Main/IsField440Empty.cpp:
     complete
     .text start:0x0205ce28 end:0x0205ce50
+
+
+src/Combat/Main/AppendToList.cpp:
+    complete
+    .text start:0x020c8204 end:0x020c8228
+
+
+src/Combat/Main/RemoveNode.cpp:
+    complete
+    .text start:0x020c8784 end:0x020c87ac
+
+
+src/Combat/Main/SetActionParams.cpp:
+    complete
+    .text start:0x020bc210 end:0x020bc23c
+
+
+src/Combat/Main/SubtractVec3.cpp:
+    complete
+    .text start:0x020c2dc4 end:0x020c2df8
