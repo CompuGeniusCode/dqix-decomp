@@ -145,3 +145,63 @@ src/Combat/Main/GetCombatantWithFlag0x100.cpp:
 src/Combat/Main/GetCombatantChecked.cpp:
     complete
     .text start:0x0200ff94 end:0x0200ffc0
+
+
+src/Combat/Main/SetBitInArray.cpp:
+    complete
+    .text start:0x020113a8 end:0x020113e0
+
+
+src/Combat/Main/ClearBitArray.cpp:
+    complete
+    .text start:0x02011408 end:0x02011430
+
+
+src/Combat/Main/GetCheckedSignedByte.cpp:
+    complete
+    .text start:0x02011518 end:0x02011538
+
+
+src/Combat/Main/ClearFieldKeepBit0x10.cpp:
+    complete
+    .text start:0x02011af0 end:0x02011b24
+
+
+src/Combat/Main/GetNegativeEntry.cpp:
+    complete
+    .text start:0x020120b8 end:0x020120d4
+
+
+src/Combat/Main/TestFlagInSecondWord.cpp:
+    complete
+    .text start:0x02012468 end:0x0201248c
+
+
+src/Combat/Main/CheckByteSetAndByteClear.cpp:
+    complete
+    .text start:0x02012aac end:0x02012ad0
+
+
+src/Combat/Main/AppendToNodeList.cpp:
+    complete
+    .text start:0x020130b0 end:0x020130e0
+
+
+src/Common/CopyVec3.cpp:
+    complete
+    .text start:0x02013b54 end:0x02013b70
+
+
+src/Combat/Main/GetElementStride0x24.cpp:
+    complete
+    .text start:0x020177a8 end:0x020177d4
+
+
+src/Combat/Main/GetElementStride0x58.cpp:
+    complete
+    .text start:0x0201e2d8 end:0x0201e304
+
+
+src/Combat/Main/SetOrClearBit.cpp:
+    complete
+    .text start:0x0201bf98 end:0x0201bfc0
