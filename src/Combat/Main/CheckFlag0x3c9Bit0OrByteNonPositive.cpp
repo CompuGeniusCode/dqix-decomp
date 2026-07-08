@@ -1,0 +1,17 @@
+#include <globaldefs.h>
+
+struct StateFlags3c9 {
+    char pad[0x3c9];
+    unsigned char bit0 : 1;
+    unsigned char rest : 7;
+    unsigned char unk3ca;
+    signed char value3cb;
+};
+
+// USA: func_0209494c
+ARM int CheckFlag0x3c9Bit0OrByteNonPositive(struct StateFlags3c9* obj) {
+    if (obj->bit0) {
+        return obj->value3cb <= 0;
+    }
+    return 1;
+}

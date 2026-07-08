@@ -1000,3 +1000,38 @@ src/Combat/Main/InitFieldsWithDefaults.cpp:
 src/Combat/Main/ResetField270Block.cpp:
     complete
     .text start:0x020a28e0 end:0x020a2908
+
+
+src/Combat/Main/CheckFlag0x3c9Bit0OrByteNonPositive.cpp:
+    complete
+    .text start:0x0209494c end:0x0209497c
+
+
+src/Combat/Main/CopyHalfwordArrayByCount.cpp:
+    complete
+    .text start:0x0209c0c0 end:0x0209c0ec
+
+
+src/Combat/Main/CopyStructFields12.cpp:
+    complete
+    .text start:0x0209a530 end:0x0209a55c
+
+
+src/Combat/Main/DotFixedVec3.cpp:
+    complete
+    .text start:0x020c2df8 end:0x020c2e34
+
+
+src/Combat/Main/GetElementStride0x40.cpp:
+    complete
+    .text start:0x0208a018 end:0x0208a03c
+
+
+src/Combat/Main/UnlinkNode.cpp:
+    complete
+    .text start:0x020c8228 end:0x020c824c
+
+
+src/Combat/Main/UpdateDataAccessPermission.cpp:
+    complete
+    .text start:0x020c8a18 end:0x020c8a2c
