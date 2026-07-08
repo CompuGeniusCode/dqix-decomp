@@ -350,3 +350,103 @@ src/Combat/Main/IsFieldSet.cpp:
 src/Combat/Main/ReadGridBit.cpp:
     complete
     .text start:0x020b9978 end:0x020b99b0
+
+
+src/Combat/Main/CheckField0x14FlagsClear.cpp:
+    complete
+    .text start:0x020883ac end:0x020883cc
+
+
+src/Combat/Main/CheckField98SetAndField94Clear.cpp:
+    complete
+    .text start:0x02037a64 end:0x02037a88
+
+
+src/Combat/Main/CheckLow5BitsEqual4.cpp:
+    complete
+    .text start:0x0204be08 end:0x0204be20
+
+
+src/Combat/Main/CheckSubstructFlag0x80.cpp:
+    complete
+    .text start:0x02048bd0 end:0x02048bf8
+
+
+src/Combat/Main/ClearFlagBit.cpp:
+    complete
+    .text start:0x020d76d8 end:0x020d76fc
+
+
+src/Combat/Main/ClearFlagsAndBytes.cpp:
+    complete
+    .text start:0x02087df0 end:0x02087e18
+
+
+src/Combat/Main/ComputeElementPositions.cpp:
+    complete
+    .text start:0x020e1e24 end:0x020e1e4c
+
+
+src/Combat/Main/CopyFields0x8And0xC.cpp:
+    complete
+    .text start:0x02036e20 end:0x02036e34
+
+
+src/Combat/Main/FindSignedByteIndex.cpp:
+    complete
+    .text start:0x0202bcbc end:0x0202bcf8
+
+
+src/Combat/Main/GenerateCrc8Table.cpp:
+    complete
+    .text start:0x020d1b28 end:0x020d1b68
+
+
+src/Combat/Main/GetByteWithFallback.cpp:
+    complete
+    .text start:0x020494a0 end:0x020494c0
+
+
+src/Combat/Main/GetSubstructField0x68.cpp:
+    complete
+    .text start:0x0204a01c end:0x0204a030
+
+
+src/Combat/Main/InitializeStruct.cpp:
+    complete
+    .text start:0x020280b0 end:0x020280f8
+
+
+src/Combat/Main/MatchesPackedFields.cpp:
+    complete
+    .text start:0x020de3ac end:0x020de3cc
+
+
+src/Combat/Main/SetField0xd8State.cpp:
+    complete
+    .text start:0x02050400 end:0x0205042c
+
+
+src/Combat/Main/SetMainDisplayLayers.cpp:
+    complete
+    .text start:0x020daf3c end:0x020daf54
+
+
+src/Combat/Main/ShiftInBitAt0x788.cpp:
+    complete
+    .text start:0x0202f984 end:0x0202f9b4
+
+
+src/Combat/Main/TestBit3At0x2f8.cpp:
+    complete
+    .text start:0x020857ec end:0x02085818
+
+
+src/Combat/Main/TestBit6At0x2f4.cpp:
+    complete
+    .text start:0x02085180 end:0x020851ac
+
+
+src/Combat/Main/TestBitInArray0x8ec.cpp:
+    complete
+    .text start:0x02083b00 end:0x02083b28
