@@ -495,3 +495,53 @@ src/Combat/Main/SetActionParams.cpp:
 src/Combat/Main/SubtractVec3.cpp:
     complete
     .text start:0x020c2dc4 end:0x020c2df8
+
+
+src/Combat/Main/AppendNodeToField494.cpp:
+    complete
+    .text start:0x02064af8 end:0x02064b24
+
+
+src/Combat/Main/CheckBits5To9Equal2.cpp:
+    complete
+    .text start:0x0204be20 end:0x0204be3c
+
+
+src/Combat/Main/GetBits12To15.cpp:
+    complete
+    .text start:0x0205b190 end:0x0205b1ac
+
+
+src/Combat/Main/GetField20Bits24And25.cpp:
+    complete
+    .text start:0x02068840 end:0x0206885c
+
+
+src/Combat/Main/GetField8FromField19c.cpp:
+    complete
+    .text start:0x02053dfc end:0x02053e10
+
+
+src/Combat/Main/GetNibbles.cpp:
+    complete
+    .text start:0x0205d594 end:0x0205d5b8
+
+
+src/Combat/Main/GetSubstructByte0x6c.cpp:
+    complete
+    .text start:0x0204a040 end:0x0204a054
+
+
+src/Combat/Main/SetByte0xd9AndFlag0x2.cpp:
+    complete
+    .text start:0x0205042c end:0x02050440
+
+
+src/Combat/Main/SetSubstructFlag0x200.cpp:
+    complete
+    .text start:0x02048bf8 end:0x02048c10
+
+
+src/Combat/Main/SetSubstructFlag0x40.cpp:
+    complete
+    .text start:0x020494f8 end:0x0204950c

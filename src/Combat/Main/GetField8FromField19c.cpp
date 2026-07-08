@@ -1,0 +1,20 @@
+#include <globaldefs.h>
+
+struct Obj53dfcInner {
+    char unk[0x8];
+    int field8;
+};
+
+struct Obj53dfc {
+    char unk[0x19c];
+    struct Obj53dfcInner* field19c;
+};
+
+// USA: func_02053dfc
+ARM int GetField8FromField19c(struct Obj53dfc* obj) {
+    struct Obj53dfcInner* p = obj->field19c;
+    if (p != 0) {
+        return p->field8;
+    }
+    return 0;
+}
