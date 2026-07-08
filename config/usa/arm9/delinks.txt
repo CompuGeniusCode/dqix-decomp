@@ -105,3 +105,18 @@ src/Combat/Main/GetClampedRateMultiplier.cpp:
 src/Combat/Main/ApplyRandomVariance.cpp:
     complete
     .text start:0x02074838 end:0x020748a8
+
+
+src/Combat/Main/GetCombatantWithFlag0x2.cpp:
+    complete
+    .text start:0x0200fd90 end:0x0200fdcc
+
+
+src/Combat/Main/GetCombatantWithFlag0x800.cpp:
+    complete
+    .text start:0x0200fdf0 end:0x0200fe2c
+
+
+src/Combat/Main/ClearSubstructBytes.cpp:
+    complete
+    .text start:0x0200fb40 end:0x0200fb84
