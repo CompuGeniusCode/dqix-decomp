@@ -8,8 +8,10 @@
 
 #ifdef jpn
 #define func_020100a8 func_0200ff04
-#define func_0200ff1c func_0200fd78
 #define func_02012fe4 func_02012dac
+// GetCombatantWithFlag0x100 lives at func_0200fd78 in the JPN build.
+extern "C" struct CombatantStruct* func_0200fd78(BattleStruct*, int);
+#define GetCombatantWithFlag0x100 func_0200fd78
 #endif
 
 extern "C"
@@ -17,10 +19,6 @@ extern "C"
 // Seems to return a u32 whose address is just past the end of the BattleStruct.
 // Maybe BattleStruct is just the beginning of some larger struct?
 unsigned int func_020100a8(BattleStruct*);
-
-// Appears to index into the CombatantList and return the pointer after checking flags.
-// For now we just return a char*, but should probably be a CombatantStruct*.
-char* func_0200ff1c(BattleStruct*, unsigned int);
 
 // This just returns some data. It's also being spam-called in TileFeatures.cpp,
 // discarding the return value.
@@ -32,7 +30,7 @@ int func_02012fe4(void);
 unsigned short GenerateNewMapQuality()
 {
     BattleStruct* battle = GetBattleStruct();
-    char* maybeMainCharDataPtr = func_0200ff1c(battle, func_020100a8(battle));
+    char* maybeMainCharDataPtr = (char*)GetCombatantWithFlag0x100(battle, func_020100a8(battle));
     // Another pointless function call
     func_02012fe4();
     GrottoStruct* grotto = GetGrottoStruct(battle);
