@@ -865,3 +865,53 @@ src/Combat/Main/SetByteInRange.cpp:
 src/Combat/Main/SetOrClearFlag0x20.cpp:
     complete
     .text start:0x0205d5b8 end:0x0205d5d0
+
+
+src/Combat/Main/CheckSubstructFlag0x200.cpp:
+    complete
+    .text start:0x02048c10 end:0x02048c38
+
+
+src/Combat/Main/ClearFlag0x20AndBytes.cpp:
+    complete
+    .text start:0x020883fc end:0x02088418
+
+
+src/Combat/Main/ClearFlags0x14And0x58.cpp:
+    complete
+    .text start:0x02087ff0 end:0x02088018
+
+
+src/Combat/Main/ClearSubstructFlag0x40.cpp:
+    complete
+    .text start:0x0204950c end:0x02049520
+
+
+src/Combat/Main/ConvertColorToDecimal.cpp:
+    complete
+    .text start:0x0204be3c end:0x0204be78
+
+
+src/Combat/Main/ResetAndCopyShorts0x1c.cpp:
+    complete
+    .text start:0x020863c4 end:0x020863e0
+
+
+src/Combat/Main/SetBitInArray0x910.cpp:
+    complete
+    .text start:0x02083b60 end:0x02083b8c
+
+
+src/Combat/Main/SetByte0xdaAndFlag0x2.cpp:
+    complete
+    .text start:0x02050440 end:0x02050454
+
+
+src/Combat/Main/SetSubstructFlag0x400.cpp:
+    complete
+    .text start:0x0204a0c8 end:0x0204a0e0
+
+
+src/Combat/Main/TestBit10At0x2f4.cpp:
+    complete
+    .text start:0x020851d8 end:0x02085204
