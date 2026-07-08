@@ -205,3 +205,103 @@ src/Combat/Main/GetElementStride0x58.cpp:
 src/Combat/Main/SetOrClearBit.cpp:
     complete
     .text start:0x0201bf98 end:0x0201bfc0
+
+
+src/Combat/Main/CheckActiveAndFlag0x40Clear.cpp:
+    complete
+    .text start:0x02088a70 end:0x02088a94
+
+
+src/Combat/Main/CheckFlag0x14Bit0Clear.cpp:
+    complete
+    .text start:0x0208869c end:0x020886b0
+
+
+src/Combat/Main/ClearBitsInWord.cpp:
+    complete
+    .text start:0x0203b4b0 end:0x0203b4c4
+
+
+src/Combat/Main/ClearFlag0x2AndBytes.cpp:
+    complete
+    .text start:0x02088c38 end:0x02088c54
+
+
+src/Combat/Main/CountListNodes.cpp:
+    complete
+    .text start:0x02046c78 end:0x02046c98
+
+
+src/Combat/Main/FindEntryByKey.cpp:
+    complete
+    .text start:0x02072a68 end:0x02072aa8
+
+
+src/Combat/Main/FindNodeById.cpp:
+    complete
+    .text start:0x0201e844 end:0x0201e878
+
+
+src/Combat/Main/GetCombatantWithFlag0x20.cpp:
+    complete
+    .text start:0x0200fe2c end:0x0200fe68
+
+
+src/Combat/Main/GetTableValue.cpp:
+    complete
+    .text start:0x0202053c end:0x02020554
+
+
+src/Combat/Main/IsFieldNotZeroOrOne.cpp:
+    complete
+    .text start:0x02068bac end:0x02068bc4
+
+
+src/Combat/Main/IsFlag0x14Bit0Clear.cpp:
+    complete
+    .text start:0x02089060 end:0x02089074
+
+
+src/Combat/Main/PushNodeToList.cpp:
+    complete
+    .text start:0x0206eeec end:0x0206ef18
+
+
+src/Combat/Main/RebaseOffsets.cpp:
+    complete
+    .text start:0x02042998 end:0x020429bc
+
+
+src/Combat/Main/Reset0207c0ac.cpp:
+    complete
+    .text start:0x0207c0ac end:0x0207c0c4
+
+
+src/Combat/Main/Reset0207f510.cpp:
+    complete
+    .text start:0x0207f510 end:0x0207f524
+
+
+src/Combat/Main/ResetState.cpp:
+    complete
+    .text start:0x020118fc end:0x02011930
+
+
+src/Combat/Main/SetByte0x61AndFlag0x200.cpp:
+    complete
+    .text start:0x020888f4 end:0x02088914
+
+
+src/Combat/Main/SetFlag0x80.cpp:
+    complete
+    .text start:0x020133b4 end:0x020133cc
+
+
+src/Combat/Main/SetOrClearBit0x10OnEntries.cpp:
+    complete
+    .text start:0x0203e5d8 end:0x0203e624
+
+
+src/Combat/Main/StoreInArray0x8b0.cpp:
+    complete
+    .text start:0x020465c0 end:0x020465d8
