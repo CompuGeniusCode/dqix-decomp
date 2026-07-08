@@ -670,3 +670,53 @@ src/Combat/Main/ResetStructFields.cpp:
 src/Combat/Main/SetFlag0x100000ClearFlag0x200000.cpp:
     complete
     .text start:0x02088a94 end:0x02088aa8
+
+
+src/Combat/Main/ClearBitInArray0x8ec.cpp:
+    complete
+    .text start:0x02083b28 end:0x02083b60
+
+
+src/Combat/Main/ClearFlag0x1SetFlag0x2.cpp:
+    complete
+    .text start:0x020e1cb8 end:0x020e1cdc
+
+
+src/Combat/Main/ClearFlags0x14And0x58AndBytes.cpp:
+    complete
+    .text start:0x02087efc end:0x02087f24
+
+
+src/Combat/Main/FindEntryWithField8Neg1.cpp:
+    complete
+    .text start:0x020daa20 end:0x020daa58
+
+
+src/Combat/Main/Get2DElementStride0x3c.cpp:
+    complete
+    .text start:0x020cf978 end:0x020cf990
+
+
+src/Combat/Main/MatchesFieldAAndLow.cpp:
+    complete
+    .text start:0x020de38c end:0x020de3ac
+
+
+src/Combat/Main/ResetShortFields0x956.cpp:
+    complete
+    .text start:0x020863a0 end:0x020863c4
+
+
+src/Combat/Main/ResetStateFields0x18.cpp:
+    complete
+    .text start:0x020883cc end:0x020883fc
+
+
+src/Combat/Main/SetRemappedBitAt0xa26.cpp:
+    complete
+    .text start:0x020d76b8 end:0x020d76d8
+
+
+src/Combat/Main/TestBit7At0x2f4.cpp:
+    complete
+    .text start:0x020851ac end:0x020851d8
