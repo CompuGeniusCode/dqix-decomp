@@ -545,3 +545,53 @@ src/Combat/Main/SetSubstructFlag0x200.cpp:
 src/Combat/Main/SetSubstructFlag0x40.cpp:
     complete
     .text start:0x020494f8 end:0x0204950c
+
+
+src/Combat/Main/ClearBitInArray.cpp:
+    complete
+    .text start:0x02042af4 end:0x02042b10
+
+
+src/Combat/Main/ClearBitsInField4.cpp:
+    complete
+    .text start:0x0203b4e8 end:0x0203b4fc
+
+
+src/Combat/Main/GetCombatantWithFlag0x200.cpp:
+    complete
+    .text start:0x0200fee0 end:0x0200ff1c
+
+
+src/Combat/Main/GetField0x649eForValidIndex.cpp:
+    complete
+    .text start:0x02011aa0 end:0x02011ab8
+
+
+src/Combat/Main/GetLinkedFlagByte.cpp:
+    complete
+    .text start:0x020479b8 end:0x020479fc
+
+
+src/Combat/Main/ResetHeader.cpp:
+    complete
+    .text start:0x0203e624 end:0x0203e63c
+
+
+src/Combat/Main/SetByteAtIndex.cpp:
+    complete
+    .text start:0x020465d8 end:0x020465f0
+
+
+src/Combat/Main/SetFields0x84And0x82.cpp:
+    complete
+    .text start:0x0201e878 end:0x0201e88c
+
+
+src/Combat/Main/SetFlag0x9c6.cpp:
+    complete
+    .text start:0x020213fc end:0x02021410
+
+
+src/Combat/Main/UpdateActivationState.cpp:
+    complete
+    .text start:0x02015a98 end:0x02015ae4
