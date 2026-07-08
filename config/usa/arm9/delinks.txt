@@ -305,3 +305,48 @@ src/Combat/Main/SetOrClearBit0x10OnEntries.cpp:
 src/Combat/Main/StoreInArray0x8b0.cpp:
     complete
     .text start:0x020465c0 end:0x020465d8
+
+
+src/Combat/Main/AddCappedValue.cpp:
+    complete
+    .text start:0x020a0750 end:0x020a0780
+
+
+src/Combat/Main/ClearBits0x1And0x4.cpp:
+    complete
+    .text start:0x0208979c end:0x020897b4
+
+
+src/Combat/Main/ClearFlagBits.cpp:
+    complete
+    .text start:0x020a28b0 end:0x020a28c4
+
+
+src/Combat/Main/GetCheckedHalfword.cpp:
+    complete
+    .text start:0x0209c0a8 end:0x0209c0c0
+
+
+src/Combat/Main/GetElementStride0x10.cpp:
+    complete
+    .text start:0x020999d8 end:0x020999f0
+
+
+src/Combat/Main/GetVec3FromShorts.cpp:
+    complete
+    .text start:0x020968a4 end:0x020968c4
+
+
+src/Combat/Main/InitFieldArray.cpp:
+    complete
+    .text start:0x020b033c end:0x020b035c
+
+
+src/Combat/Main/IsFieldSet.cpp:
+    complete
+    .text start:0x020a64a8 end:0x020a64bc
+
+
+src/Combat/Main/ReadGridBit.cpp:
+    complete
+    .text start:0x020b9978 end:0x020b99b0
