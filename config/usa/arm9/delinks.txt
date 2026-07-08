@@ -915,3 +915,53 @@ src/Combat/Main/SetSubstructFlag0x400.cpp:
 src/Combat/Main/TestBit10At0x2f4.cpp:
     complete
     .text start:0x020851d8 end:0x02085204
+
+
+src/Combat/Main/AppendHalfwordPairCapped.cpp:
+    complete
+    .text start:0x02028378 end:0x020283c0
+
+
+src/Combat/Main/GetActorEntryByIndex.cpp:
+    complete
+    .text start:0x0201777c end:0x020177a8
+
+
+src/Combat/Main/GetCombatantWithFlag0x1000.cpp:
+    complete
+    .text start:0x0200ff58 end:0x0200ff94
+
+
+src/Combat/Main/GetField4PtrFromField10.cpp:
+    complete
+    .text start:0x020374b0 end:0x020374c4
+
+
+src/Combat/Main/InitBufferReader.cpp:
+    complete
+    .text start:0x02030734 end:0x02030774
+
+
+src/Combat/Main/IsFieldMinusOne.cpp:
+    complete
+    .text start:0x0202c648 end:0x0202c660
+
+
+src/Combat/Main/RemoveNodeByKey.cpp:
+    complete
+    .text start:0x02037b44 end:0x02037b88
+
+
+src/Combat/Main/ResetAndEnableFieldFlag.cpp:
+    complete
+    .text start:0x02011b24 end:0x02011b3c
+
+
+src/Combat/Main/ResetTrackerState.cpp:
+    complete
+    .text start:0x0201f01c end:0x0201f040
+
+
+src/Combat/Main/SetToggleState.cpp:
+    complete
+    .text start:0x02021410 end:0x02021428
