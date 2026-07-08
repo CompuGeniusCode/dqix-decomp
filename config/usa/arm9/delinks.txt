@@ -595,3 +595,78 @@ src/Combat/Main/SetFlag0x9c6.cpp:
 src/Combat/Main/UpdateActivationState.cpp:
     complete
     .text start:0x02015a98 end:0x02015ae4
+
+
+src/Combat/Main/AppendHalfwordCapped.cpp:
+    complete
+    .text start:0x0209c08c end:0x0209c0a8
+
+
+src/Combat/Main/AppendPairToBoundedList.cpp:
+    complete
+    .text start:0x020281d8 end:0x02028214
+
+
+src/Combat/Main/CheckFlag0x1ClearAndFlag0x20000Clear.cpp:
+    complete
+    .text start:0x02088c54 end:0x02088c74
+
+
+src/Combat/Main/CheckFlag0x6cBit0Clear.cpp:
+    complete
+    .text start:0x020373e4 end:0x020373f8
+
+
+src/Combat/Main/CheckFlag0x80AndKind1.cpp:
+    complete
+    .text start:0x020886b0 end:0x020886dc
+
+
+src/Combat/Main/ClearBitsInField0x6c.cpp:
+    complete
+    .text start:0x02037aa4 end:0x02037ab8
+
+
+src/Combat/Main/ClearFlag0x200AndBytes.cpp:
+    complete
+    .text start:0x02088914 end:0x02088930
+
+
+src/Combat/Main/ClearThreeBytes.cpp:
+    complete
+    .text start:0x020966cc end:0x020966e0
+
+
+src/Combat/Main/CopyRecord.cpp:
+    complete
+    .text start:0x02093b54 end:0x02093b90
+
+
+src/Combat/Main/FindEntryByHalfwordKey.cpp:
+    complete
+    .text start:0x02099950 end:0x0209998c
+
+
+src/Combat/Main/FindSignedByteSlot.cpp:
+    complete
+    .text start:0x0202bcf8 end:0x0202bd34
+
+
+src/Combat/Main/ResetFieldsReturnTrue.cpp:
+    complete
+    .text start:0x02030634 end:0x0203066c
+
+
+src/Combat/Main/ResetStateFields.cpp:
+    complete
+    .text start:0x02089074 end:0x020890a4
+
+
+src/Combat/Main/ResetStructFields.cpp:
+    complete
+    .text start:0x02089db4 end:0x02089ddc
+
+
+src/Combat/Main/SetFlag0x100000ClearFlag0x200000.cpp:
+    complete
+    .text start:0x02088a94 end:0x02088aa8
