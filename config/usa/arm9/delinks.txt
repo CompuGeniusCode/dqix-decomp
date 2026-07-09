@@ -1055,3 +1055,53 @@ src/Combat/Main/IsField8NibbleInRange.cpp:
 src/Combat/Main/ResetHandleFields.cpp:
     complete
     .text start:0x020da22c end:0x020da244
+
+
+src/Combat/Main/ClearBattleFlag0x14Bit4.cpp:
+    complete
+    .text start:0x02088390 end:0x020883ac
+
+
+src/Combat/Main/ClearBattleFlags0x14And0x58.cpp:
+    complete
+    .text start:0x02087cfc end:0x02087d24
+
+
+src/Combat/Main/GetActiveSub_02054000.cpp:
+    complete
+    .text start:0x02054000 end:0x02054028
+
+
+src/Combat/Main/GetBits2526_02068878.cpp:
+    complete
+    .text start:0x02068878 end:0x02068894
+
+
+src/Combat/Main/GetFlagB4_0205d67c.cpp:
+    complete
+    .text start:0x0205d67c end:0x0205d6a0
+
+
+src/Combat/Main/InitStruct_0205ba2c.cpp:
+    complete
+    .text start:0x0205ba2c end:0x0205ba68
+
+
+src/Combat/Main/IsListEmpty_020652b4.cpp:
+    complete
+    .text start:0x020652b4 end:0x020652c8
+
+
+src/Combat/Main/SetBitInArray0x8ec.cpp:
+    complete
+    .text start:0x02083acc end:0x02083b00
+
+
+src/Combat/Main/TestBit2At0x2f8.cpp:
+    complete
+    .text start:0x020857c0 end:0x020857ec
+
+
+src/Combat/Main/TestBit5At0x2f4.cpp:
+    complete
+    .text start:0x02085154 end:0x02085180
