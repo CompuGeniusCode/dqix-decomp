@@ -5050,3 +5050,168 @@ src/Combat/Main/SetFields0209fde8.cpp:
 src/Combat/Main/SetValueAndActivate0209c830.cpp:
     complete
     .text start:0x0209c830 end:0x0209c840
+
+
+src/Combat/Main/AppendCappedElement0207f018.cpp:
+    complete
+    .text start:0x0207f018 end:0x0207f0ac
+
+
+src/Combat/Main/AppendCappedElement02089edc.cpp:
+    complete
+    .text start:0x02089edc end:0x02089fb0
+
+
+src/Combat/Main/AppendElem0201c470.cpp:
+    complete
+    .text start:0x0201c470 end:0x0201c4d4
+
+
+src/Combat/Main/AppendElement020a1568.cpp:
+    complete
+    .text start:0x020a1568 end:0x020a15bc
+
+
+src/Combat/Main/ClearFields0And8.cpp:
+    complete
+    .text start:0x020c8ee8 end:0x020c8ef8
+
+
+src/Combat/Main/ClearFlag0x1At0x168.cpp:
+    complete
+    .text start:0x0202ecfc end:0x0202ed0c
+
+
+src/Combat/Main/ClearFlag0x4At0x245.cpp:
+    complete
+    .text start:0x020a298c end:0x020a299c
+
+
+src/Combat/Main/CopyState0207dfc8.cpp:
+    complete
+    .text start:0x0207dfc8 end:0x0207e060
+
+
+src/Combat/Main/CopyStruct02019f24.cpp:
+    complete
+    .text start:0x02019f24 end:0x02019f6c
+
+
+src/Combat/Main/CopyStruct0201ae8c.cpp:
+    complete
+    .text start:0x0201ae8c end:0x0201aedc
+
+
+src/Combat/Main/CopyStruct020a9304.cpp:
+    complete
+    .text start:0x020a9304 end:0x020a939c
+
+
+src/Combat/Main/CopyStruct020a99d0.cpp:
+    complete
+    .text start:0x020a99d0 end:0x020a9a50
+
+
+src/Combat/Main/DisableSystemControlBit0.cpp:
+    complete
+    .text start:0x020c8a08 end:0x020c8a18
+
+
+src/Combat/Main/EnableSystemControlBit0.cpp:
+    complete
+    .text start:0x020c89f8 end:0x020c8a08
+
+
+src/Combat/Main/FindElemByKeys.cpp:
+    complete
+    .text start:0x0201b600 end:0x0201b678
+
+
+src/Combat/Main/FindElementByField020a15bc.cpp:
+    complete
+    .text start:0x020a15bc end:0x020a1614
+
+
+src/Combat/Main/FindEntryBySignedId02089fb0.cpp:
+    complete
+    .text start:0x02089fb0 end:0x0208a018
+
+
+src/Combat/Main/FindEntryIndexInKeyedList0207caa4.cpp:
+    complete
+    .text start:0x0207caa4 end:0x0207cb38
+
+
+src/Combat/Main/GetBit6At0xe0.cpp:
+    complete
+    .text start:0x02033f5c end:0x02033f6c
+
+
+src/Combat/Main/GetLow12BitField.cpp:
+    complete
+    .text start:0x020a93d0 end:0x020a93e0
+
+
+src/Combat/Main/GetSignBit0At0x78c.cpp:
+    complete
+    .text start:0x0202fe58 end:0x0202fe68
+
+
+src/Combat/Main/InitStruct0208a9c0.cpp:
+    complete
+    .text start:0x0208a9c0 end:0x0208aa18
+
+
+src/Combat/Main/IsEntryAvailableByKey020a454c.cpp:
+    complete
+    .text start:0x020a454c end:0x020a45a0
+
+
+src/Combat/Main/IsPointWithinCylinder.cpp:
+    complete
+    .text start:0x02032148 end:0x020321e0
+
+
+src/Combat/Main/RelocateOffsetAt0x14.cpp:
+    complete
+    .text start:0x020b01e0 end:0x020b01f0
+
+
+src/Combat/Main/RelocateOffsetAt0x4.cpp:
+    complete
+    .text start:0x020b0268 end:0x020b0278
+
+
+src/Combat/Main/ResetHalfwordPairAt0x2a.cpp:
+    complete
+    .text start:0x0208977c end:0x0208978c
+
+
+src/Combat/Main/RotateLowNibbleBits.cpp:
+    complete
+    .text start:0x0201a108 end:0x0201a188
+
+
+src/Combat/Main/SetByteSavingPrevious.cpp:
+    complete
+    .text start:0x02033b58 end:0x02033b68
+
+
+src/Combat/Main/SetEntryInKeyedList0207cb38.cpp:
+    complete
+    .text start:0x0207cb38 end:0x0207cbe8
+
+
+src/Combat/Main/SetField0x32SavingOldTo0x34.cpp:
+    complete
+    .text start:0x0208978c end:0x0208979c
+
+
+src/Combat/Main/SetFlagsAt0x244.cpp:
+    complete
+    .text start:0x020a28a0 end:0x020a28b0
+
+
+src/Combat/Main/StoreValueViaPtrField0x4.cpp:
+    complete
+    .text start:0x0207e22c end:0x0207e23c
