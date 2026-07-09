@@ -1810,3 +1810,278 @@ src/Combat/Main/SetFourHalfwords.cpp:
 src/Combat/Main/ZeroFourHalfwords02044074.cpp:
     complete
     .text start:0x02044074 end:0x0204408c
+
+
+src/Combat/Main/AppendNodeToTail020469b4.cpp:
+    complete
+    .text start:0x020469b4 end:0x020469f8
+
+
+src/Combat/Main/CheckBits5To9NonZero.cpp:
+    complete
+    .text start:0x0204be78 end:0x0204be90
+
+
+src/Combat/Main/CheckHighNibble0xc1Not2To5.cpp:
+    complete
+    .text start:0x02049ec0 end:0x02049ee8
+
+
+src/Combat/Main/CheckLow5BitsEqual1.cpp:
+    complete
+    .text start:0x0204bdc0 end:0x0204bdd8
+
+
+src/Combat/Main/CheckLow5BitsEqual2.cpp:
+    complete
+    .text start:0x0204bdd8 end:0x0204bdf0
+
+
+src/Combat/Main/CheckLow5BitsEqual3.cpp:
+    complete
+    .text start:0x0204bdf0 end:0x0204be08
+
+
+src/Combat/Main/CheckSubstructFlag0x10.cpp:
+    complete
+    .text start:0x0204936c end:0x02049390
+
+
+src/Combat/Main/CheckSubstructFlag0x100.cpp:
+    complete
+    .text start:0x02048c68 end:0x02048c90
+
+
+src/Combat/Main/CheckSubstructFlag0x400.cpp:
+    complete
+    .text start:0x0204a0f8 end:0x0204a120
+
+
+src/Combat/Main/ClearListUntilFlagZero.cpp:
+    complete
+    .text start:0x02046968 end:0x020469b4
+
+
+src/Combat/Main/ClearRecordFields.cpp:
+    complete
+    .text start:0x0204acb0 end:0x0204acd0
+
+
+src/Combat/Main/ClearStruct0204a82c.cpp:
+    complete
+    .text start:0x0204a82c end:0x0204a848
+
+
+src/Combat/Main/ClearStructFields02049550.cpp:
+    complete
+    .text start:0x02049550 end:0x0204956c
+
+
+src/Combat/Main/ClearSubstructByte0x56.cpp:
+    complete
+    .text start:0x02049f3c end:0x02049f50
+
+
+src/Combat/Main/ClearSubstructFlag0x100.cpp:
+    complete
+    .text start:0x02048c50 end:0x02048c68
+
+
+src/Combat/Main/ClearSubstructFlag0x4.cpp:
+    complete
+    .text start:0x02049ae4 end:0x02049afc
+
+
+src/Combat/Main/ClearSubstructFlag0x400.cpp:
+    complete
+    .text start:0x0204a0e0 end:0x0204a0f8
+
+
+src/Combat/Main/ConvertColorToDecimalOffset30000.cpp:
+    complete
+    .text start:0x0204bd7c end:0x0204bdc0
+
+
+src/Combat/Main/CountActiveEntries.cpp:
+    complete
+    .text start:0x02046900 end:0x0204693c
+
+
+src/Combat/Main/GetElementByte1IfEnabled.cpp:
+    complete
+    .text start:0x02047a3c end:0x02047a5c
+
+
+src/Combat/Main/GetEntryByIndexStride0x10.cpp:
+    complete
+    .text start:0x0204af14 end:0x0204af38
+
+
+src/Combat/Main/GetEntryByteIfFlag0x84.cpp:
+    complete
+    .text start:0x02047a5c end:0x02047a78
+
+
+src/Combat/Main/GetHeadNodeIdOrMinusOne.cpp:
+    complete
+    .text start:0x02046b24 end:0x02046b38
+
+
+src/Combat/Main/GetScaledElementOffset.cpp:
+    complete
+    .text start:0x0204aa48 end:0x0204aa64
+
+
+src/Combat/Main/GetScaledElementPtr.cpp:
+    complete
+    .text start:0x0204aa28 end:0x0204aa48
+
+
+src/Combat/Main/GetSubstructByte0x1c.cpp:
+    complete
+    .text start:0x020493a4 end:0x020493b8
+
+
+src/Combat/Main/GetSubstructByte0x1d.cpp:
+    complete
+    .text start:0x020493c8 end:0x020493dc
+
+
+src/Combat/Main/GetSubstructByte0x1e.cpp:
+    complete
+    .text start:0x020493ec end:0x02049400
+
+
+src/Combat/Main/GetSubstructByte0x34.cpp:
+    complete
+    .text start:0x02049444 end:0x02049458
+
+
+src/Combat/Main/GetSubstructByte0x4c.cpp:
+    complete
+    .text start:0x02049468 end:0x0204947c
+
+
+src/Combat/Main/GetSubstructByte0x4d.cpp:
+    complete
+    .text start:0x0204948c end:0x020494a0
+
+
+src/Combat/Main/GetSubstructByte0x56.cpp:
+    complete
+    .text start:0x02049ee8 end:0x02049efc
+
+
+src/Combat/Main/IsField0Null.cpp:
+    complete
+    .text start:0x02046b08 end:0x02046b1c
+
+
+src/Combat/Main/IsSubstructByte0x4fNonZero.cpp:
+    complete
+    .text start:0x02049afc end:0x02049b20
+
+
+src/Combat/Main/ListContainsId.cpp:
+    complete
+    .text start:0x02046b60 end:0x02046b8c
+
+
+src/Combat/Main/ListContainsNode.cpp:
+    complete
+    .text start:0x02046b38 end:0x02046b60
+
+
+src/Combat/Main/PackColorChannelsToDecimal.cpp:
+    complete
+    .text start:0x0204bea0 end:0x0204bedc
+
+
+src/Combat/Main/PrependNodeToHead020469f8.cpp:
+    complete
+    .text start:0x020469f8 end:0x02046a3c
+
+
+src/Combat/Main/ResetByteHeader0204693c.cpp:
+    complete
+    .text start:0x0204693c end:0x02046958
+
+
+src/Combat/Main/RestoreMaxHpByAmount.cpp:
+    complete
+    .text start:0x02048228 end:0x02048260
+
+
+src/Combat/Main/RestoreMaxHpToFull.cpp:
+    complete
+    .text start:0x02048260 end:0x02048284
+
+
+src/Combat/Main/RestoreMaxMpByAmount.cpp:
+    complete
+    .text start:0x02048284 end:0x020482bc
+
+
+src/Combat/Main/RestoreMaxMpToFull.cpp:
+    complete
+    .text start:0x020482bc end:0x020482e0
+
+
+src/Combat/Main/SetBool0x17fClear0x180.cpp:
+    complete
+    .text start:0x020488ac end:0x020488cc
+
+
+src/Combat/Main/SetBool0x180Clear0x17f.cpp:
+    complete
+    .text start:0x020488cc end:0x020488ec
+
+
+src/Combat/Main/SetSubstructByte0x1c.cpp:
+    complete
+    .text start:0x02049390 end:0x020493a4
+
+
+src/Combat/Main/SetSubstructByte0x56.cpp:
+    complete
+    .text start:0x02049f28 end:0x02049f3c
+
+
+src/Combat/Main/SetSubstructField0x14ClearFlag0x1.cpp:
+    complete
+    .text start:0x02049c60 end:0x02049c88
+
+
+src/Combat/Main/SetSubstructField0x8ClearFlag0x2.cpp:
+    complete
+    .text start:0x02049bac end:0x02049bd4
+
+
+src/Combat/Main/SetSubstructFields0x10And0x18ClearFlag0x1.cpp:
+    complete
+    .text start:0x02049bd4 end:0x02049c08
+
+
+src/Combat/Main/SetSubstructFields4And0xcClearFlag0x2.cpp:
+    complete
+    .text start:0x02049b20 end:0x02049b54
+
+
+src/Combat/Main/SetSubstructFlag0x100.cpp:
+    complete
+    .text start:0x02048c38 end:0x02048c50
+
+
+src/Combat/Main/SetSubstructFlag0x80.cpp:
+    complete
+    .text start:0x02048bb8 end:0x02048bd0
+
+
+src/Combat/Main/TryClearFlags0x130.cpp:
+    complete
+    .text start:0x02048418 end:0x02048448
+
+
+src/Combat/Main/TrySetFlags0x130.cpp:
+    complete
+    .text start:0x020483f0 end:0x02048418
