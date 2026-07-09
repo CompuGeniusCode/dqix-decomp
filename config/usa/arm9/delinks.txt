@@ -1230,3 +1230,73 @@ src/Combat/Main/TestFlag0SetAndFlag1Clear.cpp:
 src/Combat/Main/TestFlagMask.cpp:
     complete
     .text start:0x02012430 end:0x02012444
+
+
+src/Combat/Main/CopyStruct16.cpp:
+    complete
+    .text start:0x0201d474 end:0x0201d494
+
+
+src/Combat/Main/FindElementByHalfwordKey.cpp:
+    complete
+    .text start:0x0201f2cc end:0x0201f308
+
+
+src/Combat/Main/FindEntryById.cpp:
+    complete
+    .text start:0x0201e690 end:0x0201e6d4
+
+
+src/Combat/Main/FindEntryBySignedId.cpp:
+    complete
+    .text start:0x0201f170 end:0x0201f1b0
+
+
+src/Combat/Main/FindNodeKind9ById.cpp:
+    complete
+    .text start:0x0201e6d4 end:0x0201e710
+
+
+src/Combat/Main/FindRecordIndexByHalfwordKey.cpp:
+    complete
+    .text start:0x0201f1b0 end:0x0201f1f0
+
+
+src/Combat/Main/GetElementByIndexStride0x20.cpp:
+    complete
+    .text start:0x0201f2a4 end:0x0201f2cc
+
+
+src/Combat/Main/GetElementStride0x70.cpp:
+    complete
+    .text start:0x0201e548 end:0x0201e574
+
+
+src/Combat/Main/GetElementStride0x74.cpp:
+    complete
+    .text start:0x0201e664 end:0x0201e690
+
+
+src/Combat/Main/GetElementStride0xc.cpp:
+    complete
+    .text start:0x0201f144 end:0x0201f170
+
+
+src/Combat/Main/GetPointerFromArray0x18.cpp:
+    complete
+    .text start:0x0201f368 end:0x0201f390
+
+
+src/Combat/Main/GetThreeWordsAt0x70.cpp:
+    complete
+    .text start:0x0201e80c end:0x0201e820
+
+
+src/Combat/Main/InitStruct_0201f9b8.cpp:
+    complete
+    .text start:0x0201f9b8 end:0x0201f9e8
+
+
+src/Combat/Main/TestFlagBitAt0x2744.cpp:
+    complete
+    .text start:0x0201bfc0 end:0x0201bfd4
