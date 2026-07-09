@@ -4060,3 +4060,198 @@ src/Combat/Main/WriteByteIfRoom.cpp:
 src/Combat/Main/ZeroPairIfEitherZero.cpp:
     complete
     .text start:0x020cc68c end:0x020cc6ac
+
+
+src/Combat/Main/AdvanceClampedField0x18.cpp:
+    complete
+    .text start:0x020ddffc end:0x020de038
+
+
+src/Combat/Main/ClampInt020d9808.cpp:
+    complete
+    .text start:0x020d9808 end:0x020d9828
+
+
+src/Combat/Main/ClearBitInEntries.cpp:
+    complete
+    .text start:0x020e3b08 end:0x020e3b44
+
+
+src/Combat/Main/ClearFields020dde64.cpp:
+    complete
+    .text start:0x020dde64 end:0x020dde84
+
+
+src/Combat/Main/ClearFourBytes020e303c.cpp:
+    complete
+    .text start:0x020e303c end:0x020e3054
+
+
+src/Combat/Main/ClearHeaderFields020e1354.cpp:
+    complete
+    .text start:0x020e1354 end:0x020e1368
+
+
+src/Combat/Main/ClearThreeBytes020e358c.cpp:
+    complete
+    .text start:0x020e358c end:0x020e35a0
+
+
+src/Combat/Main/ClearThreeWords020e57e0.cpp:
+    complete
+    .text start:0x020e57e0 end:0x020e57f4
+
+
+src/Combat/Main/ComputeOffsetFromFields.cpp:
+    complete
+    .text start:0x020de7a4 end:0x020de7d0
+
+
+src/Combat/Main/CopyFourSignedBytes020d9654.cpp:
+    complete
+    .text start:0x020d9654 end:0x020d9678
+
+
+src/Combat/Main/FindEntryByTagAndValue.cpp:
+    complete
+    .text start:0x020e385c end:0x020e38a0
+
+
+src/Combat/Main/FindEntryIndexByTagAndValue.cpp:
+    complete
+    .text start:0x020e38e4 end:0x020e392c
+
+
+src/Combat/Main/FindRangeEntry020e58dc.cpp:
+    complete
+    .text start:0x020e58dc end:0x020e5920
+
+
+src/Combat/Main/GetDataPtrAndValue020d8fcc.cpp:
+    complete
+    .text start:0x020d8fcc end:0x020d9010
+
+
+src/Combat/Main/GetDispcntBits13To15.cpp:
+    complete
+    .text start:0x020e2bc4 end:0x020e2bd8
+
+
+src/Combat/Main/GetFlagFromField0x8Bits.cpp:
+    complete
+    .text start:0x020dd768 end:0x020dd7ac
+
+
+src/Combat/Main/GetHalfProductField8.cpp:
+    complete
+    .text start:0x020e1288 end:0x020e12a8
+
+
+src/Combat/Main/GetInnerFlagBit0020e28dc.cpp:
+    complete
+    .text start:0x020e28dc end:0x020e28f0
+
+
+src/Combat/Main/GetMainDisplayLayers.cpp:
+    complete
+    .text start:0x020daf6c end:0x020daf80
+
+
+src/Combat/Main/GetMainDisplayLayers020dc020.cpp:
+    complete
+    .text start:0x020dc020 end:0x020dc034
+
+
+src/Combat/Main/GetMaxOfHalfwords0And4.cpp:
+    complete
+    .text start:0x020deb08 end:0x020deb24
+
+
+src/Combat/Main/GetScaledFieldSum.cpp:
+    complete
+    .text start:0x020dfbc0 end:0x020dfbd4
+
+
+src/Combat/Main/InitStruct020db0c4.cpp:
+    complete
+    .text start:0x020db0c4 end:0x020db0f0
+
+
+src/Combat/Main/InitStruct020dbd9c.cpp:
+    complete
+    .text start:0x020dbd9c end:0x020dbdc0
+
+
+src/Combat/Main/IsEncodedSizeEqual.cpp:
+    complete
+    .text start:0x020e03b8 end:0x020e03f0
+
+
+src/Combat/Main/IsField8Bit19Set.cpp:
+    complete
+    .text start:0x020ddb20 end:0x020ddb38
+
+
+src/Combat/Main/IsField8Bits0To3Equal.cpp:
+    complete
+    .text start:0x020de31c end:0x020de334
+
+
+src/Combat/Main/IsField8Bits4To8Equal.cpp:
+    complete
+    .text start:0x020de334 end:0x020de34c
+
+
+src/Combat/Main/MatchBits0To3And4To8At0x8.cpp:
+    complete
+    .text start:0x020de36c end:0x020de38c
+
+
+src/Combat/Main/MatchThreeBitfieldsAt0x10.cpp:
+    complete
+    .text start:0x020de3cc end:0x020de3f4
+
+
+src/Combat/Main/ResetBytes020e25cc.cpp:
+    complete
+    .text start:0x020e25cc end:0x020e25e8
+
+
+src/Combat/Main/ResetEntry020e3840.cpp:
+    complete
+    .text start:0x020e3840 end:0x020e385c
+
+
+src/Combat/Main/ResetFields020da2e4.cpp:
+    complete
+    .text start:0x020da2e4 end:0x020da2fc
+
+
+src/Combat/Main/SetDispcntBits13to15.cpp:
+    complete
+    .text start:0x020e2b94 end:0x020e2bac
+
+
+src/Combat/Main/SetFlagBit020d9fb4.cpp:
+    complete
+    .text start:0x020d9fb4 end:0x020d9fc8
+
+
+src/Combat/Main/SetHalfwordAtIndex020e16dc.cpp:
+    complete
+    .text start:0x020e16dc end:0x020e16f4
+
+
+src/Combat/Main/SetRectFromPosAndSize.cpp:
+    complete
+    .text start:0x020e2d2c end:0x020e2d4c
+
+
+src/Combat/Main/StoreFourShorts.cpp:
+    complete
+    .text start:0x020e12a8 end:0x020e12c0
+
+
+src/Combat/Main/WriteEntryAtIndex.cpp:
+    complete
+    .text start:0x020e3b44 end:0x020e3b8c
