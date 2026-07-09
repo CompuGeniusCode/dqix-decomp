@@ -5575,3 +5575,83 @@ src/Combat/Main/ClearField0And40205a244.cpp:
 src/Combat/Main/CollectEntriesMatchingField0xd802058680.cpp:
     complete
     .text start:0x02058680 end:0x02058704
+
+
+src/Combat/Main/AccumulateSizeFromFlags020c4bd8.cpp:
+    complete
+    .text start:0x020c4bd8 end:0x020c4c2c
+
+
+src/Combat/Main/AppendCappedElement0201f214.cpp:
+    complete
+    .text start:0x0201f214 end:0x0201f2a4
+
+
+src/Combat/Main/ClearFlag0x1.cpp:
+    complete
+    .text start:0x02040648 end:0x02040658
+
+
+src/Combat/Main/CopyRecord0202ba08.cpp:
+    complete
+    .text start:0x0202ba08 end:0x0202bad4
+
+
+src/Combat/Main/FindKeyInSortedU16List.cpp:
+    complete
+    .text start:0x0203e63c end:0x0203e6c8
+
+
+src/Combat/Main/GetBgCharBaseAddress020c4d1c.cpp:
+    complete
+    .text start:0x020c4d1c end:0x020c4da0
+
+
+src/Combat/Main/GetElementAt0x10Stride0xc0.cpp:
+    complete
+    .text start:0x0202bad4 end:0x0202bae4
+
+
+src/Combat/Main/InsertKeyInSortedU16List.cpp:
+    complete
+    .text start:0x0203e6c8 end:0x0203e7b4
+
+
+src/Combat/Main/InvokeCallbackForEachEntry.cpp:
+    complete
+    .text start:0x0206f110 end:0x0206f170
+
+
+src/Combat/Main/MulVec3Mtx020c17c4.cpp:
+    complete
+    .text start:0x020c17c4 end:0x020c1840
+
+
+src/Combat/Main/MulVec3MtxTranslate020c2034.cpp:
+    complete
+    .text start:0x020c2034 end:0x020c20d4
+
+
+src/Combat/Main/SetFlag0x1.cpp:
+    complete
+    .text start:0x02040658 end:0x02040668
+
+
+src/Combat/Main/SetFlagsAt0xa97.cpp:
+    complete
+    .text start:0x02027bac end:0x02027bbc
+
+
+src/Combat/Main/SetSlotIfIndexBelow32.cpp:
+    complete
+    .text start:0x0203dd10 end:0x0203dd20
+
+
+src/Combat/Main/StoreClampedDeltas.cpp:
+    complete
+    .text start:0x0206b7b0 end:0x0206b804
+
+
+src/Combat/Main/UpdateStatusTimer.cpp:
+    complete
+    .text start:0x020658ac end:0x02065920
