@@ -1105,3 +1105,53 @@ src/Combat/Main/TestBit2At0x2f8.cpp:
 src/Combat/Main/TestBit5At0x2f4.cpp:
     complete
     .text start:0x02085154 end:0x02085180
+
+
+src/Combat/Main/CheckBitsInField0x63dc.cpp:
+    complete
+    .text start:0x02011b50 end:0x02011b68
+
+
+src/Combat/Main/CheckField0x63daNonZero.cpp:
+    complete
+    .text start:0x02011610 end:0x02011628
+
+
+src/Combat/Main/ClearFlag0x5cccBit0.cpp:
+    complete
+    .text start:0x0201155c end:0x02011570
+
+
+src/Combat/Main/CompareSixBytes.cpp:
+    complete
+    .text start:0x02011fb4 end:0x02011ff0
+
+
+src/Combat/Main/GetField0x74deForValidIndex.cpp:
+    complete
+    .text start:0x020120a0 end:0x020120b8
+
+
+src/Combat/Main/GetFlag0x5cccBit0.cpp:
+    complete
+    .text start:0x02011570 end:0x02011584
+
+
+src/Combat/Main/IsByte0x63d6Set.cpp:
+    complete
+    .text start:0x02011590 end:0x020115a8
+
+
+src/Combat/Main/IsHalfword0x63d8Set.cpp:
+    complete
+    .text start:0x020115d0 end:0x020115e8
+
+
+src/Combat/Main/SetBitsInField0x63dc.cpp:
+    complete
+    .text start:0x02011b3c end:0x02011b50
+
+
+src/Combat/Main/SetFlag0x5cccBit0.cpp:
+    complete
+    .text start:0x02011544 end:0x0201155c
