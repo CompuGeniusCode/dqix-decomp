@@ -1495,3 +1495,53 @@ src/Combat/Main/ResetFields39ee8.cpp:
 src/Combat/Main/SetBoolFlag0x254.cpp:
     complete
     .text start:0x0203983c end:0x02039850
+
+
+src/Combat/Main/AppendToList0x2037804.cpp:
+    complete
+    .text start:0x02037804 end:0x02037840
+
+
+src/Combat/Main/AttachToList0x2037858.cpp:
+    complete
+    .text start:0x02037858 end:0x02037890
+
+
+src/Combat/Main/ClampValueAndStoreAt0x2c.cpp:
+    complete
+    .text start:0x0203fc84 end:0x0203fca0
+
+
+src/Combat/Main/ClearStruct0203fca0.cpp:
+    complete
+    .text start:0x0203fca0 end:0x0203fcd4
+
+
+src/Combat/Main/ClearStruct020401e4.cpp:
+    complete
+    .text start:0x020401e4 end:0x020401fc
+
+
+src/Combat/Main/FindEmptySlotIndex.cpp:
+    complete
+    .text start:0x0203e03c end:0x0203e06c
+
+
+src/Combat/Main/FindListNodeWithFlag0x2037b94.cpp:
+    complete
+    .text start:0x02037b94 end:0x02037bbc
+
+
+src/Combat/Main/GetListElementByIndex.cpp:
+    complete
+    .text start:0x0203f354 end:0x0203f370
+
+
+src/Combat/Main/InitListNode0x2037840.cpp:
+    complete
+    .text start:0x02037840 end:0x02037858
+
+
+src/Combat/Main/IsListNodeAttached0x2037a50.cpp:
+    complete
+    .text start:0x02037a50 end:0x02037a64
