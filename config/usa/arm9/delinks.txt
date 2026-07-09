@@ -1745,3 +1745,28 @@ src/Combat/Main/TestFlags02046708.cpp:
 src/Combat/Main/WriteHalfwordToStream02044974.cpp:
     complete
     .text start:0x02044974 end:0x020449a4
+
+
+src/Combat/Main/ClearFields0x8.cpp:
+    complete
+    .text start:0x0203bb1c end:0x0203bb3c
+
+
+src/Combat/Main/DecrementEntryCount0x24.cpp:
+    complete
+    .text start:0x0203c6fc end:0x0203c73c
+
+
+src/Combat/Main/IncrementEntryCount0x24.cpp:
+    complete
+    .text start:0x0203c6b8 end:0x0203c6fc
+
+
+src/Combat/Main/InitFields0x0.cpp:
+    complete
+    .text start:0x0203c0cc end:0x0203c0f0
+
+
+src/Combat/Main/StoreAlignedValue0x60.cpp:
+    complete
+    .text start:0x0203cda8 end:0x0203cdd0
