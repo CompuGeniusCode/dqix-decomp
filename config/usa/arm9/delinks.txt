@@ -1645,3 +1645,28 @@ src/Combat/Main/GetSelfIfField0xa8Bit0Set.cpp:
 src/Combat/Main/SetBoundedValuePair.cpp:
     complete
     .text start:0x02037620 end:0x02037640
+
+
+src/Combat/Main/FindUnescapedAngleBracket.cpp:
+    complete
+    .text start:0x020424ac end:0x020424e4
+
+
+src/Combat/Main/GetField0OfSubstructAt0x18.cpp:
+    complete
+    .text start:0x020416cc end:0x020416e0
+
+
+src/Combat/Main/SetRect02042c54.cpp:
+    complete
+    .text start:0x02042c54 end:0x02042c68
+
+
+src/Combat/Main/SetSubstructSize02042c3c.cpp:
+    complete
+    .text start:0x02042c3c end:0x02042c54
+
+
+src/Combat/Main/SetSubstructXY02042c24.cpp:
+    complete
+    .text start:0x02042c24 end:0x02042c3c
