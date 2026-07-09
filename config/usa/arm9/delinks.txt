@@ -1420,3 +1420,28 @@ src/Combat/Main/SetupField440Type1.cpp:
 src/Combat/Main/SetupField440Type3.cpp:
     complete
     .text start:0x0202f6d4 end:0x0202f700
+
+
+src/Combat/Main/AdjustValueWrapOrClamp.cpp:
+    complete
+    .text start:0x0202a678 end:0x0202a6c4
+
+
+src/Combat/Main/CheckField0NonZero.cpp:
+    complete
+    .text start:0x0202b7d8 end:0x0202b7ec
+
+
+src/Combat/Main/FindInlineEntryById.cpp:
+    complete
+    .text start:0x02028bd0 end:0x02028c14
+
+
+src/Combat/Main/GetNodeAtIndex.cpp:
+    complete
+    .text start:0x0202a9ac end:0x0202a9f4
+
+
+src/Combat/Main/SetState0x6cAndInvoke.cpp:
+    complete
+    .text start:0x0202a91c end:0x0202a944
