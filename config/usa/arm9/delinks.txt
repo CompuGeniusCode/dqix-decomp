@@ -5740,3 +5740,43 @@ src/Combat/Main/GetIndexedEntry020bbc68.cpp:
 src/Combat/Main/ScaleMatrixRows020c11a4.cpp:
     complete
     .text start:0x020c11a4 end:0x020c1264
+
+
+src/Combat/Main/ClampFieldTo2At0x16.cpp:
+    complete
+    .text start:0x020e29a8 end:0x020e29b8
+
+
+src/Combat/Main/FillIndexBuffer0204e998.cpp:
+    complete
+    .text start:0x0204e998 end:0x0204ea28
+
+
+src/Combat/Main/FindRectContainingPoint020e1eb0.cpp:
+    complete
+    .text start:0x020e1eb0 end:0x020e1f1c
+
+
+src/Combat/Main/GetBits10To14.cpp:
+    complete
+    .text start:0x0204be90 end:0x0204bea0
+
+
+src/Combat/Main/GetLow12Bits020e0424.cpp:
+    complete
+    .text start:0x020e0424 end:0x020e0434
+
+
+src/Combat/Main/InitRenderParams0204bf44.cpp:
+    complete
+    .text start:0x0204bf44 end:0x0204c030
+
+
+src/Combat/Main/PackControlWord020e197c.cpp:
+    complete
+    .text start:0x020e197c end:0x020e1a74
+
+
+src/Combat/Main/SetFields020e1374.cpp:
+    complete
+    .text start:0x020e1374 end:0x020e1384
