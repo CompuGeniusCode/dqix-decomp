@@ -1695,3 +1695,28 @@ src/Combat/Main/ResetStruct02034d04.cpp:
 src/Combat/Main/StoreVec3AsShortsAt0x5c.cpp:
     complete
     .text start:0x020374c4 end:0x020374e0
+
+
+src/Combat/Main/ClearEightWords.cpp:
+    complete
+    .text start:0x0203dafc end:0x0203db24
+
+
+src/Combat/Main/GetEntryUnlessFlag0x8000.cpp:
+    complete
+    .text start:0x0203dce4 end:0x0203dd10
+
+
+src/Combat/Main/GetField0x60Or0x64ByFlag0x2.cpp:
+    complete
+    .text start:0x0203ce00 end:0x0203ce14
+
+
+src/Combat/Main/SetField0x64RoundedTo256.cpp:
+    complete
+    .text start:0x0203cdd8 end:0x0203cdf8
+
+
+src/Combat/Main/SetOrClearFlag0x8.cpp:
+    complete
+    .text start:0x0203cec4 end:0x0203cedc
