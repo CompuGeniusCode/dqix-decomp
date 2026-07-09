@@ -4975,3 +4975,78 @@ src/Combat/Main/SelectVec3FromSources020406f8.cpp:
 src/Combat/Main/SetByteInArray0xc28.cpp:
     complete
     .text start:0x0207c6a8 end:0x0207c6b8
+
+
+src/Combat/Main/CheckActionAllowed.cpp:
+    complete
+    .text start:0x02024d48 end:0x02024d94
+
+
+src/Combat/Main/ClearActionState.cpp:
+    complete
+    .text start:0x0201fbe0 end:0x0201fc40
+
+
+src/Combat/Main/ClearField0x17dBits0x38.cpp:
+    complete
+    .text start:0x0207958c end:0x0207959c
+
+
+src/Combat/Main/CompactFromIndex020a0a60.cpp:
+    complete
+    .text start:0x020a0a60 end:0x020a0af4
+
+
+src/Combat/Main/CountEntriesByField0x8c.cpp:
+    complete
+    .text start:0x02026a28 end:0x02026a78
+
+
+src/Combat/Main/CountEntriesByField0x8e.cpp:
+    complete
+    .text start:0x02026abc end:0x02026b0c
+
+
+src/Combat/Main/FindActiveEntry0209bdc8.cpp:
+    complete
+    .text start:0x0209bdc8 end:0x0209be28
+
+
+src/Combat/Main/FindEntryByKeyPair02021394.cpp:
+    complete
+    .text start:0x02021394 end:0x020213fc
+
+
+src/Combat/Main/InitStruct02075cdc.cpp:
+    complete
+    .text start:0x02075cdc end:0x02075d58
+
+
+src/Combat/Main/InitStruct02078484.cpp:
+    complete
+    .text start:0x02078484 end:0x0207853c
+
+
+src/Combat/Main/LookupValueByKey020a0b3c.cpp:
+    complete
+    .text start:0x020a0b3c end:0x020a0b8c
+
+
+src/Combat/Main/SelectHalfOrQuarter.cpp:
+    complete
+    .text start:0x02074978 end:0x02074988
+
+
+src/Combat/Main/SelectOneOrHalf.cpp:
+    complete
+    .text start:0x02074968 end:0x02074978
+
+
+src/Combat/Main/SetFields0209fde8.cpp:
+    complete
+    .text start:0x0209fde8 end:0x0209fdf8
+
+
+src/Combat/Main/SetValueAndActivate0209c830.cpp:
+    complete
+    .text start:0x0209c830 end:0x0209c840
