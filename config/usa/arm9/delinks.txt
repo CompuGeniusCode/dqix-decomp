@@ -1300,3 +1300,78 @@ src/Combat/Main/InitStruct_0201f9b8.cpp:
 src/Combat/Main/TestFlagBitAt0x2744.cpp:
     complete
     .text start:0x0201bfc0 end:0x0201bfd4
+
+
+src/Combat/Main/ClearFlags0xa97.cpp:
+    complete
+    .text start:0x02027bbc end:0x02027bd0
+
+
+src/Combat/Main/ClearStructHeader.cpp:
+    complete
+    .text start:0x02027d94 end:0x02027db0
+
+
+src/Combat/Main/CopyVec3s.cpp:
+    complete
+    .text start:0x0202861c end:0x02028638
+
+
+src/Combat/Main/FillBits5cd0.cpp:
+    complete
+    .text start:0x020113e0 end:0x02011408
+
+
+src/Combat/Main/FindEntryIndexById.cpp:
+    complete
+    .text start:0x020278a4 end:0x020278e4
+
+
+src/Combat/Main/FindListEntryById.cpp:
+    complete
+    .text start:0x020283c0 end:0x020283fc
+
+
+src/Combat/Main/FindListIndexById.cpp:
+    complete
+    .text start:0x020283fc end:0x02028430
+
+
+src/Combat/Main/GetBit5cd0.cpp:
+    complete
+    .text start:0x02011430 end:0x02011468
+
+
+src/Combat/Main/GetElementStride0x318.cpp:
+    complete
+    .text start:0x02028bac end:0x02028bd0
+
+
+src/Combat/Main/GetEntryFromList.cpp:
+    complete
+    .text start:0x02027878 end:0x020278a4
+
+
+src/Combat/Main/GetListEntryChecked.cpp:
+    complete
+    .text start:0x02028430 end:0x02028460
+
+
+src/Combat/Main/InitFields02010124.cpp:
+    complete
+    .text start:0x02010124 end:0x02010150
+
+
+src/Combat/Main/IsField3dcSet.cpp:
+    complete
+    .text start:0x020103b4 end:0x020103c8
+
+
+src/Combat/Main/IsFlag10088Set.cpp:
+    complete
+    .text start:0x02010088 end:0x020100a0
+
+
+src/Combat/Main/SetBoolFlagAt558.cpp:
+    complete
+    .text start:0x02026f08 end:0x02026f20
