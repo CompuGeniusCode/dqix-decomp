@@ -1570,3 +1570,28 @@ src/Combat/Main/GetField0x10StateIfField0x14Positive.cpp:
 src/Combat/Main/GetField0x1cStateIfField0x20Positive.cpp:
     complete
     .text start:0x0203b438 end:0x0203b470
+
+
+src/Combat/Main/CheckField0xc4Low15BitsNonZero.cpp:
+    complete
+    .text start:0x0203402c end:0x02034044
+
+
+src/Combat/Main/CheckField0xc6Zero.cpp:
+    complete
+    .text start:0x02033ec8 end:0x02033edc
+
+
+src/Combat/Main/ClearFlags0x40And0x80At0xe0.cpp:
+    complete
+    .text start:0x02033f2c end:0x02033f44
+
+
+src/Combat/Main/CopyFourHalfwords.cpp:
+    complete
+    .text start:0x02033f7c end:0x02033fa0
+
+
+src/Combat/Main/GetField0xe4IfFlag0x40.cpp:
+    complete
+    .text start:0x02033f44 end:0x02033f5c
