@@ -5385,3 +5385,48 @@ src/Combat/Main/StepCounter020456d0.cpp:
 src/Combat/Main/WalkListByMode0208036c.cpp:
     complete
     .text start:0x0208036c end:0x02080468
+
+
+src/Combat/Main/AppendElementCapped02071cc8.cpp:
+    complete
+    .text start:0x02071cc8 end:0x02071d60
+
+
+src/Combat/Main/BinarySearch020e0310.cpp:
+    complete
+    .text start:0x020e0310 end:0x020e038c
+
+
+src/Combat/Main/BinarySearchByComparator020a9288.cpp:
+    complete
+    .text start:0x020a9288 end:0x020a9304
+
+
+src/Combat/Main/BinarySearchByComparator020dfb48.cpp:
+    complete
+    .text start:0x020dfb48 end:0x020dfbc0
+
+
+src/Combat/Main/FindRecordByIndex.cpp:
+    complete
+    .text start:0x020467f0 end:0x0204684c
+
+
+src/Combat/Main/ForEachElement020dfa68.cpp:
+    complete
+    .text start:0x020dfa68 end:0x020dfabc
+
+
+src/Combat/Main/ForEachElement020dffc8.cpp:
+    complete
+    .text start:0x020dffc8 end:0x020e0028
+
+
+src/Combat/Main/GetArrayByteSize020dffb8.cpp:
+    complete
+    .text start:0x020dffb8 end:0x020dffc8
+
+
+src/Combat/Main/InsertNodeAfterHead.cpp:
+    complete
+    .text start:0x02046a3c end:0x02046a8c
