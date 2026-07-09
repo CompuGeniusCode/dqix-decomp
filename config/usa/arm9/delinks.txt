@@ -3785,3 +3785,278 @@ src/Combat/Main/TestBitAt0x34.cpp:
 src/Combat/Main/ZeroStruct0x10.cpp:
     complete
     .text start:0x020a810c end:0x020a8128
+
+
+src/Combat/Main/AppendNodeToTail020cee68.cpp:
+    complete
+    .text start:0x020cee68 end:0x020ceeb4
+
+
+src/Combat/Main/AsciiToLower.cpp:
+    complete
+    .text start:0x020d8550 end:0x020d857c
+
+
+src/Combat/Main/CheckStateByType020d8a68.cpp:
+    complete
+    .text start:0x020d8a68 end:0x020d8ab0
+
+
+src/Combat/Main/ClassifyPointRegion.cpp:
+    complete
+    .text start:0x020c965c end:0x020c96a8
+
+
+src/Combat/Main/CleanDataCacheAll.cpp:
+    complete
+    .text start:0x020c8258 end:0x020c8284
+
+
+src/Combat/Main/CleanDataCacheRange.cpp:
+    complete
+    .text start:0x020c82d4 end:0x020c82f0
+
+
+src/Combat/Main/CleanInvalidateDataCacheAll.cpp:
+    complete
+    .text start:0x020c8284 end:0x020c82b8
+
+
+src/Combat/Main/CleanInvalidateDataCacheRange.cpp:
+    complete
+    .text start:0x020c82f0 end:0x020c8314
+
+
+src/Combat/Main/ClearFieldAndNullSlot020bc084.cpp:
+    complete
+    .text start:0x020bc084 end:0x020bc0a4
+
+
+src/Combat/Main/ClearFields0And8And0x20.cpp:
+    complete
+    .text start:0x020c93bc end:0x020c93d0
+
+
+src/Combat/Main/CompareBytes.cpp:
+    complete
+    .text start:0x020d3044 end:0x020d3084
+
+
+src/Combat/Main/CompareStrings.cpp:
+    complete
+    .text start:0x020d3018 end:0x020d3044
+
+
+src/Combat/Main/CopyScatteredFieldsFrom0x30.cpp:
+    complete
+    .text start:0x020cbb90 end:0x020cbbb8
+
+
+src/Combat/Main/Crc16Update.cpp:
+    complete
+    .text start:0x020d1be4 end:0x020d1c24
+
+
+src/Combat/Main/Crc32Update.cpp:
+    complete
+    .text start:0x020d1c64 end:0x020d1ca0
+
+
+src/Combat/Main/Crc8Update.cpp:
+    complete
+    .text start:0x020d1b68 end:0x020d1ba0
+
+
+src/Combat/Main/DisableInterrupts.cpp:
+    complete
+    .text start:0x020c96fc end:0x020c9710
+
+
+src/Combat/Main/DisableInterruptsIrqAndFiq.cpp:
+    complete
+    .text start:0x020c9728 end:0x020c973c
+
+
+src/Combat/Main/EnableInterrupts.cpp:
+    complete
+    .text start:0x020c96e8 end:0x020c96fc
+
+
+src/Combat/Main/FindEntryByKind.cpp:
+    complete
+    .text start:0x020d3d90 end:0x020d3dcc
+
+
+src/Combat/Main/FindValueByHalfwordKey.cpp:
+    complete
+    .text start:0x020d794c end:0x020d7978
+
+
+src/Combat/Main/GenCrc16Table.cpp:
+    complete
+    .text start:0x020d1ba0 end:0x020d1be4
+
+
+src/Combat/Main/GenCrc32Table.cpp:
+    complete
+    .text start:0x020d1c24 end:0x020d1c64
+
+
+src/Combat/Main/GetElement020b7740.cpp:
+    complete
+    .text start:0x020b7740 end:0x020b776c
+
+
+src/Combat/Main/GetElement020b776c.cpp:
+    complete
+    .text start:0x020b776c end:0x020b7798
+
+
+src/Combat/Main/GetFieldDeltaByType020d8ab0.cpp:
+    complete
+    .text start:0x020d8ab0 end:0x020d8ae8
+
+
+src/Combat/Main/GetSharedWordDa0.cpp:
+    complete
+    .text start:0x020c8534 end:0x020c8548
+
+
+src/Combat/Main/GetSharedWordDc4.cpp:
+    complete
+    .text start:0x020c8520 end:0x020c8534
+
+
+src/Combat/Main/GetSignedField020c39c8.cpp:
+    complete
+    .text start:0x020c39c8 end:0x020c3a0c
+
+
+src/Combat/Main/GetTaggedPointer0x1c.cpp:
+    complete
+    .text start:0x020ccf7c end:0x020ccf98
+
+
+src/Combat/Main/InitStruct020c7de4.cpp:
+    complete
+    .text start:0x020c7de4 end:0x020c7e0c
+
+
+src/Combat/Main/InitStructField0x10To0xE.cpp:
+    complete
+    .text start:0x020cc758 end:0x020cc780
+
+
+src/Combat/Main/InitTransformOrCopy020b9a2c.cpp:
+    complete
+    .text start:0x020b9a2c end:0x020b9a6c
+
+
+src/Combat/Main/InvalidateDataCacheRange.cpp:
+    complete
+    .text start:0x020c82b8 end:0x020c82d4
+
+
+src/Combat/Main/InvalidateInstructionCacheRange.cpp:
+    complete
+    .text start:0x020c832c end:0x020c8348
+
+
+src/Combat/Main/IsField0x64Equal2.cpp:
+    complete
+    .text start:0x020c7884 end:0x020c7898
+
+
+src/Combat/Main/LookupRangeEntry020b0eb4.cpp:
+    complete
+    .text start:0x020b0eb4 end:0x020b0f00
+
+
+src/Combat/Main/MakeZeroStruct020d2ce0.cpp:
+    complete
+    .text start:0x020d2ce0 end:0x020d2d00
+
+
+src/Combat/Main/MergeLowNibbleField.cpp:
+    complete
+    .text start:0x020d76fc end:0x020d771c
+
+
+src/Combat/Main/OrMaskedField24IntoField26.cpp:
+    complete
+    .text start:0x020d771c end:0x020d773c
+
+
+src/Combat/Main/PrependNode.cpp:
+    complete
+    .text start:0x020cee54 end:0x020cee68
+
+
+src/Combat/Main/RestoreInterrupts.cpp:
+    complete
+    .text start:0x020c9710 end:0x020c9728
+
+
+src/Combat/Main/RestoreInterruptsIrqAndFiq.cpp:
+    complete
+    .text start:0x020c973c end:0x020c9754
+
+
+src/Combat/Main/RunCallbackList.cpp:
+    complete
+    .text start:0x020cef0c end:0x020cef34
+
+
+src/Combat/Main/SetInnerFlag0x4At0x110.cpp:
+    complete
+    .text start:0x020bec10 end:0x020bec30
+
+
+src/Combat/Main/SetSharedWordDa0.cpp:
+    complete
+    .text start:0x020c86e8 end:0x020c86fc
+
+
+src/Combat/Main/SetSharedWordDc4.cpp:
+    complete
+    .text start:0x020c86d4 end:0x020c86e8
+
+
+src/Combat/Main/StoreMagnitudeAndSignFlag020c5128.cpp:
+    complete
+    .text start:0x020c5128 end:0x020c516c
+
+
+src/Combat/Main/StoreSignedPairWithFlag020c5100.cpp:
+    complete
+    .text start:0x020c5100 end:0x020c5128
+
+
+src/Combat/Main/StringLength.cpp:
+    complete
+    .text start:0x020d2ff0 end:0x020d3018
+
+
+src/Combat/Main/UnlinkHeadNode020c7234.cpp:
+    complete
+    .text start:0x020c7234 end:0x020c7268
+
+
+src/Combat/Main/UnlinkHeadNode020c72bc.cpp:
+    complete
+    .text start:0x020c72bc end:0x020c72ec
+
+
+src/Combat/Main/WaitForVCountZero.cpp:
+    complete
+    .text start:0x020c8348 end:0x020c8368
+
+
+src/Combat/Main/WriteByteIfRoom.cpp:
+    complete
+    .text start:0x020d3084 end:0x020d30b4
+
+
+src/Combat/Main/ZeroPairIfEitherZero.cpp:
+    complete
+    .text start:0x020cc68c end:0x020cc6ac
