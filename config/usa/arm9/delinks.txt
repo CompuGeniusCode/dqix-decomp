@@ -1545,3 +1545,28 @@ src/Combat/Main/InitListNode0x2037840.cpp:
 src/Combat/Main/IsListNodeAttached0x2037a50.cpp:
     complete
     .text start:0x02037a50 end:0x02037a64
+
+
+src/Combat/Main/CheckField0x14Or0x20Positive.cpp:
+    complete
+    .text start:0x0203b3c0 end:0x0203b400
+
+
+src/Combat/Main/CheckField0x14Positive.cpp:
+    complete
+    .text start:0x0203b398 end:0x0203b3ac
+
+
+src/Combat/Main/CheckField0x20Positive.cpp:
+    complete
+    .text start:0x0203b3ac end:0x0203b3c0
+
+
+src/Combat/Main/GetField0x10StateIfField0x14Positive.cpp:
+    complete
+    .text start:0x0203b400 end:0x0203b438
+
+
+src/Combat/Main/GetField0x1cStateIfField0x20Positive.cpp:
+    complete
+    .text start:0x0203b438 end:0x0203b470
