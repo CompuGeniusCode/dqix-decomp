@@ -1595,3 +1595,28 @@ src/Combat/Main/CopyFourHalfwords.cpp:
 src/Combat/Main/GetField0xe4IfFlag0x40.cpp:
     complete
     .text start:0x02033f44 end:0x02033f5c
+
+
+src/Combat/Main/GetField2eOrDefault02040adc.cpp:
+    complete
+    .text start:0x02040adc end:0x02040af0
+
+
+src/Combat/Main/GetFieldByFlagBit020415c4.cpp:
+    complete
+    .text start:0x020415c4 end:0x020415d8
+
+
+src/Combat/Main/GetFieldByFlagBit02041654.cpp:
+    complete
+    .text start:0x02041654 end:0x0204166c
+
+
+src/Combat/Main/GetValidElement02040468.cpp:
+    complete
+    .text start:0x02040468 end:0x020404ac
+
+
+src/Combat/Main/StoreToFirstNonNull02040bfc.cpp:
+    complete
+    .text start:0x02040bfc end:0x02040c2c
