@@ -4505,3 +4505,153 @@ src/Combat/Main/StoreVec3At0x34.cpp:
 src/Combat/Main/StoreVec3AtField0x50.cpp:
     complete
     .text start:0x0203db34 end:0x0203db44
+
+
+src/Combat/Main/AppendCappedElement02027b5c.cpp:
+    complete
+    .text start:0x02027b5c end:0x02027bac
+
+
+src/Combat/Main/AppendCappedElement02028170.cpp:
+    complete
+    .text start:0x02028170 end:0x020281d8
+
+
+src/Combat/Main/AppendElementCapped0201e4b0.cpp:
+    complete
+    .text start:0x0201e4b0 end:0x0201e518
+
+
+src/Combat/Main/AppendElementCapped0201e88c.cpp:
+    complete
+    .text start:0x0201e88c end:0x0201e8fc
+
+
+src/Combat/Main/AppendElementCapped0201f0f0.cpp:
+    complete
+    .text start:0x0201f0f0 end:0x0201f144
+
+
+src/Combat/Main/AppendRecordCapped0201e3c4.cpp:
+    complete
+    .text start:0x0201e3c4 end:0x0201e434
+
+
+src/Combat/Main/CheckAllPairsEqual0202811c.cpp:
+    complete
+    .text start:0x0202811c end:0x02028170
+
+
+src/Combat/Main/ClearByte0x63d6.cpp:
+    complete
+    .text start:0x020115c0 end:0x020115d0
+
+
+src/Combat/Main/ClearCombatantSlot.cpp:
+    complete
+    .text start:0x0200fd48 end:0x0200fd58
+
+
+src/Combat/Main/ClearFlag0x1ceBit0x1.cpp:
+    complete
+    .text start:0x020398a4 end:0x020398b4
+
+
+src/Combat/Main/ClearListHeadTail.cpp:
+    complete
+    .text start:0x02046958 end:0x02046968
+
+
+src/Combat/Main/CopyBlockTo0x26c.cpp:
+    complete
+    .text start:0x020398b4 end:0x020399a8
+
+
+src/Combat/Main/CopyBlockToField0xf0.cpp:
+    complete
+    .text start:0x0202ecc8 end:0x0202ecec
+
+
+src/Combat/Main/CopyGroupedBlocks0202ed0c.cpp:
+    complete
+    .text start:0x0202ed0c end:0x0202ed64
+
+
+src/Combat/Main/FindMatchingEntryIndex.cpp:
+    complete
+    .text start:0x02045c00 end:0x02045cac
+
+
+src/Combat/Main/GetField0x19cOrNull.cpp:
+    complete
+    .text start:0x02053dc0 end:0x02053dd0
+
+
+src/Combat/Main/GetField0x4OrNull.cpp:
+    complete
+    .text start:0x02055080 end:0x02055090
+
+
+src/Combat/Main/GetPointerAt0x32c.cpp:
+    complete
+    .text start:0x0200ffc0 end:0x0200ffd0
+
+
+src/Combat/Main/GetPointerAt0x330.cpp:
+    complete
+    .text start:0x0200ffd0 end:0x0200ffe0
+
+
+src/Combat/Main/IncrementByteAt0x184.cpp:
+    complete
+    .text start:0x020535f4 end:0x02053604
+
+
+src/Combat/Main/InitBlock02038508.cpp:
+    complete
+    .text start:0x02038508 end:0x02038598
+
+
+src/Combat/Main/InitStruct0201ce10.cpp:
+    complete
+    .text start:0x0201ce10 end:0x0201ce78
+
+
+src/Combat/Main/IsValueEqual12.cpp:
+    complete
+    .text start:0x02042190 end:0x020421a0
+
+
+src/Combat/Main/OrBitsIntoField0.cpp:
+    complete
+    .text start:0x020466e4 end:0x020466f4
+
+
+src/Combat/Main/RegisterCombatantSlot.cpp:
+    complete
+    .text start:0x0200fd38 end:0x0200fd48
+
+
+src/Combat/Main/SetFields0x44.cpp:
+    complete
+    .text start:0x020407b4 end:0x020407c4
+
+
+src/Combat/Main/SetFlag0x1ceBit0x1.cpp:
+    complete
+    .text start:0x02039894 end:0x020398a4
+
+
+src/Combat/Main/SetFlags0x180At0x18c.cpp:
+    complete
+    .text start:0x02054224 end:0x02054234
+
+
+src/Combat/Main/SetFlags0x1ce.cpp:
+    complete
+    .text start:0x0203979c end:0x020397ac
+
+
+src/Combat/Main/StoreThreeFields020556cc.cpp:
+    complete
+    .text start:0x020556cc end:0x020556dc
