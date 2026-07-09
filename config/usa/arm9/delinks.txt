@@ -1670,3 +1670,28 @@ src/Combat/Main/SetSubstructSize02042c3c.cpp:
 src/Combat/Main/SetSubstructXY02042c24.cpp:
     complete
     .text start:0x02042c24 end:0x02042c3c
+
+
+src/Combat/Main/ClearField0xc4KeepBit0x8000.cpp:
+    complete
+    .text start:0x0203409c end:0x020340b4
+
+
+src/Combat/Main/GetEntryFromList020347b4.cpp:
+    complete
+    .text start:0x020347b4 end:0x020347e0
+
+
+src/Combat/Main/GetVec3FromShortsAt0x5c.cpp:
+    complete
+    .text start:0x020374f0 end:0x02037528
+
+
+src/Combat/Main/ResetStruct02034d04.cpp:
+    complete
+    .text start:0x02034d04 end:0x02034d20
+
+
+src/Combat/Main/StoreVec3AsShortsAt0x5c.cpp:
+    complete
+    .text start:0x020374c4 end:0x020374e0
