@@ -5830,3 +5830,43 @@ src/Combat/Main/SetOrClearEntryFlags.cpp:
 src/Combat/Main/WriteGXFifoZeroBurst.cpp:
     complete
     .text start:0x020c56dc end:0x020c5770
+
+
+src/Combat/Main/BinarySearchByComparator020de650.cpp:
+    complete
+    .text start:0x020de650 end:0x020de6c8
+
+
+src/Combat/Main/GetField0xcBits24To29.cpp:
+    complete
+    .text start:0x020b71fc end:0x020b726c
+
+
+src/Combat/Main/GetNibbleField020de2a4.cpp:
+    complete
+    .text start:0x020de2a4 end:0x020de31c
+
+
+src/Combat/Main/IterateEntries020de7d0.cpp:
+    complete
+    .text start:0x020de7d0 end:0x020de824
+
+
+src/Combat/Main/MultiplyBy100.cpp:
+    complete
+    .text start:0x020de184 end:0x020de194
+
+
+src/Combat/Main/SetField0x4Low15Bits.cpp:
+    complete
+    .text start:0x020b700c end:0x020b708c
+
+
+src/Combat/Main/SetField0xcBits16To20.cpp:
+    complete
+    .text start:0x020b7184 end:0x020b71fc
+
+
+src/Combat/Main/SetField0xcBits24To29.cpp:
+    complete
+    .text start:0x020b710c end:0x020b7184
