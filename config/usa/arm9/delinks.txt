@@ -5215,3 +5215,48 @@ src/Combat/Main/SetFlagsAt0x244.cpp:
 src/Combat/Main/StoreValueViaPtrField0x4.cpp:
     complete
     .text start:0x0207e22c end:0x0207e23c
+
+
+src/Combat/Main/BinarySearch02070e60.cpp:
+    complete
+    .text start:0x02070e60 end:0x02070ee0
+
+
+src/Combat/Main/ClearNameTable.cpp:
+    complete
+    .text start:0x02048080 end:0x02048090
+
+
+src/Combat/Main/CopyElement02070ee0.cpp:
+    complete
+    .text start:0x02070ee0 end:0x02070f98
+
+
+src/Combat/Main/ForEachElement02070b0c.cpp:
+    complete
+    .text start:0x02070b0c end:0x02070b6c
+
+
+src/Combat/Main/GetElementCount02070fe4.cpp:
+    complete
+    .text start:0x02070fe4 end:0x02070ff4
+
+
+src/Combat/Main/GetLow15BitField020709c8.cpp:
+    complete
+    .text start:0x020709c8 end:0x020709d8
+
+
+src/Combat/Main/SetSubstructByte0x1d.cpp:
+    complete
+    .text start:0x020493b8 end:0x020493c8
+
+
+src/Combat/Main/SetSubstructByte0x1e.cpp:
+    complete
+    .text start:0x020493dc end:0x020493ec
+
+
+src/Combat/Main/SetSubstructByte0x1f.cpp:
+    complete
+    .text start:0x02049400 end:0x02049410
