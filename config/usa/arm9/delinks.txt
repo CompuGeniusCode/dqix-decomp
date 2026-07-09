@@ -4755,3 +4755,118 @@ src/Combat/Main/ZeroWordAndByte0206ee60.cpp:
 src/Combat/Main/ZeroWordAndByte0206ee70.cpp:
     complete
     .text start:0x0206ee70 end:0x0206ee80
+
+
+src/Combat/Main/AccumulateMaxWidth020305c8.cpp:
+    complete
+    .text start:0x020305c8 end:0x02030634
+
+
+src/Combat/Main/BinarySearchByKey02030a24.cpp:
+    complete
+    .text start:0x02030a24 end:0x02030a84
+
+
+src/Combat/Main/CanAdjustStatStageBit12.cpp:
+    complete
+    .text start:0x02087b3c end:0x02087b90
+
+
+src/Combat/Main/CanAdjustStatStageBit3.cpp:
+    complete
+    .text start:0x02087860 end:0x020878b4
+
+
+src/Combat/Main/CanAdjustStatStageBit6.cpp:
+    complete
+    .text start:0x02087954 end:0x020879a8
+
+
+src/Combat/Main/CanAdjustStatStageBit9.cpp:
+    complete
+    .text start:0x02087a48 end:0x02087a9c
+
+
+src/Combat/Main/ClearField0x18Flag0x20.cpp:
+    complete
+    .text start:0x02088dc8 end:0x02088dd8
+
+
+src/Combat/Main/ClearFlag0x100000.cpp:
+    complete
+    .text start:0x02088aa8 end:0x02088ab8
+
+
+src/Combat/Main/ClearFlag0x200000.cpp:
+    complete
+    .text start:0x02088af0 end:0x02088b00
+
+
+src/Combat/Main/CollectSetBitIndices020839dc.cpp:
+    complete
+    .text start:0x020839dc end:0x02083a50
+
+
+src/Combat/Main/ComputeAlignedValue020309d0.cpp:
+    complete
+    .text start:0x020309d0 end:0x02030a24
+
+
+src/Combat/Main/ComputeScaledSum0205bb84.cpp:
+    complete
+    .text start:0x0205bb84 end:0x0205bbcc
+
+
+src/Combat/Main/CopyRecord02030310.cpp:
+    complete
+    .text start:0x02030310 end:0x02030390
+
+
+src/Combat/Main/CopyStruct020836e4.cpp:
+    complete
+    .text start:0x020836e4 end:0x02083738
+
+
+src/Combat/Main/FindElementByC40205d81c.cpp:
+    complete
+    .text start:0x0205d81c end:0x0205d888
+
+
+src/Combat/Main/GetIndexedBlockPointer0208349c.cpp:
+    complete
+    .text start:0x0208349c end:0x02083508
+
+
+src/Combat/Main/LinkArrayPrevPointers0205cf78.cpp:
+    complete
+    .text start:0x0205cf78 end:0x0205cfd4
+
+
+src/Combat/Main/RemoveSlotShiftDown0208386c.cpp:
+    complete
+    .text start:0x0208386c end:0x020838c4
+
+
+src/Combat/Main/RemoveSlotValueAndCompact020838c4.cpp:
+    complete
+    .text start:0x020838c4 end:0x02083960
+
+
+src/Combat/Main/ResetStateFields02088338.cpp:
+    complete
+    .text start:0x02088338 end:0x02088390
+
+
+src/Combat/Main/ScaleVec3Fixed02030e2c.cpp:
+    complete
+    .text start:0x02030e2c end:0x02030e88
+
+
+src/Combat/Main/SetField0x18Flag0x20.cpp:
+    complete
+    .text start:0x02088db8 end:0x02088dc8
+
+
+src/Combat/Main/SetupPointerTable0205ba68.cpp:
+    complete
+    .text start:0x0205ba68 end:0x0205bacc
