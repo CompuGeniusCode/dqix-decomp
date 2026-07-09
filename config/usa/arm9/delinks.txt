@@ -5910,3 +5910,28 @@ src/Combat/Main/SetScaleTransformTranslate020b9e58.cpp:
 src/Combat/Main/SetScaleTransformTranslate020ba968.cpp:
     complete
     .text start:0x020ba968 end:0x020ba9e8
+
+
+src/Combat/Main/ClearBit0OfEntries.cpp:
+    complete
+    .text start:0x020b34f8 end:0x020b357c
+
+
+src/Combat/Main/GetAlignedSizeByCode020b2a6c.cpp:
+    complete
+    .text start:0x020b2a6c end:0x020b2acc
+
+
+src/Combat/Main/InsertNodeSorted020b2bc0.cpp:
+    complete
+    .text start:0x020b2bc0 end:0x020b2c78
+
+
+src/Combat/Main/RelocateOffsetAt0xc.cpp:
+    complete
+    .text start:0x020b0278 end:0x020b0288
+
+
+src/Combat/Main/SetBitsForFlaggedEntries020b2c78.cpp:
+    complete
+    .text start:0x020b2c78 end:0x020b2ce0
