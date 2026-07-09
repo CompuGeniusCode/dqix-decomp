@@ -4255,3 +4255,253 @@ src/Combat/Main/StoreFourShorts.cpp:
 src/Combat/Main/WriteEntryAtIndex.cpp:
     complete
     .text start:0x020e3b44 end:0x020e3b8c
+
+
+src/Combat/Main/ClearByte0x6480.cpp:
+    complete
+    .text start:0x020119e8 end:0x020119f8
+
+
+src/Combat/Main/ClearByte0xc1Flag0x4.cpp:
+    complete
+    .text start:0x020340f4 end:0x02034104
+
+
+src/Combat/Main/ClearField0x5cBit0.cpp:
+    complete
+    .text start:0x0203cea4 end:0x0203ceb4
+
+
+src/Combat/Main/ClearField0x98Bit0.cpp:
+    complete
+    .text start:0x0203d018 end:0x0203d028
+
+
+src/Combat/Main/ClearFlag0x10000InField0x6c.cpp:
+    complete
+    .text start:0x02037320 end:0x02037330
+
+
+src/Combat/Main/ClearFlag0x1InField0x6c.cpp:
+    complete
+    .text start:0x020373f8 end:0x02037408
+
+
+src/Combat/Main/ClearFlag0x1ceBit0x4.cpp:
+    complete
+    .text start:0x02039d58 end:0x02039d68
+
+
+src/Combat/Main/ClearFlag0x1ceBit0x8.cpp:
+    complete
+    .text start:0x02039dbc end:0x02039dcc
+
+
+src/Combat/Main/ClearFlag0x4At0xe0.cpp:
+    complete
+    .text start:0x02033fdc end:0x02033fec
+
+
+src/Combat/Main/ClearFlag0x80At0xc2.cpp:
+    complete
+    .text start:0x020340c4 end:0x020340d4
+
+
+src/Combat/Main/ClearHalfword0x63d8.cpp:
+    complete
+    .text start:0x02011600 end:0x02011610
+
+
+src/Combat/Main/ClearHalfword0x63da.cpp:
+    complete
+    .text start:0x02011634 end:0x02011644
+
+
+src/Combat/Main/GetByte0x40Bit0.cpp:
+    complete
+    .text start:0x02037170 end:0x02037180
+
+
+src/Combat/Main/GetByte0x40Bit1.cpp:
+    complete
+    .text start:0x02037190 end:0x020371a0
+
+
+src/Combat/Main/GetByte0x40Bit2.cpp:
+    complete
+    .text start:0x02037180 end:0x02037190
+
+
+src/Combat/Main/GetField0x40Bits3To7.cpp:
+    complete
+    .text start:0x02037464 end:0x02037474
+
+
+src/Combat/Main/GetField0x41Bits0To4.cpp:
+    complete
+    .text start:0x02037474 end:0x02037484
+
+
+src/Combat/Main/GetFlag0x80At0xc2.cpp:
+    complete
+    .text start:0x020340d4 end:0x020340e4
+
+
+src/Combat/Main/GetScaledHalfwordFromField8.cpp:
+    complete
+    .text start:0x02035544 end:0x02035554
+
+
+src/Combat/Main/SetBitsInField0.cpp:
+    complete
+    .text start:0x0202e08c end:0x0202e09c
+
+
+src/Combat/Main/SetBitsInField0x6c.cpp:
+    complete
+    .text start:0x02037a94 end:0x02037aa4
+
+
+src/Combat/Main/SetBitsInField4.cpp:
+    complete
+    .text start:0x0203b4d8 end:0x0203b4e8
+
+
+src/Combat/Main/SetBitsInField8.cpp:
+    complete
+    .text start:0x0203b510 end:0x0203b520
+
+
+src/Combat/Main/SetBitsInWord.cpp:
+    complete
+    .text start:0x0203b4a0 end:0x0203b4b0
+
+
+src/Combat/Main/SetByte0x63d5.cpp:
+    complete
+    .text start:0x02012040 end:0x02012050
+
+
+src/Combat/Main/SetByte0x6480.cpp:
+    complete
+    .text start:0x020119d8 end:0x020119e8
+
+
+src/Combat/Main/SetByte0xc1Flag0x4.cpp:
+    complete
+    .text start:0x020340e4 end:0x020340f4
+
+
+src/Combat/Main/SetField0x5cFlag0x4.cpp:
+    complete
+    .text start:0x0203ceb4 end:0x0203cec4
+
+
+src/Combat/Main/SetField0x98Bit0.cpp:
+    complete
+    .text start:0x0203d008 end:0x0203d018
+
+
+src/Combat/Main/SetFields0x10To0x18.cpp:
+    complete
+    .text start:0x0202e5c8 end:0x0202e5d8
+
+
+src/Combat/Main/SetFlag0x10000InField0x6c.cpp:
+    complete
+    .text start:0x02037310 end:0x02037320
+
+
+src/Combat/Main/SetFlag0x1At0x168.cpp:
+    complete
+    .text start:0x0202ecec end:0x0202ecfc
+
+
+src/Combat/Main/SetFlag0x1ceBit0x10.cpp:
+    complete
+    .text start:0x02039dd8 end:0x02039de8
+
+
+src/Combat/Main/SetFlag0x1ceBit0x4.cpp:
+    complete
+    .text start:0x02039d48 end:0x02039d58
+
+
+src/Combat/Main/SetFlag0x4At0x168.cpp:
+    complete
+    .text start:0x0202ea3c end:0x0202ea4c
+
+
+src/Combat/Main/SetFlag0x4At0xe0.cpp:
+    complete
+    .text start:0x02033fcc end:0x02033fdc
+
+
+src/Combat/Main/SetFlag0x6cBit0.cpp:
+    complete
+    .text start:0x02037408 end:0x02037418
+
+
+src/Combat/Main/SetFlag0x80At0xc2.cpp:
+    complete
+    .text start:0x020340b4 end:0x020340c4
+
+
+src/Combat/Main/SetShorts0x5cTo0x60.cpp:
+    complete
+    .text start:0x020374e0 end:0x020374f0
+
+
+src/Combat/Main/SetSubstructByte0x4c.cpp:
+    complete
+    .text start:0x02049458 end:0x02049468
+
+
+src/Combat/Main/SetSubstructByte0x4d.cpp:
+    complete
+    .text start:0x0204947c end:0x0204948c
+
+
+src/Combat/Main/SetSubstructByte0x6c.cpp:
+    complete
+    .text start:0x0204a030 end:0x0204a040
+
+
+src/Combat/Main/SetSubstructWord0x68.cpp:
+    complete
+    .text start:0x0204a00c end:0x0204a01c
+
+
+src/Combat/Main/SetVec3At0x1c.cpp:
+    complete
+    .text start:0x0203a46c end:0x0203a47c
+
+
+src/Combat/Main/SetWord0x18ClearByte0x1f.cpp:
+    complete
+    .text start:0x0204b11c end:0x0204b12c
+
+
+src/Combat/Main/ShiftField0x1cInto0x20.cpp:
+    complete
+    .text start:0x020371a0 end:0x020371b0
+
+
+src/Combat/Main/StoreFields0x1e4And0x1e8IfNonZero.cpp:
+    complete
+    .text start:0x0202ea10 end:0x0202ea20
+
+
+src/Combat/Main/StoreValueViaField0x14.cpp:
+    complete
+    .text start:0x0203db24 end:0x0203db34
+
+
+src/Combat/Main/StoreVec3At0x34.cpp:
+    complete
+    .text start:0x0203a47c end:0x0203a48c
+
+
+src/Combat/Main/StoreVec3AtField0x50.cpp:
+    complete
+    .text start:0x0203db34 end:0x0203db44
