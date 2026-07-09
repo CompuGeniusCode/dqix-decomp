@@ -5430,3 +5430,88 @@ src/Combat/Main/GetArrayByteSize020dffb8.cpp:
 src/Combat/Main/InsertNodeAfterHead.cpp:
     complete
     .text start:0x02046a3c end:0x02046a8c
+
+
+src/Combat/Main/AppendElement020999f0.cpp:
+    complete
+    .text start:0x020999f0 end:0x02099a68
+
+
+src/Combat/Main/AppendElementCapped02072560.cpp:
+    complete
+    .text start:0x02072560 end:0x020725d8
+
+
+src/Combat/Main/AppendNamedEntry020d3cf0.cpp:
+    complete
+    .text start:0x020d3cf0 end:0x020d3d78
+
+
+src/Combat/Main/BuildOffsetTable02072e34.cpp:
+    complete
+    .text start:0x02072e34 end:0x02072e94
+
+
+src/Combat/Main/CheckFieldsInRange020d5158.cpp:
+    complete
+    .text start:0x020d5158 end:0x020d51a8
+
+
+src/Combat/Main/ClearField0x8020733c8.cpp:
+    complete
+    .text start:0x020733c8 end:0x020733d8
+
+
+src/Combat/Main/CopyFieldsWithFlags02048004.cpp:
+    complete
+    .text start:0x02048004 end:0x02048080
+
+
+src/Combat/Main/CopyStruct02098834.cpp:
+    complete
+    .text start:0x02098834 end:0x0209890c
+
+
+src/Combat/Main/FindEntryByHalfword0205a3d0.cpp:
+    complete
+    .text start:0x0205a3d0 end:0x0205a42c
+
+
+src/Combat/Main/FindKeyGetBitflag02099a68.cpp:
+    complete
+    .text start:0x02099a68 end:0x02099ac4
+
+
+src/Combat/Main/FindRectContainingPoint0205b1ac.cpp:
+    complete
+    .text start:0x0205b1ac end:0x0205b20c
+
+
+src/Combat/Main/GetByte0x150Bit6.cpp:
+    complete
+    .text start:0x020d805c end:0x020d806c
+
+
+src/Combat/Main/InsertOrShiftShort02099554.cpp:
+    complete
+    .text start:0x02099554 end:0x020995b0
+
+
+src/Combat/Main/IsPrefixMatch020d857c.cpp:
+    complete
+    .text start:0x020d857c end:0x020d85dc
+
+
+src/Combat/Main/MultiplyBy10.cpp:
+    complete
+    .text start:0x020de174 end:0x020de184
+
+
+src/Combat/Main/PruneUnflaggedGroups020722a4.cpp:
+    complete
+    .text start:0x020722a4 end:0x0207235c
+
+
+src/Combat/Main/UpdateRankLevel020989cc.cpp:
+    complete
+    .text start:0x020989cc end:0x02098a84
