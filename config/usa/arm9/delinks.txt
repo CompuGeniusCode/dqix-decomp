@@ -4655,3 +4655,103 @@ src/Combat/Main/SetFlags0x1ce.cpp:
 src/Combat/Main/StoreThreeFields020556cc.cpp:
     complete
     .text start:0x020556cc end:0x020556dc
+
+
+src/Combat/Main/BinarySearchByComparator.cpp:
+    complete
+    .text start:0x0206f470 end:0x0206f4f0
+
+
+src/Combat/Main/BinarySearchByComparator02079e60.cpp:
+    complete
+    .text start:0x02079e60 end:0x02079ee0
+
+
+src/Combat/Main/CheckBoundsSeparated0203109c.cpp:
+    complete
+    .text start:0x0203109c end:0x02031118
+
+
+src/Combat/Main/CheckPointOutsideBounds02031118.cpp:
+    complete
+    .text start:0x02031118 end:0x02031188
+
+
+src/Combat/Main/ClearMatchingEntries020159c0.cpp:
+    complete
+    .text start:0x020159c0 end:0x02015a2c
+
+
+src/Combat/Main/CopyBitFields020795e8.cpp:
+    complete
+    .text start:0x020795e8 end:0x0207964c
+
+
+src/Combat/Main/CopyBlocksSetFlag0x40.cpp:
+    complete
+    .text start:0x02033edc end:0x02033f2c
+
+
+src/Combat/Main/CopyCountedBytesToIntArray02010834.cpp:
+    complete
+    .text start:0x02010834 end:0x02010890
+
+
+src/Combat/Main/FindCombatantByField0x16a.cpp:
+    complete
+    .text start:0x0200ffe0 end:0x02010038
+
+
+src/Combat/Main/FindEntryByKeys02019508.cpp:
+    complete
+    .text start:0x02019508 end:0x02019568
+
+
+src/Combat/Main/FixedVec3DistanceSq.cpp:
+    complete
+    .text start:0x02030fe4 end:0x02031054
+
+
+src/Combat/Main/Get28ByteElementAt0x334.cpp:
+    complete
+    .text start:0x0206ea7c end:0x0206ea8c
+
+
+src/Combat/Main/GetLow12BitsAt0x4.cpp:
+    complete
+    .text start:0x020797e8 end:0x020797f8
+
+
+src/Combat/Main/GetLow12BitsTimes8.cpp:
+    complete
+    .text start:0x02079ce8 end:0x02079cf8
+
+
+src/Combat/Main/GetLow8BitField.cpp:
+    complete
+    .text start:0x020797f8 end:0x02079808
+
+
+src/Combat/Main/InitFields02012244.cpp:
+    complete
+    .text start:0x02012244 end:0x02012298
+
+
+src/Combat/Main/MulFixedVec3.cpp:
+    complete
+    .text start:0x02030e88 end:0x02030ef0
+
+
+src/Combat/Main/SetIntIntShortAt0xc.cpp:
+    complete
+    .text start:0x02066ce0 end:0x02066cf0
+
+
+src/Combat/Main/ZeroWordAndByte0206ee60.cpp:
+    complete
+    .text start:0x0206ee60 end:0x0206ee70
+
+
+src/Combat/Main/ZeroWordAndByte0206ee70.cpp:
+    complete
+    .text start:0x0206ee70 end:0x0206ee80
