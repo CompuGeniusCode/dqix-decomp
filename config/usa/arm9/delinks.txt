@@ -5780,3 +5780,53 @@ src/Combat/Main/PackControlWord020e197c.cpp:
 src/Combat/Main/SetFields020e1374.cpp:
     complete
     .text start:0x020e1374 end:0x020e1384
+
+
+src/Combat/Main/AccumulateScaledVec3.cpp:
+    complete
+    .text start:0x020b3b3c end:0x020b3bac
+
+
+src/Combat/Main/GetBg2CharBaseAddr.cpp:
+    complete
+    .text start:0x020c4fb4 end:0x020c5004
+
+
+src/Combat/Main/GetBg3CharBaseAddr.cpp:
+    complete
+    .text start:0x020c5044 end:0x020c509c
+
+
+src/Combat/Main/GetBg3ScreenBaseAddr.cpp:
+    complete
+    .text start:0x020c4e14 end:0x020c4e98
+
+
+src/Combat/Main/InsertNodeSorted.cpp:
+    complete
+    .text start:0x020c71bc end:0x020c7234
+
+
+src/Combat/Main/InvokeCallbackForFlaggedEntry.cpp:
+    complete
+    .text start:0x020b3ad0 end:0x020b3b3c
+
+
+src/Combat/Main/OrCallbackResultForFlaggedEntry.cpp:
+    complete
+    .text start:0x020b3f98 end:0x020b4020
+
+
+src/Combat/Main/SetBitsForFlaggedEntries.cpp:
+    complete
+    .text start:0x020b4204 end:0x020b426c
+
+
+src/Combat/Main/SetOrClearEntryFlags.cpp:
+    complete
+    .text start:0x020b6ebc end:0x020b6f64
+
+
+src/Combat/Main/WriteGXFifoZeroBurst.cpp:
+    complete
+    .text start:0x020c56dc end:0x020c5770
