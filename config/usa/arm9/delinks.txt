@@ -1155,3 +1155,78 @@ src/Combat/Main/SetBitsInField0x63dc.cpp:
 src/Combat/Main/SetFlag0x5cccBit0.cpp:
     complete
     .text start:0x02011544 end:0x0201155c
+
+
+src/Combat/Main/AppendNodeToList020130e0.cpp:
+    complete
+    .text start:0x020130e0 end:0x0201310c
+
+
+src/Combat/Main/ClampPositionToBounds0202630c.cpp:
+    complete
+    .text start:0x0202630c end:0x02026348
+
+
+src/Combat/Main/ClearBit02026394.cpp:
+    complete
+    .text start:0x02026394 end:0x020263b0
+
+
+src/Combat/Main/ClearBytes0x50To0x53.cpp:
+    complete
+    .text start:0x02012780 end:0x02012798
+
+
+src/Combat/Main/ClearFlagBytes02017d7c.cpp:
+    complete
+    .text start:0x02017d7c end:0x02017d90
+
+
+src/Combat/Main/GetNodeAtDepth020196fc.cpp:
+    complete
+    .text start:0x020196fc end:0x02019728
+
+
+src/Combat/Main/InitTrackerFields02012ff0.cpp:
+    complete
+    .text start:0x02012ff0 end:0x02013018
+
+
+src/Combat/Main/IsWithinRect.cpp:
+    complete
+    .text start:0x02012734 end:0x02012780
+
+
+src/Combat/Main/SelectCoordsByFlag0x24.cpp:
+    complete
+    .text start:0x02012a84 end:0x02012aac
+
+
+src/Combat/Main/SetBit020263b0.cpp:
+    complete
+    .text start:0x020263b0 end:0x020263c8
+
+
+src/Combat/Main/SetBit02026bc8.cpp:
+    complete
+    .text start:0x02026bc8 end:0x02026bdc
+
+
+src/Combat/Main/SetBoolFlag020263c8.cpp:
+    complete
+    .text start:0x020263c8 end:0x020263dc
+
+
+src/Combat/Main/SetFlagBytes02017d68.cpp:
+    complete
+    .text start:0x02017d68 end:0x02017d7c
+
+
+src/Combat/Main/TestFlag0SetAndFlag1Clear.cpp:
+    complete
+    .text start:0x02012444 end:0x02012468
+
+
+src/Combat/Main/TestFlagMask.cpp:
+    complete
+    .text start:0x02012430 end:0x02012444
