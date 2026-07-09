@@ -1720,3 +1720,28 @@ src/Combat/Main/SetField0x64RoundedTo256.cpp:
 src/Combat/Main/SetOrClearFlag0x8.cpp:
     complete
     .text start:0x0203cec4 end:0x0203cedc
+
+
+src/Combat/Main/ClearFlags020466f4.cpp:
+    complete
+    .text start:0x020466f4 end:0x02046708
+
+
+src/Combat/Main/PushToRingBuffer020457e8.cpp:
+    complete
+    .text start:0x020457e8 end:0x02045824
+
+
+src/Combat/Main/SetRingBufferSlot02045824.cpp:
+    complete
+    .text start:0x02045824 end:0x02045864
+
+
+src/Combat/Main/TestFlags02046708.cpp:
+    complete
+    .text start:0x02046708 end:0x0204671c
+
+
+src/Combat/Main/WriteHalfwordToStream02044974.cpp:
+    complete
+    .text start:0x02044974 end:0x020449a4
