@@ -5555,3 +5555,23 @@ src/Combat/Main/InvokeCallbackPerElement020e545c.cpp:
 src/Combat/Main/MarkDuplicateOrders02097798.cpp:
     complete
     .text start:0x02097798 end:0x02097844
+
+
+src/Combat/Main/CheckListStableAndField8LtField402057854.cpp:
+    complete
+    .text start:0x02057854 end:0x020578e8
+
+
+src/Combat/Main/ClearField0And40205a234.cpp:
+    complete
+    .text start:0x0205a234 end:0x0205a244
+
+
+src/Combat/Main/ClearField0And40205a244.cpp:
+    complete
+    .text start:0x0205a244 end:0x0205a254
+
+
+src/Combat/Main/CollectEntriesMatchingField0xd802058680.cpp:
+    complete
+    .text start:0x02058680 end:0x02058704
