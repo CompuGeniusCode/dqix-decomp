@@ -5870,3 +5870,43 @@ src/Combat/Main/SetField0xcBits16To20.cpp:
 src/Combat/Main/SetField0xcBits24To29.cpp:
     complete
     .text start:0x020b710c end:0x020b7184
+
+
+src/Combat/Main/BcdToBinary.cpp:
+    complete
+    .text start:0x020cf7e4 end:0x020cf854
+
+
+src/Combat/Main/CopySinkClamped.cpp:
+    complete
+    .text start:0x020d3108 end:0x020d3160
+
+
+src/Combat/Main/FillSinkClamped.cpp:
+    complete
+    .text start:0x020d30b4 end:0x020d3108
+
+
+src/Combat/Main/FindSubstring.cpp:
+    complete
+    .text start:0x020d2f88 end:0x020d2ff0
+
+
+src/Combat/Main/GetRelativeBlockPointer020b7694.cpp:
+    complete
+    .text start:0x020b7694 end:0x020b76a4
+
+
+src/Combat/Main/GetResDictDataByIndex020b76e4.cpp:
+    complete
+    .text start:0x020b76e4 end:0x020b7740
+
+
+src/Combat/Main/SetScaleTransformTranslate020b9e58.cpp:
+    complete
+    .text start:0x020b9e58 end:0x020b9ed4
+
+
+src/Combat/Main/SetScaleTransformTranslate020ba968.cpp:
+    complete
+    .text start:0x020ba968 end:0x020ba9e8
