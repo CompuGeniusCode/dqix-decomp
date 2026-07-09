@@ -1375,3 +1375,48 @@ src/Combat/Main/IsFlag10088Set.cpp:
 src/Combat/Main/SetBoolFlagAt558.cpp:
     complete
     .text start:0x02026f08 end:0x02026f20
+
+
+src/Combat/Main/ClearFields0x20e0x210.cpp:
+    complete
+    .text start:0x0202e948 end:0x0202e95c
+
+
+src/Combat/Main/ClearThreeHalfwords.cpp:
+    complete
+    .text start:0x0202e98c end:0x0202e9a4
+
+
+src/Combat/Main/ClearTwoWordsAndFlag0x4.cpp:
+    complete
+    .text start:0x0202ea20 end:0x0202ea3c
+
+
+src/Combat/Main/OrByte0x1029With0x30ClearField0x1034.cpp:
+    complete
+    .text start:0x0202c778 end:0x0202c794
+
+
+src/Combat/Main/ReadFields0x70To0x78.cpp:
+    complete
+    .text start:0x0202e7d4 end:0x0202e7f0
+
+
+src/Combat/Main/SetField0To5AndField0x1008To1.cpp:
+    complete
+    .text start:0x0202b828 end:0x0202b840
+
+
+src/Combat/Main/SetField0x7cClearFields0x1ec0x1ee.cpp:
+    complete
+    .text start:0x0202e874 end:0x0202e88c
+
+
+src/Combat/Main/SetupField440Type1.cpp:
+    complete
+    .text start:0x0202f6a4 end:0x0202f6d4
+
+
+src/Combat/Main/SetupField440Type3.cpp:
+    complete
+    .text start:0x0202f6d4 end:0x0202f700
