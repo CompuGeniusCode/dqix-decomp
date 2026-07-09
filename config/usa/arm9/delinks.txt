@@ -2960,3 +2960,303 @@ src/Combat/Main/TestBit3At0x2f4.cpp:
 src/Combat/Main/TestBit4At0x2f4.cpp:
     complete
     .text start:0x02085128 end:0x02085154
+
+
+src/Combat/Main/AppendNodeToCountedList0208e778.cpp:
+    complete
+    .text start:0x0208e778 end:0x0208e7a4
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088840.cpp:
+    complete
+    .text start:0x02088840 end:0x02088854
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088890.cpp:
+    complete
+    .text start:0x02088890 end:0x020888a4
+
+
+src/Combat/Main/CheckField0x14Bit0Clear020888e0.cpp:
+    complete
+    .text start:0x020888e0 end:0x020888f4
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088980.cpp:
+    complete
+    .text start:0x02088980 end:0x02088994
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088a20.cpp:
+    complete
+    .text start:0x02088a20 end:0x02088a34
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088b00.cpp:
+    complete
+    .text start:0x02088b00 end:0x02088b14
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088b50.cpp:
+    complete
+    .text start:0x02088b50 end:0x02088b64
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088d10.cpp:
+    complete
+    .text start:0x02088d10 end:0x02088d24
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02088d68.cpp:
+    complete
+    .text start:0x02088d68 end:0x02088d7c
+
+
+src/Combat/Main/CheckField0x14Bit0Clear020890c0.cpp:
+    complete
+    .text start:0x020890c0 end:0x020890d4
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02089110.cpp:
+    complete
+    .text start:0x02089110 end:0x02089124
+
+
+src/Combat/Main/CheckField0x14Bit0Clear02089160.cpp:
+    complete
+    .text start:0x02089160 end:0x02089174
+
+
+src/Combat/Main/CheckField0x14FiveFlagsClear02088e04.cpp:
+    complete
+    .text start:0x02088e04 end:0x02088e48
+
+
+src/Combat/Main/CheckFlag0x1ClearAndFlag0x20000Clear02088bf0.cpp:
+    complete
+    .text start:0x02088bf0 end:0x02088c10
+
+
+src/Combat/Main/ClearField0xd0AndSetFlag0x1IfByte0xd4Not2.cpp:
+    complete
+    .text start:0x0208be94 end:0x0208beb4
+
+
+src/Combat/Main/ClearFlag0x10000000AndBytes.cpp:
+    complete
+    .text start:0x02088a04 end:0x02088a20
+
+
+src/Combat/Main/ClearFlag0x1000AndBytes7eA1.cpp:
+    complete
+    .text start:0x02088e64 end:0x02088e80
+
+
+src/Combat/Main/ClearFlag0x100AndBytes.cpp:
+    complete
+    .text start:0x020888c4 end:0x020888e0
+
+
+src/Combat/Main/ClearFlag0x100AndBytes7dA0.cpp:
+    complete
+    .text start:0x02088d9c end:0x02088db8
+
+
+src/Combat/Main/ClearFlag0x10AndBytes.cpp:
+    complete
+    .text start:0x02088d4c end:0x02088d68
+
+
+src/Combat/Main/ClearFlag0x20000000AndBytes0x64And0x87.cpp:
+    complete
+    .text start:0x02088a54 end:0x02088a70
+
+
+src/Combat/Main/ClearFlag0x200ClearByte0x78.cpp:
+    complete
+    .text start:0x020890f4 end:0x02089110
+
+
+src/Combat/Main/ClearFlag0x40000000AndBytes.cpp:
+    complete
+    .text start:0x02088b84 end:0x02088ba0
+
+
+src/Combat/Main/ClearFlag0x4000000AndBytes.cpp:
+    complete
+    .text start:0x02088964 end:0x02088980
+
+
+src/Combat/Main/ClearFlag0x400000AndBytes.cpp:
+    complete
+    .text start:0x02088b34 end:0x02088b50
+
+
+src/Combat/Main/ClearFlag0x400AndBytes79And9c.cpp:
+    complete
+    .text start:0x02089144 end:0x02089160
+
+
+src/Combat/Main/ClearFlag0x40AndBytes02088874.cpp:
+    complete
+    .text start:0x02088874 end:0x02088890
+
+
+src/Combat/Main/ClearFlag0x80000000AndBytes02088bd4.cpp:
+    complete
+    .text start:0x02088bd4 end:0x02088bf0
+
+
+src/Combat/Main/ClearFlag0x8000000AndBytes.cpp:
+    complete
+    .text start:0x020889b4 end:0x020889d0
+
+
+src/Combat/Main/ClearFlag0x800AndBytes7cAnd9f.cpp:
+    complete
+    .text start:0x02089194 end:0x020891b0
+
+
+src/Combat/Main/ClearFlag0x8AndBytes.cpp:
+    complete
+    .text start:0x02088cf4 end:0x02088d10
+
+
+src/Combat/Main/ClearFlags0x3bAnd0x3cAndByte0x3a.cpp:
+    complete
+    .text start:0x02089758 end:0x0208977c
+
+
+src/Combat/Main/CopyStruct0208e000.cpp:
+    complete
+    .text start:0x0208e000 end:0x0208e024
+
+
+src/Combat/Main/FindNodeById0208e06c.cpp:
+    complete
+    .text start:0x0208e06c end:0x0208e0a8
+
+
+src/Combat/Main/FindNthNodeByKind0208e024.cpp:
+    complete
+    .text start:0x0208e024 end:0x0208e06c
+
+
+src/Combat/Main/IsFlag0x14Bit0Clear020889d0.cpp:
+    complete
+    .text start:0x020889d0 end:0x020889e4
+
+
+src/Combat/Main/IsFlag0x14Bit0Clear02088ba0.cpp:
+    complete
+    .text start:0x02088ba0 end:0x02088bb4
+
+
+src/Combat/Main/IsFlag0x14Bit0Clear02088cb8.cpp:
+    complete
+    .text start:0x02088cb8 end:0x02088ccc
+
+
+src/Combat/Main/ResetFields14And18KeepFlag0x4.cpp:
+    complete
+    .text start:0x0208902c end:0x02089060
+
+
+src/Combat/Main/ResetStruct0208d51c.cpp:
+    complete
+    .text start:0x0208d51c end:0x0208d540
+
+
+src/Combat/Main/SetByte0x62AndFlag0x8000000.cpp:
+    complete
+    .text start:0x02088994 end:0x020889b4
+
+
+src/Combat/Main/SetByte0x63AndFlag0x10000000.cpp:
+    complete
+    .text start:0x020889e4 end:0x02088a04
+
+
+src/Combat/Main/SetByte0x64To4AndFlag0x20000000.cpp:
+    complete
+    .text start:0x02088a34 end:0x02088a54
+
+
+src/Combat/Main/SetByte0x66AndFlag0x4000000.cpp:
+    complete
+    .text start:0x02088944 end:0x02088964
+
+
+src/Combat/Main/SetByte0x78SetFlag0x200.cpp:
+    complete
+    .text start:0x020890d4 end:0x020890f4
+
+
+src/Combat/Main/SetByte0x79SetFlag0x400.cpp:
+    complete
+    .text start:0x02089124 end:0x02089144
+
+
+src/Combat/Main/SetByte0x7cAndFlag0x800.cpp:
+    complete
+    .text start:0x02089174 end:0x02089194
+
+
+src/Combat/Main/SetByte0x7dSetFlag0x100.cpp:
+    complete
+    .text start:0x02088d7c end:0x02088d9c
+
+
+src/Combat/Main/SetByte0x7eSetFlag0x1000.cpp:
+    complete
+    .text start:0x02088e48 end:0x02088e64
+
+
+src/Combat/Main/SetField0xacMinusOneClearField0xb0.cpp:
+    complete
+    .text start:0x0208b4c0 end:0x0208b4d4
+
+
+src/Combat/Main/SetFlag0x100AndBytes.cpp:
+    complete
+    .text start:0x020888a4 end:0x020888c4
+
+
+src/Combat/Main/SetFlag0x200000ClearFlag0x100000.cpp:
+    complete
+    .text start:0x02088adc end:0x02088af0
+
+
+src/Combat/Main/SetFlag0x2IfByte0xd4Not3.cpp:
+    complete
+    .text start:0x0208beb4 end:0x0208becc
+
+
+src/Combat/Main/SetFlag0x40000000AndBytes.cpp:
+    complete
+    .text start:0x02088b64 end:0x02088b84
+
+
+src/Combat/Main/SetFlag0x400000AndBytes.cpp:
+    complete
+    .text start:0x02088b14 end:0x02088b34
+
+
+src/Combat/Main/SetFlag0x40AndBytes.cpp:
+    complete
+    .text start:0x02088854 end:0x02088874
+
+
+src/Combat/Main/SetFlag0x80000000AndBytes02088bb4.cpp:
+    complete
+    .text start:0x02088bb4 end:0x02088bd4
+
+
+src/Combat/Main/SetState0xd4ByDaFlags.cpp:
+    complete
+    .text start:0x0208cf98 end:0x0208cfcc
+
+
+src/Combat/Main/ToggleBit0AtByte0x3c.cpp:
+    complete
+    .text start:0x020891b0 end:0x020891cc
