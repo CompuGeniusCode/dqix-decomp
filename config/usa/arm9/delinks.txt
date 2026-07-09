@@ -2370,3 +2370,293 @@ src/Combat/Main/TestBitInArray0x1524.cpp:
 src/Combat/Main/ToUpperBounded.cpp:
     complete
     .text start:0x02067f5c end:0x02067f9c
+
+
+src/Combat/Main/AppendChildNode.cpp:
+    complete
+    .text start:0x0207af90 end:0x0207afbc
+
+
+src/Combat/Main/AppendNodeToCountedList.cpp:
+    complete
+    .text start:0x0207bfac end:0x0207bfd8
+
+
+src/Combat/Main/AppendShortWordPair02072a28.cpp:
+    complete
+    .text start:0x02072a28 end:0x02072a68
+
+
+src/Combat/Main/ApplyFields90And94SetFlag0x2.cpp:
+    complete
+    .text start:0x0207eb9c end:0x0207ebc4
+
+
+src/Combat/Main/CheckByte0x19d8Zero.cpp:
+    complete
+    .text start:0x0206898c end:0x020689a4
+
+
+src/Combat/Main/CheckField0Ptr0x8Bit27Clear.cpp:
+    complete
+    .text start:0x02068928 end:0x02068954
+
+
+src/Combat/Main/CheckField0x10Ptr0x8Bit27Clear.cpp:
+    complete
+    .text start:0x02068954 end:0x02068980
+
+
+src/Combat/Main/CheckField0x17dBits4And5Equal0207959c.cpp:
+    complete
+    .text start:0x0207959c end:0x020795cc
+
+
+src/Combat/Main/CheckField0x8b0NotZeroOrOne.cpp:
+    complete
+    .text start:0x02068b7c end:0x02068b94
+
+
+src/Combat/Main/CheckField0x8b4NotZeroOrOne.cpp:
+    complete
+    .text start:0x02068b94 end:0x02068bac
+
+
+src/Combat/Main/CheckFields0And10SetAndDiffer.cpp:
+    complete
+    .text start:0x020688fc end:0x02068928
+
+
+src/Combat/Main/ClearListHeader.cpp:
+    complete
+    .text start:0x02071be8 end:0x02071c00
+
+
+src/Combat/Main/ClearState02070508.cpp:
+    complete
+    .text start:0x02070508 end:0x0207051c
+
+
+src/Combat/Main/CopyFiveFields020823e4.cpp:
+    complete
+    .text start:0x020823e4 end:0x02082410
+
+
+src/Combat/Main/CopyInternalFields0207df50.cpp:
+    complete
+    .text start:0x0207df50 end:0x0207df90
+
+
+src/Combat/Main/CopyStruct02082d38.cpp:
+    complete
+    .text start:0x02082d38 end:0x02082d6c
+
+
+src/Combat/Main/FindElementWithByte0xc4Is0xff.cpp:
+    complete
+    .text start:0x02081de0 end:0x02081e18
+
+
+src/Combat/Main/FindEntryByFlagByte.cpp:
+    complete
+    .text start:0x0207d9f4 end:0x0207da30
+
+
+src/Combat/Main/FindEntryByHalfword.cpp:
+    complete
+    .text start:0x0207d9bc end:0x0207d9f4
+
+
+src/Combat/Main/FindEntryById020725d8.cpp:
+    complete
+    .text start:0x020725d8 end:0x02072618
+
+
+src/Combat/Main/FindEntryByKey02071d60.cpp:
+    complete
+    .text start:0x02071d60 end:0x02071da4
+
+
+src/Combat/Main/FindNodeByByteId.cpp:
+    complete
+    .text start:0x0206db20 end:0x0206db48
+
+
+src/Combat/Main/FindNodeByIdWithIndex.cpp:
+    complete
+    .text start:0x0207bfd8 end:0x0207c01c
+
+
+src/Combat/Main/GetBitmapPixel.cpp:
+    complete
+    .text start:0x0206eaec end:0x0206eb20
+
+
+src/Combat/Main/GetByteFromArray0xc28.cpp:
+    complete
+    .text start:0x0207c694 end:0x0207c6a8
+
+
+src/Combat/Main/GetElementIfInBounds.cpp:
+    complete
+    .text start:0x02070f98 end:0x02070fd0
+
+
+src/Combat/Main/GetElementStride0x18.cpp:
+    complete
+    .text start:0x0207f100 end:0x0207f12c
+
+
+src/Combat/Main/GetEntry3Bytes.cpp:
+    complete
+    .text start:0x0206dee8 end:0x0206df14
+
+
+src/Combat/Main/GetEntryArrayByteSize.cpp:
+    complete
+    .text start:0x0206f0f8 end:0x0206f110
+
+
+src/Combat/Main/GetField0Bits24And25.cpp:
+    complete
+    .text start:0x02068894 end:0x020688b0
+
+
+src/Combat/Main/GetField0Low12Times60.cpp:
+    complete
+    .text start:0x02079b94 end:0x02079bac
+
+
+src/Combat/Main/GetField0x17dBits4To5IfFlag8.cpp:
+    complete
+    .text start:0x020795cc end:0x020795e8
+
+
+src/Combat/Main/GetField0x8OrDefault02077a20.cpp:
+    complete
+    .text start:0x02077a20 end:0x02077a34
+
+
+src/Combat/Main/GetField10Bits24And25.cpp:
+    complete
+    .text start:0x020688b0 end:0x020688cc
+
+
+src/Combat/Main/GetHalfwordChecked.cpp:
+    complete
+    .text start:0x0206f7f4 end:0x0206f81c
+
+
+src/Combat/Main/GetListDataSize.cpp:
+    complete
+    .text start:0x02070af4 end:0x02070b0c
+
+
+src/Combat/Main/GetPackedNibbleField.cpp:
+    complete
+    .text start:0x0206e120 end:0x0206e164
+
+
+src/Combat/Main/GetPackedNibbleFlag0x4.cpp:
+    complete
+    .text start:0x0206e260 end:0x0206e2a0
+
+
+src/Combat/Main/GetPackedNibbleFlag0x8.cpp:
+    complete
+    .text start:0x0206e2dc end:0x0206e31c
+
+
+src/Combat/Main/GetPointerAt0xbf0.cpp:
+    complete
+    .text start:0x0207c60c end:0x0207c620
+
+
+src/Combat/Main/GetShortFromArray0xc10.cpp:
+    complete
+    .text start:0x0207c620 end:0x0207c638
+
+
+src/Combat/Main/GetVec3ByIndex.cpp:
+    complete
+    .text start:0x0207ba28 end:0x0207ba54
+
+
+src/Combat/Main/InitArrayHeader.cpp:
+    complete
+    .text start:0x0207ef60 end:0x0207ef74
+
+
+src/Combat/Main/InitFieldsWithScale0x1000.cpp:
+    complete
+    .text start:0x0207e060 end:0x0207e07c
+
+
+src/Combat/Main/InitWithSub02081ee4.cpp:
+    complete
+    .text start:0x02081ee4 end:0x02081f20
+
+
+src/Combat/Main/IsByte0x19d5Zero.cpp:
+    complete
+    .text start:0x020688cc end:0x020688e4
+
+
+src/Combat/Main/IsByte0x19d6Zero.cpp:
+    complete
+    .text start:0x020688e4 end:0x020688fc
+
+
+src/Combat/Main/IsField0Zero.cpp:
+    complete
+    .text start:0x0206dda4 end:0x0206ddb8
+
+
+src/Combat/Main/IsField0x17eAllSet.cpp:
+    complete
+    .text start:0x020797bc end:0x020797d0
+
+
+src/Combat/Main/ResetListHeader020727d8.cpp:
+    complete
+    .text start:0x020727d8 end:0x020727ec
+
+
+src/Combat/Main/ResetWithSub0208203c.cpp:
+    complete
+    .text start:0x0208203c end:0x02082064
+
+
+src/Combat/Main/SetEntry3Bytes.cpp:
+    complete
+    .text start:0x0206dec8 end:0x0206dee8
+
+
+src/Combat/Main/SetField0x17eBitAndHigh.cpp:
+    complete
+    .text start:0x02079710 end:0x0207973c
+
+
+src/Combat/Main/SetOrClearBitInArray.cpp:
+    complete
+    .text start:0x0206df6c end:0x0206dfb0
+
+
+src/Combat/Main/SetPackedNibbleFlag0x8.cpp:
+    complete
+    .text start:0x0206e2a0 end:0x0206e2dc
+
+
+src/Combat/Main/StoreValueIfNonZero.cpp:
+    complete
+    .text start:0x0207e07c end:0x0207e090
+
+
+src/Combat/Main/TestBitInByteArray.cpp:
+    complete
+    .text start:0x0206dfb0 end:0x0206dfe8
+
+
+src/Combat/Main/ZeroListHeader.cpp:
+    complete
+    .text start:0x02072488 end:0x0207249c
