@@ -5715,3 +5715,28 @@ src/Combat/Main/PackLowercaseCharsToWord.cpp:
 src/Combat/Main/RemoveFromList020c7268.cpp:
     complete
     .text start:0x020c7268 end:0x020c72bc
+
+
+src/Combat/Main/BuildAffineTransform020baff0.cpp:
+    complete
+    .text start:0x020baff0 end:0x020bb074
+
+
+src/Combat/Main/BuildScaleAffine020bac00.cpp:
+    complete
+    .text start:0x020bac00 end:0x020bac50
+
+
+src/Combat/Main/BuildTranslateAffine020bb074.cpp:
+    complete
+    .text start:0x020bb074 end:0x020bb0c8
+
+
+src/Combat/Main/GetIndexedEntry020bbc68.cpp:
+    complete
+    .text start:0x020bbc68 end:0x020bbc78
+
+
+src/Combat/Main/ScaleMatrixRows020c11a4.cpp:
+    complete
+    .text start:0x020c11a4 end:0x020c1264
