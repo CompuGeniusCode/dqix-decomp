@@ -1620,3 +1620,28 @@ src/Combat/Main/GetValidElement02040468.cpp:
 src/Combat/Main/StoreToFirstNonNull02040bfc.cpp:
     complete
     .text start:0x02040bfc end:0x02040c2c
+
+
+src/Combat/Main/BuildVec3FromScatteredFields.cpp:
+    complete
+    .text start:0x02037774 end:0x020377b4
+
+
+src/Combat/Main/CheckField0x38NonZero.cpp:
+    complete
+    .text start:0x020377d4 end:0x020377e8
+
+
+src/Combat/Main/GetListNodeAtIndex.cpp:
+    complete
+    .text start:0x020375cc end:0x020375f0
+
+
+src/Combat/Main/GetSelfIfField0xa8Bit0Set.cpp:
+    complete
+    .text start:0x02037760 end:0x02037774
+
+
+src/Combat/Main/SetBoundedValuePair.cpp:
+    complete
+    .text start:0x02037620 end:0x02037640
