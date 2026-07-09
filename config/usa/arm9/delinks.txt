@@ -3260,3 +3260,293 @@ src/Combat/Main/SetState0xd4ByDaFlags.cpp:
 src/Combat/Main/ToggleBit0AtByte0x3c.cpp:
     complete
     .text start:0x020891b0 end:0x020891cc
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x20.cpp:
+    complete
+    .text start:0x020a02d0 end:0x020a0300
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x24.cpp:
+    complete
+    .text start:0x020a0300 end:0x020a0330
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x38.cpp:
+    complete
+    .text start:0x020a07b0 end:0x020a07e0
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x3c.cpp:
+    complete
+    .text start:0x020a07e0 end:0x020a0810
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x40.cpp:
+    complete
+    .text start:0x020a0810 end:0x020a0840
+
+
+src/Combat/Main/AddClamped7BitField.cpp:
+    complete
+    .text start:0x020a0504 end:0x020a0530
+
+
+src/Combat/Main/AddClamped9BitField.cpp:
+    complete
+    .text start:0x020a0460 end:0x020a0494
+
+
+src/Combat/Main/AddClamped9BitFieldAt0x10.cpp:
+    complete
+    .text start:0x020a03c4 end:0x020a03f8
+
+
+src/Combat/Main/AddClampedTopByteAt0x8.cpp:
+    complete
+    .text start:0x020a0364 end:0x020a0388
+
+
+src/Combat/Main/AddSaturateField0x44.cpp:
+    complete
+    .text start:0x020a0840 end:0x020a0858
+
+
+src/Combat/Main/AddSaturateField0x48.cpp:
+    complete
+    .text start:0x020a0858 end:0x020a0870
+
+
+src/Combat/Main/AppendElementCapped0209ccc8.cpp:
+    complete
+    .text start:0x0209ccc8 end:0x0209ccec
+
+
+src/Combat/Main/AppendHalfwordCapped0209ffe0.cpp:
+    complete
+    .text start:0x0209ffe0 end:0x0209fffc
+
+
+src/Combat/Main/AppendPairCapped.cpp:
+    complete
+    .text start:0x0209a93c end:0x0209a97c
+
+
+src/Combat/Main/CheckField0NonZero020a10a8.cpp:
+    complete
+    .text start:0x020a10a8 end:0x020a10bc
+
+
+src/Combat/Main/ClearArrays020a0bcc.cpp:
+    complete
+    .text start:0x020a0bcc end:0x020a0c0c
+
+
+src/Combat/Main/ClearBitInArrayGuarded.cpp:
+    complete
+    .text start:0x020960cc end:0x02096100
+
+
+src/Combat/Main/ClearField0xcBits24To29.cpp:
+    complete
+    .text start:0x020984b0 end:0x020984dc
+
+
+src/Combat/Main/ClearFirstThreeWords.cpp:
+    complete
+    .text start:0x02099898 end:0x020998ac
+
+
+src/Combat/Main/ClearKeyValueList020a0948.cpp:
+    complete
+    .text start:0x020a0948 end:0x020a095c
+
+
+src/Combat/Main/ClearStruct020a13c4.cpp:
+    complete
+    .text start:0x020a13c4 end:0x020a13e4
+
+
+src/Combat/Main/ClearThreeWords02094d00.cpp:
+    complete
+    .text start:0x02094d00 end:0x02094d14
+
+
+src/Combat/Main/ComputeAlignedBufferSize.cpp:
+    complete
+    .text start:0x02096fd8 end:0x02097000
+
+
+src/Combat/Main/CopyElemToIndex.cpp:
+    complete
+    .text start:0x02094d14 end:0x02094d5c
+
+
+src/Combat/Main/CopyStruct020a2928.cpp:
+    complete
+    .text start:0x020a2928 end:0x020a296c
+
+
+src/Combat/Main/CountNibble0xcEquals9.cpp:
+    complete
+    .text start:0x02098e70 end:0x02098eac
+
+
+src/Combat/Main/CountNibble0xcEqualsA.cpp:
+    complete
+    .text start:0x02098eac end:0x02098ee8
+
+
+src/Combat/Main/CountNonZeroValues020a0b8c.cpp:
+    complete
+    .text start:0x020a0b8c end:0x020a0bcc
+
+
+src/Combat/Main/Field0x1b68ContainsValue.cpp:
+    complete
+    .text start:0x02098e3c end:0x02098e70
+
+
+src/Combat/Main/FindElementByShiftedField0x10.cpp:
+    complete
+    .text start:0x020985ec end:0x02098630
+
+
+src/Combat/Main/FindEntryByHalfword0209bd94.cpp:
+    complete
+    .text start:0x0209bd94 end:0x0209bdc8
+
+
+src/Combat/Main/FindEntryById0209a614.cpp:
+    complete
+    .text start:0x0209a614 end:0x0209a654
+
+
+src/Combat/Main/FindKeyIndex020a0af4.cpp:
+    complete
+    .text start:0x020a0af4 end:0x020a0b3c
+
+
+src/Combat/Main/FindNodeByPackedId0208e7a4.cpp:
+    complete
+    .text start:0x0208e7a4 end:0x0208e7d0
+
+
+src/Combat/Main/FindRowById.cpp:
+    complete
+    .text start:0x0209b9e4 end:0x0209ba1c
+
+
+src/Combat/Main/FindSlotById.cpp:
+    complete
+    .text start:0x0209b944 end:0x0209b988
+
+
+src/Combat/Main/FindTableIndexOrFF.cpp:
+    complete
+    .text start:0x020965c0 end:0x020965f8
+
+
+src/Combat/Main/GetContainerCount.cpp:
+    complete
+    .text start:0x0209aa40 end:0x0209aa54
+
+
+src/Combat/Main/GetElementByIndex0209bd80.cpp:
+    complete
+    .text start:0x0209bd80 end:0x0209bd94
+
+
+src/Combat/Main/GetEntryByIndex.cpp:
+    complete
+    .text start:0x0209a654 end:0x0209a670
+
+
+src/Combat/Main/GetIndexedByte0209fc9c.cpp:
+    complete
+    .text start:0x0209fc9c end:0x0209fccc
+
+
+src/Combat/Main/GetRowByIndex.cpp:
+    complete
+    .text start:0x0209b9c0 end:0x0209b9e4
+
+
+src/Combat/Main/GetTableByteOrFF.cpp:
+    complete
+    .text start:0x020965ac end:0x020965c0
+
+
+src/Combat/Main/GetValueBySelector0209fc84.cpp:
+    complete
+    .text start:0x0209fc84 end:0x0209fc9c
+
+
+src/Combat/Main/InitState0208f7ec.cpp:
+    complete
+    .text start:0x0208f7ec end:0x0208f820
+
+
+src/Combat/Main/InitStruct_020979c0.cpp:
+    complete
+    .text start:0x020979c0 end:0x020979f4
+
+
+src/Combat/Main/IsInRange1To63.cpp:
+    complete
+    .text start:0x02098268 end:0x02098284
+
+
+src/Combat/Main/ListContainsId0209497c.cpp:
+    complete
+    .text start:0x0209497c end:0x020949bc
+
+
+src/Combat/Main/ListContainsId020949bc.cpp:
+    complete
+    .text start:0x020949bc end:0x02094a00
+
+
+src/Combat/Main/MarkStateIfFlag020a2c70.cpp:
+    complete
+    .text start:0x020a2c70 end:0x020a2c8c
+
+
+src/Combat/Main/ReadAndClearByte0x1b61.cpp:
+    complete
+    .text start:0x02098ee8 end:0x02098efc
+
+
+src/Combat/Main/ResetWordList0209cbb8.cpp:
+    complete
+    .text start:0x0209cbb8 end:0x0209cbcc
+
+
+src/Combat/Main/SetBitInArrayGuarded.cpp:
+    complete
+    .text start:0x0209609c end:0x020960cc
+
+
+src/Combat/Main/SetSlotA0.cpp:
+    complete
+    .text start:0x020958fc end:0x02095910
+
+
+src/Combat/Main/SetSlotA4.cpp:
+    complete
+    .text start:0x02095910 end:0x02095924
+
+
+src/Combat/Main/StoreCellWordHalf.cpp:
+    complete
+    .text start:0x0209b988 end:0x0209b9a8
+
+
+src/Combat/Main/StoreWordToRowArray.cpp:
+    complete
+    .text start:0x0209b9a8 end:0x0209b9c0
+
+
+src/Combat/Main/TestBitInByteArray02096100.cpp:
+    complete
+    .text start:0x02096100 end:0x02096134
