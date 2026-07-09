@@ -5260,3 +5260,128 @@ src/Combat/Main/SetSubstructByte0x1e.cpp:
 src/Combat/Main/SetSubstructByte0x1f.cpp:
     complete
     .text start:0x02049400 end:0x02049410
+
+
+src/Combat/Main/AppendCappedElement0208d928.cpp:
+    complete
+    .text start:0x0208d928 end:0x0208d994
+
+
+src/Combat/Main/AppendElement0207f5d0.cpp:
+    complete
+    .text start:0x0207f5d0 end:0x0207f6ac
+
+
+src/Combat/Main/AppendElement020a825c.cpp:
+    complete
+    .text start:0x020a825c end:0x020a8304
+
+
+src/Combat/Main/BinarySearch020971a8.cpp:
+    complete
+    .text start:0x020971a8 end:0x02097224
+
+
+src/Combat/Main/CanAdjustField0x58.cpp:
+    complete
+    .text start:0x0208776c end:0x020877c0
+
+
+src/Combat/Main/ClearList0208df10.cpp:
+    complete
+    .text start:0x0208df10 end:0x0208df20
+
+
+src/Combat/Main/CollectSetBitIndices.cpp:
+    complete
+    .text start:0x02083a50 end:0x02083acc
+
+
+src/Combat/Main/DecrementCounter0x24UpdateFlag0x14.cpp:
+    complete
+    .text start:0x02087704 end:0x0208776c
+
+
+src/Combat/Main/FindAndSetFirstFreeBit.cpp:
+    complete
+    .text start:0x02042a90 end:0x02042af4
+
+
+src/Combat/Main/FindElementByKey0208d994.cpp:
+    complete
+    .text start:0x0208d994 end:0x0208d9e8
+
+
+src/Combat/Main/FindEntryById02096134.cpp:
+    complete
+    .text start:0x02096134 end:0x0209618c
+
+
+src/Combat/Main/FindEntryByShortId0207f0ac.cpp:
+    complete
+    .text start:0x0207f0ac end:0x0207f100
+
+
+src/Combat/Main/FindEntryByShortId0207f6ac.cpp:
+    complete
+    .text start:0x0207f6ac end:0x0207f700
+
+
+src/Combat/Main/FindEntryBySignedId02087574.cpp:
+    complete
+    .text start:0x02087574 end:0x020875c4
+
+
+src/Combat/Main/FindValueByKeyAndMode020a45a0.cpp:
+    complete
+    .text start:0x020a45a0 end:0x020a4618
+
+
+src/Combat/Main/ForEachNode02097000.cpp:
+    complete
+    .text start:0x02097000 end:0x02097054
+
+
+src/Combat/Main/GetElement02094d5c.cpp:
+    complete
+    .text start:0x02094d5c end:0x02094d6c
+
+
+src/Combat/Main/GetElementsByteSize020a8f60.cpp:
+    complete
+    .text start:0x020a8f60 end:0x020a8f70
+
+
+src/Combat/Main/GetFirstFlaggedValue02086e9c.cpp:
+    complete
+    .text start:0x02086e9c end:0x02086ef0
+
+
+src/Combat/Main/InitNodeChain0207f7f0.cpp:
+    complete
+    .text start:0x0207f7f0 end:0x0207f84c
+
+
+src/Combat/Main/PackFields020946f8.cpp:
+    complete
+    .text start:0x020946f8 end:0x020947f0
+
+
+src/Combat/Main/RemoveNodeByKey0208f3b4.cpp:
+    complete
+    .text start:0x0208f3b4 end:0x0208f410
+
+
+src/Combat/Main/SetVec3At0xC.cpp:
+    complete
+    .text start:0x0208aa18 end:0x0208aa28
+
+
+src/Combat/Main/StepCounter020456d0.cpp:
+    complete
+    .text start:0x020456d0 end:0x02045740
+
+
+src/Combat/Main/WalkListByMode0208036c.cpp:
+    complete
+    .text start:0x0208036c end:0x02080468
