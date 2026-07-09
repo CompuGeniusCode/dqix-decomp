@@ -4870,3 +4870,108 @@ src/Combat/Main/SetField0x18Flag0x20.cpp:
 src/Combat/Main/SetupPointerTable0205ba68.cpp:
     complete
     .text start:0x0205ba68 end:0x0205bacc
+
+
+src/Combat/Main/AppendCappedEntry0201e304.cpp:
+    complete
+    .text start:0x0201e304 end:0x0201e3c4
+
+
+src/Combat/Main/AppendCappedEntry0201e574.cpp:
+    complete
+    .text start:0x0201e574 end:0x0201e634
+
+
+src/Combat/Main/AppendNamedEntry020346f8.cpp:
+    complete
+    .text start:0x020346f8 end:0x02034768
+
+
+src/Combat/Main/BinarySearch02079f20.cpp:
+    complete
+    .text start:0x02079f20 end:0x02079f9c
+
+
+src/Combat/Main/BuildPackedEntries0203c05c.cpp:
+    complete
+    .text start:0x0203c05c end:0x0203c0cc
+
+
+src/Combat/Main/CanAdjustStatStageBit15.cpp:
+    complete
+    .text start:0x02087c30 end:0x02087c84
+
+
+src/Combat/Main/CanAdjustStatStageBit18.cpp:
+    complete
+    .text start:0x02087d24 end:0x02087d78
+
+
+src/Combat/Main/CanAdjustStatStageBit21.cpp:
+    complete
+    .text start:0x02087e18 end:0x02087e6c
+
+
+src/Combat/Main/CanAdjustStatStageBit24.cpp:
+    complete
+    .text start:0x02088018 end:0x0208806c
+
+
+src/Combat/Main/CanAdjustStatStageBit27.cpp:
+    complete
+    .text start:0x02087f24 end:0x02087f78
+
+
+src/Combat/Main/ClearByte0x63d5.cpp:
+    complete
+    .text start:0x02012050 end:0x02012060
+
+
+src/Combat/Main/ClearTwoHalfwords.cpp:
+    complete
+    .text start:0x02012518 end:0x02012528
+
+
+src/Combat/Main/CollectByTag0207c1ec.cpp:
+    complete
+    .text start:0x0207c1ec end:0x0207c244
+
+
+src/Combat/Main/Compact0207c51c.cpp:
+    complete
+    .text start:0x0207c51c end:0x0207c5f8
+
+
+src/Combat/Main/FindEntryByKeyPair020429e4.cpp:
+    complete
+    .text start:0x020429e4 end:0x02042a50
+
+
+src/Combat/Main/FindEntryByNodeIdAndKey.cpp:
+    complete
+    .text start:0x02018b34 end:0x02018bc4
+
+
+src/Combat/Main/InitDefaultState0207a5b8.cpp:
+    complete
+    .text start:0x0207a5b8 end:0x0207a614
+
+
+src/Combat/Main/ResetAndSetFlag0x1000000.cpp:
+    complete
+    .text start:0x02088150 end:0x020881ac
+
+
+src/Combat/Main/ResetState0204166c.cpp:
+    complete
+    .text start:0x0204166c end:0x020416c0
+
+
+src/Combat/Main/SelectVec3FromSources020406f8.cpp:
+    complete
+    .text start:0x020406f8 end:0x02040774
+
+
+src/Combat/Main/SetByteInArray0xc28.cpp:
+    complete
+    .text start:0x0207c6a8 end:0x0207c6b8
