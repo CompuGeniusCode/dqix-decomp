@@ -7380,3 +7380,143 @@ src/Combat/Main/SetChannelFlag0x24AfterUpdate.cpp:
 src/Combat/Main/SetChannelFlag0x25AfterUpdate.cpp:
     complete
     .text start:0x0203b268 end:0x0203b280
+
+
+src/Combat/Main/AppendToList02037af8.cpp:
+    complete
+    .text start:0x02037af8 end:0x02037b44
+
+
+src/Combat/Main/CallField0xa00203aa44.cpp:
+    complete
+    .text start:0x0203aa44 end:0x0203aa64
+
+
+src/Combat/Main/CallFunc0202f310AtField0x19e0.cpp:
+    complete
+    .text start:0x020440b8 end:0x020440cc
+
+
+src/Combat/Main/CallFunc0205c96cIfMode6AndFlag.cpp:
+    complete
+    .text start:0x02044530 end:0x0204455c
+
+
+src/Combat/Main/CallFunc0207ec8cOnField0x8.cpp:
+    complete
+    .text start:0x02037540 end:0x02037558
+
+
+src/Combat/Main/CallFunc0207ecacOnField0x8.cpp:
+    complete
+    .text start:0x02037528 end:0x02037540
+
+
+src/Combat/Main/Clear8Bytes02034a1c.cpp:
+    complete
+    .text start:0x02034a1c end:0x02034a30
+
+
+src/Combat/Main/ClearBytesAndZeroBlock02039d24.cpp:
+    complete
+    .text start:0x02039d24 end:0x02039d48
+
+
+src/Combat/Main/CopyStringToField0x3ac.cpp:
+    complete
+    .text start:0x02046504 end:0x02046520
+
+
+src/Combat/Main/CopyStringToField0x3ec.cpp:
+    complete
+    .text start:0x02046520 end:0x0204653c
+
+
+src/Combat/Main/CopyStringToIndexedField0x2ec.cpp:
+    complete
+    .text start:0x020464e8 end:0x02046504
+
+
+src/Combat/Main/GetData02107800Word0.cpp:
+    complete
+    .text start:0x020429d4 end:0x020429e4
+
+
+src/Combat/Main/GetDisplayValue020409e0.cpp:
+    complete
+    .text start:0x020409e0 end:0x02040a20
+
+
+src/Combat/Main/GetField0x10IfArg8.cpp:
+    complete
+    .text start:0x020429bc end:0x020429d4
+
+
+src/Combat/Main/GetFromField00203aa64.cpp:
+    complete
+    .text start:0x0203aa64 end:0x0203aa80
+
+
+src/Combat/Main/Init02040258.cpp:
+    complete
+    .text start:0x02040258 end:0x0204027c
+
+
+src/Combat/Main/InitFields02042b3c.cpp:
+    complete
+    .text start:0x02042b3c end:0x02042b98
+
+
+src/Combat/Main/MulFieldsDiv3102037484.cpp:
+    complete
+    .text start:0x02037484 end:0x020374b0
+
+
+src/Combat/Main/Reset020404ac.cpp:
+    complete
+    .text start:0x020404ac end:0x020404c0
+
+
+src/Combat/Main/Reset02040504.cpp:
+    complete
+    .text start:0x02040504 end:0x02040520
+
+
+src/Combat/Main/ResetAndClearFieldC020373cc.cpp:
+    complete
+    .text start:0x020373cc end:0x020373e4
+
+
+src/Combat/Main/ResetFoo02042fcc.cpp:
+    complete
+    .text start:0x02042fcc end:0x02043000
+
+
+src/Combat/Main/ResetLowFlagEntries0203a588.cpp:
+    complete
+    .text start:0x0203a588 end:0x0203a5d0
+
+
+src/Combat/Main/ResetXYField0203aa08.cpp:
+    complete
+    .text start:0x0203aa08 end:0x0203aa44
+
+
+src/Combat/Main/SetField40IfPositive.cpp:
+    complete
+    .text start:0x0203fc5c end:0x0203fc84
+
+
+src/Combat/Main/TailForward020440a4.cpp:
+    complete
+    .text start:0x020440a4 end:0x020440b8
+
+
+src/Combat/Main/WriteVec3ShortToReg02036060.cpp:
+    complete
+    .text start:0x02036060 end:0x02036084
+
+
+src/Combat/Main/WriteVec3ToReg02036000.cpp:
+    complete
+    .text start:0x02036000 end:0x02036024
