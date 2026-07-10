@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" int GetGlobalWord02112140(void);
+int GetGlobalWord02112140(void);
 extern "C" int func_020cc6ac(void* obj, int mode);
 
 // USA: func_020cccd4

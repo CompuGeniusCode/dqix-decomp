@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" int IsPowcntBit0Set(void);
+int IsPowcntBit0Set(void);
 extern "C" int func_020ce56c(int a, int b, int c);
 
 // USA: func_020ce7e0

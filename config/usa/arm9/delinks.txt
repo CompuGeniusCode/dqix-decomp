@@ -12515,3 +12515,38 @@ src/Combat/Main/HwDivideRounded020c2bf4.cpp:
 src/Combat/Main/TryApplyRecordAndSetFlag020bec30.cpp:
     complete
     .text start:0x020bec30 end:0x020bec58
+
+
+src/Combat/Main/CallHandlerWithGlobalWordFlag.cpp:
+    complete
+    .text start:0x020cccd4 end:0x020cccf8
+
+
+src/Combat/Main/HwDivideRemainder.cpp:
+    complete
+    .text start:0x020c2d54 end:0x020c2d90
+
+
+src/Combat/Main/InvokeReg0x10IfPowcntBit0Set.cpp:
+    complete
+    .text start:0x020ce7e0 end:0x020ce810
+
+
+src/Combat/Main/UnlinkNodeWithInterruptsDisabled.cpp:
+    complete
+    .text start:0x020ceeb4 end:0x020cef0c
+
+
+src/Combat/Main/Vec3LengthRounded.cpp:
+    complete
+    .text start:0x020c2eb8 end:0x020c2f18
+
+
+src/Combat/Main/RemoveFromGlobalList02111800.cpp:
+    complete
+    .text start:0x020cef7c end:0x020cef94
+
+
+src/Combat/Main/RemoveFromGlobalList02111804.cpp:
+    complete
+    .text start:0x020cef64 end:0x020cef7c

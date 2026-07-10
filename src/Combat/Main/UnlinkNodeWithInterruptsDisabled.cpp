@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-extern "C" unsigned int DisableInterrupts(void);
-extern "C" unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableInterrupts(void);
+unsigned int RestoreInterrupts(unsigned int mask);
 
 struct ListNode020ceeb4 {
     int field0;
