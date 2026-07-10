@@ -9050,3 +9050,153 @@ src/Combat/Main/DispatchViaTable0204b5e8.cpp:
 src/Combat/Main/DispatchIndexedEntry0204b988.cpp:
     complete
     .text start:0x0204b988 end:0x0204b9b8
+
+
+src/Combat/Main/AddClamped10BitFieldAt0x14.cpp:
+    complete
+    .text start:0x020a0140 end:0x020a017c
+
+
+src/Combat/Main/AddClamped10BitFieldAt0x1c.cpp:
+    complete
+    .text start:0x020a0258 end:0x020a0294
+
+
+src/Combat/Main/AddClamped16BitFieldAt0x10.cpp:
+    complete
+    .text start:0x020a00d4 end:0x020a0110
+
+
+src/Combat/Main/AddClamped16BitFieldAt0x18.cpp:
+    complete
+    .text start:0x020a01ec end:0x020a0228
+
+
+src/Combat/Main/AddClamped16BitFieldAt0x1c.cpp:
+    complete
+    .text start:0x020a0530 end:0x020a056c
+
+
+src/Combat/Main/AddClamped16BitFieldHighAt0x10.cpp:
+    complete
+    .text start:0x020a0110 end:0x020a0140
+
+
+src/Combat/Main/AddClamped16BitFieldHighAt0x18.cpp:
+    complete
+    .text start:0x020a0228 end:0x020a0258
+
+
+src/Combat/Main/AddClamped16BitHighAt0x1c.cpp:
+    complete
+    .text start:0x020a056c end:0x020a059c
+
+
+src/Combat/Main/AddClamped16BitHighAt0x20.cpp:
+    complete
+    .text start:0x020a05d8 end:0x020a0608
+
+
+src/Combat/Main/AddClamped16BitHighAt0x24.cpp:
+    complete
+    .text start:0x020a0644 end:0x020a0674
+
+
+src/Combat/Main/AddClamped16BitLowAt0x20.cpp:
+    complete
+    .text start:0x020a059c end:0x020a05d8
+
+
+src/Combat/Main/AddClamped16BitLowAt0x24.cpp:
+    complete
+    .text start:0x020a0608 end:0x020a0644
+
+
+src/Combat/Main/AddClamped24BitFieldAt0x8.cpp:
+    complete
+    .text start:0x020a0330 end:0x020a0364
+
+
+src/Combat/Main/AddClamped9BitFieldMidAt0x14.cpp:
+    complete
+    .text start:0x020a0494 end:0x020a04c8
+
+
+src/Combat/Main/AddClamped9BitFieldTopAt0x10.cpp:
+    complete
+    .text start:0x020a0434 end:0x020a0460
+
+
+src/Combat/Main/AddClampedHigh16BitFieldAt0x8.cpp:
+    complete
+    .text start:0x020a0038 end:0x020a0068
+
+
+src/Combat/Main/AddClampedHigh16BitFieldAt0xc.cpp:
+    complete
+    .text start:0x020a00a4 end:0x020a00d4
+
+
+src/Combat/Main/AddClampedLow16BitFieldAt0x8.cpp:
+    complete
+    .text start:0x0209fffc end:0x020a0038
+
+
+src/Combat/Main/AddClampedLow16BitFieldAt0xc.cpp:
+    complete
+    .text start:0x020a0068 end:0x020a00a4
+
+
+src/Combat/Main/ClearGlobalFlags020bbe94.cpp:
+    complete
+    .text start:0x020bbe94 end:0x020bbeb0
+
+
+src/Combat/Main/GetGlobalInstance02109d8c.cpp:
+    complete
+    .text start:0x0209fe8c end:0x0209fe9c
+
+
+src/Combat/Main/IsAnimationActive0209ca2c.cpp:
+    complete
+    .text start:0x0209ca2c end:0x0209ca68
+
+
+src/Combat/Main/IsHandleB8Active0209c6bc.cpp:
+    complete
+    .text start:0x0209c6bc end:0x0209c6d8
+
+
+src/Combat/Main/IsMissingFromTable0209c0f4.cpp:
+    complete
+    .text start:0x0209c0f4 end:0x0209c140
+
+
+src/Combat/Main/ReadGlobalPair020bb910.cpp:
+    complete
+    .text start:0x020bb910 end:0x020bb92c
+
+
+src/Combat/Main/ResetGlobalState020bb948.cpp:
+    complete
+    .text start:0x020bb948 end:0x020bb964
+
+
+src/Combat/Main/SetModeClamped0209ca70.cpp:
+    complete
+    .text start:0x0209ca70 end:0x0209ca98
+
+
+src/Combat/Main/StopAndReset0209c7fc.cpp:
+    complete
+    .text start:0x0209c7fc end:0x0209c830
+
+
+src/Combat/Main/WrapIndexModField020bb964.cpp:
+    complete
+    .text start:0x020bb964 end:0x020bb984
+
+
+src/Combat/Main/WriteGlobalPair020bb92c.cpp:
+    complete
+    .text start:0x020bb92c end:0x020bb948
