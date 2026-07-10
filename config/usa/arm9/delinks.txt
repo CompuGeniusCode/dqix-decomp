@@ -7000,3 +7000,103 @@ src/Combat/Main/WriteCommand0xff07.cpp:
 src/Combat/Main/WriteCommand0xff08.cpp:
     complete
     .text start:0x02069b84 end:0x02069bac
+
+
+src/Combat/Main/AllocateArray020278e4.cpp:
+    complete
+    .text start:0x020278e4 end:0x02027910
+
+
+src/Combat/Main/AllocateArray0202834c.cpp:
+    complete
+    .text start:0x0202834c end:0x02028378
+
+
+src/Combat/Main/ApplyField0x70Tail.cpp:
+    complete
+    .text start:0x0202e6a8 end:0x0202e6c0
+
+
+src/Combat/Main/ApplyVec3Tail.cpp:
+    complete
+    .text start:0x0202e694 end:0x0202e6a8
+
+
+src/Combat/Main/CallFunc020a0d58AtField0x16c.cpp:
+    complete
+    .text start:0x0202ee84 end:0x0202ee94
+
+
+src/Combat/Main/CallFunc020a0d58AtField0x194.cpp:
+    complete
+    .text start:0x0202ee94 end:0x0202eea4
+
+
+src/Combat/Main/CallFunc020a0d58AtField0x1bc.cpp:
+    complete
+    .text start:0x0202eea4 end:0x0202eeb4
+
+
+src/Combat/Main/CallFunc020a0d6cAtField0x16c.cpp:
+    complete
+    .text start:0x0202ed7c end:0x0202edb4
+
+
+src/Combat/Main/CallFunc020a0d6cAtField0x194AndClearFlag2.cpp:
+    complete
+    .text start:0x0202edb4 end:0x0202edf8
+
+
+src/Combat/Main/CallFunc020a0db8AtField0x16c.cpp:
+    complete
+    .text start:0x0202ee38 end:0x0202ee58
+
+
+src/Combat/Main/CallFunc020a0db8AtField0x194AndClearFlag2.cpp:
+    complete
+    .text start:0x0202ee58 end:0x0202ee84
+
+
+src/Combat/Main/CopyVec3ToField0x4.cpp:
+    complete
+    .text start:0x0202ef04 end:0x0202ef14
+
+
+src/Combat/Main/EmitScaledField0x440.cpp:
+    complete
+    .text start:0x0202f404 end:0x0202f45c
+
+
+src/Combat/Main/GetData02104304Field4.cpp:
+    complete
+    .text start:0x0202f798 end:0x0202f7a8
+
+
+src/Combat/Main/GetGlobalField0x10.cpp:
+    complete
+    .text start:0x0202d6a8 end:0x0202d6b8
+
+
+src/Combat/Main/GetGlobalField0x48.cpp:
+    complete
+    .text start:0x0202d6b8 end:0x0202d6c8
+
+
+src/Combat/Main/GetGlobalHalf0x0.cpp:
+    complete
+    .text start:0x0202df58 end:0x0202df68
+
+
+src/Combat/Main/InitEightSubStructs.cpp:
+    complete
+    .text start:0x0202f1a4 end:0x0202f1dc
+
+
+src/Combat/Main/SetFields0x1f0And0x1f4.cpp:
+    complete
+    .text start:0x0202f0c4 end:0x0202f0e0
+
+
+src/Combat/Main/SetString020264e4.cpp:
+    complete
+    .text start:0x020264e4 end:0x02026528

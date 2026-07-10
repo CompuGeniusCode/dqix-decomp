@@ -1,0 +1,14 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+extern "C" void func_02042764(const char*, char*, int);
+extern char data_020ef6ca;
+
+// USA: func_02026528
+ARM void SetString02026528(char* obj, char* name) {
+    if (name != NULL && *name != 0) {
+        func_02042764(name, obj + 0x724, 1);
+    } else {
+        strcpy(obj + 0x724, &data_020ef6ca);
+    }
+}
