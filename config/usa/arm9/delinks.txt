@@ -7835,3 +7835,48 @@ src/Combat/Main/GetField0x4Field0x20OrNull.cpp:
 src/Combat/Main/GetField0x4Field0x4OrNull.cpp:
     complete
     .text start:0x020550a8 end:0x020550c0
+
+
+src/Combat/Main/DispatchIfField0xbcNonNeg_0205eb24.cpp:
+    complete
+    .text start:0x0205eb24 end:0x0205eb48
+
+
+src/Combat/Main/FillBitArray0x1524WithFF.cpp:
+    complete
+    .text start:0x0205e854 end:0x0205e870
+
+
+src/Combat/Main/FillBitArray0x1524WithZero.cpp:
+    complete
+    .text start:0x0205e870 end:0x0205e88c
+
+
+src/Combat/Main/ForEachNode020579ec.cpp:
+    complete
+    .text start:0x020579ec end:0x02057a10
+
+
+src/Combat/Main/ForwardField0xc0_0205eb80.cpp:
+    complete
+    .text start:0x0205eb80 end:0x0205eb90
+
+
+src/Combat/Main/ForwardField4To02057334.cpp:
+    complete
+    .text start:0x02055774 end:0x0205578c
+
+
+src/Combat/Main/ForwardField4To0205765c.cpp:
+    complete
+    .text start:0x0205578c end:0x020557a4
+
+
+src/Combat/Main/InitStruct02057930.cpp:
+    complete
+    .text start:0x02057930 end:0x02057978
+
+
+src/Combat/Main/ProcessArray020579b4.cpp:
+    complete
+    .text start:0x020579b4 end:0x020579ec
