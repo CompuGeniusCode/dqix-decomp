@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 
-extern "C" int func_020cf8bc(int id);
+int CheckEntry5Exists(int);
 
 // USA: func_020cf87c
 ARM int CheckState0x10(void) {
-    return func_020cf8bc(0x10);
+    return CheckEntry5Exists(0x10);
 }

@@ -10085,3 +10085,18 @@ src/Combat/Main/TryAcquireLock.cpp:
 src/Combat/Main/WaitWhileFlagsSet.cpp:
     complete
     .text start:0x020ce0fc end:0x020ce114
+
+
+src/Combat/Main/CheckState0x10.cpp:
+    complete
+    .text start:0x020cf87c end:0x020cf88c
+
+
+src/Combat/Main/CheckState0x11.cpp:
+    complete
+    .text start:0x020cf88c end:0x020cf89c
+
+
+src/Combat/Main/CheckState0x12.cpp:
+    complete
+    .text start:0x020cf89c end:0x020cf8ac
