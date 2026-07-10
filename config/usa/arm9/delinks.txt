@@ -11980,3 +11980,53 @@ src/Combat/Main/ResetSelectionState02054664.cpp:
 src/Combat/Main/IsNibbleFieldZeroOrOne.cpp:
     complete
     .text start:0x02095ae0 end:0x02095b30
+
+
+src/Combat/Main/AddClamped10BitFieldMidAt0x14.cpp:
+    complete
+    .text start:0x020a017c end:0x020a01b8
+
+
+src/Combat/Main/AddClamped12BitFieldTopAt0x14.cpp:
+    complete
+    .text start:0x020a01b8 end:0x020a01ec
+
+
+src/Combat/Main/AddClamped14BitFieldMidAt0xc.cpp:
+    complete
+    .text start:0x020a0388 end:0x020a03c4
+
+
+src/Combat/Main/AddClamped16BitFieldMidAt0x1c.cpp:
+    complete
+    .text start:0x020a0294 end:0x020a02d0
+
+
+src/Combat/Main/ReleaseVramBanks02111224.cpp:
+    complete
+    .text start:0x020c4aac end:0x020c4ac0
+
+
+src/Combat/Main/ReleaseVramBanks0211122a.cpp:
+    complete
+    .text start:0x020c4a98 end:0x020c4aac
+
+
+src/Combat/Main/ReleaseVramBanks0211122e.cpp:
+    complete
+    .text start:0x020c4a70 end:0x020c4a84
+
+
+src/Combat/Main/ReleaseVramBanks02111230.cpp:
+    complete
+    .text start:0x020c4a84 end:0x020c4a98
+
+
+src/Combat/Main/ReleaseVramBanks02111236.cpp:
+    complete
+    .text start:0x020c4ac0 end:0x020c4ad4
+
+
+src/Combat/Main/RunUpdateSequence0209fdf8.cpp:
+    complete
+    .text start:0x0209fdf8 end:0x0209fe08
