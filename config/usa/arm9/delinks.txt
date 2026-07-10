@@ -6915,3 +6915,88 @@ src/Combat/Main/StoreByteList02026348.cpp:
 src/Combat/Main/UpdateStopwatchState0201fbac.cpp:
     complete
     .text start:0x0201fbac end:0x0201fbe0
+
+
+src/Combat/Main/CallFunc0200fbb4AtField0x3f8_0200fba4.cpp:
+    complete
+    .text start:0x0200fba4 end:0x0200fbb4
+
+
+src/Combat/Main/ClearAndFlagEntry0201ba1c.cpp:
+    complete
+    .text start:0x0201ba1c end:0x0201ba68
+
+
+src/Combat/Main/FindNodeByField0x2c0201b754.cpp:
+    complete
+    .text start:0x0201b754 end:0x0201b78c
+
+
+src/Combat/Main/Init020d9ae8.cpp:
+    complete
+    .text start:0x020d9ae8 end:0x020d9b34
+
+
+src/Combat/Main/IsValueInRange0201b5d8.cpp:
+    complete
+    .text start:0x0201b5d8 end:0x0201b600
+
+
+src/Combat/Main/NormalizeField5_0200fb08.cpp:
+    complete
+    .text start:0x0200fb08 end:0x0200fb40
+
+
+src/Combat/Main/StoreBattleParams0201bf38.cpp:
+    complete
+    .text start:0x0201bf38 end:0x0201bf70
+
+
+src/Combat/Main/StoreHalfword0xff0f02069ce0.cpp:
+    complete
+    .text start:0x02069ce0 end:0x02069d08
+
+
+src/Combat/Main/StoreHalfword0xff1102069d6c.cpp:
+    complete
+    .text start:0x02069d6c end:0x02069d94
+
+
+src/Combat/Main/StoreHalfword0xff1202069dbc.cpp:
+    complete
+    .text start:0x02069dbc end:0x02069de4
+
+
+src/Combat/Main/StoreHalfword0xff1302069d94.cpp:
+    complete
+    .text start:0x02069d94 end:0x02069dbc
+
+
+src/Combat/Main/StoreInputEmitFF0B020697b8.cpp:
+    complete
+    .text start:0x020697b8 end:0x0206980c
+
+
+src/Combat/Main/StoreInputEmitFF0C0206973c.cpp:
+    complete
+    .text start:0x0206973c end:0x02069790
+
+
+src/Combat/Main/WriteCommand0xff05.cpp:
+    complete
+    .text start:0x02069b0c end:0x02069b34
+
+
+src/Combat/Main/WriteCommand0xff06.cpp:
+    complete
+    .text start:0x02069b34 end:0x02069b5c
+
+
+src/Combat/Main/WriteCommand0xff07.cpp:
+    complete
+    .text start:0x02069b5c end:0x02069b84
+
+
+src/Combat/Main/WriteCommand0xff08.cpp:
+    complete
+    .text start:0x02069b84 end:0x02069bac
