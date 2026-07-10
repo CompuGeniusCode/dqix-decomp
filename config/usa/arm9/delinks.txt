@@ -11365,3 +11365,18 @@ src/Combat/Main/ShiftInBitOnGlobalObject.cpp:
 src/Combat/Main/WrapAngleDelta.cpp:
     complete
     .text start:0x02030cd8 end:0x02030d24
+
+
+src/Combat/Main/FlushAndDispatchList0204b0e8.cpp:
+    complete
+    .text start:0x0204b0e8 end:0x0204b11c
+
+
+src/Combat/Main/ResetList0204af64.cpp:
+    complete
+    .text start:0x0204af64 end:0x0204afb4
+
+
+src/Combat/Main/ResetObject0204c754.cpp:
+    complete
+    .text start:0x0204c754 end:0x0204c770
