@@ -11380,3 +11380,373 @@ src/Combat/Main/ResetList0204af64.cpp:
 src/Combat/Main/ResetObject0204c754.cpp:
     complete
     .text start:0x0204c754 end:0x0204c770
+
+
+src/Combat/Main/AccumulateVariantFlagsField0207a558.cpp:
+    complete
+    .text start:0x0207a558 end:0x0207a5b8
+
+
+src/Combat/Main/AllocateAndInitObject020556dc.cpp:
+    complete
+    .text start:0x020556dc end:0x02055718
+
+
+src/Combat/Main/AllocateWordList0209ccec.cpp:
+    complete
+    .text start:0x0209ccec end:0x0209cd24
+
+
+src/Combat/Main/AnyFlag0x800CombatantBit0x49cClear.cpp:
+    complete
+    .text start:0x020685f0 end:0x02068650
+
+
+src/Combat/Main/AppendRecord12Capped0209a4f0.cpp:
+    complete
+    .text start:0x0209a4f0 end:0x0209a530
+
+
+src/Combat/Main/AreListedCombatantsBit0Set.cpp:
+    complete
+    .text start:0x02086b98 end:0x02086bf4
+
+
+src/Combat/Main/BackupPairTables0207dfac.cpp:
+    complete
+    .text start:0x0207dfac end:0x0207dfc8
+
+
+src/Combat/Main/CallFunc0204c804OnMatchingKey.cpp:
+    complete
+    .text start:0x0207fdcc end:0x0207fdf0
+
+
+src/Combat/Main/CallFunc020b362cWithBlock.cpp:
+    complete
+    .text start:0x0207eae0 end:0x0207eaf8
+
+
+src/Combat/Main/CleanupNodeList02058564.cpp:
+    complete
+    .text start:0x02058564 end:0x0205859c
+
+
+src/Combat/Main/ClearCombatantSlotIfValidId02057db8.cpp:
+    complete
+    .text start:0x02057db8 end:0x02057de0
+
+
+src/Combat/Main/ClearManagerBuffer0209ce14.cpp:
+    complete
+    .text start:0x0209ce14 end:0x0209ce34
+
+
+src/Combat/Main/ClearPackedTriples02082cdc.cpp:
+    complete
+    .text start:0x02082cdc end:0x02082d38
+
+
+src/Combat/Main/ClearSublistEntriesFlag2.cpp:
+    complete
+    .text start:0x0208065c end:0x020806b0
+
+
+src/Combat/Main/ClearSublistEntriesFlag4.cpp:
+    complete
+    .text start:0x020804fc end:0x02080558
+
+
+src/Combat/Main/CountPositiveEntries0207c638.cpp:
+    complete
+    .text start:0x0207c638 end:0x0207c694
+
+
+src/Combat/Main/CountValidCombatants02058618.cpp:
+    complete
+    .text start:0x02058618 end:0x02058658
+
+
+src/Combat/Main/DecodeVariantsInto8x2Table.cpp:
+    complete
+    .text start:0x02099c34 end:0x02099c90
+
+
+src/Combat/Main/DecodeVariantsInto8x4Table.cpp:
+    complete
+    .text start:0x02099b7c end:0x02099bd8
+
+
+src/Combat/Main/DecodeVariantsInto8x8Table.cpp:
+    complete
+    .text start:0x02099bd8 end:0x02099c34
+
+
+src/Combat/Main/DequeueNode.cpp:
+    complete
+    .text start:0x0205e1e4 end:0x0205e218
+
+
+src/Combat/Main/Dispatch0205a148.cpp:
+    complete
+    .text start:0x0205a148 end:0x0205a180
+
+
+src/Combat/Main/DispatchContextByState0209c678.cpp:
+    complete
+    .text start:0x0209c678 end:0x0209c6bc
+
+
+src/Combat/Main/EnqueueNode.cpp:
+    complete
+    .text start:0x0205e18c end:0x0205e1e4
+
+
+src/Combat/Main/EnsureByte0xbeIs2.cpp:
+    complete
+    .text start:0x0207872c end:0x02078754
+
+
+src/Combat/Main/FillVariantShortTable02109928.cpp:
+    complete
+    .text start:0x02099ac4 end:0x02099b20
+
+
+src/Combat/Main/FillVariantShortTable02109950.cpp:
+    complete
+    .text start:0x02099b20 end:0x02099b7c
+
+
+src/Combat/Main/FindNodeAndProcess02057fb4.cpp:
+    complete
+    .text start:0x02057fb4 end:0x02057fd8
+
+
+src/Combat/Main/ForwardFirstWord020998ac.cpp:
+    complete
+    .text start:0x020998ac end:0x020998c4
+
+
+src/Combat/Main/GetTableValueMod100.cpp:
+    complete
+    .text start:0x02098284 end:0x020982a4
+
+
+src/Combat/Main/InitAllEntries02058704.cpp:
+    complete
+    .text start:0x02058704 end:0x0205873c
+
+
+src/Combat/Main/InitIndexedElements02083508.cpp:
+    complete
+    .text start:0x02083508 end:0x02083554
+
+
+src/Combat/Main/InitStruct020553ac.cpp:
+    complete
+    .text start:0x020553ac end:0x020553ec
+
+
+src/Combat/Main/InitStructWithParams02055558.cpp:
+    complete
+    .text start:0x02055558 end:0x020555a0
+
+
+src/Combat/Main/InsertShortIntoTable021098f4.cpp:
+    complete
+    .text start:0x0209953c end:0x02099554
+
+
+src/Combat/Main/InvokeField54IfFlag0xa8Bit0Set.cpp:
+    complete
+    .text start:0x0207e924 end:0x0207e97c
+
+
+src/Combat/Main/IsField0xf7cNotByteAt0x5721.cpp:
+    complete
+    .text start:0x0206852c end:0x02068558
+
+
+src/Combat/Main/LookupAndForEachNode020649b0.cpp:
+    complete
+    .text start:0x020649b0 end:0x020649f4
+
+
+src/Combat/Main/PickWeightedRandomByTag0207c18c.cpp:
+    complete
+    .text start:0x0207c18c end:0x0207c1ec
+
+
+src/Combat/Main/ReacquireHandleField0xa4.cpp:
+    complete
+    .text start:0x0207ecf8 end:0x0207ed1c
+
+
+src/Combat/Main/ReacquireHandleField0xa6.cpp:
+    complete
+    .text start:0x0207ecd4 end:0x0207ecf8
+
+
+src/Combat/Main/RelocateOffsets02079808.cpp:
+    complete
+    .text start:0x02079808 end:0x02079840
+
+
+src/Combat/Main/ResetAndReinit0209c278.cpp:
+    complete
+    .text start:0x0209c278 end:0x0209c290
+
+
+src/Combat/Main/ResetAndReturn02064d1c.cpp:
+    complete
+    .text start:0x02064d1c end:0x02064d38
+
+
+src/Combat/Main/ResetEntryByKey0207da7c.cpp:
+    complete
+    .text start:0x0207da7c end:0x0207da94
+
+
+src/Combat/Main/ResetField0xb2SetState5.cpp:
+    complete
+    .text start:0x02076d34 end:0x02076d5c
+
+
+src/Combat/Main/ResetObjectState0205e8d4.cpp:
+    complete
+    .text start:0x0205e8d4 end:0x0205e8ec
+
+
+src/Combat/Main/ResetObjectState02079a3c.cpp:
+    complete
+    .text start:0x02079a3c end:0x02079a58
+
+
+src/Combat/Main/RestorePairTables0207df90.cpp:
+    complete
+    .text start:0x0207df90 end:0x0207dfac
+
+
+src/Combat/Main/SetBufferFlushAndProcess0207e3b0.cpp:
+    complete
+    .text start:0x0207e3b0 end:0x0207e3e0
+
+
+src/Combat/Main/SetElementFlag0x40.cpp:
+    complete
+    .text start:0x02081ea4 end:0x02081ee4
+
+
+src/Combat/Main/SetField0AndPropagate0205bacc.cpp:
+    complete
+    .text start:0x0205bacc end:0x0205bafc
+
+
+src/Combat/Main/SetForwardAndStore0205eb54.cpp:
+    complete
+    .text start:0x0205eb54 end:0x0205eb80
+
+
+src/Combat/Main/SetForwardAndStore0205ebc0.cpp:
+    complete
+    .text start:0x0205ebc0 end:0x0205ebec
+
+
+src/Combat/Main/SetSublistEntriesFlag1.cpp:
+    complete
+    .text start:0x02080b54 end:0x02080bac
+
+
+src/Combat/Main/SetSublistEntriesFlag2.cpp:
+    complete
+    .text start:0x02080608 end:0x0208065c
+
+
+src/Combat/Main/ShutdownAndReinit0205e92c.cpp:
+    complete
+    .text start:0x0205e92c end:0x0205e944
+
+
+src/Combat/Main/StoreDecodedShortAt0x28.cpp:
+    complete
+    .text start:0x02099c90 end:0x02099cac
+
+
+src/Combat/Main/StoreDecodedShortAt0xa0207ba70.cpp:
+    complete
+    .text start:0x0207ba70 end:0x0207ba90
+
+
+src/Combat/Main/StoreField4IfGlobalActive0207a1f0.cpp:
+    complete
+    .text start:0x0207a1f0 end:0x0207a220
+
+
+src/Combat/Main/StoreFloatSetState1_0207b4c0.cpp:
+    complete
+    .text start:0x0207b4c0 end:0x0207b4f4
+
+
+src/Combat/Main/StoreFloatSetState2_0207b2cc.cpp:
+    complete
+    .text start:0x0207b2cc end:0x0207b304
+
+
+src/Combat/Main/StoreValueInManager0209d744.cpp:
+    complete
+    .text start:0x0209d744 end:0x0209d770
+
+
+src/Combat/Main/StoreVariantToField0x2a.cpp:
+    complete
+    .text start:0x0205e03c end:0x0205e05c
+
+
+src/Combat/Main/StoreVariantToField0x30.cpp:
+    complete
+    .text start:0x0205e05c end:0x0205e07c
+
+
+src/Combat/Main/StoreVariantToGlobalField8.cpp:
+    complete
+    .text start:0x020899bc end:0x020899dc
+
+
+src/Combat/Main/TestField0x397cCombatantWith02067fec.cpp:
+    complete
+    .text start:0x02068a20 end:0x02068a5c
+
+
+src/Combat/Main/TestField0x3acCombatantWith02067fec.cpp:
+    complete
+    .text start:0x020689e4 end:0x02068a20
+
+
+src/Combat/Main/TestFlag0x800CombatantWith02067fec.cpp:
+    complete
+    .text start:0x020689a4 end:0x020689e4
+
+
+src/Combat/Main/CheckFlagAndThreshold0206e31c.cpp:
+    complete
+    .text start:0x0206e31c end:0x0206e348
+
+
+src/Combat/Main/SetBitWithOffset0206eb64.cpp:
+    complete
+    .text start:0x0206eb64 end:0x0206eb98
+
+
+src/Combat/Main/SetKeyedArrayBit0206e348.cpp:
+    complete
+    .text start:0x0206e348 end:0x0206e384
+
+
+src/Combat/Main/StoreDecodedDelta0206b85c.cpp:
+    complete
+    .text start:0x0206b85c end:0x0206b894
+
+
+src/Combat/Main/StoreDecodedDelta0206b894.cpp:
+    complete
+    .text start:0x0206b894 end:0x0206b8cc

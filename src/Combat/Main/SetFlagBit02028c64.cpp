@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" void func_0209953c(int arg);
+void InsertShortIntoTable021098f4(unsigned short);
 
 struct Obj02028c64 {
     char pad[4];
@@ -13,5 +13,5 @@ ARM void SetFlagBit02028c64(struct Obj02028c64* obj, int index) {
         obj->flags |= 1 << index;
         return;
     }
-    func_0209953c(5);
+    InsertShortIntoTable021098f4(5);
 }
