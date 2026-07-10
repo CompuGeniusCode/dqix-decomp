@@ -11775,3 +11775,68 @@ src/Combat/Main/ValidateCapturedValue0208b4d4.cpp:
 src/Combat/Main/SetFieldD20208bf28.cpp:
     complete
     .text start:0x0208bf28 end:0x0208bf78
+
+
+src/Combat/Main/AdvanceWrappedAccumulator0205c4a8.cpp:
+    complete
+    .text start:0x0205c4a8 end:0x0205c508
+
+
+src/Combat/Main/ClearSublistEntriesFlag1.cpp:
+    complete
+    .text start:0x02080bac end:0x02080c04
+
+
+src/Combat/Main/GetActiveScaledSum0205c570.cpp:
+    complete
+    .text start:0x0205c570 end:0x0205c5b0
+
+
+src/Combat/Main/InitChannelPair0205c53c.cpp:
+    complete
+    .text start:0x0205c53c end:0x0205c564
+
+
+src/Combat/Main/IsElementFieldActive020811e8.cpp:
+    complete
+    .text start:0x020811e8 end:0x02081214
+
+
+src/Combat/Main/LookupValueByEntryKey02081010.cpp:
+    complete
+    .text start:0x02081010 end:0x0208103c
+
+
+src/Combat/Main/ResolveEntryValueByKey02080fe0.cpp:
+    complete
+    .text start:0x02080fe0 end:0x02081010
+
+
+src/Combat/Main/SearchWithComparator0206f4f0.cpp:
+    complete
+    .text start:0x0206f4f0 end:0x0206f504
+
+
+src/Combat/Main/SearchWithLow15Comparator02070fd0.cpp:
+    complete
+    .text start:0x02070fd0 end:0x02070fe4
+
+
+src/Combat/Main/SetElementFlag0x20ByKey0205def8.cpp:
+    complete
+    .text start:0x0205def8 end:0x0205df38
+
+
+src/Combat/Main/SetEntryLowNibbleAndElement02080c68.cpp:
+    complete
+    .text start:0x02080c68 end:0x02080cc0
+
+
+src/Combat/Main/TestBitWithBias0206eb98.cpp:
+    complete
+    .text start:0x0206eb98 end:0x0206ebc8
+
+
+src/Combat/Main/GetScaledSumIfActive0205cecc.cpp:
+    complete
+    .text start:0x0205cecc end:0x0205cef8
