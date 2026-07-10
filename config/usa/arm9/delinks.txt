@@ -7525,3 +7525,28 @@ src/Combat/Main/WriteVec3ToReg02036000.cpp:
 src/Combat/Main/Forward0203aa80.cpp:
     complete
     .text start:0x0203aa80 end:0x0203aa98
+
+
+src/Combat/Main/GetBoundedEntry020425b4.cpp:
+    complete
+    .text start:0x020425b4 end:0x020425e4
+
+
+src/Combat/Main/GetTableEntry020421b0.cpp:
+    complete
+    .text start:0x020421b0 end:0x020421c4
+
+
+src/Combat/Main/GetWordFromTable02042638.cpp:
+    complete
+    .text start:0x02042638 end:0x02042648
+
+
+src/Combat/Main/GetWordFromTable02042648.cpp:
+    complete
+    .text start:0x02042648 end:0x02042658
+
+
+src/Combat/Main/LookupKeyValue020425e4.cpp:
+    complete
+    .text start:0x020425e4 end:0x02042638
