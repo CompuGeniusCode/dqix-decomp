@@ -11860,3 +11860,53 @@ src/Combat/Main/GetNibble0206ec1c.cpp:
 src/Combat/Main/TestFlagBitsAndDispatch020d6884.cpp:
     complete
     .text start:0x020d6830 end:0x020d6884
+
+
+src/Combat/Main/BinarySearchByField4_02097224.cpp:
+    complete
+    .text start:0x02097224 end:0x02097238
+
+
+src/Combat/Main/BuildSortedChain02097628.cpp:
+    complete
+    .text start:0x02097628 end:0x02097668
+
+
+src/Combat/Main/BuildSortedChain020976e0.cpp:
+    complete
+    .text start:0x020976e0 end:0x02097720
+
+
+src/Combat/Main/BuildSortedNodeChain0207214c.cpp:
+    complete
+    .text start:0x0207214c end:0x0207218c
+
+
+src/Combat/Main/BuildSortedNodeChain020721f8.cpp:
+    complete
+    .text start:0x020721f8 end:0x02072238
+
+
+src/Combat/Main/DecompressLZ77ToAllocatorTail_02075608.cpp:
+    complete
+    .text start:0x02075608 end:0x02075654
+
+
+src/Combat/Main/IsIdInRange020981e4.cpp:
+    complete
+    .text start:0x020981e4 end:0x02098210
+
+
+src/Combat/Main/NotifyU16AndSetFlag02075cb8.cpp:
+    complete
+    .text start:0x02075cb8 end:0x02075cdc
+
+
+src/Combat/Main/ResolveHandleFields02097248.cpp:
+    complete
+    .text start:0x02097248 end:0x02097280
+
+
+src/Combat/Main/TallyMatchingVariant02071004.cpp:
+    complete
+    .text start:0x02071004 end:0x02071044
