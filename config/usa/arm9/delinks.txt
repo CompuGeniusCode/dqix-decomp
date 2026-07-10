@@ -10185,3 +10185,28 @@ src/Combat/Main/UnlinkVCountAlarmNode.cpp:
 src/Combat/Main/ValidateAndFlushRange.cpp:
     complete
     .text start:0x020ca054 end:0x020ca0a8
+
+
+src/Combat/Main/GetGlobalWord021112ec.cpp:
+    complete
+    .text start:0x020c75a4 end:0x020c75b4
+
+
+src/Combat/Main/IncrementCounter021112e0.cpp:
+    complete
+    .text start:0x020c71a4 end:0x020c71bc
+
+
+src/Combat/Main/RemoveFromList021112e0.cpp:
+    complete
+    .text start:0x020c734c end:0x020c7394
+
+
+src/Combat/Main/SortedInsertByKey021112e0.cpp:
+    complete
+    .text start:0x020c72ec end:0x020c734c
+
+
+src/Combat/Main/VariadicForward020c7170.cpp:
+    complete
+    .text start:0x020c7170 end:0x020c7198
