@@ -6705,3 +6705,28 @@ src/Combat/Main/SetSlotByte020107dc.cpp:
 src/Combat/Main/SwapArgsAndCall0201e2b4.cpp:
     complete
     .text start:0x0201e2b4 end:0x0201e2d8
+
+
+src/Combat/Main/ClearRegionAndReturnSelf020269d0.cpp:
+    complete
+    .text start:0x020269d0 end:0x020269e4
+
+
+src/Combat/Main/CountMatchingEntries02026a78.cpp:
+    complete
+    .text start:0x02026a78 end:0x02026abc
+
+
+src/Combat/Main/InitEntryList020277c4.cpp:
+    complete
+    .text start:0x020277c4 end:0x020277f4
+
+
+src/Combat/Main/SetArrayEntryFlag02026f20.cpp:
+    complete
+    .text start:0x02026f20 end:0x02026f34
+
+
+src/Combat/Main/SetFlagsAndReset02026678.cpp:
+    complete
+    .text start:0x02026678 end:0x02026694
