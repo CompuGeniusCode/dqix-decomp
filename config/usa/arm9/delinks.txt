@@ -6540,3 +6540,43 @@ src/Combat/Main/ZeroInit020de868.cpp:
 src/Combat/Main/ZeroInitReturn020de824.cpp:
     complete
     .text start:0x020de824 end:0x020de848
+
+
+src/Combat/Main/AllocateAndCopyString02034980.cpp:
+    complete
+    .text start:0x02034980 end:0x020349c0
+
+
+src/Combat/Main/CopyStringToField0207ea38.cpp:
+    complete
+    .text start:0x0207ea38 end:0x0207ea8c
+
+
+src/Combat/Main/CopyWordAndInvokeCallback0204adb4.cpp:
+    complete
+    .text start:0x0204adb4 end:0x0204ade8
+
+
+src/Combat/Main/InitStruct02059cc8.cpp:
+    complete
+    .text start:0x02059cc8 end:0x02059cfc
+
+
+src/Combat/Main/InitStruct02070378.cpp:
+    complete
+    .text start:0x02070378 end:0x020703c8
+
+
+src/Combat/Main/IsHighByteFF0206ac6c.cpp:
+    complete
+    .text start:0x0206ac6c end:0x0206ac94
+
+
+src/Combat/Main/LoadBattleBlock020ac460.cpp:
+    complete
+    .text start:0x020ac460 end:0x020ac494
+
+
+src/Combat/Main/LoadBattleBlock020ac4c0.cpp:
+    complete
+    .text start:0x020ac4c0 end:0x020ac4f8
