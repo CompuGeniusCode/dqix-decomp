@@ -8035,3 +8035,48 @@ src/Combat/Main/SetBitfield0205afdc.cpp:
 src/Combat/Main/SetBitfieldStoreBytes0205af38.cpp:
     complete
     .text start:0x0205af38 end:0x0205af84
+
+
+src/Combat/Main/AllocateArray02048090.cpp:
+    complete
+    .text start:0x02048090 end:0x020480b8
+
+
+src/Combat/Main/Forward02047b30.cpp:
+    complete
+    .text start:0x02047b30 end:0x02047b40
+
+
+src/Combat/Main/IterateEntries0205a330.cpp:
+    complete
+    .text start:0x0205a330 end:0x0205a370
+
+
+src/Combat/Main/SetEntryByte14ByKey0205a42c.cpp:
+    complete
+    .text start:0x0205a42c end:0x0205a444
+
+
+src/Combat/Main/SetEntryFlag1ByKey0205a3ac.cpp:
+    complete
+    .text start:0x0205a3ac end:0x0205a3d0
+
+
+src/Combat/Main/SetEntryFlag2ByKey0205a370.cpp:
+    complete
+    .text start:0x0205a370 end:0x0205a3ac
+
+
+src/Combat/Main/SetFlag0x20002048104.cpp:
+    complete
+    .text start:0x02048104 end:0x02048120
+
+
+src/Combat/Main/SetFlag0x40Clear02048120.cpp:
+    complete
+    .text start:0x02048120 end:0x02048144
+
+
+src/Combat/Main/WriteReg0400048802047888.cpp:
+    complete
+    .text start:0x02047888 end:0x020478bc
