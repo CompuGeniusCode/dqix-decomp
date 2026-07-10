@@ -7645,3 +7645,78 @@ src/Combat/Main/GetSubField0x8.cpp:
 src/Combat/Main/GetSubField0xC.cpp:
     complete
     .text start:0x020550d8 end:0x020550f0
+
+
+src/Combat/Main/AllocateAndZero02054e70.cpp:
+    complete
+    .text start:0x02054e70 end:0x02054eb4
+
+
+src/Combat/Main/CallAndReturnSelf02052944.cpp:
+    complete
+    .text start:0x02052944 end:0x02052958
+
+
+src/Combat/Main/ClearFieldBit02053fe4.cpp:
+    complete
+    .text start:0x02053fe4 end:0x02054000
+
+
+src/Combat/Main/CopyStringToField042c.cpp:
+    complete
+    .text start:0x0204653c end:0x02046558
+
+
+src/Combat/Main/CopyStringToField046c.cpp:
+    complete
+    .text start:0x02046558 end:0x02046574
+
+
+src/Combat/Main/FindEntryAndGetNext.cpp:
+    complete
+    .text start:0x020467c0 end:0x020467f0
+
+
+src/Combat/Main/MaybeCall0205420c.cpp:
+    complete
+    .text start:0x0205420c end:0x02054224
+
+
+src/Combat/Main/MaybeInvoke0204719c.cpp:
+    complete
+    .text start:0x02047230 end:0x0204724c
+
+
+src/Combat/Main/ResetAllocators02054280.cpp:
+    complete
+    .text start:0x02054280 end:0x020542b4
+
+
+src/Combat/Main/ResetAndReturnAllocator.cpp:
+    complete
+    .text start:0x020466d0 end:0x020466e4
+
+
+src/Combat/Main/ResetInnerState02048c90.cpp:
+    complete
+    .text start:0x02048c90 end:0x02048cf0
+
+
+src/Combat/Main/SetFlag0x400Reset020484d0.cpp:
+    complete
+    .text start:0x020484d0 end:0x020484f8
+
+
+src/Combat/Main/SetFlag0x80Reset020489bc.cpp:
+    complete
+    .text start:0x020489bc end:0x020489e8
+
+
+src/Combat/Main/GetField0Result02169a58.cpp:
+    complete
+    .text start:0x02048ab4 end:0x02048ae0
+
+
+src/Combat/Main/GetField0Result02169aa4.cpp:
+    complete
+    .text start:0x02048ae0 end:0x02048b0c
