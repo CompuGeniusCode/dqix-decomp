@@ -7100,3 +7100,163 @@ src/Combat/Main/SetFields0x1f0And0x1f4.cpp:
 src/Combat/Main/SetString020264e4.cpp:
     complete
     .text start:0x020264e4 end:0x02026528
+
+
+src/Combat/Main/AddAndClampMin0202e858.cpp:
+    complete
+    .text start:0x0202e858 end:0x0202e874
+
+
+src/Combat/Main/AllocCopyDispatch020361a4.cpp:
+    complete
+    .text start:0x020361a4 end:0x02036200
+
+
+src/Combat/Main/AllocateClearArray02028754.cpp:
+    complete
+    .text start:0x02028754 end:0x020287b4
+
+
+src/Combat/Main/CallFunc0202fa38Mode1.cpp:
+    complete
+    .text start:0x0202fd14 end:0x0202fd2c
+
+
+src/Combat/Main/CallFunc0202fa38Mode2.cpp:
+    complete
+    .text start:0x0202fd2c end:0x0202fd44
+
+
+src/Combat/Main/CallFunc0202fa38ZeroPad.cpp:
+    complete
+    .text start:0x0202fcfc end:0x0202fd14
+
+
+src/Combat/Main/CallFunc0202fc38Mode1.cpp:
+    complete
+    .text start:0x0202fd44 end:0x0202fd54
+
+
+src/Combat/Main/ClearCounterField0x788.cpp:
+    complete
+    .text start:0x0202fa00 end:0x0202fa38
+
+
+src/Combat/Main/ComputeTwoFromVec3_0202ec84.cpp:
+    complete
+    .text start:0x0202ec84 end:0x0202ecc8
+
+
+src/Combat/Main/CopyFourHalfwordsToField0x114.cpp:
+    complete
+    .text start:0x02033f6c end:0x02033f7c
+
+
+src/Combat/Main/CopyToBattleField02039768.cpp:
+    complete
+    .text start:0x02039768 end:0x02039790
+
+
+src/Combat/Main/CopyVec3ToField0x10.cpp:
+    complete
+    .text start:0x0202e938 end:0x0202e948
+
+
+src/Combat/Main/FindNthType2Entry02018c20.cpp:
+    complete
+    .text start:0x02018c20 end:0x02018c74
+
+
+src/Combat/Main/GetEntryBySignedByteIndex.cpp:
+    complete
+    .text start:0x0202c178 end:0x0202c19c
+
+
+src/Combat/Main/GetIntFromVariant02030b0c.cpp:
+    complete
+    .text start:0x02030b0c end:0x02030b44
+
+
+src/Combat/Main/HalveCounterField0x788.cpp:
+    complete
+    .text start:0x0202f9b4 end:0x0202fa00
+
+
+src/Combat/Main/InitEntries02028894.cpp:
+    complete
+    .text start:0x02028894 end:0x020288e0
+
+
+src/Combat/Main/IsInRange0201b5b0.cpp:
+    complete
+    .text start:0x0201b5b0 end:0x0201b5d8
+
+
+src/Combat/Main/NotifyActiveSlots02018f30.cpp:
+    complete
+    .text start:0x02018f30 end:0x02018f6c
+
+
+src/Combat/Main/RunLoopIfValid02030774.cpp:
+    complete
+    .text start:0x02030774 end:0x020307d0
+
+
+src/Combat/Main/SetBits0x40000AndFlag0x2.cpp:
+    complete
+    .text start:0x02033fec end:0x0203400c
+
+
+src/Combat/Main/SetByte0xbeShiftPrev.cpp:
+    complete
+    .text start:0x02033b88 end:0x02033ba0
+
+
+src/Combat/Main/SetFlag0x80AndCopyToField0x11c.cpp:
+    complete
+    .text start:0x02033fa8 end:0x02033fc4
+
+
+src/Combat/Main/SetFlagBit02028c64.cpp:
+    complete
+    .text start:0x02028c64 end:0x02028c8c
+
+
+src/Combat/Main/SetGlobalStateIfField4Is16.cpp:
+    complete
+    .text start:0x0202ae30 end:0x0202ae4c
+
+
+src/Combat/Main/SetHalf0xc6AndCopyVec3.cpp:
+    complete
+    .text start:0x02033e18 end:0x02033e2c
+
+
+src/Combat/Main/SetState2AndCall0202d6c8.cpp:
+    complete
+    .text start:0x0202b7ec end:0x0202b800
+
+
+src/Combat/Main/SetString02026528.cpp:
+    complete
+    .text start:0x02026528 end:0x0202656c
+
+
+src/Combat/Main/SetTargetHalfwords0202e95c.cpp:
+    complete
+    .text start:0x0202e95c end:0x0202e98c
+
+
+src/Combat/Main/StoreAndMaybeCopy02018f6c.cpp:
+    complete
+    .text start:0x02018f6c end:0x02018fbc
+
+
+src/Combat/Main/SubtractVec3Fields0202e9f4.cpp:
+    complete
+    .text start:0x0202e9f4 end:0x0202ea10
+
+
+src/Combat/Main/TestBitBySignedByteIndex.cpp:
+    complete
+    .text start:0x0202c1c0 end:0x0202c1e8
