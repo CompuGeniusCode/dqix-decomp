@@ -8375,3 +8375,123 @@ src/Combat/Main/UnlinkNodeByByteId0206dd68.cpp:
 src/Combat/Main/WrapCall0206f230With1000.cpp:
     complete
     .text start:0x0206f200 end:0x0206f230
+
+
+src/Combat/Main/AllocateArray0207c164.cpp:
+    complete
+    .text start:0x0207c164 end:0x0207c18c
+
+
+src/Combat/Main/AllocateBuffer0204c7a8.cpp:
+    complete
+    .text start:0x0204c7a8 end:0x0204c7cc
+
+
+src/Combat/Main/BuildBitmask0206e384.cpp:
+    complete
+    .text start:0x0206e384 end:0x0206e3d4
+
+
+src/Combat/Main/CallListEntry0204bbb4.cpp:
+    complete
+    .text start:0x0204bbb4 end:0x0204bc08
+
+
+src/Combat/Main/CallLoop0206eb20.cpp:
+    complete
+    .text start:0x0206eb20 end:0x0206eb64
+
+
+src/Combat/Main/Clear0x4cBytes0204bf30.cpp:
+    complete
+    .text start:0x0204bf30 end:0x0204bf44
+
+
+src/Combat/Main/ClearAndReturnState020709b4.cpp:
+    complete
+    .text start:0x020709b4 end:0x020709c8
+
+
+src/Combat/Main/ClearStruct020709d8.cpp:
+    complete
+    .text start:0x020709d8 end:0x020709ec
+
+
+src/Combat/Main/ClearSubFieldsAndFlag02049520.cpp:
+    complete
+    .text start:0x02049520 end:0x02049550
+
+
+src/Combat/Main/ClearSubFlag56IfActive02049efc.cpp:
+    complete
+    .text start:0x02049efc end:0x02049f28
+
+
+src/Combat/Main/FindShortIndex0206e3e8.cpp:
+    complete
+    .text start:0x0206e3e8 end:0x0206e424
+
+
+src/Combat/Main/Forward02052338.cpp:
+    complete
+    .text start:0x02052338 end:0x02052350
+
+
+src/Combat/Main/ForwardReordered0207ba0c.cpp:
+    complete
+    .text start:0x0207ba0c end:0x0207ba28
+
+
+src/Combat/Main/ForwardTableValue02075db0.cpp:
+    complete
+    .text start:0x02075db0 end:0x02075df4
+
+
+src/Combat/Main/GetShortFromTable0206e3d4.cpp:
+    complete
+    .text start:0x0206e3d4 end:0x0206e3e8
+
+
+src/Combat/Main/GetSubTriple02049b54.cpp:
+    complete
+    .text start:0x02049b54 end:0x02049bac
+
+
+src/Combat/Main/GetSubTriple02049c08.cpp:
+    complete
+    .text start:0x02049c08 end:0x02049c60
+
+
+src/Combat/Main/InitHalfwords02071688.cpp:
+    complete
+    .text start:0x02071688 end:0x020716a4
+
+
+src/Combat/Main/IsFunc020d0840NonZero.cpp:
+    complete
+    .text start:0x02075ca0 end:0x02075cb8
+
+
+src/Combat/Main/ResetSubFlags02049e88.cpp:
+    complete
+    .text start:0x02049e88 end:0x02049ec0
+
+
+src/Combat/Main/SetNibbleBit0206e218.cpp:
+    complete
+    .text start:0x0206e218 end:0x0206e260
+
+
+src/Combat/Main/UpdateSelectedCell02076928.cpp:
+    complete
+    .text start:0x02076928 end:0x02076988
+
+
+src/Combat/Main/WriteReg0400048C02070798.cpp:
+    complete
+    .text start:0x02070798 end:0x020707c8
+
+
+src/Combat/Main/WriteReg040004A40207076c.cpp:
+    complete
+    .text start:0x0207076c end:0x02070798
