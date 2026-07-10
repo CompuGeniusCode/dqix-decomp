@@ -3,21 +3,24 @@
 #include <globaldefs.h>
 
 #ifdef jpn
-    #define func_020a40e8 func_020a5f00
-#endif
-
 extern "C"
 {
     // Just (vector)-memsets to zero
-    void func_020a40e8(DetailedTreasureMapData*);
+    void func_020a5f00(DetailedTreasureMapData*);
 }
+#define ClearOverallMapData func_020a5f00
+#else
+// Just (vector)-memsets to zero
+void ClearStruct020a40e8(void*);
+#define ClearOverallMapData ClearStruct020a40e8
+#endif
 
 // USA: func_0209033c
 // JPN: func_02090c5c
 void ActiveGrottoClass::Clear()
 {
     pGenerator = NULL;
-    func_020a40e8(&overallMapData);
+    ClearOverallMapData(&overallMapData);
     floorMap.Clear();
     floorWidth = 16;
     floorHeight = 16;

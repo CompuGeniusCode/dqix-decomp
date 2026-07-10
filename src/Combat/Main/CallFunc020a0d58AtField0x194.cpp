@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 
-extern "C" void* func_020a0d58(void* obj);
+void* Clear0x28Bytes(void*);
 
 // USA: func_0202ee94
 ARM void* CallFunc020a0d58AtField0x194(void* obj) {
-    return func_020a0d58((char*)obj + 0x194);
+    return Clear0x28Bytes((char*)obj + 0x194);
 }
