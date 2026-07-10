@@ -9635,3 +9635,298 @@ src/Combat/Main/NotifyInnerByte0x3c.cpp:
 src/Combat/Main/RestorePairTableFromBuffer.cpp:
     complete
     .text start:0x020bb740 end:0x020bb780
+
+
+src/Combat/Main/ClearAndDispatch.cpp:
+    complete
+    .text start:0x020c7be8 end:0x020c7c08
+
+
+src/Combat/Main/ClearExMemCntBit0x80.cpp:
+    complete
+    .text start:0x020c6fe0 end:0x020c6ff8
+
+
+src/Combat/Main/DisableInterruptBits.cpp:
+    complete
+    .text start:0x020c6cec end:0x020c6d1c
+
+
+src/Combat/Main/EnableInterruptBits.cpp:
+    complete
+    .text start:0x020c6cbc end:0x020c6cec
+
+
+src/Combat/Main/FindThreadInState1.cpp:
+    complete
+    .text start:0x020c7978 end:0x020c79a0
+
+
+src/Combat/Main/GetBattleSysInnerField0.cpp:
+    complete
+    .text start:0x020cffb8 end:0x020cffcc
+
+
+src/Combat/Main/GetBattleSysInnerField1c.cpp:
+    complete
+    .text start:0x020d06e8 end:0x020d06fc
+
+
+src/Combat/Main/GetBattleSysInnerField4.cpp:
+    complete
+    .text start:0x020d06d4 end:0x020d06e8
+
+
+src/Combat/Main/GetBoxTestResult.cpp:
+    complete
+    .text start:0x020c56b0 end:0x020c56dc
+
+
+src/Combat/Main/GetGlobalHalf0x10.cpp:
+    complete
+    .text start:0x020c4b68 end:0x020c4b78
+
+
+src/Combat/Main/GetGlobalHalf0x2.cpp:
+    complete
+    .text start:0x020c4b38 end:0x020c4b48
+
+
+src/Combat/Main/GetGlobalHalf0x4.cpp:
+    complete
+    .text start:0x020c4b48 end:0x020c4b58
+
+
+src/Combat/Main/GetGlobalHalf0x8.cpp:
+    complete
+    .text start:0x020c4b78 end:0x020c4b88
+
+
+src/Combat/Main/GetGlobalHalf0xa.cpp:
+    complete
+    .text start:0x020c4b88 end:0x020c4b98
+
+
+src/Combat/Main/GetGlobalHalf0xe.cpp:
+    complete
+    .text start:0x020c4b58 end:0x020c4b68
+
+
+src/Combat/Main/GetGlobalWord02112140.cpp:
+    complete
+    .text start:0x020d1198 end:0x020d11a8
+
+
+src/Combat/Main/GetPositionVectorMtxStackLevel.cpp:
+    complete
+    .text start:0x020c5650 end:0x020c5680
+
+
+src/Combat/Main/GetProjectionMtxStackLevel.cpp:
+    complete
+    .text start:0x020c5680 end:0x020c56b0
+
+
+src/Combat/Main/Invoke020c6e48Mode0.cpp:
+    complete
+    .text start:0x020c6e94 end:0x020c6ea4
+
+
+src/Combat/Main/Invoke020c6ea4Mode0.cpp:
+    complete
+    .text start:0x020c6f18 end:0x020c6f28
+
+
+src/Combat/Main/InvokeCallbackSlot2.cpp:
+    complete
+    .text start:0x020c6a74 end:0x020c6a84
+
+
+src/Combat/Main/InvokeCallbackSlot3.cpp:
+    complete
+    .text start:0x020c6a84 end:0x020c6a94
+
+
+src/Combat/Main/InvokeCallbackSlot4.cpp:
+    complete
+    .text start:0x020c6a94 end:0x020c6aa4
+
+
+src/Combat/Main/InvokeCallbackSlot5.cpp:
+    complete
+    .text start:0x020c6aa4 end:0x020c6ab4
+
+
+src/Combat/Main/InvokeCallbackSlot6.cpp:
+    complete
+    .text start:0x020c6ab4 end:0x020c6ac4
+
+
+src/Combat/Main/InvokeHandlerWith7.cpp:
+    complete
+    .text start:0x020c6ac4 end:0x020c6ad4
+
+
+src/Combat/Main/ResetPairAt027e0060.cpp:
+    complete
+    .text start:0x020c6ad4 end:0x020c6aec
+
+
+src/Combat/Main/ResumeThreadIfPresent.cpp:
+    complete
+    .text start:0x020c783c end:0x020c7854
+
+
+src/Combat/Main/SelectBattleContextMode2.cpp:
+    complete
+    .text start:0x020d0040 end:0x020d0050
+
+
+src/Combat/Main/SetExMemCntBit0x80.cpp:
+    complete
+    .text start:0x020c6ff8 end:0x020c7010
+
+
+src/Combat/Main/SetInterruptEnable.cpp:
+    complete
+    .text start:0x020c6c90 end:0x020c6cbc
+
+
+src/Combat/Main/SetStackGuard.cpp:
+    complete
+    .text start:0x020c7a74 end:0x020c7a90
+
+
+src/Combat/Main/SetSubBgMode.cpp:
+    complete
+    .text start:0x020c3984 end:0x020c39a0
+
+
+src/Combat/Main/SetVBlankIrqEnable.cpp:
+    complete
+    .text start:0x020c3864 end:0x020c3898
+
+
+src/Combat/Main/SetVCountCompare.cpp:
+    complete
+    .text start:0x020c383c end:0x020c3864
+
+
+src/Combat/Main/SetupEffectType5.cpp:
+    complete
+    .text start:0x020ccabc end:0x020ccae8
+
+
+src/Combat/Main/SetupEffectType7.cpp:
+    complete
+    .text start:0x020cc980 end:0x020cc9c8
+
+
+src/Combat/Main/SetupEffectType8.cpp:
+    complete
+    .text start:0x020cca80 end:0x020ccabc
+
+
+src/Combat/Main/SetupEffectWithFlag0_020ccc00.cpp:
+    complete
+    .text start:0x020ccc00 end:0x020ccc10
+
+
+src/Combat/Main/SetupEffectWithFlag1_020ccbf0.cpp:
+    complete
+    .text start:0x020ccbf0 end:0x020ccc00
+
+
+src/Combat/Main/StartHwDivide.cpp:
+    complete
+    .text start:0x020c2cf0 end:0x020c2d18
+
+
+src/Combat/Main/SwapWordWithInterruptsDisabled.cpp:
+    complete
+    .text start:0x020c6d1c end:0x020c6d48
+
+
+src/Combat/Main/TriggerHandler0.cpp:
+    complete
+    .text start:0x020c6a54 end:0x020c6a64
+
+
+src/Combat/Main/TriggerHandler1.cpp:
+    complete
+    .text start:0x020c6a64 end:0x020c6a74
+
+
+src/Combat/Main/CheckEntry5Exists.cpp:
+    complete
+    .text start:0x020cf8bc end:0x020cf8e4
+
+
+src/Combat/Main/CheckEntry5For0x27.cpp:
+    complete
+    .text start:0x020cf8ac end:0x020cf8bc
+
+
+src/Combat/Main/DispatchIfEquals1.cpp:
+    complete
+    .text start:0x020cedc0 end:0x020cede0
+
+
+src/Combat/Main/DispatchType0x12.cpp:
+    complete
+    .text start:0x020cedfc end:0x020cee18
+
+
+src/Combat/Main/FetchHalfword0xF6.cpp:
+    complete
+    .text start:0x020cee18 end:0x020cee54
+
+
+src/Combat/Main/GetGlobal02111860.cpp:
+    complete
+    .text start:0x020cff18 end:0x020cff28
+
+
+src/Combat/Main/IsFlag4Clear020cff9c.cpp:
+    complete
+    .text start:0x020cff9c end:0x020cffb8
+
+
+src/Combat/Main/IsPowcntBit0Set.cpp:
+    complete
+    .text start:0x020cede0 end:0x020cedfc
+
+
+src/Combat/Main/RetryHelperUntilZero.cpp:
+    complete
+    .text start:0x020ce870 end:0x020ce89c
+
+
+src/Combat/Main/SetGlobal02111860.cpp:
+    complete
+    .text start:0x020cff40 end:0x020cff50
+
+
+src/Combat/Main/GetDataTcmRegionBase.cpp:
+    complete
+    .text start:0x020c89e4 end:0x020c89f8
+
+
+src/Combat/Main/GetTimer0Counter.cpp:
+    complete
+    .text start:0x020c8dfc end:0x020c8e0c
+
+
+src/Combat/Main/GetTimerBusyFlag.cpp:
+    complete
+    .text start:0x020c8ce4 end:0x020c8cf4
+
+
+src/Combat/Main/RestoreThreadContext.cpp:
+    complete
+    .text start:0x020c7d80 end:0x020c7dc4
+
+
+src/Combat/Main/SetActiveTimerBit.cpp:
+    complete
+    .text start:0x020c8c50 end:0x020c8c6c
