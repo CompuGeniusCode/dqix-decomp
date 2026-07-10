@@ -7355,3 +7355,28 @@ src/Combat/Main/SetVecYFromValue02033874.cpp:
 src/Combat/Main/TestSearchFlagBit0202c758.cpp:
     complete
     .text start:0x0202c758 end:0x0202c778
+
+
+src/Combat/Main/ClearChannelFlag0x24ThenUpdate.cpp:
+    complete
+    .text start:0x0203b2b8 end:0x0203b2cc
+
+
+src/Combat/Main/ClearChannelFlag0x25ThenUpdate.cpp:
+    complete
+    .text start:0x0203b2cc end:0x0203b2e0
+
+
+src/Combat/Main/IsChannelValueZero0203b5e0.cpp:
+    complete
+    .text start:0x0203b5e0 end:0x0203b5f8
+
+
+src/Combat/Main/SetChannelFlag0x24AfterUpdate.cpp:
+    complete
+    .text start:0x0203b250 end:0x0203b268
+
+
+src/Combat/Main/SetChannelFlag0x25AfterUpdate.cpp:
+    complete
+    .text start:0x0203b268 end:0x0203b280
