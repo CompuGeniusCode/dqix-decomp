@@ -16,13 +16,13 @@ struct Obj02041754 {
     int field_18;
 };
 
-extern "C" void func_020dc0e0(int, int, int, int, int, int);
+int EncodeStreamFields020dc0e0(int, int, int, int, unsigned char, unsigned char);
 
 // USA: func_02041754
 ARM void DisableField16Bit002041754(struct Obj02041754* obj) {
     if (obj->field_8 < 0) return;
     if (obj->b0 && obj->field_0 != 0) {
-        func_020dc0e0(1, obj->field_0, obj->field_4, 0x80, 1, 1);
+        EncodeStreamFields020dc0e0(1, obj->field_0, obj->field_4, 0x80, 1, 1);
         obj->b0 = 0;
     }
 }

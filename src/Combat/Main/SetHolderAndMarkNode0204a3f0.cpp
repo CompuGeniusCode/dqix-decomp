@@ -1,6 +1,7 @@
 #include <globaldefs.h>
 
-extern "C" void func_02037bbc(void* p);
+struct Obj02037bbc;
+void SetField8Callback02037bbc(struct Obj02037bbc*);
 
 struct SNode0204a3f0 {
     unsigned int flags0;
@@ -22,7 +23,7 @@ struct Owner0204a3f0 {
 ARM void SetHolderAndMarkNode0204a3f0(struct Owner0204a3f0* owner, struct Holder0204a3f0* h) {
     struct SNode0204a3f0* s;
     owner->holder = h;
-    func_02037bbc(h);
+    SetField8Callback02037bbc((struct Obj02037bbc*)h);
     s = owner->holder->node;
     if (s == NULL) return;
     s = s->bit0 ? s : NULL;

@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" void func_020dc1e8(int handle);
+int EncodeStreamValue020dc1e8(int);
 extern "C" int func_020dc124(void* src, int mode);
 
 struct Obj0207ecd4 {
@@ -12,6 +12,6 @@ struct Obj0207ecd4 {
 
 // USA: func_0207ecd4
 ARM void ReacquireHandleField0xa6(struct Obj0207ecd4* obj) {
-    func_020dc1e8(obj->field_a6);
+    EncodeStreamValue020dc1e8(obj->field_a6);
     obj->field_a6 = func_020dc124(obj->field_58, 0);
 }
