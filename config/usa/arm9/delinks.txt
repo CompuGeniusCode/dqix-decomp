@@ -7880,3 +7880,33 @@ src/Combat/Main/InitStruct02057930.cpp:
 src/Combat/Main/ProcessArray020579b4.cpp:
     complete
     .text start:0x020579b4 end:0x020579ec
+
+
+src/Combat/Main/DispatchIfField0xc4NonNeg_0205eb90.cpp:
+    complete
+    .text start:0x0205eb90 end:0x0205ebb4
+
+
+src/Combat/Main/DispatchIfField0xc4NonNeg_0205ebfc.cpp:
+    complete
+    .text start:0x0205ebfc end:0x0205ec20
+
+
+src/Combat/Main/DispatchWithShortB4_0205eaa0.cpp:
+    complete
+    .text start:0x0205eaa0 end:0x0205eabc
+
+
+src/Combat/Main/ForwardAndCopyB8ToC0_0205eb08.cpp:
+    complete
+    .text start:0x0205eb08 end:0x0205eb24
+
+
+src/Combat/Main/ForwardField0xc0_0205ebec.cpp:
+    complete
+    .text start:0x0205ebec end:0x0205ebfc
+
+
+src/Combat/Main/SetStateAndDispatch0205e9f4.cpp:
+    complete
+    .text start:0x0205e9f4 end:0x0205ea18
