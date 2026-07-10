@@ -11750,3 +11750,28 @@ src/Combat/Main/StoreDecodedDelta0206b85c.cpp:
 src/Combat/Main/StoreDecodedDelta0206b894.cpp:
     complete
     .text start:0x0206b894 end:0x0206b8cc
+
+
+src/Combat/Main/SetFieldD2IfChanged0208becc.cpp:
+    complete
+    .text start:0x0208becc end:0x0208bf28
+
+
+src/Combat/Main/SetGlobalShortField10.cpp:
+    complete
+    .text start:0x020899dc end:0x020899fc
+
+
+src/Combat/Main/SetGlobalShortField18.cpp:
+    complete
+    .text start:0x02089aa0 end:0x02089ac0
+
+
+src/Combat/Main/ValidateCapturedValue0208b4d4.cpp:
+    complete
+    .text start:0x0208b4d4 end:0x0208b508
+
+
+src/Combat/Main/SetFieldD20208bf28.cpp:
+    complete
+    .text start:0x0208bf28 end:0x0208bf78
