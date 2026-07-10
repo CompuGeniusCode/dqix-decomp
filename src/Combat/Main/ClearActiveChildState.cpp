@@ -1,7 +1,8 @@
 #include <globaldefs.h>
 
 void ClearField0x5cBit0(unsigned int* obj);
-extern "C" void func_02041538(void* obj);
+struct Struct02041538;
+void RefreshSelectionState02041538(struct Struct02041538*);
 
 // USA: func_02040bcc
 ARM void ClearActiveChildState(char* self) {
@@ -12,5 +13,5 @@ ARM void ClearActiveChildState(char* self) {
     }
     void* b = *(void**)(self + 0x18);
     if (b == NULL) return;
-    func_02041538(b);
+    RefreshSelectionState02041538((struct Struct02041538*)b);
 }
