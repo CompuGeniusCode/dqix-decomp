@@ -10755,3 +10755,113 @@ src/Combat/Main/ResetAndReturnArg020d806c.cpp:
 src/Combat/Main/ResetCombatantSlot020d7334.cpp:
     complete
     .text start:0x020d7334 end:0x020d738c
+
+
+src/Combat/Main/ClearMatchingEntries020e3544.cpp:
+    complete
+    .text start:0x020e3544 end:0x020e3580
+
+
+src/Combat/Main/ClearSearchFlagBit0202c600.cpp:
+    complete
+    .text start:0x0202c600 end:0x0202c648
+
+
+src/Combat/Main/ClearSearchFlagBit0202c69c.cpp:
+    complete
+    .text start:0x0202c69c end:0x0202c6dc
+
+
+src/Combat/Main/ClearSearchFlagBit0202c718.cpp:
+    complete
+    .text start:0x0202c718 end:0x0202c758
+
+
+src/Combat/Main/DecrementField0x18020de0c8.cpp:
+    complete
+    .text start:0x020de0c8 end:0x020de0ec
+
+
+src/Combat/Main/FindFreeEntryAndReset020e38a0.cpp:
+    complete
+    .text start:0x020e38a0 end:0x020e38e4
+
+
+src/Combat/Main/GetEngineBDispcntWindowBits.cpp:
+    complete
+    .text start:0x020e2bac end:0x020e2bc4
+
+
+src/Combat/Main/GetTableByte020dd11c.cpp:
+    complete
+    .text start:0x020dd11c end:0x020dd154
+
+
+src/Combat/Main/HalveField0x3c020dc098.cpp:
+    complete
+    .text start:0x020dc098 end:0x020dc0b0
+
+
+src/Combat/Main/InitAndClear020dde3c.cpp:
+    complete
+    .text start:0x020dde3c end:0x020dde64
+
+
+src/Combat/Main/InitSlotTable020e3004.cpp:
+    complete
+    .text start:0x020e3004 end:0x020e303c
+
+
+src/Combat/Main/ResetEntryArray020e3814.cpp:
+    complete
+    .text start:0x020e3814 end:0x020e3840
+
+
+src/Combat/Main/SetMainBG0Scroll.cpp:
+    complete
+    .text start:0x0204a804 end:0x0204a82c
+
+
+src/Combat/Main/SetMainBG1Scroll.cpp:
+    complete
+    .text start:0x0204a7dc end:0x0204a804
+
+
+src/Combat/Main/SetMainBG2Scroll.cpp:
+    complete
+    .text start:0x0204a7b4 end:0x0204a7dc
+
+
+src/Combat/Main/SetMainBG3Scroll.cpp:
+    complete
+    .text start:0x0204a78c end:0x0204a7b4
+
+
+src/Combat/Main/SetSearchFlagBit0202c660.cpp:
+    complete
+    .text start:0x0202c660 end:0x0202c69c
+
+
+src/Combat/Main/SetSearchFlagBit0202c6dc.cpp:
+    complete
+    .text start:0x0202c6dc end:0x0202c718
+
+
+src/Combat/Main/SetSubBG0Scroll.cpp:
+    complete
+    .text start:0x0204a764 end:0x0204a78c
+
+
+src/Combat/Main/SetSearchFlagBitAt0xc.cpp:
+    complete
+    .text start:0x0202c1e8 end:0x0202c21c
+
+
+src/Combat/Main/TestMaskBitBySignedByteIndex.cpp:
+    complete
+    .text start:0x0202bd34 end:0x0202bd68
+
+
+src/Combat/Main/StoreValidCombatantCount0202c3e0.cpp:
+    complete
+    .text start:0x0202c3e0 end:0x0202c410
