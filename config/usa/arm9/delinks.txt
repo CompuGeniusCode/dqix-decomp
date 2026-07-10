@@ -8010,3 +8010,28 @@ src/Combat/Main/UpdateEntriesWhereFlag2Set02057a6c.cpp:
 src/Combat/Main/ValidateResourceLookup0205a1f0.cpp:
     complete
     .text start:0x0205a1f0 end:0x0205a234
+
+
+src/Combat/Main/GetBits12To15Clamped.cpp:
+    complete
+    .text start:0x0205af18 end:0x0205af38
+
+
+src/Combat/Main/SetBitfield0205af84.cpp:
+    complete
+    .text start:0x0205af84 end:0x0205afb0
+
+
+src/Combat/Main/SetBitfield0205afb0.cpp:
+    complete
+    .text start:0x0205afb0 end:0x0205afdc
+
+
+src/Combat/Main/SetBitfield0205afdc.cpp:
+    complete
+    .text start:0x0205afdc end:0x0205b008
+
+
+src/Combat/Main/SetBitfieldStoreBytes0205af38.cpp:
+    complete
+    .text start:0x0205af38 end:0x0205af84
