@@ -10730,3 +10730,28 @@ src/Combat/Main/ResetStateAtOffset4_020d960c.cpp:
 src/Combat/Main/SetEntryPositionFromObject.cpp:
     complete
     .text start:0x020e28f0 end:0x020e2910
+
+
+src/Combat/Main/EnableIMEReturnPrev.cpp:
+    complete
+    .text start:0x020d6c9c end:0x020d6cb4
+
+
+src/Combat/Main/GetByte0214e4a0.cpp:
+    complete
+    .text start:0x020d8704 end:0x020d8714
+
+
+src/Combat/Main/InitStruct020d784c.cpp:
+    complete
+    .text start:0x020d784c end:0x020d7870
+
+
+src/Combat/Main/ResetAndReturnArg020d806c.cpp:
+    complete
+    .text start:0x020d806c end:0x020d8080
+
+
+src/Combat/Main/ResetCombatantSlot020d7334.cpp:
+    complete
+    .text start:0x020d7334 end:0x020d738c
