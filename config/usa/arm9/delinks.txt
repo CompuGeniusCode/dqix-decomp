@@ -7550,3 +7550,28 @@ src/Combat/Main/GetWordFromTable02042648.cpp:
 src/Combat/Main/LookupKeyValue020425e4.cpp:
     complete
     .text start:0x020425e4 end:0x02042638
+
+
+src/Combat/Main/GetEntryByteField0203c284.cpp:
+    complete
+    .text start:0x0203c284 end:0x0203c2c0
+
+
+src/Combat/Main/GetGlobalPtr02105244.cpp:
+    complete
+    .text start:0x0203bd14 end:0x0203bd24
+
+
+src/Combat/Main/InitStruct0203be64.cpp:
+    complete
+    .text start:0x0203be64 end:0x0203be78
+
+
+src/Combat/Main/InitStruct0203be78.cpp:
+    complete
+    .text start:0x0203be78 end:0x0203be8c
+
+
+src/Combat/Main/InitSubObject0203bd78.cpp:
+    complete
+    .text start:0x0203bd78 end:0x0203bd88
