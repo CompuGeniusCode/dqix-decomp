@@ -11910,3 +11910,73 @@ src/Combat/Main/ResolveHandleFields02097248.cpp:
 src/Combat/Main/TallyMatchingVariant02071004.cpp:
     complete
     .text start:0x02071004 end:0x02071044
+
+
+src/Combat/Main/AccumulateSlotDecodedValue020691c0.cpp:
+    complete
+    .text start:0x020691c0 end:0x020691f8
+
+
+src/Combat/Main/AccumulateSlotDecodedValue020691f8.cpp:
+    complete
+    .text start:0x020691f8 end:0x02069234
+
+
+src/Combat/Main/BumpCounterForValidVariant.cpp:
+    complete
+    .text start:0x020954e8 end:0x02095518
+
+
+src/Combat/Main/CreateTypeAFromAllocator.cpp:
+    complete
+    .text start:0x02092a74 end:0x02092aa4
+
+
+src/Combat/Main/InitAndFillIndexBuffer0204c964.cpp:
+    complete
+    .text start:0x0204c964 end:0x0204c980
+
+
+src/Combat/Main/IsField0x397cStatCallZero.cpp:
+    complete
+    .text start:0x02068c30 end:0x02068c6c
+
+
+src/Combat/Main/IsField0x3acStatCallZero.cpp:
+    complete
+    .text start:0x02068bf4 end:0x02068c30
+
+
+src/Combat/Main/LoadStateBytePair0206b804.cpp:
+    complete
+    .text start:0x0206b804 end:0x0206b85c
+
+
+src/Combat/Main/LookupPairedTableBytes02050940.cpp:
+    complete
+    .text start:0x02050940 end:0x02050970
+
+
+src/Combat/Main/ReadColorTableEntries02050460.cpp:
+    complete
+    .text start:0x02050460 end:0x020504a4
+
+
+src/Combat/Main/ReleaseHandleAndClearFlags.cpp:
+    complete
+    .text start:0x020941b0 end:0x020941f8
+
+
+src/Combat/Main/ResetAllocatorAndClearState.cpp:
+    complete
+    .text start:0x0208e4f8 end:0x0208e520
+
+
+src/Combat/Main/ResetSelectionState02054664.cpp:
+    complete
+    .text start:0x02054664 end:0x020546a0
+
+
+src/Combat/Main/IsNibbleFieldZeroOrOne.cpp:
+    complete
+    .text start:0x02095ae0 end:0x02095b30
