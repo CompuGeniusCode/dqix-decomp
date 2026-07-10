@@ -5940,3 +5940,158 @@ src/Combat/Main/SetBitsForFlaggedEntries020b2c78.cpp:
 src/Combat/Main/ClearFourRegions0204f0ec.cpp:
     complete
     .text start:0x0204f0ec end:0x0204f138
+
+
+src/Combat/Main/AddString0201f308.cpp:
+    complete
+    .text start:0x0201f308 end:0x0201f368
+
+
+src/Combat/Main/ClearFourRegions02079870.cpp:
+    complete
+    .text start:0x02079870 end:0x020798b8
+
+
+src/Combat/Main/ClearFourRegions020798b8.cpp:
+    complete
+    .text start:0x020798b8 end:0x02079900
+
+
+src/Combat/Main/ClearFourRegions02079fc8.cpp:
+    complete
+    .text start:0x02079fc8 end:0x0207a014
+
+
+src/Combat/Main/ClearFourRegions0207a014.cpp:
+    complete
+    .text start:0x0207a014 end:0x0207a060
+
+
+src/Combat/Main/ClearIndexedEntryFields0206e0d0.cpp:
+    complete
+    .text start:0x0206e0d0 end:0x0206e100
+
+
+src/Combat/Main/ClearRegions0206e080.cpp:
+    complete
+    .text start:0x0206e080 end:0x0206e0d0
+
+
+src/Combat/Main/ClearThreeRegions0203b634.cpp:
+    complete
+    .text start:0x0203b634 end:0x0203b66c
+
+
+src/Combat/Main/ClearTwoRegions0206ebf4.cpp:
+    complete
+    .text start:0x0206ebf4 end:0x0206ec1c
+
+
+src/Combat/Main/ClearTwoRegions02079f9c.cpp:
+    complete
+    .text start:0x02079f9c end:0x02079fc8
+
+
+src/Combat/Main/ClearTwoRegions02083c18.cpp:
+    complete
+    .text start:0x02083c18 end:0x02083c48
+
+
+src/Combat/Main/CopyInRegion0x571d.cpp:
+    complete
+    .text start:0x020114c0 end:0x020114ec
+
+
+src/Combat/Main/CopyOutRegion0x5718.cpp:
+    complete
+    .text start:0x02011494 end:0x020114c0
+
+
+src/Combat/Main/CopyOutRegion0x571d.cpp:
+    complete
+    .text start:0x020114ec end:0x02011518
+
+
+src/Combat/Main/CopyRegionsAndClearField0206e70c.cpp:
+    complete
+    .text start:0x0206e70c end:0x0206e748
+
+
+src/Combat/Main/CopyStringInto020d9dc4.cpp:
+    complete
+    .text start:0x020d9dc4 end:0x020d9dec
+
+
+src/Combat/Main/CopyStringToField0x649e.cpp:
+    complete
+    .text start:0x02011a74 end:0x02011aa0
+
+
+src/Combat/Main/CopyToRegion0x6482IfDst.cpp:
+    complete
+    .text start:0x020119f8 end:0x02011a24
+
+
+src/Combat/Main/FindEntryByName02034768.cpp:
+    complete
+    .text start:0x02034768 end:0x020347b4
+
+
+src/Combat/Main/FindEntryByName02040184.cpp:
+    complete
+    .text start:0x02040184 end:0x020401e4
+
+
+src/Combat/Main/FindEntryByNameSubstr0201e434.cpp:
+    complete
+    .text start:0x0201e434 end:0x0201e480
+
+
+src/Combat/Main/Init0206f510.cpp:
+    complete
+    .text start:0x0206f510 end:0x0206f550
+
+
+src/Combat/Main/Init0207b98c.cpp:
+    complete
+    .text start:0x0207b98c end:0x0207b9cc
+
+
+src/Combat/Main/Init02095518.cpp:
+    complete
+    .text start:0x02095518 end:0x02095578
+
+
+src/Combat/Main/InitStruct0203be8c.cpp:
+    complete
+    .text start:0x0203be8c end:0x0203bebc
+
+
+src/Combat/Main/InitStruct0203e074.cpp:
+    complete
+    .text start:0x0203e074 end:0x0203e0a0
+
+
+src/Combat/Main/IsHighByteFF02044494.cpp:
+    complete
+    .text start:0x02044494 end:0x020444bc
+
+
+src/Combat/Main/Reset02013490.cpp:
+    complete
+    .text start:0x02013490 end:0x020134e0
+
+
+src/Combat/Main/Reset0208e4bc.cpp:
+    complete
+    .text start:0x0208e4bc end:0x0208e4f8
+
+
+src/Combat/Main/Reset0209fe9c.cpp:
+    complete
+    .text start:0x0209fe9c end:0x0209fee4
+
+
+src/Combat/Main/ResetStruct0201d424.cpp:
+    complete
+    .text start:0x0201d424 end:0x0201d474
