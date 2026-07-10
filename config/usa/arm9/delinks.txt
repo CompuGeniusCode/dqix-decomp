@@ -10270,3 +10270,88 @@ src/Combat/Main/RelocateOffsetArrayAtOffset8.cpp:
 src/Combat/Main/WaitUntilChannel7Ready.cpp:
     complete
     .text start:0x020d2880 end:0x020d28a8
+
+
+src/Combat/Main/ComputeMaskedIndexOffset.cpp:
+    complete
+    .text start:0x020d6884 end:0x020d68b4
+
+
+src/Combat/Main/Crc16Compute.cpp:
+    complete
+    .text start:0x020d1cc8 end:0x020d1cf0
+
+
+src/Combat/Main/Crc32Compute.cpp:
+    complete
+    .text start:0x020d1cf0 end:0x020d1d1c
+
+
+src/Combat/Main/Crc8Compute.cpp:
+    complete
+    .text start:0x020d1ca0 end:0x020d1cc8
+
+
+src/Combat/Main/EnqueueEvent0x09.cpp:
+    complete
+    .text start:0x020d1ebc end:0x020d1ee4
+
+
+src/Combat/Main/EnqueueEvent0x0C.cpp:
+    complete
+    .text start:0x020d1ee4 end:0x020d1f0c
+
+
+src/Combat/Main/EnqueueEvent0x14.cpp:
+    complete
+    .text start:0x020d1ff0 end:0x020d2018
+
+
+src/Combat/Main/EnqueueEvent0x1A.cpp:
+    complete
+    .text start:0x020d1fb0 end:0x020d1fd0
+
+
+src/Combat/Main/EnqueueEvent0x1B.cpp:
+    complete
+    .text start:0x020d1fd0 end:0x020d1ff0
+
+
+src/Combat/Main/EnqueueEvent0x3.cpp:
+    complete
+    .text start:0x020d1e30 end:0x020d1e50
+
+
+src/Combat/Main/EnqueueEvent0x4.cpp:
+    complete
+    .text start:0x020d1e50 end:0x020d1e70
+
+
+src/Combat/Main/InvokeCallbackReturnStatus020d6bac.cpp:
+    complete
+    .text start:0x020d6bac end:0x020d6bc8
+
+
+src/Combat/Main/InvokeCallbackReturnStatus020d6bc8.cpp:
+    complete
+    .text start:0x020d6bc8 end:0x020d6be4
+
+
+src/Combat/Main/InvokeCallbackReturnStatus020d6be4.cpp:
+    complete
+    .text start:0x020d6be4 end:0x020d6c00
+
+
+src/Combat/Main/InvokeWithFullMaskType2.cpp:
+    complete
+    .text start:0x020d68b4 end:0x020d68d0
+
+
+src/Combat/Main/SubmitCommandType1.cpp:
+    complete
+    .text start:0x020d1de8 end:0x020d1e08
+
+
+src/Combat/Main/SubmitCommandType2.cpp:
+    complete
+    .text start:0x020d1e08 end:0x020d1e30
