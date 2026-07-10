@@ -7720,3 +7720,33 @@ src/Combat/Main/GetField0Result02169a58.cpp:
 src/Combat/Main/GetField0Result02169aa4.cpp:
     complete
     .text start:0x02048ae0 end:0x02048b0c
+
+
+src/Combat/Main/AllocateArray0204af38.cpp:
+    complete
+    .text start:0x0204af38 end:0x0204af64
+
+
+src/Combat/Main/FillTilemapPalette0204ae44.cpp:
+    complete
+    .text start:0x0204ae44 end:0x0204ae7c
+
+
+src/Combat/Main/GetScaledField0x6002049fec.cpp:
+    complete
+    .text start:0x02049fec end:0x0204a00c
+
+
+src/Combat/Main/SetBg0Priority.cpp:
+    complete
+    .text start:0x0204a6d0 end:0x0204a6ec
+
+
+src/Combat/Main/SetBg1Priority.cpp:
+    complete
+    .text start:0x0204a6b4 end:0x0204a6d0
+
+
+src/Combat/Main/SetBg2Priority.cpp:
+    complete
+    .text start:0x0204a698 end:0x0204a6b4
