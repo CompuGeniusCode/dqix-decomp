@@ -11840,3 +11840,23 @@ src/Combat/Main/TestBitWithBias0206eb98.cpp:
 src/Combat/Main/GetScaledSumIfActive0205cecc.cpp:
     complete
     .text start:0x0205cecc end:0x0205cef8
+
+
+src/Combat/Main/ClearNibble0206ece8.cpp:
+    complete
+    .text start:0x0206ece8 end:0x0206ed34
+
+
+src/Combat/Main/EnqueueEvent0x6Sub6.cpp:
+    complete
+    .text start:0x020d1e70 end:0x020d1e88
+
+
+src/Combat/Main/GetNibble0206ec1c.cpp:
+    complete
+    .text start:0x0206ec1c end:0x0206ec64
+
+
+src/Combat/Main/TestFlagBitsAndDispatch020d6884.cpp:
+    complete
+    .text start:0x020d6830 end:0x020d6884
