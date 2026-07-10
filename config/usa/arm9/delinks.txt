@@ -7620,3 +7620,28 @@ src/Combat/Main/SetSubBg2Priority.cpp:
 src/Combat/Main/SetSubBg3Priority.cpp:
     complete
     .text start:0x0204a60c end:0x0204a628
+
+
+src/Combat/Main/GetSubField0x10.cpp:
+    complete
+    .text start:0x020550f0 end:0x02055108
+
+
+src/Combat/Main/GetSubField0x14.cpp:
+    complete
+    .text start:0x02055108 end:0x02055120
+
+
+src/Combat/Main/GetSubField0x18.cpp:
+    complete
+    .text start:0x02055120 end:0x02055138
+
+
+src/Combat/Main/GetSubField0x8.cpp:
+    complete
+    .text start:0x020550c0 end:0x020550d8
+
+
+src/Combat/Main/GetSubField0xC.cpp:
+    complete
+    .text start:0x020550d8 end:0x020550f0
