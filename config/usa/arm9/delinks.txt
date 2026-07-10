@@ -6260,3 +6260,128 @@ src/Combat/Main/WriteCommand0xff2e.cpp:
 src/Combat/Main/WriteRegionToOffset020cbc34.cpp:
     complete
     .text start:0x020cbc34 end:0x020cbc54
+
+
+src/Combat/Main/AllocateStringCopy020da150.cpp:
+    complete
+    .text start:0x020da150 end:0x020da1ac
+
+
+src/Combat/Main/AppendZeroedEntry0209bd40.cpp:
+    complete
+    .text start:0x0209bd40 end:0x0209bd80
+
+
+src/Combat/Main/ClearBuffer02029060.cpp:
+    complete
+    .text start:0x02029060 end:0x02029088
+
+
+src/Combat/Main/ClearBuffer0204b010.cpp:
+    complete
+    .text start:0x0204b010 end:0x0204b04c
+
+
+src/Combat/Main/ClearFlagsAndValue0200fad4.cpp:
+    complete
+    .text start:0x0200fad4 end:0x0200fb08
+
+
+src/Combat/Main/CopyFromField0xa4_020c013c.cpp:
+    complete
+    .text start:0x020c013c end:0x020c0158
+
+
+src/Combat/Main/CopyStringOrDefault02026428.cpp:
+    complete
+    .text start:0x02026428 end:0x02026470
+
+
+src/Combat/Main/CopyToOffsetIfSrc02098efc.cpp:
+    complete
+    .text start:0x02098efc end:0x02098f20
+
+
+src/Combat/Main/CopyWordAndFlushCache0204ad88.cpp:
+    complete
+    .text start:0x0204ad88 end:0x0204adb4
+
+
+src/Combat/Main/FindElementByName0209998c.cpp:
+    complete
+    .text start:0x0209998c end:0x020999d8
+
+
+src/Combat/Main/Init020404c0.cpp:
+    complete
+    .text start:0x020404c0 end:0x02040504
+
+
+src/Combat/Main/ReadStreamBlock0200fd14.cpp:
+    complete
+    .text start:0x0200fd14 end:0x0200fd38
+
+
+src/Combat/Main/ResetBuffer02052a10.cpp:
+    complete
+    .text start:0x02052a10 end:0x02052a4c
+
+
+src/Combat/Main/ResetFields0209e46c.cpp:
+    complete
+    .text start:0x0209e46c end:0x0209e4a0
+
+
+src/Combat/Main/SetName0204a440.cpp:
+    complete
+    .text start:0x0204a440 end:0x0204a464
+
+
+src/Combat/Main/SetStringField0234.cpp:
+    complete
+    .text start:0x0204a464 end:0x0204a488
+
+
+src/Combat/Main/SetStringField0244.cpp:
+    complete
+    .text start:0x0204a488 end:0x0204a4ac
+
+
+src/Combat/Main/ShuffleIntArray.cpp:
+    complete
+    .text start:0x0203232c end:0x02032370
+
+
+src/Combat/Main/StoreInvalidTreasureMapMetadata.cpp:
+    complete
+    .text start:0x02011a40 end:0x02011a74
+
+
+src/Combat/Main/WriteBlockWithSize02011468.cpp:
+    complete
+    .text start:0x02011468 end:0x02011494
+
+
+src/Combat/Main/WriteHalfwordFF04.cpp:
+    complete
+    .text start:0x02069ae4 end:0x02069b0c
+
+
+src/Combat/Main/WriteHalfwordFF26.cpp:
+    complete
+    .text start:0x02069924 end:0x0206994c
+
+
+src/Combat/Main/WriteHalfwordFF27.cpp:
+    complete
+    .text start:0x0206994c end:0x02069974
+
+
+src/Combat/Main/WriteHalfwordFF28.cpp:
+    complete
+    .text start:0x02069974 end:0x0206999c
+
+
+src/Combat/Main/WriteHalfwordFF29.cpp:
+    complete
+    .text start:0x0206999c end:0x020699c4
