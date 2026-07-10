@@ -8080,3 +8080,28 @@ src/Combat/Main/SetFlag0x40Clear02048120.cpp:
 src/Combat/Main/WriteReg0400048802047888.cpp:
     complete
     .text start:0x02047888 end:0x020478bc
+
+
+src/Combat/Main/DisableField16Bit002041754.cpp:
+    complete
+    .text start:0x02041754 end:0x020417b0
+
+
+src/Combat/Main/GetGlobalField0x1c020421a0.cpp:
+    complete
+    .text start:0x020421a0 end:0x020421b0
+
+
+src/Combat/Main/SetByte0x2e8AndDispatch02041628.cpp:
+    complete
+    .text start:0x02041628 end:0x02041640
+
+
+src/Combat/Main/SetWord0x2f4AndDispatch02041640.cpp:
+    complete
+    .text start:0x02041640 end:0x02041654
+
+
+src/Combat/Main/WriteReg04000488020419f4.cpp:
+    complete
+    .text start:0x020419f4 end:0x02041a28
