@@ -6730,3 +6730,68 @@ src/Combat/Main/SetArrayEntryFlag02026f20.cpp:
 src/Combat/Main/SetFlagsAndReset02026678.cpp:
     complete
     .text start:0x02026678 end:0x02026694
+
+
+src/Combat/Main/AllocateAndClearBuffer0204b12c.cpp:
+    complete
+    .text start:0x0204b12c end:0x0204b174
+
+
+src/Combat/Main/AreCoordsOutOfBounds.cpp:
+    complete
+    .text start:0x02012b54 end:0x02012ba8
+
+
+src/Combat/Main/Clear0x20BytesAt0x74de.cpp:
+    complete
+    .text start:0x02012084 end:0x020120a0
+
+
+src/Combat/Main/CopyFieldToBuffer0205e084.cpp:
+    complete
+    .text start:0x0205e084 end:0x0205e0b0
+
+
+src/Combat/Main/CopyFieldToBuffer0205e0d0.cpp:
+    complete
+    .text start:0x0205e0d0 end:0x0205e0fc
+
+
+src/Combat/Main/GetFieldIfFlag2.cpp:
+    complete
+    .text start:0x020100cc end:0x020100f8
+
+
+src/Combat/Main/GetFieldIfFlag4.cpp:
+    complete
+    .text start:0x020100f8 end:0x02010124
+
+
+src/Combat/Main/IsHalfwordInRange02067ad8.cpp:
+    complete
+    .text start:0x02067ad8 end:0x02067b28
+
+
+src/Combat/Main/ResetBattlerState0201289c.cpp:
+    complete
+    .text start:0x0201289c end:0x020128d8
+
+
+src/Combat/Main/SetByte0x5cdaAndClearField0xa.cpp:
+    complete
+    .text start:0x020120d4 end:0x020120f0
+
+
+src/Combat/Main/SetCompareFlags0x50To0x53.cpp:
+    complete
+    .text start:0x020127cc end:0x0201282c
+
+
+src/Combat/Main/SetField5cb0AndRecordByte0.cpp:
+    complete
+    .text start:0x02010774 end:0x0201079c
+
+
+src/Combat/Main/SetField5cb4AndRecordByte1.cpp:
+    complete
+    .text start:0x020107a8 end:0x020107d0
