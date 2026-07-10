@@ -7285,3 +7285,73 @@ src/Combat/Main/SetField0x8Of02101640.cpp:
 src/Combat/Main/SetStateFromField0x2.cpp:
     complete
     .text start:0x0202d664 end:0x0202d688
+
+
+src/Combat/Main/AllocateEntryList020346b4.cpp:
+    complete
+    .text start:0x020346b4 end:0x020346f8
+
+
+src/Combat/Main/AllocateList020347e8.cpp:
+    complete
+    .text start:0x020347e8 end:0x02034820
+
+
+src/Combat/Main/AllocateList020348b4.cpp:
+    complete
+    .text start:0x020348b4 end:0x020348ec
+
+
+src/Combat/Main/ClearStateFlags0203400c.cpp:
+    complete
+    .text start:0x0203400c end:0x0203402c
+
+
+src/Combat/Main/DotVec3SubW02032124.cpp:
+    complete
+    .text start:0x02032124 end:0x02032148
+
+
+src/Combat/Main/GetTaggedValueAsFloat.cpp:
+    complete
+    .text start:0x02030b44 end:0x02030b7c
+
+
+src/Combat/Main/InitReturnSelf0202c794.cpp:
+    complete
+    .text start:0x0202c794 end:0x0202c7a8
+
+
+src/Combat/Main/InitReturnSelf0202c7a8.cpp:
+    complete
+    .text start:0x0202c7a8 end:0x0202c7bc
+
+
+src/Combat/Main/InitStreamState020345e0.cpp:
+    complete
+    .text start:0x020345e0 end:0x0203461c
+
+
+src/Combat/Main/LookupKeyTable02032e24.cpp:
+    complete
+    .text start:0x02032e24 end:0x02032e58
+
+
+src/Combat/Main/SetByteIfChanged02033b68.cpp:
+    complete
+    .text start:0x02033b68 end:0x02033b88
+
+
+src/Combat/Main/SetField0xc4Low15Bits.cpp:
+    complete
+    .text start:0x02034044 end:0x0203409c
+
+
+src/Combat/Main/SetVecYFromValue02033874.cpp:
+    complete
+    .text start:0x02033874 end:0x020338b0
+
+
+src/Combat/Main/TestSearchFlagBit0202c758.cpp:
+    complete
+    .text start:0x0202c758 end:0x0202c778
