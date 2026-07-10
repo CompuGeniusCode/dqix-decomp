@@ -6385,3 +6385,98 @@ src/Combat/Main/WriteHalfwordFF28.cpp:
 src/Combat/Main/WriteHalfwordFF29.cpp:
     complete
     .text start:0x0206999c end:0x020699c4
+
+
+src/Combat/Main/ClearAndInit020d84f8.cpp:
+    complete
+    .text start:0x020d84f8 end:0x020d8524
+
+
+src/Combat/Main/CopyInBattleField0x7540.cpp:
+    complete
+    .text start:0x020ac494 end:0x020ac4c0
+
+
+src/Combat/Main/CopyInBattleRegion0x7ac0.cpp:
+    complete
+    .text start:0x020ac08c end:0x020ac0b4
+
+
+src/Combat/Main/CopyOutBattleField0x64f4.cpp:
+    complete
+    .text start:0x020ac78c end:0x020ac7b4
+
+
+src/Combat/Main/CopyOutBattleField0x7ac0.cpp:
+    complete
+    .text start:0x020ac0b4 end:0x020ac0dc
+
+
+src/Combat/Main/CopyOutBattleRegion0x75f0.cpp:
+    complete
+    .text start:0x020abf38 end:0x020abf60
+
+
+src/Combat/Main/EmitControlCodeFF01.cpp:
+    complete
+    .text start:0x02069f74 end:0x02069f9c
+
+
+src/Combat/Main/EmitControlCodeFF03.cpp:
+    complete
+    .text start:0x02069f9c end:0x02069fc4
+
+
+src/Combat/Main/EmitControlCodeFF0E.cpp:
+    complete
+    .text start:0x02069fc4 end:0x02069fec
+
+
+src/Combat/Main/InitFieldFrom020bd8ac.cpp:
+    complete
+    .text start:0x020c0110 end:0x020c0138
+
+
+src/Combat/Main/IsCommandInRange02067a9c.cpp:
+    complete
+    .text start:0x02067a9c end:0x02067ad8
+
+
+src/Combat/Main/IsMatchingName0208e824.cpp:
+    complete
+    .text start:0x0208e824 end:0x0208e870
+
+
+src/Combat/Main/LoadBattleRegion0x5cdc.cpp:
+    complete
+    .text start:0x020a9af8 end:0x020a9b2c
+
+
+src/Combat/Main/SetBufferFromAllocator0207e3e0.cpp:
+    complete
+    .text start:0x0207e3e0 end:0x0207e428
+
+
+src/Combat/Main/WriteCommand0xff0a.cpp:
+    complete
+    .text start:0x0206980c end:0x02069834
+
+
+src/Combat/Main/WriteCommand0xff0d.cpp:
+    complete
+    .text start:0x02069790 end:0x020697b8
+
+
+src/Combat/Main/WriteCommand0xff1d.cpp:
+    complete
+    .text start:0x02069884 end:0x020698ac
+
+
+src/Combat/Main/WriteCommand0xff1f.cpp:
+    complete
+    .text start:0x020698fc end:0x02069924
+
+
+src/Combat/Main/ZeroInitReturn020df80c.cpp:
+    complete
+    .text start:0x020df80c end:0x020df828
