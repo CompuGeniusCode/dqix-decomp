@@ -7910,3 +7910,103 @@ src/Combat/Main/ForwardField0xc0_0205ebec.cpp:
 src/Combat/Main/SetStateAndDispatch0205e9f4.cpp:
     complete
     .text start:0x0205e9f4 end:0x0205ea18
+
+
+src/Combat/Main/CallFunc0204b04cOverList0x98.cpp:
+    complete
+    .text start:0x0205d274 end:0x0205d2bc
+
+
+src/Combat/Main/CallFunc0204c8f0OverList0x9c.cpp:
+    complete
+    .text start:0x0205d228 end:0x0205d274
+
+
+src/Combat/Main/CallFunc0205bea0IfFlag0x94.cpp:
+    complete
+    .text start:0x0205c6bc end:0x0205c6e4
+
+
+src/Combat/Main/CallFunc0205c570AtField0x1c.cpp:
+    complete
+    .text start:0x0205cb64 end:0x0205cb74
+
+
+src/Combat/Main/CheckActive0205bd20.cpp:
+    complete
+    .text start:0x0205bd20 end:0x0205bd58
+
+
+src/Combat/Main/ClearBuffers0204b010OverList0x98.cpp:
+    complete
+    .text start:0x0205d1e0 end:0x0205d228
+
+
+src/Combat/Main/Dispatch020649f4.cpp:
+    complete
+    .text start:0x020649f4 end:0x02064a08
+
+
+src/Combat/Main/ForEachNodeAllMatch02064530.cpp:
+    complete
+    .text start:0x02064530 end:0x02064574
+
+
+src/Combat/Main/ForEachNodeUntilFalse02064704.cpp:
+    complete
+    .text start:0x02064704 end:0x0206474c
+
+
+src/Combat/Main/GetScaledSumIfActive0205bd04.cpp:
+    complete
+    .text start:0x0205bd04 end:0x0205bd20
+
+
+src/Combat/Main/Init0205bbcc.cpp:
+    complete
+    .text start:0x0205bbcc end:0x0205bc10
+
+
+src/Combat/Main/Init0205bef8.cpp:
+    complete
+    .text start:0x0205bef8 end:0x0205bf3c
+
+
+src/Combat/Main/InitAndReturnArg02059cb4.cpp:
+    complete
+    .text start:0x02059cb4 end:0x02059cc8
+
+
+src/Combat/Main/InsertNodeByKey020643fc.cpp:
+    complete
+    .text start:0x020643fc end:0x0206445c
+
+
+src/Combat/Main/ResetState0205facc.cpp:
+    complete
+    .text start:0x0205facc end:0x0205faf4
+
+
+src/Combat/Main/RunAndReturnArg0205873c.cpp:
+    complete
+    .text start:0x0205873c end:0x02058750
+
+
+src/Combat/Main/SetIndexIfValid0205bcdc.cpp:
+    complete
+    .text start:0x0205bcdc end:0x0205bd04
+
+
+src/Combat/Main/UpdateEntriesWhereFlag2Clear02057a10.cpp:
+    complete
+    .text start:0x02057a10 end:0x02057a6c
+
+
+src/Combat/Main/UpdateEntriesWhereFlag2Set02057a6c.cpp:
+    complete
+    .text start:0x02057a6c end:0x02057ab8
+
+
+src/Combat/Main/ValidateResourceLookup0205a1f0.cpp:
+    complete
+    .text start:0x0205a1f0 end:0x0205a234
