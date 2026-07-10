@@ -1,8 +1,10 @@
 #include <globaldefs.h>
 #include "System/Memory.h"
 
-extern "C" void func_020e2cc4(void* obj, int arg);
-extern "C" void func_020e2c7c(void* obj);
+struct Entry020e2cc4;
+void SetEntryEnabled020e2cc4(struct Entry020e2cc4*, int);
+struct Entry020e2c7c;
+void DispatchEntryHandlers020e2c7c(struct Entry020e2c7c*);
 
 struct Struct_020e2bd8 {
     unsigned char field0;
@@ -26,6 +28,6 @@ ARM void Init020e2bd8(struct Struct_020e2bd8* obj, int arg1, int arg2) {
     obj->field8 = 1;
     obj->fieldc = 0x1f;
     obj->field10 = 1;
-    func_020e2cc4(obj, 0);
-    func_020e2c7c(obj);
+    SetEntryEnabled020e2cc4((struct Entry020e2cc4*)obj, 0);
+    DispatchEntryHandlers020e2c7c((struct Entry020e2c7c*)obj);
 }

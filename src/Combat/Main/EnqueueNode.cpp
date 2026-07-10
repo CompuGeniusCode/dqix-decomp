@@ -10,12 +10,12 @@ struct QList0205e18c {
     int count;                   /* 0x8 */
 };
 
-extern "C" void func_020d8654(void);
+void PushInterruptDisableState(void);
 extern "C" void func_020d8694(void);
 
 // USA: func_0205e18c
 ARM void EnqueueNode(struct QList0205e18c* list, struct QNode0205e18c* node) {
-    func_020d8654();
+    PushInterruptDisableState();
     if (list->head != NULL) {
         list->tail->next = node;
         list->tail = node;

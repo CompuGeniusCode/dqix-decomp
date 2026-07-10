@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 
-extern "C" int func_020d91a8(void* a, void* b);
+int ReleaseActionSlot020d91a8(int*, unsigned char*);
 
 // USA: func_020d961c
 ARM int InvokeWithOffset4_020d961c(char* p) {
-    return func_020d91a8(p, p + 4);
+    return ReleaseActionSlot020d91a8((int*)p, (unsigned char*)(p + 4));
 }

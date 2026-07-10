@@ -10,13 +10,13 @@ struct QList0205e1e4 {
     int count;                   /* 0x8 */
 };
 
-extern "C" void func_020d8654(void);
+void PushInterruptDisableState(void);
 extern "C" void func_020d8694(void);
 
 // USA: func_0205e1e4
 ARM struct QNode0205e1e4* DequeueNode(struct QList0205e1e4* list) {
     struct QNode0205e1e4* head;
-    func_020d8654();
+    PushInterruptDisableState();
     head = list->head;
     if (head != NULL) {
         list->head = head->next;
