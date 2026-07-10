@@ -1,7 +1,8 @@
 #include <globaldefs.h>
 
 extern "C" void* func_020d2404(int);
-extern "C" int func_020d248c(void* node);
+struct MsgNode020d248c;
+int EnqueueTailNode(MsgNode020d248c*);
 
 struct BattleEventNode020d217c {
     int field0;
@@ -23,5 +24,5 @@ extern "C" ARM int func_020d217c(int type, int arg1, int arg2, int arg3, int arg
     node->arg2 = arg2;
     node->arg3 = arg3;
     node->arg4 = arg4;
-    return func_020d248c(node);
+    return EnqueueTailNode((MsgNode020d248c*)node);
 }

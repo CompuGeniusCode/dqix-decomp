@@ -14171,3 +14171,45 @@ src/Combat/Main/TransferSubOam.cpp:
 src/Combat/Main/TransferSubObjPalette.cpp:
     complete
     .text start:0x020c5924 end:0x020c597c
+
+
+src/Combat/Main/DispatchType0x11InitOnce.cpp:
+    complete
+    .text start:0x020d1144 end:0x020d1198
+
+
+src/Combat/Main/DispatchType0x11ShutdownOnce.cpp:
+    complete
+    .text start:0x020d18d0 end:0x020d192c
+
+
+src/Combat/Main/EnqueueTailNode.cpp:
+    complete
+    .text start:0x020d248c end:0x020d24c4
+
+
+src/Combat/Main/GetInterruptSafeQueueField.cpp:
+    complete
+    .text start:0x020d26ec end:0x020d2718
+
+
+src/Combat/Main/Invoke020c6e94ClearExMem0x800.cpp:
+    complete
+    .text start:0x020c7010 end:0x020c702c
+
+
+src/Combat/Main/Invoke020c6ea4SetExMem0x80.cpp:
+    complete
+    .text start:0x020c6f94 end:0x020c6fb4
+
+
+src/Combat/Main/Invoke020c6f28ClearExMem0x80.cpp:
+    complete
+    .text start:0x020c6fc0 end:0x020c6fe0
+
+
+src/Combat/Main/PopCount32.cpp:
+    complete
+    .text start:0x020d1ae4 end:0x020d1b28
+
+
