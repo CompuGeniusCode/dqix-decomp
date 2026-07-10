@@ -9030,3 +9030,23 @@ src/Combat/Main/SetEntryFlagById02080b2c.cpp:
 src/Combat/Main/SetEntryFlagById02080b40.cpp:
     complete
     .text start:0x02080b40 end:0x02080b54
+
+
+src/Combat/Main/CallFunc0204b620IfField0x14_0204b878.cpp:
+    complete
+    .text start:0x0204b878 end:0x0204b8d0
+
+
+src/Combat/Main/CallFunc0204b620IfField0x14_0204b938.cpp:
+    complete
+    .text start:0x0204b938 end:0x0204b988
+
+
+src/Combat/Main/DispatchViaTable0204b5e8.cpp:
+    complete
+    .text start:0x0204b5e8 end:0x0204b620
+
+
+src/Combat/Main/DispatchIndexedEntry0204b988.cpp:
+    complete
+    .text start:0x0204b988 end:0x0204b9b8
