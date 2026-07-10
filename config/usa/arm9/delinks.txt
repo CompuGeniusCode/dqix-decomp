@@ -10210,3 +10210,63 @@ src/Combat/Main/SortedInsertByKey021112e0.cpp:
 src/Combat/Main/VariadicForward020c7170.cpp:
     complete
     .text start:0x020c7170 end:0x020c7198
+
+
+src/Combat/Main/CallAndReturnTrue020cd584.cpp:
+    complete
+    .text start:0x020cd584 end:0x020cd594
+
+
+src/Combat/Main/EnqueueEvent0x06.cpp:
+    complete
+    .text start:0x020d212c end:0x020d2154
+
+
+src/Combat/Main/EnqueueEvent0x07.cpp:
+    complete
+    .text start:0x020d2154 end:0x020d217c
+
+
+src/Combat/Main/EnqueueEvent0x17.cpp:
+    complete
+    .text start:0x020d20e4 end:0x020d2104
+
+
+src/Combat/Main/EnqueueEvent0x19.cpp:
+    complete
+    .text start:0x020d2104 end:0x020d212c
+
+
+src/Combat/Main/FillTilePattern.cpp:
+    complete
+    .text start:0x020b18e8 end:0x020b1938
+
+
+src/Combat/Main/ForwardObjectFieldsToDispatch.cpp:
+    complete
+    .text start:0x020afe50 end:0x020afe6c
+
+
+src/Combat/Main/GetHalfword021117b0At0x10.cpp:
+    complete
+    .text start:0x020cdddc end:0x020cddec
+
+
+src/Combat/Main/LookupWord2D.cpp:
+    complete
+    .text start:0x020b11ac end:0x020b11c8
+
+
+src/Combat/Main/MakeDataRefPair020ccfd4.cpp:
+    complete
+    .text start:0x020ccfd4 end:0x020ccffc
+
+
+src/Combat/Main/RelocateOffsetArrayAtOffset8.cpp:
+    complete
+    .text start:0x020b0094 end:0x020b00a4
+
+
+src/Combat/Main/WaitUntilChannel7Ready.cpp:
+    complete
+    .text start:0x020d2880 end:0x020d28a8
