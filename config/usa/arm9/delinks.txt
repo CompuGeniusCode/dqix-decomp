@@ -7520,3 +7520,8 @@ src/Combat/Main/WriteVec3ShortToReg02036060.cpp:
 src/Combat/Main/WriteVec3ToReg02036000.cpp:
     complete
     .text start:0x02036000 end:0x02036024
+
+
+src/Combat/Main/Forward0203aa80.cpp:
+    complete
+    .text start:0x0203aa80 end:0x0203aa98
