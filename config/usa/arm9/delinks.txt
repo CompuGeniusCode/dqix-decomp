@@ -7260,3 +7260,28 @@ src/Combat/Main/SubtractVec3Fields0202e9f4.cpp:
 src/Combat/Main/TestBitBySignedByteIndex.cpp:
     complete
     .text start:0x0202c1c0 end:0x0202c1e8
+
+
+src/Combat/Main/AdvanceStateIfState2.cpp:
+    complete
+    .text start:0x0202d0b4 end:0x0202d0e0
+
+
+src/Combat/Main/GetField0xa.cpp:
+    complete
+    .text start:0x0202d698 end:0x0202d6a8
+
+
+src/Combat/Main/SetField0x48UnlessState9Or10.cpp:
+    complete
+    .text start:0x0202c848 end:0x0202c864
+
+
+src/Combat/Main/SetField0x8Of02101640.cpp:
+    complete
+    .text start:0x0202d688 end:0x0202d698
+
+
+src/Combat/Main/SetStateFromField0x2.cpp:
+    complete
+    .text start:0x0202d664 end:0x0202d688
