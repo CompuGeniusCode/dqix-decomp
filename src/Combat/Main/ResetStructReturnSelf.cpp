@@ -1,9 +1,10 @@
 #include <globaldefs.h>
 
-extern "C" void func_0207e2e0(void* obj);
+struct Obj0207e2e0;
+void ReleaseHandlesAndReset0207e2e0(struct Obj0207e2e0*);
 
 // USA: func_0207e250
 ARM void* ResetStructReturnSelf(void* obj) {
-    func_0207e2e0(obj);
+    ReleaseHandlesAndReset0207e2e0((struct Obj0207e2e0*)obj);
     return obj;
 }
