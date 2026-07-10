@@ -6795,3 +6795,123 @@ src/Combat/Main/SetField5cb0AndRecordByte0.cpp:
 src/Combat/Main/SetField5cb4AndRecordByte1.cpp:
     complete
     .text start:0x020107a8 end:0x020107d0
+
+
+src/Combat/Main/AllocateAligned4.cpp:
+    complete
+    .text start:0x02012d88 end:0x02012da4
+
+
+src/Combat/Main/AllocateList0201e634.cpp:
+    complete
+    .text start:0x0201e634 end:0x0201e664
+
+
+src/Combat/Main/AllocateList0201f1f0.cpp:
+    complete
+    .text start:0x0201f1f0 end:0x0201f214
+
+
+src/Combat/Main/ClearByte0x62IfArg0x10.cpp:
+    complete
+    .text start:0x02012bbc end:0x02012bd8
+
+
+src/Combat/Main/ClearRecords02026644.cpp:
+    complete
+    .text start:0x02026644 end:0x02026678
+
+
+src/Combat/Main/CopyOutBattleRegion0x64f4.cpp:
+    complete
+    .text start:0x020ac760 end:0x020ac78c
+
+
+src/Combat/Main/FindMatchingElementIndex02018bc4.cpp:
+    complete
+    .text start:0x02018bc4 end:0x02018c20
+
+
+src/Combat/Main/FlushAndClearRegion020ccf98.cpp:
+    complete
+    .text start:0x020ccf98 end:0x020ccfd4
+
+
+src/Combat/Main/ForEachElement02015518.cpp:
+    complete
+    .text start:0x02015518 end:0x02015554
+
+
+src/Combat/Main/FreeBuffer020263e4.cpp:
+    complete
+    .text start:0x020263e4 end:0x02026418
+
+
+src/Combat/Main/FreeIfFlag.cpp:
+    complete
+    .text start:0x02012dbc end:0x02012dd0
+
+
+src/Combat/Main/GetMaxAlloc02012dd0.cpp:
+    complete
+    .text start:0x02012dd0 end:0x02012de4
+
+
+src/Combat/Main/Init0203cfb4.cpp:
+    complete
+    .text start:0x0203cfb4 end:0x0203cff4
+
+
+src/Combat/Main/Init020e2bd8.cpp:
+    complete
+    .text start:0x020e2bd8 end:0x020e2c34
+
+
+src/Combat/Main/InitStruct020133fc.cpp:
+    complete
+    .text start:0x020133fc end:0x02013454
+
+
+src/Combat/Main/InitStruct02013454.cpp:
+    complete
+    .text start:0x02013454 end:0x02013490
+
+
+src/Combat/Main/InitStruct02013718.cpp:
+    complete
+    .text start:0x02013718 end:0x02013750
+
+
+src/Combat/Main/ResetStopwatch0201fa00.cpp:
+    complete
+    .text start:0x0201fa00 end:0x0201fa2c
+
+
+src/Combat/Main/RollFlags020de0ec.cpp:
+    complete
+    .text start:0x020de0ec end:0x020de13c
+
+
+src/Combat/Main/SetFlag0x40AndToggle0x4.cpp:
+    complete
+    .text start:0x02013380 end:0x020133b4
+
+
+src/Combat/Main/SetSubBg0Control02020968.cpp:
+    complete
+    .text start:0x02020968 end:0x0202099c
+
+
+src/Combat/Main/SetSubBg1Control0202099c.cpp:
+    complete
+    .text start:0x0202099c end:0x020209d0
+
+
+src/Combat/Main/StoreByteList02026348.cpp:
+    complete
+    .text start:0x02026348 end:0x02026394
+
+
+src/Combat/Main/UpdateStopwatchState0201fbac.cpp:
+    complete
+    .text start:0x0201fbac end:0x0201fbe0
