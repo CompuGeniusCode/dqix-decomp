@@ -7575,3 +7575,48 @@ src/Combat/Main/InitStruct0203be78.cpp:
 src/Combat/Main/InitSubObject0203bd78.cpp:
     complete
     .text start:0x0203bd78 end:0x0203bd88
+
+
+src/Combat/Main/Deactivate0202a8cc.cpp:
+    complete
+    .text start:0x0202a8cc end:0x0202a91c
+
+
+src/Combat/Main/PackRegister02029470.cpp:
+    complete
+    .text start:0x02029470 end:0x0202949c
+
+
+src/Combat/Main/SetBuffer02028ddc.cpp:
+    complete
+    .text start:0x02028ddc end:0x02028dec
+
+
+src/Combat/Main/SetField402028d58.cpp:
+    complete
+    .text start:0x02028d58 end:0x02028d68
+
+
+src/Combat/Main/SetMainBg3Priority.cpp:
+    complete
+    .text start:0x0204a67c end:0x0204a698
+
+
+src/Combat/Main/SetSubBg0Priority.cpp:
+    complete
+    .text start:0x0204a660 end:0x0204a67c
+
+
+src/Combat/Main/SetSubBg1Priority.cpp:
+    complete
+    .text start:0x0204a644 end:0x0204a660
+
+
+src/Combat/Main/SetSubBg2Priority.cpp:
+    complete
+    .text start:0x0204a628 end:0x0204a644
+
+
+src/Combat/Main/SetSubBg3Priority.cpp:
+    complete
+    .text start:0x0204a60c end:0x0204a628
