@@ -10865,3 +10865,328 @@ src/Combat/Main/TestMaskBitBySignedByteIndex.cpp:
 src/Combat/Main/StoreValidCombatantCount0202c3e0.cpp:
     complete
     .text start:0x0202c3e0 end:0x0202c410
+
+
+src/Combat/Main/AccumulateBattleTimer0202441c.cpp:
+    complete
+    .text start:0x0202441c end:0x0202445c
+
+
+src/Combat/Main/AllocateNameBuffer02026b0c.cpp:
+    complete
+    .text start:0x02026b0c end:0x02026b3c
+
+
+src/Combat/Main/ApplyStateTableValue02033dd4.cpp:
+    complete
+    .text start:0x02033dd4 end:0x02033e18
+
+
+src/Combat/Main/BuildDescriptorFlag1_020de980.cpp:
+    complete
+    .text start:0x020de980 end:0x020de9a4
+
+
+src/Combat/Main/BuildDescriptorFlag1_020dea40.cpp:
+    complete
+    .text start:0x020dea40 end:0x020dea64
+
+
+src/Combat/Main/ComputeAndDispatch020338b0.cpp:
+    complete
+    .text start:0x020338b0 end:0x020338d4
+
+
+src/Combat/Main/ConvertIndex.cpp:
+    complete
+    .text start:0x02012f68 end:0x02012fa4
+
+
+src/Combat/Main/DispatchByFlag42_020356f0.cpp:
+    complete
+    .text start:0x020356f0 end:0x02035728
+
+
+src/Combat/Main/DispatchTargetByte020494c0.cpp:
+    complete
+    .text start:0x020494c0 end:0x020494f8
+
+
+src/Combat/Main/Forward10BitFields020deda4.cpp:
+    complete
+    .text start:0x020deda4 end:0x020dedd0
+
+
+src/Combat/Main/ForwardField68Entry.cpp:
+    complete
+    .text start:0x020143d8 end:0x02014414
+
+
+src/Combat/Main/ForwardParamsToB8bc.cpp:
+    complete
+    .text start:0x0203bcb8 end:0x0203bd08
+
+
+src/Combat/Main/GetAxisIntValue.cpp:
+    complete
+    .text start:0x0203b57c end:0x0203b5a0
+
+
+src/Combat/Main/GetCombinedCounterStates.cpp:
+    complete
+    .text start:0x0203b470 end:0x0203b498
+
+
+src/Combat/Main/GetEntryByIndex020deb24.cpp:
+    complete
+    .text start:0x020deb24 end:0x020deb58
+
+
+src/Combat/Main/IsAxisIntWithin16.cpp:
+    complete
+    .text start:0x0203b5a0 end:0x0203b5e0
+
+
+src/Combat/Main/IsAxisIntZero.cpp:
+    complete
+    .text start:0x0203b5f8 end:0x0203b628
+
+
+src/Combat/Main/LookupKeyValue.cpp:
+    complete
+    .text start:0x02012f24 end:0x02012f68
+
+
+src/Combat/Main/ReinitFieldState0203c0f0.cpp:
+    complete
+    .text start:0x0203c0f0 end:0x0203c108
+
+
+src/Combat/Main/ReleaseHandle02022b90.cpp:
+    complete
+    .text start:0x02022b90 end:0x02022bb0
+
+
+src/Combat/Main/ResetAndInitStream02036380.cpp:
+    complete
+    .text start:0x02036380 end:0x020363b4
+
+
+src/Combat/Main/ResetFourSubStructs.cpp:
+    complete
+    .text start:0x02012fa4 end:0x02012fe4
+
+
+src/Combat/Main/ResetHeaderAndSubStructs.cpp:
+    complete
+    .text start:0x020133cc end:0x020133fc
+
+
+src/Combat/Main/ResetStateTimer0201fc40.cpp:
+    complete
+    .text start:0x0201fc40 end:0x0201fca0
+
+
+src/Combat/Main/ResetStreamContext02037138.cpp:
+    complete
+    .text start:0x02037138 end:0x02037170
+
+
+src/Combat/Main/SetAndLockBothCounters.cpp:
+    complete
+    .text start:0x0203b280 end:0x0203b2b8
+
+
+src/Combat/Main/SetBothCounters.cpp:
+    complete
+    .text start:0x0203b228 end:0x0203b250
+
+
+src/Combat/Main/SetField766AndNotify0202656c.cpp:
+    complete
+    .text start:0x0202656c end:0x020265a8
+
+
+src/Combat/Main/SetFlagBitAt0xe.cpp:
+    complete
+    .text start:0x0202c5bc end:0x0202c600
+
+
+src/Combat/Main/StepAndFlushCounters.cpp:
+    complete
+    .text start:0x0203b0f8 end:0x0203b110
+
+
+src/Combat/Main/TestFlagBitAt0xe.cpp:
+    complete
+    .text start:0x0202c578 end:0x0202c5bc
+
+
+src/Combat/Main/UnlockAndSetBothCounters.cpp:
+    complete
+    .text start:0x0203b2e0 end:0x0203b318
+
+
+src/Combat/Main/Zero16Bytes020df828.cpp:
+    complete
+    .text start:0x020df828 end:0x020df83c
+
+
+src/Combat/Main/InitState0204a120.cpp:
+    complete
+    .text start:0x0204a120 end:0x0204a170
+
+
+src/Combat/Main/SetSubBg1Offset.cpp:
+    complete
+    .text start:0x0204a73c end:0x0204a764
+
+
+src/Combat/Main/SetSubBg2Offset.cpp:
+    complete
+    .text start:0x0204a714 end:0x0204a73c
+
+
+src/Combat/Main/SetSubBg3Offset.cpp:
+    complete
+    .text start:0x0204a6ec end:0x0204a714
+
+
+src/Combat/Main/ApplyBitfieldsForTableEntries02026ebc.cpp:
+    complete
+    .text start:0x02026ebc end:0x02026f08
+
+
+src/Combat/Main/ClearBuffer0202ad30.cpp:
+    complete
+    .text start:0x0202ad30 end:0x0202ad4c
+
+
+src/Combat/Main/DispatchField0x2OrSetState1_0202cd28.cpp:
+    complete
+    .text start:0x0202cd28 end:0x0202cd50
+
+
+src/Combat/Main/DispatchField0x2OrSetState1_0202d5ec.cpp:
+    complete
+    .text start:0x0202d5ec end:0x0202d614
+
+
+src/Combat/Main/FindEntryInGlobalTable02027ccc.cpp:
+    complete
+    .text start:0x02027ccc end:0x02027ce4
+
+
+src/Combat/Main/FlushBuffer02029088.cpp:
+    complete
+    .text start:0x02029088 end:0x020290ac
+
+
+src/Combat/Main/FormatAndDispatch020290e8.cpp:
+    complete
+    .text start:0x020290e8 end:0x02029140
+
+
+src/Combat/Main/MarkActiveCombatantSlots02026b7c.cpp:
+    complete
+    .text start:0x02026b7c end:0x02026bc8
+
+
+src/Combat/Main/ProcessAndCheckPairs02028104.cpp:
+    complete
+    .text start:0x02028104 end:0x0202811c
+
+
+src/Combat/Main/SetFlagBit02028c14.cpp:
+    complete
+    .text start:0x02028c14 end:0x02028c64
+
+
+src/Combat/Main/SetState9DispatchOrInvokeCallback.cpp:
+    complete
+    .text start:0x0202d614 end:0x0202d664
+
+
+src/Combat/Main/SetState9IfField0x2Is8.cpp:
+    complete
+    .text start:0x0202dae0 end:0x0202db08
+
+
+src/Combat/Main/UpdateScaledField0x74.cpp:
+    complete
+    .text start:0x0202e808 end:0x0202e858
+
+
+src/Combat/Main/AllocateAndClearHeaderArray020286fc.cpp:
+    complete
+    .text start:0x020286fc end:0x02028754
+
+
+src/Combat/Main/FormatAndDispatch0202ad98.cpp:
+    complete
+    .text start:0x0202ad98 end:0x0202adf0
+
+
+src/Combat/Main/NotifyThenResetNameTable.cpp:
+    complete
+    .text start:0x0201c108 end:0x0201c124
+
+
+src/Combat/Main/ResetElement0203ef60.cpp:
+    complete
+    .text start:0x0203ef60 end:0x0203ef7c
+
+
+src/Combat/Main/ResetNameTableThenNotify.cpp:
+    complete
+    .text start:0x0201c0e8 end:0x0201c108
+
+
+src/Combat/Main/StoreDecodedIntAt0x14.cpp:
+    complete
+    .text start:0x0201f844 end:0x0201f864
+
+
+src/Combat/Main/UpdateEntrySubObjects0203dde0.cpp:
+    complete
+    .text start:0x0203dde0 end:0x0203de2c
+
+
+src/Combat/Main/FindNamedEntryInElement0203f0fc.cpp:
+    complete
+    .text start:0x0203f0fc end:0x0203f138
+
+
+src/Combat/Main/ReleaseGlobalEntry0203c198.cpp:
+    complete
+    .text start:0x0203c198 end:0x0203c1c8
+
+
+src/Combat/Main/InvokeGlobalEntry0203c248.cpp:
+    complete
+    .text start:0x0203c248 end:0x0203c284
+
+
+src/Combat/Main/Dispatch0203cd64.cpp:
+    complete
+    .text start:0x0203cd64 end:0x0203cda8
+
+
+src/Combat/Main/InitCombatObject0203c73c.cpp:
+    complete
+    .text start:0x0203c73c end:0x0203c75c
+
+
+src/Combat/Main/InitPool020401fc.cpp:
+    complete
+    .text start:0x020401fc end:0x02040258
+
+
+src/Combat/Main/NotifyAllEntries0203dd94.cpp:
+    complete
+    .text start:0x0203dd94 end:0x0203dde0
+
+
+src/Combat/Main/SelectNamedEntry0203f1e4.cpp:
+    complete
+    .text start:0x0203f1e4 end:0x0203f20c
