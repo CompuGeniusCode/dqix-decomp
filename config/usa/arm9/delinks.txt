@@ -9930,3 +9930,158 @@ src/Combat/Main/RestoreThreadContext.cpp:
 src/Combat/Main/SetActiveTimerBit.cpp:
     complete
     .text start:0x020c8c50 end:0x020c8c6c
+
+
+src/Combat/Main/CaptureValueOnce0208b494.cpp:
+    complete
+    .text start:0x0208b494 end:0x0208b4c0
+
+
+src/Combat/Main/ClearField4At02112160.cpp:
+    complete
+    .text start:0x020d1940 end:0x020d1954
+
+
+src/Combat/Main/ClearStruct020d19e0.cpp:
+    complete
+    .text start:0x020d19e0 end:0x020d19f4
+
+
+src/Combat/Main/EvaluateTween020c022c.cpp:
+    complete
+    .text start:0x020c022c end:0x020c0260
+
+
+src/Combat/Main/Forward0208a370Arg3.cpp:
+    complete
+    .text start:0x0208a50c end:0x0208a52c
+
+
+src/Combat/Main/ForwardCenteredY0208b5b4.cpp:
+    complete
+    .text start:0x0208b5b4 end:0x0208b610
+
+
+src/Combat/Main/GetBg0ScreenBaseAddr.cpp:
+    complete
+    .text start:0x020c4c74 end:0x020c4ca8
+
+
+src/Combat/Main/GetBg1CharBaseAddr.cpp:
+    complete
+    .text start:0x020c4f60 end:0x020c4f94
+
+
+src/Combat/Main/GetGlobalU16At0x12.cpp:
+    complete
+    .text start:0x020c4b98 end:0x020c4ba8
+
+
+src/Combat/Main/GetGlobalU16At0x14.cpp:
+    complete
+    .text start:0x020c4ba8 end:0x020c4bb8
+
+
+src/Combat/Main/GetGlobalU16At0x16.cpp:
+    complete
+    .text start:0x020c4bb8 end:0x020c4bc8
+
+
+src/Combat/Main/GetGlobalU16At0x18.cpp:
+    complete
+    .text start:0x020c4bc8 end:0x020c4bd8
+
+
+src/Combat/Main/GetState0x27ffc30Bit0.cpp:
+    complete
+    .text start:0x020d1344 end:0x020d135c
+
+
+src/Combat/Main/GetSubBg1CharBaseAddr.cpp:
+    complete
+    .text start:0x020c4f94 end:0x020c4fb4
+
+
+src/Combat/Main/GetSubBg2CharBaseAddr.cpp:
+    complete
+    .text start:0x020c5004 end:0x020c5044
+
+
+src/Combat/Main/GetSubBg3CharBaseAddr.cpp:
+    complete
+    .text start:0x020c509c end:0x020c50e4
+
+
+src/Combat/Main/RestoreExmemcnt.cpp:
+    complete
+    .text start:0x020d14b0 end:0x020d14e4
+
+
+src/Combat/Main/SaveAndConfigureExmemcnt.cpp:
+    complete
+    .text start:0x020d1468 end:0x020d14b0
+
+
+src/Combat/Main/ScaleMatrixAndCopyTranslation020c1948.cpp:
+    complete
+    .text start:0x020c1948 end:0x020c197c
+
+
+src/Combat/Main/Set3DClearColor.cpp:
+    complete
+    .text start:0x020c5588 end:0x020c55b0
+
+
+src/Combat/Main/StartHardwareDivide020c2c94.cpp:
+    complete
+    .text start:0x020c2c94 end:0x020c2cc4
+
+
+src/Combat/Main/TailForwardToField0x5c020c0100.cpp:
+    complete
+    .text start:0x020c0100 end:0x020c0110
+
+
+src/Combat/Main/WritePolygonAttr0208b588.cpp:
+    complete
+    .text start:0x0208b588 end:0x0208b5b4
+
+
+src/Combat/Main/WriteTexImageParam0208b548.cpp:
+    complete
+    .text start:0x0208b548 end:0x0208b588
+
+
+src/Combat/Main/RetargetTween020c0204.cpp:
+    complete
+    .text start:0x020c0204 end:0x020c022c
+
+
+src/Combat/Main/FirePendingCallback.cpp:
+    complete
+    .text start:0x020ce240 end:0x020ce270
+
+
+src/Combat/Main/GetMaskedStatus.cpp:
+    complete
+    .text start:0x020ce114 end:0x020ce128
+
+
+src/Combat/Main/ReadTwoBitFlags.cpp:
+    complete
+    .text start:0x020ce810 end:0x020ce870
+
+
+src/Combat/Main/StoreValueAt0x2c.cpp:
+    complete
+    .text start:0x020cf854 end:0x020cf864
+
+
+src/Combat/Main/TryAcquireLock.cpp:
+    complete
+    .text start:0x020ce128 end:0x020ce148
+
+
+src/Combat/Main/WaitWhileFlagsSet.cpp:
+    complete
+    .text start:0x020ce0fc end:0x020ce114
