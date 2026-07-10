@@ -6480,3 +6480,63 @@ src/Combat/Main/WriteCommand0xff1f.cpp:
 src/Combat/Main/ZeroInitReturn020df80c.cpp:
     complete
     .text start:0x020df80c end:0x020df828
+
+
+src/Combat/Main/ClearBattleRegion0x7ac4.cpp:
+    complete
+    .text start:0x020ac0dc end:0x020ac104
+
+
+src/Combat/Main/ClearOrFillBattleRegion02027ad8.cpp:
+    complete
+    .text start:0x02027ad8 end:0x02027b10
+
+
+src/Combat/Main/CopyRegionAndFlushCache.cpp:
+    complete
+    .text start:0x020d8524 end:0x020d8550
+
+
+src/Combat/Main/CopyStringToBuffer0201f634.cpp:
+    complete
+    .text start:0x0201f634 end:0x0201f660
+
+
+src/Combat/Main/CopyToBattleRegion0x64f4.cpp:
+    complete
+    .text start:0x020ac734 end:0x020ac760
+
+
+src/Combat/Main/Init0201133c.cpp:
+    complete
+    .text start:0x0201133c end:0x0201137c
+
+
+src/Combat/Main/InitStruct020deeb8.cpp:
+    complete
+    .text start:0x020deeb8 end:0x020deef4
+
+
+src/Combat/Main/ResetAndClearFlags020d7a5c.cpp:
+    complete
+    .text start:0x020d7a5c end:0x020d7aa0
+
+
+src/Combat/Main/ResetStruct020dfc40.cpp:
+    complete
+    .text start:0x020dfc40 end:0x020dfc6c
+
+
+src/Combat/Main/ZeroInit020de848.cpp:
+    complete
+    .text start:0x020de848 end:0x020de868
+
+
+src/Combat/Main/ZeroInit020de868.cpp:
+    complete
+    .text start:0x020de868 end:0x020de888
+
+
+src/Combat/Main/ZeroInitReturn020de824.cpp:
+    complete
+    .text start:0x020de824 end:0x020de848
