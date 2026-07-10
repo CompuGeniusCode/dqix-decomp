@@ -1,0 +1,30 @@
+#include <globaldefs.h>
+
+struct Node020c72bc {
+    char pad0[8];
+    int f8;
+    int fc;
+    Node020c72bc* next;
+    Node020c72bc* prev;
+};
+
+struct List020c72bc {
+    Node020c72bc* head;
+    Node020c72bc* tail;
+};
+
+extern Node020c72bc* UnlinkHeadNode020c72bc(List020c72bc* list);
+extern "C" void func_020c78e8(void* p);
+
+// USA: func_020c8154
+ARM void DrainNodeList020c8154(void* owner) {
+    if (*(Node020c72bc**)((char*)owner + 0x88) == NULL) {
+        return;
+    }
+    do {
+        Node020c72bc* node = UnlinkHeadNode020c72bc((List020c72bc*)((char*)owner + 0x88));
+        node->fc = 0;
+        node->f8 = 0;
+        func_020c78e8(node);
+    } while (*(Node020c72bc**)((char*)owner + 0x88) != NULL);
+}

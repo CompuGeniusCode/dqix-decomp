@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" int func_020bbe1c(int);
+int AcquireFlagBits020bbe1c(int);
 
 struct BattleTarget948 {
     char pad[0x44];
@@ -20,7 +20,7 @@ ARM int BuildTargetMaskFromBytes(struct BattleTarget948* obj, int count, unsigne
             i++;
         } while (i < count);
     }
-    if (func_020bbe1c(mask) == 0) {
+    if (AcquireFlagBits020bbe1c(mask) == 0) {
         return 0;
     }
     obj->count = count;
