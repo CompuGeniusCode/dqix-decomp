@@ -7790,3 +7790,48 @@ src/Combat/Main/SetValueOnActiveChild02040af0.cpp:
 src/Combat/Main/SetWordCCAndDispatch020415b0.cpp:
     complete
     .text start:0x020415b0 end:0x020415c4
+
+
+src/Combat/Main/AllocateAndClear12Bytes02054eb4.cpp:
+    complete
+    .text start:0x02054eb4 end:0x02054ef8
+
+
+src/Combat/Main/AllocateAndClear12Bytes02054ef8.cpp:
+    complete
+    .text start:0x02054ef8 end:0x02054f3c
+
+
+src/Combat/Main/AllocateAndClear12Bytes02054f3c.cpp:
+    complete
+    .text start:0x02054f3c end:0x02054f80
+
+
+src/Combat/Main/Field0x1cCall0207ecd4OrNull.cpp:
+    complete
+    .text start:0x02055624 end:0x0205563c
+
+
+src/Combat/Main/Field0x1cCall0207ecf8OrNull.cpp:
+    complete
+    .text start:0x0205560c end:0x02055624
+
+
+src/Combat/Main/GetField0x4Field0x0OrNull.cpp:
+    complete
+    .text start:0x02055090 end:0x020550a8
+
+
+src/Combat/Main/GetField0x4Field0x1cOrNull.cpp:
+    complete
+    .text start:0x02055138 end:0x02055150
+
+
+src/Combat/Main/GetField0x4Field0x20OrNull.cpp:
+    complete
+    .text start:0x02055150 end:0x02055168
+
+
+src/Combat/Main/GetField0x4Field0x4OrNull.cpp:
+    complete
+    .text start:0x020550a8 end:0x020550c0
