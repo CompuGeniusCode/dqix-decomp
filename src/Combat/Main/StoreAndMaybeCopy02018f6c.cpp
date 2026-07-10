@@ -1,6 +1,7 @@
 #include <globaldefs.h>
 
-extern "C" void func_02030d84(void*, short);
+struct Mtx43_02030d84;
+void BuildRotationMatrixY(struct Mtx43_02030d84*, int);
 
 struct Buf02018f6c { unsigned int words[12]; };
 struct Obj02018f6c {
@@ -16,7 +17,7 @@ ARM void StoreAndMaybeCopy02018f6c(struct Obj02018f6c* obj, short arg) {
     obj->flag = arg;
     flag = obj->flag;
     if (flag != 0) {
-        func_02030d84(&buf, flag);
+        BuildRotationMatrixY((struct Mtx43_02030d84*)&buf, flag);
         *(struct Buf02018f6c*)obj->block = buf;
     }
 }

@@ -11285,3 +11285,83 @@ src/Combat/Main/ReplaceEntryAndFormat0204887c.cpp:
 src/Combat/Main/SetupFieldsFromParam02048850.cpp:
     complete
     .text start:0x02048850 end:0x0204887c
+
+
+src/Combat/Main/BuildRotationMatrixX.cpp:
+    complete
+    .text start:0x02030d30 end:0x02030d84
+
+
+src/Combat/Main/BuildRotationMatrixY.cpp:
+    complete
+    .text start:0x02030d84 end:0x02030dd8
+
+
+src/Combat/Main/BuildTransformMatrix02030dd8.cpp:
+    complete
+    .text start:0x02030dd8 end:0x02030e2c
+
+
+src/Combat/Main/Call0202eab8AndApply020a0d6c.cpp:
+    complete
+    .text start:0x0202edf8 end:0x0202ee38
+
+
+src/Combat/Main/CallFunc02030110OnGlobalObject.cpp:
+    complete
+    .text start:0x0202f7a8 end:0x0202f7c8
+
+
+src/Combat/Main/ClearActiveChildFlag02040668.cpp:
+    complete
+    .text start:0x02040668 end:0x020406b0
+
+
+src/Combat/Main/CopyVec3ToField0x10AndCall0202e5d8.cpp:
+    complete
+    .text start:0x0202ec5c end:0x0202ec84
+
+
+src/Combat/Main/DispatchOnActiveChild020409b0.cpp:
+    complete
+    .text start:0x020409b0 end:0x020409e0
+
+
+src/Combat/Main/HalveGlobalObjectCounter.cpp:
+    complete
+    .text start:0x0202f7e8 end:0x0202f808
+
+
+src/Combat/Main/LookupListValueByKey.cpp:
+    complete
+    .text start:0x0202fe68 end:0x0202fec8
+
+
+src/Combat/Main/SetActiveChildFields02040774.cpp:
+    complete
+    .text start:0x02040774 end:0x020407b4
+
+
+src/Combat/Main/SetActiveChildFlag020406b0.cpp:
+    complete
+    .text start:0x020406b0 end:0x020406f8
+
+
+src/Combat/Main/SetActiveChildShorts020408c8.cpp:
+    complete
+    .text start:0x020408c8 end:0x02040910
+
+
+src/Combat/Main/SetVecYByMode02033834.cpp:
+    complete
+    .text start:0x02033834 end:0x02033874
+
+
+src/Combat/Main/ShiftInBitOnGlobalObject.cpp:
+    complete
+    .text start:0x0202f7c8 end:0x0202f7e8
+
+
+src/Combat/Main/WrapAngleDelta.cpp:
+    complete
+    .text start:0x02030cd8 end:0x02030d24
