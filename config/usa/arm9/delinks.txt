@@ -6095,3 +6095,68 @@ src/Combat/Main/Reset0209fe9c.cpp:
 src/Combat/Main/ResetStruct0201d424.cpp:
     complete
     .text start:0x0201d424 end:0x0201d474
+
+
+src/Combat/Main/AppendRecord020269e4.cpp:
+    complete
+    .text start:0x020269e4 end:0x02026a28
+
+
+src/Combat/Main/BuildName020488ec.cpp:
+    complete
+    .text start:0x020488ec end:0x02048934
+
+
+src/Combat/Main/ClearRegions0207b9cc.cpp:
+    complete
+    .text start:0x0207b9cc end:0x0207ba0c
+
+
+src/Combat/Main/CopyOrClearField0204c770.cpp:
+    complete
+    .text start:0x0204c770 end:0x0204c7a8
+
+
+src/Combat/Main/CopyStringBounded.cpp:
+    complete
+    .text start:0x020464a4 end:0x020464dc
+
+
+src/Combat/Main/FindEntryIndexByName020480b8.cpp:
+    complete
+    .text start:0x020480b8 end:0x02048104
+
+
+src/Combat/Main/Init0202949c.cpp:
+    complete
+    .text start:0x0202949c end:0x020294cc
+
+
+src/Combat/Main/InitStruct0205a444.cpp:
+    complete
+    .text start:0x0205a444 end:0x0205a494
+
+
+src/Combat/Main/InvokeWithCopiedArg0204a984.cpp:
+    complete
+    .text start:0x0204a984 end:0x0204a9c4
+
+
+src/Combat/Main/SetEntry02026b3c.cpp:
+    complete
+    .text start:0x02026b3c end:0x02026b7c
+
+
+src/Combat/Main/SetIndexedName02046574.cpp:
+    complete
+    .text start:0x02046574 end:0x020465c0
+
+
+src/Combat/Main/StoreDataWithLen02049410.cpp:
+    complete
+    .text start:0x02049410 end:0x02049444
+
+
+src/Combat/Main/UpdateStringField02023b0c.cpp:
+    complete
+    .text start:0x02023b0c end:0x02023b5c
