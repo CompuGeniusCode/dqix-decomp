@@ -6580,3 +6580,128 @@ src/Combat/Main/LoadBattleBlock020ac460.cpp:
 src/Combat/Main/LoadBattleBlock020ac4c0.cpp:
     complete
     .text start:0x020ac4c0 end:0x020ac4f8
+
+
+src/Combat/Main/AllocateArray0201c414.cpp:
+    complete
+    .text start:0x0201c414 end:0x0201c444
+
+
+src/Combat/Main/AllocateArray0201c444.cpp:
+    complete
+    .text start:0x0201c444 end:0x0201c470
+
+
+src/Combat/Main/AllocateArray0201e25c.cpp:
+    complete
+    .text start:0x0201e25c end:0x0201e288
+
+
+src/Combat/Main/AllocateArray0201e288.cpp:
+    complete
+    .text start:0x0201e288 end:0x0201e2b4
+
+
+src/Combat/Main/AllocateArray0201e480.cpp:
+    complete
+    .text start:0x0201e480 end:0x0201e4b0
+
+
+src/Combat/Main/AllocateArray0201e518.cpp:
+    complete
+    .text start:0x0201e518 end:0x0201e548
+
+
+src/Combat/Main/CallFunc0200fbb4AtField0x3f8.cpp:
+    complete
+    .text start:0x0200fcfc end:0x0200fd0c
+
+
+src/Combat/Main/ClearCombatantList.cpp:
+    complete
+    .text start:0x0200fd58 end:0x0200fd70
+
+
+src/Combat/Main/ClearRegion0x649e.cpp:
+    complete
+    .text start:0x02011ab8 end:0x02011ad4
+
+
+src/Combat/Main/ClearRegion0x649e02011ad4.cpp:
+    complete
+    .text start:0x02011ad4 end:0x02011af0
+
+
+src/Combat/Main/ClearStruct0201e248.cpp:
+    complete
+    .text start:0x0201e248 end:0x0201e25c
+
+
+src/Combat/Main/CollectCombatantsWithFlag0x1000.cpp:
+    complete
+    .text start:0x02010038 end:0x02010088
+
+
+src/Combat/Main/CollectValidCombatants02010890.cpp:
+    complete
+    .text start:0x02010890 end:0x020108d8
+
+
+src/Combat/Main/CopyInToRegion0x6482.cpp:
+    complete
+    .text start:0x02011a24 end:0x02011a40
+
+
+src/Combat/Main/FindSlotWithNegShort02010954.cpp:
+    complete
+    .text start:0x02010954 end:0x0201099c
+
+
+src/Combat/Main/GetCombatantAtField0x397c.cpp:
+    complete
+    .text start:0x0200fddc end:0x0200fdf0
+
+
+src/Combat/Main/GetCombatantAtField0x3ac.cpp:
+    complete
+    .text start:0x0200fdcc end:0x0200fddc
+
+
+src/Combat/Main/GetLowNibbleAt0x56b.cpp:
+    complete
+    .text start:0x02011ff0 end:0x02012010
+
+
+src/Combat/Main/GetSlotBits0201137c.cpp:
+    complete
+    .text start:0x0201137c end:0x020113a8
+
+
+src/Combat/Main/GetSlotEntry020108d8.cpp:
+    complete
+    .text start:0x020108d8 end:0x020108f0
+
+
+src/Combat/Main/ReadBattleField0x64f4Byte.cpp:
+    complete
+    .text start:0x02011804 end:0x02011818
+
+
+src/Combat/Main/SetOrClearBit1.cpp:
+    complete
+    .text start:0x0201bf70 end:0x0201bf84
+
+
+src/Combat/Main/SetOrClearBit2.cpp:
+    complete
+    .text start:0x0201bf84 end:0x0201bf98
+
+
+src/Combat/Main/SetSlotByte020107dc.cpp:
+    complete
+    .text start:0x020107dc end:0x02010804
+
+
+src/Combat/Main/SwapArgsAndCall0201e2b4.cpp:
+    complete
+    .text start:0x0201e2b4 end:0x0201e2d8
