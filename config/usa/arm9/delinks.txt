@@ -9515,3 +9515,78 @@ src/Combat/Main/StoreWordWithIndexTag.cpp:
 src/Combat/Main/WaitUntilField4Zero.cpp:
     complete
     .text start:0x020b69f4 end:0x020b6a0c
+
+
+src/Combat/Main/AcquireRefAt0x120.cpp:
+    complete
+    .text start:0x020bf29c end:0x020bf2d4
+
+
+src/Combat/Main/AppendSubEntry0209be44.cpp:
+    complete
+    .text start:0x0209be44 end:0x0209be84
+
+
+src/Combat/Main/CallFunc020bc548OnField0.cpp:
+    complete
+    .text start:0x020bc018 end:0x020bc028
+
+
+src/Combat/Main/CallFunc020bc594OnField0.cpp:
+    complete
+    .text start:0x020bc068 end:0x020bc078
+
+
+src/Combat/Main/CallFunc020c0204OnActiveNode.cpp:
+    complete
+    .text start:0x020bc180 end:0x020bc1ac
+
+
+src/Combat/Main/CallFunc020cca80AtField0x5c.cpp:
+    complete
+    .text start:0x020c00b8 end:0x020c00c8
+
+
+src/Combat/Main/CallFunc020d1e88OnNodeField3c.cpp:
+    complete
+    .text start:0x020bc1ac end:0x020bc1cc
+
+
+src/Combat/Main/ClearBuffer0209bc84.cpp:
+    complete
+    .text start:0x0209bc84 end:0x0209bc98
+
+
+src/Combat/Main/FindSubEntry0209be84.cpp:
+    complete
+    .text start:0x0209be84 end:0x0209bed8
+
+
+src/Combat/Main/ReleaseRefAt0x120.cpp:
+    complete
+    .text start:0x020bf2d4 end:0x020bf2f8
+
+
+src/Combat/Main/ResetObject0209af34.cpp:
+    complete
+    .text start:0x0209af34 end:0x0209af58
+
+
+src/Combat/Main/ScaleField0x160By1000.cpp:
+    complete
+    .text start:0x020bec98 end:0x020becd4
+
+
+src/Combat/Main/ScaleField0xccBy1000.cpp:
+    complete
+    .text start:0x020becd4 end:0x020bed10
+
+
+src/Combat/Main/SetEntryField0209be28.cpp:
+    complete
+    .text start:0x0209be28 end:0x0209be44
+
+
+src/Combat/Main/SetTableEntryPointer.cpp:
+    complete
+    .text start:0x020bbf6c end:0x020bbf84
