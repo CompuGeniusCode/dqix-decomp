@@ -9590,3 +9590,48 @@ src/Combat/Main/SetEntryField0209be28.cpp:
 src/Combat/Main/SetTableEntryPointer.cpp:
     complete
     .text start:0x020bbf6c end:0x020bbf84
+
+
+src/Combat/Main/BackupPairTableToBuffer.cpp:
+    complete
+    .text start:0x020bb700 end:0x020bb740
+
+
+src/Combat/Main/BuildTargetMaskFromBytes.cpp:
+    complete
+    .text start:0x020bc948 end:0x020bc9a8
+
+
+src/Combat/Main/CallHelperAndSetFlags.cpp:
+    complete
+    .text start:0x020b9658 end:0x020b969c
+
+
+src/Combat/Main/CallIfFlag0x24Bit0.cpp:
+    complete
+    .text start:0x020bcbc4 end:0x020bcbe0
+
+
+src/Combat/Main/ClampField0AndDispatch.cpp:
+    complete
+    .text start:0x020b78bc end:0x020b78f8
+
+
+src/Combat/Main/ClearTargetMask.cpp:
+    complete
+    .text start:0x020bc9a8 end:0x020bc9d0
+
+
+src/Combat/Main/InitEntryList020b992c.cpp:
+    complete
+    .text start:0x020b992c end:0x020b9978
+
+
+src/Combat/Main/NotifyInnerByte0x3c.cpp:
+    complete
+    .text start:0x020bc1cc end:0x020bc1ec
+
+
+src/Combat/Main/RestorePairTableFromBuffer.cpp:
+    complete
+    .text start:0x020bb740 end:0x020bb780
