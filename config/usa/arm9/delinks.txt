@@ -11190,3 +11190,43 @@ src/Combat/Main/NotifyAllEntries0203dd94.cpp:
 src/Combat/Main/SelectNamedEntry0203f1e4.cpp:
     complete
     .text start:0x0203f1e4 end:0x0203f20c
+
+
+src/Combat/Main/AttachNodeWithLabel02037890.cpp:
+    complete
+    .text start:0x02037890 end:0x020378dc
+
+
+src/Combat/Main/GetCombatSignedByteAt0x2c8d02039730.cpp:
+    complete
+    .text start:0x02039730 end:0x02039750
+
+
+src/Combat/Main/SetCombatByteAt0x2c8d0203970c.cpp:
+    complete
+    .text start:0x0203970c end:0x02039730
+
+
+src/Combat/Main/SetFieldAAndSync02037418.cpp:
+    complete
+    .text start:0x02037418 end:0x02037464
+
+
+src/Combat/Main/AppendString02042058.cpp:
+    complete
+    .text start:0x02042058 end:0x02042084
+
+
+src/Combat/Main/ApplyEqual12Flag020426a4.cpp:
+    complete
+    .text start:0x020426a4 end:0x020426bc
+
+
+src/Combat/Main/CancelPendingAction020397cc.cpp:
+    complete
+    .text start:0x020397cc end:0x02039820
+
+
+src/Combat/Main/ClearActiveChildState.cpp:
+    complete
+    .text start:0x02040bcc end:0x02040bfc
