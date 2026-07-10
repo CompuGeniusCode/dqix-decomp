@@ -6160,3 +6160,103 @@ src/Combat/Main/StoreDataWithLen02049410.cpp:
 src/Combat/Main/UpdateStringField02023b0c.cpp:
     complete
     .text start:0x02023b0c end:0x02023b5c
+
+
+src/Combat/Main/ClearRegion0207bcc4.cpp:
+    complete
+    .text start:0x0207bcc4 end:0x0207bcec
+
+
+src/Combat/Main/ClearRegion020865ec.cpp:
+    complete
+    .text start:0x020865ec end:0x0208660c
+
+
+src/Combat/Main/ClearRegion02093980.cpp:
+    complete
+    .text start:0x02093980 end:0x020939ac
+
+
+src/Combat/Main/CopyRegion020cbc54.cpp:
+    complete
+    .text start:0x020cbc54 end:0x020cbc6c
+
+
+src/Combat/Main/FindNodeByName0207afbc.cpp:
+    complete
+    .text start:0x0207afbc end:0x0207b000
+
+
+src/Combat/Main/InitRegionArray02087628.cpp:
+    complete
+    .text start:0x02087628 end:0x0208767c
+
+
+src/Combat/Main/ReadRegionFromOffset020cbc18.cpp:
+    complete
+    .text start:0x020cbc18 end:0x020cbc34
+
+
+src/Combat/Main/ResetStruct020cc0fc.cpp:
+    complete
+    .text start:0x020cc0fc end:0x020cc128
+
+
+src/Combat/Main/ResetStruct020d3c08.cpp:
+    complete
+    .text start:0x020d3c08 end:0x020d3c28
+
+
+src/Combat/Main/StoreHalfword0xff1402069ed4.cpp:
+    complete
+    .text start:0x02069ed4 end:0x02069efc
+
+
+src/Combat/Main/StoreHalfword0xff1502069efc.cpp:
+    complete
+    .text start:0x02069efc end:0x02069f24
+
+
+src/Combat/Main/StoreHalfword0xff1602069f24.cpp:
+    complete
+    .text start:0x02069f24 end:0x02069f4c
+
+
+src/Combat/Main/StoreHalfword0xff1702069f4c.cpp:
+    complete
+    .text start:0x02069f4c end:0x02069f74
+
+
+src/Combat/Main/StoreHalfword0xff2f02069eac.cpp:
+    complete
+    .text start:0x02069eac end:0x02069ed4
+
+
+src/Combat/Main/WriteCommand0xff02.cpp:
+    complete
+    .text start:0x02069e0c end:0x02069e34
+
+
+src/Combat/Main/WriteCommand0xff2b.cpp:
+    complete
+    .text start:0x02069de4 end:0x02069e0c
+
+
+src/Combat/Main/WriteCommand0xff2c.cpp:
+    complete
+    .text start:0x02069e34 end:0x02069e5c
+
+
+src/Combat/Main/WriteCommand0xff2d.cpp:
+    complete
+    .text start:0x02069e5c end:0x02069e84
+
+
+src/Combat/Main/WriteCommand0xff2e.cpp:
+    complete
+    .text start:0x02069e84 end:0x02069eac
+
+
+src/Combat/Main/WriteRegionToOffset020cbc34.cpp:
+    complete
+    .text start:0x020cbc34 end:0x020cbc54
