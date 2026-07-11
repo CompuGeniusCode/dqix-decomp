@@ -1,0 +1,7 @@
+#include <globaldefs.h>
+
+// USA: func_020115f4
+ARM void SetHalfword0x63d8(void* obj, unsigned short value) {
+    unsigned char* base = (unsigned char*)obj;
+    *(unsigned short*)(base + 0x63d8) = value;
+}

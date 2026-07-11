@@ -1,12 +1,12 @@
 #include <globaldefs.h>
+int GetField0x218(struct S020a3570*);
 
-extern "C" int func_020a3570(void* actor);
 extern "C" void func_020a212c(void* actor, int arg);
 
 // USA: func_020a20f0
 ARM void ProcessActorFlags020a20f0(void* actor) {
     unsigned char* a = (unsigned char*)actor;
-    if (func_020a3570(actor)) {
+    if (GetField0x218((struct S020a3570*)(actor))) {
         a[0x244] |= 8;
         return;
     }

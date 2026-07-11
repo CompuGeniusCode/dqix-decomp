@@ -1,11 +1,11 @@
 #include <globaldefs.h>
+int GetByteField0x5721(struct BattleStruct*);
+void* GetPtrField0x2a04(struct BattleStruct*);
 
-extern "C" void* func_02010828(void* arg);
-extern "C" int func_02011538(void* arg);
 
 // USA: func_0206852c
 ARM int IsField0xf7cNotByteAt0x5721(void* arg) {
-    unsigned char* p = (unsigned char*)func_02010828(arg);
-    int v = func_02011538(arg);
+    unsigned char* p = (unsigned char*)GetPtrField0x2a04((struct BattleStruct*)(arg));
+    int v = GetByteField0x5721((struct BattleStruct*)(arg));
     return p[0xf7c] != v;
 }
