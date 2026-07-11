@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void* GetGlobal02109418(void);
 
-extern "C" void* func_02094d6c();
 extern "C" int func_ov017_021d60f4(void*);
 struct FindEntryById02096134Table;
 struct FindEntryById02096134Elem;
@@ -8,7 +8,7 @@ struct FindEntryById02096134Elem* FindEntryById02096134(struct FindEntryById0209
 
 // USA: func_0209d260
 ARM int SetEntryFlag0x4000_0209d260(void* arg) {
-    void* table = func_02094d6c();
+    void* table = GetGlobal02109418();
     if (table == NULL) return 0;
     unsigned int* entry = (unsigned int*)FindEntryById02096134((struct FindEntryById02096134Table*)table, func_ov017_021d60f4(arg));
     if (entry == NULL) return 0;

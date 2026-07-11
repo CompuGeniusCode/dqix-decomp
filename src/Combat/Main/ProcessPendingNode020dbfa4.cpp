@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+extern "C" void* func_02057924(void);
 
 void FindNodeAndProcess02057fb4(void* list, int id, int a3);
-extern "C" void* func_02057924();
 
 struct Obj020dbfa4 {
     char pad0[8];
