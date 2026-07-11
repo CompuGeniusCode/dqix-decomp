@@ -1,13 +1,13 @@
 #include <globaldefs.h>
+int IssueBattleCommandSlot2(int);
 
 extern char data_021015a0;
 void SetStateFromField0x2(unsigned short*);
-extern "C" int func_020d503c(void*);
 
 // USA: func_0202df10
 ARM int SetStateAndInvokeCallback() {
     *(int*)(&data_021015a0 + 0x10) = 3;
-    if (func_020d503c((void*)SetStateFromField0x2) != 2) {
+    if (IssueBattleCommandSlot2((int)((void*)SetStateFromField0x2)) != 2) {
         *(int*)(&data_021015a0 + 0x10) = 9;
         return 0;
     }

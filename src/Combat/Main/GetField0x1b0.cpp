@@ -1,0 +1,6 @@
+#include <globaldefs.h>
+
+// USA: func_02053f74
+ARM unsigned char GetField0x1b0(void* obj) {
+    return *(unsigned char*)((char*)obj + 0x1b0);
+}

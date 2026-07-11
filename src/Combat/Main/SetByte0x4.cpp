@@ -1,0 +1,6 @@
+#include <globaldefs.h>
+
+// USA: func_0200fb94
+ARM void SetByte0x4(char* obj, unsigned char value) {
+    obj[4] = value;
+}

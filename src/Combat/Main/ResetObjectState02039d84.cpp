@@ -1,0 +1,21 @@
+#include <globaldefs.h>
+
+struct SubBlock02038508;
+struct Bytes02033b88;
+
+void ClearBitsInField0x6c(unsigned char* obj, unsigned int mask);
+void InitBlock02038508(struct SubBlock02038508* p);
+int SetByte0xbeShiftPrev(struct Bytes02033b88* p, int val);
+
+struct Obj02039d84 {
+    unsigned char pad[0xe0];
+    unsigned char flags_e0;
+};
+
+// USA: func_02039d84
+ARM void ResetObjectState02039d84(struct Obj02039d84* obj) {
+    obj->flags_e0 &= ~1;
+    ClearBitsInField0x6c((unsigned char*)obj, 0x1190);
+    InitBlock02038508((struct SubBlock02038508*)((char*)obj + 0x26c));
+    SetByte0xbeShiftPrev((struct Bytes02033b88*)obj, 0);
+}

@@ -1,0 +1,16 @@
+#include <globaldefs.h>
+
+extern char data_021015a0;
+extern "C" int func_020d5aec(void*);
+extern "C" void func_0202ccdc(void);
+void SetField0x48UnlessState9Or10(int);
+
+// USA: func_0202cca4
+ARM int SetState3AndDispatch_0202cca4(void) {
+    int r;
+    *(int*)(&data_021015a0 + 0x10) = 3;
+    r = func_020d5aec((void*)func_0202ccdc);
+    if (r == 2) return 1;
+    SetField0x48UnlessState9Or10(r);
+    return 0;
+}

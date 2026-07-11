@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+int GetField0x64(struct StructF0x64_0203cdf8*);
 
-extern "C" int func_0203cdf8(void* obj);
 
 struct Struct_020409e0 {
     char pad[0x14];
@@ -12,7 +12,7 @@ struct Struct_020409e0 {
 // USA: func_020409e0
 ARM int GetDisplayValue020409e0(struct Struct_020409e0* obj) {
     if (obj->field14) {
-        return func_0203cdf8(obj->field14);
+        return GetField0x64((struct StructF0x64_0203cdf8*)(obj->field14));
     }
     if (obj->field18) {
         return *(int*)((char*)obj->field18 + 0xb0);

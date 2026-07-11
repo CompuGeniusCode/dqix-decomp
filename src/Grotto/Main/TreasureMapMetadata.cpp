@@ -1,4 +1,5 @@
 #include "Grotto/Main/TreasureMapMetadata.h"
+unsigned int GetField0x3acValue(struct BattleStruct*);
 #include "Grotto/Main/RandATRangeModular.h"
 #include "System/Memory.h"
 #include "std_library_functions.h"
@@ -18,7 +19,6 @@ extern "C"
 {
 // Seems to return a u32 whose address is just past the end of the BattleStruct.
 // Maybe BattleStruct is just the beginning of some larger struct?
-unsigned int func_020100a8(BattleStruct*);
 
 // This just returns some data. It's also being spam-called in TileFeatures.cpp,
 // discarding the return value.
@@ -30,7 +30,7 @@ int func_02012fe4(void);
 unsigned short GenerateNewMapQuality()
 {
     BattleStruct* battle = GetBattleStruct();
-    char* maybeMainCharDataPtr = (char*)GetCombatantWithFlag0x100(battle, func_020100a8(battle));
+    char* maybeMainCharDataPtr = (char*)GetCombatantWithFlag0x100(battle, GetField0x3acValue((struct BattleStruct*)(battle)));
     // Another pointless function call
     func_02012fe4();
     GrottoStruct* grotto = GetGrottoStruct(battle);

@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+void CheckFlagOrFallback020de6c8(void*, void*, void*);
 #include "std_library_functions.h"
 
-extern "C" void func_020de6c8(int a, int b, int c);
 
 struct Struct020deeb8 {
     unsigned char pad[0xc];
@@ -11,7 +11,7 @@ struct Struct020deeb8 {
 
 // USA: func_020deeb8
 ARM int InitStruct020deeb8(int a, Struct020deeb8* b, int c, int d, int e) {
-    func_020de6c8(a, d, e);
+    CheckFlagOrFallback020de6c8((void*)(a), (void*)(d), (void*)(e));
     memset(b, 0, 0xc);
     b->field_c = c;
     b->field_10 = 0;

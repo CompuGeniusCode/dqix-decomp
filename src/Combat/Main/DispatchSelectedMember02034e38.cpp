@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+int GetBattleScaleCount(struct BattleStruct*);
 #include "Combat/Main/BattleList.h"
 
-extern "C" int func_02010220(struct BattleStruct*);
 
 struct Selector02034e38 {
     unsigned int sel : 1;
@@ -17,7 +17,7 @@ extern PMF02034e38 data_020efae8[];
 
 // USA: func_02034e38
 ARM void DispatchSelectedMember02034e38(Self02034e38* self) {
-    func_02010220(GetBattleStruct());
+    GetBattleScaleCount((struct BattleStruct*)(GetBattleStruct()));
     if (self->field_10 == NULL) return;
     (self->*data_020efae8[self->field_10->sel])();
 }

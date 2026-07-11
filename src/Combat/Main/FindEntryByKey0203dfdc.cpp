@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+unsigned short* GetField0x8(int*);
 
-extern "C" unsigned short* func_02040528(void* p);
 
 struct Slots0203dfdc { char pad0[0xc]; void* items[0x20]; };
 
@@ -12,7 +12,7 @@ ARM int FindEntryByKey0203dfdc(void* base, int key) {
         if (p == NULL) continue;
         if (*(int*)p & 0x8000) continue;
         {
-            unsigned short* q = func_02040528(p);
+            unsigned short* q = GetField0x8((int*)(p));
             if (q == NULL) continue;
             if (*q == key) return i;
         }

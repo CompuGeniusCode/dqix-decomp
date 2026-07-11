@@ -1,10 +1,10 @@
 #include <globaldefs.h>
+void StoreThreeWordsAt0x0020130a8(int*, int, int, int);
 
-extern "C" void func_020130a8(void*, int, int, int);
 
 // USA: func_020133fc
 ARM void InitStruct020133fc(char* obj) {
-    func_020130a8(obj, 0, 0, 0);
+    StoreThreeWordsAt0x0020130a8((int*)obj, 0, 0, 0);
     *(short*)(obj + 0xc) = 0;
     *(short*)(obj + 0xe) = 0;
     *(short*)(obj + 0x10) = 0;
