@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void PrepareAndCommit020d0050(int);
 
-extern "C" void func_020d0050(int value);
 
 struct Flag02108dfc {
     unsigned char flag;
@@ -12,6 +12,6 @@ extern struct Flag02108dfc data_02108dfc;
 
 // USA: func_02075cb8
 ARM void NotifyU16AndSetFlag02075cb8(void) {
-    func_020d0050(data_02108dfc.value);
+    PrepareAndCommit020d0050((int)(data_02108dfc.value));
     data_02108dfc.flag = 1;
 }

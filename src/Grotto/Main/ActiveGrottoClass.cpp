@@ -1,4 +1,5 @@
 #include "Grotto/Main/ActiveGrottoClass.h"
+bool IsInRange0201b588(int);
 #include "Combat/Main/BattleList.h"
 #include <globaldefs.h>
 
@@ -23,7 +24,6 @@ extern "C"
 
     // Returns true if the value is between 40001 and 41505, respectively.
     // Most likely these are the zone IDs corresponding to grottos.
-    bool func_0201b588(unsigned short zoneID);
 
     // No idea what these do, but they seem to be called before and after
     // each call to func_020a3a34.
@@ -164,7 +164,7 @@ int ActiveGrottoClass::GetFloorCount() const
 {
     GrottoStruct* grotto = GetGrottoStruct(GetBattleStruct());
     void* zone = func_02012fe4();
-    if (!func_0201b588(*(unsigned short*)zone))
+    if (!IsInRange0201b588((int)(*(unsigned short*)zone)))
         return 0;
 
     if (grotto->activeMapData.GetMapType() == TreasureMapType_Legacy)
