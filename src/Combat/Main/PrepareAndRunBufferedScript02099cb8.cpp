@@ -1,0 +1,40 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+void ShiftInBitOnGlobalObject(void);
+void HalveGlobalObjectCounter(void);
+
+struct ResetStruct;
+int ResetFieldsReturnTrue(struct ResetStruct* s);
+
+struct StreamState;
+struct StreamHeader;
+int InitBufferReader(struct StreamState* s, struct StreamHeader* buffer, int length);
+
+struct Struct02030774;
+int RunLoopIfValid02030774(struct Struct02030774* p);
+
+extern "C" int func_02075098(void* a, void* b, int* outCount);
+extern "C" void func_0203066c(void* state, void* dataPtr);
+
+extern char data_020f15ac[];
+extern char data_0211e33c[];
+extern char data_020f1574[];
+
+// USA: func_02099cb8
+ARM void PrepareAndRunBufferedScript02099cb8(char* param0) {
+    int count;
+    char buf[0x430];
+
+    memset(param0, 0, 0x12c);
+    ShiftInBitOnGlobalObject();
+
+    struct StreamHeader* header = (struct StreamHeader*)func_02075098(data_020f15ac, data_0211e33c, &count);
+    if (header != 0) {
+        ResetFieldsReturnTrue((struct ResetStruct*)buf);
+        func_0203066c(buf, data_020f1574);
+        InitBufferReader((struct StreamState*)buf, header, count);
+        RunLoopIfValid02030774((struct Struct02030774*)buf);
+    }
+    HalveGlobalObjectCounter();
+}

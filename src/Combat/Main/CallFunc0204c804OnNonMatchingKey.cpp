@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void ResetElem2081Entry(void*);
 
-extern "C" void func_0204c804(void* p);
 
 struct Elem0207fdf0 { char pad[0xc4]; unsigned char key; char pad2[0x1b]; };
 
@@ -19,7 +19,7 @@ ARM void CallFunc0204c804OnNonMatchingKey(Cont0207fdf0* obj, int key) {
     count = obj->count39;
     for (i = 0; i < count; i++) {
         if (key != obj->elems[i].key) {
-            func_0204c804(&obj->elems[i]);
+            ResetElem2081Entry((void*)(&obj->elems[i]));
         }
     }
 }

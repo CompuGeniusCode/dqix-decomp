@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+int SendBattleEvent020d5900(int, void*);
 
 extern "C" void func_020ca3ec(int value, void* dst, int size);
-extern "C" int func_020d5900(void* obj, void* params);
 
 struct Params020d5974 {
     unsigned int size;
@@ -18,5 +18,5 @@ ARM int DispatchSizedRequest020d5974(void* obj, int a, int b) {
     p.size = 0x180;
     p.a = a;
     p.b = b;
-    return func_020d5900(obj, &p);
+    return SendBattleEvent020d5900((int)(obj), (void*)(&p));
 }

@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void ResetElem2081Entry(void*);
 
-extern "C" void func_0204c804(void* p);
 
 struct Elem0207fe44 { char b[0xe0]; };
 
@@ -19,7 +19,7 @@ ARM void CallFunc0204c804OverAllElems(Cont0207fe44* obj) {
     if (p == NULL) return;
     count = obj->count39;
     for (i = 0; i < count; i++) {
-        func_0204c804(p);
+        ResetElem2081Entry((void*)(p));
         p++;
     }
 }

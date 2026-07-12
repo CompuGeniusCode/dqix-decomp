@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+void ApplyElemFields0205d904(unsigned char*);
 
 struct Struct_0205bf3c;
 
 extern "C" void func_0205d6e4(void* a, int count);
-extern "C" void func_0205d904(void* a);
 void ResetState0205bf3c(struct Struct_0205bf3c* s);
 
 struct Entry_0205d6a0 {
@@ -22,5 +22,5 @@ ARM void ResetEntryList0205d6a0(struct Entry_0205d6a0* a, int flag) {
     if (flag) count = a->fb3;
     func_0205d6e4(a, count);
     ResetState0205bf3c((struct Struct_0205bf3c*)((char*)a + 0x54));
-    func_0205d904(a);
+    ApplyElemFields0205d904((unsigned char*)(a));
 }

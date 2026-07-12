@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void SomeFunc0204c8f0(struct Struct0204c8f0*);
 
-extern "C" void func_0204c8f0(void* entry);
 
 struct Obj0207fd00 {
     char pad0[0x2c];
@@ -19,7 +19,7 @@ ARM void CallFunc0204c8f0OverEntries0207fd00(struct Obj0207fd00* obj) {
         e = obj->entries;
         count = obj->count;
         for (i = 0; i < count; i++) {
-            func_0204c8f0(e);
+            SomeFunc0204c8f0((struct Struct0204c8f0*)(e));
             e += 0xe0;
         }
     }

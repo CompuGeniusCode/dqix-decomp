@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void ResetElem2081Entry(void*);
 
-extern "C" void func_0204c804(void* p);
 
 struct Elem2081;
 
@@ -17,5 +17,5 @@ ARM void CallFunc0204c804OnMatchingKey(struct Obj2081* obj, int key) {
     if (obj->elems == NULL) return;
     e = FindElementByByte0xc4(obj, key);
     if (e == NULL) return;
-    func_0204c804(e);
+    ResetElem2081Entry((void*)(e));
 }

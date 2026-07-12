@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+void ResetTimersAndBuffers0207e264(unsigned char*);
 
-extern "C" void func_0207e264(void* obj);
 
 // USA: func_0207e23c
 ARM void* InitStructReturnSelf(void* obj) {
-    func_0207e264(obj);
+    ResetTimersAndBuffers0207e264((unsigned char*)(obj));
     return obj;
 }
