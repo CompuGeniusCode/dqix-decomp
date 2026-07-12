@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+void ClearAndFreeAllNodes020c78e8(struct List020c7234*);
 
 struct Node020c72bc {
     char pad0[8];
@@ -14,7 +15,6 @@ struct List020c72bc {
 };
 
 extern Node020c72bc* UnlinkHeadNode020c72bc(List020c72bc* list);
-extern "C" void func_020c78e8(void* p);
 
 // USA: func_020c8154
 ARM void DrainNodeList020c8154(void* owner) {
@@ -25,6 +25,6 @@ ARM void DrainNodeList020c8154(void* owner) {
         Node020c72bc* node = UnlinkHeadNode020c72bc((List020c72bc*)((char*)owner + 0x88));
         node->fc = 0;
         node->f8 = 0;
-        func_020c78e8(node);
+        ClearAndFreeAllNodes020c78e8((struct List020c7234*)(node));
     } while (*(Node020c72bc**)((char*)owner + 0x88) != NULL);
 }

@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+int SetBattleContextField0xc8IfIdle(void*);
 
 extern char data_021015a0;
-extern "C" int func_020d472c(int);
 void SetField0x48UnlessState9Or10(int);
 
 // USA: func_0202db08
@@ -12,7 +12,7 @@ ARM void PollField0x40OrSetState_0202db08(unsigned short* obj) {
         *(int*)(&data_021015a0 + 0x10) = 0xa;
         return;
     }
-    r = func_020d472c(*(int*)(&data_021015a0 + 0x40));
+    r = SetBattleContextField0xc8IfIdle((void*)(*(int*)(&data_021015a0 + 0x40)));
     if (r == 0) {
         *(int*)(&data_021015a0 + 0x10) = 1;
         return;

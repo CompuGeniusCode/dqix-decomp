@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+int CheckAndToggleFlag0x200000(struct Ctx020359c8*);
 
-extern "C" int func_020359c8(void*);
 
 struct Obj0207e924;
 
@@ -16,7 +16,7 @@ struct Battler02035e1c {
 
 // USA: func_02035e1c
 ARM int RunActionIfReady02035e1c(struct Battler02035e1c* a, int b, int c, int d, int e) {
-    if (func_020359c8(a) == 0) return 0;
+    if (CheckAndToggleFlag0x200000((struct Ctx020359c8*)(a)) == 0) return 0;
     if (a->field_6c & 0x800) b = 0;
     DispatchByFlag42_020356f0((unsigned char*)a);
     return InvokeField54IfFlag0xa8Bit0Set(a->field_8, b, c, d, e);

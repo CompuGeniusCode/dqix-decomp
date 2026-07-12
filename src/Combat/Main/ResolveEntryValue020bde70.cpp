@@ -1,12 +1,12 @@
 #include <globaldefs.h>
+int* GetOffsetEntry0xc(int);
 
-extern "C" int* func_020bd4b8(int);
 extern "C" int func_020be1a8(int, int, int);
 int GetListEntryWord8020bd8ac(unsigned int);
 
 // USA: func_020bde70
 ARM int ResolveEntryValue020bde70(int id, int flags, int b, int c, int* out) {
-    int* entry = func_020bd4b8(id);
+    int* entry = GetOffsetEntry0xc((int)(id));
     if (entry == NULL) return 3;
     int val = *entry;
     int result;

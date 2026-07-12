@@ -1,11 +1,11 @@
 #include <globaldefs.h>
+void NotifyOverlayIfField0x9cSet02073240(int);
 
-extern "C" void func_02073240(int);
 
 // USA: func_020732a8
 ARM void CallFuncForEachOfFour(void) {
     int i;
     for (i = 0; i < 4; i++) {
-        func_02073240(i);
+        NotifyOverlayIfField0x9cSet02073240((int)(i));
     }
 }

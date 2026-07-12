@@ -1,11 +1,11 @@
 #include <globaldefs.h>
+int RunHandlerWithFallbackDispatch020ce56c(int, int, int);
 
-extern "C" int func_020ce56c(int, int, void*);
 
 // USA: func_020ce810
 ARM int ReadTwoBitFlags(int *out8, int *out4) {
     unsigned short local;
-    int ret = func_020ce56c(0xf, 1, &local);
+    int ret = RunHandlerWithFallbackDispatch020ce56c((int)(0xf), (int)(1), (int)(&local));
     if (ret != 0) {
         return ret;
     }

@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+void ClearAndFreeAllNodes020c78e8(struct List020c7234*);
 
 unsigned int DisableInterrupts(void);
 unsigned int RestoreInterrupts(unsigned int mask);
-extern "C" void func_020c78e8(void* p);
 
 struct Node020cb034 {
     struct Node020cb034* prev;
@@ -32,6 +32,6 @@ ARM void UnlinkAndResetNode020cb034(struct Node020cb034* node, int value) {
     node->next = NULL;
     node->fc &= ~0x4f;
     node->f14 = value;
-    func_020c78e8(&node->f18);
+    ClearAndFreeAllNodes020c78e8((struct List020c7234*)(&node->f18));
     RestoreInterrupts(mask);
 }
