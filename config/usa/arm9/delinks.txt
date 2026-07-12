@@ -2307,6 +2307,7 @@ src/Combat/Main/RecordValueChangeAt0x20.cpp:
     .text start:0x02052884 end:0x020528c4
 
 
+
 src/Combat/Main/ResetBytesAndSetByte0x16.cpp:
     complete
     .text start:0x0205c77c end:0x0205c790
@@ -11162,6 +11163,11 @@ src/Combat/Main/ReleaseGlobalEntry0203c198.cpp:
     .text start:0x0203c198 end:0x0203c1c8
 
 
+src/Combat/Main/AdjustAndDispatchEntry0203c1c8.cpp:
+    complete
+    .text start:0x0203c1c8 end:0x0203c248
+
+
 src/Combat/Main/InvokeGlobalEntry0203c248.cpp:
     complete
     .text start:0x0203c248 end:0x0203c284
@@ -16927,6 +16933,7 @@ src/Combat/Main/SetWord0x7f6c.cpp:
 src/Combat/Main/TailForward02012bb0.cpp:
     complete
     .text start:0x02012bb0 end:0x02012bbc
+
 
 
 src/Combat/Main/TailForward02012da4.cpp:
