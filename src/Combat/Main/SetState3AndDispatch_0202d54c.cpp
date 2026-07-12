@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+int TrySetBattleContextField020d5aec(int);
 
 extern char data_021015a0;
-extern "C" int func_020d5aec(void*);
 extern "C" void func_0202d584(void);
 void SetField0x48UnlessState9Or10(int);
 
@@ -9,7 +9,7 @@ void SetField0x48UnlessState9Or10(int);
 ARM int SetState3AndDispatch_0202d54c(void) {
     int r;
     *(int*)(&data_021015a0 + 0x10) = 3;
-    r = func_020d5aec((void*)func_0202d584);
+    r = TrySetBattleContextField020d5aec((int)((void*)func_0202d584));
     if (r == 2) return 1;
     SetField0x48UnlessState9Or10(r);
     return 0;

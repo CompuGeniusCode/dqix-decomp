@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+void ProcessQueueUntilValueCommitted020d2680(unsigned int);
 
 extern "C" void func_020d1f0c(void*, int, int, int);
 extern "C" void func_020d24c4(int);
-extern "C" void func_020d2680(int);
 int GetInterruptSafeQueueField(void);
 
 struct Obj020bcde0 {
@@ -21,5 +21,5 @@ ARM void NotifyMaskedEvent020bcde0(struct Obj020bcde0* obj) {
     func_020d1f0c(obj->field44, 0, 1 << obj->field40, 0);
     int x = GetInterruptSafeQueueField();
     func_020d24c4(1);
-    func_020d2680(x);
+    ProcessQueueUntilValueCommitted020d2680((unsigned int)(x));
 }

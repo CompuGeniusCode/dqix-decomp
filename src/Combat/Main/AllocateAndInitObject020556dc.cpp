@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+void ResetObj02056d10(struct Obj02056d10*);
 #include "Memory/SafeAllocator.h"
 
-extern "C" void func_02056d10(void* obj);
 
 // USA: func_020556dc
 ARM bool AllocateAndInitObject020556dc(void** out, SafeAllocator* alloc) {
@@ -10,6 +10,6 @@ ARM bool AllocateAndInitObject020556dc(void** out, SafeAllocator* alloc) {
     p = alloc->Allocate(0x170);
     *out = p;
     if (p == NULL) return false;
-    func_02056d10(p);
+    ResetObj02056d10((struct Obj02056d10*)(p));
     return true;
 }

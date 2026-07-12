@@ -1,0 +1,35 @@
+#include <globaldefs.h>
+#include "Memory/SafeAllocator.h"
+#include "std_library_functions.h"
+
+struct CallbackCache0214e33c {
+    short field0;
+    short pad2;
+    void* field4;
+    void* field8;
+    void* fieldC;
+};
+extern struct CallbackCache0214e33c data_0214e33c;
+
+struct ListNode020d78e0 {
+    short field0;
+    short field2;
+    int field4;
+    void* next;
+};
+
+// USA: func_020d78e0
+ARM void AppendListNode020d78e0(void** headSlot, void* srcData) {
+    void** slot = headSlot;
+    while (*slot != NULL) {
+        slot = (void**)((char*)*slot + 8);
+    }
+    struct ListNode020d78e0* node = (struct ListNode020d78e0*)((SafeAllocator*)data_0214e33c.field8)->Allocate(0xc);
+    *slot = node;
+    if (node == NULL) return;
+    node->field0 = -1;
+    node->field2 = -1;
+    node->field4 = 0;
+    node->next = NULL;
+    memcpy(*slot, srcData, 8);
+}

@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+void MaybeSwapPairTables020555a0(struct Obj020555a0*);
 
-extern "C" void func_020555a0(void* node);
 
 struct Node020579ec {
     char pad[0x1ec];
@@ -11,7 +11,7 @@ struct Node020579ec {
 ARM void ForEachNode020579ec(Node020579ec** pp) {
     Node020579ec* n = *pp;
     while (n != NULL) {
-        func_020555a0(n);
+        MaybeSwapPairTables020555a0((struct Obj020555a0*)(n));
         n = n->next;
     }
 }

@@ -3,7 +3,8 @@
 struct Outer020beeac;
 void ReleaseRefAt0x120(void *obj);
 void ResetField14cAndClearFlags020beeac(struct Outer020beeac *p);
-extern "C" void func_020bf358(void* a, void* b);
+struct SignedAllocatorList; struct SignedAllocatorHeader;
+void MoveMatchingAllocatorsFromList(SignedAllocatorList*, SignedAllocatorHeader*);
 
 extern char data_02110a40;
 
@@ -23,9 +24,9 @@ ARM void ReleaseAndFlushContext020bf238(struct Obj020bf238 *obj) {
     if (!obj->flag0x110) return;
     ReleaseRefAt0x120(obj);
     obj->funcPtr0x168(obj);
-    func_020bf358(&data_02110a40, obj);
+    MoveMatchingAllocatorsFromList((SignedAllocatorList*)&data_02110a40, (SignedAllocatorHeader*)obj);
     if (data_021103b0.f4 != 0) {
-        func_020bf358(data_021103b0.f4 + 0x4e0, obj);
+        MoveMatchingAllocatorsFromList((SignedAllocatorList*)(data_021103b0.f4 + 0x4e0), (SignedAllocatorHeader*)obj);
     }
     ResetField14cAndClearFlags020beeac((struct Outer020beeac*)obj);
 }
