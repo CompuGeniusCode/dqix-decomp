@@ -21377,3 +21377,123 @@ src/Combat/Main/UpdateFadeAlpha0207b008.cpp:
 src/Combat/Main/UpdateInterpTimer020707c8.cpp:
     complete
     .text start:0x020707c8 end:0x020708c8
+
+
+src/Combat/Main/AdvanceActorCooldownsAndPosition0205a020.cpp:
+    complete
+    .text start:0x0205a020 end:0x0205a148
+
+
+src/Combat/Main/AdvanceFacingAngleTowardTarget02033710.cpp:
+    complete
+    .text start:0x02033710 end:0x02033834
+
+
+src/Combat/Main/ApplyRangeDeltaCallback020b1d70.cpp:
+    complete
+    .text start:0x020b1d70 end:0x020b1e94
+
+
+src/Combat/Main/CommandDispatch0206f6cc.cpp:
+    complete
+    .text start:0x0206f6cc end:0x0206f7f4
+
+
+src/Combat/Main/CopyCombatantStats0208936c.cpp:
+    complete
+    .text start:0x0208936c end:0x02089494
+
+
+src/Combat/Main/DispatchByTagLookup0204b3a0.cpp:
+    complete
+    .text start:0x0204b3a0 end:0x0204b4c0
+
+
+src/Combat/Main/FillEmptySlotsFromValidEntry02050830.cpp:
+    complete
+    .text start:0x02050830 end:0x02050940
+
+
+src/Combat/Main/FindMatchingEntryByMask02073ec4.cpp:
+    complete
+    .text start:0x02073ec4 end:0x02073fdc
+
+
+src/Combat/Main/InitCombatPairState020652d0.cpp:
+    complete
+    .text start:0x020652d0 end:0x020653e4
+
+
+src/Combat/Main/InitFromVariantBlock0201c5fc.cpp:
+    complete
+    .text start:0x0201c5fc end:0x0201c714
+
+
+src/Combat/Main/PollAndDecompressResource02014c04.cpp:
+    complete
+    .text start:0x02014c04 end:0x02014d18
+
+
+src/Combat/Main/ProcessCombatState020534ac.cpp:
+    complete
+    .text start:0x020534ac end:0x020535c8
+
+
+src/Combat/Main/ProcessCombatantAnimRequest020db9cc.cpp:
+    complete
+    .text start:0x020db9cc end:0x020dbae0
+
+
+src/Combat/Main/ProcessCombatantReactions020d738c.cpp:
+    complete
+    .text start:0x020d738c end:0x020d74a4
+
+
+src/Combat/Main/ProcessCombatantState020235c8.cpp:
+    complete
+    .text start:0x020235c8 end:0x020236dc
+
+
+src/Combat/Main/ProcessCommandEntry02081a14.cpp:
+    complete
+    .text start:0x02081a14 end:0x02081b3c
+
+
+src/Combat/Main/RunOrPollScript02095ee0.cpp:
+    complete
+    .text start:0x02095ee0 end:0x02095ff0
+
+
+src/Combat/Main/RunScriptByValueRange02071574.cpp:
+    complete
+    .text start:0x02071574 end:0x02071688
+
+
+src/Combat/Main/SetBitFromValueRange0201ba68.cpp:
+    complete
+    .text start:0x0201ba68 end:0x0201bb78
+
+
+src/Combat/Main/SetElemFlag0x4QuadAndNotify17.cpp:
+    complete
+    .text start:0x020ae880 end:0x020ae990
+
+
+src/Combat/Main/StepValueTowardTarget02052ae8.cpp:
+    complete
+    .text start:0x02052ae8 end:0x02052bfc
+
+
+src/Combat/Main/UpdateGlobalAndCombatantFlagBytes.cpp:
+    complete
+    .text start:0x020e35a0 end:0x020e36c4
+
+
+src/Combat/Main/UpdatePlayClocks020ac4f8.cpp:
+    complete
+    .text start:0x020ac4f8 end:0x020ac614
+
+
+src/Combat/Main/UpdateVariantRangeState0209bb6c.cpp:
+    complete
+    .text start:0x0209bb6c end:0x0209bc84
