@@ -1,9 +1,147 @@
 #pragma once
 
 #include <globaldefs.h>
+#include "TreasureMapMetadata.h"
 
-struct DetailedTreasureMapData
+#ifdef jpn
+void RemoveFurigana(const char* src, char* dst);
+#endif
+
+bool IsMonsterIDLegacyBoss(unsigned short id);
+
+// The output format here is pretty weird, it's a 4 byte struct of the form
+// u8 mapType (1 = regular, 2 = legacy)
+// u8 legacyBossID (0 if not a legacy map)
+// u16 isLegacy (0 = regular, 1 = legacy but it's 16 bit...?)
+bool GetTreasureMapTypeFromItemID(unsigned short itemID, unsigned char* out);
+
+struct LegacyBossStats
 {
+    int maxHP;
+    int maxMP;
+    unsigned short agility;
+    unsigned short attack;
+    unsigned short defense;
+    char padding[2];
+    int alternateVersion; // 1, 2 or 3
+    int rewardExp;
+    // might be an int, but only the last 16 bytes are used
+    unsigned int rewardGold;
+    unsigned char dropListIndex;
+    bool newDropListAtNextLevel;
+    unsigned char numLevelUpMoves;
+    struct LevelUpMove
+    {
+        unsigned short moveID;
+        unsigned char level;
+        bool announceLearn;
+    } levelUpMoves[10];
+};
+
+class DetailedTreasureMapData
+{
+public:
+    class RegularMapData
+    {
+    public:
+        unsigned short seed;
+        unsigned char quality;
+        // Related to unknown_66. It's always 0 but the code allows a random chance
+        // to be 1-12 based on the seed (but in practice the chance is 0% for each).
+        // I don't know what it does if it's nonzero.
+        char unknown_4F;
+        unsigned char environ; // caves, ruins, ice, water, fire as 1,2,3,4,5 resp.
+        unsigned char floorCount;
+        unsigned char startingMonsterRank;
+        unsigned char bossID; // 1 to 12
+        unsigned short bossMonsterID; // the number in square brackets in yabd's bestiary
+        // looks like it gets populated with a random valid chest rank
+        // for each monster rank, but never gets used
+        char maybeUnusedChestRanks[12];
+        unsigned char prefix;
+        unsigned char suffix;
+        unsigned char localeRank;
+        unsigned char level;
+        char unknown_66; // was always 1 in the grottos I checked
+
+#if defined(usa)
+        char nameNoLevel[64];
+        char levelString[8];
+        char topScreenName[64];
+        // Does not include the <PAD_WAIT> command (that's added externally)
+        char popupName[64];
+#elif defined(jpn)
+        char nameNoLevel[32];
+        char prefixString[32];
+        char suffixString[32];
+        char localeString[32];
+        char levelString[8];
+        char topScreenName[64];
+        char popupName[128];
+#endif
+
+    public:
+        void Populate(unsigned short seed, unsigned char quality);
+
+    private:
+        void GenerateUnknownData();
+        void GenerateEnviron();
+        void GenerateFloorCount();
+        void GenerateMonsterRank();
+        void GenerateBoss();
+        void GenerateUnusedChestRanks();
+        void GeneratePrefix();
+        void GenerateSuffix();
+        void GenerateLocaleRank();
+
+        void GenerateNameBuffers();
+        void GeneratePopupName();
+    };
+
+    class LegacyBossMapData
+    {
+    public:
+        unsigned char bossID;
+        unsigned short bossMonsterID; 
+        // holds the ids of the 1A, 2A, 3A versions in yabd bestiary
+        unsigned short alternateVersionIDs[3];
+        unsigned char level;
+        unsigned short minTurns;
+        // could be e.g. 24 bytes with padding
+        // in JPN version, this is stored *with* furigana decorations
+        char bossName[26];
+        LegacyBossStats stats;
+
+#if defined(usa)
+        // All stored in the 'markup' encoding, e.g. using <1> for apostrophe
+        char mapNameNoLevel[64]; // e.g. "Baramos<1>s Map"
+        char mapNameNoLevel_v2[32]; // same as above, not sure what the difference is
+        char seeminglyEmptyBuffer[32];
+        char mapLevelString[8]; // e.g. "Lv. 99"
+        char topScreenName[64]; // "Baramos<1>s Map Lv. 99"
+        char popupName[64]; // e.g. "Baramos Lv. 99" (what pops up on entering the grotto)
+#elif defined(jpn)
+        // The sizes are correct, but the interpretation is potentially dodgy -
+        // someone who actually knows Japanese should probably take a look (I
+        // deduced the linguistic purpose of these from Google Translate/Wikipedia)
+        char mapNameNoLevel[32]; // e.g. Baramos no chizu
+        char bossNameGenitive[32]; // e.g. Baramos no
+        char fixedStringChizu[32]; // always holds "chizu", which I gather means map
+        char mapLevelString[8]; // e.g. "Lv 99"
+        char topScreenName[64]; // e.g. Baramos no chizu Lv 99
+        char popupName[128]; // e.g. Baramos Lv 99 no chizu (pops up on entering the grotto)
+#endif
+
+    public:
+        unsigned short MaybeGetCurrentAlternateID() const;
+        void Populate(unsigned char bossID, unsigned char level, unsigned short minTurns);
+
+        void WriteMapLevelString();
+        bool CanUseLevelUpMove(unsigned short moveID);
+        // if filter is 0 or 1, filters based on announceLearn
+        unsigned short GetLearnedMove(unsigned char atLevel, int filter);
+    };
+
     unsigned char discoveryState;
     unsigned char mapType;
     // Stored in the DQ9 string encoding. 12 bytes get zeroed out but
@@ -11,9 +149,7 @@ struct DetailedTreasureMapData
     char discoveredBy[12];
     char clearedBy[12];
     char probablyPadding_1A[2];
-    // not sure about this, seemed correct for a couple of grottos but the
-    // z coordinate was off by 8192. I guess it could be the location of the
-    // grotto entrance model? You do spawn a bit below it when you exit.
+    // coordinates of the model (you spawn at offset (0, 0, +8192) on exiting)
     int entranceZoneID;
     int entranceX;
     int entranceY;
@@ -21,91 +157,26 @@ struct DetailedTreasureMapData
     unsigned char mapLocation;
     char mapImageName[16]; // e.g. "mapt_005"
     bool discoveredTreasures[3];
-    short treasureItemIDs[3]; // might be unsigned?
+    unsigned short treasureItemIDs[3];
     unsigned char treasureDropRates[3];
     char unknown_49[3]; // might just be padding
 
-    union {
-    struct RegularMapData
+    union
     {
-        short seed; // might technically be unsigned
-        unsigned char quality;
-        char padding_4F[1];
-        // the rest of these are probably unsigned too
-        char environ; // caves, ruins, ice, water, fire as 1,2,3,4,5 resp.
-        unsigned char floorCount;
-        char startingMonsterRank;
-        char bossID; // 1 to 12
-        // these are probably chars, or maybe a short followed by 12 chars.
-        // the first byte is typically quite large (0xD8 in usugura)
-        // and the rest are around 1-10
-        char unknown_54[14];
-        char prefix;
-        char suffix;
-        char maybeLocale; // needs more checking
-        unsigned char level;
-        char unknown_66; // was always 1 in the grottos I checked
-
-#ifndef jpn
-        // This is still pretty speculative, but from a quick glance at
-        // func_020a51b0 and looking at memory while in a grotto, I think
-        // it's something like:
-        char buffer1[64]; // holds grotto name without level
-        char buffer2[8]; // level string, e.g. "Lv. 1"
-        char buffer3[64]; // full grotto name
-        char popupName[64]; // full grotto name but used in the popup msg
-                            // when you enter / load a quicksave
-#else
-        // this is probably not what's actually going on, but it makes
-        // this object the right size for memset calls. Probably either the
-        // buffers are resized or there are some extra ones.
-        char unknownJpnBuffers[0xC8];
-        char popupName[64];
-#endif
-    } regular;
-
-    struct LegacyBossMapData
-    {
-        char bossID;
-        short unknown_4E[4];
-        unsigned char level;
-        unsigned short minTurns;
-        char bossName[26]; // unsure of length, could be zeros at end for another reason
-        // amazingly these are actually used quantities, if you modify them
-        // on entering the grotto with a cheat, it changes their stats
-        // when you fight them 
-        int bossHP;
-        int bossMP;
-        unsigned short bossAgility;
-        unsigned short bossAttack;
-        unsigned short bossDefense;
-        char padding_82[2];
-        int unknown_84;
-        int rewardExp;
-        unsigned short rewardGold;
-        char unknown_8E[0x2E];
-
-#ifndef jpn
-        // All stored in the 'markup' encoding, e.g. using <1> for apostrophe.
-        // Speculative based on looking at memory in a legacy grotto and
-        // a glance at func_020a425c
-        char mapNameNoLevel[64]; // e.g. "Estark<1>s Map"
-        char mapNameNoLevel_v2[64]; // same as above, not sure what the difference is
-        char mapLevelString[8]; // e.g. "Lv. 99"
-        char mapName[64]; // "Estark<1>s Map Lv. 99"
-        char popupName[64]; // e.g. "Estark Lv. 99" (what pops up on entering the grotto)
-#else
-        // really no idea, I just looked at func_020a6050 (JPN) to guess
-        // the sizes and positions
-        char jpnBuffer1[32];
-        char jpnBuffer2[32];
-        char jpnBuffer3[32];
-        char jpnBuffer4[8];
-        char jpnBuffer5[64];
-        char popupName[64];
-        char jpnBuffer6[64];
-#endif
-    } legacy;
+        RegularMapData regular;
+        LegacyBossMapData legacy;
     };
 
+public:
+    void Clear();
+    void BlankFunction() const; // possibly returns this, but return value never used
+
+    // Called on the overall struct, but only does anything for a legacy
+    // boss map (and maybe only gets called then?)
+    bool UpdateFollowingCompletion(bool levelledUp, unsigned short numTurns);
+
+    unsigned int GetLevel() const;
+
+    void LoadLegacyBossStats(bool compute, const unsigned char* providedArchive);
+    void LoadTreasures();
 };

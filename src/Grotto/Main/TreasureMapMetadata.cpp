@@ -1,6 +1,6 @@
 #include "Grotto/Main/TreasureMapMetadata.h"
 unsigned int GetField0x3acValue(struct BattleStruct*);
-#include "Grotto/Main/RandATRangeModular.h"
+#include "Grotto/Main/TreasureMapDataStructs.h"
 #include "System/Memory.h"
 #include "std_library_functions.h"
 #include "Combat/Main/BattleList.h"
@@ -78,7 +78,7 @@ unsigned short GenerateNewMapQuality()
 
     unsigned short quality;
     // Probably checking if regular map or legacy boss map?
-    if (grotto->unknown2[1] == 2)
+    if (grotto->unknown_09 == 2)
     {
         quality = maxCharLevel + maxNumRevocs * 5 + grotto->activeMapLevel;
     }
@@ -86,7 +86,7 @@ unsigned short GenerateNewMapQuality()
     {
         quality = (unsigned short)(1.5f * (float)maxCharLevel + 5.0f * (float)maxNumRevocs);
     }
-    grotto->unknown2[1] = 0;
+    grotto->unknown_09 = 0;
     float tenth = 0.1f * (float)quality;
     int quotient = 2 * (int)tenth + 1;
     quality += (int)((float)(rand() % quotient) - tenth);

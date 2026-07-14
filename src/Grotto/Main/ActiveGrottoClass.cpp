@@ -218,6 +218,7 @@ unsigned short ActiveGrottoClass::GetActiveGrottoSeed() const
 
 // USA: func_02090290
 // JPN: func_02090bb0
-void ActiveGrottoClass::BlankFunction() const
+DetailedTreasureMapData* ActiveGrottoClass::GetDetailedData()
 {
+    return &overallMapData;
 }

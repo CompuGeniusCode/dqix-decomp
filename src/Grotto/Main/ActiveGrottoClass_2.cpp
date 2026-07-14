@@ -8,11 +8,9 @@ extern "C"
     // Just (vector)-memsets to zero
     void func_020a5f00(DetailedTreasureMapData*);
 }
-#define ClearOverallMapData func_020a5f00
+#define ClearOverallMapData(obj) func_020a5f00(obj)
 #else
-// Just (vector)-memsets to zero
-void ClearStruct020a40e8(void*);
-#define ClearOverallMapData ClearStruct020a40e8
+#define ClearOverallMapData(obj) (obj)->Clear()
 #endif
 
 // USA: func_0209033c

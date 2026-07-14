@@ -25,10 +25,6 @@ src/Grotto/Main/FloorMap.c:
     complete
     .text start:0x02092644 end:0x02092a74
 
-src/Grotto/Main/RandATRangeModular.c:
-    complete
-    .text start:0x020a3ec0 end:0x020a3ee4
-
 src/Grotto/Main/TileFeatures.c:
     complete
     .text start:0x0201ea54 end:0x0201ebc4
@@ -730,10 +726,6 @@ src/Combat/Main/GetListElement.cpp:
     complete
     .text start:0x020b780c end:0x020b7840
 
-
-src/Combat/Main/GetValueForType.cpp:
-    complete
-    .text start:0x020a4220 end:0x020a4244
 
 
 src/Combat/Main/IsField0x8bcNotZeroOrOne.cpp:
@@ -3587,10 +3579,6 @@ src/Combat/Main/GetEntryVarStride.cpp:
     .text start:0x020b00e0 end:0x020b0108
 
 
-src/Combat/Main/GetHalfwordByField0x38.cpp:
-    complete
-    .text start:0x020a40c0 end:0x020a40e8
-
 
 src/Combat/Main/GetIndexedElement020a939c.cpp:
     complete
@@ -5065,10 +5053,6 @@ src/Combat/Main/InitStruct0208a9c0.cpp:
     .text start:0x0208a9c0 end:0x0208aa18
 
 
-src/Combat/Main/IsEntryAvailableByKey020a454c.cpp:
-    complete
-    .text start:0x020a454c end:0x020a45a0
-
 
 src/Combat/Main/IsPointWithinCylinder.cpp:
     complete
@@ -5234,10 +5218,6 @@ src/Combat/Main/FindEntryBySignedId02087574.cpp:
     complete
     .text start:0x02087574 end:0x020875c4
 
-
-src/Combat/Main/FindValueByKeyAndMode020a45a0.cpp:
-    complete
-    .text start:0x020a45a0 end:0x020a4618
 
 
 src/Combat/Main/ForEachNode02097000.cpp:
@@ -9121,10 +9101,6 @@ src/Combat/Main/ClearFlagBit020bbef8.cpp:
     .text start:0x020bbef8 end:0x020bbf18
 
 
-src/Combat/Main/ClearStruct020a40e8.cpp:
-    complete
-    .text start:0x020a40e8 end:0x020a40fc
-
 
 src/Combat/Main/ClearSublistEntryFlag2_020806c4.cpp:
     complete
@@ -9150,10 +9126,6 @@ src/Combat/Main/CountSetBitsAt0x34.cpp:
     complete
     .text start:0x020a35f8 end:0x020a3634
 
-
-src/Combat/Main/Dispatch020a4244.cpp:
-    complete
-    .text start:0x020a4244 end:0x020a425c
 
 
 src/Combat/Main/DispatchMemberFn020a0dec.cpp:
@@ -14041,10 +14013,6 @@ src/Combat/Main/BlankFunction020a28dc.cpp:
     .text start:0x020a28dc end:0x020a28e0
 
 
-src/Combat/Main/BlankFunction020a40fc.cpp:
-    complete
-    .text start:0x020a40fc end:0x020a4100
-
 
 src/Combat/Main/BlankFunction020a64a4.cpp:
     complete
@@ -14220,10 +14188,6 @@ src/Combat/Main/DispatchType2Command020bc6fc.cpp:
     complete
     .text start:0x020bc6fc end:0x020bc734
 
-
-src/Combat/Main/EmitObjectEvent0x3f3.cpp:
-    complete
-    .text start:0x020a451c end:0x020a454c
 
 
 src/Combat/Main/EmptyDestructor0205a494.cpp:
@@ -18699,10 +18663,6 @@ src/Combat/Main/IsEntryEligibleAndFlagged.cpp:
     .text start:0x0201bc94 end:0x0201bd04
 
 
-src/Combat/Main/IsMonsterIDLegacyBoss.cpp:
-    complete
-    .text start:0x020a3ee4 end:0x020a3f54
-
 
 src/Combat/Main/LoadEightEntriesFromTable.cpp:
     complete
@@ -19611,3 +19571,12 @@ src/Filesystem/CardReadManager.cpp:
 src/Filesystem/ExtendedNitroVM.cpp:
     complete
     .text start:0x020d8714 end:0x020d8fcc
+
+src/Grotto/Main/TreasureMapDataStructs.cpp:
+    complete
+    .text start:0x020a3a34 end:0x020a3ee4
+
+src/Grotto/Main/DetailedTreasureMapData.cpp:
+    complete
+    .rodata start:0x020e9038 end:0x020e9074
+    .text start:0x020a3ee4 end:0x020a5cb8

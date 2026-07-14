@@ -4,14 +4,14 @@ extern "C" void* func_02012fe4(void);
 extern "C" int func_ov017_021d6134(void*, int);
 
 struct ActiveGrottoClass {
-    ActiveGrottoClass* BlankFunction() const;
+    ActiveGrottoClass* GetDetailedData();
 };
 
 // USA: func_0209db5c
 ARM int NotifyOv017WithGrottoByte0x63(void* arg) {
     ActiveGrottoClass* g = (ActiveGrottoClass*)((char*)func_02012fe4() + 0x23EC);
     if (g == NULL) return 0;
-    ActiveGrottoClass* r = g->BlankFunction();
+    ActiveGrottoClass* r = g->GetDetailedData();
     if (r == NULL) return 0;
     if (*((unsigned char*)r + 0x1) != 1) return 0;
     func_ov017_021d6134(arg, *((unsigned char*)r + 0x63));
