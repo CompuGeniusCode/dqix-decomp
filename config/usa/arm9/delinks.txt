@@ -21010,3 +21010,108 @@ src/Combat/Main/UpdateElementStream0203f02c.cpp:
 src/Combat/Main/UpdateTargetTrackingState.cpp:
     complete
     .text start:0x020129b4 end:0x02012a84
+
+
+src/Combat/Main/CheckAndInvoke020ad4c4.cpp:
+    complete
+    .text start:0x020ad4c4 end:0x020ad59c
+
+
+src/Combat/Main/ClassifyFlag0x800RatioTier02027bd0.cpp:
+    complete
+    .text start:0x02027bd0 end:0x02027ca4
+
+
+src/Combat/Main/ComputeElapsedPlayTimeHMS020103f0.cpp:
+    complete
+    .text start:0x020103f0 end:0x020104cc
+
+
+src/Combat/Main/ComputeElapsedPlayTimeHMS020104cc.cpp:
+    complete
+    .text start:0x020104cc end:0x020105a8
+
+
+src/Combat/Main/DispatchBySelector02086c4c.cpp:
+    complete
+    .text start:0x02086c4c end:0x02086d20
+
+
+src/Combat/Main/FormatAndAppendCombatMessage02072d58.cpp:
+    complete
+    .text start:0x02072d58 end:0x02072e34
+
+
+src/Combat/Main/GetEntryOutputs020808c8.cpp:
+    complete
+    .text start:0x020808c8 end:0x020809a0
+
+
+src/Combat/Main/InitAllocatorsAndBuffers0208b8c4.cpp:
+    complete
+    .text start:0x0208b8c4 end:0x0208b9a0
+
+
+src/Combat/Main/InitBigStruct0201c014.cpp:
+    complete
+    .text start:0x0201c014 end:0x0201c0e8
+
+
+src/Combat/Main/InitPackedFields02089560.cpp:
+    complete
+    .text start:0x02089560 end:0x02089630
+
+
+src/Combat/Main/IssueBattleCommandSlot7.cpp:
+    complete
+    .text start:0x020d507c end:0x020d5158
+
+
+src/Combat/Main/PatchFontResourceBlocks.cpp:
+    complete
+    .text start:0x020b291c end:0x020b29f8
+
+
+src/Combat/Main/ProcessBattleTick020e455c.cpp:
+    complete
+    .text start:0x020e455c end:0x020e462c
+
+
+src/Combat/Main/ProcessCombatEntry0205cb74.cpp:
+    complete
+    .text start:0x0205cb74 end:0x0205cc50
+
+
+src/Combat/Main/RegisterNode02064d48.cpp:
+    complete
+    .text start:0x02064d48 end:0x02064e20
+
+
+src/Combat/Main/TickActorFlagStateAndDispatch02076bec.cpp:
+    complete
+    .text start:0x02076bec end:0x02076cc4
+
+
+src/Combat/Main/TryAdvanceChargeSlot0208a840.cpp:
+    complete
+    .text start:0x0208a840 end:0x0208a910
+
+
+src/Combat/Main/UpdateActorMode02078d84.cpp:
+    complete
+    .text start:0x02078d84 end:0x02078e60
+
+
+src/Combat/Main/UpdateFallMotion020ae3f4.cpp:
+    complete
+    .text start:0x020ae3f4 end:0x020ae4c8
+
+
+src/Combat/Main/UpdateFlagBitsAndDispatch.cpp:
+    complete
+    .text start:0x020b426c end:0x020b4348
+
+
+src/Combat/Main/UpdateObjPaletteEntry020dc70c.cpp:
+    complete
+    .text start:0x020dc70c end:0x020dc7e8
