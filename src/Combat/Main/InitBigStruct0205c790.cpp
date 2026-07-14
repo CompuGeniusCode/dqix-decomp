@@ -1,0 +1,33 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+struct InitSubstruct0205c73cData;
+void InitSubstruct0205c73c(struct InitSubstruct0205c73cData* p);
+struct Struct_0205c53c;
+void InitChannelPair0205c53c(struct Struct_0205c53c* s);
+struct Foo02042fcc;
+void ResetFoo02042fcc(struct Foo02042fcc* p);
+
+// USA: func_0205c790
+ARM void InitBigStruct0205c790(char* obj) {
+    InitSubstruct0205c73c((struct InitSubstruct0205c73cData*)(obj + 0x4));
+    InitChannelPair0205c53c((struct Struct_0205c53c*)(obj + 0x1c));
+    ResetFoo02042fcc((struct Foo02042fcc*)(obj + 0xb4));
+
+    *(int*)(obj + 0xd0) = 0;
+    *(int*)(obj + 0xd4) = 0x34;
+    *(int*)(obj + 0xd8) = 0x10;
+    *(int*)(obj + 0xdc) = 0;
+
+    memset(obj + 0xe0, 0, 0x10);
+    memset(obj + 0xf0, 0, 0x10);
+    memset(obj + 0x100, 0, 0x10);
+    memset(obj + 0x110, 0, 0x10);
+    memset(obj + 0x120, 0, 0x100);
+    memset(obj + 0x220, 0, 0x10);
+
+    *(short*)(obj + 0x230) = 0;
+    *(unsigned char*)(obj + 0x232) = 0;
+    *(unsigned char*)(obj + 0x233) = 0;
+    *(unsigned char*)(obj + 0x234) = 0;
+}

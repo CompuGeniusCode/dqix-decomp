@@ -20610,3 +20610,148 @@ src/Combat/Main/TryAdvanceChargeSlot0208a52c.cpp:
 src/Combat/Main/TryApplyElemFields0205d5d0.cpp:
     complete
     .text start:0x0205d5d0 end:0x0205d67c
+
+
+src/Combat/Main/AllocateAndAppendNode0207a348.cpp:
+    complete
+    .text start:0x0207a348 end:0x0207a3fc
+
+
+src/Combat/Main/AppendFixedVec3Element02027ce4.cpp:
+    complete
+    .text start:0x02027ce4 end:0x02027d94
+
+
+src/Combat/Main/AppendSubEntryFromDualVariant0209ba70.cpp:
+    complete
+    .text start:0x0209ba70 end:0x0209bb1c
+
+
+src/Combat/Main/CaptureAndApplyVecs020a2b38.cpp:
+    complete
+    .text start:0x020a2b38 end:0x020a2be8
+
+
+src/Combat/Main/CheckField2ThenSubmitOrError0202c864.cpp:
+    complete
+    .text start:0x0202c864 end:0x0202c918
+
+
+src/Combat/Main/CopyEntryAndAllocateStrings020df618.cpp:
+    complete
+    .text start:0x020df618 end:0x020df6cc
+
+
+src/Combat/Main/FindMatchingRecords0204684c.cpp:
+    complete
+    .text start:0x0204684c end:0x02046900
+
+
+src/Combat/Main/FindNearestEntryDistance0203e524.cpp:
+    complete
+    .text start:0x0203e524 end:0x0203e5d8
+
+
+src/Combat/Main/GetBitsAndDispatch020b6c3c.cpp:
+    complete
+    .text start:0x020b6c3c end:0x020b6ce8
+
+
+src/Combat/Main/InitAllocatorAndLoadGp2File0207d6dc.cpp:
+    complete
+    .text start:0x0207d6dc end:0x0207d78c
+
+
+src/Combat/Main/InitAllocatorPools020bc23c.cpp:
+    complete
+    .text start:0x020bc23c end:0x020bc2f0
+
+
+src/Combat/Main/InitBigStruct0205c790.cpp:
+    complete
+    .text start:0x0205c790 end:0x0205c840
+
+
+src/Combat/Main/InitCappedArrayFromVariants020a10cc.cpp:
+    complete
+    .text start:0x020a10cc end:0x020a1180
+
+
+src/Combat/Main/InitContextString0206a974.cpp:
+    complete
+    .text start:0x0206a974 end:0x0206aa28
+
+
+src/Combat/Main/InitOrReinitContext0206b2c8.cpp:
+    complete
+    .text start:0x0206b2c8 end:0x0206b37c
+
+
+src/Combat/Main/RegisterAndRunBufferedScript0201f040.cpp:
+    complete
+    .text start:0x0201f040 end:0x0201f0f0
+
+
+src/Combat/Main/SendBattleSaveBufferOrSetFlag020ac7b4.cpp:
+    complete
+    .text start:0x020ac7b4 end:0x020ac864
+
+
+src/Combat/Main/SetElemFlag0x4PairAndNotify17.cpp:
+    complete
+    .text start:0x020ae7d4 end:0x020ae880
+
+
+src/Combat/Main/SetNodeByteAndMaybeScaledFloat0206d734.cpp:
+    complete
+    .text start:0x0206d734 end:0x0206d7e4
+
+
+src/Combat/Main/SetVramBankFlag020c4044.cpp:
+    complete
+    .text start:0x020c4044 end:0x020c40f0
+
+
+src/Combat/Main/SetVramBankFlag020c44e4.cpp:
+    complete
+    .text start:0x020c44e4 end:0x020c4590
+
+
+src/Combat/Main/SubmitCommandBuffer020b6a18.cpp:
+    complete
+    .text start:0x020b6a18 end:0x020b6acc
+
+
+src/Combat/Main/SubmitScriptFromFile020727f8.cpp:
+    complete
+    .text start:0x020727f8 end:0x020728ac
+
+
+src/Combat/Main/TickCounterAndProcessSlots020db768.cpp:
+    complete
+    .text start:0x020db768 end:0x020db814
+
+
+src/Combat/Main/UpdateActiveState0205bc2c.cpp:
+    complete
+    .text start:0x0205bc2c end:0x0205bcdc
+
+
+src/Combat/Main/UpdateFlaggedType2Entries02018c74.cpp:
+    complete
+    .text start:0x02018c74 end:0x02018d28
+
+
+src/Combat/Main/UpdateObj020e15f8Entry.cpp:
+    complete
+    .text start:0x020e2310 end:0x020e23c0
+
+
+src/Combat/Main/VerifyAndApplySaveBuffer.cpp:
+    complete
+    .text start:0x020ac864 end:0x020ac910
+
+
+src/Combat/Main/VerifyBuffer020a94f8.cpp:
+    complete
+    .text start:0x020a94f8 end:0x020a95a4
