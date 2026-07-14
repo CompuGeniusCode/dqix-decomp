@@ -19719,3 +19719,178 @@ src/Combat/Main/UpdateCounterAndFlag02065758.cpp:
 src/Combat/Main/ValidateVariantArray0201f894.cpp:
     complete
     .text start:0x0201f894 end:0x0201f8d0
+
+
+src/Combat/Main/AddPlayClockMinutes020ac644.cpp:
+    complete
+    .text start:0x020ac644 end:0x020ac6b8
+
+
+src/Combat/Main/AllocateAndProcessScratchBuffer020abca8.cpp:
+    complete
+    .text start:0x020abca8 end:0x020abd20
+
+
+src/Combat/Main/ApplyAndClearPendingEntry02013fb4.cpp:
+    complete
+    .text start:0x02013fb4 end:0x0201403c
+
+
+src/Combat/Main/CheckAndSetAllCombatantFlags0207973c.cpp:
+    complete
+    .text start:0x0207973c end:0x020797bc
+
+
+src/Combat/Main/CheckSuffixAndLoadResource0203fce0.cpp:
+    complete
+    .text start:0x0203fce0 end:0x0203fd5c
+
+
+src/Combat/Main/ConfigureBattleTimersFromFlags.cpp:
+    complete
+    .text start:0x020b99b0 end:0x020b9a2c
+
+
+src/Combat/Main/CountTextLines020b0fac.cpp:
+    complete
+    .text start:0x020b0fac end:0x020b1020
+
+
+src/Combat/Main/HandleStateDispatch020214f0.cpp:
+    complete
+    .text start:0x020214f0 end:0x02021578
+
+
+src/Combat/Main/HasFlaggedSlotBit20Set020854e8.cpp:
+    complete
+    .text start:0x020854e8 end:0x0208555c
+
+
+src/Combat/Main/HasFlaggedSlotBit21Set0208555c.cpp:
+    complete
+    .text start:0x0208555c end:0x020855d0
+
+
+src/Combat/Main/HasFlaggedSlotBit22Set020855d0.cpp:
+    complete
+    .text start:0x020855d0 end:0x02085644
+
+
+src/Combat/Main/InitAllocatorObj020bc8d0.cpp:
+    complete
+    .text start:0x020bc8d0 end:0x020bc948
+
+
+src/Combat/Main/InitAndBuildList020a1698.cpp:
+    complete
+    .text start:0x020a1698 end:0x020a171c
+
+
+src/Combat/Main/InitAndCopyBuffer020233b8.cpp:
+    complete
+    .text start:0x020233b8 end:0x0202343c
+
+
+src/Combat/Main/InitAndRunScript0208df20.cpp:
+    complete
+    .text start:0x0208df20 end:0x0208df94
+
+
+src/Combat/Main/InitAndRunScriptIfValid02097ac0.cpp:
+    complete
+    .text start:0x02097ac0 end:0x02097b34
+
+
+src/Combat/Main/InitGridRowsAndFlushCache.cpp:
+    complete
+    .text start:0x020d2a48 end:0x020d2ac4
+
+
+src/Combat/Main/InitListHeaderAndBuildFlagArray.cpp:
+    complete
+    .text start:0x020b7840 end:0x020b78bc
+
+
+src/Combat/Main/InitObj020ad59c.cpp:
+    complete
+    .text start:0x020ad59c end:0x020ad61c
+
+
+src/Combat/Main/InitObj020e15f8.cpp:
+    complete
+    .text start:0x020e15f8 end:0x020e1674
+
+
+src/Combat/Main/InitStreamAndRun0208dc00.cpp:
+    complete
+    .text start:0x0208dc00 end:0x0208dc74
+
+
+src/Combat/Main/InitStreamHolder020bd110.cpp:
+    complete
+    .text start:0x020bd110 end:0x020bd190
+
+
+src/Combat/Main/IssueBattleCommandSlot39.cpp:
+    complete
+    .text start:0x020d6950 end:0x020d69cc
+
+
+src/Combat/Main/MaybeDispatchPendingAction02096824.cpp:
+    complete
+    .text start:0x02096824 end:0x020968a4
+
+
+src/Combat/Main/NotifyLocalizedResourceLoad020dcfc8.cpp:
+    complete
+    .text start:0x020dcfc8 end:0x020dd040
+
+
+src/Combat/Main/OffsetPositionYAndDispatch.cpp:
+    complete
+    .text start:0x020a7eb8 end:0x020a7f34
+
+
+src/Combat/Main/ProcessEntryPairs0209d0dc.cpp:
+    complete
+    .text start:0x0209d0dc end:0x0209d150
+
+
+src/Combat/Main/ResetPendingBattleWidths02030090.cpp:
+    complete
+    .text start:0x02030090 end:0x02030110
+
+
+src/Combat/Main/SendBufferOrReturnZero.cpp:
+    complete
+    .text start:0x020abae8 end:0x020abb64
+
+
+src/Combat/Main/SetEntryBitUnlessMatching020e39d4.cpp:
+    complete
+    .text start:0x020e39d4 end:0x020e3a50
+
+
+src/Combat/Main/SetField0x4Bits16To30.cpp:
+    complete
+    .text start:0x020b708c end:0x020b710c
+
+
+src/Combat/Main/SetupAndRunBufferedScript0209a470.cpp:
+    complete
+    .text start:0x0209a470 end:0x0209a4f0
+
+
+src/Combat/Main/SetupAndRunBufferedScript0209af58.cpp:
+    complete
+    .text start:0x0209af58 end:0x0209afd4
+
+
+src/Combat/Main/SetupContextForMode0205ea20.cpp:
+    complete
+    .text start:0x0205ea20 end:0x0205eaa0
+
+
+src/Combat/Main/SetupGlobalAndRunScript020a147c.cpp:
+    complete
+    .text start:0x020a147c end:0x020a14fc
