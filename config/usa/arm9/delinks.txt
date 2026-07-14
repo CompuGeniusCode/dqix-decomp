@@ -19584,3 +19584,23 @@ src/Grotto/Main/DetailedTreasureMapData.cpp:
 src/Filesystem/GPC.cpp:
     complete
     .text start:0x020d8fcc end:0x020d96b0
+
+
+src/Combat/Main/GetAnimBankBlockAlias020aff00.cpp:
+    complete
+    .text start:0x020aff00 end:0x020aff0c
+
+
+src/Combat/Main/RegisterAndAllocateArray020a7f5c.cpp:
+    complete
+    .text start:0x020a7f5c end:0x020a7f88
+
+
+src/Combat/Main/SetField0x58.cpp:
+    complete
+    .text start:0x0207eccc end:0x0207ecd4
+
+
+src/Combat/Main/VariadicForward020c7130.cpp:
+    complete
+    .text start:0x020c7130 end:0x020c7158
