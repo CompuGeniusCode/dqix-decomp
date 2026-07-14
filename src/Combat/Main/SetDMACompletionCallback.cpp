@@ -1,3 +1,4 @@
+#include "System/DMA.h"
 #include <globaldefs.h>
 
 ARM unsigned int EnableSpecificInterrupts(unsigned int mask);
@@ -7,7 +8,7 @@ extern char data_02111280;
 extern char data_02111284;
 
 // USA: func_020c6c00
-ARM void RegisterDmaIrqHandler(int index, unsigned int a1, unsigned int a2) {
+ARM void SetDMACompletionCallback(int index, DMACompletionCallback a1, int a2) {
     asm {
         mov r3, 0xc
         mul r6, r0, r3

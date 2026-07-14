@@ -29,9 +29,6 @@ extern "C"
     void func_020c9be0();
 }
 
-// USA: func_020c6c48
-void RegisterTimerIrqHandler(int index, unsigned int a1, unsigned int a2);
-
 void MarkAlarmInitializationFlagBit(int bit)
 {
     data_02111634 |= (1 << bit);
@@ -70,7 +67,7 @@ void On16BitTimerOverflow(int)
         
         data_02111638.reloadTimerOnNextInterrupt = false;
     }
-    RegisterTimerIrqHandler(0, (unsigned int)&On16BitTimerOverflow, 0);
+    SetTimerOverflowCallback(0, &On16BitTimerOverflow, 0);
 }
 
 uint64_t GetCurrentTimestamp()
@@ -96,7 +93,7 @@ void MarkNextAlarmToSound(Alarm *timing)
     uint64_t now = GetCurrentTimestamp();
     TIMER_N_CONTROL(1) = 0;
     int64_t timeRemaining = timing->alarmTime - now;
-    RegisterTimerIrqHandler(1, (unsigned int)&Timer1OverflowInterruptRoutine, 0);
+    SetTimerOverflowCallback(1, &Timer1OverflowInterruptRoutine, 0);
     unsigned short counterValue = 0;
     if (timeRemaining < 0)
     {

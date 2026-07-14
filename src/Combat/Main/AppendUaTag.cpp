@@ -2,10 +2,10 @@
 
 extern char data_020eff93;
 int StringLength(const char* s);
-extern "C" int func_02003ce8(char* dst, const char* fmt, ...);
+extern "C" int sprintf(char* dst, const char* fmt, ...);
 
 // USA: func_02041ed8
 ARM int AppendUaTag(char* dst, int a, int b, int c) {
     char* end = dst + StringLength(dst);
-    return (end + func_02003ce8(end, &data_020eff93, a, b, c)) - dst;
+    return (end + sprintf(end, &data_020eff93, a, b, c)) - dst;
 }

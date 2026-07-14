@@ -9577,37 +9577,37 @@ src/Combat/Main/GetProjectionMtxStackLevel.cpp:
 
 
 
-src/Combat/Main/InvokeCallbackSlot2.cpp:
+src/Combat/Main/DMA2InterruptHandler.cpp:
     complete
     .text start:0x020c6a74 end:0x020c6a84
 
 
-src/Combat/Main/InvokeCallbackSlot3.cpp:
+src/Combat/Main/DMA3InterruptHandler.cpp:
     complete
     .text start:0x020c6a84 end:0x020c6a94
 
 
-src/Combat/Main/InvokeCallbackSlot4.cpp:
+src/Combat/Main/Timer0OverflowInterruptHandler.cpp:
     complete
     .text start:0x020c6a94 end:0x020c6aa4
 
 
-src/Combat/Main/InvokeCallbackSlot5.cpp:
+src/Combat/Main/Timer1OverflowInterruptHandler.cpp:
     complete
     .text start:0x020c6aa4 end:0x020c6ab4
 
 
-src/Combat/Main/InvokeCallbackSlot6.cpp:
+src/Combat/Main/Timer2OverflowInterruptHandler.cpp:
     complete
     .text start:0x020c6ab4 end:0x020c6ac4
 
 
-src/Combat/Main/InvokeHandlerWith7.cpp:
+src/Combat/Main/Timer3OverflowInterruptHandler.cpp:
     complete
     .text start:0x020c6ac4 end:0x020c6ad4
 
 
-src/Combat/Main/ResetPairAt027e0060.cpp:
+src/Combat/Main/InitializeInterruptContextBlock_020c6ad4.cpp:
     complete
     .text start:0x020c6ad4 end:0x020c6aec
 
@@ -9657,12 +9657,12 @@ src/Combat/Main/StartHwDivide.cpp:
 
 
 
-src/Combat/Main/TriggerHandler0.cpp:
+src/Combat/Main/DMA0InterruptHandler.cpp:
     complete
     .text start:0x020c6a54 end:0x020c6a64
 
 
-src/Combat/Main/TriggerHandler1.cpp:
+src/Combat/Main/DMA1InterruptHandler.cpp:
     complete
     .text start:0x020c6a64 end:0x020c6a74
 
@@ -9717,7 +9717,7 @@ src/Combat/Main/GetDataTcmRegionBase.cpp:
 
 
 
-src/Combat/Main/RestoreThreadContext.cpp:
+src/Combat/Main/RestoreContext.cpp:
     complete
     .text start:0x020c7d80 end:0x020c7dc4
 
@@ -14071,7 +14071,7 @@ src/Combat/Main/BlankFunction020c36ec.cpp:
     .text start:0x020c36ec end:0x020c36f0
 
 
-src/Combat/Main/BlankFunction020c69c8.cpp:
+src/Combat/Main/EmptyInterruptHandler.cpp:
     complete
     .text start:0x020c69c8 end:0x020c69cc
 
@@ -14777,7 +14777,7 @@ src/Combat/Main/QueryScaledGrottoValue0209d44c.cpp:
     .text start:0x0209d44c end:0x0209d48c
 
 
-src/Combat/Main/RegisterDmaIrqHandler.cpp:
+src/Combat/Main/SetDMACompletionCallback.cpp:
     complete
     .text start:0x020c6c00 end:0x020c6c48
 
@@ -14792,7 +14792,7 @@ src/Combat/Main/RegisterSlotB020cf1a8.cpp:
     .text start:0x020cf1a8 end:0x020cf1e0
 
 
-src/Combat/Main/RegisterTimerIrqHandler.cpp:
+src/Combat/Main/SetTimerOverflowCallback.cpp:
     complete
     .text start:0x020c6c48 end:0x020c6c90
 
@@ -18699,7 +18699,7 @@ src/Combat/Main/IsEntryEligibleAndFlagged.cpp:
     .text start:0x0201bc94 end:0x0201bd04
 
 
-src/Combat/Main/IsValueInSpecialRanges.cpp:
+src/Combat/Main/IsMonsterIDLegacyBoss.cpp:
     complete
     .text start:0x020a3ee4 end:0x020a3f54
 

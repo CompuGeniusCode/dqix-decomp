@@ -16,9 +16,6 @@ extern "C"
 
 void VerifyDMASource(int channel, unsigned int source, unsigned int length, unsigned int sourceCtrlFlags);
 
-// USA: func_020c6c00
-void RegisterDmaIrqHandler(int index, unsigned int a1, unsigned int a2);
-
 #define DMA_REGISTER_ADDR_BASE 0x040000b0
 #define DMA_REGISTER_FILL_BASE 0x040000e0
 
@@ -142,7 +139,7 @@ void DMAMemsetAsync(int channel, unsigned int dst, unsigned int value, unsigned 
         AwaitDMACompletion(channel);
         if (onCompletion != NULL)
         {
-            RegisterDmaIrqHandler(channel, (unsigned int)onCompletion, (unsigned int)callbackUserdata);
+            SetDMACompletionCallback(channel, onCompletion, callbackUserdata);
             int priorState = DisableIRQInterrupts();
             DMARegisterFill(channel) = value;
             ConfigureDMATransfer(channel, (unsigned int)&DMARegisterFill(channel), dst,
@@ -177,7 +174,7 @@ void DMAMemcpyAsync(int channel, unsigned int src, unsigned int dst, unsigned in
         AwaitDMACompletion(channel);
         if (onCompletion != NULL)
         {
-            RegisterDmaIrqHandler(channel, (unsigned int)onCompletion, (unsigned int)callbackUserdata);
+            SetDMACompletionCallback(channel, onCompletion, callbackUserdata);
             ConfigureDMATransferAtomic(channel, src, dst,
                 (len >> 2) | DMA_CONTROL_ENABLE |
                 DMA_CONTROL_IRQ_AT_END | DMA_CONTROL_TRANSFER_32_BIT |

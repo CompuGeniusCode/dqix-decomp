@@ -4,7 +4,7 @@ void InitHandlerArrayAndRunScript020d3c84(struct HandlerSlotArray020d3c84*, stru
 
 void ShiftInBitOnGlobalObject();
 void HalveGlobalObjectCounter(void);
-extern "C" int func_0207568c(void* a, void* b, int* out);
+extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePath, unsigned int* outSize);
 
 extern int data_020f22e0;
 extern int data_020f22f4;
@@ -21,7 +21,7 @@ ARM void InitAndMaybeStartStream020d3c28(struct Obj020d3c28* obj) {
     memset(obj, 0, 0xb4);
     obj->fieldB4 = 0;
     ShiftInBitOnGlobalObject();
-    result = func_0207568c(&data_020f22e0, &data_020f22f4, &localVar);
+    result = (int)ExtractFileFromGP2((const char*)&data_020f22e0, (const char*)&data_020f22f4, (unsigned int*)&localVar);
     if (result != 0) {
         InitHandlerArrayAndRunScript020d3c84((struct HandlerSlotArray020d3c84*)(obj), (struct StreamHeader*)(result), (int)(localVar));
     }

@@ -3,7 +3,7 @@
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" void func_02020720(int);
 extern "C" int func_02012fe4(void);
-extern "C" int func_02003ce8(char* dst, const char* fmt, ...);
+extern "C" int sprintf(char* dst, const char* fmt, ...);
 
 struct Obj020e063c;
 void RestartTaskHandle020e063c(Obj020e063c* self, int b, int c);
@@ -22,6 +22,6 @@ ARM void RestartTaskWithDebugLog020dc3d4(void) {
     int base = func_ov017_0218b5b0();
     int handle = ((Struct020dc3d4*)(base + 0x3000))->field6d0;
     func_02020720(handle);
-    func_02003ce8(buf, &data_020f2948, func_02012fe4() + 0x26);
+    sprintf(buf, &data_020f2948, func_02012fe4() + 0x26);
     RestartTaskHandle020e063c((Obj020e063c*)handle, (int)&data_020f294f, (int)buf);
 }

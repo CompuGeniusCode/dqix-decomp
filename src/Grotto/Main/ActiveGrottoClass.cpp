@@ -11,7 +11,7 @@ bool IsInRange0201b588(int);
 
     #define func_020a3720 func_020a5498
     #define func_020a395c func_020a5698
-    #define func_020a3a34 func_020a5770
+    #define ExportDetailedTreasureMapData func_020a5770
 #endif
 
 extern "C"
@@ -26,16 +26,12 @@ extern "C"
     // Most likely these are the zone IDs corresponding to grottos.
 
     // No idea what these do, but they seem to be called before and after
-    // each call to func_020a3a34.
+    // each call to ExportDetailedTreasureMapData.
     void func_020a3720();
     void func_020a395c();
-
-    // Not sure about the last two parameters. This 'exports' a TreasureMapMetadata
-    // out to the detailed struct. Somewhere in this it's running the code to
-    // generate map names. Needs some closer investigation. (Probably a member
-    // function of TreasureMapMetadata)
-    bool func_020a3a34(TreasureMapMetadata*, DetailedTreasureMapData*, bool, void*);
 }
+
+bool ExportDetailedTreasureMapData(const TreasureMapMetadata*, DetailedTreasureMapData*, bool, const unsigned char*);
 
 // USA: func_0209fe68
 // JPN: func_02090780
@@ -174,7 +170,7 @@ int ActiveGrottoClass::GetFloorCount() const
     {
         func_020a3720();
         DetailedTreasureMapData data;
-        func_020a3a34(&grotto->activeMapData, &data, true, NULL);
+        ExportDetailedTreasureMapData(&grotto->activeMapData, &data, true, NULL);
         func_020a395c();
         return data.regular.floorCount;
     }
@@ -199,7 +195,7 @@ const char* ActiveGrottoClass::GetPopupName() const
     // Would have to call another function after this which uses the stack.
     func_020a3720();
     DetailedTreasureMapData data;
-    func_020a3a34(&grotto->activeMapData, &data, true, NULL);
+    ExportDetailedTreasureMapData(&grotto->activeMapData, &data, true, NULL);
     func_020a395c();
 
     if (data.mapType == TreasureMapType_Legacy)

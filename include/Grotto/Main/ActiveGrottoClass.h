@@ -13,7 +13,7 @@
 // in the USA version, and whose pointer is returned by func_02012fe4). 
 // The JPN is 0x20 bytes larger, seemingly because of text buffers being
 // different sizes.
-// For some hints, look at the function func_020a3a34 (USA). It seems to populate
+// For some hints, look at the function ExportDetailedTreasureMapData (USA). It seems to populate
 // this class based on a calling TreasureMapMetadata.
 class ActiveGrottoClass
 {

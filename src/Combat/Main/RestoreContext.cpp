@@ -1,9 +1,11 @@
 #include <globaldefs.h>
 
+struct ProcessorContext;
+
 extern "C" void func_020cd5d4(void);
 
 // USA: func_020c7d80
-ARM asm void RestoreThreadContext(void* ctx) {
+extern "C" ARM asm void RestoreContext(ProcessorContext* ctx) {
     stmdb sp!, {r0, lr}
     add r0, r0, #0x48
     ldr r1, =func_020cd5d4

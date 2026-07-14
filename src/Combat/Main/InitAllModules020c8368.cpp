@@ -2,9 +2,9 @@
 
 extern "C" void func_020c83b0(void);
 void InitializeInterProcessorCommunication(void);
-extern "C" void func_020c6d7c(void);
+void InitializeGamecardBusOwnership(void);
 extern "C" void func_020c84b4(void);
-void ResetPairAt027e0060(void);
+void InitializeInterruptContextBlock_020c6ad4(void);
 void StoreSharedMemMagicWords(void);
 extern "C" void func_020c8a3c(void);
 void SetWramCntThenReset(void);
@@ -21,9 +21,9 @@ void WaitForVCountZero(void);
 ARM void InitAllModules020c8368(void) {
     func_020c83b0();
     InitializeInterProcessorCommunication();
-    func_020c6d7c();
+    InitializeGamecardBusOwnership();
     func_020c84b4();
-    ResetPairAt027e0060();
+    InitializeInterruptContextBlock_020c6ad4();
     StoreSharedMemMagicWords();
     func_020c8a3c();
     SetWramCntThenReset();

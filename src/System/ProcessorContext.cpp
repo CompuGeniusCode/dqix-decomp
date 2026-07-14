@@ -29,7 +29,7 @@ extern "C"
 void DrainNodeList020c8154(void*);
 
 // USA: func_020c7d80
-void RestoreThreadContext(void*);
+extern "C" void RestoreContext(ProcessorContext*);
 
 void PopulateContext(ProcessorContext *context, unsigned int startAddress,
     unsigned int userdata, unsigned int stackBottom,
@@ -84,7 +84,7 @@ void ExitContext(ProcessorContext *context, int exitCode)
         context->userModeRegisters[0] = exitCode;
         context->programStatusRegister |= (1 << 7); // disable IRQ interrupts here
         context->blockState = 1;
-        RestoreThreadContext(context);
+        RestoreContext(context);
     }
     else
     {

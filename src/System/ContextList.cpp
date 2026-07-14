@@ -12,7 +12,7 @@ extern "C"
 }
 
 // USA: func_020c7d80
-void RestoreThreadContext(void*);
+extern "C" void RestoreContext(ProcessorContext*);
 
 int GenerateUniqueContextID()
 {
@@ -211,5 +211,5 @@ void SwitchContext()
         contextData->switchContextProcB(outgoing, incoming);
 
     data_021112e0.substruct_24.activeContext = incoming;
-    RestoreThreadContext(incoming);
+    RestoreContext(incoming);
 }
