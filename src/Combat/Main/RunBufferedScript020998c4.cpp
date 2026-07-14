@@ -1,0 +1,43 @@
+#include <globaldefs.h>
+
+void ShiftInBitOnGlobalObject(void);
+void HalveGlobalObjectCounter(void);
+
+struct ResetStruct;
+int ResetFieldsReturnTrue(struct ResetStruct* s);
+
+struct StreamState;
+struct StreamHeader;
+int InitBufferReader(struct StreamState* s, struct StreamHeader* buffer, int length);
+
+struct Struct02030774;
+int RunLoopIfValid02030774(struct Struct02030774* p);
+
+void* LoadFileIntoMemory(const char*, void*, unsigned int*);
+extern "C" void func_0203066c(void* state, void* dataPtr);
+
+struct Obj020995c0;
+extern struct Obj020995c0* data_02109924;
+
+extern char data_020f155c[];
+extern char data_0211e33c[];
+extern char data_020f1524[];
+
+// USA: func_020998c4
+ARM void RunBufferedScript020998c4(struct Obj020995c0* param0) {
+    int count;
+    char buf[0x430];
+
+    ShiftInBitOnGlobalObject();
+
+    struct StreamHeader* header = (struct StreamHeader*)LoadFileIntoMemory(data_020f155c, data_0211e33c, (unsigned int*)&count);
+    if (header != 0) {
+        data_02109924 = param0;
+        ResetFieldsReturnTrue((struct ResetStruct*)buf);
+        func_0203066c(buf, data_020f1524);
+        InitBufferReader((struct StreamState*)buf, header, count);
+        RunLoopIfValid02030774((struct Struct02030774*)buf);
+        data_02109924 = 0;
+    }
+    HalveGlobalObjectCounter();
+}
