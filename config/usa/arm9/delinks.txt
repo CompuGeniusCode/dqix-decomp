@@ -21623,3 +21623,43 @@ src/Combat/Main/SetupFromSrcAndFlags020b9b30.cpp:
 src/Combat/Main/SubmitBattleContextEntry020d5340.cpp:
     complete
     .text start:0x020d5340 end:0x020d5490
+
+
+src/Combat/Main/FindBoxContainingPoint0201e8fc.cpp:
+    complete
+    .text start:0x0201e8fc end:0x0201ea54
+
+
+src/Combat/Main/InitBigManagerStruct0208660c.cpp:
+    complete
+    .text start:0x0208660c end:0x02086778
+
+
+src/Combat/Main/ProcessCommandStep020b4398.cpp:
+    complete
+    .text start:0x020b4398 end:0x020b4514
+
+
+src/Combat/Main/ResetOrCopyValidLightSlot020506dc.cpp:
+    complete
+    .text start:0x020506dc end:0x02050830
+
+
+src/Combat/Main/SetupAndDispatchCharTransfer0203bb3c.cpp:
+    complete
+    .text start:0x0203bb3c end:0x0203bcb8
+
+
+src/Combat/Main/SetupObjFieldsAndResetRenderFlags020ae20c.cpp:
+    complete
+    .text start:0x020ae20c end:0x020ae380
+
+
+src/Combat/Main/UpdateEncounterState020dac94.cpp:
+    complete
+    .text start:0x020dac94 end:0x020dae08
+
+
+src/Combat/Main/UpdateStateTimer0201fa2c.cpp:
+    complete
+    .text start:0x0201fa2c end:0x0201fbac
