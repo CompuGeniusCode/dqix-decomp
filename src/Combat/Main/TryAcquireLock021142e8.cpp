@@ -2,7 +2,7 @@
 
 extern "C" int func_020c7ea0(void*, void*, int);
 extern "C" void func_020c7f44(void*, void*, int);
-void InvalidateDataCacheRange(int addr, int size);
+void InvalidateDataCacheRange(const void* addr, unsigned int size);
 
 extern int data_021142e8;
 
@@ -12,7 +12,7 @@ ARM void* TryAcquireLock021142e8(void) {
     if (func_020c7ea0(&data_021142e8, &local, 0) == 0) {
         return NULL;
     }
-    InvalidateDataCacheRange((int)local, 2);
+    InvalidateDataCacheRange((const void*)((int)local), 2);
     if (*(unsigned short*)local & 0x8000) {
         return local;
     }

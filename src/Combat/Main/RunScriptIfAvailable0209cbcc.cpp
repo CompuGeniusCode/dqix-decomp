@@ -13,7 +13,7 @@ int InitBufferReader(struct StreamState* s, struct StreamHeader* buffer, int len
 struct Struct02030774;
 int RunLoopIfValid02030774(struct Struct02030774* p);
 
-extern "C" int func_02075098(void* a, void* b, int* outCount);
+int LoadFileIntoMemory(const char*, void*, unsigned int*);
 extern "C" int func_0203066c(void* state, void* buffer);
 
 extern char data_020f1744;
@@ -26,7 +26,7 @@ ARM void RunScriptIfAvailable0209cbcc(void) {
     char buf[0x430];
 
     ShiftInBitOnGlobalObject();
-    if (func_02075098(&data_020f1744, &data_0211e33c, &count) != 0) {
+    if (LoadFileIntoMemory(&data_020f1744, &data_0211e33c, (unsigned int*)&count) != 0) {
         ResetFieldsReturnTrue((struct ResetStruct*)buf);
         func_0203066c(buf, &data_020f1718);
         InitBufferReader((struct StreamState*)buf, (struct StreamHeader*)&data_0211e33c, count);

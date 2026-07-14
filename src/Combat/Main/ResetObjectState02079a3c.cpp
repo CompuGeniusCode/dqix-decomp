@@ -1,11 +1,11 @@
 #include <globaldefs.h>
-void ClearFirstField020d9164(int*);
+#include "Filesystem/GPC.h"
 
-void ResetStateAtOffset4_020d960c(int* p);
+void ZeroInitGPCPointer(GPCFile** ppGPC);
 
 // USA: func_02079a3c
 ARM void* ResetObjectState02079a3c(void* obj) {
-    ClearFirstField020d9164((int*)(obj));
-    ResetStateAtOffset4_020d960c((int*)obj);
+    ZeroInitGPCPointer((GPCFile**)(obj));
+    ((GPCReadPair*)obj)->ZeroInitializeMachine();
     return obj;
 }

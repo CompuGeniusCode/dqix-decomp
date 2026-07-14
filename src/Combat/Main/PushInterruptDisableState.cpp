@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterruptBits(unsigned int mask);
+unsigned int DisableSpecificInterrupts(unsigned int mask);
 
 struct IntState020d8654 {
     unsigned char field_0;
@@ -12,6 +12,6 @@ extern IntState020d8654 data_0214e4a0;
 // USA: func_020d8654
 ARM void PushInterruptDisableState(void) {
     data_0214e4a0.field_4 <<= 1;
-    unsigned int old = DisableInterruptBits(4);
+    unsigned int old = DisableSpecificInterrupts(4);
     data_0214e4a0.field_4 |= (old & 4) ? 1 : 0;
 }

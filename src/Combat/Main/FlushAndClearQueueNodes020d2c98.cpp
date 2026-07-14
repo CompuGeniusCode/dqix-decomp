@@ -2,7 +2,7 @@
 
 extern "C" void func_020d21f8(void);
 extern "C" void func_020d220c(void);
-void CleanDataCacheRange(int addr, int size);
+void CleanCacheRange(const void* addr, unsigned int size);
 
 struct QueueNode020d2c98 {
     int field0;
@@ -25,7 +25,7 @@ extern "C" ARM void func_020d2c98(int a) {
             struct QueueNode020d2c98* next = node->next;
             node->field0 = 0;
             node->next = 0;
-            CleanDataCacheRange((int)node, 8);
+            CleanCacheRange((const void*)((int)node), 8);
             node = next;
         } while (node != NULL);
     }

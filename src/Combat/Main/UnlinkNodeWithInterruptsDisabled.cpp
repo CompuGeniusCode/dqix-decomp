@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 
 struct ListNode020ceeb4 {
     int field0;
@@ -17,7 +17,7 @@ ARM void UnlinkNodeWithInterruptsDisabled(struct ListNode020ceeb4** head, struct
     if (head == NULL) {
         return;
     }
-    mask = DisableInterrupts();
+    mask = DisableIRQInterrupts();
     node = *head;
     prev = node;
     if (node != NULL) {
@@ -34,5 +34,5 @@ ARM void UnlinkNodeWithInterruptsDisabled(struct ListNode020ceeb4** head, struct
             node = node->next;
         } while (node != NULL);
     }
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
 }

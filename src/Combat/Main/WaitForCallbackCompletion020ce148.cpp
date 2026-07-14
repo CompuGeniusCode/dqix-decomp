@@ -6,8 +6,8 @@ struct LockState020ce148 {
 };
 extern struct LockState020ce148 data_021117ec;
 extern int data_02111808;
-extern "C" int func_020c9760(void);
-extern "C" void func_020caf1c(void);
+int GetProcessorMode(void);
+void HandleCommandReceivedFromArm7(void);
 
 // USA: func_020ce148
 ARM void WaitForCallbackCompletion020ce148(void) {
@@ -17,8 +17,8 @@ ARM void WaitForCallbackCompletion020ce148(void) {
         return;
     }
     do {
-        if (func_020c9760() == 0x12) {
-            func_020caf1c();
+        if (GetProcessorMode() == 0x12) {
+            HandleCommandReceivedFromArm7();
         }
     } while (*counter != 0);
 }

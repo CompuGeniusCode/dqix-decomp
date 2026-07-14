@@ -1,8 +1,9 @@
 #include <globaldefs.h>
-void ClearAndFreeAllNodes020c78e8(struct List020c7234*);
+struct BlockedContextList;
+void UnblockContexts(struct BlockedContextList*);
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 
 struct LinkAnchor;
 struct LinkNode;
@@ -19,14 +20,14 @@ struct RefNode020c80f8 {
 
 // USA: func_020c80f8
 ARM void ReleaseNodeRef020c80f8(struct RefNode020c80f8* node) {
-    unsigned int mask = DisableInterrupts();
+    unsigned int mask = DisableIRQInterrupts();
     void* currentOwner = *(void**)((char*)&data_02111304 + 4);
     if (node->owner == currentOwner) {
         if (--node->refCount == 0) {
             UnlinkNode((struct LinkAnchor*)currentOwner, (struct LinkNode*)node);
             node->owner = 0;
-            ClearAndFreeAllNodes020c78e8((struct List020c7234*)(node));
+            UnblockContexts((struct BlockedContextList*)(node));
         }
     }
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
 }

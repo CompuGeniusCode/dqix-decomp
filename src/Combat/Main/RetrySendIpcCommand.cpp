@@ -1,10 +1,10 @@
 #include <globaldefs.h>
 
-extern "C" int func_020cae94(int, int, int);
+int SendCommandToArm7(int, int, bool);
 
 // USA: func_020c98c4
 ARM void RetrySendIpcCommand(int arg) {
     int packed = arg << 8;
-    while (func_020cae94(0xc, packed, 0)) {
+    while (SendCommandToArm7(0xc, packed, 0)) {
     }
 }

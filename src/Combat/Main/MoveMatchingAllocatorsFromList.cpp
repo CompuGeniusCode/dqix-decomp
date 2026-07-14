@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 #include "Memory/SignedAllocator.h"
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 void InsertAllocatorHeaderLocked(SignedAllocatorHeader* header);
 
 // USA: func_020bf358
@@ -10,7 +10,7 @@ ARM void MoveMatchingAllocatorsFromList(SignedAllocatorList* list, SignedAllocat
     unsigned int mask;
     SignedAllocatorHeader* element;
     SignedAllocatorHeader* next;
-    mask = DisableInterrupts();
+    mask = DisableIRQInterrupts();
     element = list->ElementAfter(0);
     if (element != 0) {
         do {
@@ -22,5 +22,5 @@ ARM void MoveMatchingAllocatorsFromList(SignedAllocatorList* list, SignedAllocat
             element = next;
         } while (element != 0);
     }
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
 }

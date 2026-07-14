@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-void CleanInvalidateDataCacheRange(int addr, int size);
-void CleanDataCacheRange(int addr, int size);
+void CleanInvalidateCacheRange(const void* addr, unsigned int size);
+void CleanCacheRange(const void* addr, unsigned int size);
 extern "C" int func_020e12c0(void*);
 
 typedef void (*CacheHookFn020e1384)(int, int, int);
@@ -29,7 +29,7 @@ ARM void RunCacheHookForField0x14(struct Struct020e1384* obj) {
         return;
     }
     int addr = result + base;
-    CleanInvalidateDataCacheRange(addr, obj->field4);
+    CleanInvalidateCacheRange((const void*)(addr), obj->field4);
     fn(addr, obj->field0xc, obj->field4);
-    CleanDataCacheRange(addr, obj->field4);
+    CleanCacheRange((const void*)(addr), obj->field4);
 }

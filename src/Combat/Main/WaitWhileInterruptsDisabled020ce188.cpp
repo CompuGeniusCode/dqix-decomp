@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int GetCpsrIrqDisableBit(void);
-extern "C" void func_020caf1c(void);
+unsigned int GetIRQInterruptState(void);
+void HandleCommandReceivedFromArm7(void);
 
 struct Ctx021117ec { unsigned char pad[0x1c]; int field1c; };
 extern Ctx021117ec data_021117ec;
@@ -13,8 +13,8 @@ ARM void WaitWhileInterruptsDisabled020ce188(void) {
     if (data_021117ec.field1c == 0) return;
     volatile unsigned short* imeReg = (volatile unsigned short*)0x4000208;
     do {
-        if (GetCpsrIrqDisableBit() == 0x80 || *imeReg == 0) {
-            func_020caf1c();
+        if (GetIRQInterruptState() == 0x80 || *imeReg == 0) {
+            HandleCommandReceivedFromArm7();
         }
     } while (*flagPtr != 0);
 }

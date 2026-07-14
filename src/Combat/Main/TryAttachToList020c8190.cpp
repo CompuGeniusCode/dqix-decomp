@@ -10,15 +10,15 @@ struct Entry020c8190 {
     int refCount;
 };
 
-unsigned int DisableInterrupts();
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts();
+unsigned int SetIRQInterruptState(int mask);
 
 extern struct List* data_02111304[2];
 
 // USA: func_020c8190
 #pragma optimize_for_size off
 ARM int TryAttachToList020c8190(struct Entry020c8190* self) {
-    unsigned int state = DisableInterrupts();
+    unsigned int state = DisableIRQInterrupts();
     struct List* list = data_02111304[1];
     int ret;
     if (self->cachedList == NULL) {
@@ -32,6 +32,6 @@ ARM int TryAttachToList020c8190(struct Entry020c8190* self) {
         self->refCount += 1;
         ret = 1;
     }
-    RestoreInterrupts(state);
+    SetIRQInterruptState(state);
     return ret;
 }

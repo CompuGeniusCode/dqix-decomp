@@ -2,7 +2,7 @@
 
 int GetGlobalField0x48(void);
 int GetGlobalField0x10(void);
-extern "C" void func_020c7b40(int);
+void SleepCurrentContext(unsigned int);
 
 // USA: func_0202b284
 ARM int PollUntilFieldMatchesOrLimit0202b284(int unused, int threshold) {
@@ -13,7 +13,7 @@ ARM int PollUntilFieldMatchesOrLimit0202b284(int unused, int threshold) {
         if ((unsigned int)(cur - 9) <= 1) return 1;
         i++;
         if (i > 0x4e20) return 2;
-        func_020c7b40(1);
+        SleepCurrentContext(1);
     }
     return 0;
 }

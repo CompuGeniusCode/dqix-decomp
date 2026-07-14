@@ -1,8 +1,8 @@
 #include <globaldefs.h>
-void WaitDmaIdleAndResetChannel0(int);
+void AwaitDMACompletion(int);
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 
 extern int data_020f226c;
 
@@ -10,10 +10,10 @@ extern int data_020f226c;
 ARM int SetActiveDmaChannel020c3a0c(int channel) {
     int old = *(int*)((char*)&data_020f226c + 4);
     if (old != -1) {
-        WaitDmaIdleAndResetChannel0((int)(old));
+        AwaitDMACompletion((int)(old));
     }
-    unsigned int mask = DisableInterrupts();
+    unsigned int mask = DisableIRQInterrupts();
     *(int*)((char*)&data_020f226c + 4) = channel;
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
     return old;
 }

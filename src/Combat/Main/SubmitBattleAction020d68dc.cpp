@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
 int GetBattleReadyCode(void);
-void CleanDataCacheRange(int addr, int size);
+void CleanCacheRange(const void* addr, unsigned int size);
 void SetBattleContextArrayEntry(int index, int value);
 extern "C" int func_020d40bc(int a, int b, unsigned int c, int d);
 
@@ -12,7 +12,7 @@ ARM int SubmitBattleAction020d68dc(int value, unsigned int count, void* data) {
     if (count > 3) return 6;
     if (count != 0) {
         if (data == 0) return 6;
-        CleanDataCacheRange((int)data, 0x50);
+        CleanCacheRange((const void*)((int)data), 0x50);
     }
     SetBattleContextArrayEntry(0x14, value);
     int r = func_020d40bc(0x14, 2, count, (int)data);

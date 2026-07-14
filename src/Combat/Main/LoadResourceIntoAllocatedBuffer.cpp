@@ -2,11 +2,11 @@
 
 struct Obj0207e378;
 extern void SetBufferAndFlushCache0207e378(struct Obj0207e378* obj, void* alloc, void* src, unsigned int size, int arg5);
-extern void CleanInvalidateDataCacheRange(int addr, int size);
+extern void CleanInvalidateCacheRange(const void* addr, unsigned int size);
 extern void ShiftInBitOnGlobalObject();
 extern void HalveGlobalObjectCounter();
 extern int data_0211e33c;
-extern "C" void* func_02075098(void* key, void* table, int* outSize);
+void* LoadFileIntoMemory(const char*, void*, unsigned int*);
 
 struct FlagsAt0xa80207e304 {
     char pad[0xa8];
@@ -18,12 +18,12 @@ ARM void LoadResourceIntoAllocatedBuffer(void* a, void* b, void* c, int d) {
     if (c == NULL) return;
     ShiftInBitOnGlobalObject();
     int size;
-    void* addr = func_02075098(b, &data_0211e33c, &size);
+    void* addr = LoadFileIntoMemory((const char*)b, &data_0211e33c, (unsigned int*)&size);
     if (addr == NULL) {
         struct FlagsAt0xa80207e304* obj = (struct FlagsAt0xa80207e304*)a;
         obj->flags &= ~1;
     } else {
-        CleanInvalidateDataCacheRange((int)addr, size);
+        CleanInvalidateCacheRange(addr, size);
         SetBufferAndFlushCache0207e378((struct Obj0207e378*)a, c, addr, size, d);
     }
     HalveGlobalObjectCounter();

@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterrupts();
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts();
+unsigned int SetIRQInterruptState(int mask);
 
 struct GlobalListState020d2718 {
     unsigned int field0;
@@ -13,7 +13,7 @@ extern struct GlobalListState020d2718 data_02112780;
 
 // USA: func_020d2718
 ARM int IsValuePassedWraparound020d2718(unsigned int x) {
-    unsigned int mask = DisableInterrupts();
+    unsigned int mask = DisableIRQInterrupts();
     unsigned int cur = data_02112780.field4;
     int result;
     if (x > cur) {
@@ -25,6 +25,6 @@ ARM int IsValuePassedWraparound020d2718(unsigned int x) {
     } else {
         result = (cur - x) < 0x80000000u;
     }
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
     return result;
 }

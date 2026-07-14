@@ -1,13 +1,13 @@
 #include <globaldefs.h>
 
 extern "C" void WaitByLoop(int);
-extern "C" int func_020cae94(int, int, int);
+int SendCommandToArm7(int, int, bool);
 
 // USA: func_020d1564
 ARM void WaitWhileChannelBusy(int a) {
-    if (func_020cae94(0xd, a, 0) != 0) {
+    if (SendCommandToArm7(0xd, a, 0) != 0) {
         do {
             WaitByLoop(1);
-        } while (func_020cae94(0xd, a, 0) != 0);
+        } while (SendCommandToArm7(0xd, a, 0) != 0);
     }
 }

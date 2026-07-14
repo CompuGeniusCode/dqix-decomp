@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 
-extern "C" int func_020cae94(int, int, int);
+int SendCommandToArm7(int, int, bool);
 
 // USA: func_020cf8bc
 ARM int CheckEntry5Exists(int arg) {
-    return func_020cae94(5, (arg << 8) & 0x7f00, 0) >= 0 ? 1 : 0;
+    return SendCommandToArm7(5, (arg << 8) & 0x7f00, 0) >= 0 ? 1 : 0;
 }

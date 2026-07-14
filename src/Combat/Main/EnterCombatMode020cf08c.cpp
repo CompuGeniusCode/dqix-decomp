@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 int CheckState0x11(void);
 
 struct State02111818_020cf08c {
@@ -19,13 +19,13 @@ extern struct State02111818_020cf08c data_02111818;
 
 // USA: func_020cf08c
 ARM int EnterCombatMode020cf08c(int a, int b, int c) {
-    unsigned int mask = DisableInterrupts();
+    unsigned int mask = DisableIRQInterrupts();
     if (data_02111818.busy != 0) {
-        RestoreInterrupts(mask);
+        SetIRQInterruptState(mask);
         return 1;
     }
     data_02111818.busy = 1;
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
     data_02111818.f20 = 0;
     data_02111818.f24 = 0;
     data_02111818.f14 = a;

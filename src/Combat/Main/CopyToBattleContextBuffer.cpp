@@ -2,7 +2,7 @@
 
 void* GetBattleContext(void);
 int GetBattleStateCode(void);
-void InvalidateDataCacheRange(int addr, int size);
+void InvalidateDataCacheRange(const void* addr, unsigned int size);
 extern "C" int func_020ca4b4(void*, void*, int);
 
 struct BattleCtx020d4848 {
@@ -20,7 +20,7 @@ ARM int CopyToBattleContextBuffer(void* src) {
     if (src == NULL) {
         return 6;
     }
-    InvalidateDataCacheRange((int)ctx->buffer, 0x7d0);
+    InvalidateDataCacheRange((const void*)((int)ctx->buffer), 0x7d0);
     func_020ca4b4(ctx->buffer, src, 0x7d0);
     return 0;
 }

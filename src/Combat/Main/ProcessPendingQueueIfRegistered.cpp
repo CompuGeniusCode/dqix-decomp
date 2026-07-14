@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterrupts();
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts();
+unsigned int SetIRQInterruptState(int mask);
 int EnqueueEvent0x0C(int a, int b, int c, int d);
 extern "C" void func_020bcd30(void* obj, int flag);
 
@@ -23,9 +23,9 @@ ARM void ProcessPendingQueueIfRegistered(struct Actor020bce2c* obj) {
     if (obj->field38 != 0) {
         int flag = 1;
         do {
-            unsigned int mask = DisableInterrupts();
+            unsigned int mask = DisableIRQInterrupts();
             func_020bcd30(obj, flag);
-            RestoreInterrupts(mask);
+            SetIRQInterruptState(mask);
         } while (obj->field38 != 0);
     }
     EnqueueEvent0x0C(obj->field44, 0, 1 << obj->field40, 0);

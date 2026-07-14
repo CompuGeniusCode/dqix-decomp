@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-ARM unsigned int EnableInterruptBits(unsigned int mask);
+ARM unsigned int EnableSpecificInterrupts(unsigned int mask);
 
 extern char data_0211127c;
 extern char data_02111280;
@@ -18,7 +18,7 @@ ARM void RegisterDmaIrqHandler(int index, unsigned int a1, unsigned int a2) {
         ldr r3, =data_02111284
         str r1, [ip, r6]
         str r2, [r3, r6]
-        bl EnableInterruptBits
+        bl EnableSpecificInterrupts
         and r1, r0, r5, lsl r4
         ldr r0, =data_02111280
         str r1, [r0, r6]

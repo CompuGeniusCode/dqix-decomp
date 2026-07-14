@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 #include "Memory/SignedAllocator.h"
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 
 struct RefOwner020bf3c8 {
     char pad0[0x11c];
@@ -16,12 +16,12 @@ struct Node020bf3c8 {
 
 // USA: func_020bf3c8
 ARM SignedAllocatorHeader* PopFirstAndDecOwnerRef020bf3c8(SignedAllocatorList* list) {
-    unsigned int saved = DisableInterrupts();
+    unsigned int saved = DisableIRQInterrupts();
     SignedAllocatorHeader* e = list->ElementAfter(NULL);
     if (e != NULL) {
         list->Remove(e);
         ((Node020bf3c8*)e)->owner->refCount--;
     }
-    RestoreInterrupts(saved);
+    SetIRQInterruptState(saved);
     return e;
 }

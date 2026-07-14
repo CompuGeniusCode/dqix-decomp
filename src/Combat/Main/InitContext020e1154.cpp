@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" unsigned long long func_020c8d5c(void);
+unsigned long long GetCurrentTimestamp(void);
 void SetBattlerByte0x1c(unsigned char* obj, unsigned char value);
 struct ShortPair02012518;
 void ClearTwoHalfwords(ShortPair02012518* p);
@@ -14,7 +14,7 @@ extern unsigned char data_02114e54;
 
 // USA: func_020e1154
 ARM void InitContext020e1154(void* obj) {
-    unsigned long long result = func_020c8d5c();
+    unsigned long long result = GetCurrentTimestamp();
     data_02153628.field4 = (unsigned int)result;
     data_02153628.field8 = (unsigned int)(result >> 32);
     data_02153628.field0 = obj;

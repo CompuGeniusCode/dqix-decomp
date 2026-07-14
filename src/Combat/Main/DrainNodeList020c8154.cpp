@@ -1,5 +1,6 @@
 #include <globaldefs.h>
-void ClearAndFreeAllNodes020c78e8(struct List020c7234*);
+struct BlockedContextList;
+void UnblockContexts(struct BlockedContextList*);
 
 struct Node020c72bc {
     char pad0[8];
@@ -14,7 +15,7 @@ struct List020c72bc {
     Node020c72bc* tail;
 };
 
-extern Node020c72bc* UnlinkHeadNode020c72bc(List020c72bc* list);
+extern "C" void* UnknownImplementedFunction_020c72bc(void* input);
 
 // USA: func_020c8154
 ARM void DrainNodeList020c8154(void* owner) {
@@ -22,9 +23,9 @@ ARM void DrainNodeList020c8154(void* owner) {
         return;
     }
     do {
-        Node020c72bc* node = UnlinkHeadNode020c72bc((List020c72bc*)((char*)owner + 0x88));
+        Node020c72bc* node = (Node020c72bc*)UnknownImplementedFunction_020c72bc((char*)owner + 0x88);
         node->fc = 0;
         node->f8 = 0;
-        ClearAndFreeAllNodes020c78e8((struct List020c7234*)(node));
+        UnblockContexts((struct BlockedContextList*)(node));
     } while (*(Node020c72bc**)((char*)owner + 0x88) != NULL);
 }

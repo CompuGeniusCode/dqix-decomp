@@ -2,7 +2,7 @@
 
 void* GetBattleContext(void);
 extern "C" int func_020d424c(int a, int b, int c);
-void InvalidateDataCacheRange(int addr, int size);
+void InvalidateDataCacheRange(const void* addr, unsigned int size);
 void SetBattleContextArrayEntry(int index, int value);
 extern "C" int func_020d40bc(int a, int b);
 
@@ -18,7 +18,7 @@ ARM int TrySetBattleContextField020d5aec(int a) {
     if (r != 0) {
         return r;
     }
-    InvalidateDataCacheRange((int)(ctx->f4 + 0xc), 4);
+    InvalidateDataCacheRange((const void*)((int)(ctx->f4 + 0xc)), 4);
     if (*(int*)(ctx->f4 + 0xc) == 0) {
         return 3;
     }

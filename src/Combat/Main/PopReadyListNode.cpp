@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
-unsigned int DisableInterrupts(void);
-unsigned int RestoreInterrupts(unsigned int mask);
+unsigned int DisableIRQInterrupts(void);
+unsigned int SetIRQInterruptState(int mask);
 
 struct ListNode020d28a8 {
     struct ListNode020d28a8* next;
@@ -15,10 +15,10 @@ extern struct GlobalListState020d28a8 data_02112780;
 
 // USA: func_020d28a8
 ARM struct ListNode020d28a8* PopReadyListNode(void) {
-    unsigned int mask = DisableInterrupts();
+    unsigned int mask = DisableIRQInterrupts();
     struct ListNode020d28a8* node = data_02112780.head;
     if (node == NULL) {
-        RestoreInterrupts(mask);
+        SetIRQInterruptState(mask);
         return NULL;
     }
     struct ListNode020d28a8* next = node->next;
@@ -26,6 +26,6 @@ ARM struct ListNode020d28a8* PopReadyListNode(void) {
     if (next == NULL) {
         data_02112780.tail = NULL;
     }
-    RestoreInterrupts(mask);
+    SetIRQInterruptState(mask);
     return node;
 }

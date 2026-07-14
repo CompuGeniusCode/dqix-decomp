@@ -7,7 +7,8 @@ struct OutPair020bd88c;
 void GetHolderPair020bd88c(struct OutPair020bd88c* out);
 
 struct TwoWords020c0044 { int a; int b; };
-extern "C" int func_020cc9c8(void* obj, struct TwoWords020c0044 s);
+#include "Filesystem/NitroVM.h"
+bool NitroVM_PrepareReadFileByID(NitroVM* vm, NitroFileAccessor accessor);
 
 int GetListEntryWord0020bd774(unsigned int index);
 
@@ -20,7 +21,7 @@ ARM int InitStreamFromEntry020c0044(struct Obj020c0044* obj, unsigned int index)
     }
     struct TwoWords020c0044 local;
     GetHolderPair020bd88c((struct OutPair020bd88c*)&local);
-    if (func_020cc9c8((char*)obj + 0x5c, local) == 0) {
+    if (NitroVM_PrepareReadFileByID((NitroVM*)((char*)obj + 0x5c), *(NitroFileAccessor*)&local) == 0) {
         return 0;
     }
     obj->fieldA4 = GetListEntryWord0020bd774(index);

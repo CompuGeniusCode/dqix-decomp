@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" long long func_020c8d5c(void);
+unsigned long long GetCurrentTimestamp(void);
 
 struct StateObj0201fc40 {
     unsigned char state;
@@ -18,11 +18,11 @@ ARM void ResetStateTimer0201fc40(struct StateObj0201fc40* p, int arg) {
     if (p->state == 1 || p->state == 4) {
         p->f1 = 3;
         p->f4 = arg;
-        p->f8 = func_020c8d5c();
+        p->f8 = GetCurrentTimestamp();
         return;
     }
     if (p->state == 3 || p->state == 2) {
         p->f4 = arg;
-        p->f8 = func_020c8d5c();
+        p->f8 = GetCurrentTimestamp();
     }
 }

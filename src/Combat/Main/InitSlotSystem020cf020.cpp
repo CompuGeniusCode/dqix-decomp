@@ -1,8 +1,10 @@
 #include <globaldefs.h>
 
-void CallFunc020cad24_020cad18(void);
-int IsSharedFlagBitSet(int bit, int index);
-void SetIndexedFlagBit020cae24(int index, int value);
+#include "System/IPC.h"
+
+void InitializeInterProcessorCommunication(void);
+bool IsIPCCommandHandlerRegistered(int command, IPCSide side);
+void SetArm9IPCCommandHandler(int command, IPCCommandHandler handler);
 extern "C" void func_020cf294(void);
 
 extern char data_02111818;
@@ -16,8 +18,8 @@ ARM void InitSlotSystem020cf020(void) {
     *(int*)(&data_02111818 + 0x28) = 0;
     *(int*)(&data_02111818 + 0x14) = 0;
     *(int*)(&data_02111818 + 0x18) = 0;
-    CallFunc020cad24_020cad18();
-    while (IsSharedFlagBitSet(5, 1) == 0) {
+    InitializeInterProcessorCommunication();
+    while (IsIPCCommandHandlerRegistered(5, IPCSide_Arm7) == 0) {
     }
-    SetIndexedFlagBit020cae24(5, (int)func_020cf294);
+    SetArm9IPCCommandHandler(5, (IPCCommandHandler)func_020cf294);
 }
