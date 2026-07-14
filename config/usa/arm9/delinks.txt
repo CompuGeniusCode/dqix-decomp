@@ -21115,3 +21115,103 @@ src/Combat/Main/UpdateFlagBitsAndDispatch.cpp:
 src/Combat/Main/UpdateObjPaletteEntry020dc70c.cpp:
     complete
     .text start:0x020dc70c end:0x020dc7e8
+
+
+src/Combat/Main/AdvanceState0208d340.cpp:
+    complete
+    .text start:0x0208d340 end:0x0208d42c
+
+
+src/Combat/Main/AllocateAndInitEffectNode0208e35c.cpp:
+    complete
+    .text start:0x0208e35c end:0x0208e444
+
+
+src/Combat/Main/BuildAndAppendVec3Record0201c7c4.cpp:
+    complete
+    .text start:0x0201c7c4 end:0x0201c8a8
+
+
+src/Combat/Main/BuildScaleRotateAffine020b9f1c.cpp:
+    complete
+    .text start:0x020b9f1c end:0x020b9ffc
+
+
+src/Combat/Main/ClearWorkRecord0206bf2c.cpp:
+    complete
+    .text start:0x0206bf2c end:0x0206c010
+
+
+src/Combat/Main/HandleQueuedEntry02026694.cpp:
+    complete
+    .text start:0x02026694 end:0x02026780
+
+
+src/Combat/Main/InitObj02088e80.cpp:
+    complete
+    .text start:0x02088e80 end:0x02088f68
+
+
+src/Combat/Main/InitObjFromPackedFields020e4e38.cpp:
+    complete
+    .text start:0x020e4e38 end:0x020e4f18
+
+
+src/Combat/Main/IssueBattleCommandSlot13.cpp:
+    complete
+    .text start:0x020d559c end:0x020d5684
+
+
+src/Combat/Main/LoadObjectResourceFiles02039f04.cpp:
+    complete
+    .text start:0x02039f04 end:0x02039fec
+
+
+src/Combat/Main/RemoveOrShiftMarkedEntry02086a04.cpp:
+    complete
+    .text start:0x02086a04 end:0x02086aec
+
+
+src/Combat/Main/RenderTransformedFlaggedIndexedEntry.cpp:
+    complete
+    .text start:0x020472e4 end:0x020473c8
+
+
+src/Combat/Main/ResetBigStruct02013750.cpp:
+    complete
+    .text start:0x02013750 end:0x0201383c
+
+
+src/Combat/Main/RunScriptAndAdjustObj02071488.cpp:
+    complete
+    .text start:0x02071488 end:0x02071574
+
+
+src/Combat/Main/SetCombatModeFromCase020dc2d0.cpp:
+    complete
+    .text start:0x020dc2d0 end:0x020dc3b8
+
+
+src/Combat/Main/SetFieldsFromFormattedValue0207f914.cpp:
+    complete
+    .text start:0x0207f914 end:0x0207f9f4
+
+
+src/Combat/Main/SetNameEntries02011818.cpp:
+    complete
+    .text start:0x02011818 end:0x020118fc
+
+
+src/Combat/Main/SetNodeVec4FromVariant0206c614.cpp:
+    complete
+    .text start:0x0206c614 end:0x0206c6f4
+
+
+src/Combat/Main/SetVramFieldAndDispatch020c42c8.cpp:
+    complete
+    .text start:0x020c42c8 end:0x020c43b0
+
+
+src/Combat/Main/SetupViewport02029384.cpp:
+    complete
+    .text start:0x02029384 end:0x02029470
