@@ -21215,3 +21215,63 @@ src/Combat/Main/SetVramFieldAndDispatch020c42c8.cpp:
 src/Combat/Main/SetupViewport02029384.cpp:
     complete
     .text start:0x02029384 end:0x02029470
+
+
+src/Combat/Main/InterpolateAnimFrameTexels020b9188.cpp:
+    complete
+    .text start:0x020b9188 end:0x020b9278
+
+
+src/Combat/Main/IssueBattleCommandSlot10.cpp:
+    complete
+    .text start:0x020d5254 end:0x020d5340
+
+
+src/Combat/Main/MeasureTextWidth0206b6b8.cpp:
+    complete
+    .text start:0x0206b6b8 end:0x0206b7b0
+
+
+src/Combat/Main/PopulateTableRow020a6090.cpp:
+    complete
+    .text start:0x020a6090 end:0x020a6180
+
+
+src/Combat/Main/ProcessDisplayDispatch020db5ec.cpp:
+    complete
+    .text start:0x020db5ec end:0x020db6e4
+
+
+src/Combat/Main/ProcessEntryList02081574.cpp:
+    complete
+    .text start:0x02081574 end:0x0208166c
+
+
+src/Combat/Main/ProcessNode0201aedc.cpp:
+    complete
+    .text start:0x0201aedc end:0x0201afd0
+
+
+src/Combat/Main/SetNodeVec3FromVariant0206d8e8.cpp:
+    complete
+    .text start:0x0206d8e8 end:0x0206d9d8
+
+
+src/Combat/Main/SetupWeightedEntriesAndSubmitPair020e0cfc.cpp:
+    complete
+    .text start:0x020e0cfc end:0x020e0df8
+
+
+src/Combat/Main/UpdateGrottoRankLabelAndDispatch02014b04.cpp:
+    complete
+    .text start:0x02014b04 end:0x02014c04
+
+
+src/Combat/Main/UpdatePositionPackingAndBuffer02052244.cpp:
+    complete
+    .text start:0x02052244 end:0x02052338
+
+
+src/Combat/Main/UpdateTimedBufferState020275e4.cpp:
+    complete
+    .text start:0x020275e4 end:0x020276dc
