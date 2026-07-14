@@ -19604,3 +19604,118 @@ src/Combat/Main/SetField0x58.cpp:
 src/Combat/Main/VariadicForward020c7130.cpp:
     complete
     .text start:0x020c7130 end:0x020c7158
+
+
+src/Combat/Main/AimAndSetVecY020338d4.cpp:
+    complete
+    .text start:0x020338d4 end:0x02033920
+
+
+src/Combat/Main/AllocateAndBindRecordArray0201dfcc.cpp:
+    complete
+    .text start:0x0201dfcc end:0x0201e018
+
+
+src/Combat/Main/AnySlotHasBit16At0x2f4.cpp:
+    complete
+    .text start:0x0208538c end:0x02085400
+
+
+src/Combat/Main/AnySlotHasBit17At0x2f4.cpp:
+    complete
+    .text start:0x02085400 end:0x02085474
+
+
+src/Combat/Main/AnySlotHasBit18At0x2f4.cpp:
+    complete
+    .text start:0x02085474 end:0x020854e8
+
+
+src/Combat/Main/BackupSubBgControlRegisters02074b64.cpp:
+    complete
+    .text start:0x02074b64 end:0x02074bd0
+
+
+src/Combat/Main/CheckAnyByteMatches020dcbbc.cpp:
+    complete
+    .text start:0x020dcbbc end:0x020dcc20
+
+
+src/Combat/Main/ComputeProductSums0205c508.cpp:
+    complete
+    .text start:0x0205c508 end:0x0205c53c
+
+
+src/Combat/Main/CountFlaggedSlotBit14Matches020852a4.cpp:
+    complete
+    .text start:0x020852a4 end:0x02085318
+
+
+src/Combat/Main/CountFlaggedSlotBit15Matches02085318.cpp:
+    complete
+    .text start:0x02085318 end:0x0208538c
+
+
+src/Combat/Main/CreateAllocatorHolderInRegion.cpp:
+    complete
+    .text start:0x020bd914 end:0x020bd984
+
+
+src/Combat/Main/FindNthPositiveShort0207c6b8.cpp:
+    complete
+    .text start:0x0207c6b8 end:0x0207c72c
+
+
+src/Combat/Main/GuardedOverlayDispatch020d6cb4.cpp:
+    complete
+    .text start:0x020d6cb4 end:0x020d6d18
+
+
+src/Combat/Main/HasFlaggedSlotBit12Set02085230.cpp:
+    complete
+    .text start:0x02085230 end:0x020852a4
+
+
+src/Combat/Main/InvokeTableEntryHandler020435a8.cpp:
+    complete
+    .text start:0x020435a8 end:0x02043600
+
+
+src/Combat/Main/NotifyLocalizedResourceLoad020dd040.cpp:
+    complete
+    .text start:0x020dd040 end:0x020dd0b0
+
+
+src/Combat/Main/SendManagerFields0209daa4.cpp:
+    complete
+    .text start:0x0209daa4 end:0x0209daf8
+
+
+src/Combat/Main/SetField78Clamped0202e71c.cpp:
+    complete
+    .text start:0x0202e71c end:0x0202e784
+
+
+src/Combat/Main/StartBattleTimerSequence020e4524.cpp:
+    complete
+    .text start:0x020e4524 end:0x020e455c
+
+
+src/Combat/Main/StoreHalfword0xff1002069d08.cpp:
+    complete
+    .text start:0x02069d08 end:0x02069d6c
+
+
+src/Combat/Main/TeardownAndResetState020d7aa0.cpp:
+    complete
+    .text start:0x020d7aa0 end:0x020d7b04
+
+
+src/Combat/Main/UpdateCounterAndFlag02065758.cpp:
+    complete
+    .text start:0x02065758 end:0x020657c8
+
+
+src/Combat/Main/ValidateVariantArray0201f894.cpp:
+    complete
+    .text start:0x0201f894 end:0x0201f8d0

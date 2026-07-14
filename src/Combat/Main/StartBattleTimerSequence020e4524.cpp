@@ -1,0 +1,18 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+
+int GetGlobalField0x1c020421a0(void);
+void ReinitController02043204(char* obj);
+int GetFieldIfFlag4(char* obj);
+void ApplyVecFromField0x246(char* actor);
+extern "C" void* func_ov017_0218b5b0(void);
+extern "C" void func_0203b110(void* obj, int value, int frames);
+extern "C" void func_ov004_0216fa48(char* obj);
+
+// USA: func_020e4524
+ARM void StartBattleTimerSequence020e4524(char* obj) {
+    ReinitController02043204((char*)GetGlobalField0x1c020421a0());
+    ApplyVecFromField0x246((char*)GetFieldIfFlag4((char*)GetBattleStruct()));
+    func_0203b110(func_ov017_0218b5b0(), 0, 0x3c);
+    func_ov004_0216fa48(obj);
+}
