@@ -21522,3 +21522,44 @@ src/Combat/Main/SetVramBankAndDispatch020c43b0.cpp:
 src/Filesystem/DispatchCartridgeReadToArm7.cpp:
     complete
     .text start:0x020d06fc end:0x020d0834
+
+
+src/Combat/Main/AllocateAndAppendEffectNode0206c4e8.cpp:
+    complete
+    .text start:0x0206c4e8 end:0x0206c614
+
+
+src/Combat/Main/ConfigureFieldVec3ForDateWindow020a696c.cpp:
+    complete
+    .text start:0x020a696c end:0x020a6aa4
+
+
+src/Combat/Main/FilterBytesAndInit02052f44.cpp:
+    complete
+    .text start:0x02052f44 end:0x0205308c
+
+
+src/Combat/Main/HandleGrottoTurnTransition0208f944.cpp:
+    complete
+    .text start:0x0208f944 end:0x0208fa8c
+
+
+src/Combat/Main/LoadFilesAndBuildNodeList020d6d90.cpp:
+    complete
+    .text start:0x020d6d90 end:0x020d6ec8
+
+
+src/Combat/Main/LoadObjLoadingGraphicsResources020db0f0.cpp:
+    complete
+    .text start:0x020db0f0 end:0x020db228
+
+
+src/Combat/Main/ResetMpForFlaggedCombatants02010604.cpp:
+    complete
+    .text start:0x02010604 end:0x02010750
+
+
+
+src/Combat/Main/UpdateAndDispatch020bf658.cpp:
+    complete
+    .text start:0x020bf658 end:0x020bf79c
