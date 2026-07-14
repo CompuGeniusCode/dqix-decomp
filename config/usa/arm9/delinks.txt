@@ -21497,3 +21497,28 @@ src/Combat/Main/UpdatePlayClocks020ac4f8.cpp:
 src/Combat/Main/UpdateVariantRangeState0209bb6c.cpp:
     complete
     .text start:0x0209bb6c end:0x0209bc84
+
+
+src/Combat/Main/DispatchCharTransfer0203b784.cpp:
+    complete
+    .text start:0x0203b784 end:0x0203b8bc
+
+
+src/Combat/Main/InitEntryManager020e2490.cpp:
+    complete
+    .text start:0x020e2490 end:0x020e25cc
+
+
+src/Combat/Main/SelectMatchFnByWildcard020de3f4.cpp:
+    complete
+    .text start:0x020de3f4 end:0x020de524
+
+
+src/Combat/Main/SetVramBankAndDispatch020c43b0.cpp:
+    complete
+    .text start:0x020c43b0 end:0x020c44e4
+
+
+src/Filesystem/DispatchCartridgeReadToArm7.cpp:
+    complete
+    .text start:0x020d06fc end:0x020d0834
