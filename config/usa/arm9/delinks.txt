@@ -19810,3 +19810,7 @@ src/Combat/Main/UpdateEntryFlagsForNodeList.cpp:
 src/Combat/Main/ApplyBracketEffects020b98b8.cpp:
     complete
     .text start:0x020b98b8 end:0x020b992c
+
+src/Combat/Main/TickByteFlagCounter02012ad0.cpp:
+    complete
+    .text start:0x02012ad0 end:0x02012b54
