@@ -20880,3 +20880,133 @@ src/Combat/Main/UpdateKeyValue0207d200.cpp:
 src/Combat/Main/UpdateOffsetsFromEntry02080a6c.cpp:
     complete
     .text start:0x02080a6c end:0x02080b2c
+
+
+src/Combat/Main/AccumulateCategorySlotBits02085ab8.cpp:
+    complete
+    .text start:0x02085ab8 end:0x02085b88
+
+
+src/Combat/Main/ClearAndSetBlockFlag020d6610.cpp:
+    complete
+    .text start:0x020d6610 end:0x020d66dc
+
+
+src/Combat/Main/ConfigureBattleTimersFromFlags020b9a6c.cpp:
+    complete
+    .text start:0x020b9a6c end:0x020b9b30
+
+
+src/Combat/Main/CopyPackedFields02089494.cpp:
+    complete
+    .text start:0x02089494 end:0x02089560
+
+
+src/Combat/Main/CountMatchingRoundedShorts.cpp:
+    complete
+    .text start:0x020dd300 end:0x020dd3cc
+
+
+src/Combat/Main/DecrementKeyEverywhere02086d88.cpp:
+    complete
+    .text start:0x02086d88 end:0x02086e50
+
+
+src/Combat/Main/DeserializeElementBuffers020a8e9c.cpp:
+    complete
+    .text start:0x020a8e9c end:0x020a8f60
+
+
+src/Combat/Main/Dispatch020b4514.cpp:
+    complete
+    .text start:0x020b4514 end:0x020b45e0
+
+
+src/Combat/Main/DispatchNearestActiveNode0204117c.cpp:
+    complete
+    .text start:0x0204117c end:0x02041244
+
+
+src/Combat/Main/FlushOv017Section020dbcc4.cpp:
+    complete
+    .text start:0x020dbcc4 end:0x020dbd90
+
+
+src/Combat/Main/GateAndDispatchVariants020978fc.cpp:
+    complete
+    .text start:0x020978fc end:0x020979c0
+
+
+src/Combat/Main/GetAlignedField0x3eSize020d4900.cpp:
+    complete
+    .text start:0x020d4900 end:0x020d49c4
+
+
+src/Combat/Main/InitCombatController020a2010.cpp:
+    complete
+    .text start:0x020a2010 end:0x020a20d8
+
+
+src/Combat/Main/InitObj02088f68.cpp:
+    complete
+    .text start:0x02088f68 end:0x0208902c
+
+
+src/Combat/Main/InitSubScreenDisplay.cpp:
+    complete
+    .text start:0x020209d0 end:0x02020aa0
+
+
+src/Combat/Main/ProcessEntries0207da94.cpp:
+    complete
+    .text start:0x0207da94 end:0x0207db58
+
+
+src/Combat/Main/ProcessSlotDamping02039fec.cpp:
+    complete
+    .text start:0x02039fec end:0x0203a0b4
+
+
+src/Combat/Main/ResetHandlerAndClearBattleFlags02035f10.cpp:
+    complete
+    .text start:0x02035f10 end:0x02035fe0
+
+
+src/Combat/Main/SetStateAndDispatch0209c3b4.cpp:
+    complete
+    .text start:0x0209c3b4 end:0x0209c480
+
+
+src/Combat/Main/SetupWeightedEntriesAndSubmit.cpp:
+    complete
+    .text start:0x020e0df8 end:0x020e0ec4
+
+
+src/Combat/Main/SubmitBattleContextEntry020d5bfc.cpp:
+    complete
+    .text start:0x020d5bfc end:0x020d5cc8
+
+
+src/Combat/Main/SubmitGxCommands02047648.cpp:
+    complete
+    .text start:0x02047648 end:0x02047718
+
+
+src/Combat/Main/SyncBattleState0208f87c.cpp:
+    complete
+    .text start:0x0208f87c end:0x0208f944
+
+
+src/Combat/Main/UpdateChannelStateIfEligible02093f68.cpp:
+    complete
+    .text start:0x02093f68 end:0x02094030
+
+
+src/Combat/Main/UpdateElementStream0203f02c.cpp:
+    complete
+    .text start:0x0203f02c end:0x0203f0fc
+
+
+src/Combat/Main/UpdateTargetTrackingState.cpp:
+    complete
+    .text start:0x020129b4 end:0x02012a84
