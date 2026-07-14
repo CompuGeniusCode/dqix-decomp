@@ -20495,3 +20495,118 @@ src/Combat/Main/UpdateStride0x14Value0203f20c.cpp:
 src/Combat/Main/UploadPendingPalette02028dec.cpp:
     complete
     .text start:0x02028dec end:0x02028e90
+
+
+src/Combat/Main/AddKeyValueClamped020a095c.cpp:
+    complete
+    .text start:0x020a095c end:0x020a0a08
+
+
+src/Combat/Main/AnimateSubBG1Scroll020a63f8.cpp:
+    complete
+    .text start:0x020a63f8 end:0x020a64a4
+
+
+src/Combat/Main/AppendVec3EntryFromTaggedValues.cpp:
+    complete
+    .text start:0x020343d0 end:0x02034478
+
+
+src/Combat/Main/BuildRotateScaleAffine020bb194.cpp:
+    complete
+    .text start:0x020bb194 end:0x020bb238
+
+
+src/Combat/Main/CopyEntryAndIncrementCounter020df6cc.cpp:
+    complete
+    .text start:0x020df6cc end:0x020df774
+
+
+src/Combat/Main/DeserializeAndAllocate.cpp:
+    complete
+    .text start:0x0204acdc end:0x0204ad88
+
+
+src/Combat/Main/DeserializeAndDispatch.cpp:
+    complete
+    .text start:0x0204a848 end:0x0204a8f4
+
+
+src/Combat/Main/DestroyAllocators020545b8.cpp:
+    complete
+    .text start:0x020545b8 end:0x02054664
+
+
+src/Combat/Main/DispatchEvent1e03020d57f4.cpp:
+    complete
+    .text start:0x020d57f4 end:0x020d5898
+
+
+src/Combat/Main/GetLookAndTurnOffsets020809c4.cpp:
+    complete
+    .text start:0x020809c4 end:0x02080a6c
+
+
+src/Combat/Main/GetStatFieldPointer02064904.cpp:
+    complete
+    .text start:0x02064904 end:0x020649b0
+
+
+src/Combat/Main/InitAndRequeueEntry020e3b8c.cpp:
+    complete
+    .text start:0x020e3b8c end:0x020e3c34
+
+
+src/Combat/Main/LookupArrayFieldByCase0208da18.cpp:
+    complete
+    .text start:0x0208da18 end:0x0208dac4
+
+
+src/Combat/Main/ProcessGrottoTurnEvent0208f4e4.cpp:
+    complete
+    .text start:0x0208f4e4 end:0x0208f588
+
+
+src/Combat/Main/SetElemFlag8IfOverlayActive020ae730.cpp:
+    complete
+    .text start:0x020ae730 end:0x020ae7d4
+
+
+src/Combat/Main/SetModeBasedOnCombatState020dc214.cpp:
+    complete
+    .text start:0x020dc214 end:0x020dc2bc
+
+
+src/Combat/Main/SetOrClearEntryIntFlags020b6f64.cpp:
+    complete
+    .text start:0x020b6f64 end:0x020b700c
+
+
+src/Combat/Main/SetYesNoButtonPalette020e2834.cpp:
+    complete
+    .text start:0x020e2834 end:0x020e28dc
+
+
+src/Combat/Main/SetupAndRunBufferedScript0209a810.cpp:
+    complete
+    .text start:0x0209a810 end:0x0209a8b4
+
+
+src/Combat/Main/SomeInit02064574.cpp:
+    complete
+    .text start:0x02064574 end:0x0206461c
+
+
+src/Combat/Main/SumCombatantKeyMatches02086aec.cpp:
+    complete
+    .text start:0x02086aec end:0x02086b98
+
+
+src/Combat/Main/TryAdvanceChargeSlot0208a52c.cpp:
+    complete
+    .text start:0x0208a52c end:0x0208a5d8
+
+
+src/Combat/Main/TryApplyElemFields0205d5d0.cpp:
+    complete
+    .text start:0x0205d5d0 end:0x0205d67c
