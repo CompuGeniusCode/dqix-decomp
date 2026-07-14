@@ -20030,3 +20030,178 @@ src/Combat/Main/UpdateStatusFlag0207b244.cpp:
 src/Combat/Main/UpdateTweenAndNotify020bceb4.cpp:
     complete
     .text start:0x020bceb4 end:0x020bcf3c
+
+
+src/Combat/Main/AdjustPositionTowardTarget02033e38.cpp:
+    complete
+    .text start:0x02033e38 end:0x02033ec8
+
+
+src/Combat/Main/AppendMatchedPairIfFound02027db0.cpp:
+    complete
+    .text start:0x02027db0 end:0x02027e44
+
+
+src/Combat/Main/AttachOrRefreshEntry.cpp:
+    complete
+    .text start:0x020bee20 end:0x020beeac
+
+
+src/Combat/Main/ClampAndUpdateField0x58.cpp:
+    complete
+    .text start:0x02087e6c end:0x02087efc
+
+
+src/Combat/Main/ComputeOffsetVec02037c80.cpp:
+    complete
+    .text start:0x02037c80 end:0x02037d10
+
+
+src/Combat/Main/CopyFieldsAndFlushCache0204a8f4.cpp:
+    complete
+    .text start:0x0204a8f4 end:0x0204a984
+
+
+src/Combat/Main/DispatchEventEntryForIndex.cpp:
+    complete
+    .text start:0x020be010 end:0x020be09c
+
+
+src/Combat/Main/FindAndLinkMatchingEntry0205de24.cpp:
+    complete
+    .text start:0x0205de24 end:0x0205deb4
+
+
+src/Combat/Main/GetBattleSubField0xbcForState.cpp:
+    complete
+    .text start:0x020d4ac8 end:0x020d4b58
+
+
+src/Combat/Main/GetOwnerDataFortuneValue.cpp:
+    complete
+    .text start:0x020d4b58 end:0x020d4be8
+
+
+src/Combat/Main/HandleStateChange020455f8.cpp:
+    complete
+    .text start:0x020455f8 end:0x02045688
+
+
+src/Combat/Main/Init02013018.cpp:
+    complete
+    .text start:0x02013018 end:0x020130a8
+
+
+src/Combat/Main/InitAndAppendRangeEntry020e5750.cpp:
+    complete
+    .text start:0x020e5750 end:0x020e57e0
+
+
+src/Combat/Main/InitEntryListFromSource0206f170.cpp:
+    complete
+    .text start:0x0206f170 end:0x0206f200
+
+
+src/Combat/Main/InitObj02092aa4.cpp:
+    complete
+    .text start:0x02092aa4 end:0x02092b34
+
+
+src/Combat/Main/InitObjectFields020484f8.cpp:
+    complete
+    .text start:0x020484f8 end:0x02048588
+
+
+src/Combat/Main/InitStateManager0209e3dc.cpp:
+    complete
+    .text start:0x0209e3dc end:0x0209e46c
+
+
+src/Combat/Main/InitSubsystemContextOnce020d1954.cpp:
+    complete
+    .text start:0x020d1954 end:0x020d19e0
+
+
+src/Combat/Main/InitializeSubObjectsAndFields020289c4.cpp:
+    complete
+    .text start:0x020289c4 end:0x02028a54
+
+
+src/Combat/Main/MergeContainer020dfabc.cpp:
+    complete
+    .text start:0x020dfabc end:0x020dfb48
+
+
+src/Combat/Main/NotifyOv017OnFlag0x1130.cpp:
+    complete
+    .text start:0x020a8740 end:0x020a87cc
+
+
+src/Combat/Main/ProcessRecords0205a498.cpp:
+    complete
+    .text start:0x0205a498 end:0x0205a528
+
+
+src/Combat/Main/SendEncodedMessagePair.cpp:
+    complete
+    .text start:0x020ce45c end:0x020ce4e8
+
+
+src/Combat/Main/SendShortBufferOrReturnZero020aba5c.cpp:
+    complete
+    .text start:0x020aba5c end:0x020abae8
+
+
+src/Combat/Main/SetIndexedRecord020265a8.cpp:
+    complete
+    .text start:0x020265a8 end:0x0202663c
+
+
+src/Combat/Main/SetNodeFx32ValueFromVariant0206d3d4.cpp:
+    complete
+    .text start:0x0206d3d4 end:0x0206d464
+
+
+src/Combat/Main/ShiftRecords0202c478.cpp:
+    complete
+    .text start:0x0202c478 end:0x0202c508
+
+
+src/Combat/Main/SplitTimestampIntoDateAndTime.cpp:
+    complete
+    .text start:0x020cfb74 end:0x020cfc00
+
+
+src/Combat/Main/SubmitPendingCommandBlocks.cpp:
+    complete
+    .text start:0x020b6bb0 end:0x020b6c3c
+
+
+src/Combat/Main/SwapGlobalEntry0203c108.cpp:
+    complete
+    .text start:0x0203c108 end:0x0203c198
+
+
+src/Combat/Main/SyncMainSubOam0203bdb0.cpp:
+    complete
+    .text start:0x0203bdb0 end:0x0203be40
+
+
+src/Combat/Main/TestCombatantCategoryBit020dd200.cpp:
+    complete
+    .text start:0x020dd200 end:0x020dd290
+
+
+src/Combat/Main/TransferBattleObjPaletteEntries020e16f4.cpp:
+    complete
+    .text start:0x020e16f4 end:0x020e1780
+
+
+src/Combat/Main/UpdateHandleState0207a6a4.cpp:
+    complete
+    .text start:0x0207a6a4 end:0x0207a734
+
+
+src/Combat/Main/UpdateScaleOrApplyRecord0203ae4c.cpp:
+    complete
+    .text start:0x0203ae4c end:0x0203aee0
