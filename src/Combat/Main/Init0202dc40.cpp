@@ -13,7 +13,7 @@ struct DataStruct0202dc40 {
 extern struct DataStruct0202dc40 data_021015a0;
 extern char data_021016e0;
 
-extern "C" int func_0202d224(void);
+int TryTransitionState0202d224(void);
 int SetState3AndInvokeHandler0202d180(void);
 
 // USA: func_0202dc40
@@ -27,7 +27,7 @@ ARM int Init0202dc40(int mode, void* src) {
         if (data_021015a0.val30 != 0) {
             return SetState3AndInvokeHandler0202d180();
         }
-        return func_0202d224();
+        return TryTransitionState0202d224();
     }
     return 0;
 }

@@ -19814,3 +19814,187 @@ src/Combat/Main/ApplyBracketEffects020b98b8.cpp:
 src/Combat/Main/TickByteFlagCounter02012ad0.cpp:
     complete
     .text start:0x02012ad0 end:0x02012b54
+
+
+src/Combat/Main/AccumulateSlotBits02085b88.cpp:
+    complete
+    .text start:0x02085b88 end:0x02085c08
+
+
+src/Combat/Main/AppendFormattedData02098f70.cpp:
+    complete
+    .text start:0x02098f70 end:0x02098ff4
+
+
+src/Combat/Main/BinarySearchRecord0209a004.cpp:
+    complete
+    .text start:0x0209a004 end:0x0209a088
+
+
+src/Combat/Main/BuildIndexArrayAndRegister0209dc4c.cpp:
+    complete
+    .text start:0x0209dc4c end:0x0209dccc
+
+
+src/Combat/Main/ComputeAndApplyWithCounter020e04f4.cpp:
+    complete
+    .text start:0x020e04f4 end:0x020e0574
+
+
+src/Combat/Main/ComputeAndApplyWithCounter020e54bc.cpp:
+    complete
+    .text start:0x020e54bc end:0x020e553c
+
+
+src/Combat/Main/CrossProductFixed020c2e34.cpp:
+    complete
+    .text start:0x020c2e34 end:0x020c2eb8
+
+
+src/Combat/Main/DispatchReadyCombatantSlots.cpp:
+    complete
+    .text start:0x020d7638 end:0x020d76b8
+
+
+src/Combat/Main/Distance3D020c3030.cpp:
+    complete
+    .text start:0x020c3030 end:0x020c30ac
+
+
+src/Combat/Main/DmaFillAndWait020c9c0c.cpp:
+    complete
+    .text start:0x020c9c0c end:0x020c9c8c
+
+
+src/Combat/Main/FindNamedRecord0204673c.cpp:
+    complete
+    .text start:0x0204673c end:0x020467c0
+
+
+src/Combat/Main/FormatAndCopyNames02020b98.cpp:
+    complete
+    .text start:0x02020b98 end:0x02020c18
+
+
+src/Combat/Main/IncrementNibble0206ec64.cpp:
+    complete
+    .text start:0x0206ec64 end:0x0206ece8
+
+
+src/Combat/Main/InitActionHandlers020bffc4.cpp:
+    complete
+    .text start:0x020bffc4 end:0x020c0044
+
+
+src/Combat/Main/InitManagerAndAllocateBuffers0209fee4.cpp:
+    complete
+    .text start:0x0209fee4 end:0x0209ff64
+
+
+src/Combat/Main/InitObjFromCombatantId020e4bf4.cpp:
+    complete
+    .text start:0x020e4bf4 end:0x020e4c74
+
+
+
+
+src/Combat/Main/InitializeRandomMotion0203c794.cpp:
+    complete
+    .text start:0x0203c794 end:0x0203c818
+
+
+src/Combat/Main/InsertVCountAlarmNode.cpp:
+    complete
+    .text start:0x020c92d0 end:0x020c934c
+
+
+src/Combat/Main/InvalidateDirtyCacheBlocks.cpp:
+    complete
+    .text start:0x0204ab4c end:0x0204abcc
+
+
+src/Combat/Main/IsPointInsideElement02080d54.cpp:
+    complete
+    .text start:0x02080d54 end:0x02080dd4
+
+
+src/Combat/Main/JoinDelimitedParts02068e1c.cpp:
+    complete
+    .text start:0x02068e1c end:0x02068ea0
+
+
+src/Combat/Main/PopQueueEntryOrWait020c7fe0.cpp:
+    complete
+    .text start:0x020c7fe0 end:0x020c805c
+
+
+src/Combat/Main/RenderFlaggedIndexedEntry.cpp:
+    complete
+    .text start:0x020473c8 end:0x02047448
+
+
+src/Combat/Main/ResetContainerAndHandleFields020da1ac.cpp:
+    complete
+    .text start:0x020da1ac end:0x020da22c
+
+
+src/Combat/Main/ResetTargetFlags02088474.cpp:
+    complete
+    .text start:0x02088474 end:0x020884f8
+
+
+src/Combat/Main/ResolveEntryRefs0207f72c.cpp:
+    complete
+    .text start:0x0207f72c end:0x0207f7ac
+
+
+src/Combat/Main/SelectWeightedEntry02073fdc.cpp:
+    complete
+    .text start:0x02073fdc end:0x02074060
+
+
+src/Combat/Main/SetOrClearEntryBitAndNotify020e3a50.cpp:
+    complete
+    .text start:0x020e3a50 end:0x020e3ad0
+
+
+
+
+src/Combat/Main/SetSubBgExtPaletteFieldAndDispatch020c46c8.cpp:
+    complete
+    .text start:0x020c46c8 end:0x020c4748
+
+
+src/Combat/Main/SetSubObjExtPaletteFieldAndDispatch020c4748.cpp:
+    complete
+    .text start:0x020c4748 end:0x020c47c8
+
+
+src/Combat/Main/SplitSecondsIntoTimeOfDay.cpp:
+    complete
+    .text start:0x020cfaf4 end:0x020cfb74
+
+
+src/Combat/Main/TeardownBattleContext020c77c0.cpp:
+    complete
+    .text start:0x020c77c0 end:0x020c783c
+
+
+src/Combat/Main/TrySetActionFromListEntry.cpp:
+    complete
+    .text start:0x020be7a8 end:0x020be828
+
+
+src/Combat/Main/TryTransitionState0202d224.cpp:
+    complete
+    .text start:0x0202d224 end:0x0202d2a4
+
+
+src/Combat/Main/UpdateTimedState0202f380.cpp:
+    complete
+    .text start:0x0202f380 end:0x0202f404
+
+
+src/Combat/Main/ValidateAndDispatchResource.cpp:
+    complete
+    .text start:0x0205aaf8 end:0x0205ab78

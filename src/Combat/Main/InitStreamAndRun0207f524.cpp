@@ -25,7 +25,8 @@ struct Struct02030774;
 int RunLoopIfValid02030774(struct Struct02030774* p);
 
 extern "C" void func_0203066c(void* p, void* q);
-extern "C" void func_0207f72c(void* p);
+struct List0207f6ac;
+void ResolveEntryRefs0207f72c(struct List0207f6ac* p);
 
 struct Data02108ee0 { void* field0; void* field4; };
 extern struct Data02108ee0 data_02108ee0;
@@ -41,6 +42,6 @@ ARM void InitStreamAndRun0207f524(void* param0, void* param1, struct StreamHeade
         func_0203066c(&local, &data_020f0fb0);
         InitBufferReader((struct StreamState*)&local, param2, param3);
         RunLoopIfValid02030774((struct Struct02030774*)&local);
-        func_0207f72c(param0);
+        ResolveEntryRefs0207f72c((struct List0207f6ac*)param0);
     }
 }
