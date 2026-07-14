@@ -21563,3 +21563,63 @@ src/Combat/Main/ResetMpForFlaggedCombatants02010604.cpp:
 src/Combat/Main/UpdateAndDispatch020bf658.cpp:
     complete
     .text start:0x020bf658 end:0x020bf79c
+
+
+src/Combat/Main/AdvanceBattleBlockQueue020d66dc.cpp:
+    complete
+    .text start:0x020d66dc end:0x020d6830
+
+
+src/Combat/Main/ApplyCombatantEffectByIndex020730e0.cpp:
+    complete
+    .text start:0x020730e0 end:0x02073240
+
+
+src/Combat/Main/ApplyElementFlags0201b8c8.cpp:
+    complete
+    .text start:0x0201b8c8 end:0x0201ba1c
+
+
+src/Combat/Main/CheckAndComputeDistance020968d0.cpp:
+    complete
+    .text start:0x020968d0 end:0x02096a20
+
+
+src/Combat/Main/ClosestPointOnSegment02031468.cpp:
+    complete
+    .text start:0x02031468 end:0x020315b8
+
+
+src/Combat/Main/FilterAndSortEntries02071ffc.cpp:
+    complete
+    .text start:0x02071ffc end:0x0207214c
+
+
+src/Combat/Main/HashUpdate020c08ec.cpp:
+    complete
+    .text start:0x020c08ec end:0x020c0a40
+
+
+src/Combat/Main/InitDisplayAndClearVram020c36f0.cpp:
+    complete
+    .text start:0x020c36f0 end:0x020c383c
+
+
+src/Combat/Main/RefreshRecordListDisplay02020e58.cpp:
+    complete
+    .text start:0x02020e58 end:0x02020fc4
+
+
+src/Combat/Main/SetVramBankAndDispatch020c3df4.cpp:
+    complete
+    .text start:0x020c3df4 end:0x020c3f44
+
+
+src/Combat/Main/SetupFromSrcAndFlags020b9b30.cpp:
+    complete
+    .text start:0x020b9b30 end:0x020b9c80
+
+
+src/Combat/Main/SubmitBattleContextEntry020d5340.cpp:
+    complete
+    .text start:0x020d5340 end:0x020d5490
