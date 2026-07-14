@@ -20345,3 +20345,153 @@ src/Combat/Main/TickActorAndDispatchPhase02076b58.cpp:
 src/Combat/Main/WriteHistoryEntry02069a4c.cpp:
     complete
     .text start:0x02069a4c end:0x02069ae4
+
+
+src/Combat/Main/ApplyScaledVariantsToNode0207a0c8.cpp:
+    complete
+    .text start:0x0207a0c8 end:0x0207a164
+
+
+src/Combat/Main/ApplyScaledVariantsToNode0207a2ac.cpp:
+    complete
+    .text start:0x0207a2ac end:0x0207a348
+
+
+src/Combat/Main/BuildStatusListString02068ea0.cpp:
+    complete
+    .text start:0x02068ea0 end:0x02068f40
+
+
+src/Combat/Main/CheckAndApplyDebugCode020ac910.cpp:
+    complete
+    .text start:0x020ac910 end:0x020ac9ac
+
+
+src/Combat/Main/CheckAnySlotMatchesId02073d58.cpp:
+    complete
+    .text start:0x02073d58 end:0x02073dfc
+
+
+src/Combat/Main/CheckSaveBufferStatus.cpp:
+    complete
+    .text start:0x020ab9c0 end:0x020aba5c
+
+
+src/Combat/Main/ClearTwoRegionsAndFifo020c55b0.cpp:
+    complete
+    .text start:0x020c55b0 end:0x020c5650
+
+
+src/Combat/Main/ConsumeCounter02048350.cpp:
+    complete
+    .text start:0x02048350 end:0x020483f0
+
+
+src/Combat/Main/DetachAndReleaseRefs020bf484.cpp:
+    complete
+    .text start:0x020bf484 end:0x020bf520
+
+
+src/Combat/Main/DispatchTableEntry0204ffc0.cpp:
+    complete
+    .text start:0x0204ffc0 end:0x02050064
+
+
+src/Combat/Main/FillNameBytes02053e10.cpp:
+    complete
+    .text start:0x02053e10 end:0x02053eb4
+
+
+src/Combat/Main/FindTableEntryByFormattedName0202ff34.cpp:
+    complete
+    .text start:0x0202ff34 end:0x0202ffd8
+
+
+src/Combat/Main/FormatCombatLogSuffix02041dd0.cpp:
+    complete
+    .text start:0x02041dd0 end:0x02041e70
+
+
+src/Combat/Main/HandleRepeatInput02045740.cpp:
+    complete
+    .text start:0x02045740 end:0x020457e0
+
+
+src/Combat/Main/InitCombatantExtendedFields02052a4c.cpp:
+    complete
+    .text start:0x02052a4c end:0x02052ae8
+
+
+src/Combat/Main/InitFourNamedSubStructs.cpp:
+    complete
+    .text start:0x02096604 end:0x020966a0
+
+
+src/Combat/Main/InitOverlaySystem.cpp:
+    complete
+    .text start:0x020a1838 end:0x020a18d4
+
+
+src/Combat/Main/ProcessPendingSubStates.cpp:
+    complete
+    .text start:0x02040910 end:0x020409b0
+
+
+src/Combat/Main/ProcessTextTokens0206b61c.cpp:
+    complete
+    .text start:0x0206b61c end:0x0206b6b8
+
+
+src/Combat/Main/PropagateValueToActiveSlot02040b2c.cpp:
+    complete
+    .text start:0x02040b2c end:0x02040bcc
+
+
+src/Combat/Main/RotateOffsetAndAdvance0202e894.cpp:
+    complete
+    .text start:0x0202e894 end:0x0202e938
+
+
+src/Combat/Main/SetNodeFlagsFromVariantArray0206ca3c.cpp:
+    complete
+    .text start:0x0206ca3c end:0x0206cad8
+
+
+src/Combat/Main/SetNodePackedFlagsFromVariants0206d9d8.cpp:
+    complete
+    .text start:0x0206d9d8 end:0x0206da74
+
+
+src/Combat/Main/SetupAllocations0207eaf8.cpp:
+    complete
+    .text start:0x0207eaf8 end:0x0207eb9c
+
+
+src/Combat/Main/SetupAndRunBufferedScript0209bc98.cpp:
+    complete
+    .text start:0x0209bc98 end:0x0209bd38
+
+
+src/Combat/Main/SetupBankModeAndTransfer.cpp:
+    complete
+    .text start:0x0203b678 end:0x0203b718
+
+
+src/Combat/Main/UpdateCounterAndMaybeComputeSlope02055c30.cpp:
+    complete
+    .text start:0x02055c30 end:0x02055ccc
+
+
+src/Combat/Main/UpdateStatusFlag0207b1a4.cpp:
+    complete
+    .text start:0x0207b1a4 end:0x0207b244
+
+
+src/Combat/Main/UpdateStride0x14Value0203f20c.cpp:
+    complete
+    .text start:0x0203f20c end:0x0203f2b0
+
+
+src/Combat/Main/UploadPendingPalette02028dec.cpp:
+    complete
+    .text start:0x02028dec end:0x02028e90

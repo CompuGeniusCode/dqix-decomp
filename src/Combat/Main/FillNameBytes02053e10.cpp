@@ -1,0 +1,39 @@
+#include <globaldefs.h>
+
+struct Struct0207ea38;
+int CopyStringToField0207ea38(struct Struct0207ea38* obj, char* str);
+
+extern char data_020f048a;
+extern char data_020f048f;
+extern char data_020f0495;
+extern char data_020f049b;
+extern char data_020f04a1;
+extern char data_020f04a7;
+extern char data_020f04ad;
+
+struct Obj02053e10 {
+    char pad0[0x8];
+    struct Struct0207ea38* field8;   // 0x8
+    char pad1[0x1a0 - 0xc];
+    unsigned char f1a0;
+    unsigned char f1a1;
+    unsigned char f1a2;
+    unsigned char f1a3;
+    unsigned char f1a4;
+    unsigned char f1a5;
+    unsigned char f1a6;
+};
+
+// USA: func_02053e10
+ARM void FillNameBytes02053e10(struct Obj02053e10* self) {
+    struct Struct0207ea38* obj = self->field8;
+    if (obj == NULL)
+        return;
+    self->f1a0 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f048a);
+    self->f1a1 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f048f);
+    self->f1a2 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f0495);
+    self->f1a3 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f049b);
+    self->f1a4 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f04a1);
+    self->f1a5 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f04a7);
+    self->f1a6 = (unsigned char)CopyStringToField0207ea38(obj, &data_020f04ad);
+}

@@ -1,0 +1,33 @@
+#include <globaldefs.h>
+#include "Filesystem/OverlayFSManagement.h"
+
+struct FourWords;
+void ClearFourWords(struct FourWords* p);
+void Fill6BytesWithFF(char* p);
+
+extern struct FourWords data_01ffd34c;
+extern unsigned char data_01ffd344;
+extern unsigned char data_01ffd340;
+extern char data_01ffd364[8][6];
+extern struct OverlayMetadata data_01ffd394[35];
+extern int data_01ffd348;
+
+// USA: func_020a1838
+ARM void InitOverlaySystem(void) {
+    unsigned int i;
+    unsigned int j;
+
+    ClearFourWords(&data_01ffd34c);
+    data_01ffd344 = 1;
+    data_01ffd340 = 0;
+
+    for (i = 0; i < 8; i++) {
+        Fill6BytesWithFF(data_01ffd364[i]);
+    }
+
+    for (j = 0; j < 0x23; j++) {
+        LoadOverlayMetadata(&data_01ffd394[j], false, j);
+    }
+
+    data_01ffd348 = 0;
+}
