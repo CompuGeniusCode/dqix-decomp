@@ -19580,3 +19580,7 @@ src/Grotto/Main/DetailedTreasureMapData.cpp:
     complete
     .rodata start:0x020e9038 end:0x020e9074
     .text start:0x020a3ee4 end:0x020a5cb8
+
+src/Filesystem/GPC.cpp:
+    complete
+    .text start:0x020d8fcc end:0x020d96b0
