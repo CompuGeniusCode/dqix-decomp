@@ -20755,3 +20755,128 @@ src/Combat/Main/VerifyAndApplySaveBuffer.cpp:
 src/Combat/Main/VerifyBuffer020a94f8.cpp:
     complete
     .text start:0x020a94f8 end:0x020a95a4
+
+
+src/Combat/Main/AdvanceOrSnapToTarget0203c960.cpp:
+    complete
+    .text start:0x0203c960 end:0x0203ca24
+
+
+src/Combat/Main/CanCombatantDodgeCounter0208ae00.cpp:
+    complete
+    .text start:0x0208ae00 end:0x0208aebc
+
+
+src/Combat/Main/CopyBlobIntoBattleStruct020a9d78.cpp:
+    complete
+    .text start:0x020a9d78 end:0x020a9e30
+
+
+src/Combat/Main/DispatchActorState0209c73c.cpp:
+    complete
+    .text start:0x0209c73c end:0x0209c7fc
+
+
+src/Combat/Main/DispatchByTag0204b2e0.cpp:
+    complete
+    .text start:0x0204b2e0 end:0x0204b3a0
+
+
+src/Combat/Main/FindTableEntryByTwoNames.cpp:
+    complete
+    .text start:0x0202ffd8 end:0x02030090
+
+
+src/Combat/Main/FormatAndCopyName02052958.cpp:
+    complete
+    .text start:0x02052958 end:0x02052a10
+
+
+src/Combat/Main/FormatEffectStats02072c9c.cpp:
+    complete
+    .text start:0x02072c9c end:0x02072d58
+
+
+src/Combat/Main/FormatValueAndDispatch02081ce8.cpp:
+    complete
+    .text start:0x02081ce8 end:0x02081da8
+
+
+src/Combat/Main/InitBigStructVariant0205c840.cpp:
+    complete
+    .text start:0x0205c840 end:0x0205c904
+
+
+src/Combat/Main/InitListBuffers02070a30.cpp:
+    complete
+    .text start:0x02070a30 end:0x02070af4
+
+
+src/Combat/Main/InitPaletteTables0202ac74.cpp:
+    complete
+    .text start:0x0202ac74 end:0x0202ad30
+
+
+src/Combat/Main/InitStruct02058c88.cpp:
+    complete
+    .text start:0x02058c88 end:0x02058d40
+
+
+src/Combat/Main/IssueBattleCommandSlot24.cpp:
+    complete
+    .text start:0x020d69cc end:0x020d6a84
+
+
+src/Combat/Main/PositionAndFormatValueLabel0205b674.cpp:
+    complete
+    .text start:0x0205b674 end:0x0205b734
+
+
+src/Combat/Main/ProcessEntries020be604.cpp:
+    complete
+    .text start:0x020be604 end:0x020be6c4
+
+
+src/Combat/Main/QueuePopupEntry0203a48c.cpp:
+    complete
+    .text start:0x0203a48c end:0x0203a54c
+
+
+src/Combat/Main/RegroupMarkedRuns02097844.cpp:
+    complete
+    .text start:0x02097844 end:0x020978fc
+
+
+src/Combat/Main/ResetAndLoadAllocatorSlots020e5114.cpp:
+    complete
+    .text start:0x020e5114 end:0x020e51cc
+
+
+src/Combat/Main/ResetSystemAndBoot020c98f0.cpp:
+    complete
+    .text start:0x020c98f0 end:0x020c99ac
+
+
+src/Combat/Main/RunStageSequence02067e98.cpp:
+    complete
+    .text start:0x02067e98 end:0x02067f5c
+
+
+src/Combat/Main/SetupHeaderAndRunBufferedScript02089de8.cpp:
+    complete
+    .text start:0x02089de8 end:0x02089ea0
+
+
+src/Combat/Main/StartBattleTransition0202b840.cpp:
+    complete
+    .text start:0x0202b840 end:0x0202b900
+
+
+src/Combat/Main/UpdateKeyValue0207d200.cpp:
+    complete
+    .text start:0x0207d200 end:0x0207d2c4
+
+
+src/Combat/Main/UpdateOffsetsFromEntry02080a6c.cpp:
+    complete
+    .text start:0x02080a6c end:0x02080b2c

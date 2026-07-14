@@ -1,0 +1,96 @@
+#include <globaldefs.h>
+
+struct Struct02058c88 {
+    char pad_00[0x4];
+    int field_04;
+    int field_08;
+    unsigned char field_0c;
+    char pad_0d[3];
+    int field_10;
+    int field_14;
+    int field_18;
+    int field_1c;
+    int field_20;
+    int field_24;
+    int field_28;
+    unsigned char field_2c;
+    unsigned char field_2d;
+    unsigned char field_2e;
+    char pad_2f;
+    float field_30;
+    int field_34;
+    int field_38;
+    int field_3c;
+    int field_40;
+    int field_44;
+    int field_48;
+    int field_4c;
+    char pad_50[8];
+    int field_58;
+    int field_5c;
+    int field_60;
+    unsigned short field_64;
+    unsigned short field_66;
+    unsigned short field_68;
+    unsigned short field_6a;
+    int field_6c;
+    int field_70;
+    int field_74;
+    int field_78;
+    char sub_7c[0x128 - 0x7c];
+    int field_128;
+    int field_12c;
+    int field_130;
+    int field_134;
+    int field_138;
+    int field_13c;
+    int field_140;
+    int field_144;
+};
+
+extern "C" void func_02034bc4(void* obj);
+
+// USA: func_02058c88
+ARM void InitStruct02058c88(struct Struct02058c88* obj) {
+    obj->field_28 = 0;
+    obj->field_0c = 0;
+    obj->field_04 = 0;
+    obj->field_08 = 0;
+    obj->field_10 = 0;
+    obj->field_14 = 0;
+    obj->field_18 = 0;
+    obj->field_1c = 0;
+    obj->field_20 = 0;
+    obj->field_24 = 0;
+    obj->field_2c = 0;
+    obj->field_2d = 0;
+    obj->field_2e = 0;
+    obj->field_58 = 0;
+    obj->field_5c = 0;
+    obj->field_60 = 0;
+    obj->field_34 = 0;
+    obj->field_38 = 0;
+    obj->field_3c = 0;
+    obj->field_40 = 0;
+    obj->field_44 = 0;
+    obj->field_48 = 0;
+    obj->field_4c = 0;
+    obj->field_64 = 0;
+    obj->field_66 = 0;
+    obj->field_68 = 0;
+    obj->field_6a = 0;
+    obj->field_12c = 0;
+    obj->field_130 = 0;
+    obj->field_134 = 0;
+    obj->field_138 = 0;
+    obj->field_13c = 0;
+    obj->field_140 = 0;
+    obj->field_144 = 0;
+    obj->field_74 = 0;
+    obj->field_70 = 0;
+    obj->field_6c = 0;
+    obj->field_78 = 0;
+    obj->field_30 = 1.0f;
+    obj->field_128 = 0;
+    func_02034bc4(obj->sub_7c);
+}
