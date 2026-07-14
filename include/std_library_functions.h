@@ -10,7 +10,7 @@ void srand(int seed);
 
 // string.h
 void* memcpy(void* dst, void* src, unsigned int length);
-void* memmove(void* dst, void* src, unsigned int length);
+void* memmove(void* dst, const void* src, unsigned int length);
 void* memset(void* dst, int value, unsigned int length);
 
 unsigned int strlen(const char* str);
@@ -21,6 +21,7 @@ unsigned int strlen(const char* str);
 // if and only if all the bytes in x are nonzero.
 char* strcpy(char* dst, const char* src);
 char* strncpy(char* dst, const char* src, unsigned int count);
+
 char* strcat(char* dst, const char* src);
 
 // also vectorized like strcpy, but seems to have a bug(?).
@@ -32,6 +33,15 @@ char* strchr(const char* str, int ch);
 char* strrchr(const char* str, int ch);
 char* strstr(const char* str, const char* substr);
 
+// stdio.h
+int sprintf(char* buffer, const char* format, ...);
+
 #ifdef __cplusplus
 }
+
+#define offsetof(type, member) ((unsigned int)(&((type*)0)->member))
+
+typedef unsigned long long uint64_t;
+typedef signed long long int64_t;
+
 #endif
