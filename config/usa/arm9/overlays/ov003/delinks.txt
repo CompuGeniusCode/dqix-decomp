@@ -5,3 +5,88 @@
     .data       start:0x0217fc80 end:0x02180ca0 kind:data align:32
     .bss        start:0x02180ca0 end:0x02180d40 kind:bss align:32
 
+
+
+src/Combat/Overlay_3/ClearFieldsIfZero_0215385c.cpp:
+    complete
+    .text start:0x0215385c end:0x02153874
+
+
+src/Combat/Overlay_3/ClearStruct_0215e4c8.cpp:
+    complete
+    .text start:0x0215e4c8 end:0x0215e4e4
+
+
+src/Combat/Overlay_3/CountNonZeroEntries_0215570c.cpp:
+    complete
+    .text start:0x0215570c end:0x02155740
+
+
+src/Combat/Overlay_3/GetArrayEntryByIndex_02156034.cpp:
+    complete
+    .text start:0x02156034 end:0x02156054
+
+
+src/Combat/Overlay_3/IsFieldEq3At_021538e0.cpp:
+    complete
+    .text start:0x021538e0 end:0x021538f4
+
+
+src/Combat/Overlay_3/OffsetByIndexTimes16_02155e14.cpp:
+    complete
+    .text start:0x02155e14 end:0x02155e38
+
+
+src/Combat/Overlay_3/ResetFields_0215873c.cpp:
+    complete
+    .text start:0x0215873c end:0x02158754
+
+
+src/Combat/Overlay_3/ResetStruct_0215e6d8.cpp:
+    complete
+    .text start:0x0215e6d8 end:0x0215e6f8
+
+
+src/Combat/Overlay_3/SetAndMulField_0215ca90.cpp:
+    complete
+    .text start:0x0215ca90 end:0x0215caa4
+
+
+src/Combat/Overlay_3/SetFlag8At_02159240.cpp:
+    complete
+    .text start:0x02159240 end:0x02159250
+
+
+src/Combat/Overlay_3/SetFlag_02158a50_02158a50.cpp:
+    complete
+    .text start:0x02158a50 end:0x02158a84
+
+
+src/Combat/Overlay_3/SetState5_0215ee68.cpp:
+    complete
+    .text start:0x0215ee68 end:0x0215ee88
+
+
+src/Combat/Overlay_3/SetSubstructState1_0215ee88.cpp:
+    complete
+    .text start:0x0215ee88 end:0x0215eea0
+
+
+src/Combat/Overlay_3/SetSubstructState4_0215eea0.cpp:
+    complete
+    .text start:0x0215eea0 end:0x0215eeb8
+
+
+src/Combat/Overlay_3/SetSubstructState8_0215ef34.cpp:
+    complete
+    .text start:0x0215ef34 end:0x0215ef4c
+
+
+src/Combat/Overlay_3/StoreResultIfNonZero_0215f4e4.cpp:
+    complete
+    .text start:0x0215f4e4 end:0x0215f4fc
+
+
+src/Combat/Overlay_3/ToggleState1e_0215ee44.cpp:
+    complete
+    .text start:0x0215ee44 end:0x0215ee68
