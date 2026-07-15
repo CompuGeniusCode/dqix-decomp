@@ -1,0 +1,7 @@
+#include <globaldefs.h>
+
+// USA: func_ov011_021861e4
+ARM void SetHWReg400000e(int screenSize, int colorMode, int screenBase, int charBase) {
+    unsigned short* reg = (unsigned short*)0x400000e;
+    *reg = (*reg & 0x43) | (screenSize << 0xe) | (colorMode << 0x7) | (screenBase << 0x8) | (charBase << 0x2);
+}

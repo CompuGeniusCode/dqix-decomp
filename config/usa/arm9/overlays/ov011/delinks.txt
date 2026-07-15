@@ -74,3 +74,88 @@ src/Combat/Overlay_11/SetXY1c4_02184bf0.cpp:
 src/Combat/Overlay_11/StoreGlobalHalf2_02184c00.cpp:
     complete
     .text start:0x02184c00 end:0x02184c14
+
+
+src/Combat/Overlay_11/InitField20And34_0218513c.cpp:
+    complete
+    .text start:0x0218513c end:0x0218515c
+
+
+src/Combat/Overlay_11/InitObj02185110.cpp:
+    complete
+    .text start:0x02185110 end:0x0218513c
+
+
+src/Combat/Overlay_11/InitObjWithVTable_02185ce0.cpp:
+    complete
+    .text start:0x02185ce0 end:0x02185d04
+
+
+src/Combat/Overlay_11/SetBg3Priority_021863d0.cpp:
+    complete
+    .text start:0x021863d0 end:0x021863ec
+
+
+src/Combat/Overlay_11/SetBg4Priority_021863b4.cpp:
+    complete
+    .text start:0x021863b4 end:0x021863d0
+
+
+src/Combat/Overlay_11/SetBg5Priority_02186398.cpp:
+    complete
+    .text start:0x02186398 end:0x021863b4
+
+
+src/Combat/Overlay_11/SetBg6Priority_0218637c.cpp:
+    complete
+    .text start:0x0218637c end:0x02186398
+
+
+src/Combat/Overlay_11/SetBg7Priority_02186360.cpp:
+    complete
+    .text start:0x02186360 end:0x0218637c
+
+
+src/Combat/Overlay_11/SetField18cThenReset_021855cc.cpp:
+    complete
+    .text start:0x021855cc end:0x02185600
+
+
+src/Combat/Overlay_11/SetHWReg4000008_02186270.cpp:
+    complete
+    .text start:0x02186270 end:0x021862a4
+
+
+src/Combat/Overlay_11/SetHWReg400000a_0218623c.cpp:
+    complete
+    .text start:0x0218623c end:0x02186270
+
+
+src/Combat/Overlay_11/SetHWReg400000c.cpp:
+    complete
+    .text start:0x02186210 end:0x0218623c
+
+
+src/Combat/Overlay_11/SetHWReg400000e.cpp:
+    complete
+    .text start:0x021861e4 end:0x02186210
+
+
+src/Combat/Overlay_11/SetHWReg4001008_021861b0.cpp:
+    complete
+    .text start:0x021861b0 end:0x021861e4
+
+
+src/Combat/Overlay_11/SetHWReg400100a_0218617c.cpp:
+    complete
+    .text start:0x0218617c end:0x021861b0
+
+
+src/Combat/Overlay_11/SetSubBg2Control02186150.cpp:
+    complete
+    .text start:0x02186150 end:0x0218617c
+
+
+src/Combat/Overlay_11/SetSubBg3Control02186124.cpp:
+    complete
+    .text start:0x02186124 end:0x02186150
