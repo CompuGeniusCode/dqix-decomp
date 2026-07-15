@@ -5,3 +5,93 @@
     .data       start:0x021ef3c0 end:0x021ef960 kind:data align:32
     .bss        start:0x021ef960 end:0x021ef9e0 kind:bss align:32
 
+
+
+src/Combat/Overlay_25/AdjustIndex_021dfbd4.cpp:
+    complete
+    .text start:0x021dfbd4 end:0x021dfbfc
+
+
+src/Combat/Overlay_25/CallHandler021e4eac.cpp:
+    complete
+    .text start:0x021e4eac end:0x021e4ec8
+
+
+src/Combat/Overlay_25/CallWithGlobalPtr021e4ec8.cpp:
+    complete
+    .text start:0x021e4ec8 end:0x021e4ee4
+
+
+src/Combat/Overlay_25/CallWithGlobalPtr021e4ee4.cpp:
+    complete
+    .text start:0x021e4ee4 end:0x021e4f00
+
+
+src/Combat/Overlay_25/CheckField0218b5b0Not0203b3c0_021e58d4.cpp:
+    complete
+    .text start:0x021e58d4 end:0x021e58f0
+
+
+src/Combat/Overlay_25/CopyThreeShorts021ded84.cpp:
+    complete
+    .text start:0x021ded84 end:0x021deda0
+
+
+src/Combat/Overlay_25/DispatchEvent021e58b4.cpp:
+    complete
+    .text start:0x021e58b4 end:0x021e58d4
+
+
+src/Combat/Overlay_25/DispatchShortEvent021e49e0.cpp:
+    complete
+    .text start:0x021e49e0 end:0x021e4a00
+
+
+src/Combat/Overlay_25/FindLastNode021df5cc.cpp:
+    complete
+    .text start:0x021df5cc end:0x021df5e4
+
+
+src/Combat/Overlay_25/IsFieldZero_021e2494.cpp:
+    complete
+    .text start:0x021e2494 end:0x021e24a8
+
+
+src/Combat/Overlay_25/PushFrontNode021e23d0.cpp:
+    complete
+    .text start:0x021e23d0 end:0x021e23e8
+
+
+src/Combat/Overlay_25/ResetFields_021de110.cpp:
+    complete
+    .text start:0x021de110 end:0x021de124
+
+
+src/Combat/Overlay_25/ResetFields_021df554.cpp:
+    complete
+    .text start:0x021df554 end:0x021df568
+
+
+src/Combat/Overlay_25/ResetFields_021e20d8.cpp:
+    complete
+    .text start:0x021e20d8 end:0x021e20ec
+
+
+src/Combat/Overlay_25/ResetStruct_021e3158.cpp:
+    complete
+    .text start:0x021e3158 end:0x021e3178
+
+
+src/Combat/Overlay_25/SetField021e5ff0.cpp:
+    complete
+    .text start:0x021e5ff0 end:0x021e6010
+
+
+src/Combat/Overlay_25/SetField021e6010.cpp:
+    complete
+    .text start:0x021e6010 end:0x021e6030
+
+
+src/Combat/Overlay_25/SetFlagBit_021e4a90_021e4a90.cpp:
+    complete
+    .text start:0x021e4a90 end:0x021e4aac
