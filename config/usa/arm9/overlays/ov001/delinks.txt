@@ -195,3 +195,83 @@ src/Combat/Overlay_1/SetArrVal0215aaa8.cpp:
 src/Combat/Overlay_1/SetBattleFlagField5cac_0215b040.cpp:
     complete
     .text start:0x0215b040 end:0x0215b058
+
+
+src/Combat/Overlay_1/CallAndReturnTrue0215ef44.cpp:
+    complete
+    .text start:0x0215ef44 end:0x0215ef54
+
+
+src/Combat/Overlay_1/ClearGlobalField1584_0215fef4.cpp:
+    complete
+    .text start:0x0215fef4 end:0x0215ff10
+
+
+src/Combat/Overlay_1/EnqueueEventType11_0215b668.cpp:
+    complete
+    .text start:0x0215b668 end:0x0215b684
+
+
+src/Combat/Overlay_1/EnqueueEventType12_0215b684.cpp:
+    complete
+    .text start:0x0215b684 end:0x0215b6a0
+
+
+src/Combat/Overlay_1/EnqueueEventType13_0215b6a0.cpp:
+    complete
+    .text start:0x0215b6a0 end:0x0215b6bc
+
+
+src/Combat/Overlay_1/EnqueueEventType14_0215b6bc.cpp:
+    complete
+    .text start:0x0215b6bc end:0x0215b6d8
+
+
+src/Combat/Overlay_1/EnqueueEventType15_0215b6d8.cpp:
+    complete
+    .text start:0x0215b6d8 end:0x0215b6f4
+
+
+src/Combat/Overlay_1/EnqueueEventType16_0215b6f4.cpp:
+    complete
+    .text start:0x0215b6f4 end:0x0215b710
+
+
+src/Combat/Overlay_1/GetNibbleAt56b.cpp:
+    complete
+    .text start:0x021612ac end:0x021612c8
+
+
+src/Combat/Overlay_1/IncrementCounterBy1_021622f0.cpp:
+    complete
+    .text start:0x021622f0 end:0x02162308
+
+
+src/Combat/Overlay_1/IncrementCounterBy2_02162308.cpp:
+    complete
+    .text start:0x02162308 end:0x02162320
+
+
+src/Combat/Overlay_1/IncrementCounterBy3_02162320.cpp:
+    complete
+    .text start:0x02162320 end:0x02162338
+
+
+src/Combat/Overlay_1/SetByteField490_021609e4.cpp:
+    complete
+    .text start:0x021609e4 end:0x02160a00
+
+
+src/Combat/Overlay_1/SetGlobalFieldByte19c1_0215e920.cpp:
+    complete
+    .text start:0x0215e920 end:0x0215e938
+
+
+src/Combat/Overlay_1/SetSomeField0_0215f2e8.cpp:
+    complete
+    .text start:0x0215f2e8 end:0x0215f304
+
+
+src/Combat/Overlay_1/SetSomeField24_0215e0c0.cpp:
+    complete
+    .text start:0x0215e0c0 end:0x0215e0dc
