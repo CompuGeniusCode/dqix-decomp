@@ -70,3 +70,103 @@ src/Combat/Overlay_24/ScaleByPoint7_021d92f8.cpp:
 src/Combat/Overlay_24/ScaleByPoint8_021d9060.cpp:
     complete
     .text start:0x021d9060 end:0x021d9084
+
+
+src/Combat/Overlay_24/IsCombatantFlag2Mask2048_021e7ba8.cpp:
+    complete
+    .text start:0x021e7ba8 end:0x021e7bc0
+
+
+src/Combat/Overlay_24/IsCombatantFlag2Mask32_021e67b0.cpp:
+    complete
+    .text start:0x021e67b0 end:0x021e67c8
+
+
+src/Combat/Overlay_24/IsCombatantFlag2Mask512_021eadfc.cpp:
+    complete
+    .text start:0x021eadfc end:0x021eae14
+
+
+src/Combat/Overlay_24/IsCombatantFlag2Mask8192_021e6798.cpp:
+    complete
+    .text start:0x021e6798 end:0x021e67b0
+
+
+src/Combat/Overlay_24/IsCombatantFlagMask134217728_021edbc0.cpp:
+    complete
+    .text start:0x021edbc0 end:0x021edbd8
+
+
+src/Combat/Overlay_24/IsCombatantFlagMask268435456_021edbd8.cpp:
+    complete
+    .text start:0x021edbd8 end:0x021edbf0
+
+
+src/Combat/Overlay_24/IsCombatantFlagMask512_021eda60.cpp:
+    complete
+    .text start:0x021eda60 end:0x021eda78
+
+
+src/Combat/Overlay_24/IsCombatantFlagMask536870912_021edbf0.cpp:
+    complete
+    .text start:0x021edbf0 end:0x021edc08
+
+
+src/Combat/Overlay_24/IsFlagBit1048576Set_021edc20.cpp:
+    complete
+    .text start:0x021edc20 end:0x021edc38
+
+
+src/Combat/Overlay_24/IsFlagBit1073741824Set_021edc50.cpp:
+    complete
+    .text start:0x021edc50 end:0x021edc68
+
+
+src/Combat/Overlay_24/IsFlagBit12Field18Set_021e05e4.cpp:
+    complete
+    .text start:0x021e05e4 end:0x021e05fc
+
+
+src/Combat/Overlay_24/IsFlagBit2097152Set_021edc38.cpp:
+    complete
+    .text start:0x021edc38 end:0x021edc50
+
+
+src/Combat/Overlay_24/IsFlagBit2147483648Set_021edc68.cpp:
+    complete
+    .text start:0x021edc68 end:0x021edc80
+
+
+src/Combat/Overlay_24/IsFlagBit22Set_021e47dc.cpp:
+    complete
+    .text start:0x021e47dc end:0x021e47f4
+
+
+src/Combat/Overlay_24/IsFlagBit4Field18Set_021df704.cpp:
+    complete
+    .text start:0x021df704 end:0x021df71c
+
+
+src/Combat/Overlay_24/IsFlagBit67108864Set_021edc08.cpp:
+    complete
+    .text start:0x021edc08 end:0x021edc20
+
+
+src/Combat/Overlay_24/IsFlagBit6Set_021df6ec.cpp:
+    complete
+    .text start:0x021df6ec end:0x021df704
+
+
+src/Combat/Overlay_24/IsState4_021edc80.cpp:
+    complete
+    .text start:0x021edc80 end:0x021edca4
+
+
+src/Combat/Overlay_24/IsState5_021edca4.cpp:
+    complete
+    .text start:0x021edca4 end:0x021edcc8
+
+
+src/Combat/Overlay_24/SetBytelag_021e57c0_021e57c0.cpp:
+    complete
+    .text start:0x021e57c0 end:0x021e57e0
