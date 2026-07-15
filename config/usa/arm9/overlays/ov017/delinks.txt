@@ -1065,3 +1065,93 @@ src/Combat/Overlay_17/ResetBattleScaleField_021c1dfc.cpp:
 src/Combat/Overlay_17/SetNodeStatus2_021b66f0.cpp:
     complete
     .text start:0x021b66f0 end:0x021b6728
+
+
+src/Combat/Overlay_17/CallField6acPtrCIfFieldMatch_021cbc0c.cpp:
+    complete
+    .text start:0x021cbc0c end:0x021cbc48
+
+
+src/Combat/Overlay_17/CallHandlerIfFieldMatch_021ce458.cpp:
+    complete
+    .text start:0x021ce458 end:0x021ce494
+
+
+src/Combat/Overlay_17/DispatchBitfieldHandler_021c912c.cpp:
+    complete
+    .text start:0x021c912c end:0x021c9168
+
+
+src/Combat/Overlay_17/EnqueueEventTag127_021cbeb0.cpp:
+    complete
+    .text start:0x021cbeb0 end:0x021cbeec
+
+
+src/Combat/Overlay_17/EnqueueEventTag128_021cbf18.cpp:
+    complete
+    .text start:0x021cbf18 end:0x021cbf54
+
+
+src/Combat/Overlay_17/EnqueueEventTag129_021cbfb8.cpp:
+    complete
+    .text start:0x021cbfb8 end:0x021cbff4
+
+
+src/Combat/Overlay_17/EnqueueEventTag140_021d0aa8.cpp:
+    complete
+    .text start:0x021d0aa8 end:0x021d0ae4
+
+
+src/Combat/Overlay_17/EnqueueEventTag22_021cfed0.cpp:
+    complete
+    .text start:0x021cfed0 end:0x021cff0c
+
+
+src/Combat/Overlay_17/EnqueueEventTag57WithAB_021cf4b0.cpp:
+    complete
+    .text start:0x021cf4b0 end:0x021cf4e8
+
+
+src/Combat/Overlay_17/EnqueueEventTag87_021c9b20.cpp:
+    complete
+    .text start:0x021c9b20 end:0x021c9b58
+
+
+src/Combat/Overlay_17/EnqueueEventTag90_021ca2a0.cpp:
+    complete
+    .text start:0x021ca2a0 end:0x021ca2d8
+
+
+src/Combat/Overlay_17/EnqueueEventTag99_021cbbd0.cpp:
+    complete
+    .text start:0x021cbbd0 end:0x021cbc0c
+
+
+src/Combat/Overlay_17/EnqueueEventTag9_021cc68c.cpp:
+    complete
+    .text start:0x021cc68c end:0x021cc6c4
+
+
+src/Combat/Overlay_17/MaybeResetHandle_021c95b4.cpp:
+    complete
+    .text start:0x021c95b4 end:0x021c95ec
+
+
+src/Combat/Overlay_17/RemoveSlotIfFlagged_021d0164.cpp:
+    complete
+    .text start:0x021d0164 end:0x021d0198
+
+
+src/Combat/Overlay_17/SetGrottoUnknown3And4_021cfcb4.cpp:
+    complete
+    .text start:0x021cfcb4 end:0x021cfcec
+
+
+src/Combat/Overlay_17/SetHalfFields__021d1c84_021d1c84.cpp:
+    complete
+    .text start:0x021d1c84 end:0x021d1cb8
+
+
+src/Combat/Overlay_17/SetInnerField60IfBitAndPtr_021d246c.cpp:
+    complete
+    .text start:0x021d246c end:0x021d24a4
