@@ -960,3 +960,8 @@ src/Combat/Overlay_1/SetOrClearField4Bit800_02163128.cpp:
 src/Combat/Overlay_1/TryForwardByIndex_02163a18.cpp:
     complete
     .text start:0x02163a18 end:0x02163a5c
+
+
+src/Combat/Overlay_1/SetFlagFromField424Nonzero_02163c28.cpp:
+    complete
+    .text start:0x02163c28 end:0x02163c60
