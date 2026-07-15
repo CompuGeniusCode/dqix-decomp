@@ -1240,3 +1240,68 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_02231968.cpp:
 src/Combat/Overlay_31/SetField_022274c0_022274c0_02231a78.cpp:
     complete
     .text start:0x02231a78 end:0x02231a9c
+
+
+src/Combat/Overlay_31/CheckField14NonZero_02236f68.cpp:
+    complete
+    .text start:0x02236f68 end:0x02236f88
+
+
+src/Combat/Overlay_31/IsKeyInputBit15Set_022348ac.cpp:
+    complete
+    .text start:0x022348ac end:0x022348cc
+
+
+src/Combat/Overlay_31/IssueSlotCommand3_17_02239e48.cpp:
+    complete
+    .text start:0x02239e48 end:0x02239e68
+
+
+src/Combat/Overlay_31/RunTagIfShort2Is8_0223a040.cpp:
+    complete
+    .text start:0x0223a040 end:0x0223a060
+
+
+src/Combat/Overlay_31/SetField18_02222e98_02233700.cpp:
+    complete
+    .text start:0x02233700 end:0x02233720
+
+
+src/Combat/Overlay_31/SetField18_02222e98_02234770.cpp:
+    complete
+    .text start:0x02234770 end:0x02234790
+
+
+src/Combat/Overlay_31/SetField54IfTagNot9Or10.cpp:
+    complete
+    .text start:0x022393e4 end:0x02239404
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_022324e8.cpp:
+    complete
+    .text start:0x022324e8 end:0x02232508
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02234dc4.cpp:
+    complete
+    .text start:0x02234dc4 end:0x02234de4
+
+
+src/Combat/Overlay_31/TailCallField800_0223da38.cpp:
+    complete
+    .text start:0x0223da38 end:0x0223da58
+
+
+src/Combat/Overlay_31/TailCallOffset4c4_02235eac.cpp:
+    complete
+    .text start:0x02235eac end:0x02235ecc
+
+
+src/Combat/Overlay_31/TailCallOffset4c8_02235ecc.cpp:
+    complete
+    .text start:0x02235ecc end:0x02235eec
+
+
+src/Combat/Overlay_31/TailCallOffset4cc_02235eec.cpp:
+    complete
+    .text start:0x02235eec end:0x02235f0c
