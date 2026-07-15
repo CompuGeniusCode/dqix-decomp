@@ -1480,3 +1480,8 @@ src/Combat/Overlay_31/TailCallWithField648Ac8_0223ac14.cpp:
 src/Combat/Overlay_31/TryOp02240050.cpp:
     complete
     .text start:0x02240050 end:0x02240074
+
+
+src/Combat/Overlay_31/GetField24_022412e8.cpp:
+    complete
+    .text start:0x022412e8 end:0x0224130c
