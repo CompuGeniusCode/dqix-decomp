@@ -600,3 +600,43 @@ src/Combat/Overlay_24/SelectResultCode_021e9464.cpp:
 src/Combat/Overlay_24/SetFlagOrScale99Percent_021d95e0.cpp:
     complete
     .text start:0x021d95e0 end:0x021d9654
+
+
+src/Combat/Overlay_24/CheckAnyBuffBelow2_021f5c80.cpp:
+    complete
+    .text start:0x021f5c80 end:0x021f5ce4
+
+
+src/Combat/Overlay_24/FindByKeyIndexed_021f69b4.cpp:
+    complete
+    .text start:0x021f69b4 end:0x021f6a1c
+
+
+src/Combat/Overlay_24/InitElemArray4_021f68c8.cpp:
+    complete
+    .text start:0x021f68c8 end:0x021f691c
+
+
+src/Combat/Overlay_24/ScaleStatsIfType1_021f6bf0.cpp:
+    complete
+    .text start:0x021f6bf0 end:0x021f6c40
+
+
+src/Combat/Overlay_24/ScaleStatsIfType3_021f6c70.cpp:
+    complete
+    .text start:0x021f6c70 end:0x021f6cc0
+
+
+src/Combat/Overlay_24/ScaleXYRoundIfField4Eq2_021f6a88.cpp:
+    complete
+    .text start:0x021f6a88 end:0x021f6ae8
+
+
+src/Combat/Overlay_24/TryConvertAndCopy_021f18a0.cpp:
+    complete
+    .text start:0x021f18a0 end:0x021f18fc
+
+
+src/Combat/Overlay_24/TryConvertAndForward_021f1844.cpp:
+    complete
+    .text start:0x021f1844 end:0x021f18a0
