@@ -409,3 +409,43 @@ src/Combat/Overlay_23/SetFields5cAnd5e_021f65b4.cpp:
 src/Combat/Overlay_23/SetOrClearBit10At400_38_021f2348.cpp:
     complete
     .text start:0x021f2348 end:0x021f2368
+
+
+src/Combat/Overlay_23/CallFunc02035a2cIfNotFlag3Set_021fcfe8.cpp:
+    complete
+    .text start:0x021fcfe8 end:0x021fd008
+
+
+src/Combat/Overlay_23/ClearBuffer_021f9c0c.cpp:
+    complete
+    .text start:0x021f9c0c end:0x021f9c30
+
+
+src/Combat/Overlay_23/DestroySafeAllocator_021fbe4c.cpp:
+    complete
+    .text start:0x021fbe4c end:0x021fbe70
+
+
+src/Combat/Overlay_23/GetEntryPtr_021fa854.cpp:
+    complete
+    .text start:0x021fa854 end:0x021fa87c
+
+
+src/Combat/Overlay_23/GetValOrTwo_021fd2f8.cpp:
+    complete
+    .text start:0x021fd2f8 end:0x021fd318
+
+
+src/Combat/Overlay_23/InitAndCopy3Words_021f8c1c.cpp:
+    complete
+    .text start:0x021f8c1c end:0x021f8c48
+
+
+src/Combat/Overlay_23/SetFieldE2AndMaybeCall_021f8944.cpp:
+    complete
+    .text start:0x021f8944 end:0x021f8960
+
+
+src/Combat/Overlay_23/SetFieldsAndInit_021fba80.cpp:
+    complete
+    .text start:0x021fba80 end:0x021fbaac
