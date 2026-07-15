@@ -874,3 +874,38 @@ src/Combat/Overlay_23/SetFixed12PairZeroThird_021fbc68.cpp:
 src/Combat/Overlay_23/SetShortsFromDiv4096_021fbc24.cpp:
     complete
     .text start:0x021fbc24 end:0x021fbc68
+
+
+src/Combat/Overlay_23/InitEvent14_021fcdd4.cpp:
+    complete
+    .text start:0x021fcdd4 end:0x021fce28
+
+
+src/Combat/Overlay_23/InitEventD_021fd1e0.cpp:
+    complete
+    .text start:0x021fd1e0 end:0x021fd234
+
+
+src/Combat/Overlay_23/SetFixed12PairZeroThird_021fc4b4.cpp:
+    complete
+    .text start:0x021fc4b4 end:0x021fc4fc
+
+
+src/Combat/Overlay_23/SetFixed12PairZeroThird_021fd3d8.cpp:
+    complete
+    .text start:0x021fd3d8 end:0x021fd420
+
+
+src/Combat/Overlay_23/SetShortsFromDiv4096_021fc470.cpp:
+    complete
+    .text start:0x021fc470 end:0x021fc4b4
+
+
+src/Combat/Overlay_23/SetShortsFromDiv4096_021fd394.cpp:
+    complete
+    .text start:0x021fd394 end:0x021fd3d8
+
+
+src/Combat/Overlay_23/SomeFunc_021fc2b8.cpp:
+    complete
+    .text start:0x021fc2b8 end:0x021fc30c
