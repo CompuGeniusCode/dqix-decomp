@@ -260,3 +260,63 @@ src/Combat/Overlay_3/SetPowCnt1Bit15_0217c2a0.cpp:
 src/Combat/Overlay_3/SetPowCnt1Bit15_0217eea8.cpp:
     complete
     .text start:0x0217eea8 end:0x0217eec4
+
+
+src/Combat/Overlay_3/AddCappedFieldF6c_0215b580.cpp:
+    complete
+    .text start:0x0215b580 end:0x0215b5c4
+
+
+src/Combat/Overlay_3/AppendFieldTwice_02159290.cpp:
+    complete
+    .text start:0x02159290 end:0x021592d8
+
+
+src/Combat/Overlay_3/AppendFormattedNumber_02158140.cpp:
+    complete
+    .text start:0x02158140 end:0x02158184
+
+
+src/Combat/Overlay_3/CheckStateFlag0215b370.cpp:
+    complete
+    .text start:0x0215b370 end:0x0215b3bc
+
+
+src/Combat/Overlay_3/DecrementFieldClampZero_0215c300.cpp:
+    complete
+    .text start:0x0215c300 end:0x0215c32c
+
+
+src/Combat/Overlay_3/DecrementFieldClampZero_0215e27c.cpp:
+    complete
+    .text start:0x0215e27c end:0x0215e2a8
+
+
+src/Combat/Overlay_3/InitBuffers_021580a0.cpp:
+    complete
+    .text start:0x021580a0 end:0x021580d8
+
+
+src/Combat/Overlay_3/IsCombatantFlagit2Set_02155f88_02155f88.cpp:
+    complete
+    .text start:0x02155f88 end:0x02155fc0
+
+
+src/Combat/Overlay_3/IsFlagStateOrField98Eq2_0215dd00.cpp:
+    complete
+    .text start:0x0215dd00 end:0x0215dd3c
+
+
+src/Combat/Overlay_3/IsTableValueNot99_02155ffc.cpp:
+    complete
+    .text start:0x02155ffc end:0x02156034
+
+
+src/Combat/Overlay_3/MatchesArrayEntry_02155f40.cpp:
+    complete
+    .text start:0x02155f40 end:0x02155f88
+
+
+src/Combat/Overlay_3/ResetAndApply0215be20.cpp:
+    complete
+    .text start:0x0215be20 end:0x0215be70
