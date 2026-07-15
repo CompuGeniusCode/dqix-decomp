@@ -780,3 +780,13 @@ src/Combat/Overlay_1/SetSubBg3ControlFields_021628d4.cpp:
 src/Combat/Overlay_1/StoreField_02161d2c_02161d2c.cpp:
     complete
     .text start:0x02161d2c end:0x02161d54
+
+
+src/Combat/Overlay_1/SetQueueEntryChecked_02164214.cpp:
+    complete
+    .text start:0x02164214 end:0x02164248
+
+
+src/Combat/Overlay_1/SetQueueEntryChecked_02164248.cpp:
+    complete
+    .text start:0x02164248 end:0x0216427c
