@@ -169,3 +169,38 @@ src/Combat/Overlay_2/DecrementOrClearCounterC74_0216c628.cpp:
 src/Combat/Overlay_2/Reset02168c38.cpp:
     complete
     .text start:0x02168c38 end:0x02168ca8
+
+
+src/Combat/Overlay_2/BuildFlaggedCombatantSlotList_02154f4c.cpp:
+    complete
+    .text start:0x02154f4c end:0x02155024
+
+
+src/Combat/Overlay_2/CheckAndClearEntryStatus_0215b7d0.cpp:
+    complete
+    .text start:0x0215b7d0 end:0x0215b814
+
+
+src/Combat/Overlay_2/ClearFlagBit1IfEnabled_02156178.cpp:
+    complete
+    .text start:0x02156178 end:0x021561b0
+
+
+src/Combat/Overlay_2/ClearMatchingEntry_02156ff0.cpp:
+    complete
+    .text start:0x02156ff0 end:0x02157030
+
+
+src/Combat/Overlay_2/GetInventoryItemFlagField_02157500.cpp:
+    complete
+    .text start:0x02157500 end:0x0215753c
+
+
+src/Combat/Overlay_2/InitBattleTag0215bf34.cpp:
+    complete
+    .text start:0x0215bf34 end:0x0215c028
+
+
+src/Combat/Overlay_2/SetPendingFlagAndSync_0215a878.cpp:
+    complete
+    .text start:0x0215a878 end:0x0215a8cc
