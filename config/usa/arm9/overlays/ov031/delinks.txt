@@ -1005,3 +1005,38 @@ src/Combat/Overlay_31/SetGlobal0224e540Field28_0220f0e4.cpp:
 src/Combat/Overlay_31/ZeroField164_02203250.cpp:
     complete
     .text start:0x02203250 end:0x02203270
+
+
+src/Combat/Overlay_31/CallWithZeroExtra_0223e218_022277e4.cpp:
+    complete
+    .text start:0x022277e4 end:0x02227804
+
+
+src/Combat/Overlay_31/ForwardToDataHandler_0222708c.cpp:
+    complete
+    .text start:0x0222708c end:0x022270ac
+
+
+src/Combat/Overlay_31/IsPtr02290c44Null_02227840.cpp:
+    complete
+    .text start:0x02227840 end:0x0222785c
+
+
+src/Combat/Overlay_31/SetField18_02222e98_022283d8.cpp:
+    complete
+    .text start:0x022283d8 end:0x022283f8
+
+
+src/Combat/Overlay_31/SetField18_02222e98_02228b0c.cpp:
+    complete
+    .text start:0x02228b0c end:0x02228b2c
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02228960.cpp:
+    complete
+    .text start:0x02228960 end:0x02228980
+
+
+src/Combat/Overlay_31/TestFieldRestBits_02227570.cpp:
+    complete
+    .text start:0x02227570 end:0x0222758c
