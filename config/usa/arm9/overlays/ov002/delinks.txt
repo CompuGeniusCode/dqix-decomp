@@ -84,3 +84,78 @@ src/Combat/Overlay_2/SetTag2aIfNotAlreadyFlagged_02155024.cpp:
 src/Combat/Overlay_2/SetupTargetAndApplyState021575d4.cpp:
     complete
     .text start:0x021575d4 end:0x02157634
+
+
+src/Combat/Overlay_2/AppendCursorFrameTag_02160190.cpp:
+    complete
+    .text start:0x02160190 end:0x021601e0
+
+
+src/Combat/Overlay_2/AppendField0215f644.cpp:
+    complete
+    .text start:0x0215f644 end:0x0215f6a4
+
+
+src/Combat/Overlay_2/AppendFieldTags021601e0.cpp:
+    complete
+    .text start:0x021601e0 end:0x02160274
+
+
+src/Combat/Overlay_2/AppendTaggedString_0215b8c8.cpp:
+    complete
+    .text start:0x0215b8c8 end:0x0215b918
+
+
+src/Combat/Overlay_2/CheckFlagOrThreshold_02161b48.cpp:
+    complete
+    .text start:0x02161b48 end:0x02161b98
+
+
+src/Combat/Overlay_2/CopyByteField0215aa14.cpp:
+    complete
+    .text start:0x0215aa14 end:0x0215aa5c
+
+
+src/Combat/Overlay_2/CopyByteField0215aa5c.cpp:
+    complete
+    .text start:0x0215aa5c end:0x0215aaa4
+
+
+src/Combat/Overlay_2/CopyPaletteEntry0215af64.cpp:
+    complete
+    .text start:0x0215af64 end:0x0215afb8
+
+
+src/Combat/Overlay_2/IsFlagAt130Bit0Set_0216364c.cpp:
+    complete
+    .text start:0x0216364c end:0x02163664
+
+
+src/Combat/Overlay_2/ResetAllocatorsAndClearFields0215b428.cpp:
+    complete
+    .text start:0x0215b428 end:0x0215b458
+
+
+src/Combat/Overlay_2/ResetAndRebuildEntries02160734.cpp:
+    complete
+    .text start:0x02160734 end:0x021607cc
+
+
+src/Combat/Overlay_2/SetElementStateOrCreate0215b918.cpp:
+    complete
+    .text start:0x0215b918 end:0x0215b9a4
+
+
+src/Combat/Overlay_2/SetOrClearByteC5Bit8_0216574c.cpp:
+    complete
+    .text start:0x0216574c end:0x02165764
+
+
+src/Combat/Overlay_2/SyncElementFlags0215b648.cpp:
+    complete
+    .text start:0x0215b648 end:0x0215b6c0
+
+
+src/Combat/Overlay_2/SyncModeIfChanged0215b268.cpp:
+    complete
+    .text start:0x0215b268 end:0x0215b2c8
