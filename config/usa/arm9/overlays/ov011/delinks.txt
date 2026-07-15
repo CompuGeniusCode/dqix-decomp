@@ -264,3 +264,53 @@ src/Combat/Overlay_11/SetDisplayCntPriorityField_02185720.cpp:
 src/Combat/Overlay_11/ValidateAndDispatchKey_02185948.cpp:
     complete
     .text start:0x02185948 end:0x0218598c
+
+
+src/Combat/Overlay_11/CallVTableFnAt212_021867cc.cpp:
+    complete
+    .text start:0x021867cc end:0x02186808
+
+
+src/Combat/Overlay_11/CallVTableFnAt68WithTaggedArgs_02186834.cpp:
+    complete
+    .text start:0x02186834 end:0x02186884
+
+
+src/Combat/Overlay_11/CallVTableFnAt76WithTaggedArgs_02186d90.cpp:
+    complete
+    .text start:0x02186d90 end:0x02186de0
+
+
+src/Combat/Overlay_11/CallVTableFnAt84WithTaggedArgs_02186de0.cpp:
+    complete
+    .text start:0x02186de0 end:0x02186e30
+
+
+src/Combat/Overlay_11/ClearFieldCBits_02187310.cpp:
+    complete
+    .text start:0x02187310 end:0x0218735c
+
+
+src/Combat/Overlay_11/DispatchIfType7ClearBuffer_02186c70.cpp:
+    complete
+    .text start:0x02186c70 end:0x02186cb8
+
+
+src/Combat/Overlay_11/ResetAllocatorIfFound_02186c28.cpp:
+    complete
+    .text start:0x02186c28 end:0x02186c70
+
+
+src/Combat/Overlay_11/SetFieldCBits_021872c8.cpp:
+    complete
+    .text start:0x021872c8 end:0x02187310
+
+
+src/Combat/Overlay_11/SetFlagBit1IfTagged_02186f74.cpp:
+    complete
+    .text start:0x02186f74 end:0x02186fc8
+
+
+src/Combat/Overlay_11/SetFlagBit4IfTagged_02186eb4.cpp:
+    complete
+    .text start:0x02186eb4 end:0x02186f08
