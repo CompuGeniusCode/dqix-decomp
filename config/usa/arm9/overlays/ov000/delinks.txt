@@ -1423,3 +1423,43 @@ src/Combat/Overlay_0/ComputeScaledRatio02167b5c.cpp:
 src/Combat/Overlay_0/LoadGPCFile02166008.cpp:
     complete
     .text start:0x02166008 end:0x02166070
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag0x38.cpp:
+    complete
+    .text start:0x0216b6ac end:0x0216b700
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag0x39.cpp:
+    complete
+    .text start:0x0216b700 end:0x0216b754
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag0x3f.cpp:
+    complete
+    .text start:0x0216b8ac end:0x0216b900
+
+
+src/Combat/Overlay_0/EnqueueEvent0x30.cpp:
+    complete
+    .text start:0x0216b26c end:0x0216b2bc
+
+
+src/Combat/Overlay_0/EnqueueEventFieldAdjusted0x29_0216ae70.cpp:
+    complete
+    .text start:0x0216ae70 end:0x0216aed0
+
+
+src/Combat/Overlay_0/EnqueueEventWithByteAndShortField0x2c.cpp:
+    complete
+    .text start:0x0216b110 end:0x0216b16c
+
+
+src/Combat/Overlay_0/EnqueueEventWithTwoByteAndShortField0x2f.cpp:
+    complete
+    .text start:0x0216b204 end:0x0216b26c
+
+
+src/Combat/Overlay_0/EnqueueEventWithTwoByteFields0x34.cpp:
+    complete
+    .text start:0x0216b408 end:0x0216b464
