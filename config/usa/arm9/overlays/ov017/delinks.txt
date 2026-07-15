@@ -795,3 +795,63 @@ src/Combat/Overlay_17/SetEntryAndAdvance2_021d4a98.cpp:
 src/Combat/Overlay_17/SetEntryAndAdvance3_021d4ab8.cpp:
     complete
     .text start:0x021d4ab8 end:0x021d4ad8
+
+
+src/Combat/Overlay_17/CallIndexedHandler_02195494.cpp:
+    complete
+    .text start:0x02195494 end:0x021954c4
+
+
+src/Combat/Overlay_17/CallListIfFlagsSet_02197528.cpp:
+    complete
+    .text start:0x02197528 end:0x0219755c
+
+
+src/Combat/Overlay_17/CheckFieldsAndReturn9OrBa_021b0490.cpp:
+    complete
+    .text start:0x021b0490 end:0x021b04c0
+
+
+src/Combat/Overlay_17/ClearFourEntries_02191b70.cpp:
+    complete
+    .text start:0x02191b70 end:0x02191ba0
+
+
+src/Combat/Overlay_17/ClearFourHalfwords_0219a644.cpp:
+    complete
+    .text start:0x0219a644 end:0x0219a674
+
+
+src/Combat/Overlay_17/DecrementClampCounter354_021a4e48.cpp:
+    complete
+    .text start:0x021a4e48 end:0x021a4e70
+
+
+src/Combat/Overlay_17/DecrementField38Clamped_021a85e8.cpp:
+    complete
+    .text start:0x021a85e8 end:0x021a8614
+
+
+src/Combat/Overlay_17/InitState37_021aeedc.cpp:
+    complete
+    .text start:0x021aeedc end:0x021aef0c
+
+
+src/Combat/Overlay_17/InitState6_021ab250.cpp:
+    complete
+    .text start:0x021ab250 end:0x021ab280
+
+
+src/Combat/Overlay_17/SetBg1ControlBits_02199964.cpp:
+    complete
+    .text start:0x02199964 end:0x02199998
+
+
+src/Combat/Overlay_17/SetBg2CntFull_021999b4.cpp:
+    complete
+    .text start:0x021999b4 end:0x021999e0
+
+
+src/Combat/Overlay_17/SetObjFieldIfFound_0219bed0.cpp:
+    complete
+    .text start:0x0219bed0 end:0x0219bf04
