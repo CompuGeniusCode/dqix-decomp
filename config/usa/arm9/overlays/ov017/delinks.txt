@@ -855,3 +855,63 @@ src/Combat/Overlay_17/SetBg2CntFull_021999b4.cpp:
 src/Combat/Overlay_17/SetObjFieldIfFound_0219bed0.cpp:
     complete
     .text start:0x0219bed0 end:0x0219bf04
+
+
+src/Combat/Overlay_17/CallIfField1cThenSetFlag_021babf8.cpp:
+    complete
+    .text start:0x021babf8 end:0x021bac24
+
+
+src/Combat/Overlay_17/CallIfField1cThenSetFlag_021c1238.cpp:
+    complete
+    .text start:0x021c1238 end:0x021c1264
+
+
+src/Combat/Overlay_17/CallIfField20ThenSetFlag_021baeb0.cpp:
+    complete
+    .text start:0x021baeb0 end:0x021baedc
+
+
+src/Combat/Overlay_17/CallIfField24ThenSetFlag_021b6b8c.cpp:
+    complete
+    .text start:0x021b6b8c end:0x021b6bb8
+
+
+src/Combat/Overlay_17/CopyFiveHalfwords_021bd35c.cpp:
+    complete
+    .text start:0x021bd35c end:0x021bd38c
+
+
+src/Combat/Overlay_17/HasFlagAt_021bf5f4_021bf5f4.cpp:
+    complete
+    .text start:0x021bf5f4 end:0x021bf628
+
+
+src/Combat/Overlay_17/InitAllocatorAndClearFields_021c0820.cpp:
+    complete
+    .text start:0x021c0820 end:0x021c0850
+
+
+src/Combat/Overlay_17/InitNodeAndInsertAt_021c1798_021c1798.cpp:
+    complete
+    .text start:0x021c1798 end:0x021c17cc
+
+
+src/Combat/Overlay_17/InitState40_021c0334.cpp:
+    complete
+    .text start:0x021c0334 end:0x021c0364
+
+
+src/Combat/Overlay_17/InitState53_021befe4.cpp:
+    complete
+    .text start:0x021befe4 end:0x021bf014
+
+
+src/Combat/Overlay_17/InitState66_021c1e40.cpp:
+    complete
+    .text start:0x021c1e40 end:0x021c1e6c
+
+
+src/Combat/Overlay_17/SetNameChecked_021b2ba0.cpp:
+    complete
+    .text start:0x021b2ba0 end:0x021b2bd0
