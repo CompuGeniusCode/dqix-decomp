@@ -1155,3 +1155,58 @@ src/Combat/Overlay_17/SetHalfFields__021d1c84_021d1c84.cpp:
 src/Combat/Overlay_17/SetInnerField60IfBitAndPtr_021d246c.cpp:
     complete
     .text start:0x021d246c end:0x021d24a4
+
+
+src/Combat/Overlay_17/CallHelperFourTimesWithSelf_0218f758.cpp:
+    complete
+    .text start:0x0218f758 end:0x0218f79c
+
+
+src/Combat/Overlay_17/FindNegativeEntry_021a11b4.cpp:
+    complete
+    .text start:0x021a11b4 end:0x021a11f4
+
+
+src/Combat/Overlay_17/InitObj0219a674.cpp:
+    complete
+    .text start:0x0219a674 end:0x0219a6b8
+
+
+src/Combat/Overlay_17/InitState28_021abb68.cpp:
+    complete
+    .text start:0x021abb68 end:0x021abba8
+
+
+src/Combat/Overlay_17/InitState60_021aa16c.cpp:
+    complete
+    .text start:0x021aa16c end:0x021aa1ac
+
+
+src/Combat/Overlay_17/ResetAndForward_021aaec8.cpp:
+    complete
+    .text start:0x021aaec8 end:0x021aaf08
+
+
+src/Combat/Overlay_17/ResetBattleScaleFieldAndDtor_021a79ac.cpp:
+    complete
+    .text start:0x021a79ac end:0x021a79f0
+
+
+src/Combat/Overlay_17/ResetBattleScaleFieldAndDtor_021a925c.cpp:
+    complete
+    .text start:0x021a925c end:0x021a92a0
+
+
+src/Combat/Overlay_17/ResetOverlayAndAllocator_0219bf74.cpp:
+    complete
+    .text start:0x0219bf74 end:0x0219bfb4
+
+
+src/Combat/Overlay_17/SetFlagAndCleanup_02195618.cpp:
+    complete
+    .text start:0x02195618 end:0x02195658
+
+
+src/Combat/Overlay_17/SetNodeFieldsAndInsert_021a120c.cpp:
+    complete
+    .text start:0x021a120c end:0x021a124c
