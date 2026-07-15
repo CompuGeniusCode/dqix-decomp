@@ -209,3 +209,8 @@ src/Combat/Overlay_11/SetByteFlag1cc_02186d78.cpp:
 src/Combat/Overlay_11/SetFieldFromGlobal998_021874b0.cpp:
     complete
     .text start:0x021874b0 end:0x021874d0
+
+
+src/Combat/Overlay_11/SetObjFields_021888ec.cpp:
+    complete
+    .text start:0x021888ec end:0x02188904

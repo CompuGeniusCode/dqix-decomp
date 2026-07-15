@@ -183,7 +183,7 @@ func_ov011_02188560 kind:function(arm,size=0xf8) addr:0x02188560
 func_ov011_02188658 kind:function(arm,size=0x11c) addr:0x02188658
 func_ov011_02188774 kind:function(arm,size=0x110) addr:0x02188774
 func_ov011_02188884 kind:function(arm,size=0x68) addr:0x02188884
-func_ov011_021888ec kind:function(arm,size=0x18) addr:0x021888ec
+_Z21SetObjFields_021888ecPv kind:function(arm,size=0x18) addr:0x021888ec
 data_ov011_02188904 kind:data(any) addr:0x02188904
 data_ov011_02188914 kind:data(any) addr:0x02188914
 data_ov011_02188934 kind:data(any) addr:0x02188934
