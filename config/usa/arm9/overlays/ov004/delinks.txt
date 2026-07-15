@@ -190,3 +190,8 @@ src/Combat/Overlay_4/SetFieldFlagValue91_0216a5e8.cpp:
 src/Combat/Overlay_4/SetOv011FieldTo_0216acd0_0216acd0.cpp:
     complete
     .text start:0x0216acd0 end:0x0216ace8
+
+
+src/Combat/Overlay_4/GetNodeIfKind6_02153944.cpp:
+    complete
+    .text start:0x02153944 end:0x02153978
