@@ -210,3 +210,93 @@ src/Combat/Overlay_4/SetOv023ThenOv011Field_0215cbec.cpp:
 src/Combat/Overlay_4/SetupPairAndEnqueue_0215cc14_0215cc14.cpp:
     complete
     .text start:0x0215cc14 end:0x0215cc40
+
+
+src/Combat/Overlay_4/CheckFieldAndEnqueue_021652bc_021652bc.cpp:
+    complete
+    .text start:0x021652bc end:0x021652e8
+
+
+src/Combat/Overlay_4/CheckFlag130ThenNotify_02162a9c.cpp:
+    complete
+    .text start:0x02162a9c end:0x02162acc
+
+
+src/Combat/Overlay_4/CheckNodeState6_0215e4c0.cpp:
+    complete
+    .text start:0x0215e4c0 end:0x0215e4e8
+
+
+src/Combat/Overlay_4/CopyThreeWords_0215e300.cpp:
+    complete
+    .text start:0x0215e300 end:0x0215e32c
+
+
+src/Combat/Overlay_4/DoInitResetOrder_02163408.cpp:
+    complete
+    .text start:0x02163408 end:0x0216342c
+
+
+src/Combat/Overlay_4/DoResetInitOrder_021633e4.cpp:
+    complete
+    .text start:0x021633e4 end:0x02163408
+
+
+src/Combat/Overlay_4/GetArrayEntry_0215e438.cpp:
+    complete
+    .text start:0x0215e438 end:0x0215e460
+
+
+src/Combat/Overlay_4/GetFlagBitFromField150_0215eb20.cpp:
+    complete
+    .text start:0x0215eb20 end:0x0215eb40
+
+
+src/Combat/Overlay_4/HasCombatantWithFlag_0215f74c_0215f74c.cpp:
+    complete
+    .text start:0x0215f74c end:0x0215f770
+
+
+src/Combat/Overlay_4/SetField38IfState8_0215e49c.cpp:
+    complete
+    .text start:0x0215e49c end:0x0215e4c0
+
+
+src/Combat/Overlay_4/SetField3aIfFound_021634b8.cpp:
+    complete
+    .text start:0x021634b8 end:0x021634dc
+
+
+src/Combat/Overlay_4/SetFieldFlagValue0_0215ccb0.cpp:
+    complete
+    .text start:0x0215ccb0 end:0x0215ccd4
+
+
+src/Combat/Overlay_4/SetFieldFlagValue1_0215ccd4.cpp:
+    complete
+    .text start:0x0215ccd4 end:0x0215ccf8
+
+
+src/Combat/Overlay_4/SetFieldFlagValue2_0215ccf8.cpp:
+    complete
+    .text start:0x0215ccf8 end:0x0215cd1c
+
+
+src/Combat/Overlay_4/SetFieldFlagValue3_0215cd1c.cpp:
+    complete
+    .text start:0x0215cd1c end:0x0215cd40
+
+
+src/Combat/Overlay_4/SetFieldFlagValue4_0215cd40.cpp:
+    complete
+    .text start:0x0215cd40 end:0x0215cd64
+
+
+src/Combat/Overlay_4/SetFieldFlagValue5_0215cd64.cpp:
+    complete
+    .text start:0x0215cd64 end:0x0215cd88
+
+
+src/Combat/Overlay_4/SetFieldFlagValue6_0215cd88.cpp:
+    complete
+    .text start:0x0215cd88 end:0x0215cdac
