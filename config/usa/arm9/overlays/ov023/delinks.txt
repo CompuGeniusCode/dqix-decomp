@@ -669,3 +669,63 @@ src/Combat/Overlay_23/SetHWReg400100a_021ec368.cpp:
 src/Combat/Overlay_23/StoreField4IfMatch_021f5788.cpp:
     complete
     .text start:0x021f5788 end:0x021f57c4
+
+
+src/Combat/Overlay_23/ApplyFieldsToObj_021fb640.cpp:
+    complete
+    .text start:0x021fb640 end:0x021fb680
+
+
+src/Combat/Overlay_23/ComputeExtents_021fd420.cpp:
+    complete
+    .text start:0x021fd420 end:0x021fd45c
+
+
+src/Combat/Overlay_23/DivModField26_021f9bdc.cpp:
+    complete
+    .text start:0x021f9bdc end:0x021f9c0c
+
+
+src/Combat/Overlay_23/FindFreeSlot_021fa03c.cpp:
+    complete
+    .text start:0x021fa03c end:0x021fa078
+
+
+src/Combat/Overlay_23/Find_021f6dd8.cpp:
+    complete
+    .text start:0x021f6dd8 end:0x021f6e10
+
+
+src/Combat/Overlay_23/GetFixed12PairAndZero_021f7d48.cpp:
+    complete
+    .text start:0x021f7d48 end:0x021f7d88
+
+
+src/Combat/Overlay_23/GetTableEntry_021f9b6c.cpp:
+    complete
+    .text start:0x021f9b6c end:0x021f9ba0
+
+
+src/Combat/Overlay_23/SetFieldsAndDispatch_021f7c68.cpp:
+    complete
+    .text start:0x021f7c68 end:0x021f7ca0
+
+
+src/Combat/Overlay_23/SetShortsFromDiv4096_021f8aec.cpp:
+    complete
+    .text start:0x021f8aec end:0x021f8b30
+
+
+src/Combat/Overlay_23/SetShortsFromDiv4096_021fb498.cpp:
+    complete
+    .text start:0x021fb498 end:0x021fb4dc
+
+
+src/Combat/Overlay_23/SetTwoFieldsZeroMid_021fb1dc.cpp:
+    complete
+    .text start:0x021fb1dc end:0x021fb21c
+
+
+src/Combat/Overlay_23/SetTwoFieldsZeroMid_021fb88c.cpp:
+    complete
+    .text start:0x021fb88c end:0x021fb8cc
