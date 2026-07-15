@@ -5,3 +5,48 @@
     .data       start:0x021d7340 end:0x021d82e0 kind:data align:32
     .bss        start:0x021d82e0 end:0x021d8a40 kind:bss align:32
 
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a1924.cpp:
+    complete
+    .text start:0x021a1924 end:0x021a193c
+
+
+src/Combat/Overlay_17/ClearByteAtPtr_02191b40.cpp:
+    complete
+    .text start:0x02191b40 end:0x02191b58
+
+
+src/Combat/Overlay_17/ClearTwoBytesAtField_02195748.cpp:
+    complete
+    .text start:0x02195748 end:0x02195760
+
+
+src/Combat/Overlay_17/GetByteAtPtrOrZero_02191b58.cpp:
+    complete
+    .text start:0x02191b58 end:0x02191b70
+
+
+src/Combat/Overlay_17/GetIndexedEntry_021a11f4.cpp:
+    complete
+    .text start:0x021a11f4 end:0x021a120c
+
+
+src/Combat/Overlay_17/HasFlagBit_0218d4ec.cpp:
+    complete
+    .text start:0x0218d4ec end:0x0218d500
+
+
+src/Combat/Overlay_17/IsCountAtLeast4_0219a370.cpp:
+    complete
+    .text start:0x0219a370 end:0x0219a388
+
+
+src/Combat/Overlay_17/SetFieldFromHelper491_02198f70.cpp:
+    complete
+    .text start:0x02198f70 end:0x02198f84
+
+
+src/Combat/Overlay_17/SetFlagBit_0218d4b8.cpp:
+    complete
+    .text start:0x0218d4b8 end:0x0218d4d0
