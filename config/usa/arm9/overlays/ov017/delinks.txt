@@ -230,3 +230,98 @@ src/Combat/Overlay_17/CopyPair_021d4a64.cpp:
 src/Combat/Overlay_17/SetLinkIfType3_021d6148.cpp:
     complete
     .text start:0x021d6148 end:0x021d615c
+
+
+src/Combat/Overlay_17/CallEnqueueEvent94IfFlag_021a5a68.cpp:
+    complete
+    .text start:0x021a5a68 end:0x021a5a88
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a9314.cpp:
+    complete
+    .text start:0x021a9314 end:0x021a932c
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021a5ab0.cpp:
+    complete
+    .text start:0x021a5ab0 end:0x021a5ad0
+
+
+src/Combat/Overlay_17/CallHelpersAndSetField253_021ab67c.cpp:
+    complete
+    .text start:0x021ab67c end:0x021ab698
+
+
+src/Combat/Overlay_17/CallIfField20_021a9998.cpp:
+    complete
+    .text start:0x021a9998 end:0x021a99b0
+
+
+src/Combat/Overlay_17/CallIfField20_021a99b0.cpp:
+    complete
+    .text start:0x021a99b0 end:0x021a99c8
+
+
+src/Combat/Overlay_17/CallIfField36bc_02199480.cpp:
+    complete
+    .text start:0x02199480 end:0x0219949c
+
+
+src/Combat/Overlay_17/CallIfField498_0218d5ac.cpp:
+    complete
+    .text start:0x0218d5ac end:0x0218d5c8
+
+
+src/Combat/Overlay_17/CallIfGlobalPtrSet_021a5934.cpp:
+    complete
+    .text start:0x021a5934 end:0x021a5954
+
+
+src/Combat/Overlay_17/CallIfGlobalPtrSet_021a5954.cpp:
+    complete
+    .text start:0x021a5954 end:0x021a5974
+
+
+src/Combat/Overlay_17/CallIfGlobalPtrSet_021a5a28.cpp:
+    complete
+    .text start:0x021a5a28 end:0x021a5a48
+
+
+src/Combat/Overlay_17/ClearFields0to5_0218d7fc.cpp:
+    complete
+    .text start:0x0218d7fc end:0x0218d818
+
+
+src/Combat/Overlay_17/ClearFlagBit_0218d4d0.cpp:
+    complete
+    .text start:0x0218d4d0 end:0x0218d4ec
+
+
+src/Combat/Overlay_17/GetByteAtOffset7289OrFF_021a5a48.cpp:
+    complete
+    .text start:0x021a5a48 end:0x021a5a68
+
+
+src/Combat/Overlay_17/HasNonZeroByteAtOfField498_0218d75c_0218d75c.cpp:
+    complete
+    .text start:0x0218d75c end:0x0218d77c
+
+
+src/Combat/Overlay_17/RunBattleTeardownSequence_021acce4.cpp:
+    complete
+    .text start:0x021acce4 end:0x021accfc
+
+
+src/Combat/Overlay_17/SetAllEntriesFieldits24To29IfField54_021923e0_021923e0.cpp:
+    complete
+    .text start:0x021923e0 end:0x02192400
+
+
+src/Combat/Overlay_17/SetBg1CntPriority_02199998.cpp:
+    complete
+    .text start:0x02199998 end:0x021999b4
+
+
+src/Combat/Overlay_17/SetBg2CntPriority_021999e0.cpp:
+    complete
+    .text start:0x021999e0 end:0x021999fc
