@@ -1485,3 +1485,78 @@ src/Combat/Overlay_31/TryOp02240050.cpp:
 src/Combat/Overlay_31/GetField24_022412e8.cpp:
     complete
     .text start:0x022412e8 end:0x0224130c
+
+
+src/Combat/Overlay_31/AllocateWithSizeHeader_022075f4.cpp:
+    complete
+    .text start:0x022075f4 end:0x02207620
+
+
+src/Combat/Overlay_31/CheckField4Eq6_02212248.cpp:
+    complete
+    .text start:0x02212248 end:0x02212274
+
+
+src/Combat/Overlay_31/CheckMagicAndFlag_022115a4.cpp:
+    complete
+    .text start:0x022115a4 end:0x022115d0
+
+
+src/Combat/Overlay_31/CheckRange_0221b258.cpp:
+    complete
+    .text start:0x0221b258 end:0x0221b284
+
+
+src/Combat/Overlay_31/Check_0221add4_0221add4.cpp:
+    complete
+    .text start:0x0221add4 end:0x0221ae00
+
+
+src/Combat/Overlay_31/Check_0221aff8_0221aff8.cpp:
+    complete
+    .text start:0x0221aff8 end:0x0221b024
+
+
+src/Combat/Overlay_31/ClearSlot_0221be38.cpp:
+    complete
+    .text start:0x0221be38 end:0x0221be64
+
+
+src/Combat/Overlay_31/CompareThreeU16sDiffer02200824.cpp:
+    complete
+    .text start:0x02200824 end:0x02200850
+
+
+src/Combat/Overlay_31/CopyBlockToSlot_02213204.cpp:
+    complete
+    .text start:0x02213204 end:0x02213230
+
+
+src/Combat/Overlay_31/FreeWithSizeHeader_02207620.cpp:
+    complete
+    .text start:0x02207620 end:0x0220764c
+
+
+src/Combat/Overlay_31/GetFieldIfOtherFieldZero_022112e4.cpp:
+    complete
+    .text start:0x022112e4 end:0x02211310
+
+
+src/Combat/Overlay_31/InitTwoSections_022098ac.cpp:
+    complete
+    .text start:0x022098ac end:0x022098d8
+
+
+src/Combat/Overlay_31/ResetSessionState02203190.cpp:
+    complete
+    .text start:0x02203190 end:0x022031bc
+
+
+src/Combat/Overlay_31/SelectAndCall022071d8.cpp:
+    complete
+    .text start:0x022071d8 end:0x02207204
+
+
+src/Combat/Overlay_31/SwapField2AndForward02207204.cpp:
+    complete
+    .text start:0x02207204 end:0x02207230
