@@ -90,3 +90,88 @@ src/Combat/Overlay_3/StoreResultIfNonZero_0215f4e4.cpp:
 src/Combat/Overlay_3/ToggleState1e_0215ee44.cpp:
     complete
     .text start:0x0215ee44 end:0x0215ee68
+
+
+src/Combat/Overlay_3/AllBytesZero_02171df0.cpp:
+    complete
+    .text start:0x02171df0 end:0x02171e1c
+
+
+src/Combat/Overlay_3/CheckField0AndBattleState_02160b50.cpp:
+    complete
+    .text start:0x02160b50 end:0x02160b84
+
+
+src/Combat/Overlay_3/ClearBitndCleanup_0216720c_0216720c.cpp:
+    complete
+    .text start:0x0216720c end:0x02167240
+
+
+src/Combat/Overlay_3/ClearFields_0216a85c.cpp:
+    complete
+    .text start:0x0216a85c end:0x0216a880
+
+
+src/Combat/Overlay_3/ClearFlagFields_02169658.cpp:
+    complete
+    .text start:0x02169658 end:0x02169674
+
+
+src/Combat/Overlay_3/ClearGlobalField9ae_02160b2c.cpp:
+    complete
+    .text start:0x02160b2c end:0x02160b50
+
+
+src/Combat/Overlay_3/GetElementAtIndex_02160bd0_02160bd0.cpp:
+    complete
+    .text start:0x02160bd0 end:0x02160bf8
+
+
+src/Combat/Overlay_3/GetElementIfInRange_02173bb0.cpp:
+    complete
+    .text start:0x02173bb0 end:0x02173bd8
+
+
+src/Combat/Overlay_3/InitField170_021700bc.cpp:
+    complete
+    .text start:0x021700bc end:0x021700dc
+
+
+src/Combat/Overlay_3/IsInRangePair_021734dc.cpp:
+    complete
+    .text start:0x021734dc end:0x02173508
+
+
+src/Combat/Overlay_3/ProcessBuffersIfActive_02167548.cpp:
+    complete
+    .text start:0x02167548 end:0x0216757c
+
+
+src/Combat/Overlay_3/ResetFieldsB68AndB74_0216fb6c.cpp:
+    complete
+    .text start:0x0216fb6c end:0x0216fba0
+
+
+src/Combat/Overlay_3/ResetGlobalsAndReinit_0216d818.cpp:
+    complete
+    .text start:0x0216d818 end:0x0216d84c
+
+
+src/Combat/Overlay_3/SetFlag2AndMaybeCall_0216d7ec.cpp:
+    complete
+    .text start:0x0216d7ec end:0x0216d818
+
+
+src/Combat/Overlay_3/SetFlag2At_021685cc.cpp:
+    complete
+    .text start:0x021685cc end:0x021685dc
+
+
+src/Combat/Overlay_3/SetOrClearFlags464_02166164.cpp:
+    complete
+    .text start:0x02166164 end:0x02166184
+
+
+src/Combat/Overlay_3/UpdateIfFlag4a3_021604d0.cpp:
+    complete
+    .text start:0x021604d0 end:0x021604f4
