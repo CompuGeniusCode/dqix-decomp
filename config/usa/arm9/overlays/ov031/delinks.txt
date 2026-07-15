@@ -1305,3 +1305,23 @@ src/Combat/Overlay_31/TailCallOffset4c8_02235ecc.cpp:
 src/Combat/Overlay_31/TailCallOffset4cc_02235eec.cpp:
     complete
     .text start:0x02235eec end:0x02235f0c
+
+
+src/Combat/Overlay_31/ResetAndInit32_02241318.cpp:
+    complete
+    .text start:0x02241318 end:0x02241338
+
+
+src/Combat/Overlay_31/RunIfField850Negative_022436c0.cpp:
+    complete
+    .text start:0x022436c0 end:0x022436e0
+
+
+src/Combat/Overlay_31/SetField34AndClear35_37_02245528.cpp:
+    complete
+    .text start:0x02245528 end:0x02245548
+
+
+src/Combat/Overlay_31/SetField35IfField34Is6Or7_022456f0.cpp:
+    complete
+    .text start:0x022456f0 end:0x02245710
