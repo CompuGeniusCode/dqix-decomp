@@ -95,3 +95,78 @@ src/Combat/Overlay_25/SetField021e6010.cpp:
 src/Combat/Overlay_25/SetFlagBit_021e4a90_021e4a90.cpp:
     complete
     .text start:0x021e4a90 end:0x021e4aac
+
+
+src/Combat/Overlay_25/CopyFields_021e6ef8_021e6ef8.cpp:
+    complete
+    .text start:0x021e6ef8 end:0x021e6f20
+
+
+src/Combat/Overlay_25/DispatchForwardEvent021e6320.cpp:
+    complete
+    .text start:0x021e6320 end:0x021e6340
+
+
+src/Combat/Overlay_25/RefreshTwoFields_021e7fb4.cpp:
+    complete
+    .text start:0x021e7fb4 end:0x021e7fdc
+
+
+src/Combat/Overlay_25/SetActorBytes_021e8024.cpp:
+    complete
+    .text start:0x021e8024 end:0x021e8044
+
+
+src/Combat/Overlay_25/SetField_021e6208_021e6208.cpp:
+    complete
+    .text start:0x021e6208 end:0x021e6230
+
+
+src/Combat/Overlay_25/SetGlobalField_021e6030_021e6030.cpp:
+    complete
+    .text start:0x021e6030 end:0x021e604c
+
+
+src/Combat/Overlay_25/SetGlobalField_021e6254_021e6254.cpp:
+    complete
+    .text start:0x021e6254 end:0x021e6270
+
+
+src/Combat/Overlay_25/SetGlobalField_021e6270_021e6270.cpp:
+    complete
+    .text start:0x021e6270 end:0x021e628c
+
+
+src/Combat/Overlay_25/SetGlobalField_021e628c_021e628c.cpp:
+    complete
+    .text start:0x021e628c end:0x021e62a8
+
+
+src/Combat/Overlay_25/SetGlobalField_021e6304_021e6304.cpp:
+    complete
+    .text start:0x021e6304 end:0x021e6320
+
+
+src/Combat/Overlay_25/SetGlobalField_021e8550.cpp:
+    complete
+    .text start:0x021e8550 end:0x021e856c
+
+
+src/Combat/Overlay_25/SetTargetField_021e6394_021e6394.cpp:
+    complete
+    .text start:0x021e6394 end:0x021e63b0
+
+
+src/Combat/Overlay_25/Wrapper021e6230.cpp:
+    complete
+    .text start:0x021e6230 end:0x021e6254
+
+
+src/Combat/Overlay_25/Wrapper021e6f20.cpp:
+    complete
+    .text start:0x021e6f20 end:0x021e6f44
+
+
+src/Combat/Overlay_25/Wrapper021e74d0.cpp:
+    complete
+    .text start:0x021e74d0 end:0x021e74f4
