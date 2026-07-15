@@ -795,3 +795,98 @@ src/Combat/Overlay_31/SetGlobal0224e588FieldA0c_02210314.cpp:
 src/Combat/Overlay_31/SetGlobal0224e5a4IfNotNine.cpp:
     complete
     .text start:0x02211b08 end:0x02211b20
+
+
+src/Combat/Overlay_31/ClearField1e_02235204.cpp:
+    complete
+    .text start:0x02235204 end:0x0223521c
+
+
+src/Combat/Overlay_31/ClearFourWords02290fa4_0223f9f0.cpp:
+    complete
+    .text start:0x0223f9f0 end:0x0223fa08
+
+
+src/Combat/Overlay_31/CopyTriple_02227cb0.cpp:
+    complete
+    .text start:0x02227cb0 end:0x02227cc8
+
+
+src/Combat/Overlay_31/FillFourShorts_0223cb1c.cpp:
+    complete
+    .text start:0x0223cb1c end:0x0223cb34
+
+
+src/Combat/Overlay_31/GetElemPtrRow1024Col8_0223daa4.cpp:
+    complete
+    .text start:0x0223daa4 end:0x0223dabc
+
+
+src/Combat/Overlay_31/GetField144_0223b30c.cpp:
+    complete
+    .text start:0x0223b30c end:0x0223b324
+
+
+src/Combat/Overlay_31/GetField8Low4_02227558.cpp:
+    complete
+    .text start:0x02227558 end:0x02227570
+
+
+src/Combat/Overlay_31/GetFieldE7ByIndex_0223607c.cpp:
+    complete
+    .text start:0x0223607c end:0x02236094
+
+
+src/Combat/Overlay_31/GetOffset1e280_02227880.cpp:
+    complete
+    .text start:0x02227880 end:0x02227898
+
+
+src/Combat/Overlay_31/LookupArrayPlusBase_022276b4.cpp:
+    complete
+    .text start:0x022276b4 end:0x022276cc
+
+
+src/Combat/Overlay_31/RunFourInitSteps_022321ec.cpp:
+    complete
+    .text start:0x022321ec end:0x02232204
+
+
+src/Combat/Overlay_31/RunFourStagesA_022242d4.cpp:
+    complete
+    .text start:0x022242d4 end:0x022242ec
+
+
+src/Combat/Overlay_31/RunFourStagesB_02225f14.cpp:
+    complete
+    .text start:0x02225f14 end:0x02225f2c
+
+
+src/Combat/Overlay_31/SetElemField38_0223e330.cpp:
+    complete
+    .text start:0x0223e330 end:0x0223e348
+
+
+src/Combat/Overlay_31/SetField1370_022376e4.cpp:
+    complete
+    .text start:0x022376e4 end:0x022376fc
+
+
+src/Combat/Overlay_31/SetField1e_0223521c.cpp:
+    complete
+    .text start:0x0223521c end:0x02235234
+
+
+src/Combat/Overlay_31/SetField604_02234f34.cpp:
+    complete
+    .text start:0x02234f34 end:0x02234f4c
+
+
+src/Combat/Overlay_31/SetFieldA90_0223aff8.cpp:
+    complete
+    .text start:0x0223aff8 end:0x0223b010
+
+
+src/Combat/Overlay_31/SetOffset1e298_0222785c.cpp:
+    complete
+    .text start:0x0222785c end:0x02227874
