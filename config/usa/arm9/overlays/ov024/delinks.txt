@@ -170,3 +170,98 @@ src/Combat/Overlay_24/IsState5_021edca4.cpp:
 src/Combat/Overlay_24/SetBytelag_021e57c0_021e57c0.cpp:
     complete
     .text start:0x021e57c0 end:0x021e57e0
+
+
+src/Combat/Overlay_24/ClearData4Bytes_021f67f8.cpp:
+    complete
+    .text start:0x021f67f8 end:0x021f6820
+
+
+src/Combat/Overlay_24/Forward5Args_021f0720.cpp:
+    complete
+    .text start:0x021f0720 end:0x021f0734
+
+
+src/Combat/Overlay_24/Forward5Args_021f0734.cpp:
+    complete
+    .text start:0x021f0734 end:0x021f0748
+
+
+src/Combat/Overlay_24/ForwardCall5_021f08f8.cpp:
+    complete
+    .text start:0x021f08f8 end:0x021f090c
+
+
+src/Combat/Overlay_24/ForwardCall5_021f090c.cpp:
+    complete
+    .text start:0x021f090c end:0x021f0920
+
+
+src/Combat/Overlay_24/ForwardCode2ToHandler954_021fbec4.cpp:
+    complete
+    .text start:0x021fbec4 end:0x021fbed4
+
+
+src/Combat/Overlay_24/ForwardCode3ToHandler954_021fc27c.cpp:
+    complete
+    .text start:0x021fc27c end:0x021fc28c
+
+
+src/Combat/Overlay_24/ForwardCode3ToHandlerDf04_021fc368.cpp:
+    complete
+    .text start:0x021fc368 end:0x021fc378
+
+
+src/Combat/Overlay_24/GetFieldNibble_021fc498.cpp:
+    complete
+    .text start:0x021fc498 end:0x021fc4ac
+
+
+src/Combat/Overlay_24/IsBitfield1Set_021f0d0c.cpp:
+    complete
+    .text start:0x021f0d0c end:0x021f0d28
+
+
+src/Combat/Overlay_24/IsBitfield2Set_021f1440.cpp:
+    complete
+    .text start:0x021f1440 end:0x021f145c
+
+
+src/Combat/Overlay_24/IsFlagBit131072Set_021fb478.cpp:
+    complete
+    .text start:0x021fb478 end:0x021fb490
+
+
+src/Combat/Overlay_24/IsFlagBit2Set_021fb430.cpp:
+    complete
+    .text start:0x021fb430 end:0x021fb448
+
+
+src/Combat/Overlay_24/IsFlagBit4Set_021fb448.cpp:
+    complete
+    .text start:0x021fb448 end:0x021fb460
+
+
+src/Combat/Overlay_24/IsFlagBit65536Set_021fb460.cpp:
+    complete
+    .text start:0x021fb460 end:0x021fb478
+
+
+src/Combat/Overlay_24/IsFlagBit8Set_021f273c.cpp:
+    complete
+    .text start:0x021f273c end:0x021f2754
+
+
+src/Combat/Overlay_24/MaybeUpdateState4_021fbefc.cpp:
+    complete
+    .text start:0x021fbefc end:0x021fbf18
+
+
+src/Combat/Overlay_24/SetFields_021f6820.cpp:
+    complete
+    .text start:0x021f6820 end:0x021f6830
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply1_021fbed4.cpp:
+    complete
+    .text start:0x021fbed4 end:0x021fbefc
