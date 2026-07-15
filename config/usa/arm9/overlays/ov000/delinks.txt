@@ -1563,3 +1563,48 @@ src/Combat/Overlay_0/EnqueueEventWithTwoShortFields_0216c514.cpp:
 src/Combat/Overlay_0/EnqueueEvent_0216be00.cpp:
     complete
     .text start:0x0216be00 end:0x0216be58
+
+
+src/Combat/Overlay_0/ApplyFieldGroups021742c8.cpp:
+    complete
+    .text start:0x021742c8 end:0x02174324
+
+
+src/Combat/Overlay_0/DispatchEntriesOnce021704d8.cpp:
+    complete
+    .text start:0x021704d8 end:0x02170538
+
+
+src/Combat/Overlay_0/EnqueueEventWithByteField_0216cf18.cpp:
+    complete
+    .text start:0x0216cf18 end:0x0216cf70
+
+
+src/Combat/Overlay_0/EnqueueEventWithShortField_0216d0a8.cpp:
+    complete
+    .text start:0x0216d0a8 end:0x0216d110
+
+
+src/Combat/Overlay_0/EnqueueEventWithSignedShortField_0216cdec.cpp:
+    complete
+    .text start:0x0216cdec end:0x0216ce48
+
+
+src/Combat/Overlay_0/HasAnyFlags_021719f8_021719f8.cpp:
+    complete
+    .text start:0x021719f8 end:0x02171a60
+
+
+src/Combat/Overlay_0/ReleaseEntriesTwoGroups02174dc0.cpp:
+    complete
+    .text start:0x02174dc0 end:0x02174e1c
+
+
+src/Combat/Overlay_0/RunOverlayScript0216d1c4.cpp:
+    complete
+    .text start:0x0216d1c4 end:0x0216d234
+
+
+src/Combat/Overlay_0/UpdateLastEntryField02175440.cpp:
+    complete
+    .text start:0x02175440 end:0x02175480
