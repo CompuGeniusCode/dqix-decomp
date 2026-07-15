@@ -314,3 +314,98 @@ src/Combat/Overlay_23/SetFields_021dceac.cpp:
 src/Combat/Overlay_23/SetFlagAndData_021dbfa8.cpp:
     complete
     .text start:0x021dbfa8 end:0x021dbfd0
+
+
+src/Combat/Overlay_23/AreFields64And68AllOnes_021f3a8c.cpp:
+    complete
+    .text start:0x021f3a8c end:0x021f3aac
+
+
+src/Combat/Overlay_23/CallFunc0204b04cIfNotFlag0Set_021f7884.cpp:
+    complete
+    .text start:0x021f7884 end:0x021f78a4
+
+
+src/Combat/Overlay_23/CallFunc021f6788ForIndexUnder3_021f6eb8.cpp:
+    complete
+    .text start:0x021f6eb8 end:0x021f6ed8
+
+
+src/Combat/Overlay_23/ClearBit_021f6e34.cpp:
+    complete
+    .text start:0x021f6e34 end:0x021f6e5c
+
+
+src/Combat/Overlay_23/ClearBufferIfNotFlag0Set_021f7864.cpp:
+    complete
+    .text start:0x021f7864 end:0x021f7884
+
+
+src/Combat/Overlay_23/ClearFlagBits10to24_021ed7e0.cpp:
+    complete
+    .text start:0x021ed7e0 end:0x021ed804
+
+
+src/Combat/Overlay_23/CopyToSlot_021f6e90.cpp:
+    complete
+    .text start:0x021f6e90 end:0x021f6eb8
+
+
+src/Combat/Overlay_23/DoThing_021f6590.cpp:
+    complete
+    .text start:0x021f6590 end:0x021f65b4
+
+
+src/Combat/Overlay_23/GetNthNode_021f68b8.cpp:
+    complete
+    .text start:0x021f68b8 end:0x021f68dc
+
+
+src/Combat/Overlay_23/GetShiftedOrDefault_021f5578.cpp:
+    complete
+    .text start:0x021f5578 end:0x021f5598
+
+
+src/Combat/Overlay_23/GetValueOrNibble_021f86b8.cpp:
+    complete
+    .text start:0x021f86b8 end:0x021f86dc
+
+
+src/Combat/Overlay_23/InitFlags_021eb414.cpp:
+    complete
+    .text start:0x021eb414 end:0x021eb43c
+
+
+src/Combat/Overlay_23/MaybeInit_021f7134.cpp:
+    complete
+    .text start:0x021f7134 end:0x021f7158
+
+
+src/Combat/Overlay_23/ResetAndInit_021f52a0.cpp:
+    complete
+    .text start:0x021f52a0 end:0x021f52c8
+
+
+src/Combat/Overlay_23/ResetAndReinit_021f52c8.cpp:
+    complete
+    .text start:0x021f52c8 end:0x021f52f8
+
+
+src/Combat/Overlay_23/ResetFields_021eefac.cpp:
+    complete
+    .text start:0x021eefac end:0x021eefd0
+
+
+src/Combat/Overlay_23/SetBit_021f6e10.cpp:
+    complete
+    .text start:0x021f6e10 end:0x021f6e34
+
+
+src/Combat/Overlay_23/SetFields5cAnd5e_021f65b4.cpp:
+    complete
+    .text start:0x021f65b4 end:0x021f65d4
+
+
+src/Combat/Overlay_23/SetOrClearBit10At400_38_021f2348.cpp:
+    complete
+    .text start:0x021f2348 end:0x021f2368
