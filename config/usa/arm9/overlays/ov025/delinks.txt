@@ -440,3 +440,48 @@ src/Combat/Overlay_25/Init021eed58.cpp:
 src/Combat/Overlay_25/PushNodeFromFreeList_021eee48.cpp:
     complete
     .text start:0x021eee48 end:0x021eeea0
+
+
+src/Combat/Overlay_25/AppendRow_021dcc70.cpp:
+    complete
+    .text start:0x021dcc70 end:0x021dcd28
+
+
+src/Combat/Overlay_25/AppendSlotEntry_021dcde8.cpp:
+    complete
+    .text start:0x021dcde8 end:0x021dce7c
+
+
+src/Combat/Overlay_25/CheckFlagsOrBits_021e2c34.cpp:
+    complete
+    .text start:0x021e2c34 end:0x021e2ca4
+
+
+src/Combat/Overlay_25/FindEntryById_021dafd0.cpp:
+    complete
+    .text start:0x021dafd0 end:0x021db038
+
+
+src/Combat/Overlay_25/ProcessPairs_021d8a40.cpp:
+    complete
+    .text start:0x021d8a40 end:0x021d8ab8
+
+
+src/Combat/Overlay_25/SetRecordFieldFromDispatch_021e5014.cpp:
+    complete
+    .text start:0x021e5014 end:0x021e509c
+
+
+src/Combat/Overlay_25/SyncCombatVecs_021e4e10.cpp:
+    complete
+    .text start:0x021e4e10 end:0x021e4eac
+
+
+src/Combat/Overlay_25/TryDispatch_021dce7c.cpp:
+    complete
+    .text start:0x021dce7c end:0x021dcf14
+
+
+src/Combat/Overlay_25/UpdateFlagAndDispatch_021dc0d8.cpp:
+    complete
+    .text start:0x021dc0d8 end:0x021dc168
