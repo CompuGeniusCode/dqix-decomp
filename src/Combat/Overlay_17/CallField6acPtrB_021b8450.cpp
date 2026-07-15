@@ -1,0 +1,9 @@
+#include <globaldefs.h>
+
+extern "C" void func_ov000_02160ad0(void*);
+
+// USA: func_ov017_021b8450
+ARM void CallField6acPtrB_021b8450(void* obj) {
+    void* p = *(void**)((char*)obj + 0x6ac);
+    if (p) func_ov000_02160ad0(p);
+}

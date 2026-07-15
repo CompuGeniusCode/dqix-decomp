@@ -425,3 +425,98 @@ src/Combat/Overlay_17/SetBit5_021b2c0c.cpp:
 src/Combat/Overlay_17/SetPowCnt1Bit15_021b1ca8.cpp:
     complete
     .text start:0x021b1ca8 end:0x021b1cc4
+
+
+src/Combat/Overlay_17/CallField1cPtrA_021babc8.cpp:
+    complete
+    .text start:0x021babc8 end:0x021babe0
+
+
+src/Combat/Overlay_17/CallField1cPtrB_021babe0.cpp:
+    complete
+    .text start:0x021babe0 end:0x021babf8
+
+
+src/Combat/Overlay_17/CallField20PtrA_021bae80.cpp:
+    complete
+    .text start:0x021bae80 end:0x021bae98
+
+
+src/Combat/Overlay_17/CallField20PtrB_021bae98.cpp:
+    complete
+    .text start:0x021bae98 end:0x021baeb0
+
+
+src/Combat/Overlay_17/CallField6acPtrA_021b8438.cpp:
+    complete
+    .text start:0x021b8438 end:0x021b8450
+
+
+src/Combat/Overlay_17/CallField6acPtrB_021b8450.cpp:
+    complete
+    .text start:0x021b8450 end:0x021b8468
+
+
+src/Combat/Overlay_17/CallField6acPtrC_021b86e0.cpp:
+    complete
+    .text start:0x021b86e0 end:0x021b86f8
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021b83f0.cpp:
+    complete
+    .text start:0x021b83f0 end:0x021b8408
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021beb8c.cpp:
+    complete
+    .text start:0x021beb8c end:0x021beba4
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021befcc.cpp:
+    complete
+    .text start:0x021befcc end:0x021befe4
+
+
+src/Combat/Overlay_17/CallIfField24_021b6b5c.cpp:
+    complete
+    .text start:0x021b6b5c end:0x021b6b74
+
+
+src/Combat/Overlay_17/CallIfField24_021b6b74.cpp:
+    complete
+    .text start:0x021b6b74 end:0x021b6b8c
+
+
+src/Combat/Overlay_17/CallIfField6ac_021b8408.cpp:
+    complete
+    .text start:0x021b8408 end:0x021b8420
+
+
+src/Combat/Overlay_17/CallTwoHelpers_021bb8d8.cpp:
+    complete
+    .text start:0x021bb8d8 end:0x021bb8f0
+
+
+src/Combat/Overlay_17/ClearSixHalfwords_021b8b34.cpp:
+    complete
+    .text start:0x021b8b34 end:0x021b8b54
+
+
+src/Combat/Overlay_17/ForwardGlobalAndSetFlag_021be3ec.cpp:
+    complete
+    .text start:0x021be3ec end:0x021be40c
+
+
+src/Combat/Overlay_17/GetField6acThenCall_021b8b94.cpp:
+    complete
+    .text start:0x021b8b94 end:0x021b8bb0
+
+
+src/Combat/Overlay_17/IsField600B4Zero_021b8b54.cpp:
+    complete
+    .text start:0x021b8b54 end:0x021b8b6c
+
+
+src/Combat/Overlay_17/ResetFieldsToDefault_021b994c.cpp:
+    complete
+    .text start:0x021b994c end:0x021b996c
