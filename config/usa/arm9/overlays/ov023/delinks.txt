@@ -524,3 +524,78 @@ src/Combat/Overlay_23/SetThreeElementFields_021e6378.cpp:
 src/Combat/Overlay_23/TestFlagsAndActiveElement2_021e6e20.cpp:
     complete
     .text start:0x021e6e20 end:0x021e6e60
+
+
+src/Combat/Overlay_23/SetClampedFieldFromBlock44_021e9f64.cpp:
+    complete
+    .text start:0x021e9f64 end:0x021e9f9c
+
+
+src/Combat/Overlay_23/SetClampedFieldFromBlock48_021e9f9c.cpp:
+    complete
+    .text start:0x021e9f9c end:0x021e9fd4
+
+
+src/Combat/Overlay_23/SetFieldFromBlock90_021eab28.cpp:
+    complete
+    .text start:0x021eab28 end:0x021eab64
+
+
+src/Combat/Overlay_23/SetFieldFromBlock94_021eab64.cpp:
+    complete
+    .text start:0x021eab64 end:0x021eaba0
+
+
+src/Combat/Overlay_23/SetFieldWidth14Offset14_021e9910.cpp:
+    complete
+    .text start:0x021e9910 end:0x021e9944
+
+
+src/Combat/Overlay_23/SetFieldWidth14Offset8_021ead74.cpp:
+    complete
+    .text start:0x021ead74 end:0x021eada8
+
+
+src/Combat/Overlay_23/SetFieldWidth14Offset9_021e98dc.cpp:
+    complete
+    .text start:0x021e98dc end:0x021e9910
+
+
+src/Combat/Overlay_23/SetFieldWidth14Offset9_021ead40.cpp:
+    complete
+    .text start:0x021ead40 end:0x021ead74
+
+
+src/Combat/Overlay_23/SetFieldWidth8Offset0_021ead0c.cpp:
+    complete
+    .text start:0x021ead0c end:0x021ead40
+
+
+src/Combat/Overlay_23/SetFieldWidth9Offset0_021e9974.cpp:
+    complete
+    .text start:0x021e9974 end:0x021e99a8
+
+
+src/Combat/Overlay_23/SetFieldWidth9Offset0_021eacd8.cpp:
+    complete
+    .text start:0x021eacd8 end:0x021ead0c
+
+
+src/Combat/Overlay_23/SetFlagFromField0NonZero_021ea920.cpp:
+    complete
+    .text start:0x021ea920 end:0x021ea958
+
+
+src/Combat/Overlay_23/SetFromRegionMinus1_021ea3ac.cpp:
+    complete
+    .text start:0x021ea3ac end:0x021ea3ec
+
+
+src/Combat/Overlay_23/SetRoundedDown100_021ea978.cpp:
+    complete
+    .text start:0x021ea978 end:0x021ea9b0
+
+
+src/Combat/Overlay_23/SumMatchesIntoField8_021eaae8.cpp:
+    complete
+    .text start:0x021eaae8 end:0x021eab28
