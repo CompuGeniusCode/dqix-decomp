@@ -320,3 +320,98 @@ src/Combat/Overlay_31/SetField12_0224586c.cpp:
 src/Combat/Overlay_31/TailCallCheckSlot_022413b8.cpp:
     complete
     .text start:0x022413b8 end:0x022413c8
+
+
+src/Combat/Overlay_31/ClearByteFlag_02223358.cpp:
+    complete
+    .text start:0x02223358 end:0x0222336c
+
+
+src/Combat/Overlay_31/ClearField164_02203178.cpp:
+    complete
+    .text start:0x02203178 end:0x02203190
+
+
+src/Combat/Overlay_31/FreeStoredPtr_02223984.cpp:
+    complete
+    .text start:0x02223984 end:0x02223998
+
+
+src/Combat/Overlay_31/GetField11c_02223fa0.cpp:
+    complete
+    .text start:0x02223fa0 end:0x02223fb4
+
+
+src/Combat/Overlay_31/GetField60_02225c24.cpp:
+    complete
+    .text start:0x02225c24 end:0x02225c38
+
+
+src/Combat/Overlay_31/RunThreeInits_02228244.cpp:
+    complete
+    .text start:0x02228244 end:0x02228258
+
+
+src/Combat/Overlay_31/RunThreeSteps_0222871c.cpp:
+    complete
+    .text start:0x0222871c end:0x02228730
+
+
+src/Combat/Overlay_31/RunThreeSteps_02228aac.cpp:
+    complete
+    .text start:0x02228aac end:0x02228ac0
+
+
+src/Combat/Overlay_31/RunThreeSteps_02228f1c.cpp:
+    complete
+    .text start:0x02228f1c end:0x02228f30
+
+
+src/Combat/Overlay_31/RunThreeSteps_02229378.cpp:
+    complete
+    .text start:0x02229378 end:0x0222938c
+
+
+src/Combat/Overlay_31/SetField1014_022274d0.cpp:
+    complete
+    .text start:0x022274d0 end:0x022274e4
+
+
+src/Combat/Overlay_31/SetField123_02223fb4.cpp:
+    complete
+    .text start:0x02223fb4 end:0x02223fc8
+
+
+src/Combat/Overlay_31/SetField124_02223fc8.cpp:
+    complete
+    .text start:0x02223fc8 end:0x02223fdc
+
+
+src/Combat/Overlay_31/SetField181c_0222750c.cpp:
+    complete
+    .text start:0x0222750c end:0x02227520
+
+
+src/Combat/Overlay_31/SetField1Const_0222758c.cpp:
+    complete
+    .text start:0x0222758c end:0x022275a0
+
+
+src/Combat/Overlay_31/SetField66_02225c38.cpp:
+    complete
+    .text start:0x02225c38 end:0x02225c4c
+
+
+src/Combat/Overlay_31/SetField67_02225c4c.cpp:
+    complete
+    .text start:0x02225c4c end:0x02225c60
+
+
+src/Combat/Overlay_31/SetField68_02225c60.cpp:
+    complete
+    .text start:0x02225c60 end:0x02225c74
+
+
+src/Combat/Overlay_31/TailCallRelease_0222761c.cpp:
+    complete
+    .text start:0x0222761c end:0x02227630
