@@ -355,3 +355,78 @@ src/Combat/Overlay_25/SetOrClearBit8192_021e72f4.cpp:
 src/Combat/Overlay_25/SetupAndDispatch021e8084.cpp:
     complete
     .text start:0x021e8084 end:0x021e80d8
+
+
+src/Combat/Overlay_25/CheckAndSetAngleTrig_021e8510.cpp:
+    complete
+    .text start:0x021e8510 end:0x021e8548
+
+
+src/Combat/Overlay_25/CheckAndSetFlag_021eba60.cpp:
+    complete
+    .text start:0x021eba60 end:0x021ebab4
+
+
+src/Combat/Overlay_25/CheckField4ThenCheck021ed2f4_021e9528.cpp:
+    complete
+    .text start:0x021e9528 end:0x021e9558
+
+
+src/Combat/Overlay_25/DispatchNodeField_021e8638.cpp:
+    complete
+    .text start:0x021e8638 end:0x021e8670
+
+
+src/Combat/Overlay_25/IsIdUnique021ee438.cpp:
+    complete
+    .text start:0x021ee438 end:0x021ee488
+
+
+src/Combat/Overlay_25/SetField_021e8248.cpp:
+    complete
+    .text start:0x021e8248 end:0x021e82a0
+
+
+src/Combat/Overlay_25/SetFlagField_021eb00c_021eb00c.cpp:
+    complete
+    .text start:0x021eb00c end:0x021eb044
+
+
+src/Combat/Overlay_25/SetFlagFromObjByte_021e85e8.cpp:
+    complete
+    .text start:0x021e85e8 end:0x021e861c
+
+
+src/Combat/Overlay_25/SetOrClearBit1024_021e8314.cpp:
+    complete
+    .text start:0x021e8314 end:0x021e8344
+
+
+src/Combat/Overlay_25/SetOrClearFlagField_021e8798.cpp:
+    complete
+    .text start:0x021e8798 end:0x021e87f4
+
+
+src/Combat/Overlay_25/SetRequestFields_021e82a0.cpp:
+    complete
+    .text start:0x021e82a0 end:0x021e82e4
+
+
+src/Combat/Overlay_25/SetSlotEntryNoFlag_021eb42c.cpp:
+    complete
+    .text start:0x021eb42c end:0x021eb46c
+
+
+src/Combat/Overlay_25/SetSlotEntry_021eb148.cpp:
+    complete
+    .text start:0x021eb148 end:0x021eb188
+
+
+src/Combat/Overlay_25/ShiftArrayDown_021ed2a0.cpp:
+    complete
+    .text start:0x021ed2a0 end:0x021ed2f4
+
+
+src/Combat/Overlay_25/UpdateFlagsBasedOnField8_021e82e4.cpp:
+    complete
+    .text start:0x021e82e4 end:0x021e8314
