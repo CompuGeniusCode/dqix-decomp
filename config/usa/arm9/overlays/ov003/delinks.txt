@@ -460,3 +460,8 @@ src/Combat/Overlay_3/SetupFlag_02171cac_02171cac.cpp:
 src/Combat/Overlay_3/UpdateFlagEntry_02176098.cpp:
     complete
     .text start:0x02176098 end:0x021760cc
+
+
+src/Combat/Overlay_3/InitStruct_0217ef24.cpp:
+    complete
+    .text start:0x0217ef24 end:0x0217ef58
