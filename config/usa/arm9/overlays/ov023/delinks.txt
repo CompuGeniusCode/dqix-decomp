@@ -124,3 +124,78 @@ src/Combat/Overlay_23/SetWords_021f7158_021f7158.cpp:
 src/Combat/Overlay_23/SetWords_021f8cd4_021f8cd4.cpp:
     complete
     .text start:0x021f8cd4 end:0x021f8cf0
+
+
+src/Combat/Overlay_23/CopyPairFields_021fb878.cpp:
+    complete
+    .text start:0x021fb878 end:0x021fb88c
+
+
+src/Combat/Overlay_23/GetOffset32Triple_021fbcc0.cpp:
+    complete
+    .text start:0x021fbcc0 end:0x021fbcd4
+
+
+src/Combat/Overlay_23/IsFlagBit5Set_021fb28c.cpp:
+    complete
+    .text start:0x021fb28c end:0x021fb2a0
+
+
+src/Combat/Overlay_23/ResetSubAndSetState2_021fbd90.cpp:
+    complete
+    .text start:0x021fbd90 end:0x021fbdac
+
+
+src/Combat/Overlay_23/RunAndGetResult_021fcfd0.cpp:
+    complete
+    .text start:0x021fcfd0 end:0x021fcfe8
+
+
+src/Combat/Overlay_23/SetFieldThenTailCallOffset20_021fbdf4.cpp:
+    complete
+    .text start:0x021fbdf4 end:0x021fbe08
+
+
+src/Combat/Overlay_23/SetShorts_021fb25c.cpp:
+    complete
+    .text start:0x021fb25c end:0x021fb274
+
+
+src/Combat/Overlay_23/SetThreeFields_021fb23c.cpp:
+    complete
+    .text start:0x021fb23c end:0x021fb24c
+
+
+src/Combat/Overlay_23/SetWords_021fbcd4_021fbcd4.cpp:
+    complete
+    .text start:0x021fbcd4 end:0x021fbcf0
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fbdac.cpp:
+    complete
+    .text start:0x021fbdac end:0x021fbdbc
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fbdbc.cpp:
+    complete
+    .text start:0x021fbdbc end:0x021fbdcc
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fbdcc.cpp:
+    complete
+    .text start:0x021fbdcc end:0x021fbddc
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fbddc.cpp:
+    complete
+    .text start:0x021fbddc end:0x021fbdec
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fc228.cpp:
+    complete
+    .text start:0x021fc228 end:0x021fc238
+
+
+src/Combat/Overlay_23/TailCallOffset20_021fce28.cpp:
+    complete
+    .text start:0x021fce28 end:0x021fce38
