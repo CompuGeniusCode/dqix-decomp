@@ -530,3 +530,8 @@ src/Combat/Overlay_1/SetFieldFromGlobalCheck_02161d8c.cpp:
 src/Combat/Overlay_1/SetOv17FieldFromOv28Result_02163228.cpp:
     complete
     .text start:0x02163228 end:0x02163248
+
+
+src/Combat/Overlay_1/SetFlagInIndirectField_02163dc8.cpp:
+    complete
+    .text start:0x02163dc8 end:0x02163dec
