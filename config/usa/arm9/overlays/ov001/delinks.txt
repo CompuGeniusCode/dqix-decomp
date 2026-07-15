@@ -470,3 +470,63 @@ src/Combat/Overlay_1/TryEnqueueEvent_0215bf34.cpp:
 src/Combat/Overlay_1/ZeroGlobalAndClearFlag8c_0215e27c.cpp:
     complete
     .text start:0x0215e27c end:0x0215e2a4
+
+
+src/Combat/Overlay_1/DispatchOv17ResultWrapper_02162488.cpp:
+    complete
+    .text start:0x02162488 end:0x021624a8
+
+
+src/Combat/Overlay_1/Function_0215f324.cpp:
+    complete
+    .text start:0x0215f324 end:0x0215f344
+
+
+src/Combat/Overlay_1/Function_021609a0.cpp:
+    complete
+    .text start:0x021609a0 end:0x021609c0
+
+
+src/Combat/Overlay_1/Function_02161ce8.cpp:
+    complete
+    .text start:0x02161ce8 end:0x02161d08
+
+
+src/Combat/Overlay_1/Function_021622d0.cpp:
+    complete
+    .text start:0x021622d0 end:0x021622f0
+
+
+src/Combat/Overlay_1/Function_02162468.cpp:
+    complete
+    .text start:0x02162468 end:0x02162488
+
+
+src/Combat/Overlay_1/NotifyOverlay17IfFlag63dc_021624a8.cpp:
+    complete
+    .text start:0x021624a8 end:0x021624cc
+
+
+src/Combat/Overlay_1/ScaleAndNotifyFromField_02163540.cpp:
+    complete
+    .text start:0x02163540 end:0x02163564
+
+
+src/Combat/Overlay_1/SetActorValueFromOv17_02163744.cpp:
+    complete
+    .text start:0x02163744 end:0x02163764
+
+
+src/Combat/Overlay_1/SetFieldFromBattleScaleCount_02163284.cpp:
+    complete
+    .text start:0x02163284 end:0x021632a8
+
+
+src/Combat/Overlay_1/SetFieldFromGlobalCheck_02161d8c.cpp:
+    complete
+    .text start:0x02161d8c end:0x02161db0
+
+
+src/Combat/Overlay_1/SetOv17FieldFromOv28Result_02163228.cpp:
+    complete
+    .text start:0x02163228 end:0x02163248
