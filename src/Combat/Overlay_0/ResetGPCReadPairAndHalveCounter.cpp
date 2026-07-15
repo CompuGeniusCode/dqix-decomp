@@ -1,0 +1,10 @@
+#include <globaldefs.h>
+#include "Filesystem/GPC.h"
+
+void HalveGlobalObjectCounter(void);
+
+// USA: func_ov000_0216638c
+ARM void ResetGPCReadPairAndHalveCounter(void* unused, GPCReadPair* pair) {
+    pair->Reset();
+    HalveGlobalObjectCounter();
+}

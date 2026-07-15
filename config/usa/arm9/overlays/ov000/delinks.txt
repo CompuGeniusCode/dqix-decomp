@@ -12,3 +12,242 @@ src/Combat/Overlay_0/GetCombatantByID.c:
 src/Combat/Overlay_0/UpdateCombatantBuffs.c:
 	complete
 	.text start:0x02155a50 end:0x02155e94
+
+src/Combat/Overlay_0/EnqueueEvent0x65.cpp:
+    complete
+    .text start:0x0216c490 end:0x0216c4a4
+
+
+src/Combat/Overlay_0/EnqueueEvent0x67.cpp:
+    complete
+    .text start:0x0216c500 end:0x0216c514
+
+
+src/Combat/Overlay_0/EnqueueEvent0x69.cpp:
+    complete
+    .text start:0x0216c570 end:0x0216c584
+
+
+src/Combat/Overlay_0/EnqueueEvent0x6F.cpp:
+    complete
+    .text start:0x0216c720 end:0x0216c734
+
+
+src/Combat/Overlay_0/EnqueueEvent0x7E.cpp:
+    complete
+    .text start:0x0216ce48 end:0x0216ce5c
+
+
+src/Combat/Overlay_0/EnqueueEvent0x81.cpp:
+    complete
+    .text start:0x0216cf04 end:0x0216cf18
+
+
+src/Combat/Overlay_0/EnqueueEvent0x83.cpp:
+    complete
+    .text start:0x0216cf70 end:0x0216cf84
+
+
+src/Combat/Overlay_0/EnqueueEvent0x85.cpp:
+    complete
+    .text start:0x0216cfd4 end:0x0216cfe8
+
+
+src/Combat/Overlay_0/EnqueueEvent0x86.cpp:
+    complete
+    .text start:0x0216cfe8 end:0x0216cffc
+
+
+src/Combat/Overlay_0/EnqueueEvent0x87.cpp:
+    complete
+    .text start:0x0216cffc end:0x0216d010
+
+
+src/Combat/Overlay_0/EnqueueEvent0x88.cpp:
+    complete
+    .text start:0x0216d010 end:0x0216d024
+
+
+src/Combat/Overlay_0/EnqueueEvent0x89.cpp:
+    complete
+    .text start:0x0216d024 end:0x0216d038
+
+
+src/Combat/Overlay_0/GetActiveCombatWork.cpp:
+    complete
+    .text start:0x02160130 end:0x02160140
+
+
+src/Combat/Overlay_0/GetCombatWorkFlags0x55f4.cpp:
+    complete
+    .text start:0x02160fd4 end:0x02160fe4
+
+
+src/Combat/Overlay_0/GetFieldByKeyFromWork0x88.cpp:
+    complete
+    .text start:0x0216fcfc end:0x0216fd0c
+
+
+src/Combat/Overlay_0/GetStoredWorkPtr.cpp:
+    complete
+    .text start:0x02174504 end:0x02174514
+
+
+src/Combat/Overlay_0/IsCombatWorkFlag0x400Set.cpp:
+    complete
+    .text start:0x02161264 end:0x02161274
+
+
+src/Combat/Overlay_0/LogEventCode0x0b.cpp:
+    complete
+    .text start:0x0216a350 end:0x0216a364
+
+
+src/Combat/Overlay_0/LogEventCode0x13.cpp:
+    complete
+    .text start:0x0216a55c end:0x0216a570
+
+
+src/Combat/Overlay_0/LogEventCode0x17.cpp:
+    complete
+    .text start:0x0216a934 end:0x0216a948
+
+
+src/Combat/Overlay_0/LogEventCode0x18.cpp:
+    complete
+    .text start:0x0216a948 end:0x0216a95c
+
+
+src/Combat/Overlay_0/LogEventCode0x1f.cpp:
+    complete
+    .text start:0x0216ac68 end:0x0216ac7c
+
+
+src/Combat/Overlay_0/LogEventCode0x20.cpp:
+    complete
+    .text start:0x0216ac7c end:0x0216ac90
+
+
+src/Combat/Overlay_0/LogEventCode0x23.cpp:
+    complete
+    .text start:0x0216ad7c end:0x0216ad90
+
+
+src/Combat/Overlay_0/LogEventCode0x24.cpp:
+    complete
+    .text start:0x0216ad90 end:0x0216ada4
+
+
+src/Combat/Overlay_0/LogEventCode0x25.cpp:
+    complete
+    .text start:0x0216ada4 end:0x0216adb8
+
+
+src/Combat/Overlay_0/LogEventCode0x26.cpp:
+    complete
+    .text start:0x0216adb8 end:0x0216adcc
+
+
+src/Combat/Overlay_0/ResetGPCReadPairAndHalveCounter.cpp:
+    complete
+    .text start:0x0216638c end:0x021663a0
+
+
+src/Combat/Overlay_0/SetByteFields0x77d3And0x77d4.cpp:
+    complete
+    .text start:0x0216872c end:0x0216873c
+
+
+src/Combat/Overlay_0/SetCombatWorkFlags0x55f4.cpp:
+    complete
+    .text start:0x02160fa8 end:0x02160fbc
+
+
+src/Combat/Overlay_0/SetFlagOrState0216b16c.cpp:
+    complete
+    .text start:0x0216b16c end:0x0216b180
+
+
+src/Combat/Overlay_0/SetFlagOrState0216b464.cpp:
+    complete
+    .text start:0x0216b464 end:0x0216b478
+
+
+src/Combat/Overlay_0/SetFlagOrState0216b870.cpp:
+    complete
+    .text start:0x0216b870 end:0x0216b884
+
+
+src/Combat/Overlay_0/SetFlagOrState0216b884.cpp:
+    complete
+    .text start:0x0216b884 end:0x0216b898
+
+
+src/Combat/Overlay_0/SetFlagOrState0216b898.cpp:
+    complete
+    .text start:0x0216b898 end:0x0216b8ac
+
+
+src/Combat/Overlay_0/SetFlagOrState0216ba00.cpp:
+    complete
+    .text start:0x0216ba00 end:0x0216ba14
+
+
+src/Combat/Overlay_0/SetFlagOrState0216bbc4.cpp:
+    complete
+    .text start:0x0216bbc4 end:0x0216bbd8
+
+
+src/Combat/Overlay_0/SetFlagOrState0216bbd8.cpp:
+    complete
+    .text start:0x0216bbd8 end:0x0216bbec
+
+
+src/Combat/Overlay_0/SetFlagOrState0216bbec.cpp:
+    complete
+    .text start:0x0216bbec end:0x0216bc00
+
+
+src/Combat/Overlay_0/SetFlagOrState0216be58.cpp:
+    complete
+    .text start:0x0216be58 end:0x0216be6c
+
+
+src/Combat/Overlay_0/SetFlagOrState0216c3ec.cpp:
+    complete
+    .text start:0x0216c3ec end:0x0216c400
+
+
+src/Combat/Overlay_0/SetFlagOrState0216c400.cpp:
+    complete
+    .text start:0x0216c400 end:0x0216c414
+
+
+src/Combat/Overlay_0/SetPtrFieldIfNonNull0x13c.cpp:
+    complete
+    .text start:0x02165480 end:0x02165490
+
+
+src/Combat/Overlay_0/SetShortFields0x8e4aTo0x8e4e.cpp:
+    complete
+    .text start:0x0215fa70 end:0x0215fa84
+
+
+src/Combat/Overlay_0/SetShortTriple0x6e44.cpp:
+    complete
+    .text start:0x02163440 end:0x02163454
+
+
+src/Combat/Overlay_0/SetStatus0xC8Callback.cpp:
+    complete
+    .text start:0x021820ac end:0x021820bc
+
+
+src/Combat/Overlay_0/SetStoredWorkPtr.cpp:
+    complete
+    .text start:0x021744f4 end:0x02174504
+
+
+src/Combat/Overlay_0/ZeroWorkBlock0x20.cpp:
+    complete
+    .text start:0x0215fd7c end:0x0215fd90
