@@ -296,9 +296,9 @@ _Z18IsIdUnique021ee438P11Ctx021ee438i kind:function(arm,size=0x50) addr:0x021ee4
 func_ov025_021ee488 kind:function(arm,size=0x704) addr:0x021ee488
 func_ov025_021eeb8c kind:function(arm,size=0x118) addr:0x021eeb8c
 func_ov025_021eeca4 kind:function(arm,size=0xb4) addr:0x021eeca4
-func_ov025_021eed58 kind:function(arm,size=0x58) addr:0x021eed58
+_Z12Init021eed58Pc kind:function(arm,size=0x58) addr:0x021eed58
 func_ov025_021eedb0 kind:function(arm,size=0x98) addr:0x021eedb0
-func_ov025_021eee48 kind:function(arm,size=0x58) addr:0x021eee48
+_Z29PushNodeFromFreeList_021eee48P11Obj021eee48P11Rec021eee48 kind:function(arm,size=0x58) addr:0x021eee48
 data_ov025_021eeea4 kind:data(any) addr:0x021eeea4
 data_ov025_021eeebc kind:data(any) addr:0x021eeebc
 data_ov025_021eeed4 kind:data(any) addr:0x021eeed4

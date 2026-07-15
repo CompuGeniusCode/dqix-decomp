@@ -430,3 +430,13 @@ src/Combat/Overlay_25/ShiftArrayDown_021ed2a0.cpp:
 src/Combat/Overlay_25/UpdateFlagsBasedOnField8_021e82e4.cpp:
     complete
     .text start:0x021e82e4 end:0x021e8314
+
+
+src/Combat/Overlay_25/Init021eed58.cpp:
+    complete
+    .text start:0x021eed58 end:0x021eedb0
+
+
+src/Combat/Overlay_25/PushNodeFromFreeList_021eee48.cpp:
+    complete
+    .text start:0x021eee48 end:0x021eeea0
