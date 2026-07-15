@@ -175,3 +175,88 @@ src/Combat/Overlay_3/SetOrClearFlags464_02166164.cpp:
 src/Combat/Overlay_3/UpdateIfFlag4a3_021604d0.cpp:
     complete
     .text start:0x021604d0 end:0x021604f4
+
+
+src/Combat/Overlay_3/CallCallbackIfField1c_0217eec4.cpp:
+    complete
+    .text start:0x0217eec4 end:0x0217eedc
+
+
+src/Combat/Overlay_3/CallCallbackIfField1c_0217eedc.cpp:
+    complete
+    .text start:0x0217eedc end:0x0217eef4
+
+
+src/Combat/Overlay_3/CallCallbackIfField20Set_0217e580.cpp:
+    complete
+    .text start:0x0217e580 end:0x0217e598
+
+
+src/Combat/Overlay_3/CallCallbackIfField20Set_0217e598.cpp:
+    complete
+    .text start:0x0217e598 end:0x0217e5b0
+
+
+src/Combat/Overlay_3/CallIfField1CSet_0217eef4.cpp:
+    complete
+    .text start:0x0217eef4 end:0x0217ef0c
+
+
+src/Combat/Overlay_3/CallIfFieldCSet_0217f218.cpp:
+    complete
+    .text start:0x0217f218 end:0x0217f230
+
+
+src/Combat/Overlay_3/CallIfFieldCSet_0217f230.cpp:
+    complete
+    .text start:0x0217f230 end:0x0217f248
+
+
+src/Combat/Overlay_3/CallIfFieldCSet_0217f248.cpp:
+    complete
+    .text start:0x0217f248 end:0x0217f260
+
+
+src/Combat/Overlay_3/CallWithOffset1e0_02173ef4.cpp:
+    complete
+    .text start:0x02173ef4 end:0x02173f04
+
+
+src/Combat/Overlay_3/ComputeTimeRemaining_02179e18.cpp:
+    complete
+    .text start:0x02179e18 end:0x02179e44
+
+
+src/Combat/Overlay_3/GetInnerShort_0217b200.cpp:
+    complete
+    .text start:0x0217b200 end:0x0217b214
+
+
+src/Combat/Overlay_3/InitField1_0217ef0c.cpp:
+    complete
+    .text start:0x0217ef0c end:0x0217ef24
+
+
+src/Combat/Overlay_3/InitField1_0217f260.cpp:
+    complete
+    .text start:0x0217f260 end:0x0217f278
+
+
+src/Combat/Overlay_3/InitObj_0217e5b0.cpp:
+    complete
+    .text start:0x0217e5b0 end:0x0217e5dc
+
+
+src/Combat/Overlay_3/SetElementFlagIfValid_0217451c.cpp:
+    complete
+    .text start:0x0217451c end:0x02174550
+
+
+src/Combat/Overlay_3/SetPowCnt1Bit15_0217c2a0.cpp:
+    complete
+    .text start:0x0217c2a0 end:0x0217c2bc
+
+
+src/Combat/Overlay_3/SetPowCnt1Bit15_0217eea8.cpp:
+    complete
+    .text start:0x0217eea8 end:0x0217eec4
