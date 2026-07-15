@@ -640,3 +640,68 @@ src/Combat/Overlay_24/TryConvertAndCopy_021f18a0.cpp:
 src/Combat/Overlay_24/TryConvertAndForward_021f1844.cpp:
     complete
     .text start:0x021f1844 end:0x021f18a0
+
+
+src/Combat/Overlay_24/AdjustFieldScale_021fcb60.cpp:
+    complete
+    .text start:0x021fcb60 end:0x021fcbc8
+
+
+src/Combat/Overlay_24/CheckSlotRangeAndApply13_021fc6dc.cpp:
+    complete
+    .text start:0x021fc6dc end:0x021fc74c
+
+
+src/Combat/Overlay_24/ComputeOffsetFloats_021f7244.cpp:
+    complete
+    .text start:0x021f7244 end:0x021f729c
+
+
+src/Combat/Overlay_24/ComputeScaledRatios_021f71d8.cpp:
+    complete
+    .text start:0x021f71d8 end:0x021f7244
+
+
+src/Combat/Overlay_24/ScaleStatsIfType10_021f7158.cpp:
+    complete
+    .text start:0x021f7158 end:0x021f71a8
+
+
+src/Combat/Overlay_24/ScaleStatsIfType12_021f6f10.cpp:
+    complete
+    .text start:0x021f6f10 end:0x021f6f60
+
+
+src/Combat/Overlay_24/ScaleStatsIfType4_021f7100.cpp:
+    complete
+    .text start:0x021f7100 end:0x021f7150
+
+
+src/Combat/Overlay_24/ScaleStatsIfType5_021f6f60.cpp:
+    complete
+    .text start:0x021f6f60 end:0x021f6fb0
+
+
+src/Combat/Overlay_24/ScaleStatsIfType6_021f6fec.cpp:
+    complete
+    .text start:0x021f6fec end:0x021f703c
+
+
+src/Combat/Overlay_24/ScaleStatsIfType7_021f6e88.cpp:
+    complete
+    .text start:0x021f6e88 end:0x021f6ed8
+
+
+src/Combat/Overlay_24/ScaleStatsIfType8_021f6e04.cpp:
+    complete
+    .text start:0x021f6e04 end:0x021f6e54
+
+
+src/Combat/Overlay_24/ScaleVectorBy1_25IfField4Is11_021f6d80.cpp:
+    complete
+    .text start:0x021f6d80 end:0x021f6dd4
+
+
+src/Combat/Overlay_24/UpdateStateIfFlagged_021fc2b4.cpp:
+    complete
+    .text start:0x021fc2b4 end:0x021fc320
