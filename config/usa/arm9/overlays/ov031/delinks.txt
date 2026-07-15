@@ -5,3 +5,103 @@
     .data       start:0x02249680 end:0x0224c980 kind:data align:32
     .bss        start:0x0224c980 end:0x02292500 kind:bss align:32
 
+
+
+src/Combat/Overlay_31/GetData0224e53c_0220d60c.cpp:
+    complete
+    .text start:0x0220d60c end:0x0220d61c
+
+
+src/Combat/Overlay_31/GetField64OrField68_02205194.cpp:
+    complete
+    .text start:0x02205194 end:0x022051a8
+
+
+src/Combat/Overlay_31/GetFields04AsPacked64_0221170c.cpp:
+    complete
+    .text start:0x0221170c end:0x02211720
+
+
+src/Combat/Overlay_31/GetGlobal022496fcField4_02207cd0.cpp:
+    complete
+    .text start:0x02207cd0 end:0x02207ce0
+
+
+src/Combat/Overlay_31/IsFieldit0Set_02211644_02211644.cpp:
+    complete
+    .text start:0x02211644 end:0x02211658
+
+
+src/Combat/Overlay_31/IsHighNibbleE_02200790.cpp:
+    complete
+    .text start:0x02200790 end:0x022007a4
+
+
+src/Combat/Overlay_31/IsValueEqual3_02208aa0.cpp:
+    complete
+    .text start:0x02208aa0 end:0x02208ab0
+
+
+src/Combat/Overlay_31/PushFront022070e0.cpp:
+    complete
+    .text start:0x022070e0 end:0x022070f0
+
+
+src/Combat/Overlay_31/ReadHiWord0220c09c.cpp:
+    complete
+    .text start:0x0220c09c end:0x0220c0ac
+
+
+src/Combat/Overlay_31/RunTwoSteps_0220db28.cpp:
+    complete
+    .text start:0x0220db28 end:0x0220db38
+
+
+src/Combat/Overlay_31/SetField164_02203164.cpp:
+    complete
+    .text start:0x02203164 end:0x02203178
+
+
+src/Combat/Overlay_31/SetFlagBit0_02211754.cpp:
+    complete
+    .text start:0x02211754 end:0x02211764
+
+
+src/Combat/Overlay_31/SetGlobal022496fcField4_02207ce0.cpp:
+    complete
+    .text start:0x02207ce0 end:0x02207cf0
+
+
+src/Combat/Overlay_31/SetGlobal0224c980Field3c_02200524.cpp:
+    complete
+    .text start:0x02200524 end:0x02200534
+
+
+src/Combat/Overlay_31/TailCall0220520cField64_0220527c.cpp:
+    complete
+    .text start:0x0220527c end:0x0220528c
+
+
+src/Combat/Overlay_31/TailCall0220520cField68_0220528c.cpp:
+    complete
+    .text start:0x0220528c end:0x0220529c
+
+
+src/Combat/Overlay_31/TailCall02205ebcField4_02205eac.cpp:
+    complete
+    .text start:0x02205eac end:0x02205ebc
+
+
+src/Combat/Overlay_31/TailCallReleaseGlobal_0220f2cc.cpp:
+    complete
+    .text start:0x0220f2cc end:0x0220f2e0
+
+
+src/Combat/Overlay_31/TailCallType16_02201f84.cpp:
+    complete
+    .text start:0x02201f84 end:0x02201f98
+
+
+src/Combat/Overlay_31/TailCallType17_02201f98.cpp:
+    complete
+    .text start:0x02201f98 end:0x02201fac
