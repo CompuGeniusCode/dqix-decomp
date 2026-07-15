@@ -290,3 +290,103 @@ src/Combat/Overlay_1/ForwardFieldC0Wrapper_02163848.cpp:
 src/Combat/Overlay_1/InitActorContextWrapper_021637d4.cpp:
     complete
     .text start:0x021637d4 end:0x021637ec
+
+
+src/Combat/Overlay_1/CallForwardToTargetOrDefault_021599b8.cpp:
+    complete
+    .text start:0x021599b8 end:0x021599dc
+
+
+src/Combat/Overlay_1/CopyVec3ToOffset74.cpp:
+    complete
+    .text start:0x0215929c end:0x021592bc
+
+
+src/Combat/Overlay_1/CopyVec3ToOffset80.cpp:
+    complete
+    .text start:0x021594ac end:0x021594cc
+
+
+src/Combat/Overlay_1/DispatchFieldB4Zero_02159990.cpp:
+    complete
+    .text start:0x02159990 end:0x021599b8
+
+
+src/Combat/Overlay_1/EnqueueEventType18_0215a4c8.cpp:
+    complete
+    .text start:0x0215a4c8 end:0x0215a4e8
+
+
+src/Combat/Overlay_1/EnqueueEventType4_0215a3d8.cpp:
+    complete
+    .text start:0x0215a3d8 end:0x0215a3f8
+
+
+src/Combat/Overlay_1/EnqueueEventType6_0215a42c.cpp:
+    complete
+    .text start:0x0215a42c end:0x0215a44c
+
+
+src/Combat/Overlay_1/ForwardTriple_02159b94.cpp:
+    complete
+    .text start:0x02159b94 end:0x02159bbc
+
+
+src/Combat/Overlay_1/GetValueAfterProcess_02159ef0.cpp:
+    complete
+    .text start:0x02159ef0 end:0x02159f14
+
+
+src/Combat/Overlay_1/IncrementOrResetCounter_02158470.cpp:
+    complete
+    .text start:0x02158470 end:0x02158494
+
+
+src/Combat/Overlay_1/IncrementOrResetCounter_021598bc.cpp:
+    complete
+    .text start:0x021598bc end:0x021598e0
+
+
+src/Combat/Overlay_1/IncrementOrResetCounter_0215996c.cpp:
+    complete
+    .text start:0x0215996c end:0x02159990
+
+
+src/Combat/Overlay_1/IncrementOrResetCounter_021599dc.cpp:
+    complete
+    .text start:0x021599dc end:0x02159a00
+
+
+src/Combat/Overlay_1/InitFieldAndReturnHalfA_02156534.cpp:
+    complete
+    .text start:0x02156534 end:0x02156558
+
+
+src/Combat/Overlay_1/InitFieldAndReturnHalfA_02156558.cpp:
+    complete
+    .text start:0x02156558 end:0x0215657c
+
+
+src/Combat/Overlay_1/InitObjFields_021588bc.cpp:
+    complete
+    .text start:0x021588bc end:0x021588e4
+
+
+src/Combat/Overlay_1/IsFieldB4NotEqual_02159b04.cpp:
+    complete
+    .text start:0x02159b04 end:0x02159b2c
+
+
+src/Combat/Overlay_1/NotifyGlobalWithField70.cpp:
+    complete
+    .text start:0x02159b34 end:0x02159b54
+
+
+src/Combat/Overlay_1/SetTypeCAndField1c.cpp:
+    complete
+    .text start:0x0215911c end:0x0215913c
+
+
+src/Combat/Overlay_1/SetTypeFAndField1c.cpp:
+    complete
+    .text start:0x021591b0 end:0x021591d0
