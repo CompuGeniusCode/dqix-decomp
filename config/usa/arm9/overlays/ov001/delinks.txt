@@ -275,3 +275,18 @@ src/Combat/Overlay_1/SetSomeField0_0215f2e8.cpp:
 src/Combat/Overlay_1/SetSomeField24_0215e0c0.cpp:
     complete
     .text start:0x0215e0c0 end:0x0215e0dc
+
+
+src/Combat/Overlay_1/ForwardAndCopyB8ToC0Wrapper_02163994.cpp:
+    complete
+    .text start:0x02163994 end:0x021639ac
+
+
+src/Combat/Overlay_1/ForwardFieldC0Wrapper_02163848.cpp:
+    complete
+    .text start:0x02163848 end:0x02163860
+
+
+src/Combat/Overlay_1/InitActorContextWrapper_021637d4.cpp:
+    complete
+    .text start:0x021637d4 end:0x021637ec
