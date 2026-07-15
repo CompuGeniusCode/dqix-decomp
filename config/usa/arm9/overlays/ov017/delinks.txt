@@ -1290,3 +1290,88 @@ src/Combat/Overlay_17/InitState69_021c2744.cpp:
 src/Combat/Overlay_17/Something_021cdd30.cpp:
     complete
     .text start:0x021cdd30 end:0x021cdd70
+
+
+src/Combat/Overlay_17/DispatchIndexedCallback_021d4bc8.cpp:
+    complete
+    .text start:0x021d4bc8 end:0x021d4c04
+
+
+src/Combat/Overlay_17/EnqueueEventTag108_021cefe0.cpp:
+    complete
+    .text start:0x021cefe0 end:0x021cf024
+
+
+src/Combat/Overlay_17/EnqueueEventTag109_021cf650.cpp:
+    complete
+    .text start:0x021cf650 end:0x021cf694
+
+
+src/Combat/Overlay_17/EnqueueEventTag150_021d035c.cpp:
+    complete
+    .text start:0x021d035c end:0x021d03a0
+
+
+src/Combat/Overlay_17/EnqueueEventTag162_021cfc74.cpp:
+    complete
+    .text start:0x021cfc74 end:0x021cfcb4
+
+
+src/Combat/Overlay_17/EnqueueEventTag163_021cfcec.cpp:
+    complete
+    .text start:0x021cfcec end:0x021cfd2c
+
+
+src/Combat/Overlay_17/EnqueueEventTag164_021cfd5c.cpp:
+    complete
+    .text start:0x021cfd5c end:0x021cfda0
+
+
+src/Combat/Overlay_17/EnqueueEventTag176_021ce614.cpp:
+    complete
+    .text start:0x021ce614 end:0x021ce658
+
+
+src/Combat/Overlay_17/EnqueueEventTag186_021d3e3c.cpp:
+    complete
+    .text start:0x021d3e3c end:0x021d3e7c
+
+
+src/Combat/Overlay_17/EnqueueEventTag31_021d257c.cpp:
+    complete
+    .text start:0x021d257c end:0x021d25b8
+
+
+src/Combat/Overlay_17/EnqueueEventTag33_021d2738.cpp:
+    complete
+    .text start:0x021d2738 end:0x021d2774
+
+
+src/Combat/Overlay_17/EnqueueEventTag37_021d2cc0.cpp:
+    complete
+    .text start:0x021d2cc0 end:0x021d2d00
+
+
+src/Combat/Overlay_17/EnqueueEventTag51_021ceae4.cpp:
+    complete
+    .text start:0x021ceae4 end:0x021ceb28
+
+
+src/Combat/Overlay_17/EnqueueEventTag58_021cf594.cpp:
+    complete
+    .text start:0x021cf594 end:0x021cf5d4
+
+
+src/Combat/Overlay_17/HandleSetFlagAt_021cee34_021cee34.cpp:
+    complete
+    .text start:0x021cee34 end:0x021cee78
+
+
+src/Combat/Overlay_17/SetCombatantFlag8IfField8_021d25b8.cpp:
+    complete
+    .text start:0x021d25b8 end:0x021d25f4
+
+
+src/Combat/Overlay_17/UpdateActivationIfMatch_021cfda0.cpp:
+    complete
+    .text start:0x021cfda0 end:0x021cfde0
