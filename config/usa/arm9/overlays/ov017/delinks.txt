@@ -1445,3 +1445,73 @@ src/Combat/Overlay_17/SetStatusBitWithPeerCheck_021afb34.cpp:
 src/Combat/Overlay_17/Something_021a9f58.cpp:
     complete
     .text start:0x021a9f58 end:0x021a9fa0
+
+
+src/Combat/Overlay_17/CallInputLogHandlerIfFieldsMatch_021cc080.cpp:
+    complete
+    .text start:0x021cc080 end:0x021cc0cc
+
+
+src/Combat/Overlay_17/ClearAndFlagEntryIfMatch_021cfe84.cpp:
+    complete
+    .text start:0x021cfe84 end:0x021cfed0
+
+
+src/Combat/Overlay_17/CopyNameIfActive_021cc148.cpp:
+    complete
+    .text start:0x021cc148 end:0x021cc198
+
+
+src/Combat/Overlay_17/CopyNameToSlot_021c4618.cpp:
+    complete
+    .text start:0x021c4618 end:0x021c4664
+
+
+src/Combat/Overlay_17/DispatchByCondition_021d0ae4.cpp:
+    complete
+    .text start:0x021d0ae4 end:0x021d0b30
+
+
+src/Combat/Overlay_17/EnqueueEventTag139_021d09cc.cpp:
+    complete
+    .text start:0x021d09cc end:0x021d0a18
+
+
+src/Combat/Overlay_17/EnqueueEventTag170_021d0198.cpp:
+    complete
+    .text start:0x021d0198 end:0x021d01e4
+
+
+src/Combat/Overlay_17/EnqueueEventTag173_021d1810.cpp:
+    complete
+    .text start:0x021d1810 end:0x021d1854
+
+
+src/Combat/Overlay_17/EnqueueEventTag175_021d196c.cpp:
+    complete
+    .text start:0x021d196c end:0x021d19b0
+
+
+src/Combat/Overlay_17/EnqueueEventTag23Field_021d0d58.cpp:
+    complete
+    .text start:0x021d0d58 end:0x021d0d9c
+
+
+src/Combat/Overlay_17/EnqueueEventTag34_021d27a0.cpp:
+    complete
+    .text start:0x021d27a0 end:0x021d27e4
+
+
+src/Combat/Overlay_17/EnqueueEventTag40IfNotBusy_021ce494.cpp:
+    complete
+    .text start:0x021ce494 end:0x021ce4e0
+
+
+src/Combat/Overlay_17/EnqueueTag33ForListedCombatant_021c12b0.cpp:
+    complete
+    .text start:0x021c12b0 end:0x021c12fc
+
+
+src/Combat/Overlay_17/ForEachEntry_021d0dbc.cpp:
+    complete
+    .text start:0x021d0dbc end:0x021d0e00
