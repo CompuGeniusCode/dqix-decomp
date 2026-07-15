@@ -305,3 +305,18 @@ src/Combat/Overlay_31/TailCallOv027Func_0223ab5c.cpp:
 src/Combat/Overlay_31/TailCallWith32_02227cc8.cpp:
     complete
     .text start:0x02227cc8 end:0x02227cd8
+
+
+src/Combat/Overlay_31/GetField16_0224598c.cpp:
+    complete
+    .text start:0x0224598c end:0x0224599c
+
+
+src/Combat/Overlay_31/SetField12_0224586c.cpp:
+    complete
+    .text start:0x0224586c end:0x0224587c
+
+
+src/Combat/Overlay_31/TailCallCheckSlot_022413b8.cpp:
+    complete
+    .text start:0x022413b8 end:0x022413c8
