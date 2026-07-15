@@ -229,3 +229,43 @@ src/Combat/Overlay_2/InitBattleTag0215ccc4.cpp:
 src/Combat/Overlay_2/InitBattleTag0215ee04.cpp:
     complete
     .text start:0x0215ee04 end:0x0215eec0
+
+
+src/Combat/Overlay_2/AppendFieldRow0215fbd4.cpp:
+    complete
+    .text start:0x0215fbd4 end:0x0215fcc0
+
+
+src/Combat/Overlay_2/AppendFormattedValue_02168d10.cpp:
+    complete
+    .text start:0x02168d10 end:0x02168d54
+
+
+src/Combat/Overlay_2/AreFields60And64BothNegOne_02168c00.cpp:
+    complete
+    .text start:0x02168c00 end:0x02168c38
+
+
+src/Combat/Overlay_2/InitBattleTag021609d4.cpp:
+    complete
+    .text start:0x021609d4 end:0x02160aa0
+
+
+src/Combat/Overlay_2/InitBattleTag02161174.cpp:
+    complete
+    .text start:0x02161174 end:0x02161234
+
+
+src/Combat/Overlay_2/InitBattleTag02161798.cpp:
+    complete
+    .text start:0x02161798 end:0x0216186c
+
+
+src/Combat/Overlay_2/IsElementFlagBit40Set_0216197c.cpp:
+    complete
+    .text start:0x0216197c end:0x021619b4
+
+
+src/Combat/Overlay_2/UpdateBattleTagCounter_0216885c.cpp:
+    complete
+    .text start:0x0216885c end:0x021688f8
