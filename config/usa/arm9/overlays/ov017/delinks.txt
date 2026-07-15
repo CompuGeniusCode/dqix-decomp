@@ -760,3 +760,38 @@ src/Combat/Overlay_17/StoreFieldIntoOffset2c94_021d0d9c.cpp:
 src/Combat/Overlay_17/TailCallBuildArgs_021c9cb0.cpp:
     complete
     .text start:0x021c9cb0 end:0x021c9cd8
+
+
+src/Combat/Overlay_17/DispatchGlobalWithFields_021d1854.cpp:
+    complete
+    .text start:0x021d1854 end:0x021d1874
+
+
+src/Combat/Overlay_17/EnqueueEventTag167_021d3ec8.cpp:
+    complete
+    .text start:0x021d3ec8 end:0x021d3ef0
+
+
+src/Combat/Overlay_17/OrNonZero_021d49ac.cpp:
+    complete
+    .text start:0x021d49ac end:0x021d49d0
+
+
+src/Combat/Overlay_17/SetEntryAndAdvance0_021d4a78.cpp:
+    complete
+    .text start:0x021d4a78 end:0x021d4a98
+
+
+src/Combat/Overlay_17/SetEntryAndAdvance1_021d4ad8.cpp:
+    complete
+    .text start:0x021d4ad8 end:0x021d4af8
+
+
+src/Combat/Overlay_17/SetEntryAndAdvance2_021d4a98.cpp:
+    complete
+    .text start:0x021d4a98 end:0x021d4ab8
+
+
+src/Combat/Overlay_17/SetEntryAndAdvance3_021d4ab8.cpp:
+    complete
+    .text start:0x021d4ab8 end:0x021d4ad8
