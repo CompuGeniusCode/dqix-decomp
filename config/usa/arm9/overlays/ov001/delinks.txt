@@ -390,3 +390,83 @@ src/Combat/Overlay_1/SetTypeCAndField1c.cpp:
 src/Combat/Overlay_1/SetTypeFAndField1c.cpp:
     complete
     .text start:0x021591b0 end:0x021591d0
+
+
+src/Combat/Overlay_1/CallByIndex_0215acd4.cpp:
+    complete
+    .text start:0x0215acd4 end:0x0215acf8
+
+
+src/Combat/Overlay_1/EnqueueEventType19_0215a4e8.cpp:
+    complete
+    .text start:0x0215a4e8 end:0x0215a510
+
+
+src/Combat/Overlay_1/EnqueueEventType20_0215a510.cpp:
+    complete
+    .text start:0x0215a510 end:0x0215a530
+
+
+src/Combat/Overlay_1/EnqueueEventType21_0215a654.cpp:
+    complete
+    .text start:0x0215a654 end:0x0215a674
+
+
+src/Combat/Overlay_1/EnqueueEventType22_0215a674.cpp:
+    complete
+    .text start:0x0215a674 end:0x0215a69c
+
+
+src/Combat/Overlay_1/EnqueueEventType23_0215a69c.cpp:
+    complete
+    .text start:0x0215a69c end:0x0215a6bc
+
+
+src/Combat/Overlay_1/EnqueueEventType24_0215a6bc.cpp:
+    complete
+    .text start:0x0215a6bc end:0x0215a6dc
+
+
+src/Combat/Overlay_1/EnqueueEventType25_0215a6dc.cpp:
+    complete
+    .text start:0x0215a6dc end:0x0215a6fc
+
+
+src/Combat/Overlay_1/EnqueueEventType9_0215a530.cpp:
+    complete
+    .text start:0x0215a530 end:0x0215a550
+
+
+src/Combat/Overlay_1/Function_0215e398.cpp:
+    complete
+    .text start:0x0215e398 end:0x0215e3b8
+
+
+src/Combat/Overlay_1/InitEffectFromField0_0215b384.cpp:
+    complete
+    .text start:0x0215b384 end:0x0215b3ac
+
+
+src/Combat/Overlay_1/TryEnqueueEventType12_0215c3e8.cpp:
+    complete
+    .text start:0x0215c3e8 end:0x0215c40c
+
+
+src/Combat/Overlay_1/TryEnqueueEventType14_0215c70c.cpp:
+    complete
+    .text start:0x0215c70c end:0x0215c730
+
+
+src/Combat/Overlay_1/TryEnqueueEventType3_0215c40c.cpp:
+    complete
+    .text start:0x0215c40c end:0x0215c430
+
+
+src/Combat/Overlay_1/TryEnqueueEvent_0215bf34.cpp:
+    complete
+    .text start:0x0215bf34 end:0x0215bf58
+
+
+src/Combat/Overlay_1/ZeroGlobalAndClearFlag8c_0215e27c.cpp:
+    complete
+    .text start:0x0215e27c end:0x0215e2a4
