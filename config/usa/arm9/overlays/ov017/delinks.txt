@@ -1210,3 +1210,83 @@ src/Combat/Overlay_17/SetFlagAndCleanup_02195618.cpp:
 src/Combat/Overlay_17/SetNodeFieldsAndInsert_021a120c.cpp:
     complete
     .text start:0x021a120c end:0x021a124c
+
+
+src/Combat/Overlay_17/ClearFields_021bb0c4.cpp:
+    complete
+    .text start:0x021bb0c4 end:0x021bb108
+
+
+src/Combat/Overlay_17/CopyStruct021c90b4.cpp:
+    complete
+    .text start:0x021c90b4 end:0x021c90f8
+
+
+src/Combat/Overlay_17/EnqueueEventIfActive021ce4e0.cpp:
+    complete
+    .text start:0x021ce4e0 end:0x021ce524
+
+
+src/Combat/Overlay_17/EnqueueEventTag147_021cdaa0.cpp:
+    complete
+    .text start:0x021cdaa0 end:0x021cdae4
+
+
+src/Combat/Overlay_17/EnqueueEventTag17_021ce014.cpp:
+    complete
+    .text start:0x021ce014 end:0x021ce054
+
+
+src/Combat/Overlay_17/EnqueueEventTag44_021cc198.cpp:
+    complete
+    .text start:0x021cc198 end:0x021cc1d8
+
+
+src/Combat/Overlay_17/EnqueueEventTag83_021c8c04.cpp:
+    complete
+    .text start:0x021c8c04 end:0x021c8c44
+
+
+src/Combat/Overlay_17/EnqueueEventTag8_021cc4b8.cpp:
+    complete
+    .text start:0x021cc4b8 end:0x021cc4f8
+
+
+src/Combat/Overlay_17/ForwardTeardown_021bb8f0.cpp:
+    complete
+    .text start:0x021bb8f0 end:0x021bb930
+
+
+src/Combat/Overlay_17/InitObj021bdbf0.cpp:
+    complete
+    .text start:0x021bdbf0 end:0x021bdc34
+
+
+src/Combat/Overlay_17/InitObj021c1350.cpp:
+    complete
+    .text start:0x021c1350 end:0x021c1394
+
+
+src/Combat/Overlay_17/InitObj021c2b28.cpp:
+    complete
+    .text start:0x021c2b28 end:0x021c2b6c
+
+
+src/Combat/Overlay_17/InitState16_021ba90c.cpp:
+    complete
+    .text start:0x021ba90c end:0x021ba94c
+
+
+src/Combat/Overlay_17/InitState30_021ac2ec.cpp:
+    complete
+    .text start:0x021ac2ec end:0x021ac32c
+
+
+src/Combat/Overlay_17/InitState69_021c2744.cpp:
+    complete
+    .text start:0x021c2744 end:0x021c2784
+
+
+src/Combat/Overlay_17/Something_021cdd30.cpp:
+    complete
+    .text start:0x021cdd30 end:0x021cdd70
