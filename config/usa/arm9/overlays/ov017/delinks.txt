@@ -50,3 +50,78 @@ src/Combat/Overlay_17/SetFieldFromHelper491_02198f70.cpp:
 src/Combat/Overlay_17/SetFlagBit_0218d4b8.cpp:
     complete
     .text start:0x0218d4b8 end:0x0218d4d0
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a6b84.cpp:
+    complete
+    .text start:0x021a6b84 end:0x021a6b9c
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a72dc.cpp:
+    complete
+    .text start:0x021a72dc end:0x021a72f4
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a7a5c.cpp:
+    complete
+    .text start:0x021a7a5c end:0x021a7a74
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021a85bc.cpp:
+    complete
+    .text start:0x021a85bc end:0x021a85d4
+
+
+src/Combat/Overlay_17/ClearGlobalField_021adc44_021adc44.cpp:
+    complete
+    .text start:0x021adc44 end:0x021adc58
+
+
+src/Combat/Overlay_17/IsFieldNotPositive_021a4e70.cpp:
+    complete
+    .text start:0x021a4e70 end:0x021a4e88
+
+
+src/Combat/Overlay_17/ResetField_021a7998_021a7998.cpp:
+    complete
+    .text start:0x021a7998 end:0x021a79ac
+
+
+src/Combat/Overlay_17/ResetField_021a9248_021a9248.cpp:
+    complete
+    .text start:0x021a9248 end:0x021a925c
+
+
+src/Combat/Overlay_17/ResetField_021adc30_021adc30.cpp:
+    complete
+    .text start:0x021adc30 end:0x021adc44
+
+
+src/Combat/Overlay_17/SetBitField_021afae8_021afae8.cpp:
+    complete
+    .text start:0x021afae8 end:0x021afafc
+
+
+src/Combat/Overlay_17/SetFieldndMaybe_021a85d4_021a85d4.cpp:
+    complete
+    .text start:0x021a85d4 end:0x021a85e8
+
+
+src/Combat/Overlay_17/SetFlagAndCleanupA_021ac294.cpp:
+    complete
+    .text start:0x021ac294 end:0x021ac2a8
+
+
+src/Combat/Overlay_17/SetFlagAndCleanupB_021aca00.cpp:
+    complete
+    .text start:0x021aca00 end:0x021aca14
+
+
+src/Combat/Overlay_17/SetFlagAndCleanupC_021adb08.cpp:
+    complete
+    .text start:0x021adb08 end:0x021adb1c
+
+
+src/Combat/Overlay_17/SetFlagAndForward_021a99c8.cpp:
+    complete
+    .text start:0x021a99c8 end:0x021a99dc
