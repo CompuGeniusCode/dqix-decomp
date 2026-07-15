@@ -375,3 +375,53 @@ src/Combat/Overlay_24/SelectByIndexRange0to3_021da644.cpp:
 src/Combat/Overlay_24/SetFirstEmptySlot48_021eb4e4.cpp:
     complete
     .text start:0x021eb4e4 end:0x021eb510
+
+
+src/Combat/Overlay_24/AddEntryIfUnderLimit16_021f6a1c.cpp:
+    complete
+    .text start:0x021f6a1c end:0x021f6a4c
+
+
+src/Combat/Overlay_24/Forward4ArgsBitfield_021edf6c.cpp:
+    complete
+    .text start:0x021edf6c end:0x021edfa0
+
+
+src/Combat/Overlay_24/PickRandomTableEntryResetCounter_021ed890.cpp:
+    complete
+    .text start:0x021ed890 end:0x021ed8c0
+
+
+src/Combat/Overlay_24/ScaleVectorBy0Point75_021f6b5c.cpp:
+    complete
+    .text start:0x021f6b5c end:0x021f6b8c
+
+
+src/Combat/Overlay_24/ScaleXYBy1Point25_021f6b28.cpp:
+    complete
+    .text start:0x021f6b28 end:0x021f6b5c
+
+
+src/Combat/Overlay_24/SetFlagIfMask268435456Clear_021f5768.cpp:
+    complete
+    .text start:0x021f5768 end:0x021f57a8
+
+
+src/Combat/Overlay_24/SetFlagIfStatByte57Zero_021f5558.cpp:
+    complete
+    .text start:0x021f5558 end:0x021f559c
+
+
+src/Combat/Overlay_24/SetFlagIfStatByteBelow3_021f5300.cpp:
+    complete
+    .text start:0x021f5300 end:0x021f5344
+
+
+src/Combat/Overlay_24/SetFlagIfStatShort2Zero_021f59c4.cpp:
+    complete
+    .text start:0x021f59c4 end:0x021f5a08
+
+
+src/Combat/Overlay_24/SetScaleFromBit12_021f6ae8.cpp:
+    complete
+    .text start:0x021f6ae8 end:0x021f6b28
