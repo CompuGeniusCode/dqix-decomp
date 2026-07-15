@@ -1125,3 +1125,78 @@ src/Combat/Overlay_31/ForwardGlobal022918bcZeroZero_022403f4.cpp:
 src/Combat/Overlay_31/TailCallWith2_02241518.cpp:
     complete
     .text start:0x02241518 end:0x02241534
+
+
+src/Combat/Overlay_31/CallWithZeroZeroD_022072ac.cpp:
+    complete
+    .text start:0x022072ac end:0x022072d0
+
+
+src/Combat/Overlay_31/CallWithZeroZeroD_02207380.cpp:
+    complete
+    .text start:0x02207380 end:0x022073a4
+
+
+src/Combat/Overlay_31/CheckFieldA_02214334.cpp:
+    complete
+    .text start:0x02214334 end:0x02214358
+
+
+src/Combat/Overlay_31/CheckStateThenProcess_02227ba4.cpp:
+    complete
+    .text start:0x02227ba4 end:0x02227bc8
+
+
+src/Combat/Overlay_31/GetStateAndMaybeNotify_02212598.cpp:
+    complete
+    .text start:0x02212598 end:0x022125bc
+
+
+src/Combat/Overlay_31/IncrementByteCounter_022093d0.cpp:
+    complete
+    .text start:0x022093d0 end:0x022093f4
+
+
+src/Combat/Overlay_31/IsEqualToData8_022157c4.cpp:
+    complete
+    .text start:0x022157c4 end:0x022157e8
+
+
+src/Combat/Overlay_31/IsInList0224e230_022071b4.cpp:
+    complete
+    .text start:0x022071b4 end:0x022071d8
+
+
+src/Combat/Overlay_31/LengthUntilDotOrEnd_0220868c.cpp:
+    complete
+    .text start:0x0220868c end:0x022086b0
+
+
+src/Combat/Overlay_31/RegisterNamedEntry_02207d60.cpp:
+    complete
+    .text start:0x02207d60 end:0x02207d88
+
+
+src/Combat/Overlay_31/RunIfGlobalUnset_02212c18.cpp:
+    complete
+    .text start:0x02212c18 end:0x02212c3c
+
+
+src/Combat/Overlay_31/SetActiveContextPriorityIfValid_02207d3c.cpp:
+    complete
+    .text start:0x02207d3c end:0x02207d60
+
+
+src/Combat/Overlay_31/SetFieldCAndA_022134cc.cpp:
+    complete
+    .text start:0x022134cc end:0x022134f0
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02228980.cpp:
+    complete
+    .text start:0x02228980 end:0x022289a4
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_0222a848.cpp:
+    complete
+    .text start:0x0222a848 end:0x0222a86c
