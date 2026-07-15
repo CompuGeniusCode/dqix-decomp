@@ -905,3 +905,103 @@ src/Combat/Overlay_31/CopyBytesSwapped_0223fb74.cpp:
 src/Combat/Overlay_31/CopyMemory_022415c8.cpp:
     complete
     .text start:0x022415c8 end:0x022415e0
+
+
+src/Combat/Overlay_31/AllocArray_022236e8.cpp:
+    complete
+    .text start:0x022236e8 end:0x02223708
+
+
+src/Combat/Overlay_31/BumpTag4To5_02216698.cpp:
+    complete
+    .text start:0x02216698 end:0x022166b4
+
+
+src/Combat/Overlay_31/CallWithZeroZeroZero_0220728c.cpp:
+    complete
+    .text start:0x0220728c end:0x022072ac
+
+
+src/Combat/Overlay_31/CallWithZeroZeroZero_02207360.cpp:
+    complete
+    .text start:0x02207360 end:0x02207380
+
+
+src/Combat/Overlay_31/ClearFlag1AndUpdateChecksum_02211658.cpp:
+    complete
+    .text start:0x02211658 end:0x02211678
+
+
+src/Combat/Overlay_31/ClearGlobal0224e5a4IfNotNine_02211acc.cpp:
+    complete
+    .text start:0x02211acc end:0x02211aec
+
+
+src/Combat/Overlay_31/DispatchOnZeroPair_0220cdd4.cpp:
+    complete
+    .text start:0x0220cdd4 end:0x0220cdf4
+
+
+src/Combat/Overlay_31/GetField3339Bits01_022140b0.cpp:
+    complete
+    .text start:0x022140b0 end:0x022140cc
+
+
+src/Combat/Overlay_31/GetField3339Bits23_022140cc.cpp:
+    complete
+    .text start:0x022140cc end:0x022140e8
+
+
+src/Combat/Overlay_31/GetFieldbSelect_022143f4.cpp:
+    complete
+    .text start:0x022143f4 end:0x02214410
+
+
+src/Combat/Overlay_31/GetGlobal0224e5a4Field0AndOutField4_022119b0.cpp:
+    complete
+    .text start:0x022119b0 end:0x022119d0
+
+
+src/Combat/Overlay_31/GetPair_02212d20.cpp:
+    complete
+    .text start:0x02212d20 end:0x02212d40
+
+
+src/Combat/Overlay_31/IsField11cPtrSet_02223fdc.cpp:
+    complete
+    .text start:0x02223fdc end:0x02223ff8
+
+
+src/Combat/Overlay_31/IsField60PtrSet_02225c74.cpp:
+    complete
+    .text start:0x02225c74 end:0x02225c90
+
+
+src/Combat/Overlay_31/IsNonzeroAndNotNeg1_02201b94.cpp:
+    complete
+    .text start:0x02201b94 end:0x02201bb4
+
+
+src/Combat/Overlay_31/PackBigEndian32_0220781c.cpp:
+    complete
+    .text start:0x0220781c end:0x0220783c
+
+
+src/Combat/Overlay_31/SetField16IfMinusOne_02222e20.cpp:
+    complete
+    .text start:0x02222e20 end:0x02222e40
+
+
+src/Combat/Overlay_31/SetFieldAt2264_0220d8d4.cpp:
+    complete
+    .text start:0x0220d8d4 end:0x0220d8f4
+
+
+src/Combat/Overlay_31/SetGlobal0224e540Field28_0220f0e4.cpp:
+    complete
+    .text start:0x0220f0e4 end:0x0220f104
+
+
+src/Combat/Overlay_31/ZeroField164_02203250.cpp:
+    complete
+    .text start:0x02203250 end:0x02203270
