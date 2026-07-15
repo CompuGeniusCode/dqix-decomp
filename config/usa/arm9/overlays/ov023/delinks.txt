@@ -814,3 +814,63 @@ src/Combat/Overlay_23/ResetAndApply_021e7fe4.cpp:
 src/Combat/Overlay_23/SetEntryFields_021e23d0.cpp:
     complete
     .text start:0x021e23d0 end:0x021e2418
+
+
+src/Combat/Overlay_23/ClearBitsAfterLookup_021fae88.cpp:
+    complete
+    .text start:0x021fae88 end:0x021faed0
+
+
+src/Combat/Overlay_23/ComputeModHash_021f6324.cpp:
+    complete
+    .text start:0x021f6324 end:0x021f6378
+
+
+src/Combat/Overlay_23/DispatchNode_021f6630.cpp:
+    complete
+    .text start:0x021f6630 end:0x021f6680
+
+
+src/Combat/Overlay_23/InitAndDispatch_021f52f8.cpp:
+    complete
+    .text start:0x021f52f8 end:0x021f5340
+
+
+src/Combat/Overlay_23/InitObj_021f672c.cpp:
+    complete
+    .text start:0x021f672c end:0x021f6788
+
+
+src/Combat/Overlay_23/Lookup4Entry_021f63ac.cpp:
+    complete
+    .text start:0x021f63ac end:0x021f63f8
+
+
+src/Combat/Overlay_23/SetFieldFromLookup464_021e9818.cpp:
+    complete
+    .text start:0x021e9818 end:0x021e9864
+
+
+src/Combat/Overlay_23/SetFieldFromPopcount_021e9b00.cpp:
+    complete
+    .text start:0x021e9b00 end:0x021e9b48
+
+
+src/Combat/Overlay_23/SetFixed12PairZeroMid_021fb4dc.cpp:
+    complete
+    .text start:0x021fb4dc end:0x021fb524
+
+
+src/Combat/Overlay_23/SetFixed12PairZeroThird_021f8b30.cpp:
+    complete
+    .text start:0x021f8b30 end:0x021f8b78
+
+
+src/Combat/Overlay_23/SetFixed12PairZeroThird_021fbc68.cpp:
+    complete
+    .text start:0x021fbc68 end:0x021fbcb0
+
+
+src/Combat/Overlay_23/SetShortsFromDiv4096_021fbc24.cpp:
+    complete
+    .text start:0x021fbc24 end:0x021fbc68
