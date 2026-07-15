@@ -205,3 +205,103 @@ src/Combat/Overlay_31/TailCallWith32_02226fc8.cpp:
 src/Combat/Overlay_31/Wrapper02217f9c.cpp:
     complete
     .text start:0x02217f9c end:0x02217fb0
+
+
+src/Combat/Overlay_31/CallStubPair_02229890.cpp:
+    complete
+    .text start:0x02229890 end:0x022298a0
+
+
+src/Combat/Overlay_31/CallStubPair_0222a274.cpp:
+    complete
+    .text start:0x0222a274 end:0x0222a284
+
+
+src/Combat/Overlay_31/CallStubPair_0222b550.cpp:
+    complete
+    .text start:0x0222b550 end:0x0222b560
+
+
+src/Combat/Overlay_31/CallStubPair_0222cec0.cpp:
+    complete
+    .text start:0x0222cec0 end:0x0222ced0
+
+
+src/Combat/Overlay_31/CallStubPair_0222da50.cpp:
+    complete
+    .text start:0x0222da50 end:0x0222da60
+
+
+src/Combat/Overlay_31/CallStubPair_0222eef8.cpp:
+    complete
+    .text start:0x0222eef8 end:0x0222ef08
+
+
+src/Combat/Overlay_31/CallStubPair_02231a9c.cpp:
+    complete
+    .text start:0x02231a9c end:0x02231aac
+
+
+src/Combat/Overlay_31/CallStubPair_02233f40.cpp:
+    complete
+    .text start:0x02233f40 end:0x02233f50
+
+
+src/Combat/Overlay_31/GetGlobal02290cfc_02236474.cpp:
+    complete
+    .text start:0x02236474 end:0x02236484
+
+
+src/Combat/Overlay_31/RunTwoStepInit_0223442c.cpp:
+    complete
+    .text start:0x0223442c end:0x0223443c
+
+
+src/Combat/Overlay_31/RunTwoStepUpdate_0223d0a4.cpp:
+    complete
+    .text start:0x0223d0a4 end:0x0223d0b4
+
+
+src/Combat/Overlay_31/SetStoredByte1_02230ef0.cpp:
+    complete
+    .text start:0x02230ef0 end:0x02230f00
+
+
+src/Combat/Overlay_31/SetStoredPtr_0222ea14.cpp:
+    complete
+    .text start:0x0222ea14 end:0x0222ea24
+
+
+src/Combat/Overlay_31/TailCallDispatchType18_0223dffc.cpp:
+    complete
+    .text start:0x0223dffc end:0x0223e00c
+
+
+src/Combat/Overlay_31/TailCallField4Ptr_0223d918.cpp:
+    complete
+    .text start:0x0223d918 end:0x0223d928
+
+
+src/Combat/Overlay_31/TailCallField8_0223d908.cpp:
+    complete
+    .text start:0x0223d908 end:0x0223d918
+
+
+src/Combat/Overlay_31/TailCallForwardArg1_02233e3c.cpp:
+    complete
+    .text start:0x02233e3c end:0x02233e4c
+
+
+src/Combat/Overlay_31/TailCallOnTaskCompletion_0223b604.cpp:
+    complete
+    .text start:0x0223b604 end:0x0223b614
+
+
+src/Combat/Overlay_31/TailCallOv027Func_0223ab5c.cpp:
+    complete
+    .text start:0x0223ab5c end:0x0223ab6c
+
+
+src/Combat/Overlay_31/TailCallWith32_02227cc8.cpp:
+    complete
+    .text start:0x02227cc8 end:0x02227cd8
