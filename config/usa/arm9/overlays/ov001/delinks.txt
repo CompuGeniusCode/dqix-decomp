@@ -790,3 +790,28 @@ src/Combat/Overlay_1/SetQueueEntryChecked_02164214.cpp:
 src/Combat/Overlay_1/SetQueueEntryChecked_02164248.cpp:
     complete
     .text start:0x02164248 end:0x0216427c
+
+
+src/Combat/Overlay_1/EnqueueEventType18_02159250.cpp:
+    complete
+    .text start:0x02159250 end:0x02159290
+
+
+src/Combat/Overlay_1/FindFreeSlotAndReset_02159eb0.cpp:
+    complete
+    .text start:0x02159eb0 end:0x02159ef0
+
+
+src/Combat/Overlay_1/FindTableEntry_02153884.cpp:
+    complete
+    .text start:0x02153884 end:0x021538c8
+
+
+src/Combat/Overlay_1/ForwardTripleFields_0215942c.cpp:
+    complete
+    .text start:0x0215942c end:0x0215944c
+
+
+src/Combat/Overlay_1/InitAndCheckField3c_02153994.cpp:
+    complete
+    .text start:0x02153994 end:0x021539d8
