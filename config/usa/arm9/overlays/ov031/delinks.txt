@@ -1385,3 +1385,53 @@ src/Combat/Overlay_31/SetupOffsetPairAndSize_02205620.cpp:
 src/Combat/Overlay_31/TrimTrailingZeroShorts_0220bb24.cpp:
     complete
     .text start:0x0220bb24 end:0x0220bb4c
+
+
+src/Combat/Overlay_31/ClearField18_02222e80_0222cbb8.cpp:
+    complete
+    .text start:0x0222cbb8 end:0x0222cbe0
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_0222e868.cpp:
+    complete
+    .text start:0x0222e868 end:0x0222e890
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_0223125c.cpp:
+    complete
+    .text start:0x0223125c end:0x02231284
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_02231674.cpp:
+    complete
+    .text start:0x02231674 end:0x0223169c
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_02231d48.cpp:
+    complete
+    .text start:0x02231d48 end:0x02231d70
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_022321c4.cpp:
+    complete
+    .text start:0x022321c4 end:0x022321ec
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_022298a8.cpp:
+    complete
+    .text start:0x022298a8 end:0x022298d0
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02231058.cpp:
+    complete
+    .text start:0x02231058 end:0x02231080
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02233c94.cpp:
+    complete
+    .text start:0x02233c94 end:0x02233cbc
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02233f1c.cpp:
+    complete
+    .text start:0x02233f1c end:0x02233f40
