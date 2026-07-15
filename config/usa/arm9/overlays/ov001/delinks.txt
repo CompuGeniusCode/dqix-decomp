@@ -105,3 +105,93 @@ src/Combat/Overlay_1/SetTypeBAndField1c.cpp:
 src/Combat/Overlay_1/ZeroFields021537a0.cpp:
     complete
     .text start:0x021537a0 end:0x021537b0
+
+
+src/Combat/Overlay_1/AbsPlus159IfNegative0215ad2c.cpp:
+    complete
+    .text start:0x0215ad2c end:0x0215ad3c
+
+
+src/Combat/Overlay_1/CallVariant0215b5b4.cpp:
+    complete
+    .text start:0x0215b5b4 end:0x0215b5c8
+
+
+src/Combat/Overlay_1/ClearByteAt5cac_0215b058.cpp:
+    complete
+    .text start:0x0215b058 end:0x0215b074
+
+
+src/Combat/Overlay_1/CopyField10021598e0.cpp:
+    complete
+    .text start:0x021598e0 end:0x021598f0
+
+
+src/Combat/Overlay_1/EnqueueEventType10_0215b64c.cpp:
+    complete
+    .text start:0x0215b64c end:0x0215b668
+
+
+src/Combat/Overlay_1/EnqueueEventType12_0215a5d8.cpp:
+    complete
+    .text start:0x0215a5d8 end:0x0215a5f0
+
+
+src/Combat/Overlay_1/EnqueueEventType14_0215a5f0.cpp:
+    complete
+    .text start:0x0215a5f0 end:0x0215a608
+
+
+src/Combat/Overlay_1/EnqueueEventType3_0215a3c0.cpp:
+    complete
+    .text start:0x0215a3c0 end:0x0215a3d8
+
+
+src/Combat/Overlay_1/EnqueueEventType6_0215b5dc.cpp:
+    complete
+    .text start:0x0215b5dc end:0x0215b5f8
+
+
+src/Combat/Overlay_1/EnqueueEventType7_0215b5f8.cpp:
+    complete
+    .text start:0x0215b5f8 end:0x0215b614
+
+
+src/Combat/Overlay_1/EnqueueEventType8_0215b614.cpp:
+    complete
+    .text start:0x0215b614 end:0x0215b630
+
+
+src/Combat/Overlay_1/EnqueueEventType9_0215b630.cpp:
+    complete
+    .text start:0x0215b630 end:0x0215b64c
+
+
+src/Combat/Overlay_1/GetGlobalValue0215aab8.cpp:
+    complete
+    .text start:0x0215aab8 end:0x0215aac8
+
+
+src/Combat/Overlay_1/InvokeCallbackReturn1beb10_0215a734.cpp:
+    complete
+    .text start:0x0215a734 end:0x0215a750
+
+
+src/Combat/Overlay_1/InvokeCallbackReturn1befcb_0215a718.cpp:
+    complete
+    .text start:0x0215a718 end:0x0215a734
+
+
+src/Combat/Overlay_1/InvokeCallbackReturn1bf27f_0215a6fc.cpp:
+    complete
+    .text start:0x0215a6fc end:0x0215a718
+
+
+src/Combat/Overlay_1/SetArrVal0215aaa8.cpp:
+    complete
+    .text start:0x0215aaa8 end:0x0215aab8
+
+
+src/Combat/Overlay_1/SetBattleFlagField5cac_0215b040.cpp:
+    complete
+    .text start:0x0215b040 end:0x0215b058
