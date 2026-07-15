@@ -1560,3 +1560,68 @@ src/Combat/Overlay_31/SelectAndCall022071d8.cpp:
 src/Combat/Overlay_31/SwapField2AndForward02207204.cpp:
     complete
     .text start:0x02207204 end:0x02207230
+
+
+src/Combat/Overlay_31/ForwardField8AndDeref60_02227688.cpp:
+    complete
+    .text start:0x02227688 end:0x022276b4
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_022312e0.cpp:
+    complete
+    .text start:0x022312e0 end:0x0223130c
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c_0222b388.cpp:
+    complete
+    .text start:0x0222b388 end:0x0222b3b4
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c_0222cb8c.cpp:
+    complete
+    .text start:0x0222cb8c end:0x0222cbb8
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c_0222d6b0.cpp:
+    complete
+    .text start:0x0222d6b0 end:0x0222d6dc
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c_0222e378.cpp:
+    complete
+    .text start:0x0222e378 end:0x0222e3a4
+
+
+src/Combat/Overlay_31/IsField19ZeroOrNull_02222e54.cpp:
+    complete
+    .text start:0x02222e54 end:0x02222e80
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02228a58.cpp:
+    complete
+    .text start:0x02228a58 end:0x02228a84
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02229aa8.cpp:
+    complete
+    .text start:0x02229aa8 end:0x02229ad4
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02229f44.cpp:
+    complete
+    .text start:0x02229f44 end:0x02229f70
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_0222abbc.cpp:
+    complete
+    .text start:0x0222abbc end:0x0222abe8
+
+
+src/Combat/Overlay_31/TailCallLookup_02229748.cpp:
+    complete
+    .text start:0x02229748 end:0x02229774
+
+
+src/Combat/Overlay_31/ValidateAndProcessBuffer_02227c84.cpp:
+    complete
+    .text start:0x02227c84 end:0x02227cb0
