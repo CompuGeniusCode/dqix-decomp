@@ -1685,3 +1685,78 @@ src/Combat/Overlay_31/SetField1cAnd1d_02235500.cpp:
 src/Combat/Overlay_31/SetField_022274c0_022274c0_02234a3c.cpp:
     complete
     .text start:0x02234a3c end:0x02234a68
+
+
+src/Combat/Overlay_31/CheckHighBitOrTrim_0220bb4c.cpp:
+    complete
+    .text start:0x0220bb4c end:0x0220bb7c
+
+
+src/Combat/Overlay_31/CheckStatus_022154f8.cpp:
+    complete
+    .text start:0x022154f8 end:0x02215528
+
+
+src/Combat/Overlay_31/FillRemainder_02204168.cpp:
+    complete
+    .text start:0x02204168 end:0x0220419c
+
+
+src/Combat/Overlay_31/GetField260_0220d540.cpp:
+    complete
+    .text start:0x0220d540 end:0x0220d570
+
+
+src/Combat/Overlay_31/GetField4IfCountAbove12_0220edb4.cpp:
+    complete
+    .text start:0x0220edb4 end:0x0220ede4
+
+
+src/Combat/Overlay_31/InitSessionFields_0220321c.cpp:
+    complete
+    .text start:0x0220321c end:0x02203250
+
+
+src/Combat/Overlay_31/InitTwoBuffers_0220ba14.cpp:
+    complete
+    .text start:0x0220ba14 end:0x0220ba44
+
+
+src/Combat/Overlay_31/IsNotInList0224e22c_02207180.cpp:
+    complete
+    .text start:0x02207180 end:0x022071b4
+
+
+src/Combat/Overlay_31/IsNotState76_0220a444.cpp:
+    complete
+    .text start:0x0220a444 end:0x0220a474
+
+
+src/Combat/Overlay_31/MaybeCallIfState0Or4_0220689c.cpp:
+    complete
+    .text start:0x0220689c end:0x022068cc
+
+
+src/Combat/Overlay_31/ParseDigits_02204b50.cpp:
+    complete
+    .text start:0x02204b50 end:0x02204b84
+
+
+src/Combat/Overlay_31/ReadPacked64Reversed_0220c0c0.cpp:
+    complete
+    .text start:0x0220c0c0 end:0x0220c0dc
+
+
+src/Combat/Overlay_31/SetActiveContextByte9_0220aa68.cpp:
+    complete
+    .text start:0x0220aa68 end:0x0220aa98
+
+
+src/Combat/Overlay_31/SkipControlSeq_02204878.cpp:
+    complete
+    .text start:0x02204878 end:0x022048a8
+
+
+src/Combat/Overlay_31/StorePairIfValid_02206f08.cpp:
+    complete
+    .text start:0x02206f08 end:0x02206f3c
