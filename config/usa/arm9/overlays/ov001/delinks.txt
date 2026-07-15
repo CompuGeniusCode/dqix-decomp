@@ -535,3 +535,88 @@ src/Combat/Overlay_1/SetOv17FieldFromOv28Result_02163228.cpp:
 src/Combat/Overlay_1/SetFlagInIndirectField_02163dc8.cpp:
     complete
     .text start:0x02163dc8 end:0x02163dec
+
+
+src/Combat/Overlay_1/AllFourPtrFieldsAreNull_02158ab8.cpp:
+    complete
+    .text start:0x02158ab8 end:0x02158ae4
+
+
+src/Combat/Overlay_1/EnqueueEventType1_02158efc.cpp:
+    complete
+    .text start:0x02158efc end:0x02158f30
+
+
+src/Combat/Overlay_1/EnqueueEventType1_0215a330.cpp:
+    complete
+    .text start:0x0215a330 end:0x0215a364
+
+
+src/Combat/Overlay_1/EnqueueEventType2_02158f30.cpp:
+    complete
+    .text start:0x02158f30 end:0x02158f64
+
+
+src/Combat/Overlay_1/EnqueueEventType5_0215a3f8.cpp:
+    complete
+    .text start:0x0215a3f8 end:0x0215a42c
+
+
+src/Combat/Overlay_1/EnqueueEventType7_0215a44c.cpp:
+    complete
+    .text start:0x0215a44c end:0x0215a480
+
+
+src/Combat/Overlay_1/EnqueueQueueEvent4_0215c430.cpp:
+    complete
+    .text start:0x0215c430 end:0x0215c468
+
+
+src/Combat/Overlay_1/EnqueueQueueEvent9_0215c544.cpp:
+    complete
+    .text start:0x0215c544 end:0x0215c57c
+
+
+src/Combat/Overlay_1/FindFreeSlot_0215a818.cpp:
+    complete
+    .text start:0x0215a818 end:0x0215a850
+
+
+src/Combat/Overlay_1/ForwardArgsAndClearFlag8c_0215acf8.cpp:
+    complete
+    .text start:0x0215acf8 end:0x0215ad2c
+
+
+src/Combat/Overlay_1/Function_0215647c.cpp:
+    complete
+    .text start:0x0215647c end:0x021564b0
+
+
+src/Combat/Overlay_1/InitAndSetFieldE4_0215d134.cpp:
+    complete
+    .text start:0x0215d134 end:0x0215d168
+
+
+src/Combat/Overlay_1/SetCombatFlagOnCondition_0215aef0.cpp:
+    complete
+    .text start:0x0215aef0 end:0x0215af34
+
+
+src/Combat/Overlay_1/SetEntryTypeAndFields_0215913c.cpp:
+    complete
+    .text start:0x0215913c end:0x02159168
+
+
+src/Combat/Overlay_1/SetLinkFlagFromMask_0215ae84.cpp:
+    complete
+    .text start:0x0215ae84 end:0x0215aeb8
+
+
+src/Combat/Overlay_1/SetLinkFromThreshold_0215aeb8.cpp:
+    complete
+    .text start:0x0215aeb8 end:0x0215aef0
+
+
+src/Combat/Overlay_1/SomeHwFlagSetter_0215b560.cpp:
+    complete
+    .text start:0x0215b560 end:0x0215b598
