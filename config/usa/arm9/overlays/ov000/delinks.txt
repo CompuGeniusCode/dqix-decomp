@@ -1518,3 +1518,48 @@ src/Combat/Overlay_0/EnqueueEventTwoShorts0x45_0216ba68.cpp:
 src/Combat/Overlay_0/EnqueueEventWithTwoByteFields_0216a8d8.cpp:
     complete
     .text start:0x0216a8d8 end:0x0216a934
+
+
+src/Combat/Overlay_0/BuildStringEventWithTag_0216ad0c.cpp:
+    complete
+    .text start:0x0216ad0c end:0x0216ad7c
+
+
+src/Combat/Overlay_0/EnqueueEventWithByteAndShortField_0216c624.cpp:
+    complete
+    .text start:0x0216c624 end:0x0216c680
+
+
+src/Combat/Overlay_0/EnqueueEventWithByteField_0216c804.cpp:
+    complete
+    .text start:0x0216c804 end:0x0216c85c
+
+
+src/Combat/Overlay_0/EnqueueEventWithScaledFloatField_0216cd28.cpp:
+    complete
+    .text start:0x0216cd28 end:0x0216cd90
+
+
+src/Combat/Overlay_0/EnqueueEventWithShortAndIntField_0216c4a4.cpp:
+    complete
+    .text start:0x0216c4a4 end:0x0216c500
+
+
+src/Combat/Overlay_0/EnqueueEventWithShortAndTwoIntFields_0216c384.cpp:
+    complete
+    .text start:0x0216c384 end:0x0216c3ec
+
+
+src/Combat/Overlay_0/EnqueueEventWithShortField_0216cd90.cpp:
+    complete
+    .text start:0x0216cd90 end:0x0216cdec
+
+
+src/Combat/Overlay_0/EnqueueEventWithTwoShortFields_0216c514.cpp:
+    complete
+    .text start:0x0216c514 end:0x0216c570
+
+
+src/Combat/Overlay_0/EnqueueEvent_0216be00.cpp:
+    complete
+    .text start:0x0216be00 end:0x0216be58
