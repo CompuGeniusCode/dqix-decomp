@@ -320,3 +320,78 @@ src/Combat/Overlay_3/MatchesArrayEntry_02155f40.cpp:
 src/Combat/Overlay_3/ResetAndApply0215be20.cpp:
     complete
     .text start:0x0215be20 end:0x0215be70
+
+
+src/Combat/Overlay_3/AddCappedFieldF6c_02169938.cpp:
+    complete
+    .text start:0x02169938 end:0x0216997c
+
+
+src/Combat/Overlay_3/ApplyElementEffect02161438.cpp:
+    complete
+    .text start:0x02161438 end:0x02161480
+
+
+src/Combat/Overlay_3/CheckFlagOrThreshold_02169554.cpp:
+    complete
+    .text start:0x02169554 end:0x02169594
+
+
+src/Combat/Overlay_3/CountValidCombatantsMinusField_02160b84.cpp:
+    complete
+    .text start:0x02160b84 end:0x02160bd0
+
+
+src/Combat/Overlay_3/DispatchByFlags464_02160cc0.cpp:
+    complete
+    .text start:0x02160cc0 end:0x02160cf8
+
+
+src/Combat/Overlay_3/FindElemByKey_0215e824.cpp:
+    complete
+    .text start:0x0215e824 end:0x0215e85c
+
+
+src/Combat/Overlay_3/FindEntryByMask_0215e8f4.cpp:
+    complete
+    .text start:0x0215e8f4 end:0x0215e930
+
+
+src/Combat/Overlay_3/GetTableEntry0215e9a4.cpp:
+    complete
+    .text start:0x0215e9a4 end:0x0215e9ec
+
+
+src/Combat/Overlay_3/InitAllocatedArray_0215e750.cpp:
+    complete
+    .text start:0x0215e750 end:0x0215e790
+
+
+src/Combat/Overlay_3/InitArray_0215e85c.cpp:
+    complete
+    .text start:0x0215e85c end:0x0215e898
+
+
+src/Combat/Overlay_3/InitStruct0215efb8.cpp:
+    complete
+    .text start:0x0215efb8 end:0x0215f000
+
+
+src/Combat/Overlay_3/ResetStruct_0215e498.cpp:
+    complete
+    .text start:0x0215e498 end:0x0215e4c8
+
+
+src/Combat/Overlay_3/SetEntryFieldsForRange_02168088.cpp:
+    complete
+    .text start:0x02168088 end:0x021680d4
+
+
+src/Combat/Overlay_3/SetEntryFields_021604f4.cpp:
+    complete
+    .text start:0x021604f4 end:0x0216052c
+
+
+src/Combat/Overlay_3/SetOrClearFlag40_02166f80.cpp:
+    complete
+    .text start:0x02166f80 end:0x02166fc4
