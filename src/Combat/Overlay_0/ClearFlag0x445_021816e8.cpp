@@ -3,7 +3,7 @@
 extern "C" void* func_ov000_02161318(void* obj, int index);
 
 // USA: func_ov000_021816e8
-ARM void ClearFlag0x445_021816e8(void* obj, int index) {
+ARM void ClearFlag_021816e8_021816e8(void* obj, int index) {
     void* p;
     int i;
     if (index < 0) {

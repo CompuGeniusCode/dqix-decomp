@@ -3,7 +3,7 @@
 extern "C" void* func_ov000_02161318(void* obj, int index);
 
 // USA: func_ov000_02181694
-ARM void SetFlag0x445_02181694(void* obj, int index) {
+ARM void SetFlag_02181694_02181694(void* obj, int index) {
     void* p;
     int i;
     if (index < 0) {

@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
 // USA: func_ov000_02182498
-ARM void SetOrInitField0x6e802182498(void* objRaw, int flag) {
+ARM void SetOrInitField_02182498(void* objRaw, int flag) {
     unsigned char* obj = (unsigned char*)objRaw;
     if (flag != 0) {
         if (obj[0x6e8] != 0) {

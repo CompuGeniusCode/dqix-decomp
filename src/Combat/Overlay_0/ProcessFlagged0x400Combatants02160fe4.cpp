@@ -5,7 +5,7 @@ struct CombatantStruct* GetCombatantWithFlag0x400(struct BattleStruct* battleStr
 extern "C" void func_02048690(struct CombatantStruct* combatant);
 
 // USA: func_ov000_02160fe4
-ARM void ProcessFlagged0x400Combatants02160fe4(void) {
+ARM void ProcessFlaggedombatants02160fe4_02160fe4(void) {
     struct BattleStruct* battle = GetBattleStruct();
     int i;
     for (i = 0; i < 8; i++) {
