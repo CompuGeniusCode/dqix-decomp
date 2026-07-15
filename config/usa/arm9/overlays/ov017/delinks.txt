@@ -915,3 +915,28 @@ src/Combat/Overlay_17/InitState66_021c1e40.cpp:
 src/Combat/Overlay_17/SetNameChecked_021b2ba0.cpp:
     complete
     .text start:0x021b2ba0 end:0x021b2bd0
+
+
+src/Combat/Overlay_17/CallHelperIfF0_021d4980.cpp:
+    complete
+    .text start:0x021d4980 end:0x021d49ac
+
+
+src/Combat/Overlay_17/EnqueueEventTag60Field_021d440c.cpp:
+    complete
+    .text start:0x021d440c end:0x021d443c
+
+
+src/Combat/Overlay_17/EnqueuePairEntry_021d4a38.cpp:
+    complete
+    .text start:0x021d4a38 end:0x021d4a64
+
+
+src/Combat/Overlay_17/MaybeResetCombatantById_021d443c.cpp:
+    complete
+    .text start:0x021d443c end:0x021d446c
+
+
+src/Combat/Overlay_17/PopStackEntry_021d4b9c.cpp:
+    complete
+    .text start:0x021d4b9c end:0x021d4bc8
