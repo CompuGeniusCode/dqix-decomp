@@ -325,3 +325,103 @@ src/Combat/Overlay_17/SetBg1CntPriority_02199998.cpp:
 src/Combat/Overlay_17/SetBg2CntPriority_021999e0.cpp:
     complete
     .text start:0x021999e0 end:0x021999fc
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021b1d24.cpp:
+    complete
+    .text start:0x021b1d24 end:0x021b1d3c
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021b2f4c.cpp:
+    complete
+    .text start:0x021b2f4c end:0x021b2f64
+
+
+src/Combat/Overlay_17/CallHelperIfFlagB_021b2328.cpp:
+    complete
+    .text start:0x021b2328 end:0x021b2348
+
+
+src/Combat/Overlay_17/CallHelperIfFlagB_021b2348.cpp:
+    complete
+    .text start:0x021b2348 end:0x021b2368
+
+
+src/Combat/Overlay_17/CallHelperIfFlagB_021b2368.cpp:
+    complete
+    .text start:0x021b2368 end:0x021b2388
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021b1cc4.cpp:
+    complete
+    .text start:0x021b1cc4 end:0x021b1ce4
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021b1ce4.cpp:
+    complete
+    .text start:0x021b1ce4 end:0x021b1d04
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021b1d04.cpp:
+    complete
+    .text start:0x021b1d04 end:0x021b1d24
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021b2f0c.cpp:
+    complete
+    .text start:0x021b2f0c end:0x021b2f2c
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021b2f2c.cpp:
+    complete
+    .text start:0x021b2f2c end:0x021b2f4c
+
+
+src/Combat/Overlay_17/CallIfField24_021b6b44.cpp:
+    complete
+    .text start:0x021b6b44 end:0x021b6b5c
+
+
+src/Combat/Overlay_17/CheckFlag3ThenFree_021b65bc.cpp:
+    complete
+    .text start:0x021b65bc end:0x021b65d8
+
+
+src/Combat/Overlay_17/ClearBitAtIndex_021b1454.cpp:
+    complete
+    .text start:0x021b1454 end:0x021b146c
+
+
+src/Combat/Overlay_17/ForwardObjField4ToHandler_021afa9c.cpp:
+    complete
+    .text start:0x021afa9c end:0x021afabc
+
+
+src/Combat/Overlay_17/GetField24ThenCall_021b2074.cpp:
+    complete
+    .text start:0x021b2074 end:0x021b2090
+
+
+src/Combat/Overlay_17/ResetOrGetFieldA_021b04c0.cpp:
+    complete
+    .text start:0x021b04c0 end:0x021b04e0
+
+
+src/Combat/Overlay_17/SetBit3_021b2bdc.cpp:
+    complete
+    .text start:0x021b2bdc end:0x021b2bf4
+
+
+src/Combat/Overlay_17/SetBit4_021b2bf4.cpp:
+    complete
+    .text start:0x021b2bf4 end:0x021b2c0c
+
+
+src/Combat/Overlay_17/SetBit5_021b2c0c.cpp:
+    complete
+    .text start:0x021b2c0c end:0x021b2c24
+
+
+src/Combat/Overlay_17/SetPowCnt1Bit15_021b1ca8.cpp:
+    complete
+    .text start:0x021b1ca8 end:0x021b1cc4
