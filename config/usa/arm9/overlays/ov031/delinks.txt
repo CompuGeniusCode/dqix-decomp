@@ -1040,3 +1040,78 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_02228960.cpp:
 src/Combat/Overlay_31/TestFieldRestBits_02227570.cpp:
     complete
     .text start:0x02227570 end:0x0222758c
+
+
+src/Combat/Overlay_31/CheckFirstOrRunTen_0223a358.cpp:
+    complete
+    .text start:0x0223a358 end:0x0223a374
+
+
+src/Combat/Overlay_31/DivBy3Times4_0223e438.cpp:
+    complete
+    .text start:0x0223e438 end:0x0223e454
+
+
+src/Combat/Overlay_31/ForwardFourArgsAsStruct_0223bf2c.cpp:
+    complete
+    .text start:0x0223bf2c end:0x0223bf48
+
+
+src/Combat/Overlay_31/ForwardFourArgsAsStruct_0223d884.cpp:
+    complete
+    .text start:0x0223d884 end:0x0223d8a0
+
+
+src/Combat/Overlay_31/HexCharToValue_02236760.cpp:
+    complete
+    .text start:0x02236760 end:0x0223677c
+
+
+src/Combat/Overlay_31/InitAndSetHandlerC_0222e3e8.cpp:
+    complete
+    .text start:0x0222e3e8 end:0x0222e404
+
+
+src/Combat/Overlay_31/IsKeyInputBit15Set_0222aa9c.cpp:
+    complete
+    .text start:0x0222aa9c end:0x0222aabc
+
+
+src/Combat/Overlay_31/IsKeyInputBit15Set_0222ae94.cpp:
+    complete
+    .text start:0x0222ae94 end:0x0222aeb4
+
+
+src/Combat/Overlay_31/QueryGlobal022918bc_022403d8.cpp:
+    complete
+    .text start:0x022403d8 end:0x022403f4
+
+
+src/Combat/Overlay_31/RunUpdateAndTwoChecks_0222b36c.cpp:
+    complete
+    .text start:0x0222b36c end:0x0222b388
+
+
+src/Combat/Overlay_31/SetupHandlerA_0222d094.cpp:
+    complete
+    .text start:0x0222d094 end:0x0222d0b0
+
+
+src/Combat/Overlay_31/SetupHandlerB_0222de08.cpp:
+    complete
+    .text start:0x0222de08 end:0x0222de24
+
+
+src/Combat/Overlay_31/TailCallOffset4c0_02235e74.cpp:
+    complete
+    .text start:0x02235e74 end:0x02235e90
+
+
+src/Combat/Overlay_31/TailCallOffset4f0_02235e90.cpp:
+    complete
+    .text start:0x02235e90 end:0x02235eac
+
+
+src/Combat/Overlay_31/TrySetFields18_1c_022400e8.cpp:
+    complete
+    .text start:0x022400e8 end:0x02240104
