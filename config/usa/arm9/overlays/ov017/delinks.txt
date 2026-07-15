@@ -125,3 +125,93 @@ src/Combat/Overlay_17/SetFlagAndCleanupC_021adb08.cpp:
 src/Combat/Overlay_17/SetFlagAndForward_021a99c8.cpp:
     complete
     .text start:0x021a99c8 end:0x021a99dc
+
+
+src/Combat/Overlay_17/ClearBitArrayWrapper_021d3ef0.cpp:
+    complete
+    .text start:0x021d3ef0 end:0x021d3f00
+
+
+src/Combat/Overlay_17/ClearFields0_2_4_021d35f8.cpp:
+    complete
+    .text start:0x021d35f8 end:0x021d360c
+
+
+src/Combat/Overlay_17/CopyHalfword4To24_021d23ec.cpp:
+    complete
+    .text start:0x021d23ec end:0x021d2400
+
+
+src/Combat/Overlay_17/GetFieldromField_021b1fd4_021b1fd4.cpp:
+    complete
+    .text start:0x021b1fd4 end:0x021b1fe8
+
+
+src/Combat/Overlay_17/GetOffsetPtrromField_021b1fc0_021b1fc0.cpp:
+    complete
+    .text start:0x021b1fc0 end:0x021b1fd4
+
+
+src/Combat/Overlay_17/GetSubByteField34_021b2024.cpp:
+    complete
+    .text start:0x021b2024 end:0x021b2038
+
+
+src/Combat/Overlay_17/GetSubByteField35_021b2038.cpp:
+    complete
+    .text start:0x021b2038 end:0x021b204c
+
+
+src/Combat/Overlay_17/GetSubByteField398_021b2010.cpp:
+    complete
+    .text start:0x021b2010 end:0x021b2024
+
+
+src/Combat/Overlay_17/GetSubByteField438_021b204c.cpp:
+    complete
+    .text start:0x021b204c end:0x021b2060
+
+
+src/Combat/Overlay_17/GetSubByteField439_021b2060.cpp:
+    complete
+    .text start:0x021b2060 end:0x021b2074
+
+
+src/Combat/Overlay_17/GetSubByteField44_021b1fe8.cpp:
+    complete
+    .text start:0x021b1fe8 end:0x021b1ffc
+
+
+src/Combat/Overlay_17/GetSubByteField56e_021b354c.cpp:
+    complete
+    .text start:0x021b354c end:0x021b3560
+
+
+src/Combat/Overlay_17/GetSubWordField394_021b1ffc.cpp:
+    complete
+    .text start:0x021b1ffc end:0x021b2010
+
+
+src/Combat/Overlay_17/InitState14Neg1_021b8c70.cpp:
+    complete
+    .text start:0x021b8c70 end:0x021b8c84
+
+
+src/Combat/Overlay_17/SetBitField_021afafc_021afafc.cpp:
+    complete
+    .text start:0x021afafc end:0x021afb10
+
+
+src/Combat/Overlay_17/SetFlag1ThenDestroy_021c1a10.cpp:
+    complete
+    .text start:0x021c1a10 end:0x021c1a24
+
+
+src/Combat/Overlay_17/SetFlag1ThenDestroy_021c30f8.cpp:
+    complete
+    .text start:0x021c30f8 end:0x021c310c
+
+
+src/Combat/Overlay_17/StoreField4ToGlobal_021d3eb4.cpp:
+    complete
+    .text start:0x021d3eb4 end:0x021d3ec8
