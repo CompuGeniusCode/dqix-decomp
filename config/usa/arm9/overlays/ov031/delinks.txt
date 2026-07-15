@@ -1440,3 +1440,43 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_02233f1c.cpp:
 src/Combat/Overlay_31/SetField54OrTagOne_02239a00.cpp:
     complete
     .text start:0x02239a00 end:0x02239a24
+
+
+src/Combat/Overlay_31/DestroyMainAllocator0223cedc.cpp:
+    complete
+    .text start:0x0223cedc end:0x0223cf00
+
+
+src/Combat/Overlay_31/LogEventCategory33_0223ea60.cpp:
+    complete
+    .text start:0x0223ea60 end:0x0223ea84
+
+
+src/Combat/Overlay_31/SetFlagIfMatchesElem0_0223caec.cpp:
+    complete
+    .text start:0x0223caec end:0x0223cb10
+
+
+src/Combat/Overlay_31/SetTagFromFlag2_02239b98.cpp:
+    complete
+    .text start:0x02239b98 end:0x02239bc0
+
+
+src/Combat/Overlay_31/TailCallDispatchFlags_0223a288.cpp:
+    complete
+    .text start:0x0223a288 end:0x0223a2b0
+
+
+src/Combat/Overlay_31/TailCallElemAtIndex30_0223c7c4.cpp:
+    complete
+    .text start:0x0223c7c4 end:0x0223c7e8
+
+
+src/Combat/Overlay_31/TailCallWithField648Ac8_0223ac14.cpp:
+    complete
+    .text start:0x0223ac14 end:0x0223ac38
+
+
+src/Combat/Overlay_31/TryOp02240050.cpp:
+    complete
+    .text start:0x02240050 end:0x02240074
