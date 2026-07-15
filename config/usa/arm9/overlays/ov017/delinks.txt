@@ -695,3 +695,68 @@ src/Combat/Overlay_17/IsField10Eq2_0218d618.cpp:
 src/Combat/Overlay_17/SetLowNibble56b_0218f57c.cpp:
     complete
     .text start:0x0218f57c end:0x0218f5a4
+
+
+src/Combat/Overlay_17/CallHelperIfField6b4Eq1_021b8b6c.cpp:
+    complete
+    .text start:0x021b8b6c end:0x021b8b94
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021c162c.cpp:
+    complete
+    .text start:0x021c162c end:0x021c164c
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021c164c.cpp:
+    complete
+    .text start:0x021c164c end:0x021c166c
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021c166c.cpp:
+    complete
+    .text start:0x021c166c end:0x021c168c
+
+
+src/Combat/Overlay_17/CallHelperIfMismatch_021cea64.cpp:
+    complete
+    .text start:0x021cea64 end:0x021cea8c
+
+
+src/Combat/Overlay_17/CopyByte4ToOffsetEb4_021c9d08.cpp:
+    complete
+    .text start:0x021c9d08 end:0x021c9d2c
+
+
+src/Combat/Overlay_17/CopyByteIfFlagMatches_021cc1d8.cpp:
+    complete
+    .text start:0x021cc1d8 end:0x021cc1f8
+
+
+src/Combat/Overlay_17/DispatchWithHalfwords_021ca2d8.cpp:
+    complete
+    .text start:0x021ca2d8 end:0x021ca2f8
+
+
+src/Combat/Overlay_17/EnqueueEventTag50_021cea8c.cpp:
+    complete
+    .text start:0x021cea8c end:0x021ceab4
+
+
+src/Combat/Overlay_17/IncrementCombatantByteIfFlagSet_021cc320.cpp:
+    complete
+    .text start:0x021cc320 end:0x021cc340
+
+
+src/Combat/Overlay_17/InitState71WithFlag_021c316c.cpp:
+    complete
+    .text start:0x021c316c end:0x021c3194
+
+
+src/Combat/Overlay_17/StoreFieldIntoOffset2c94_021d0d9c.cpp:
+    complete
+    .text start:0x021d0d9c end:0x021d0dbc
+
+
+src/Combat/Overlay_17/TailCallBuildArgs_021c9cb0.cpp:
+    complete
+    .text start:0x021c9cb0 end:0x021c9cd8
