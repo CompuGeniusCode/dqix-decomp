@@ -215,3 +215,18 @@ src/Combat/Overlay_17/SetFlag1ThenDestroy_021c30f8.cpp:
 src/Combat/Overlay_17/StoreField4ToGlobal_021d3eb4.cpp:
     complete
     .text start:0x021d3eb4 end:0x021d3ec8
+
+
+src/Combat/Overlay_17/ClearFields3c_40_44_021d4a24.cpp:
+    complete
+    .text start:0x021d4a24 end:0x021d4a38
+
+
+src/Combat/Overlay_17/CopyPair_021d4a64.cpp:
+    complete
+    .text start:0x021d4a64 end:0x021d4a78
+
+
+src/Combat/Overlay_17/SetLinkIfType3_021d6148.cpp:
+    complete
+    .text start:0x021d6148 end:0x021d615c

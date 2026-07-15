@@ -1160,9 +1160,9 @@ func_ov017_021d48f0 kind:function(arm,size=0x90) addr:0x021d48f0
 func_ov017_021d4980 kind:function(arm,size=0x2c) addr:0x021d4980
 func_ov017_021d49ac kind:function(arm,size=0x24) addr:0x021d49ac
 func_ov017_021d49d0 kind:function(arm,size=0x54) addr:0x021d49d0
-func_ov017_021d4a24 kind:function(arm,size=0x14) addr:0x021d4a24
+_Z28ClearFields3c_40_44_021d4a24P12Obj_021d4a24 kind:function(arm,size=0x14) addr:0x021d4a24
 func_ov017_021d4a38 kind:function(arm,size=0x2c) addr:0x021d4a38
-func_ov017_021d4a64 kind:function(arm,size=0x14) addr:0x021d4a64
+_Z17CopyPair_021d4a64P12Pair021d4a64S0_ kind:function(arm,size=0x14) addr:0x021d4a64
 func_ov017_021d4a78 kind:function(arm,size=0x20) addr:0x021d4a78
 func_ov017_021d4a98 kind:function(arm,size=0x20) addr:0x021d4a98
 func_ov017_021d4ab8 kind:function(arm,size=0x20) addr:0x021d4ab8
@@ -1180,7 +1180,7 @@ func_ov017_021d60f4 kind:function(arm,size=0x1c) addr:0x021d60f4
 func_ov017_021d6110 kind:function(arm,size=0x1c) addr:0x021d6110
 func_ov017_021d612c kind:function(arm,size=0x8) addr:0x021d612c
 func_ov017_021d6134 kind:function(arm,size=0x14) addr:0x021d6134
-func_ov017_021d6148 kind:function(arm,size=0x14) addr:0x021d6148
+_Z23SetLinkIfType3_021d6148P12Node021d6148j kind:function(arm,size=0x14) addr:0x021d6148
 data_ov017_021d615c kind:data(any) addr:0x021d615c
 data_ov017_021d616c kind:data(any) addr:0x021d616c
 data_ov017_021d6186 kind:data(any) addr:0x021d6186
