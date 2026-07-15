@@ -545,3 +545,23 @@ src/Combat/Overlay_3/UpdateFieldEdEf_02173af4.cpp:
 src/Combat/Overlay_3/UpdateStateFlags_02173788.cpp:
     complete
     .text start:0x02173788 end:0x021737e4
+
+
+src/Combat/Overlay_3/ComputeMappedOffset_0217a220.cpp:
+    complete
+    .text start:0x0217a220 end:0x0217a280
+
+
+src/Combat/Overlay_3/InitObjAndClearFlags_0217f1b8.cpp:
+    complete
+    .text start:0x0217f1b8 end:0x0217f218
+
+
+src/Combat/Overlay_3/InitObj_0217e5dc.cpp:
+    complete
+    .text start:0x0217e5dc end:0x0217e630
+
+
+src/Combat/Overlay_3/SetPendingFlags0217c74c.cpp:
+    complete
+    .text start:0x0217c74c end:0x0217c7a0
