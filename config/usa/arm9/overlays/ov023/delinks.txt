@@ -449,3 +449,78 @@ src/Combat/Overlay_23/SetFieldE2AndMaybeCall_021f8944.cpp:
 src/Combat/Overlay_23/SetFieldsAndInit_021fba80.cpp:
     complete
     .text start:0x021fba80 end:0x021fbaac
+
+
+src/Combat/Overlay_23/Check_021ddbf8.cpp:
+    complete
+    .text start:0x021ddbf8 end:0x021ddc34
+
+
+src/Combat/Overlay_23/CopyBytesToInts_021e31b0.cpp:
+    complete
+    .text start:0x021e31b0 end:0x021e31e4
+
+
+src/Combat/Overlay_23/DispatchByMode77c_021ddbb8.cpp:
+    complete
+    .text start:0x021ddbb8 end:0x021ddbf8
+
+
+src/Combat/Overlay_23/FindIndexByField8_021e1da4.cpp:
+    complete
+    .text start:0x021e1da4 end:0x021e1de8
+
+
+src/Combat/Overlay_23/Find_021d994c.cpp:
+    complete
+    .text start:0x021d994c end:0x021d9988
+
+
+src/Combat/Overlay_23/InitFields_021db0d4.cpp:
+    complete
+    .text start:0x021db0d4 end:0x021db110
+
+
+src/Combat/Overlay_23/LookupByField8_021dcb70.cpp:
+    complete
+    .text start:0x021dcb70 end:0x021dcba4
+
+
+src/Combat/Overlay_23/SetField8FromBit49c_021e93e0.cpp:
+    complete
+    .text start:0x021e93e0 end:0x021e9424
+
+
+src/Combat/Overlay_23/SetFieldFromLookupTable4_021e9864.cpp:
+    complete
+    .text start:0x021e9864 end:0x021e98a0
+
+
+src/Combat/Overlay_23/SetFieldFromLookupTable6_021e98a0.cpp:
+    complete
+    .text start:0x021e98a0 end:0x021e98dc
+
+
+src/Combat/Overlay_23/SetFieldsFromBattleGlobals_021e9208.cpp:
+    complete
+    .text start:0x021e9208 end:0x021e9244
+
+
+src/Combat/Overlay_23/SetFourWordBlocks_021e6088.cpp:
+    complete
+    .text start:0x021e6088 end:0x021e60c4
+
+
+src/Combat/Overlay_23/SetShiftedFieldsAndCall_021e32cc.cpp:
+    complete
+    .text start:0x021e32cc end:0x021e3304
+
+
+src/Combat/Overlay_23/SetThreeElementFields_021e6378.cpp:
+    complete
+    .text start:0x021e6378 end:0x021e63bc
+
+
+src/Combat/Overlay_23/TestFlagsAndActiveElement2_021e6e20.cpp:
+    complete
+    .text start:0x021e6e20 end:0x021e6e60
