@@ -1625,3 +1625,63 @@ src/Combat/Overlay_31/TailCallLookup_02229748.cpp:
 src/Combat/Overlay_31/ValidateAndProcessBuffer_02227c84.cpp:
     complete
     .text start:0x02227c84 end:0x02227cb0
+
+
+src/Combat/Overlay_31/CallWithZeroExtra_0223e218_02235060.cpp:
+    complete
+    .text start:0x02235060 end:0x0223508c
+
+
+src/Combat/Overlay_31/ClearFourWordsAndFlag_0223fa34.cpp:
+    complete
+    .text start:0x0223fa34 end:0x0223fa5c
+
+
+src/Combat/Overlay_31/ClearSlot_0223bd88.cpp:
+    complete
+    .text start:0x0223bd88 end:0x0223bdb0
+
+
+src/Combat/Overlay_31/CopyBufferAndNotify_02235034.cpp:
+    complete
+    .text start:0x02235034 end:0x02235060
+
+
+src/Combat/Overlay_31/EnableSomeFlag_0223d830.cpp:
+    complete
+    .text start:0x0223d830 end:0x0223d858
+
+
+src/Combat/Overlay_31/FreeField30AndCleanup02240df4.cpp:
+    complete
+    .text start:0x02240df4 end:0x02240e1c
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c_02231fd8.cpp:
+    complete
+    .text start:0x02231fd8 end:0x02232004
+
+
+src/Combat/Overlay_31/GetField36State022436e0.cpp:
+    complete
+    .text start:0x022436e0 end:0x02243708
+
+
+src/Combat/Overlay_31/IsField18Zero_02237388.cpp:
+    complete
+    .text start:0x02237388 end:0x022373b4
+
+
+src/Combat/Overlay_31/RegisterCallback_0223e8ac.cpp:
+    complete
+    .text start:0x0223e8ac end:0x0223e8d4
+
+
+src/Combat/Overlay_31/SetField1cAnd1d_02235500.cpp:
+    complete
+    .text start:0x02235500 end:0x0223552c
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02234a3c.cpp:
+    complete
+    .text start:0x02234a3c end:0x02234a68
