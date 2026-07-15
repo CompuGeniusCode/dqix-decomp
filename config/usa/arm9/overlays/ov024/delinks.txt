@@ -6,3 +6,67 @@
 
 src/Combat/Overlay_24/GetAttackBaseDamage.c:
 	.text start:0x021e7bc0 end:0x021e80e4
+
+src/Combat/Overlay_24/Divide2Plus37_021d9d6c.cpp:
+    complete
+    .text start:0x021d9d6c end:0x021d9d80
+
+
+src/Combat/Overlay_24/DivideStackScaled_021d9224.cpp:
+    complete
+    .text start:0x021d9224 end:0x021d923c
+
+
+src/Combat/Overlay_24/IsFlagBit19Set_021da9c8.cpp:
+    complete
+    .text start:0x021da9c8 end:0x021da9e0
+
+
+src/Combat/Overlay_24/IsFlagBit24Set_021dd260.cpp:
+    complete
+    .text start:0x021dd260 end:0x021dd278
+
+
+src/Combat/Overlay_24/IsFlagBit5Set_021de25c.cpp:
+    complete
+    .text start:0x021de25c end:0x021de274
+
+
+src/Combat/Overlay_24/IsFlagBit8388608Set_021da998.cpp:
+    complete
+    .text start:0x021da998 end:0x021da9b0
+
+
+src/Combat/Overlay_24/IsFlagBit8Set_021da9b0.cpp:
+    complete
+    .text start:0x021da9b0 end:0x021da9c8
+
+
+src/Combat/Overlay_24/IsFlagBit8Set_021dd010.cpp:
+    complete
+    .text start:0x021dd010 end:0x021dd028
+
+
+src/Combat/Overlay_24/ScaleBy1Point2_021d8ff8.cpp:
+    complete
+    .text start:0x021d8ff8 end:0x021d901c
+
+
+src/Combat/Overlay_24/ScaleBy1Point3_021d8fd4.cpp:
+    complete
+    .text start:0x021d8fd4 end:0x021d8ff8
+
+
+src/Combat/Overlay_24/ScaleBy75Percent_021d8c70.cpp:
+    complete
+    .text start:0x021d8c70 end:0x021d8c90
+
+
+src/Combat/Overlay_24/ScaleByPoint7_021d92f8.cpp:
+    complete
+    .text start:0x021d92f8 end:0x021d931c
+
+
+src/Combat/Overlay_24/ScaleByPoint8_021d9060.cpp:
+    complete
+    .text start:0x021d9060 end:0x021d9084

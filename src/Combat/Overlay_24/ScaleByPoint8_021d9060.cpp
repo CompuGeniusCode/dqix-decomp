@@ -1,0 +1,5 @@
+#include <globaldefs.h>
+// USA: func_ov024_021d9060
+ARM int ScaleByPoint8_021d9060(int a0, int a1, int a2, int a3, int a4, int a5) {
+	return (int)((float)a5 * 0.8f);
+}
