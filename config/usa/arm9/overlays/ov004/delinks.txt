@@ -75,3 +75,98 @@ src/Combat/Overlay_4/SetOv011FieldTo_0215c95c_0215c95c.cpp:
 src/Combat/Overlay_4/SetOv011FieldTo_0215cc40_0215cc40.cpp:
     complete
     .text start:0x0215cc40 end:0x0215cc58
+
+
+src/Combat/Overlay_4/ClearSomeState02167424.cpp:
+    complete
+    .text start:0x02167424 end:0x02167434
+
+
+src/Combat/Overlay_4/SetFieldFlagValue102_021680b8.cpp:
+    complete
+    .text start:0x021680b8 end:0x021680cc
+
+
+src/Combat/Overlay_4/SetFieldFlagValue105_02168670.cpp:
+    complete
+    .text start:0x02168670 end:0x02168684
+
+
+src/Combat/Overlay_4/SetFieldFlagValue110_02168060.cpp:
+    complete
+    .text start:0x02168060 end:0x02168074
+
+
+src/Combat/Overlay_4/SetFieldFlagValue131_021683ec.cpp:
+    complete
+    .text start:0x021683ec end:0x02168400
+
+
+src/Combat/Overlay_4/SetFieldFlagValue151_02168268.cpp:
+    complete
+    .text start:0x02168268 end:0x0216827c
+
+
+src/Combat/Overlay_4/SetFieldFlagValue21_0216804c.cpp:
+    complete
+    .text start:0x0216804c end:0x02168060
+
+
+src/Combat/Overlay_4/SetFieldFlagValue21_0216827c.cpp:
+    complete
+    .text start:0x0216827c end:0x02168290
+
+
+src/Combat/Overlay_4/SetFlag100_0216589c.cpp:
+    complete
+    .text start:0x0216589c end:0x021658b0
+
+
+src/Combat/Overlay_4/SetFlag103_02165b38.cpp:
+    complete
+    .text start:0x02165b38 end:0x02165b4c
+
+
+src/Combat/Overlay_4/SetFlag104_02165b4c.cpp:
+    complete
+    .text start:0x02165b4c end:0x02165b60
+
+
+src/Combat/Overlay_4/SetFlag108_02167678.cpp:
+    complete
+    .text start:0x02167678 end:0x0216768c
+
+
+src/Combat/Overlay_4/SetFlag112_02165a08.cpp:
+    complete
+    .text start:0x02165a08 end:0x02165a1c
+
+
+src/Combat/Overlay_4/SetFlag117_02165bd0.cpp:
+    complete
+    .text start:0x02165bd0 end:0x02165be4
+
+
+src/Combat/Overlay_4/SetFlag21_02168024.cpp:
+    complete
+    .text start:0x02168024 end:0x02168038
+
+
+src/Combat/Overlay_4/SetFlag21_02168038.cpp:
+    complete
+    .text start:0x02168038 end:0x0216804c
+
+
+src/Combat/Overlay_4/SetGlobalFieldTo1_02165bb8_02165bb8.cpp:
+    complete
+    .text start:0x02165bb8 end:0x02165bd0
+
+
+src/Combat/Overlay_4/SetGlobalFieldTo1_0216768c_0216768c.cpp:
+    complete
+    .text start:0x0216768c end:0x021676a4
+
+
+src/Combat/Overlay_4/SetMessageFlag02165888.cpp:
+    complete
+    .text start:0x02165888 end:0x0216589c
