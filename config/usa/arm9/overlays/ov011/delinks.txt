@@ -4,3 +4,73 @@
     .data       start:0x021889a0 end:0x02188b80 kind:data align:32
     .bss        start:0x02188b80 end:0x02188b80 kind:bss align:32
 
+
+
+src/Combat/Overlay_11/ClearFields_02184374.cpp:
+    complete
+    .text start:0x02184374 end:0x0218438c
+
+
+src/Combat/Overlay_11/DestroyTreeNode_02184604.cpp:
+    complete
+    .text start:0x02184604 end:0x02184640
+
+
+src/Combat/Overlay_11/FindNodeById0218466c.cpp:
+    complete
+    .text start:0x0218466c end:0x02184694
+
+
+src/Combat/Overlay_11/GetCallbackTableAndCount_02184a30.cpp:
+    complete
+    .text start:0x02184a30 end:0x02184a40
+
+
+src/Combat/Overlay_11/GetTaggedValueAsFloat_02184c4c.cpp:
+    complete
+    .text start:0x02184c4c end:0x02184c68
+
+
+src/Combat/Overlay_11/GetTaggedValueAsInt_02184c30.cpp:
+    complete
+    .text start:0x02184c30 end:0x02184c4c
+
+
+src/Combat/Overlay_11/InitAndCreateTypeB021845c8.cpp:
+    complete
+    .text start:0x021845c8 end:0x021845f4
+
+
+src/Combat/Overlay_11/SetField1d8FromGlobalU16_02184c14.cpp:
+    complete
+    .text start:0x02184c14 end:0x02184c28
+
+
+src/Combat/Overlay_11/SetFieldConditional_021849e0.cpp:
+    complete
+    .text start:0x021849e0 end:0x02184a00
+
+
+src/Combat/Overlay_11/SetFieldOrChain_02184354.cpp:
+    complete
+    .text start:0x02184354 end:0x02184374
+
+
+src/Combat/Overlay_11/SetFlags114_021849ac.cpp:
+    complete
+    .text start:0x021849ac end:0x021849bc
+
+
+src/Combat/Overlay_11/SetXY1c0_02184be0.cpp:
+    complete
+    .text start:0x02184be0 end:0x02184bf0
+
+
+src/Combat/Overlay_11/SetXY1c4_02184bf0.cpp:
+    complete
+    .text start:0x02184bf0 end:0x02184c00
+
+
+src/Combat/Overlay_11/StoreGlobalHalf2_02184c00.cpp:
+    complete
+    .text start:0x02184c00 end:0x02184c14
