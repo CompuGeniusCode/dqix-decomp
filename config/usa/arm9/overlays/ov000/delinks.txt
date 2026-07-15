@@ -1403,3 +1403,23 @@ src/Combat/Overlay_0/CollectListShorts021628c8.cpp:
 src/Combat/Overlay_0/CollectMappedValuesFromNodeList02162908.cpp:
     complete
     .text start:0x02162908 end:0x02162954
+
+
+src/Combat/Overlay_0/AppendMissingTableValues02167484.cpp:
+    complete
+    .text start:0x02167484 end:0x021674f4
+
+
+src/Combat/Overlay_0/ClearFlag0x8IfParityMismatch02163710.cpp:
+    complete
+    .text start:0x02163710 end:0x02163778
+
+
+src/Combat/Overlay_0/ComputeScaledRatio02167b5c.cpp:
+    complete
+    .text start:0x02167b5c end:0x02167bb4
+
+
+src/Combat/Overlay_0/LoadGPCFile02166008.cpp:
+    complete
+    .text start:0x02166008 end:0x02166070
