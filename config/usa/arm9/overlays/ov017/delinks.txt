@@ -1375,3 +1375,73 @@ src/Combat/Overlay_17/SetCombatantFlag8IfField8_021d25b8.cpp:
 src/Combat/Overlay_17/UpdateActivationIfMatch_021cfda0.cpp:
     complete
     .text start:0x021cfda0 end:0x021cfde0
+
+
+src/Combat/Overlay_17/AdvanceCombatantsInRange_02197394.cpp:
+    complete
+    .text start:0x02197394 end:0x021973e8
+
+
+src/Combat/Overlay_17/CallIndexedFunc_021b4710.cpp:
+    complete
+    .text start:0x021b4710 end:0x021b4760
+
+
+src/Combat/Overlay_17/CheckFieldOrClearBits_021b2b14.cpp:
+    complete
+    .text start:0x021b2b14 end:0x021b2b68
+
+
+src/Combat/Overlay_17/ConfigureModeByByte_0218d274_0218d274.cpp:
+    complete
+    .text start:0x0218d274 end:0x0218d2c4
+
+
+src/Combat/Overlay_17/FindCombatantByField2_021a2738.cpp:
+    complete
+    .text start:0x021a2738 end:0x021a278c
+
+
+src/Combat/Overlay_17/GetAngleDeltaBetween_021a4700.cpp:
+    complete
+    .text start:0x021a4700 end:0x021a4754
+
+
+src/Combat/Overlay_17/GetBitflagForCombatantColor_021a26e8.cpp:
+    complete
+    .text start:0x021a26e8 end:0x021a2738
+
+
+src/Combat/Overlay_17/Init021a6be4.cpp:
+    complete
+    .text start:0x021a6be4 end:0x021a6c2c
+
+
+src/Combat/Overlay_17/Init021b2f64.cpp:
+    complete
+    .text start:0x021b2f64 end:0x021b2fac
+
+
+src/Combat/Overlay_17/InitObj_021a7328.cpp:
+    complete
+    .text start:0x021a7328 end:0x021a7378
+
+
+src/Combat/Overlay_17/ResetFieldWithLog_0218d5c8.cpp:
+    complete
+    .text start:0x0218d5c8 end:0x0218d618
+
+
+src/Combat/Overlay_17/SetFlagAndMaybeNotify_021ab010.cpp:
+    complete
+    .text start:0x021ab010 end:0x021ab060
+
+
+src/Combat/Overlay_17/SetStatusBitWithPeerCheck_021afb34.cpp:
+    complete
+    .text start:0x021afb34 end:0x021afb84
+
+
+src/Combat/Overlay_17/Something_021a9f58.cpp:
+    complete
+    .text start:0x021a9f58 end:0x021a9fa0
