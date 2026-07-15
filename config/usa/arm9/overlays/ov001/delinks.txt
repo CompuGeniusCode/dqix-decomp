@@ -620,3 +620,78 @@ src/Combat/Overlay_1/SetLinkFromThreshold_0215aeb8.cpp:
 src/Combat/Overlay_1/SomeHwFlagSetter_0215b560.cpp:
     complete
     .text start:0x0215b560 end:0x0215b598
+
+
+src/Combat/Overlay_1/ClearFieldAndPopStack_02161a60.cpp:
+    complete
+    .text start:0x02161a60 end:0x02161a90
+
+
+src/Combat/Overlay_1/Forward2Field0219b578_02160a48.cpp:
+    complete
+    .text start:0x02160a48 end:0x02160a7c
+
+
+src/Combat/Overlay_1/FreeEntryAllocator_02161900.cpp:
+    complete
+    .text start:0x02161900 end:0x02161930
+
+
+src/Combat/Overlay_1/SetByteFieldFromBattle_021618d0.cpp:
+    complete
+    .text start:0x021618d0 end:0x02161900
+
+
+src/Combat/Overlay_1/SetByteFlagFromCheck_0215e97c.cpp:
+    complete
+    .text start:0x0215e97c end:0x0215e9b0
+
+
+src/Combat/Overlay_1/SetFieldFromEntryIndex_0215fa10.cpp:
+    complete
+    .text start:0x0215fa10 end:0x0215fa40
+
+
+src/Combat/Overlay_1/SetFieldFromGlobalByte_0215e3b8_0215e3b8.cpp:
+    complete
+    .text start:0x0215e3b8 end:0x0215e3e8
+
+
+src/Combat/Overlay_1/SetFieldFromGlobalPtryte_0215e414_0215e414.cpp:
+    complete
+    .text start:0x0215e414 end:0x0215e444
+
+
+src/Combat/Overlay_1/SetGlobalFlagBit2_0215e53c.cpp:
+    complete
+    .text start:0x0215e53c end:0x0215e564
+
+
+src/Combat/Overlay_1/SetGlobalFlagBit_0215e588_0215e588.cpp:
+    complete
+    .text start:0x0215e588 end:0x0215e5b0
+
+
+src/Combat/Overlay_1/SetShortField734_0215f9dc.cpp:
+    complete
+    .text start:0x0215f9dc end:0x0215fa10
+
+
+src/Combat/Overlay_1/SetSubBg0Control_0215e758.cpp:
+    complete
+    .text start:0x0215e758 end:0x0215e78c
+
+
+src/Combat/Overlay_1/SetSubBg1Control_0215e78c.cpp:
+    complete
+    .text start:0x0215e78c end:0x0215e7c0
+
+
+src/Combat/Overlay_1/StoreField_0215e938_0215e938.cpp:
+    complete
+    .text start:0x0215e938 end:0x0215e960
+
+
+src/Combat/Overlay_1/ZeroField_021603b0_021603b0.cpp:
+    complete
+    .text start:0x021603b0 end:0x021603d8
