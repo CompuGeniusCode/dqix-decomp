@@ -805,8 +805,8 @@ func_ov023_021fcf24 kind:function(arm,size=0xac) addr:0x021fcf24
 _Z24RunAndGetResult_021fcfd0P11Obj021fcfd0 kind:function(arm,size=0x18) addr:0x021fcfd0
 func_ov023_021fcfe8 kind:function(arm,size=0x20) addr:0x021fcfe8
 func_ov023_021fd008 kind:function(arm,size=0x4) addr:0x021fd008
-func_ov023_021fd00c kind:function(arm,size=0x1c) addr:0x021fd00c
-func_ov023_021fd028 kind:function(arm,size=0x14) addr:0x021fd028
+_Z26SetWords_021fd00c_021fd00cPvP13Words021fd00c kind:function(arm,size=0x1c) addr:0x021fd00c
+_Z27GetOffset100Triple_021fd028Pv kind:function(arm,size=0x14) addr:0x021fd028
 func_ov023_021fd03c kind:function(arm,size=0xe4) addr:0x021fd03c
 func_ov023_021fd120 kind:function(arm,size=0xc0) addr:0x021fd120
 func_ov023_021fd1e0 kind:function(arm,size=0x54) addr:0x021fd1e0
@@ -823,7 +823,7 @@ func_ov023_021fd420 kind:function(arm,size=0x3c) addr:0x021fd420
 func_ov023_021fd45c kind:function(arm,size=0x8) addr:0x021fd45c
 func_ov023_021fd464 kind:function(arm,size=0x8) addr:0x021fd464
 func_ov023_021fd46c kind:function(arm,size=0x8c) addr:0x021fd46c
-func_ov023_021fd4f8 kind:function(arm,size=0x14) addr:0x021fd4f8
+_Z26CallVTableFnAt184_021fd4f8P11Obj021fd4f8 kind:function(arm,size=0x14) addr:0x021fd4f8
 func_ov023_021fd50c kind:function(arm,size=0x4) addr:0x021fd50c
 data_ov023_021fd510 kind:data(any) addr:0x021fd510
 data_ov023_021fd530 kind:data(any) addr:0x021fd530
