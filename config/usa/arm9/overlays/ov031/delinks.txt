@@ -705,3 +705,93 @@ src/Combat/Overlay_31/SetGlobal0224e1c0Flag2_02205000.cpp:
 src/Combat/Overlay_31/ZeroGlobalBuffer0224e3b8.cpp:
     complete
     .text start:0x0220ab78 end:0x0220ab94
+
+
+src/Combat/Overlay_31/CallWithConsts3_1_14_02211c38.cpp:
+    complete
+    .text start:0x02211c38 end:0x02211c50
+
+
+src/Combat/Overlay_31/CallWithTag6Zero_022127a8.cpp:
+    complete
+    .text start:0x022127a8 end:0x022127c0
+
+
+src/Combat/Overlay_31/CallWithTag6_02212790.cpp:
+    complete
+    .text start:0x02212790 end:0x022127a8
+
+
+src/Combat/Overlay_31/ClearField18_02222e80.cpp:
+    complete
+    .text start:0x02222e80 end:0x02222e98
+
+
+src/Combat/Overlay_31/CopyFrom0224e6ac_0221b140.cpp:
+    complete
+    .text start:0x0221b140 end:0x0221b158
+
+
+src/Combat/Overlay_31/FreeArrayAndPtr0_02223708.cpp:
+    complete
+    .text start:0x02223708 end:0x02223720
+
+
+src/Combat/Overlay_31/GetField9OrZero_022134b0.cpp:
+    complete
+    .text start:0x022134b0 end:0x022134cc
+
+
+src/Combat/Overlay_31/GetGlobalField1000_02219220.cpp:
+    complete
+    .text start:0x02219220 end:0x02219238
+
+
+src/Combat/Overlay_31/GetOrInitField_0221188c.cpp:
+    complete
+    .text start:0x0221188c end:0x022118a8
+
+
+src/Combat/Overlay_31/InitHeaderMagic_02211b28.cpp:
+    complete
+    .text start:0x02211b28 end:0x02211b40
+
+
+src/Combat/Overlay_31/IsGlobal0224e598Set_02211848.cpp:
+    complete
+    .text start:0x02211848 end:0x02211864
+
+
+src/Combat/Overlay_31/IsGlobal0224e5a4Set_02211aec.cpp:
+    complete
+    .text start:0x02211aec end:0x02211b08
+
+
+src/Combat/Overlay_31/MarkGlobal0224e588ContextReady_022101c4.cpp:
+    complete
+    .text start:0x022101c4 end:0x022101e0
+
+
+src/Combat/Overlay_31/SetField18_02222e98.cpp:
+    complete
+    .text start:0x02222e98 end:0x02222eb0
+
+
+src/Combat/Overlay_31/SetGlobal0224e588Deref_022103dc.cpp:
+    complete
+    .text start:0x022103dc end:0x022103f8
+
+
+src/Combat/Overlay_31/SetGlobal0224e588Field30_022101ac.cpp:
+    complete
+    .text start:0x022101ac end:0x022101c4
+
+
+src/Combat/Overlay_31/SetGlobal0224e588FieldA0c_02210314.cpp:
+    complete
+    .text start:0x02210314 end:0x0221032c
+
+
+src/Combat/Overlay_31/SetGlobal0224e5a4IfNotNine.cpp:
+    complete
+    .text start:0x02211b08 end:0x02211b20
