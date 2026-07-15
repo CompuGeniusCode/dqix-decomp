@@ -193,7 +193,7 @@ func_ov002_021685bc kind:function(arm,size=0x2a0) addr:0x021685bc
 func_ov002_0216885c kind:function(arm,size=0x9c) addr:0x0216885c
 func_ov002_021688f8 kind:function(arm,size=0x308) addr:0x021688f8
 func_ov002_02168c00 kind:function(arm,size=0x38) addr:0x02168c00
-func_ov002_02168c38 kind:function(arm,size=0x70) addr:0x02168c38
+_Z13Reset02168c38P11Foo02168c38 kind:function(arm,size=0x70) addr:0x02168c38
 func_ov002_02168ca8 kind:function(arm,size=0x68) addr:0x02168ca8
 func_ov002_02168d10 kind:function(arm,size=0x44) addr:0x02168d10
 func_ov002_02168d54 kind:function(arm,size=0x7cc) addr:0x02168d54
@@ -209,7 +209,7 @@ func_ov002_0216bfd4 kind:function(arm,size=0x2b8) addr:0x0216bfd4
 func_ov002_0216c28c kind:function(arm,size=0x4c) addr:0x0216c28c
 func_ov002_0216c2d8 kind:function(arm,size=0x154) addr:0x0216c2d8
 func_ov002_0216c42c kind:function(arm,size=0x1fc) addr:0x0216c42c
-func_ov002_0216c628 kind:function(arm,size=0x2c) addr:0x0216c628
+_Z35DecrementOrClearCounterC74_0216c628Phi kind:function(arm,size=0x2c) addr:0x0216c628
 func_ov002_0216c654 kind:function(arm,size=0x318) addr:0x0216c654
 data_ov002_0216c96c kind:data(any) addr:0x0216c96c
 data_ov002_0216c96e kind:data(any) addr:0x0216c96e
