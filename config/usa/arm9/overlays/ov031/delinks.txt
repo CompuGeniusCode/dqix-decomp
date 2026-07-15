@@ -515,3 +515,98 @@ src/Combat/Overlay_31/TailCallForwardArg1With32_02233e28.cpp:
 src/Combat/Overlay_31/TailCallPtrToGlobal_02235c5c.cpp:
     complete
     .text start:0x02235c5c end:0x02235c70
+
+
+src/Combat/Overlay_31/AcquireData022918a4_02240310.cpp:
+    complete
+    .text start:0x02240310 end:0x02240324
+
+
+src/Combat/Overlay_31/CallFf38WithData_022402e0.cpp:
+    complete
+    .text start:0x022402e0 end:0x022402f4
+
+
+src/Combat/Overlay_31/CallField8074_0223fa0c.cpp:
+    complete
+    .text start:0x0223fa0c end:0x0223fa20
+
+
+src/Combat/Overlay_31/CallVTableField14_0223ca40.cpp:
+    complete
+    .text start:0x0223ca40 end:0x0223ca54
+
+
+src/Combat/Overlay_31/CallWithZeroExtra_0223e218.cpp:
+    complete
+    .text start:0x0223e218 end:0x0223e22c
+
+
+src/Combat/Overlay_31/CallWithZeroZero_0223fad4.cpp:
+    complete
+    .text start:0x0223fad4 end:0x0223fae8
+
+
+src/Combat/Overlay_31/GetField1b_02237e9c.cpp:
+    complete
+    .text start:0x02237e9c end:0x02237eb0
+
+
+src/Combat/Overlay_31/GetField40_02239be8.cpp:
+    complete
+    .text start:0x02239be8 end:0x02239bfc
+
+
+src/Combat/Overlay_31/GetField52_02239bd4.cpp:
+    complete
+    .text start:0x02239bd4 end:0x02239be8
+
+
+src/Combat/Overlay_31/GetGlobal02290d14_0223911c.cpp:
+    complete
+    .text start:0x0223911c end:0x02239130
+
+
+src/Combat/Overlay_31/IsFieldCLessOrEqual_022407e4.cpp:
+    complete
+    .text start:0x022407e4 end:0x022407f8
+
+
+src/Combat/Overlay_31/ReleaseAllocatorRef_02240324.cpp:
+    complete
+    .text start:0x02240324 end:0x02240338
+
+
+src/Combat/Overlay_31/ReleaseData02290fa4_0223fa20.cpp:
+    complete
+    .text start:0x0223fa20 end:0x0223fa34
+
+
+src/Combat/Overlay_31/SetField4c_0223a274.cpp:
+    complete
+    .text start:0x0223a274 end:0x0223a288
+
+
+src/Combat/Overlay_31/SetField8_02239bc0.cpp:
+    complete
+    .text start:0x02239bc0 end:0x02239bd4
+
+
+src/Combat/Overlay_31/SetGlobal02290d14_02239108.cpp:
+    complete
+    .text start:0x02239108 end:0x0223911c
+
+
+src/Combat/Overlay_31/TailCallFreeGlobal02290d34_0223c040.cpp:
+    complete
+    .text start:0x0223c040 end:0x0223c054
+
+
+src/Combat/Overlay_31/ZeroFillLength_0223fb60.cpp:
+    complete
+    .text start:0x0223fb60 end:0x0223fb74
+
+
+src/Combat/Overlay_31/ZeroMemRegion_022415b4.cpp:
+    complete
+    .text start:0x022415b4 end:0x022415c8
