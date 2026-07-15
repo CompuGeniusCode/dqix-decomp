@@ -159,3 +159,53 @@ src/Combat/Overlay_11/SetSubBg2Control02186150.cpp:
 src/Combat/Overlay_11/SetSubBg3Control02186124.cpp:
     complete
     .text start:0x02186124 end:0x02186150
+
+
+src/Combat/Overlay_11/DisableDisplaySwap_02187f68.cpp:
+    complete
+    .text start:0x02187f68 end:0x02187f7c
+
+
+src/Combat/Overlay_11/DispatchField1d4Pointer_021880d8.cpp:
+    complete
+    .text start:0x021880d8 end:0x021880f0
+
+
+src/Combat/Overlay_11/DispatchField1d8Pointer_021880f0.cpp:
+    complete
+    .text start:0x021880f0 end:0x02188108
+
+
+src/Combat/Overlay_11/EnableDisplaySwap_02187f38.cpp:
+    complete
+    .text start:0x02187f38 end:0x02187f4c
+
+
+src/Combat/Overlay_11/InitControllerFromGlobalField1c_02187460.cpp:
+    complete
+    .text start:0x02187460 end:0x02187480
+
+
+src/Combat/Overlay_11/SetBg0Priority_02186424.cpp:
+    complete
+    .text start:0x02186424 end:0x02186440
+
+
+src/Combat/Overlay_11/SetBg1Priority_02186408.cpp:
+    complete
+    .text start:0x02186408 end:0x02186424
+
+
+src/Combat/Overlay_11/SetBg2Priority_021863ec.cpp:
+    complete
+    .text start:0x021863ec end:0x02186408
+
+
+src/Combat/Overlay_11/SetByteFlag1cc_02186d78.cpp:
+    complete
+    .text start:0x02186d78 end:0x02186d90
+
+
+src/Combat/Overlay_11/SetFieldFromGlobal998_021874b0.cpp:
+    complete
+    .text start:0x021874b0 end:0x021874d0
