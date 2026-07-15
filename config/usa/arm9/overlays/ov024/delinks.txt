@@ -530,3 +530,73 @@ src/Combat/Overlay_24/UpdateStateIfFlagged_021fc320.cpp:
 src/Combat/Overlay_24/TrySetSlotFlagAndApply7_021fd784.cpp:
     complete
     .text start:0x021fd784 end:0x021fd7b8
+
+
+src/Combat/Overlay_24/AddEntryToListAndIncCount_021e8ca0.cpp:
+    complete
+    .text start:0x021e8ca0 end:0x021e8cfc
+
+
+src/Combat/Overlay_24/CheckCombatantInTable_021ea78c.cpp:
+    complete
+    .text start:0x021ea78c end:0x021ea7fc
+
+
+src/Combat/Overlay_24/CheckFieldMatch_021ea7fc.cpp:
+    complete
+    .text start:0x021ea7fc end:0x021ea85c
+
+
+src/Combat/Overlay_24/CheckPersonalityCode_021e9990.cpp:
+    complete
+    .text start:0x021e9990 end:0x021e99d8
+
+
+src/Combat/Overlay_24/CheckStateFlags3or4_021ea4d0.cpp:
+    complete
+    .text start:0x021ea4d0 end:0x021ea500
+
+
+src/Combat/Overlay_24/GetCodeForCategory_021e8c48.cpp:
+    complete
+    .text start:0x021e8c48 end:0x021e8ca0
+
+
+src/Combat/Overlay_24/RandomScaleAttack85to95Percent_021d8b68.cpp:
+    complete
+    .text start:0x021d8b68 end:0x021d8bc8
+
+
+src/Combat/Overlay_24/RandomScaleMaxHP20to30Percent_021d931c.cpp:
+    complete
+    .text start:0x021d931c end:0x021d937c
+
+
+src/Combat/Overlay_24/RandomScaleMaxHP40to60Percent_021d937c.cpp:
+    complete
+    .text start:0x021d937c end:0x021d93dc
+
+
+src/Combat/Overlay_24/RandomScaleMaxMP20to50Percent_021d974c.cpp:
+    complete
+    .text start:0x021d974c end:0x021d97a8
+
+
+src/Combat/Overlay_24/RawOrScaledShort150Percent_021d8c10.cpp:
+    complete
+    .text start:0x021d8c10 end:0x021d8c70
+
+
+src/Combat/Overlay_24/SearchAndValidate_021ee378.cpp:
+    complete
+    .text start:0x021ee378 end:0x021ee3e8
+
+
+src/Combat/Overlay_24/SelectResultCode_021e9464.cpp:
+    complete
+    .text start:0x021e9464 end:0x021e94c4
+
+
+src/Combat/Overlay_24/SetFlagOrScale99Percent_021d95e0.cpp:
+    complete
+    .text start:0x021d95e0 end:0x021d9654
