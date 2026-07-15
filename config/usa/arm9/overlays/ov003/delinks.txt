@@ -490,3 +490,58 @@ src/Combat/Overlay_3/SwitchSetField4ec_02168cc8.cpp:
 src/Combat/Overlay_3/UpdateSignedField4a0_0216664c.cpp:
     complete
     .text start:0x0216664c end:0x021666c4
+
+
+src/Combat/Overlay_3/CheckRatioWithinCap_021758cc.cpp:
+    complete
+    .text start:0x021758cc end:0x02175924
+
+
+src/Combat/Overlay_3/ClearUnmatchedKeys_02171f80.cpp:
+    complete
+    .text start:0x02171f80 end:0x02171fe8
+
+
+src/Combat/Overlay_3/FindEntryByShortId_0216f414.cpp:
+    complete
+    .text start:0x0216f414 end:0x0216f474
+
+
+src/Combat/Overlay_3/FindTableEntryPayload_02173f08.cpp:
+    complete
+    .text start:0x02173f08 end:0x02173f70
+
+
+src/Combat/Overlay_3/RefillAndResetEntry_02175d78.cpp:
+    complete
+    .text start:0x02175d78 end:0x02175df4
+
+
+src/Combat/Overlay_3/ResetAndSyncOverlay17_02171cf8.cpp:
+    complete
+    .text start:0x02171cf8 end:0x02171d74
+
+
+src/Combat/Overlay_3/SetElemFields0216dee4.cpp:
+    complete
+    .text start:0x0216dee4 end:0x0216df38
+
+
+src/Combat/Overlay_3/TrySpendResource_02175924.cpp:
+    complete
+    .text start:0x02175924 end:0x0217599c
+
+
+src/Combat/Overlay_3/UpdateEntryAndField4ea_021694b8.cpp:
+    complete
+    .text start:0x021694b8 end:0x0216950c
+
+
+src/Combat/Overlay_3/UpdateFieldEdEf_02173af4.cpp:
+    complete
+    .text start:0x02173af4 end:0x02173b48
+
+
+src/Combat/Overlay_3/UpdateStateFlags_02173788.cpp:
+    complete
+    .text start:0x02173788 end:0x021737e4
