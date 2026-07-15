@@ -1,0 +1,13 @@
+#include <globaldefs.h>
+
+extern "C" void* func_02012fe4(void* obj);
+extern "C" int func_ov017_021d60f4(void* obj);
+extern "C" void func_0201383c(void* g, int val, int flag);
+
+// USA: func_ov001_021622a0
+ARM int Function_021622a0(void* ctx) {
+    void* g = func_02012fe4(ctx);
+    int v = func_ov017_021d60f4(ctx);
+    func_0201383c(g, v, 0);
+    return 1;
+}

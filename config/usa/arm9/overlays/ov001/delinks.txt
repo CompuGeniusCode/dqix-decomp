@@ -695,3 +695,88 @@ src/Combat/Overlay_1/StoreField_0215e938_0215e938.cpp:
 src/Combat/Overlay_1/ZeroField_021603b0_021603b0.cpp:
     complete
     .text start:0x021603b0 end:0x021603d8
+
+
+src/Combat/Overlay_1/ClearWorkByte_021631d0_021631d0.cpp:
+    complete
+    .text start:0x021631d0 end:0x02163200
+
+
+src/Combat/Overlay_1/DispatchContextWithComputedArg_0216393c.cpp:
+    complete
+    .text start:0x0216393c end:0x02163968
+
+
+src/Combat/Overlay_1/ForwardField_02161a90_02161a90.cpp:
+    complete
+    .text start:0x02161a90 end:0x02161ab8
+
+
+src/Combat/Overlay_1/Function_021622a0.cpp:
+    complete
+    .text start:0x021622a0 end:0x021622d0
+
+
+src/Combat/Overlay_1/InitAndResetActorContext_021637a8.cpp:
+    complete
+    .text start:0x021637a8 end:0x021637d4
+
+
+src/Combat/Overlay_1/InitAndSetActorValue_021636a8.cpp:
+    complete
+    .text start:0x021636a8 end:0x021636d0
+
+
+src/Combat/Overlay_1/PushLogAndSetBitAndNotify_0216224c.cpp:
+    complete
+    .text start:0x0216224c end:0x0216227c
+
+
+src/Combat/Overlay_1/SetBg3ControlFields_02162678.cpp:
+    complete
+    .text start:0x02162678 end:0x021626a4
+
+
+src/Combat/Overlay_1/SetByteFieldFe_021630f4.cpp:
+    complete
+    .text start:0x021630f4 end:0x02163128
+
+
+src/Combat/Overlay_1/SetFieldFromOv17Result_021631a4.cpp:
+    complete
+    .text start:0x021631a4 end:0x021631d0
+
+
+src/Combat/Overlay_1/SetFlagAtOffset_02161f64_02161f64.cpp:
+    complete
+    .text start:0x02161f64 end:0x02161f80
+
+
+src/Combat/Overlay_1/SetGlobalOffset2750FromArg_02161f3c.cpp:
+    complete
+    .text start:0x02161f3c end:0x02161f64
+
+
+src/Combat/Overlay_1/SetKeyFromFieldAndApplyRecord_02163518.cpp:
+    complete
+    .text start:0x02163518 end:0x02163540
+
+
+src/Combat/Overlay_1/SetLinkedByteFromOv17_02163200.cpp:
+    complete
+    .text start:0x02163200 end:0x02163228
+
+
+src/Combat/Overlay_1/SetStateFromGlobalKey_02163aec.cpp:
+    complete
+    .text start:0x02163aec end:0x02163b14
+
+
+src/Combat/Overlay_1/SetSubBg3ControlFields_021628d4.cpp:
+    complete
+    .text start:0x021628d4 end:0x02162900
+
+
+src/Combat/Overlay_1/StoreField_02161d2c_02161d2c.cpp:
+    complete
+    .text start:0x02161d2c end:0x02161d54
