@@ -610,3 +610,18 @@ src/Combat/Overlay_31/ZeroFillLength_0223fb60.cpp:
 src/Combat/Overlay_31/ZeroMemRegion_022415b4.cpp:
     complete
     .text start:0x022415b4 end:0x022415c8
+
+
+src/Combat/Overlay_31/SetField28_02243404.cpp:
+    complete
+    .text start:0x02243404 end:0x02243418
+
+
+src/Combat/Overlay_31/SetField48_02243418.cpp:
+    complete
+    .text start:0x02243418 end:0x0224342c
+
+
+src/Combat/Overlay_31/SetFields_02245858.cpp:
+    complete
+    .text start:0x02245858 end:0x0224586c
