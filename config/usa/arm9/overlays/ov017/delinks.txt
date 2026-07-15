@@ -1515,3 +1515,13 @@ src/Combat/Overlay_17/EnqueueTag33ForListedCombatant_021c12b0.cpp:
 src/Combat/Overlay_17/ForEachEntry_021d0dbc.cpp:
     complete
     .text start:0x021d0dbc end:0x021d0e00
+
+
+src/Combat/Overlay_17/EnqueueEventTag184_021d3bbc.cpp:
+    complete
+    .text start:0x021d3bbc end:0x021d3c08
+
+
+src/Combat/Overlay_17/EnqueueEventTag36_021d2c34.cpp:
+    complete
+    .text start:0x021d2c34 end:0x021d2c78
