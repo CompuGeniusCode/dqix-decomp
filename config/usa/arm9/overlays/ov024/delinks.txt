@@ -425,3 +425,103 @@ src/Combat/Overlay_24/SetFlagIfStatShort2Zero_021f59c4.cpp:
 src/Combat/Overlay_24/SetScaleFromBit12_021f6ae8.cpp:
     complete
     .text start:0x021f6ae8 end:0x021f6b28
+
+
+src/Combat/Overlay_24/ComputeScaledTableValues_021f70bc.cpp:
+    complete
+    .text start:0x021f70bc end:0x021f7100
+
+
+src/Combat/Overlay_24/ScaleStatsIfUnflagged_021f7070.cpp:
+    complete
+    .text start:0x021f7070 end:0x021f70bc
+
+
+src/Combat/Overlay_24/ScaleVectorBy0Point5_021f6c40.cpp:
+    complete
+    .text start:0x021f6c40 end:0x021f6c70
+
+
+src/Combat/Overlay_24/ScaleVectorBy1Point5_021f71a8.cpp:
+    complete
+    .text start:0x021f71a8 end:0x021f71d8
+
+
+src/Combat/Overlay_24/ScaleVectorBy2_021f6dd4.cpp:
+    complete
+    .text start:0x021f6dd4 end:0x021f6e04
+
+
+src/Combat/Overlay_24/ScaleXYBy1Point25_021f6b8c.cpp:
+    complete
+    .text start:0x021f6b8c end:0x021f6bc0
+
+
+src/Combat/Overlay_24/ScaleXYBy1Point3_021f6fb0.cpp:
+    complete
+    .text start:0x021f6fb0 end:0x021f6fe4
+
+
+src/Combat/Overlay_24/ScaleXYByPoint3_021f6e54.cpp:
+    complete
+    .text start:0x021f6e54 end:0x021f6e88
+
+
+src/Combat/Overlay_24/ScaleXYByPoint8_021f703c.cpp:
+    complete
+    .text start:0x021f703c end:0x021f7070
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply11_021fc698.cpp:
+    complete
+    .text start:0x021fc698 end:0x021fc6cc
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply14_021fcaf0.cpp:
+    complete
+    .text start:0x021fcaf0 end:0x021fcb24
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply15_021fcb24.cpp:
+    complete
+    .text start:0x021fcb24 end:0x021fcb58
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply16_021fc4c0.cpp:
+    complete
+    .text start:0x021fc4c0 end:0x021fc4f4
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply2_021fd3f0.cpp:
+    complete
+    .text start:0x021fd3f0 end:0x021fd428
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply3_021fd428.cpp:
+    complete
+    .text start:0x021fd428 end:0x021fd45c
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply5_021fc254.cpp:
+    complete
+    .text start:0x021fc254 end:0x021fc27c
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply6_021fc018.cpp:
+    complete
+    .text start:0x021fc018 end:0x021fc040
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply7_021fc28c.cpp:
+    complete
+    .text start:0x021fc28c end:0x021fc2b4
+
+
+src/Combat/Overlay_24/TrySetSlotFlagAndApply9_021fc040.cpp:
+    complete
+    .text start:0x021fc040 end:0x021fc068
+
+
+src/Combat/Overlay_24/UpdateStateIfFlagged_021fc320.cpp:
+    complete
+    .text start:0x021fc320 end:0x021fc368
