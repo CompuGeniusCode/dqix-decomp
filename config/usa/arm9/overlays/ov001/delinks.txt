@@ -815,3 +815,48 @@ src/Combat/Overlay_1/ForwardTripleFields_0215942c.cpp:
 src/Combat/Overlay_1/InitAndCheckField3c_02153994.cpp:
     complete
     .text start:0x02153994 end:0x021539d8
+
+
+src/Combat/Overlay_1/ClearAllocSlotsAndStore_0215aa14.cpp:
+    complete
+    .text start:0x0215aa14 end:0x0215aa5c
+
+
+src/Combat/Overlay_1/EnqueueContextEvent18_0215c57c.cpp:
+    complete
+    .text start:0x0215c57c end:0x0215c5b4
+
+
+src/Combat/Overlay_1/EnqueueContextEvent20_0215c820.cpp:
+    complete
+    .text start:0x0215c820 end:0x0215c858
+
+
+src/Combat/Overlay_1/EnqueueEventType11_0215a594.cpp:
+    complete
+    .text start:0x0215a594 end:0x0215a5d8
+
+
+src/Combat/Overlay_1/EnqueueEventType8_0215a480.cpp:
+    complete
+    .text start:0x0215a480 end:0x0215a4c8
+
+
+src/Combat/Overlay_1/InitEntryFromArgs_0215a550.cpp:
+    complete
+    .text start:0x0215a550 end:0x0215a594
+
+
+src/Combat/Overlay_1/SetEntryOffset10Zero_0215d0f4.cpp:
+    complete
+    .text start:0x0215d0f4 end:0x0215d134
+
+
+src/Combat/Overlay_1/SetField8FromNodeCheck_0215bf58.cpp:
+    complete
+    .text start:0x0215bf58 end:0x0215bf94
+
+
+src/Combat/Overlay_1/TryEnqueueEventSetField70_0215bf94.cpp:
+    complete
+    .text start:0x0215bf94 end:0x0215bfd4
