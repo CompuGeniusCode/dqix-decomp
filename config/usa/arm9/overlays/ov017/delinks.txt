@@ -520,3 +520,88 @@ src/Combat/Overlay_17/IsField600B4Zero_021b8b54.cpp:
 src/Combat/Overlay_17/ResetFieldsToDefault_021b994c.cpp:
     complete
     .text start:0x021b994c end:0x021b996c
+
+
+src/Combat/Overlay_17/CallField20PtrC_021c0520.cpp:
+    complete
+    .text start:0x021c0520 end:0x021c0538
+
+
+src/Combat/Overlay_17/CallField20PtrD_021c0538.cpp:
+    complete
+    .text start:0x021c0538 end:0x021c0550
+
+
+src/Combat/Overlay_17/CallField20PtrE_021c0550.cpp:
+    complete
+    .text start:0x021c0550 end:0x021c0568
+
+
+src/Combat/Overlay_17/CallHelperAndSetFlag_021c031c.cpp:
+    complete
+    .text start:0x021c031c end:0x021c0334
+
+
+src/Combat/Overlay_17/CallIfField1c_021c11f0.cpp:
+    complete
+    .text start:0x021c11f0 end:0x021c1208
+
+
+src/Combat/Overlay_17/CallIfField1c_021c1208.cpp:
+    complete
+    .text start:0x021c1208 end:0x021c1220
+
+
+src/Combat/Overlay_17/CallIfField1c_021c1220.cpp:
+    complete
+    .text start:0x021c1220 end:0x021c1238
+
+
+src/Combat/Overlay_17/CallIfField20_021c19e0.cpp:
+    complete
+    .text start:0x021c19e0 end:0x021c19f8
+
+
+src/Combat/Overlay_17/CallIfField20_021c19f8.cpp:
+    complete
+    .text start:0x021c19f8 end:0x021c1a10
+
+
+src/Combat/Overlay_17/CallTwoHelpersWithSelf_021bf5dc.cpp:
+    complete
+    .text start:0x021bf5dc end:0x021bf5f4
+
+
+src/Combat/Overlay_17/ForwardField4IfZero_021cdae4.cpp:
+    complete
+    .text start:0x021cdae4 end:0x021cdb00
+
+
+src/Combat/Overlay_17/ForwardShortField6Byte_021c9b58.cpp:
+    complete
+    .text start:0x021c9b58 end:0x021c9b74
+
+
+src/Combat/Overlay_17/ForwardShortField6_021c9b04.cpp:
+    complete
+    .text start:0x021c9b04 end:0x021c9b20
+
+
+src/Combat/Overlay_17/ForwardShortField6_021c9b74.cpp:
+    complete
+    .text start:0x021c9b74 end:0x021c9b90
+
+
+src/Combat/Overlay_17/ForwardThreeShortFields_021cfe24.cpp:
+    complete
+    .text start:0x021cfe24 end:0x021cfe40
+
+
+src/Combat/Overlay_17/RunInitAndSetFlag1_021c168c.cpp:
+    complete
+    .text start:0x021c168c end:0x021c16a8
+
+
+src/Combat/Overlay_17/SetFlag1AfterCall_021c0568.cpp:
+    complete
+    .text start:0x021c0568 end:0x021c0580
