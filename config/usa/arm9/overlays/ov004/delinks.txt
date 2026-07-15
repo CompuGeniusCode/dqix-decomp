@@ -5,3 +5,73 @@
     .data       start:0x02170360 end:0x021707c0 kind:data align:32
     .bss        start:0x021707c0 end:0x02171060 kind:bss align:32
 
+
+
+src/Combat/Overlay_4/CheckAfterTwoCalls_0215e460.cpp:
+    complete
+    .text start:0x0215e460 end:0x0215e47c
+
+
+src/Combat/Overlay_4/CheckThenNotify_02157088.cpp:
+    complete
+    .text start:0x02157088 end:0x021570a4
+
+
+src/Combat/Overlay_4/ClearField02114e04Bit0_0216312c.cpp:
+    complete
+    .text start:0x0216312c end:0x02163144
+
+
+src/Combat/Overlay_4/CopyShortPair0216351c.cpp:
+    complete
+    .text start:0x0216351c end:0x02163530
+
+
+src/Combat/Overlay_4/HasFlag101_021571d8.cpp:
+    complete
+    .text start:0x021571d8 end:0x021571f4
+
+
+src/Combat/Overlay_4/RunTwoSteps_02159fb0.cpp:
+    complete
+    .text start:0x02159fb0 end:0x02159fcc
+
+
+src/Combat/Overlay_4/SetMessageFlag0215c0ac.cpp:
+    complete
+    .text start:0x0215c0ac end:0x0215c0c0
+
+
+src/Combat/Overlay_4/SetMessageFlag0215c228.cpp:
+    complete
+    .text start:0x0215c228 end:0x0215c23c
+
+
+src/Combat/Overlay_4/SetMessageFlag0215c23c.cpp:
+    complete
+    .text start:0x0215c23c end:0x0215c250
+
+
+src/Combat/Overlay_4/SetMessageFlag0215c948.cpp:
+    complete
+    .text start:0x0215c948 end:0x0215c95c
+
+
+src/Combat/Overlay_4/SetMessageFlag021650e4.cpp:
+    complete
+    .text start:0x021650e4 end:0x021650f8
+
+
+src/Combat/Overlay_4/SetOv011FieldTo_0215c250_0215c250.cpp:
+    complete
+    .text start:0x0215c250 end:0x0215c268
+
+
+src/Combat/Overlay_4/SetOv011FieldTo_0215c95c_0215c95c.cpp:
+    complete
+    .text start:0x0215c95c end:0x0215c974
+
+
+src/Combat/Overlay_4/SetOv011FieldTo_0215cc40_0215cc40.cpp:
+    complete
+    .text start:0x0215cc40 end:0x0215cc58
