@@ -395,3 +395,68 @@ src/Combat/Overlay_3/SetEntryFields_021604f4.cpp:
 src/Combat/Overlay_3/SetOrClearFlag40_02166f80.cpp:
     complete
     .text start:0x02166f80 end:0x02166fc4
+
+
+src/Combat/Overlay_3/ClearFlag80AtOffset1000_02174988.cpp:
+    complete
+    .text start:0x02174988 end:0x021749c0
+
+
+src/Combat/Overlay_3/ComputePositiveCount_02175f90.cpp:
+    complete
+    .text start:0x02175f90 end:0x02175fd4
+
+
+src/Combat/Overlay_3/ComputeRatio_02175898.cpp:
+    complete
+    .text start:0x02175898 end:0x021758cc
+
+
+src/Combat/Overlay_3/ComputeValues_0217063c.cpp:
+    complete
+    .text start:0x0217063c end:0x02170688
+
+
+src/Combat/Overlay_3/InitCombatFields_02173490.cpp:
+    complete
+    .text start:0x02173490 end:0x021734dc
+
+
+src/Combat/Overlay_3/InitEntryAtIndex_0217585c.cpp:
+    complete
+    .text start:0x0217585c end:0x02175898
+
+
+src/Combat/Overlay_3/InitObj02174408.cpp:
+    complete
+    .text start:0x02174408 end:0x02174454
+
+
+src/Combat/Overlay_3/InitStruct0217e630.cpp:
+    complete
+    .text start:0x0217e630 end:0x0217e67c
+
+
+src/Combat/Overlay_3/MaybeReset0216adbc.cpp:
+    complete
+    .text start:0x0216adbc end:0x0216ae0c
+
+
+src/Combat/Overlay_3/ProcessCombatState_02173ea8.cpp:
+    complete
+    .text start:0x02173ea8 end:0x02173ef4
+
+
+src/Combat/Overlay_3/ResetState02170d38.cpp:
+    complete
+    .text start:0x02170d38 end:0x02170d88
+
+
+src/Combat/Overlay_3/SetupFlag_02171cac_02171cac.cpp:
+    complete
+    .text start:0x02171cac end:0x02171cf8
+
+
+src/Combat/Overlay_3/UpdateFlagEntry_02176098.cpp:
+    complete
+    .text start:0x02176098 end:0x021760cc
