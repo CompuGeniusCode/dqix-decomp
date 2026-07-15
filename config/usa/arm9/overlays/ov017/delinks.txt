@@ -605,3 +605,93 @@ src/Combat/Overlay_17/RunInitAndSetFlag1_021c168c.cpp:
 src/Combat/Overlay_17/SetFlag1AfterCall_021c0568.cpp:
     complete
     .text start:0x021c0568 end:0x021c0580
+
+
+src/Combat/Overlay_17/AppendNodeIfNotInList_0219bc88.cpp:
+    complete
+    .text start:0x0219bc88 end:0x0219bcac
+
+
+src/Combat/Overlay_17/CallField1cIfFlagGt1_021a1880.cpp:
+    complete
+    .text start:0x021a1880 end:0x021a18a4
+
+
+src/Combat/Overlay_17/CallField1cIfFlagGt1_021a18a4.cpp:
+    complete
+    .text start:0x021a18a4 end:0x021a18c8
+
+
+src/Combat/Overlay_17/CallField36bcSetByte2_0219cd98.cpp:
+    complete
+    .text start:0x0219cd98 end:0x0219cdc0
+
+
+src/Combat/Overlay_17/CallField700ThenNotify_021afabc.cpp:
+    complete
+    .text start:0x021afabc end:0x021afae8
+
+
+src/Combat/Overlay_17/CallField700ThenReset48_021afa70.cpp:
+    complete
+    .text start:0x021afa70 end:0x021afa9c
+
+
+src/Combat/Overlay_17/CallHelperFourTimes_02190238.cpp:
+    complete
+    .text start:0x02190238 end:0x02190264
+
+
+src/Combat/Overlay_17/CallHelperIfByteAboveOneAndPtrSet_021a185c.cpp:
+    complete
+    .text start:0x021a185c end:0x021a1880
+
+
+src/Combat/Overlay_17/CallHelperIfFlag_021a5a88.cpp:
+    complete
+    .text start:0x021a5a88 end:0x021a5ab0
+
+
+src/Combat/Overlay_17/ClearBufferAndFlag_021972cc.cpp:
+    complete
+    .text start:0x021972cc end:0x021972f8
+
+
+src/Combat/Overlay_17/DispatchWithZeroExtras_02193428.cpp:
+    complete
+    .text start:0x02193428 end:0x0219344c
+
+
+src/Combat/Overlay_17/EnqueueHalfword_021972f8.cpp:
+    complete
+    .text start:0x021972f8 end:0x02197324
+
+
+src/Combat/Overlay_17/GetTableEntryOrZero_0218d2c4.cpp:
+    complete
+    .text start:0x0218d2c4 end:0x0218d2f0
+
+
+src/Combat/Overlay_17/InitState25_021aa3f4.cpp:
+    complete
+    .text start:0x021aa3f4 end:0x021aa41c
+
+
+src/Combat/Overlay_17/InitState39_021b11b0.cpp:
+    complete
+    .text start:0x021b11b0 end:0x021b11d8
+
+
+src/Combat/Overlay_17/InitState57_021a942c.cpp:
+    complete
+    .text start:0x021a942c end:0x021a9454
+
+
+src/Combat/Overlay_17/IsField10Eq2_0218d618.cpp:
+    complete
+    .text start:0x0218d618 end:0x0218d644
+
+
+src/Combat/Overlay_17/SetLowNibble56b_0218f57c.cpp:
+    complete
+    .text start:0x0218f57c end:0x0218f5a4
