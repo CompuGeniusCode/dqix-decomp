@@ -1830,3 +1830,68 @@ src/Combat/Overlay_31/TryClearSubEffectAndSetField54_02239924.cpp:
 src/Combat/Overlay_31/WriteMaskBytes_0221b19c.cpp:
     complete
     .text start:0x0221b19c end:0x0221b1cc
+
+
+src/Combat/Overlay_31/CallField30Adjusted_022407f8.cpp:
+    complete
+    .text start:0x022407f8 end:0x02240820
+
+
+src/Combat/Overlay_31/CallStubsSetField_0223adf0.cpp:
+    complete
+    .text start:0x0223adf0 end:0x0223ae1c
+
+
+src/Combat/Overlay_31/CallTailCallThenBdb0_0223be44.cpp:
+    complete
+    .text start:0x0223be44 end:0x0223be70
+
+
+src/Combat/Overlay_31/CompareField24WithField14_0223f740.cpp:
+    complete
+    .text start:0x0223f740 end:0x0223f76c
+
+
+src/Combat/Overlay_31/ExtractPackedHiLo_0223bd28.cpp:
+    complete
+    .text start:0x0223bd28 end:0x0223bd58
+
+
+src/Combat/Overlay_31/FindFirstZeroByte_0223dd34.cpp:
+    complete
+    .text start:0x0223dd34 end:0x0223dd60
+
+
+src/Combat/Overlay_31/InitSelfRefNode_0223d858.cpp:
+    complete
+    .text start:0x0223d858 end:0x0223d884
+
+
+src/Combat/Overlay_31/ProcessAllNodesField8_022402b0.cpp:
+    complete
+    .text start:0x022402b0 end:0x022402e0
+
+
+src/Combat/Overlay_31/ProcessField28AndDispatch670_0223c534.cpp:
+    complete
+    .text start:0x0223c534 end:0x0223c560
+
+
+src/Combat/Overlay_31/RegisterTagAndSetField54_02239954.cpp:
+    complete
+    .text start:0x02239954 end:0x02239984
+
+
+src/Combat/Overlay_31/ResetAndReleaseNode_0223faa8.cpp:
+    complete
+    .text start:0x0223faa8 end:0x0223fad4
+
+
+src/Combat/Overlay_31/SetArrayD2c_0223bd58.cpp:
+    complete
+    .text start:0x0223bd58 end:0x0223bd88
+
+
+src/Combat/Overlay_31/TryFetchOrDispatch12_0223dfd0.cpp:
+    complete
+    .text start:0x0223dfd0 end:0x0223dffc
