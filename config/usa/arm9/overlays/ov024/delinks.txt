@@ -265,3 +265,18 @@ src/Combat/Overlay_24/SetFields_021f6820.cpp:
 src/Combat/Overlay_24/TrySetSlotFlagAndApply1_021fbed4.cpp:
     complete
     .text start:0x021fbed4 end:0x021fbefc
+
+
+src/Combat/Overlay_24/ForwardCode7ToHandler954_021fc4ac.cpp:
+    complete
+    .text start:0x021fc4ac end:0x021fc4bc
+
+
+src/Combat/Overlay_24/IsFlagBit1024Set_021fcac0.cpp:
+    complete
+    .text start:0x021fcac0 end:0x021fcad8
+
+
+src/Combat/Overlay_24/SetFieldFromIndexed_021fe6b4.cpp:
+    complete
+    .text start:0x021fe6b4 end:0x021fe6c8

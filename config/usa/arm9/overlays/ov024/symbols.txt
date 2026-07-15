@@ -512,7 +512,7 @@ _Z34ForwardCode3ToHandlerDf04_021fc368Pvi kind:function(arm,size=0x10) addr:0x02
 func_ov024_021fc378 kind:function(arm,size=0x4) addr:0x021fc378
 func_ov024_021fc37c kind:function(arm,size=0x11c) addr:0x021fc37c
 _Z23GetFieldNibble_021fc498P17FieldObj_021fc498 kind:function(arm,size=0x14) addr:0x021fc498
-func_ov024_021fc4ac kind:function(arm,size=0x10) addr:0x021fc4ac
+_Z33ForwardCode7ToHandler954_021fc4acPvi kind:function(arm,size=0x10) addr:0x021fc4ac
 func_ov024_021fc4bc kind:function(arm,size=0x4) addr:0x021fc4bc
 func_ov024_021fc4c0 kind:function(arm,size=0x34) addr:0x021fc4c0
 func_ov024_021fc4f4 kind:function(arm,size=0x198) addr:0x021fc4f4
@@ -528,7 +528,7 @@ func_ov024_021fc6dc kind:function(arm,size=0x70) addr:0x021fc6dc
 func_ov024_021fc74c kind:function(arm,size=0x4) addr:0x021fc74c
 func_ov024_021fc750 kind:function(arm,size=0x4) addr:0x021fc750
 func_ov024_021fc754 kind:function(arm,size=0x36c) addr:0x021fc754
-func_ov024_021fcac0 kind:function(arm,size=0x18) addr:0x021fcac0
+_Z25IsFlagBit1024Set_021fcac0P10S_flag1024 kind:function(arm,size=0x18) addr:0x021fcac0
 func_ov024_021fcad8 kind:function(arm,size=0x4) addr:0x021fcad8
 func_ov024_021fcadc kind:function(arm,size=0x4) addr:0x021fcadc
 func_ov024_021fcae0 kind:function(arm,size=0x4) addr:0x021fcae0
@@ -570,7 +570,7 @@ func_ov024_021fd858 kind:function(arm,size=0xfc) addr:0x021fd858
 func_ov024_021fd954 kind:function(arm,size=0x5b0) addr:0x021fd954
 func_ov024_021fdf04 kind:function(arm,size=0x794) addr:0x021fdf04
 func_ov024_021fe698 kind:function(arm,size=0x1c) addr:0x021fe698
-func_ov024_021fe6b4 kind:function(arm,size=0x14) addr:0x021fe6b4
+_Z28SetFieldFromIndexed_021fe6b4P19IndexedObj_021fe6b4i kind:function(arm,size=0x14) addr:0x021fe6b4
 data_ov024_021fe6c8 kind:data(any) addr:0x021fe6c8
 data_ov024_021fe6d0 kind:data(any) addr:0x021fe6d0
 data_ov024_021fe6d8 kind:data(any) addr:0x021fe6d8
