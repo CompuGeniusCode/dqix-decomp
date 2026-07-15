@@ -599,3 +599,73 @@ src/Combat/Overlay_23/SetRoundedDown100_021ea978.cpp:
 src/Combat/Overlay_23/SumMatchesIntoField8_021eaae8.cpp:
     complete
     .text start:0x021eaae8 end:0x021eab28
+
+
+src/Combat/Overlay_23/AppendNodeToList_021f67ac.cpp:
+    complete
+    .text start:0x021f67ac end:0x021f67ec
+
+
+src/Combat/Overlay_23/AreFields60And64AllOnes_021f21f4.cpp:
+    complete
+    .text start:0x021f21f4 end:0x021f222c
+
+
+src/Combat/Overlay_23/CallVTableFnAt240_021f66bc.cpp:
+    complete
+    .text start:0x021f66bc end:0x021f66f0
+
+
+src/Combat/Overlay_23/CallVTableFnAt244_021f66f4.cpp:
+    complete
+    .text start:0x021f66f4 end:0x021f6728
+
+
+src/Combat/Overlay_23/ClearNodeMaskById_021f6600.cpp:
+    complete
+    .text start:0x021f6600 end:0x021f6630
+
+
+src/Combat/Overlay_23/DispatchNodeIfState6_021f6680.cpp:
+    complete
+    .text start:0x021f6680 end:0x021f66bc
+
+
+src/Combat/Overlay_23/FindByByteAt118_021f0360.cpp:
+    complete
+    .text start:0x021f0360 end:0x021f03a0
+
+
+src/Combat/Overlay_23/FormatLabelIntoBufC_021f2304.cpp:
+    complete
+    .text start:0x021f2304 end:0x021f2348
+
+
+src/Combat/Overlay_23/GetField38IfKind8_021f6378.cpp:
+    complete
+    .text start:0x021f6378 end:0x021f63ac
+
+
+src/Combat/Overlay_23/InitBuffersIfFlag431_021eb4b8.cpp:
+    complete
+    .text start:0x021eb4b8 end:0x021eb4f4
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021eada8.cpp:
+    complete
+    .text start:0x021eada8 end:0x021eaddc
+
+
+src/Combat/Overlay_23/SetHWReg400000a_021ec420.cpp:
+    complete
+    .text start:0x021ec420 end:0x021ec454
+
+
+src/Combat/Overlay_23/SetHWReg400100a_021ec368.cpp:
+    complete
+    .text start:0x021ec368 end:0x021ec39c
+
+
+src/Combat/Overlay_23/StoreField4IfMatch_021f5788.cpp:
+    complete
+    .text start:0x021f5788 end:0x021f57c4
