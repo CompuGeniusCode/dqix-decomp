@@ -1653,3 +1653,28 @@ src/Combat/Overlay_0/UpdateCombatantFlagByte021760d4.cpp:
 src/Combat/Overlay_0/UpdateSlotStatField_02175754.cpp:
     complete
     .text start:0x02175754 end:0x021757ac
+
+
+src/Combat/Overlay_0/ClearEntryFlagsAndInit02180528.cpp:
+    complete
+    .text start:0x02180528 end:0x02180594
+
+
+src/Combat/Overlay_0/ClearSlotBitndSetByte_021813d4.cpp:
+    complete
+    .text start:0x021813d4 end:0x0218142c
+
+
+src/Combat/Overlay_0/CountUnder100Flags0217fb98.cpp:
+    complete
+    .text start:0x0217fb98 end:0x0217fbf4
+
+
+src/Combat/Overlay_0/InitSlotHPCategoryEntry_021811f4.cpp:
+    complete
+    .text start:0x021811f4 end:0x0218124c
+
+
+src/Combat/Overlay_0/TickCounter02180b50.cpp:
+    complete
+    .text start:0x02180b50 end:0x02180bac
