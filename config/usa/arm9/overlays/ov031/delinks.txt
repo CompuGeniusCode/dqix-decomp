@@ -625,3 +625,83 @@ src/Combat/Overlay_31/SetField48_02243418.cpp:
 src/Combat/Overlay_31/SetFields_02245858.cpp:
     complete
     .text start:0x02245858 end:0x0224586c
+
+
+src/Combat/Overlay_31/CheckField0220f040_02205018.cpp:
+    complete
+    .text start:0x02205018 end:0x02205030
+
+
+src/Combat/Overlay_31/CheckOrDispatch_02201ef4.cpp:
+    complete
+    .text start:0x02201ef4 end:0x02201f10
+
+
+src/Combat/Overlay_31/CopyField164_02203270.cpp:
+    complete
+    .text start:0x02203270 end:0x02203288
+
+
+src/Combat/Overlay_31/CopyForward_0220ab94.cpp:
+    complete
+    .text start:0x0220ab94 end:0x0220abac
+
+
+src/Combat/Overlay_31/CopyForward_0220abac.cpp:
+    complete
+    .text start:0x0220abac end:0x0220abc4
+
+
+src/Combat/Overlay_31/CryptWithOffset1e0_022093f4.cpp:
+    complete
+    .text start:0x022093f4 end:0x0220940c
+
+
+src/Combat/Overlay_31/GetField64OrField68Then022051a8_022051f4.cpp:
+    complete
+    .text start:0x022051f4 end:0x0220520c
+
+
+src/Combat/Overlay_31/GetField64OrField68Then0220520c_0220529c.cpp:
+    complete
+    .text start:0x0220529c end:0x022052b4
+
+
+src/Combat/Overlay_31/IsField0Unchanged_0220ff18.cpp:
+    complete
+    .text start:0x0220ff18 end:0x0220ff34
+
+
+src/Combat/Overlay_31/MarkGlobal0224e580ContextReady_0220f4a0.cpp:
+    complete
+    .text start:0x0220f4a0 end:0x0220f4bc
+
+
+src/Combat/Overlay_31/NormalizeChecksum_02200668.cpp:
+    complete
+    .text start:0x02200668 end:0x02200684
+
+
+src/Combat/Overlay_31/RemoveFromGlobal0224e22c_02207108.cpp:
+    complete
+    .text start:0x02207108 end:0x02207120
+
+
+src/Combat/Overlay_31/RemoveFromList0224e230.cpp:
+    complete
+    .text start:0x02207168 end:0x02207180
+
+
+src/Combat/Overlay_31/SetField38IfPresent_02203288.cpp:
+    complete
+    .text start:0x02203288 end:0x022032a4
+
+
+src/Combat/Overlay_31/SetGlobal0224e1c0Flag2_02205000.cpp:
+    complete
+    .text start:0x02205000 end:0x02205018
+
+
+src/Combat/Overlay_31/ZeroGlobalBuffer0224e3b8.cpp:
+    complete
+    .text start:0x0220ab78 end:0x0220ab94
