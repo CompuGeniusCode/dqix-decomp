@@ -530,3 +530,13 @@ src/Combat/Overlay_25/SetColorForDispatched_021e59b4.cpp:
 src/Combat/Overlay_25/UpdateCombatFlags_021e9a94.cpp:
     complete
     .text start:0x021e9a94 end:0x021e9b2c
+
+
+src/Combat/Overlay_25/AddEntry_021ed5f0.cpp:
+    complete
+    .text start:0x021ed5f0 end:0x021ed634
+
+
+src/Combat/Overlay_25/InitQueueStruct_021ed124.cpp:
+    complete
+    .text start:0x021ed124 end:0x021ed1f0
