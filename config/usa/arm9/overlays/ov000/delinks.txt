@@ -1388,3 +1388,18 @@ src/Combat/Overlay_0/SetParamsAndRandomState021605d0.cpp:
 src/Combat/Overlay_0/IsIdOrEffectMatchTarget0215fd24.cpp:
     complete
     .text start:0x0215fd24 end:0x0215fd7c
+
+
+src/Combat/Overlay_0/CheckSlotEntryKind021627fc.cpp:
+    complete
+    .text start:0x021627fc end:0x02162864
+
+
+src/Combat/Overlay_0/CollectListShorts021628c8.cpp:
+    complete
+    .text start:0x021628c8 end:0x02162908
+
+
+src/Combat/Overlay_0/CollectMappedValuesFromNodeList02162908.cpp:
+    complete
+    .text start:0x02162908 end:0x02162954
