@@ -300,3 +300,8 @@ src/Combat/Overlay_4/SetFieldFlagValue5_0215cd64.cpp:
 src/Combat/Overlay_4/SetFieldFlagValue6_0215cd88.cpp:
     complete
     .text start:0x0215cd88 end:0x0215cdac
+
+
+src/Combat/Overlay_4/SetOv011FieldAndFlags_0216f824.cpp:
+    complete
+    .text start:0x0216f824 end:0x0216f854
