@@ -485,3 +485,48 @@ src/Combat/Overlay_25/TryDispatch_021dce7c.cpp:
 src/Combat/Overlay_25/UpdateFlagAndDispatch_021dc0d8.cpp:
     complete
     .text start:0x021dc0d8 end:0x021dc168
+
+
+src/Combat/Overlay_25/ClearFoundBitsForList_021e697c.cpp:
+    complete
+    .text start:0x021e697c end:0x021e6a08
+
+
+src/Combat/Overlay_25/DispatchAndForward_021e73c8.cpp:
+    complete
+    .text start:0x021e73c8 end:0x021e7450
+
+
+src/Combat/Overlay_25/DispatchAndUpdateFlag_021e7520.cpp:
+    complete
+    .text start:0x021e7520 end:0x021e75a4
+
+
+src/Combat/Overlay_25/DoCombatantVecUpdate_021e87f4.cpp:
+    complete
+    .text start:0x021e87f4 end:0x021e8898
+
+
+src/Combat/Overlay_25/InitContainer_021ebab4.cpp:
+    complete
+    .text start:0x021ebab4 end:0x021ebb24
+
+
+src/Combat/Overlay_25/LinkCombatantsIfDispatched_021e7324.cpp:
+    complete
+    .text start:0x021e7324 end:0x021e73c8
+
+
+src/Combat/Overlay_25/RemoveMatchingShort_021eb084.cpp:
+    complete
+    .text start:0x021eb084 end:0x021eb0f4
+
+
+src/Combat/Overlay_25/SetColorForDispatched_021e59b4.cpp:
+    complete
+    .text start:0x021e59b4 end:0x021e5a2c
+
+
+src/Combat/Overlay_25/UpdateCombatFlags_021e9a94.cpp:
+    complete
+    .text start:0x021e9a94 end:0x021e9b2c
