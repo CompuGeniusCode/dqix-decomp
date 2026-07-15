@@ -250,3 +250,88 @@ src/Combat/Overlay_25/SetName021ed324.cpp:
 src/Combat/Overlay_25/SetTargetField_021e8724_021e8724.cpp:
     complete
     .text start:0x021e8724 end:0x021e8740
+
+
+src/Combat/Overlay_25/ClearMatchingBytes_021e169c.cpp:
+    complete
+    .text start:0x021e169c end:0x021e16c8
+
+
+src/Combat/Overlay_25/CopyBytesAndSetLen_021e2114.cpp:
+    complete
+    .text start:0x021e2114 end:0x021e2148
+
+
+src/Combat/Overlay_25/CopyFiveWordsAndByte_021dcd28.cpp:
+    complete
+    .text start:0x021dcd28 end:0x021dcd5c
+
+
+src/Combat/Overlay_25/FindAndRemoveMin_021e23e8.cpp:
+    complete
+    .text start:0x021e23e8 end:0x021e244c
+
+
+src/Combat/Overlay_25/FindByteMatch_021e1010.cpp:
+    complete
+    .text start:0x021e1010 end:0x021e1048
+
+
+src/Combat/Overlay_25/FormatAndDispatch_021e40e4.cpp:
+    complete
+    .text start:0x021e40e4 end:0x021e413c
+
+
+src/Combat/Overlay_25/FormatValueWithTable_021e278c.cpp:
+    complete
+    .text start:0x021e278c end:0x021e27c8
+
+
+src/Combat/Overlay_25/ForwardPackedFields_021d8bfc.cpp:
+    complete
+    .text start:0x021d8bfc end:0x021d8c30
+
+
+src/Combat/Overlay_25/GetSubByteOrFallback_021e1f08.cpp:
+    complete
+    .text start:0x021e1f08 end:0x021e1f40
+
+
+src/Combat/Overlay_25/IncrementCounterAndReset_021def30.cpp:
+    complete
+    .text start:0x021def30 end:0x021def64
+
+
+src/Combat/Overlay_25/InsertSorted_021df568.cpp:
+    complete
+    .text start:0x021df568 end:0x021df5cc
+
+
+src/Combat/Overlay_25/RemoveNode021e244c.cpp:
+    complete
+    .text start:0x021e244c end:0x021e2494
+
+
+src/Combat/Overlay_25/ResetBlockFields_021dcd5c.cpp:
+    complete
+    .text start:0x021dcd5c end:0x021dcd98
+
+
+src/Combat/Overlay_25/ResetFieldIfMatch_021e3c3c.cpp:
+    complete
+    .text start:0x021e3c3c end:0x021e3c78
+
+
+src/Combat/Overlay_25/ResetFields021dcd98.cpp:
+    complete
+    .text start:0x021dcd98 end:0x021dcde8
+
+
+src/Combat/Overlay_25/ResetFields_021df9b0.cpp:
+    complete
+    .text start:0x021df9b0 end:0x021df9f4
+
+
+src/Combat/Overlay_25/SetFlagAndDispatch_021e2628.cpp:
+    complete
+    .text start:0x021e2628 end:0x021e267c
