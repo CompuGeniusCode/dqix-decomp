@@ -940,3 +940,78 @@ src/Combat/Overlay_17/MaybeResetCombatantById_021d443c.cpp:
 src/Combat/Overlay_17/PopStackEntry_021d4b9c.cpp:
     complete
     .text start:0x021d4b9c end:0x021d4bc8
+
+
+src/Combat/Overlay_17/CallCheckFlag3IfType22_021a3b00.cpp:
+    complete
+    .text start:0x021a3b00 end:0x021a3b30
+
+
+src/Combat/Overlay_17/CallHelperIfCheckPasses_0218f92c.cpp:
+    complete
+    .text start:0x0218f92c end:0x0218f968
+
+
+src/Combat/Overlay_17/CallHelperIfCheckPasses_0218fcf8.cpp:
+    complete
+    .text start:0x0218fcf8 end:0x0218fd34
+
+
+src/Combat/Overlay_17/CallHelperWithBuf_021907dc.cpp:
+    complete
+    .text start:0x021907dc end:0x02190818
+
+
+src/Combat/Overlay_17/CheckThreeFlags_02195550.cpp:
+    complete
+    .text start:0x02195550 end:0x0219558c
+
+
+src/Combat/Overlay_17/ClearMatchingHalfword_02197324.cpp:
+    complete
+    .text start:0x02197324 end:0x0219735c
+
+
+src/Combat/Overlay_17/ComputeAndCall_021a1178.cpp:
+    complete
+    .text start:0x021a1178 end:0x021a11b4
+
+
+src/Combat/Overlay_17/FillEntriesEncoded_02199684.cpp:
+    complete
+    .text start:0x02199684 end:0x021996bc
+
+
+src/Combat/Overlay_17/FillFieldWithEncoded_021a5ad0.cpp:
+    complete
+    .text start:0x021a5ad0 end:0x021a5b08
+
+
+src/Combat/Overlay_17/HasMatchingHalfword_0219735c.cpp:
+    complete
+    .text start:0x0219735c end:0x02197394
+
+
+src/Combat/Overlay_17/MaybeAppendNode_021a4dd0.cpp:
+    complete
+    .text start:0x021a4dd0 end:0x021a4e0c
+
+
+src/Combat/Overlay_17/ResetOverlayState_0219bc50.cpp:
+    complete
+    .text start:0x0219bc50 end:0x0219bc88
+
+
+src/Combat/Overlay_17/SetByteIfDataAndCheckClear_021a01bc.cpp:
+    complete
+    .text start:0x021a01bc end:0x021a01f4
+
+
+src/Combat/Overlay_17/SetIndexedFieldsIfValid_02191ba0.cpp:
+    complete
+    .text start:0x02191ba0 end:0x02191bdc
+
+
+src/Combat/Overlay_17/SetListField22FromCombatant_021a4e0c.cpp:
+    complete
+    .text start:0x021a4e0c end:0x021a4e48
