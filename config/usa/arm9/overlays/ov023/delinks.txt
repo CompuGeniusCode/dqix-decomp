@@ -4,3 +4,63 @@
     .data       start:0x021fda60 end:0x021ff9e0 kind:data align:32
     .bss        start:0x021ff9e0 end:0x021fff40 kind:bss align:32
 
+
+
+src/Combat/Overlay_23/CallAppendStringIfSet_021e8cc0.cpp:
+    complete
+    .text start:0x021e8cc0 end:0x021e8cdc
+
+
+src/Combat/Overlay_23/CallIfFieldNot0Or3_021d8c94.cpp:
+    complete
+    .text start:0x021d8c94 end:0x021d8cb4
+
+
+src/Combat/Overlay_23/CallInitEntriesIfSet_021e76a8.cpp:
+    complete
+    .text start:0x021e76a8 end:0x021e76c4
+
+
+src/Combat/Overlay_23/ClearBg1Screen_021dcd78.cpp:
+    complete
+    .text start:0x021dcd78 end:0x021dcd90
+
+
+src/Combat/Overlay_23/ClearObj_021e1318.cpp:
+    complete
+    .text start:0x021e1318 end:0x021e1330
+
+
+src/Combat/Overlay_23/CopyAndStoreLen_021d9988.cpp:
+    complete
+    .text start:0x021d9988 end:0x021d99a4
+
+
+src/Combat/Overlay_23/CreateAndSetFields46_021e2ca8.cpp:
+    complete
+    .text start:0x021e2ca8 end:0x021e2cc8
+
+
+src/Combat/Overlay_23/CreateAndSetFields8A_021db544.cpp:
+    complete
+    .text start:0x021db544 end:0x021db564
+
+
+src/Combat/Overlay_23/CreateAndSetFields8A_021e2cc8.cpp:
+    complete
+    .text start:0x021e2cc8 end:0x021e2ce8
+
+
+src/Combat/Overlay_23/RunIfPtr_021e4e20.cpp:
+    complete
+    .text start:0x021e4e20 end:0x021e4e3c
+
+
+src/Combat/Overlay_23/SetByteField_021e29b8.cpp:
+    complete
+    .text start:0x021e29b8 end:0x021e29d0
+
+
+src/Combat/Overlay_23/SetWords_021e60c4_021e60c4.cpp:
+    complete
+    .text start:0x021e60c4 end:0x021e60e0
