@@ -1325,3 +1325,63 @@ src/Combat/Overlay_31/SetField34AndClear35_37_02245528.cpp:
 src/Combat/Overlay_31/SetField35IfField34Is6Or7_022456f0.cpp:
     complete
     .text start:0x022456f0 end:0x02245710
+
+
+src/Combat/Overlay_31/BuildAndApplyBuffer_02215750.cpp:
+    complete
+    .text start:0x02215750 end:0x02215778
+
+
+src/Combat/Overlay_31/BuildAndApplyBuffer_022175dc.cpp:
+    complete
+    .text start:0x022175dc end:0x02217604
+
+
+src/Combat/Overlay_31/CallGlobalWithArg_02205174.cpp:
+    complete
+    .text start:0x02205174 end:0x02205194
+
+
+src/Combat/Overlay_31/ComputeAlignedSizePair_022054fc.cpp:
+    complete
+    .text start:0x022054fc end:0x02205524
+
+
+src/Combat/Overlay_31/DispatchContext02200264.cpp:
+    complete
+    .text start:0x02200264 end:0x0220028c
+
+
+src/Combat/Overlay_31/GetFields1014_022274e4.cpp:
+    complete
+    .text start:0x022274e4 end:0x0222750c
+
+
+src/Combat/Overlay_31/GetFields181c_02227520.cpp:
+    complete
+    .text start:0x02227520 end:0x02227548
+
+
+src/Combat/Overlay_31/HasNonZeroByte32_0221b1cc.cpp:
+    complete
+    .text start:0x0221b1cc end:0x0221b1f4
+
+
+src/Combat/Overlay_31/LookupValue0220510c.cpp:
+    complete
+    .text start:0x0220510c end:0x02205134
+
+
+src/Combat/Overlay_31/SetGlobal0224e598IfNotNine_02211864.cpp:
+    complete
+    .text start:0x02211864 end:0x0221188c
+
+
+src/Combat/Overlay_31/SetupOffsetPairAndSize_02205620.cpp:
+    complete
+    .text start:0x02205620 end:0x02205648
+
+
+src/Combat/Overlay_31/TrimTrailingZeroShorts_0220bb24.cpp:
+    complete
+    .text start:0x0220bb24 end:0x0220bb4c
