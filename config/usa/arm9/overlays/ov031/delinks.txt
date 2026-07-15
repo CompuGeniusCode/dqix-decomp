@@ -1200,3 +1200,43 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_02228980.cpp:
 src/Combat/Overlay_31/SetField_022274c0_022274c0_0222a848.cpp:
     complete
     .text start:0x0222a848 end:0x0222a86c
+
+
+src/Combat/Overlay_31/IsKeyInputBit15Set_02231538.cpp:
+    complete
+    .text start:0x02231538 end:0x02231558
+
+
+src/Combat/Overlay_31/IsKeyInputBit15Set_02231b90.cpp:
+    complete
+    .text start:0x02231b90 end:0x02231bb0
+
+
+src/Combat/Overlay_31/RunFiveSteps_02231d70.cpp:
+    complete
+    .text start:0x02231d70 end:0x02231d90
+
+
+src/Combat/Overlay_31/RunFourSteps_0223169c.cpp:
+    complete
+    .text start:0x0223169c end:0x022316bc
+
+
+src/Combat/Overlay_31/SetField18_02222e98_02231df8.cpp:
+    complete
+    .text start:0x02231df8 end:0x02231e18
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02231518.cpp:
+    complete
+    .text start:0x02231518 end:0x02231538
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02231968.cpp:
+    complete
+    .text start:0x02231968 end:0x02231988
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02231a78.cpp:
+    complete
+    .text start:0x02231a78 end:0x02231a9c
