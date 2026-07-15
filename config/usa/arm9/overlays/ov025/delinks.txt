@@ -335,3 +335,23 @@ src/Combat/Overlay_25/ResetFields_021df9b0.cpp:
 src/Combat/Overlay_25/SetFlagAndDispatch_021e2628.cpp:
     complete
     .text start:0x021e2628 end:0x021e267c
+
+
+src/Combat/Overlay_25/SetField5e8_021e80d8.cpp:
+    complete
+    .text start:0x021e80d8 end:0x021e8100
+
+
+src/Combat/Overlay_25/SetOrClearBit1048576_021e7fdc.cpp:
+    complete
+    .text start:0x021e7fdc end:0x021e8008
+
+
+src/Combat/Overlay_25/SetOrClearBit8192_021e72f4.cpp:
+    complete
+    .text start:0x021e72f4 end:0x021e7324
+
+
+src/Combat/Overlay_25/SetupAndDispatch021e8084.cpp:
+    complete
+    .text start:0x021e8084 end:0x021e80d8
