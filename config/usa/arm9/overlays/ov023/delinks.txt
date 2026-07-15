@@ -214,3 +214,103 @@ src/Combat/Overlay_23/GetOffset100Triple_021fd028.cpp:
 src/Combat/Overlay_23/SetWords_021fd00c_021fd00c.cpp:
     complete
     .text start:0x021fd00c end:0x021fd028
+
+
+src/Combat/Overlay_23/AppendEntryByKey_021e8ef8_021e8ef8.cpp:
+    complete
+    .text start:0x021e8ef8 end:0x021e8f28
+
+
+src/Combat/Overlay_23/ClearField784Array3_021dce88.cpp:
+    complete
+    .text start:0x021dce88 end:0x021dceac
+
+
+src/Combat/Overlay_23/ClearFields_021e20c0.cpp:
+    complete
+    .text start:0x021e20c0 end:0x021e20f0
+
+
+src/Combat/Overlay_23/ClearShortsAt_021e616c_021e616c.cpp:
+    complete
+    .text start:0x021e616c end:0x021e6194
+
+
+src/Combat/Overlay_23/ResetIfNonNeg_021db2e4.cpp:
+    complete
+    .text start:0x021db2e4 end:0x021db314
+
+
+src/Combat/Overlay_23/SetFieldFromBattleStruct5cbc_021e934c.cpp:
+    complete
+    .text start:0x021e934c end:0x021e9370
+
+
+src/Combat/Overlay_23/SetFieldFromBlock08_021e9944.cpp:
+    complete
+    .text start:0x021e9944 end:0x021e9974
+
+
+src/Combat/Overlay_23/SetFieldFromBlock1c_021ea854.cpp:
+    complete
+    .text start:0x021ea854 end:0x021ea884
+
+
+src/Combat/Overlay_23/SetFieldFromBlock20_021ea8b8.cpp:
+    complete
+    .text start:0x021ea8b8 end:0x021ea8e8
+
+
+src/Combat/Overlay_23/SetFieldFromBlock28_021e9f00.cpp:
+    complete
+    .text start:0x021e9f00 end:0x021e9f30
+
+
+src/Combat/Overlay_23/SetFieldFromBlock70_021ea0e8.cpp:
+    complete
+    .text start:0x021ea0e8 end:0x021ea118
+
+
+src/Combat/Overlay_23/SetFieldFromBlock74_021ea14c.cpp:
+    complete
+    .text start:0x021ea14c end:0x021ea17c
+
+
+src/Combat/Overlay_23/SetFieldFromBlock78_021ea1b0.cpp:
+    complete
+    .text start:0x021ea1b0 end:0x021ea1e0
+
+
+src/Combat/Overlay_23/SetFieldFromBlock7c_021ea248.cpp:
+    complete
+    .text start:0x021ea248 end:0x021ea278
+
+
+src/Combat/Overlay_23/SetFieldFromBlock80_021ea2ac.cpp:
+    complete
+    .text start:0x021ea2ac end:0x021ea2dc
+
+
+src/Combat/Overlay_23/SetFieldFromBlocka4_021eaddc.cpp:
+    complete
+    .text start:0x021eaddc end:0x021eae0c
+
+
+src/Combat/Overlay_23/SetFieldFromPtr2a04Offf68_021e9a78.cpp:
+    complete
+    .text start:0x021e9a78 end:0x021e9a9c
+
+
+src/Combat/Overlay_23/SetFieldFromPtr2a04Offf6c_021ea9dc.cpp:
+    complete
+    .text start:0x021ea9dc end:0x021eaa00
+
+
+src/Combat/Overlay_23/SetFields_021dceac.cpp:
+    complete
+    .text start:0x021dceac end:0x021dced4
+
+
+src/Combat/Overlay_23/SetFlagAndData_021dbfa8.cpp:
+    complete
+    .text start:0x021dbfa8 end:0x021dbfd0
