@@ -1760,3 +1760,73 @@ src/Combat/Overlay_31/SkipControlSeq_02204878.cpp:
 src/Combat/Overlay_31/StorePairIfValid_02206f08.cpp:
     complete
     .text start:0x02206f08 end:0x02206f3c
+
+
+src/Combat/Overlay_31/AwaitIfActive_02216a84.cpp:
+    complete
+    .text start:0x02216a84 end:0x02216ab4
+
+
+src/Combat/Overlay_31/CallOv027IfFieldsMatch_02238db4.cpp:
+    complete
+    .text start:0x02238db4 end:0x02238de4
+
+
+src/Combat/Overlay_31/ClearFlagAndSetupTag45_02233e4c.cpp:
+    complete
+    .text start:0x02233e4c end:0x02233e7c
+
+
+src/Combat/Overlay_31/CopyBlockAndClearFlag_02235cac.cpp:
+    complete
+    .text start:0x02235cac end:0x02235cdc
+
+
+src/Combat/Overlay_31/ForwardByteAndPtr8_0222cb5c.cpp:
+    complete
+    .text start:0x0222cb5c end:0x0222cb8c
+
+
+src/Combat/Overlay_31/SetField11dThenAdvanceAlt_022247ec.cpp:
+    complete
+    .text start:0x022247ec end:0x0222481c
+
+
+src/Combat/Overlay_31/SetField11dThenAdvance_022247bc.cpp:
+    complete
+    .text start:0x022247bc end:0x022247ec
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_0222a174.cpp:
+    complete
+    .text start:0x0222a174 end:0x0222a1a4
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_0222b420.cpp:
+    complete
+    .text start:0x0222b420 end:0x0222b450
+
+
+src/Combat/Overlay_31/SetFieldsA_0221b8b4.cpp:
+    complete
+    .text start:0x0221b8b4 end:0x0221b8e4
+
+
+src/Combat/Overlay_31/SetTagAndDispatch_02230984.cpp:
+    complete
+    .text start:0x02230984 end:0x022309b4
+
+
+src/Combat/Overlay_31/TailCall_02222ddc.cpp:
+    complete
+    .text start:0x02222ddc end:0x02222e0c
+
+
+src/Combat/Overlay_31/TryClearSubEffectAndSetField54_02239924.cpp:
+    complete
+    .text start:0x02239924 end:0x02239954
+
+
+src/Combat/Overlay_31/WriteMaskBytes_0221b19c.cpp:
+    complete
+    .text start:0x0221b19c end:0x0221b1cc
