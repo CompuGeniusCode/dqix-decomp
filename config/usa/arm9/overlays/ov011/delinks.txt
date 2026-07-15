@@ -314,3 +314,53 @@ src/Combat/Overlay_11/SetFlagBit1IfTagged_02186f74.cpp:
 src/Combat/Overlay_11/SetFlagBit4IfTagged_02186eb4.cpp:
     complete
     .text start:0x02186eb4 end:0x02186f08
+
+
+src/Combat/Overlay_11/CallVTableFnAt124WithTaggedArgs_02188108.cpp:
+    complete
+    .text start:0x02188108 end:0x02188158
+
+
+src/Combat/Overlay_11/CallVTableFnAt164WithTaggedArgs_02187604.cpp:
+    complete
+    .text start:0x02187604 end:0x02187650
+
+
+src/Combat/Overlay_11/CallVTableFnAt164WithTaggedArgs_02188284.cpp:
+    complete
+    .text start:0x02188284 end:0x021882d4
+
+
+src/Combat/Overlay_11/CallVTableFnAt176WithTaggedArgs_02188460.cpp:
+    complete
+    .text start:0x02188460 end:0x021884ac
+
+
+src/Combat/Overlay_11/CallVTableFnAt36_021883a8.cpp:
+    complete
+    .text start:0x021883a8 end:0x021883e8
+
+
+src/Combat/Overlay_11/CallVTableFnAt52WithTaggedArgs_021883e8.cpp:
+    complete
+    .text start:0x021883e8 end:0x02188438
+
+
+src/Combat/Overlay_11/DispatchTable17ByTaggedIndex_02188030.cpp:
+    complete
+    .text start:0x02188030 end:0x02188090
+
+
+src/Combat/Overlay_11/DispatchTableByTaggedIndex_02188090.cpp:
+    complete
+    .text start:0x02188090 end:0x021880d8
+
+
+src/Combat/Overlay_11/DispatchTaggedDiv34_02187898.cpp:
+    complete
+    .text start:0x02187898 end:0x021878dc
+
+
+src/Combat/Overlay_11/SetSingleCounterFromTaggedField_02187854.cpp:
+    complete
+    .text start:0x02187854 end:0x02187898
