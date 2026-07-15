@@ -214,3 +214,53 @@ src/Combat/Overlay_11/SetFieldFromGlobal998_021874b0.cpp:
 src/Combat/Overlay_11/SetObjFields_021888ec.cpp:
     complete
     .text start:0x021888ec end:0x02188904
+
+
+src/Combat/Overlay_11/AllocateAndStoreSize_021844f4.cpp:
+    complete
+    .text start:0x021844f4 end:0x02184534
+
+
+src/Combat/Overlay_11/CallVTableFnAt208_02186790.cpp:
+    complete
+    .text start:0x02186790 end:0x021867cc
+
+
+src/Combat/Overlay_11/CallVTableFnAt60WithTaggedArgs_02185ac0.cpp:
+    complete
+    .text start:0x02185ac0 end:0x02185b10
+
+
+src/Combat/Overlay_11/DispatchByFlagAOrB_02184a84.cpp:
+    complete
+    .text start:0x02184a84 end:0x02184ad8
+
+
+src/Combat/Overlay_11/DispatchIfType6_02185504.cpp:
+    complete
+    .text start:0x02185504 end:0x0218554c
+
+
+src/Combat/Overlay_11/DispatchVTableFn200WithFixedArgs_02186650.cpp:
+    complete
+    .text start:0x02186650 end:0x021866e0
+
+
+src/Combat/Overlay_11/DispatchVTableFn28WithFixedArgs_0218515c.cpp:
+    complete
+    .text start:0x0218515c end:0x021851ec
+
+
+src/Combat/Overlay_11/SetAllocFields_021844a4.cpp:
+    complete
+    .text start:0x021844a4 end:0x021844ec
+
+
+src/Combat/Overlay_11/SetDisplayCntPriorityField_02185720.cpp:
+    complete
+    .text start:0x02185720 end:0x0218577c
+
+
+src/Combat/Overlay_11/ValidateAndDispatchKey_02185948.cpp:
+    complete
+    .text start:0x02185948 end:0x0218598c
