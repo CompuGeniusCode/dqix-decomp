@@ -890,3 +890,18 @@ src/Combat/Overlay_31/SetFieldA90_0223aff8.cpp:
 src/Combat/Overlay_31/SetOffset1e298_0222785c.cpp:
     complete
     .text start:0x0222785c end:0x02227874
+
+
+src/Combat/Overlay_31/ClearFourWords022918a4_022402f4.cpp:
+    complete
+    .text start:0x022402f4 end:0x0224030c
+
+
+src/Combat/Overlay_31/CopyBytesSwapped_0223fb74.cpp:
+    complete
+    .text start:0x0223fb74 end:0x0223fb8c
+
+
+src/Combat/Overlay_31/CopyMemory_022415c8.cpp:
+    complete
+    .text start:0x022415c8 end:0x022415e0
