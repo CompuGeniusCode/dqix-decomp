@@ -94,3 +94,58 @@ src/Combat/Overlay_16/GetNthNode_0218e14c.cpp:
 src/Combat/Overlay_16/IncrementCounters_0218f2f0.cpp:
     complete
     .text start:0x0218f2f0 end:0x0218f330
+
+
+src/Combat/Overlay_16/AwaitIfActive_0218f678.cpp:
+    complete
+    .text start:0x0218f678 end:0x0218f6a0
+
+
+src/Combat/Overlay_16/GetOrStreamPoolBlockA_0218fd50.cpp:
+    complete
+    .text start:0x0218fd50 end:0x0218fdc0
+
+
+src/Combat/Overlay_16/GetOrStreamPoolBlockB_0218fdc0.cpp:
+    complete
+    .text start:0x0218fdc0 end:0x0218fe30
+
+
+src/Combat/Overlay_16/GetOrStreamPoolBlockC_0218fe30.cpp:
+    complete
+    .text start:0x0218fe30 end:0x0218fea0
+
+
+src/Combat/Overlay_16/GetOrStreamPoolBlockD_0218fcd4.cpp:
+    complete
+    .text start:0x0218fcd4 end:0x0218fd50
+
+
+src/Combat/Overlay_16/InitDiffFields_0218f508.cpp:
+    complete
+    .text start:0x0218f508 end:0x0218f540
+
+
+src/Combat/Overlay_16/ReadAlignedAsync_0218f5fc.cpp:
+    complete
+    .text start:0x0218f5fc end:0x0218f678
+
+
+src/Combat/Overlay_16/SeekAndReadSync_0218f58c.cpp:
+    complete
+    .text start:0x0218f58c end:0x0218f5fc
+
+
+src/Combat/Overlay_16/SeekIfInactive_0218f540.cpp:
+    complete
+    .text start:0x0218f540 end:0x0218f58c
+
+
+src/Combat/Overlay_16/SetData_0218fc8c.cpp:
+    complete
+    .text start:0x0218fc8c end:0x0218fcac
+
+
+src/Combat/Overlay_16/SetupHandle_0218fcac.cpp:
+    complete
+    .text start:0x0218fcac end:0x0218fcd4
