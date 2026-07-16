@@ -5,3 +5,28 @@
     .data       start:0x021895a0 end:0x02189800 kind:data align:32
     .bss        start:0x02189800 end:0x02189820 kind:bss align:32
 
+
+
+src/Combat/Overlay_14/ComputeAndStoreVecs02184c08.cpp:
+    complete
+    .text start:0x02184c08 end:0x02184d08
+
+
+src/Combat/Overlay_14/ProcessEntry02184e3c.cpp:
+    complete
+    .text start:0x02184e3c end:0x02184f10
+
+
+src/Combat/Overlay_14/ResetBattlerNav_02186df0.cpp:
+    complete
+    .text start:0x02186df0 end:0x02186e2c
+
+
+src/Combat/Overlay_14/ResetFields_021845d4.cpp:
+    complete
+    .text start:0x021845d4 end:0x021845ec
+
+
+src/Combat/Overlay_14/UpdateSoundStateA_02184f10.cpp:
+    complete
+    .text start:0x02184f10 end:0x02184f78
