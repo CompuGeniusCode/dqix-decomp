@@ -169,3 +169,8 @@ src/Combat/Overlay_15/AccumulateOffsetVec3_0218f44c.cpp:
 src/Combat/Overlay_15/Init02192600.cpp:
     complete
     .text start:0x02192600 end:0x02192700
+
+
+src/Combat/Overlay_15/AppendEntry0218b9d4.cpp:
+    complete
+    .text start:0x0218b9d4 end:0x0218ba1c
