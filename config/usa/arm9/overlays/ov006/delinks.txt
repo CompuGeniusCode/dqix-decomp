@@ -154,3 +154,23 @@ src/Combat/Overlay_6/SyncEntries0215f348.cpp:
 src/Combat/Overlay_6/SetFlagsSequence_0215729c.cpp:
     complete
     .text start:0x0215729c end:0x02157368
+
+
+src/Combat/Overlay_6/MergeIntoBuffers_0215fd60.cpp:
+    complete
+    .text start:0x0215fd60 end:0x0215fe34
+
+
+src/Combat/Overlay_6/ToggleElementFlagsAndByte_0215e5f8.cpp:
+    complete
+    .text start:0x0215e5f8 end:0x0215e69c
+
+
+src/Combat/Overlay_6/UpdateEntryFlags021596f0.cpp:
+    complete
+    .text start:0x021596f0 end:0x02159834
+
+
+src/Combat/Overlay_6/UpdateField3a8Timer_02159fb0.cpp:
+    complete
+    .text start:0x02159fb0 end:0x0215a00c
