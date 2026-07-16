@@ -48,8 +48,8 @@ func_ov008_02188d74 kind:function(arm,size=0x17c) addr:0x02188d74
 func_ov008_02188ef0 kind:function(arm,size=0x6c) addr:0x02188ef0
 func_ov008_02188f5c kind:function(arm,size=0x2cc) addr:0x02188f5c
 _Z22ResetSubStruct02189228Pv kind:function(arm,size=0x5c) addr:0x02189228
-func_ov008_02189284 kind:function(arm,size=0xe8) addr:0x02189284
-func_ov008_0218936c kind:function(arm,size=0x98) addr:0x0218936c
+_Z24SetupAllocators_02189284P14Layout02189284P13SafeAllocator kind:function(arm,size=0xe8) addr:0x02189284
+_Z16Dispatch0218936cP15Manager0218936c kind:function(arm,size=0x98) addr:0x0218936c
 func_ov008_02189404 kind:function(arm,size=0x68) addr:0x02189404
 func_ov008_0218946c kind:function(arm,size=0x4c) addr:0x0218946c
 func_ov008_021894b8 kind:function(arm,size=0xf0) addr:0x021894b8
@@ -59,7 +59,7 @@ func_ov008_0218aa24 kind:function(arm,size=0x4c0) addr:0x0218aa24
 func_ov008_0218aee4 kind:function(arm,size=0x9c) addr:0x0218aee4
 func_ov008_0218af80 kind:function(arm,size=0x104) addr:0x0218af80
 func_ov008_0218b084 kind:function(arm,size=0x15c) addr:0x0218b084
-func_ov008_0218b1e0 kind:function(arm,size=0x60) addr:0x0218b1e0
+_Z24AllocateFreeSlot0218b1e0Pv kind:function(arm,size=0x60) addr:0x0218b1e0
 func_ov008_0218b240 kind:function(arm,size=0xc0) addr:0x0218b240
 data_ov008_0218b300 kind:data(any) addr:0x0218b300
 data_ov008_0218b30c kind:data(any) addr:0x0218b30c

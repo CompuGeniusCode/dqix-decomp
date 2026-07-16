@@ -74,3 +74,18 @@ src/Combat/Overlay_8/SetStateType3_02186350.cpp:
 src/Combat/Overlay_8/SetStateType6_0218636c.cpp:
     complete
     .text start:0x0218636c end:0x02186388
+
+
+src/Combat/Overlay_8/AllocateFreeSlot0218b1e0.cpp:
+    complete
+    .text start:0x0218b1e0 end:0x0218b240
+
+
+src/Combat/Overlay_8/Dispatch0218936c.cpp:
+    complete
+    .text start:0x0218936c end:0x02189404
+
+
+src/Combat/Overlay_8/SetupAllocators_02189284.cpp:
+    complete
+    .text start:0x02189284 end:0x0218936c
