@@ -580,3 +580,13 @@ src/Combat/Overlay_3/InitObj0217e334.cpp:
 src/Combat/Overlay_3/SetupField0217dd10.cpp:
     complete
     .text start:0x0217dd10 end:0x0217dd60
+
+
+src/Combat/Overlay_3/LoopCallOv017_02172518.cpp:
+    complete
+    .text start:0x02172518 end:0x02172570
+
+
+src/Combat/Overlay_3/ProcessScaleEntry0217e100.cpp:
+    complete
+    .text start:0x0217e100 end:0x0217e1e4
