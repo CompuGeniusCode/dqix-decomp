@@ -29,3 +29,53 @@ src/Combat/Overlay_12/ResetAndRebuildEntry_02185f04.cpp:
 src/Combat/Overlay_12/ToUpperCopy_021855f0.cpp:
     complete
     .text start:0x021855f0 end:0x02185634
+
+
+src/Combat/Overlay_12/BuildMessageB_021898bc.cpp:
+    complete
+    .text start:0x021898bc end:0x02189934
+
+
+src/Combat/Overlay_12/BuildMessageC_02189c44.cpp:
+    complete
+    .text start:0x02189c44 end:0x02189cbc
+
+
+src/Combat/Overlay_12/BuildMessageD_02189f38.cpp:
+    complete
+    .text start:0x02189f38 end:0x02189fb0
+
+
+src/Combat/Overlay_12/BuildMessageE_0218a438.cpp:
+    complete
+    .text start:0x0218a438 end:0x0218a4b0
+
+
+src/Combat/Overlay_12/BuildMessageF_0218a974.cpp:
+    complete
+    .text start:0x0218a974 end:0x0218a9ec
+
+
+src/Combat/Overlay_12/SetupBattleTag02189a78.cpp:
+    complete
+    .text start:0x02189a78 end:0x02189af4
+
+
+src/Combat/Overlay_12/SetupBattleTag02189d68.cpp:
+    complete
+    .text start:0x02189d68 end:0x02189dfc
+
+
+src/Combat/Overlay_12/SetupBattleTag0218a574.cpp:
+    complete
+    .text start:0x0218a574 end:0x0218a5f0
+
+
+src/Combat/Overlay_12/SetupBattleTag0218a7a0.cpp:
+    complete
+    .text start:0x0218a7a0 end:0x0218a844
+
+
+src/Combat/Overlay_12/SetupBattleTag0218aabc.cpp:
+    complete
+    .text start:0x0218aabc end:0x0218ab34
