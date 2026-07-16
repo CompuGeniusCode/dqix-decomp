@@ -49,3 +49,73 @@ src/Combat/Overlay_15/InitList8_0218b9ac.cpp:
 src/Combat/Overlay_15/ZeroFourFields0218b810.cpp:
     complete
     .text start:0x0218b810 end:0x0218b828
+
+
+src/Combat/Overlay_15/AdjustSubstructField_0219015c_0219015c.cpp:
+    complete
+    .text start:0x0219015c end:0x021901c8
+
+
+src/Combat/Overlay_15/DispatchByMode5_0218f22c.cpp:
+    complete
+    .text start:0x0218f22c end:0x0218f27c
+
+
+src/Combat/Overlay_15/GetRatio0218f3c4.cpp:
+    complete
+    .text start:0x0218f3c4 end:0x0218f408
+
+
+src/Combat/Overlay_15/GetRatio0218f408.cpp:
+    complete
+    .text start:0x0218f408 end:0x0218f44c
+
+
+src/Combat/Overlay_15/IsFieldValueInRange_02190c2c.cpp:
+    complete
+    .text start:0x02190c2c end:0x02190c98
+
+
+src/Combat/Overlay_15/SetByteFieldIfChanged_0218ffa8.cpp:
+    complete
+    .text start:0x0218ffa8 end:0x0218ffd0
+
+
+src/Combat/Overlay_15/SetByteFieldIfChanged_0218ffd0.cpp:
+    complete
+    .text start:0x0218ffd0 end:0x0218fff8
+
+
+src/Combat/Overlay_15/SetByteFieldIfChanged_0218fff8.cpp:
+    complete
+    .text start:0x0218fff8 end:0x02190020
+
+
+src/Combat/Overlay_15/SetField18_0219011c.cpp:
+    complete
+    .text start:0x0219011c end:0x0219015c
+
+
+src/Combat/Overlay_15/SetField3c02190020.cpp:
+    complete
+    .text start:0x02190020 end:0x0219005c
+
+
+src/Combat/Overlay_15/SetFieldAndModeThenDispatch0218f02c.cpp:
+    complete
+    .text start:0x0218f02c end:0x0218f0c4
+
+
+src/Combat/Overlay_15/SetIfChanged0218ff7c.cpp:
+    complete
+    .text start:0x0218ff7c end:0x0218ffa8
+
+
+src/Combat/Overlay_15/SetPairIfChanged0219005c.cpp:
+    complete
+    .text start:0x0219005c end:0x02190090
+
+
+src/Combat/Overlay_15/UpdateField4c021900dc.cpp:
+    complete
+    .text start:0x021900dc end:0x0219011c
