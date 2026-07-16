@@ -70,3 +70,13 @@ src/Combat/Overlay_14/UpdateCounterState_021882d4.cpp:
 src/Combat/Overlay_14/CountLinkedListNodes_021874f8.cpp:
     complete
     .text start:0x021874f8 end:0x02187520
+
+
+src/Combat/Overlay_14/AllocAlignedSlot_02189398.cpp:
+    complete
+    .text start:0x02189398 end:0x021893c4
+
+
+src/Combat/Overlay_14/ResetHandle_02188d10.cpp:
+    complete
+    .text start:0x02188d10 end:0x02188d48
