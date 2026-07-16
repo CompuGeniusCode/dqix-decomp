@@ -4,3 +4,38 @@
     .data       start:0x02187e00 end:0x02187ee0 kind:data align:32
     .bss        start:0x02187ee0 end:0x02187ee0 kind:bss align:32
 
+
+
+src/Combat/Overlay_13/GetArrayElement02184338.cpp:
+    complete
+    .text start:0x02184338 end:0x02184360
+
+
+src/Combat/Overlay_13/InitAllocatorArray02186e74.cpp:
+    complete
+    .text start:0x02186e74 end:0x02186eec
+
+
+src/Combat/Overlay_13/InitTag02185310.cpp:
+    complete
+    .text start:0x02185310 end:0x02185424
+
+
+src/Combat/Overlay_13/InitTag02185828.cpp:
+    complete
+    .text start:0x02185828 end:0x02185900
+
+
+src/Combat/Overlay_13/InitTag02185aac.cpp:
+    complete
+    .text start:0x02185aac end:0x02185be0
+
+
+src/Combat/Overlay_13/ResetCombatEntry02184a58.cpp:
+    complete
+    .text start:0x02184a58 end:0x02184aec
+
+
+src/Combat/Overlay_13/SetupBattleMessage02185774.cpp:
+    complete
+    .text start:0x02185774 end:0x02185828
