@@ -1560,3 +1560,8 @@ src/Combat/Overlay_17/InitState37_021b14a0.cpp:
 src/Combat/Overlay_17/SetField8_021aca14.cpp:
     complete
     .text start:0x021aca14 end:0x021aca1c
+
+
+src/Combat/Overlay_17/HasFieldSlotOrFlagBit27_021920dc.cpp:
+    complete
+    .text start:0x021920dc end:0x0219219c
