@@ -17,3 +17,5 @@ build.ninja
 .ninja_lock
 /wibo
 ninja.exe
+# build artifacts
+*.o
