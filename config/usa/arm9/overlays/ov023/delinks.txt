@@ -934,3 +934,48 @@ src/Combat/Overlay_23/GetShort6_021f6f08.cpp:
 src/Combat/Overlay_23/GetFieldPtrAt_021f79e4_021f79e4.cpp:
     complete
     .text start:0x021f79e4 end:0x021f79ec
+
+
+src/Combat/Overlay_23/BuildFieldTag_021d9e60.cpp:
+    complete
+    .text start:0x021d9e60 end:0x021d9f88
+
+
+src/Combat/Overlay_23/CallDispatchIfFlagSet_021eb4f4.cpp:
+    complete
+    .text start:0x021eb4f4 end:0x021eb564
+
+
+src/Combat/Overlay_23/HandleElementSpecial17_021e6a90.cpp:
+    complete
+    .text start:0x021e6a90 end:0x021e6b04
+
+
+src/Combat/Overlay_23/RefreshFieldIfFlag4000_021d9d34.cpp:
+    complete
+    .text start:0x021d9d34 end:0x021d9da4
+
+
+src/Combat/Overlay_23/SetByte38_021fb274.cpp:
+    complete
+    .text start:0x021fb274 end:0x021fb27c
+
+
+src/Combat/Overlay_23/SetByteAtOffset60_021f9da0.cpp:
+    complete
+    .text start:0x021f9da0 end:0x021f9da8
+
+
+src/Combat/Overlay_23/SetByteField39_021fb284.cpp:
+    complete
+    .text start:0x021fb284 end:0x021fb28c
+
+
+src/Combat/Overlay_23/SetFieldShortAt46_021f9c60.cpp:
+    complete
+    .text start:0x021f9c60 end:0x021f9c68
+
+
+src/Combat/Overlay_23/SetShortField44_021f9c58.cpp:
+    complete
+    .text start:0x021f9c58 end:0x021f9c60
