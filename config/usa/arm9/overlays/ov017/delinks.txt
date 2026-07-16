@@ -1535,3 +1535,28 @@ src/Combat/Overlay_17/InitState61_021a6608.cpp:
 src/Combat/Overlay_17/Something_021a6b9c.cpp:
     complete
     .text start:0x021a6b9c end:0x021a6be4
+
+
+src/Combat/Overlay_17/FindCombatantByField16a_021a278c.cpp:
+    complete
+    .text start:0x021a278c end:0x021a27e8
+
+
+src/Combat/Overlay_17/InitObj_021a7d78.cpp:
+    complete
+    .text start:0x021a7d78 end:0x021a7dd8
+
+
+src/Combat/Overlay_17/InitState25_021aa50c.cpp:
+    complete
+    .text start:0x021aa50c end:0x021aa59c
+
+
+src/Combat/Overlay_17/InitState37_021b14a0.cpp:
+    complete
+    .text start:0x021b14a0 end:0x021b14ec
+
+
+src/Combat/Overlay_17/SetField8_021aca14.cpp:
+    complete
+    .text start:0x021aca14 end:0x021aca1c
