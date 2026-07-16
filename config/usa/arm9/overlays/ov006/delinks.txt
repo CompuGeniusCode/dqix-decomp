@@ -149,3 +149,8 @@ src/Combat/Overlay_6/GetDeref_021599ac_021599ac.cpp:
 src/Combat/Overlay_6/SyncEntries0215f348.cpp:
     complete
     .text start:0x0215f348 end:0x0215f3d8
+
+
+src/Combat/Overlay_6/SetFlagsSequence_0215729c.cpp:
+    complete
+    .text start:0x0215729c end:0x02157368
