@@ -80,3 +80,8 @@ src/Combat/Overlay_14/AllocAlignedSlot_02189398.cpp:
 src/Combat/Overlay_14/ResetHandle_02188d10.cpp:
     complete
     .text start:0x02188d10 end:0x02188d48
+
+
+src/Combat/Overlay_14/InitHandleState_02188bd0.cpp:
+    complete
+    .text start:0x02188bd0 end:0x02188bfc
