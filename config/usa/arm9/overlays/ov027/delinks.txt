@@ -79,3 +79,33 @@ src/Combat/Overlay_27/RunDispatchLoop_021dae40.cpp:
 src/Combat/Overlay_27/SetFlagThenDispatch_021dcc24_021dcc24.cpp:
     complete
     .text start:0x021dcc24 end:0x021dcc48
+
+
+src/Combat/Overlay_27/BuildStatFlags021dd04c.cpp:
+    complete
+    .text start:0x021dd04c end:0x021dd0ac
+
+
+src/Combat/Overlay_27/ClearEntrySlot_021dd5f4.cpp:
+    complete
+    .text start:0x021dd5f4 end:0x021dd638
+
+
+src/Combat/Overlay_27/IsFieldqual1_021dd0ac_021dd0ac.cpp:
+    complete
+    .text start:0x021dd0ac end:0x021dd0cc
+
+
+src/Combat/Overlay_27/SetDivRatio_021dd5a4.cpp:
+    complete
+    .text start:0x021dd5a4 end:0x021dd5d4
+
+
+src/Combat/Overlay_27/StoreAndClear_021dd5d4.cpp:
+    complete
+    .text start:0x021dd5d4 end:0x021dd5f4
+
+
+src/Combat/Overlay_27/UpdateEntryFlag_021dd55c.cpp:
+    complete
+    .text start:0x021dd55c end:0x021dd5a4
