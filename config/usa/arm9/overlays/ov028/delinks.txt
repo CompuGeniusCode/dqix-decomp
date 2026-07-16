@@ -30,3 +30,18 @@ src/Combat/Overlay_28/func_ov028_021d9494.cpp:
 src/Combat/Overlay_28/func_ov028_021d9624.cpp:
     complete
     .text start:0x021d9734 end:0x021d9748
+
+
+src/Combat/Overlay_28/AllocateAndInitEntries_021d9940.cpp:
+    complete
+    .text start:0x021d9940 end:0x021d999c
+
+
+src/Combat/Overlay_28/AppendEntry_021d999c.cpp:
+    complete
+    .text start:0x021d999c end:0x021d99f8
+
+
+src/Combat/Overlay_28/GetElementIfInBounds_021d99f8.cpp:
+    complete
+    .text start:0x021d99f8 end:0x021d9a18

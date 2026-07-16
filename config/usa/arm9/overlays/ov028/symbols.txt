@@ -28,9 +28,9 @@ func_ov028_021d9898 kind:function(arm,size=0x20) addr:0x021d9898
 func_ov028_021d98b8 kind:function(arm,size=0x1c) addr:0x021d98b8
 func_ov028_021d98d4 kind:function(arm,size=0xc) addr:0x021d98d4
 func_ov028_021d98e0 kind:function(arm,size=0x60) addr:0x021d98e0
-func_ov028_021d9940 kind:function(arm,size=0x5c) addr:0x021d9940
-func_ov028_021d999c kind:function(arm,size=0x5c) addr:0x021d999c
-func_ov028_021d99f8 kind:function(arm,size=0x20) addr:0x021d99f8
+_Z31AllocateAndInitEntries_021d9940P24AllocLoopStruct_021d9940P13SafeAllocatorj kind:function(arm,size=0x5c) addr:0x021d9940
+_Z20AppendEntry_021d999cP24EntryListStruct_021d999cP14Entry_021d999c kind:function(arm,size=0x5c) addr:0x021d999c
+_Z29GetElementIfInBounds_021d99f8P18ListHeader021d99f8j kind:function(arm,size=0x20) addr:0x021d99f8
 data_ov028_021d9a34 kind:data(any) addr:0x021d9a34
 func_ov028_021d9a54 kind:function(arm,size=0x2c) addr:0x021d9a54
 data_ov028_021d9aa0 kind:data(any) addr:0x021d9aa0
