@@ -124,3 +124,28 @@ src/Combat/Overlay_6/SetFieldsAndCall02158054.cpp:
 src/Combat/Overlay_6/SetFlags_021585ac_021585ac.cpp:
     complete
     .text start:0x021585ac end:0x021585c4
+
+
+src/Combat/Overlay_6/CalcField389_0215951c.cpp:
+    complete
+    .text start:0x0215951c end:0x02159564
+
+
+src/Combat/Overlay_6/Check02159564.cpp:
+    complete
+    .text start:0x02159564 end:0x021595b4
+
+
+src/Combat/Overlay_6/Func_0215a33c.cpp:
+    complete
+    .text start:0x0215a33c end:0x0215a384
+
+
+src/Combat/Overlay_6/GetDeref_021599ac_021599ac.cpp:
+    complete
+    .text start:0x021599ac end:0x021599c0
+
+
+src/Combat/Overlay_6/SyncEntries0215f348.cpp:
+    complete
+    .text start:0x0215f348 end:0x0215f3d8
