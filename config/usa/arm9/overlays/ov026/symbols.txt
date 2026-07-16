@@ -1,7 +1,7 @@
 func_ov026_021d8a40 kind:function(arm,size=0x38) addr:0x021d8a40
 _Z27InitAndClearBuffer_021d8a78Pv kind:function(arm,size=0x34) addr:0x021d8a78
 func_ov026_021d8aac kind:function(arm,size=0xec) addr:0x021d8aac
-func_ov026_021d8b98 kind:function(arm,size=0x8) addr:0x021d8b98
+_Z24StoreThreeWords_021d8b98Piiii kind:function(arm,size=0x8) addr:0x021d8b98
 func_ov026_021d8ba0 kind:function(arm,size=0x22c0) addr:0x021d8ba0
 _Z21FindSlotById_021dae60P18Container_021dae60i kind:function(arm,size=0x68) addr:0x021dae60
 func_ov026_021daec8 kind:function(arm,size=0x1c8) addr:0x021daec8

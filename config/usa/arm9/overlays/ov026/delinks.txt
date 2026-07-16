@@ -24,3 +24,8 @@ src/Combat/Overlay_26/IsFlagBit8192Set_021dd3c4.cpp:
 src/Combat/Overlay_26/IsFlagBit8Set_021dce1c.cpp:
     complete
     .text start:0x021dce1c end:0x021dce34
+
+
+src/Combat/Overlay_26/StoreThreeWords_021d8b98.cpp:
+    complete
+    .text start:0x021d8b98 end:0x021d8ba0
