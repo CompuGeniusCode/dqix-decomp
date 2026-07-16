@@ -149,3 +149,33 @@ src/Combat/Overlay_16/SetData_0218fc8c.cpp:
 src/Combat/Overlay_16/SetupHandle_0218fcac.cpp:
     complete
     .text start:0x0218fcac end:0x0218fcd4
+
+
+src/Combat/Overlay_16/AppendListNode_0218e020.cpp:
+    complete
+    .text start:0x0218e020 end:0x0218e098
+
+
+src/Combat/Overlay_16/CallIfNonNull_0218e6a8.cpp:
+    complete
+    .text start:0x0218e6a8 end:0x0218e6c0
+
+
+src/Combat/Overlay_16/CallStubAndForward_0218e528.cpp:
+    complete
+    .text start:0x0218e528 end:0x0218e558
+
+
+src/Combat/Overlay_16/IncCounter_0218bcc4.cpp:
+    complete
+    .text start:0x0218bcc4 end:0x0218bce8
+
+
+src/Combat/Overlay_16/IncCounter_0218cf34.cpp:
+    complete
+    .text start:0x0218cf34 end:0x0218cf58
+
+
+src/Combat/Overlay_16/ZeroFields_0218e7bc.cpp:
+    complete
+    .text start:0x0218e7bc end:0x0218e7ec
