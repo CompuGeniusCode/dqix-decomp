@@ -1960,3 +1960,18 @@ src/Combat/Overlay_31/SetHandlerIfNotNegTwo_02228ef4.cpp:
 src/Combat/Overlay_31/Setup1fAndAdvance_022299ec.cpp:
     complete
     .text start:0x022299ec end:0x02229a0c
+
+
+src/Combat/Overlay_31/SetField18AndAdvance_02229b5c.cpp:
+    complete
+    .text start:0x02229b5c end:0x02229b7c
+
+
+src/Combat/Overlay_31/SetField18AndAdvance_02229d7c.cpp:
+    complete
+    .text start:0x02229d7c end:0x02229d9c
+
+
+src/Combat/Overlay_31/Setup1aAndAdvance_02229bfc.cpp:
+    complete
+    .text start:0x02229bfc end:0x02229c1c
