@@ -109,3 +109,13 @@ src/Combat/Overlay_27/StoreAndClear_021dd5d4.cpp:
 src/Combat/Overlay_27/UpdateEntryFlag_021dd55c.cpp:
     complete
     .text start:0x021dd55c end:0x021dd5a4
+
+
+src/Combat/Overlay_27/DispatchEvent_021dcf44.cpp:
+    complete
+    .text start:0x021dcf44 end:0x021dd024
+
+
+src/Combat/Overlay_27/TailCallDispatch_021dcc80.cpp:
+    complete
+    .text start:0x021dcc80 end:0x021dcc8c
