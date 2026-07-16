@@ -179,3 +179,13 @@ src/Combat/Overlay_16/IncCounter_0218cf34.cpp:
 src/Combat/Overlay_16/ZeroFields_0218e7bc.cpp:
     complete
     .text start:0x0218e7bc end:0x0218e7ec
+
+
+src/Combat/Overlay_16/TailCallAllocate_0218e7a4.cpp:
+    complete
+    .text start:0x0218e7a4 end:0x0218e7b0
+
+
+src/Combat/Overlay_16/TailCallAllocate_0218f4f0.cpp:
+    complete
+    .text start:0x0218f4f0 end:0x0218f4fc
