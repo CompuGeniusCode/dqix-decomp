@@ -1530,3 +1530,8 @@ src/Combat/Overlay_17/EnqueueEventTag36_021d2c34.cpp:
 src/Combat/Overlay_17/InitState61_021a6608.cpp:
     complete
     .text start:0x021a6608 end:0x021a6648
+
+
+src/Combat/Overlay_17/Something_021a6b9c.cpp:
+    complete
+    .text start:0x021a6b9c end:0x021a6be4
