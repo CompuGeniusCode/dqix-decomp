@@ -970,3 +970,23 @@ src/Combat/Overlay_1/SetFlagFromField424Nonzero_02163c28.cpp:
 src/Combat/Overlay_1/FindFreeQueueSlot_02158d8c.cpp:
     complete
     .text start:0x02158d8c end:0x02158dcc
+
+
+src/Combat/Overlay_1/EnqueueEventTypeF_0215d8d0.cpp:
+    complete
+    .text start:0x0215d8d0 end:0x0215d8f4
+
+
+src/Combat/Overlay_1/SetTypeAField1cFromFxScaled_0215d560.cpp:
+    complete
+    .text start:0x0215d560 end:0x0215d598
+
+
+src/Combat/Overlay_1/SetTypeBField1cFromFxScaled_0215d598.cpp:
+    complete
+    .text start:0x0215d598 end:0x0215d5d0
+
+
+src/Combat/Overlay_1/SetTypeCField1cFromFxScaled_0215d5d0.cpp:
+    complete
+    .text start:0x0215d5d0 end:0x0215d608
