@@ -540,3 +540,13 @@ src/Combat/Overlay_25/AddEntry_021ed5f0.cpp:
 src/Combat/Overlay_25/InitQueueStruct_021ed124.cpp:
     complete
     .text start:0x021ed124 end:0x021ed1f0
+
+
+src/Combat/Overlay_25/FindTagAndCopy_021e24d0.cpp:
+    complete
+    .text start:0x021e24d0 end:0x021e25a4
+
+
+src/Combat/Overlay_25/FormatAndDispatchMessage_021e4a58.cpp:
+    complete
+    .text start:0x021e4a58 end:0x021e4a88
