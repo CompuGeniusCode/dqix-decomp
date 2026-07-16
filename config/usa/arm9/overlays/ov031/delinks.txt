@@ -2015,3 +2015,18 @@ src/Combat/Overlay_31/TailCall_02222ddc_022323a0.cpp:
 src/Combat/Overlay_31/TailCall_02222ddc_02234b4c.cpp:
     complete
     .text start:0x02234b4c end:0x02234bb8
+
+
+src/Combat/Overlay_31/AllocateFromMainAllocator_0223cf00.cpp:
+    complete
+    .text start:0x0223cf00 end:0x0223cf4c
+
+
+src/Combat/Overlay_31/CheckMaskAgainstField32_0223d354.cpp:
+    complete
+    .text start:0x0223d354 end:0x0223d394
+
+
+src/Combat/Overlay_31/TailCallForward_0223e2e0.cpp:
+    complete
+    .text start:0x0223e2e0 end:0x0223e2ec
