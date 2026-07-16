@@ -305,3 +305,68 @@ src/Combat/Overlay_4/SetFieldFlagValue6_0215cd88.cpp:
 src/Combat/Overlay_4/SetOv011FieldAndFlags_0216f824.cpp:
     complete
     .text start:0x0216f824 end:0x0216f854
+
+
+src/Combat/Overlay_4/AllocateAndDispatch14_021560b0.cpp:
+    complete
+    .text start:0x021560b0 end:0x021560e8
+
+
+src/Combat/Overlay_4/AllocateAndDispatch20_0215502c.cpp:
+    complete
+    .text start:0x0215502c end:0x02155090
+
+
+src/Combat/Overlay_4/AllocateAndDispatch8_02156dc8.cpp:
+    complete
+    .text start:0x02156dc8 end:0x02156e28
+
+
+src/Combat/Overlay_4/CheckTypes7And6ThenCall_02154038.cpp:
+    complete
+    .text start:0x02154038 end:0x021540a4
+
+
+src/Combat/Overlay_4/CheckTypes7And6ThenCall_02155544.cpp:
+    complete
+    .text start:0x02155544 end:0x021555b0
+
+
+src/Combat/Overlay_4/EmptyFunc_02153778.cpp:
+    complete
+    .text start:0x02153778 end:0x0215377c
+
+
+src/Combat/Overlay_4/EmptyFunc_021537dc.cpp:
+    complete
+    .text start:0x021537dc end:0x021537e0
+
+
+src/Combat/Overlay_4/EmptyFunc_0215434c.cpp:
+    complete
+    .text start:0x0215434c end:0x02154350
+
+
+src/Combat/Overlay_4/EmptyStub_02156e28.cpp:
+    complete
+    .text start:0x02156e28 end:0x02156e2c
+
+
+src/Combat/Overlay_4/FindAndCopyFields_021546c0.cpp:
+    complete
+    .text start:0x021546c0 end:0x02154718
+
+
+src/Combat/Overlay_4/FindEntryByShort2_021550c8.cpp:
+    complete
+    .text start:0x021550c8 end:0x02155104
+
+
+src/Combat/Overlay_4/FindEntryByShort_021538b4.cpp:
+    complete
+    .text start:0x021538b4 end:0x021538f0
+
+
+src/Combat/Overlay_4/ReturnZero_02153d84.cpp:
+    complete
+    .text start:0x02153d84 end:0x02153d8c
