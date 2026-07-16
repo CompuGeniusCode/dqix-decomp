@@ -269,3 +269,8 @@ src/Combat/Overlay_2/IsElementFlagBit40Set_0216197c.cpp:
 src/Combat/Overlay_2/UpdateBattleTagCounter_0216885c.cpp:
     complete
     .text start:0x0216885c end:0x021688f8
+
+
+src/Combat/Overlay_2/AppendEntryList_0215f224.cpp:
+    complete
+    .text start:0x0215f224 end:0x0215f3a0
