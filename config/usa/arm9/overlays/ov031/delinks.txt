@@ -1985,3 +1985,33 @@ src/Combat/Overlay_31/CleanupAndNotify_0223edb4.cpp:
 src/Combat/Overlay_31/SetFlagForwardAndAwait_022403b0.cpp:
     complete
     .text start:0x022403b0 end:0x022403d8
+
+
+src/Combat/Overlay_31/CheckField15DispatchThenSetup_0222de54.cpp:
+    complete
+    .text start:0x0222de54 end:0x0222dee0
+
+
+src/Combat/Overlay_31/DispatchFieldValueThenSetup_0222a890.cpp:
+    complete
+    .text start:0x0222a890 end:0x0222a900
+
+
+src/Combat/Overlay_31/IsSpecialOrMaskMatch_022006f0.cpp:
+    complete
+    .text start:0x022006f0 end:0x02200730
+
+
+src/Combat/Overlay_31/TailCall_02222ddc_02231744.cpp:
+    complete
+    .text start:0x02231744 end:0x022317a8
+
+
+src/Combat/Overlay_31/TailCall_02222ddc_022323a0.cpp:
+    complete
+    .text start:0x022323a0 end:0x022323f0
+
+
+src/Combat/Overlay_31/TailCall_02222ddc_02234b4c.cpp:
+    complete
+    .text start:0x02234b4c end:0x02234bb8
