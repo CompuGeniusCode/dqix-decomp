@@ -30,3 +30,38 @@ src/Combat/Overlay_14/ResetFields_021845d4.cpp:
 src/Combat/Overlay_14/UpdateSoundStateA_02184f10.cpp:
     complete
     .text start:0x02184f10 end:0x02184f78
+
+
+src/Combat/Overlay_14/FindIndexDiv16_02187520.cpp:
+    complete
+    .text start:0x02187520 end:0x02187568
+
+
+src/Combat/Overlay_14/FindOrGetDefaultElement_021893c4.cpp:
+    complete
+    .text start:0x021893c4 end:0x021893e4
+
+
+src/Combat/Overlay_14/GetArrayEntryByField1a_02187450.cpp:
+    complete
+    .text start:0x02187450 end:0x02187488
+
+
+src/Combat/Overlay_14/GetIndexedSlotOrNull_021893e4.cpp:
+    complete
+    .text start:0x021893e4 end:0x0218940c
+
+
+src/Combat/Overlay_14/GetIndexedSlot_02189380.cpp:
+    complete
+    .text start:0x02189380 end:0x02189398
+
+
+src/Combat/Overlay_14/InitEntryFromSource_02189244.cpp:
+    complete
+    .text start:0x02189244 end:0x021892d4
+
+
+src/Combat/Overlay_14/UpdateCounterState_021882d4.cpp:
+    complete
+    .text start:0x021882d4 end:0x02188330
