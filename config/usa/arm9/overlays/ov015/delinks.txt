@@ -4,3 +4,48 @@
     .data       start:0x02193fa0 end:0x02194560 kind:data align:32
     .bss        start:0x02194560 end:0x02194600 kind:bss align:32
 
+
+
+src/Combat/Overlay_15/AddEntry8_0218ba1c.cpp:
+    complete
+    .text start:0x0218ba1c end:0x0218ba44
+
+
+src/Combat/Overlay_15/GetEntry8_0218bb14.cpp:
+    complete
+    .text start:0x0218bb14 end:0x0218bb3c
+
+
+src/Combat/Overlay_15/GetFieldOrDefault0218bc9c.cpp:
+    complete
+    .text start:0x0218bc9c end:0x0218bcb0
+
+
+src/Combat/Overlay_15/GetListEntry0218bae8.cpp:
+    complete
+    .text start:0x0218bae8 end:0x0218bb14
+
+
+src/Combat/Overlay_15/HandleFlagAndDispatch_0218e60c.cpp:
+    complete
+    .text start:0x0218e60c end:0x0218e670
+
+
+src/Combat/Overlay_15/Init0218b978.cpp:
+    complete
+    .text start:0x0218b978 end:0x0218b9ac
+
+
+src/Combat/Overlay_15/InitCombatFieldStruct0218eef0.cpp:
+    complete
+    .text start:0x0218eef0 end:0x0218ef7c
+
+
+src/Combat/Overlay_15/InitList8_0218b9ac.cpp:
+    complete
+    .text start:0x0218b9ac end:0x0218b9d4
+
+
+src/Combat/Overlay_15/ZeroFourFields0218b810.cpp:
+    complete
+    .text start:0x0218b810 end:0x0218b828
