@@ -1,5 +1,5 @@
 _Z19InitStruct_021536e0P14StructInit36e0 kind:function(arm,size=0x50) addr:0x021536e0
-func_ov006_02153730 kind:function(arm,size=0xc) addr:0x02153730
+_Z27TailCallInitStruct_02153730P14StructInit36e0 kind:function(arm,size=0xc) addr:0x02153730
 func_ov006_0215373c kind:function(arm,size=0x8) addr:0x0215373c
 func_ov006_02153744 kind:function(arm,size=0x84) addr:0x02153744
 func_ov006_021537c8 kind:function(arm,size=0x8) addr:0x021537c8
@@ -73,7 +73,7 @@ _Z26CheckFlagOrByte55_02158c70v kind:function(arm,size=0x3c) addr:0x02158c70
 _Z30ComputeField_02158cac_02158cacPv kind:function(arm,size=0x50) addr:0x02158cac
 _Z18Checkpoint02158cfcP12Cont02158cfcP12Node02158cfc kind:function(arm,size=0x54) addr:0x02158cfc
 _Z17FindNode_02158d50P11Obj02158d50s kind:function(arm,size=0x3c) addr:0x02158d50
-func_ov006_02158d8c kind:function(arm,size=0x54) addr:0x02158d8c
+_Z23FindNodeOrMark_02158d8cPvs kind:function(arm,size=0x54) addr:0x02158d8c
 func_ov006_02158de0 kind:function(arm,size=0x1f8) addr:0x02158de0
 func_ov006_02158fd8 kind:function(arm,size=0xbc) addr:0x02158fd8
 _Z24ExpireStatusSlot02159094P11Obj02159094 kind:function(arm,size=0x74) addr:0x02159094

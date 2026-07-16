@@ -189,3 +189,13 @@ src/Combat/Overlay_6/GetArrEntry_021591c4_021591c4.cpp:
 src/Combat/Overlay_6/LookupByOffset_021591ec_021591ec.cpp:
     complete
     .text start:0x021591ec end:0x02159218
+
+
+src/Combat/Overlay_6/FindNodeOrMark_02158d8c.cpp:
+    complete
+    .text start:0x02158d8c end:0x02158de0
+
+
+src/Combat/Overlay_6/TailCallInitStruct_02153730.cpp:
+    complete
+    .text start:0x02153730 end:0x0215373c
