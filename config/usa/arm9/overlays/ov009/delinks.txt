@@ -19,3 +19,23 @@ src/Combat/Overlay_9/UpdateCombatantState_02184d70.cpp:
 src/Combat/Overlay_9/UpdateFlag021885b8.cpp:
     complete
     .text start:0x021885b8 end:0x02188604
+
+
+src/Combat/Overlay_9/FindByteInBuffer0218a888.cpp:
+    complete
+    .text start:0x0218a888 end:0x0218a8b8
+
+
+src/Combat/Overlay_9/FindMatch0218a4c8.cpp:
+    complete
+    .text start:0x0218a4c8 end:0x0218a518
+
+
+src/Combat/Overlay_9/ResetEntrySkill0218a8b8.cpp:
+    complete
+    .text start:0x0218a8b8 end:0x0218a930
+
+
+src/Combat/Overlay_9/ToUpperCopy0218a484.cpp:
+    complete
+    .text start:0x0218a484 end:0x0218a4c8
