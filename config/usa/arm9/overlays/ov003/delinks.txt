@@ -570,3 +570,13 @@ src/Combat/Overlay_3/SetPendingFlags0217c74c.cpp:
 src/Combat/Overlay_3/MaybeSetElem_021702e4.cpp:
     complete
     .text start:0x021702e4 end:0x0217033c
+
+
+src/Combat/Overlay_3/InitObj0217e334.cpp:
+    complete
+    .text start:0x0217e334 end:0x0217e36c
+
+
+src/Combat/Overlay_3/SetupField0217dd10.cpp:
+    complete
+    .text start:0x0217dd10 end:0x0217dd60
