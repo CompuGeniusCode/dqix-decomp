@@ -4,3 +4,58 @@
     .data       start:0x0219cfc0 end:0x0219d0c0 kind:data align:32
     .bss        start:0x0219d0c0 end:0x0219d200 kind:bss align:32
 
+
+
+src/Combat/Overlay_16/EnsureInitAndSetFlag_0218be1c.cpp:
+    complete
+    .text start:0x0218be1c end:0x0218be5c
+
+
+src/Combat/Overlay_16/FindNodeByID_0218e124.cpp:
+    complete
+    .text start:0x0218e124 end:0x0218e14c
+
+
+src/Combat/Overlay_16/GetSomeConstByFlag_0218be5c.cpp:
+    complete
+    .text start:0x0218be5c end:0x0218be7c
+
+
+src/Combat/Overlay_16/RegisterObjectAndRunScript0218e098.cpp:
+    complete
+    .text start:0x0218e098 end:0x0218e124
+
+
+src/Combat/Overlay_16/SafeAllocatorAllocate_0218bc8c.cpp:
+    complete
+    .text start:0x0218bc8c end:0x0218bca8
+
+
+src/Combat/Overlay_16/SafeAllocatorFree_0218bca8.cpp:
+    complete
+    .text start:0x0218bca8 end:0x0218bcc4
+
+
+src/Combat/Overlay_16/SetFlagAndMaybeIncrement_0218c024.cpp:
+    complete
+    .text start:0x0218c024 end:0x0218c04c
+
+
+src/Combat/Overlay_16/SetFlagAndMaybeIncrement_0218d294.cpp:
+    complete
+    .text start:0x0218d294 end:0x0218d2bc
+
+
+src/Combat/Overlay_16/SetPowCnt1Bit15_0218bc70.cpp:
+    complete
+    .text start:0x0218bc70 end:0x0218bc8c
+
+
+src/Combat/Overlay_16/XorMaskKeyInput_0218ca70.cpp:
+    complete
+    .text start:0x0218ca70 end:0x0218caa8
+
+
+src/Combat/Overlay_16/XorMaskKeyInput_0218d2bc.cpp:
+    complete
+    .text start:0x0218d2bc end:0x0218d2f4
