@@ -119,3 +119,43 @@ src/Combat/Overlay_15/SetPairIfChanged0219005c.cpp:
 src/Combat/Overlay_15/UpdateField4c021900dc.cpp:
     complete
     .text start:0x021900dc end:0x0219011c
+
+
+src/Combat/Overlay_15/AddToShortField02193150.cpp:
+    complete
+    .text start:0x02193150 end:0x02193160
+
+
+src/Combat/Overlay_15/FindFreeSlot021931f8.cpp:
+    complete
+    .text start:0x021931f8 end:0x0219322c
+
+
+src/Combat/Overlay_15/FindFreeSlot0219322c.cpp:
+    complete
+    .text start:0x0219322c end:0x02193260
+
+
+src/Combat/Overlay_15/FindFreeSlot02193260.cpp:
+    complete
+    .text start:0x02193260 end:0x02193294
+
+
+src/Combat/Overlay_15/Pop021931cc.cpp:
+    complete
+    .text start:0x021931cc end:0x021931f8
+
+
+src/Combat/Overlay_15/PushArrayValue021931b4.cpp:
+    complete
+    .text start:0x021931b4 end:0x021931cc
+
+
+src/Combat/Overlay_15/SetShortFields0219313c.cpp:
+    complete
+    .text start:0x0219313c end:0x02193150
+
+
+src/Combat/Overlay_15/ZeroTwoFields021933ac.cpp:
+    complete
+    .text start:0x021933ac end:0x021933bc
