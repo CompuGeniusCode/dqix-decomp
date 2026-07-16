@@ -5,3 +5,18 @@
     .data       start:0x021d9aa0 end:0x021d9ae0 kind:data align:32
     .bss        start:0x021d9ae0 end:0x021d9be0 kind:bss align:32
 
+
+
+src/Combat/Overlay_28/AccumulateFixedAngle_021d8a74.cpp:
+    complete
+    .text start:0x021d8a74 end:0x021d8ad4
+
+
+src/Combat/Overlay_28/FillCombatBuffer021d8ad4.cpp:
+    complete
+    .text start:0x021d8ad4 end:0x021d8b44
+
+
+src/Combat/Overlay_28/ResetFields_021d94e4.cpp:
+    complete
+    .text start:0x021d94e4 end:0x021d9530

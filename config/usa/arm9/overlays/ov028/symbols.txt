@@ -1,6 +1,6 @@
 func_ov028_021d8a40 kind:function(arm,size=0x34) addr:0x021d8a40
-func_ov028_021d8a74 kind:function(arm,size=0x60) addr:0x021d8a74
-func_ov028_021d8ad4 kind:function(arm,size=0x70) addr:0x021d8ad4
+_Z29AccumulateFixedAngle_021d8a74P14Accum_021d8a74f kind:function(arm,size=0x60) addr:0x021d8a74
+_Z24FillCombatBuffer021d8ad4PvPc kind:function(arm,size=0x70) addr:0x021d8ad4
 func_ov028_021d8b44 kind:function(arm,size=0x4c) addr:0x021d8b44
 func_ov028_021d8b90 kind:function(arm,size=0x90) addr:0x021d8b90
 func_ov028_021d8c20 kind:function(arm,size=0x120) addr:0x021d8c20
@@ -10,7 +10,7 @@ func_ov028_021d9188 kind:function(arm,size=0x80) addr:0x021d9188
 func_ov028_021d9208 kind:function(arm,size=0x224) addr:0x021d9208
 func_ov028_021d942c kind:function(arm,size=0x68) addr:0x021d942c
 func_ov028_021d9494 kind:function(arm,size=0x50) addr:0x021d9494
-func_ov028_021d94e4 kind:function(arm,size=0x4c) addr:0x021d94e4
+_Z20ResetFields_021d94e4Pv kind:function(arm,size=0x4c) addr:0x021d94e4
 func_ov028_021d9530 kind:function(arm,size=0x44) addr:0x021d9530
 func_ov028_021d9574 kind:function(arm,size=0xb0) addr:0x021d9574
 func_ov028_021d9624 kind:function(arm,size=0x44) addr:0x021d9624
