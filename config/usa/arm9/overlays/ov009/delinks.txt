@@ -39,3 +39,13 @@ src/Combat/Overlay_9/ResetEntrySkill0218a8b8.cpp:
 src/Combat/Overlay_9/ToUpperCopy0218a484.cpp:
     complete
     .text start:0x0218a484 end:0x0218a4c8
+
+
+src/Combat/Overlay_9/ResetFields021847c4.cpp:
+    complete
+    .text start:0x021847c4 end:0x021847ec
+
+
+src/Combat/Overlay_9/SetStatValue021855dc.cpp:
+    complete
+    .text start:0x021855dc end:0x02185634
