@@ -370,3 +370,53 @@ src/Combat/Overlay_4/FindEntryByShort_021538b4.cpp:
 src/Combat/Overlay_4/ReturnZero_02153d84.cpp:
     complete
     .text start:0x02153d84 end:0x02153d8c
+
+
+src/Combat/Overlay_4/ClearOrMaskNodesByState_0215781c.cpp:
+    complete
+    .text start:0x0215781c end:0x02157874
+
+
+src/Combat/Overlay_4/DispatchAdjustmentIfType4_02157018.cpp:
+    complete
+    .text start:0x02157018 end:0x02157054
+
+
+src/Combat/Overlay_4/DispatchEventAndSetFlag_021589e8.cpp:
+    complete
+    .text start:0x021589e8 end:0x02158a60
+
+
+src/Combat/Overlay_4/GetFlagByte_021570f0.cpp:
+    complete
+    .text start:0x021570f0 end:0x02157128
+
+
+src/Combat/Overlay_4/IncrementFlag6eThenNotify_0215b02c.cpp:
+    complete
+    .text start:0x0215b02c end:0x0215b0a8
+
+
+src/Combat/Overlay_4/MaskNodesForRange_02157874.cpp:
+    complete
+    .text start:0x02157874 end:0x021578a8
+
+
+src/Combat/Overlay_4/ReturnZero_02159468.cpp:
+    complete
+    .text start:0x02159468 end:0x02159470
+
+
+src/Combat/Overlay_4/ReturnZero_0215c08c.cpp:
+    complete
+    .text start:0x0215c08c end:0x0215c094
+
+
+src/Combat/Overlay_4/SetFlag6eTo1ThenNotify_0215c684.cpp:
+    complete
+    .text start:0x0215c684 end:0x0215c6fc
+
+
+src/Combat/Overlay_4/SetFlag6eToMaxThenNotify_0215c6fc.cpp:
+    complete
+    .text start:0x0215c6fc end:0x0215c774
