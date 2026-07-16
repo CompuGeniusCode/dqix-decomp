@@ -4,3 +4,63 @@
     .data       start:0x02160080 end:0x02160380 kind:data align:32
     .bss        start:0x02160380 end:0x021603a0 kind:bss align:32
 
+
+
+src/Combat/Overlay_6/CallIfFlag_021571cc_021571cc.cpp:
+    complete
+    .text start:0x021571cc end:0x021571fc
+
+
+src/Combat/Overlay_6/CheckAnyFlag_021570b4.cpp:
+    complete
+    .text start:0x021570b4 end:0x021570fc
+
+
+src/Combat/Overlay_6/ClearFlag40_02157184.cpp:
+    complete
+    .text start:0x02157184 end:0x021571b8
+
+
+src/Combat/Overlay_6/InitCombatEntry021542f4.cpp:
+    complete
+    .text start:0x021542f4 end:0x02154348
+
+
+src/Combat/Overlay_6/InitHandleAndDispatch_021571fc.cpp:
+    complete
+    .text start:0x021571fc end:0x0215728c
+
+
+src/Combat/Overlay_6/InitStruct_021536e0.cpp:
+    complete
+    .text start:0x021536e0 end:0x02153730
+
+
+src/Combat/Overlay_6/ProcessPendingCommands0215426c.cpp:
+    complete
+    .text start:0x0215426c end:0x021542f4
+
+
+src/Combat/Overlay_6/ResetDisplayState02155480.cpp:
+    complete
+    .text start:0x02155480 end:0x02155508
+
+
+src/Combat/Overlay_6/ResetFlags02153e54.cpp:
+    complete
+    .text start:0x02153e54 end:0x02153e8c
+
+
+src/Combat/Overlay_6/SetByte_021571b8_021571b8.cpp:
+    complete
+    .text start:0x021571b8 end:0x021571cc
+
+
+src/Combat/Overlay_6/SetFlag8_021553a8.cpp:
+    complete
+    .text start:0x021553a8 end:0x021553bc
+
+
+src/Combat/Overlay_6/Something02156b80.cpp:
+    complete
+    .text start:0x02156b80 end:0x02156bd8
