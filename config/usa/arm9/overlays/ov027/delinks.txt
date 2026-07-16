@@ -4,3 +4,43 @@
     .data       start:0x021dd8e0 end:0x021dd920 kind:data align:32
     .bss        start:0x021dd920 end:0x021e3440 kind:bss align:32
 
+
+
+src/Combat/Overlay_27/CopyFields_021da61c.cpp:
+    complete
+    .text start:0x021da61c end:0x021da690
+
+
+src/Combat/Overlay_27/DoReadRequest_021d989c.cpp:
+    complete
+    .text start:0x021d989c end:0x021d9940
+
+
+src/Combat/Overlay_27/ReadFileWithSizeCheck_021dac74.cpp:
+    complete
+    .text start:0x021dac74 end:0x021dad14
+
+
+src/Combat/Overlay_27/ResetFlagsAndRefreshEntries_021d9618.cpp:
+    complete
+    .text start:0x021d9618 end:0x021d96c4
+
+
+src/Combat/Overlay_27/SerializeEventByte_021d96c4.cpp:
+    complete
+    .text start:0x021d96c4 end:0x021d9704
+
+
+src/Combat/Overlay_27/SetCallback_021d8a40.cpp:
+    complete
+    .text start:0x021d8a40 end:0x021d8a68
+
+
+src/Combat/Overlay_27/SetEntryCallbackAndDispatch_021d8c20.cpp:
+    complete
+    .text start:0x021d8c20 end:0x021d8c6c
+
+
+src/Combat/Overlay_27/SetupCombatFlags_021dad14.cpp:
+    complete
+    .text start:0x021dad14 end:0x021dad84
