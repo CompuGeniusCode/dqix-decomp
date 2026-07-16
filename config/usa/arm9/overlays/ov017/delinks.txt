@@ -1585,3 +1585,28 @@ src/Combat/Overlay_17/SetByteAtOffset1_021a7c1c.cpp:
 src/Combat/Overlay_17/SetFieldForMatchingCombatant_021c98f4.cpp:
     complete
     .text start:0x021c98f4 end:0x021c9954
+
+
+src/Combat/Overlay_17/func_ov017_0218b5b0.cpp:
+    complete
+    .text start:0x0218b5b0 end:0x0218b5c0
+
+
+src/Combat/Overlay_17/func_ov017_021b2164.cpp:
+    complete
+    .text start:0x021b2164 end:0x021b2174
+
+
+src/Combat/Overlay_17/func_ov017_021d60f4.cpp:
+    complete
+    .text start:0x021d60f4 end:0x021d6110
+
+
+src/Combat/Overlay_17/func_ov017_021d6110.cpp:
+    complete
+    .text start:0x021d6110 end:0x021d612c
+
+
+src/Combat/Overlay_17/func_ov017_021d6134.cpp:
+    complete
+    .text start:0x021d6134 end:0x021d6148
