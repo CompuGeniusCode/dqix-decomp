@@ -2085,3 +2085,33 @@ src/Combat/Overlay_31/RunSetupAndRegisterHandler_0222acc0.cpp:
 src/Combat/Overlay_31/SetupSlot13AndSetField54_02239ad8.cpp:
     complete
     .text start:0x02239ad8 end:0x02239b10
+
+
+src/Combat/Overlay_31/Dispatch_02222f44.cpp:
+    complete
+    .text start:0x02222f44 end:0x02222fb0
+
+
+src/Combat/Overlay_31/EndsWithMatch_0223b744.cpp:
+    complete
+    .text start:0x0223b744 end:0x0223b79c
+
+
+src/Combat/Overlay_31/SetEntryHalfword4Bits_0223bcc8.cpp:
+    complete
+    .text start:0x0223bcc8 end:0x0223bd28
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_02232024.cpp:
+    complete
+    .text start:0x02232024 end:0x0223208c
+
+
+src/Combat/Overlay_31/SetField_022274c0_022274c0_022340c0.cpp:
+    complete
+    .text start:0x022340c0 end:0x02234118
+
+
+src/Combat/Overlay_31/TailCall_02222ddc_0222b22c.cpp:
+    complete
+    .text start:0x0222b22c end:0x0222b290
