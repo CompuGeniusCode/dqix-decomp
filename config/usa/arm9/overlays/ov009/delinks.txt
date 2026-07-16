@@ -4,3 +4,18 @@
     .data       start:0x0218aca0 end:0x0218ad60 kind:data align:32
     .bss        start:0x0218ad60 end:0x0218ad60 kind:bss align:32
 
+
+
+src/Combat/Overlay_9/GetEntryPair02188bf8.cpp:
+    complete
+    .text start:0x02188bf8 end:0x02188c2c
+
+
+src/Combat/Overlay_9/UpdateCombatantState_02184d70.cpp:
+    complete
+    .text start:0x02184d70 end:0x02184e58
+
+
+src/Combat/Overlay_9/UpdateFlag021885b8.cpp:
+    complete
+    .text start:0x021885b8 end:0x02188604
