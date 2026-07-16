@@ -65,3 +65,8 @@ src/Combat/Overlay_14/InitEntryFromSource_02189244.cpp:
 src/Combat/Overlay_14/UpdateCounterState_021882d4.cpp:
     complete
     .text start:0x021882d4 end:0x02188330
+
+
+src/Combat/Overlay_14/CountLinkedListNodes_021874f8.cpp:
+    complete
+    .text start:0x021874f8 end:0x02187520
