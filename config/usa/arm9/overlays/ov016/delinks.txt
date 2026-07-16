@@ -59,3 +59,38 @@ src/Combat/Overlay_16/XorMaskKeyInput_0218ca70.cpp:
 src/Combat/Overlay_16/XorMaskKeyInput_0218d2bc.cpp:
     complete
     .text start:0x0218d2bc end:0x0218d2f4
+
+
+src/Combat/Overlay_16/CallIfNonNull_0218e678.cpp:
+    complete
+    .text start:0x0218e678 end:0x0218e690
+
+
+src/Combat/Overlay_16/CallIfNonNull_0218e690.cpp:
+    complete
+    .text start:0x0218e690 end:0x0218e6a8
+
+
+src/Combat/Overlay_16/CheckStateEqualsOne_0218e768.cpp:
+    complete
+    .text start:0x0218e768 end:0x0218e78c
+
+
+src/Combat/Overlay_16/ClearAndReset_0218e640.cpp:
+    complete
+    .text start:0x0218e640 end:0x0218e660
+
+
+src/Combat/Overlay_16/GetFlagValue_0218ef2c.cpp:
+    complete
+    .text start:0x0218ef2c end:0x0218ef50
+
+
+src/Combat/Overlay_16/GetNthNode_0218e14c.cpp:
+    complete
+    .text start:0x0218e14c end:0x0218e174
+
+
+src/Combat/Overlay_16/IncrementCounters_0218f2f0.cpp:
+    complete
+    .text start:0x0218f2f0 end:0x0218f330
