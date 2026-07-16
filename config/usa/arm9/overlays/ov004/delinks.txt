@@ -420,3 +420,43 @@ src/Combat/Overlay_4/SetFlag6eTo1ThenNotify_0215c684.cpp:
 src/Combat/Overlay_4/SetFlag6eToMaxThenNotify_0215c6fc.cpp:
     complete
     .text start:0x0215c6fc end:0x0215c774
+
+
+src/Combat/Overlay_4/DecrementStat5b_0215cdf0.cpp:
+    complete
+    .text start:0x0215cdf0 end:0x0215ce38
+
+
+src/Combat/Overlay_4/DecrementStat63_0215ce7c.cpp:
+    complete
+    .text start:0x0215ce7c end:0x0215cec4
+
+
+src/Combat/Overlay_4/DoNothing_0215e2d8.cpp:
+    complete
+    .text start:0x0215e2d8 end:0x0215e2dc
+
+
+src/Combat/Overlay_4/DoNothing_0215e2dc.cpp:
+    complete
+    .text start:0x0215e2dc end:0x0215e2e0
+
+
+src/Combat/Overlay_4/IncrementStat5b_0215cdac.cpp:
+    complete
+    .text start:0x0215cdac end:0x0215cdf0
+
+
+src/Combat/Overlay_4/IncrementStat63_0215ce38.cpp:
+    complete
+    .text start:0x0215ce38 end:0x0215ce7c
+
+
+src/Combat/Overlay_4/InitAndRegister_0215e25c.cpp:
+    complete
+    .text start:0x0215e25c end:0x0215e2d0
+
+
+src/Combat/Overlay_4/ReturnZero_0215e2d0.cpp:
+    complete
+    .text start:0x0215e2d0 end:0x0215e2d8
