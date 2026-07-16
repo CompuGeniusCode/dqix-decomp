@@ -590,3 +590,23 @@ src/Combat/Overlay_3/LoopCallOv017_02172518.cpp:
 src/Combat/Overlay_3/ProcessScaleEntry0217e100.cpp:
     complete
     .text start:0x0217e100 end:0x0217e1e4
+
+
+src/Combat/Overlay_3/AppendEntryNames_0215e13c.cpp:
+    complete
+    .text start:0x0215e13c end:0x0215e1ec
+
+
+src/Combat/Overlay_3/SetupFieldAndFormat_0215de6c.cpp:
+    complete
+    .text start:0x0215de6c end:0x0215df1c
+
+
+src/Combat/Overlay_3/UpdateEntryAndScale_0215e2a8.cpp:
+    complete
+    .text start:0x0215e2a8 end:0x0215e3fc
+
+
+src/Combat/Overlay_3/UpdateEntryPosition_0216acf0.cpp:
+    complete
+    .text start:0x0216acf0 end:0x0216adbc
