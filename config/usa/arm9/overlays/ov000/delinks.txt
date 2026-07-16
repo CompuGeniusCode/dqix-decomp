@@ -1688,3 +1688,8 @@ src/Combat/Overlay_0/Process02181364.cpp:
 src/Combat/Overlay_0/UpdateFlag8AndBit4_021636ac.cpp:
     complete
     .text start:0x021636ac end:0x02163710
+
+
+src/Combat/Overlay_0/InitArrEntriesAndClearFlag4_0217f480.cpp:
+    complete
+    .text start:0x0217f480 end:0x0217f518
