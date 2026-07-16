@@ -1975,3 +1975,13 @@ src/Combat/Overlay_31/SetField18AndAdvance_02229d7c.cpp:
 src/Combat/Overlay_31/Setup1aAndAdvance_02229bfc.cpp:
     complete
     .text start:0x02229bfc end:0x02229c1c
+
+
+src/Combat/Overlay_31/CleanupAndNotify_0223edb4.cpp:
+    complete
+    .text start:0x0223edb4 end:0x0223ede0
+
+
+src/Combat/Overlay_31/SetFlagForwardAndAwait_022403b0.cpp:
+    complete
+    .text start:0x022403b0 end:0x022403d8
