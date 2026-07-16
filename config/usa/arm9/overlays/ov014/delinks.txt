@@ -85,3 +85,8 @@ src/Combat/Overlay_14/ResetHandle_02188d10.cpp:
 src/Combat/Overlay_14/InitHandleState_02188bd0.cpp:
     complete
     .text start:0x02188bd0 end:0x02188bfc
+
+
+src/Combat/Overlay_14/CheckFlagAndPointInElement_02186ff0.cpp:
+    complete
+    .text start:0x02186ff0 end:0x02187074
