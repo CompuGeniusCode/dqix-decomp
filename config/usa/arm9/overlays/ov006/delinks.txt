@@ -64,3 +64,63 @@ src/Combat/Overlay_6/SetFlag8_021553a8.cpp:
 src/Combat/Overlay_6/Something02156b80.cpp:
     complete
     .text start:0x02156b80 end:0x02156bd8
+
+
+src/Combat/Overlay_6/CheckElementFlag_02158080_02158080.cpp:
+    complete
+    .text start:0x02158080 end:0x021580b8
+
+
+src/Combat/Overlay_6/CheckFlagOrByte55_02158c70.cpp:
+    complete
+    .text start:0x02158c70 end:0x02158cac
+
+
+src/Combat/Overlay_6/Checkpoint02158cfc.cpp:
+    complete
+    .text start:0x02158cfc end:0x02158d50
+
+
+src/Combat/Overlay_6/ClearField44IfSet_02158c28.cpp:
+    complete
+    .text start:0x02158c28 end:0x02158c70
+
+
+src/Combat/Overlay_6/ClearFlagsForIds_021573c8.cpp:
+    complete
+    .text start:0x021573c8 end:0x0215745c
+
+
+src/Combat/Overlay_6/ComputeField_02158cac_02158cac.cpp:
+    complete
+    .text start:0x02158cac end:0x02158cfc
+
+
+src/Combat/Overlay_6/ExpireStatusSlot02159094.cpp:
+    complete
+    .text start:0x02159094 end:0x02159108
+
+
+src/Combat/Overlay_6/FindNode_02158d50.cpp:
+    complete
+    .text start:0x02158d50 end:0x02158d8c
+
+
+src/Combat/Overlay_6/InitObj_02157c78.cpp:
+    complete
+    .text start:0x02157c78 end:0x02157cc0
+
+
+src/Combat/Overlay_6/SetByte_0215728c_0215728c.cpp:
+    complete
+    .text start:0x0215728c end:0x0215729c
+
+
+src/Combat/Overlay_6/SetFieldsAndCall02158054.cpp:
+    complete
+    .text start:0x02158054 end:0x02158080
+
+
+src/Combat/Overlay_6/SetFlags_021585ac_021585ac.cpp:
+    complete
+    .text start:0x021585ac end:0x021585c4
