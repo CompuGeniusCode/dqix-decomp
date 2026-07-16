@@ -909,3 +909,23 @@ src/Combat/Overlay_23/SetShortsFromDiv4096_021fd394.cpp:
 src/Combat/Overlay_23/SomeFunc_021fc2b8.cpp:
     complete
     .text start:0x021fc2b8 end:0x021fc30c
+
+
+src/Combat/Overlay_23/FindEntryByKey_021e2450.cpp:
+    complete
+    .text start:0x021e2450 end:0x021e24b0
+
+
+src/Combat/Overlay_23/GetField2a_021f9bc0.cpp:
+    complete
+    .text start:0x021f9bc0 end:0x021f9bc8
+
+
+src/Combat/Overlay_23/GetShort28_021f9bb0.cpp:
+    complete
+    .text start:0x021f9bb0 end:0x021f9bb8
+
+
+src/Combat/Overlay_23/GetShort6_021f6f08.cpp:
+    complete
+    .text start:0x021f6f08 end:0x021f6f10
