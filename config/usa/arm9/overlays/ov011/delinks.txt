@@ -121,32 +121,32 @@ src/Combat/Overlay_11/SetField18cThenReset_021855cc.cpp:
     .text start:0x021855cc end:0x02185600
 
 
-src/Combat/Overlay_11/SetHWReg4000008_02186270.cpp:
+src/Combat/Overlay_11/ConfigureBg0Control_02186270.cpp:
     complete
     .text start:0x02186270 end:0x021862a4
 
 
-src/Combat/Overlay_11/SetHWReg400000a_0218623c.cpp:
+src/Combat/Overlay_11/ConfigureBg1Control_0218623c.cpp:
     complete
     .text start:0x0218623c end:0x02186270
 
 
-src/Combat/Overlay_11/SetHWReg400000c.cpp:
+src/Combat/Overlay_11/ConfigureBg2Control_02186210.cpp:
     complete
     .text start:0x02186210 end:0x0218623c
 
 
-src/Combat/Overlay_11/SetHWReg400000e.cpp:
+src/Combat/Overlay_11/ConfigureBg3Control_021861e4.cpp:
     complete
     .text start:0x021861e4 end:0x02186210
 
 
-src/Combat/Overlay_11/SetHWReg4001008_021861b0.cpp:
+src/Combat/Overlay_11/ConfigureSubBg0Control_021861b0.cpp:
     complete
     .text start:0x021861b0 end:0x021861e4
 
 
-src/Combat/Overlay_11/SetHWReg400100a_0218617c.cpp:
+src/Combat/Overlay_11/ConfigureSubBg1Control_0218617c.cpp:
     complete
     .text start:0x0218617c end:0x021861b0
 

@@ -1088,12 +1088,12 @@ src/Combat/Overlay_0/SetFlagOrState0216d530.cpp:
     .text start:0x0216d530 end:0x0216d560
 
 
-src/Combat/Overlay_0/SetHWReg4001008_02172944.cpp:
+src/Combat/Overlay_0/ConfigureSubBg0Control_02172944.cpp:
     complete
     .text start:0x02172944 end:0x02172978
 
 
-src/Combat/Overlay_0/SetHWReg400100a_02172978.cpp:
+src/Combat/Overlay_0/ConfigureSubBg1Control_02172978.cpp:
     complete
     .text start:0x02172978 end:0x021729ac
 

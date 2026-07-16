@@ -656,12 +656,12 @@ src/Combat/Overlay_23/SetFieldWidth24Offset0_021eada8.cpp:
     .text start:0x021eada8 end:0x021eaddc
 
 
-src/Combat/Overlay_23/SetHWReg400000a_021ec420.cpp:
+src/Combat/Overlay_23/ConfigureBg1Control_021ec420.cpp:
     complete
     .text start:0x021ec420 end:0x021ec454
 
 
-src/Combat/Overlay_23/SetHWReg400100a_021ec368.cpp:
+src/Combat/Overlay_23/ConfigureSubBg1Control_021ec368.cpp:
     complete
     .text start:0x021ec368 end:0x021ec39c
 
