@@ -4,3 +4,73 @@
     .data       start:0x0218b3e0 end:0x0218b5a0 kind:data align:32
     .bss        start:0x0218b5a0 end:0x0218b5a0 kind:bss align:32
 
+
+
+src/Combat/Overlay_8/ClearFlagIfDone_021870e4_021870e4.cpp:
+    complete
+    .text start:0x021870e4 end:0x0218712c
+
+
+src/Combat/Overlay_8/ClearShortByteByte_02184598.cpp:
+    complete
+    .text start:0x02184598 end:0x021845ac
+
+
+src/Combat/Overlay_8/InitConfig02187664.cpp:
+    complete
+    .text start:0x02187664 end:0x02187708
+
+
+src/Combat/Overlay_8/ResetCounterIfIdle_02186280.cpp:
+    complete
+    .text start:0x02186280 end:0x021862c4
+
+
+src/Combat/Overlay_8/ResetSubStruct02189228.cpp:
+    complete
+    .text start:0x02189228 end:0x02189284
+
+
+src/Combat/Overlay_8/SetByteB10AndClearB11_02184a3c.cpp:
+    complete
+    .text start:0x02184a3c end:0x02184a4c
+
+
+src/Combat/Overlay_8/SetFlagBit_02184a2c_02184a2c.cpp:
+    complete
+    .text start:0x02184a2c end:0x02184a3c
+
+
+src/Combat/Overlay_8/SetStateB13To1_021862c4.cpp:
+    complete
+    .text start:0x021862c4 end:0x021862e0
+
+
+src/Combat/Overlay_8/SetStateB13To2_021862e0.cpp:
+    complete
+    .text start:0x021862e0 end:0x021862fc
+
+
+src/Combat/Overlay_8/SetStateB13To4_02186334.cpp:
+    complete
+    .text start:0x02186334 end:0x02186350
+
+
+src/Combat/Overlay_8/SetStateB13To5_021862fc.cpp:
+    complete
+    .text start:0x021862fc end:0x02186318
+
+
+src/Combat/Overlay_8/SetStateB13To7_02186318.cpp:
+    complete
+    .text start:0x02186318 end:0x02186334
+
+
+src/Combat/Overlay_8/SetStateType3_02186350.cpp:
+    complete
+    .text start:0x02186350 end:0x0218636c
+
+
+src/Combat/Overlay_8/SetStateType6_0218636c.cpp:
+    complete
+    .text start:0x0218636c end:0x02186388
