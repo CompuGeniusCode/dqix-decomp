@@ -94,3 +94,8 @@ src/Combat/Overlay_8/SetupAllocators_02189284.cpp:
 src/Combat/Overlay_8/ConfigureSubsystem_021889f8.cpp:
     complete
     .text start:0x021889f8 end:0x02188a54
+
+
+src/Combat/Overlay_8/UpdateElementBuffer_021873ac.cpp:
+    complete
+    .text start:0x021873ac end:0x0218747c
