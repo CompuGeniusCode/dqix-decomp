@@ -44,3 +44,38 @@ src/Combat/Overlay_27/SetEntryCallbackAndDispatch_021d8c20.cpp:
 src/Combat/Overlay_27/SetupCombatFlags_021dad14.cpp:
     complete
     .text start:0x021dad14 end:0x021dad84
+
+
+src/Combat/Overlay_27/CheckPositionInRange_021dc864.cpp:
+    complete
+    .text start:0x021dc864 end:0x021dc8d4
+
+
+src/Combat/Overlay_27/ClearFlagsTo_021dae1c_021dae1c.cpp:
+    complete
+    .text start:0x021dae1c end:0x021dae40
+
+
+src/Combat/Overlay_27/CountU16UntilZero_021dad84.cpp:
+    complete
+    .text start:0x021dad84 end:0x021dadac
+
+
+src/Combat/Overlay_27/DispatchEvent_021dcef8.cpp:
+    complete
+    .text start:0x021dcef8 end:0x021dcf44
+
+
+src/Combat/Overlay_27/EnqueueNode_021dadac.cpp:
+    complete
+    .text start:0x021dadac end:0x021dadf0
+
+
+src/Combat/Overlay_27/RunDispatchLoop_021dae40.cpp:
+    complete
+    .text start:0x021dae40 end:0x021daecc
+
+
+src/Combat/Overlay_27/SetFlagThenDispatch_021dcc24_021dcc24.cpp:
+    complete
+    .text start:0x021dcc24 end:0x021dcc48
