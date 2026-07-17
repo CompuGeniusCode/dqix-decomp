@@ -1390,3 +1390,33 @@ src/Combat/Overlay_1/DispatchScaledVec3AndExtra_0215d984.cpp:
 src/Combat/Overlay_1/SetOrClearFieldByMode_0215ee2c.cpp:
     complete
     .text start:0x0215ee2c end:0x0215eeb0
+
+
+src/Combat/Overlay_1/AllocateAndCreateAllocator_0215e9b0.cpp:
+    complete
+    .text start:0x0215e9b0 end:0x0215ea40
+
+
+src/Combat/Overlay_1/AttachTableEntriesByIndex_0215cd50.cpp:
+    complete
+    .text start:0x0215cd50 end:0x0215cdf8
+
+
+src/Combat/Overlay_1/DispatchOffsetSumPayload_0215dfc4.cpp:
+    complete
+    .text start:0x0215dfc4 end:0x0215e0c0
+
+
+src/Combat/Overlay_1/DispatchScaledVec3WithModeExtras_0215d684.cpp:
+    complete
+    .text start:0x0215d684 end:0x0215d768
+
+
+src/Combat/Overlay_1/DispatchTwoOffsetVec3Pairs_0215d7a8.cpp:
+    complete
+    .text start:0x0215d7a8 end:0x0215d8b4
+
+
+src/Combat/Overlay_1/RestoreCombatantPairTables_0215eab0.cpp:
+    complete
+    .text start:0x0215eab0 end:0x0215eb3c
