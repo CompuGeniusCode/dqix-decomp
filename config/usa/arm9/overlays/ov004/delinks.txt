@@ -925,3 +925,53 @@ src/Combat/Overlay_4/SetFieldAndClearBufferIfType7_0216b1c4.cpp:
 src/Combat/Overlay_4/SetFieldsIfType7_0216b338.cpp:
     complete
     .text start:0x0216b338 end:0x0216b390
+
+
+src/Combat/Overlay_4/CheckType16ThenTestBit_02153d8c.cpp:
+    complete
+    .text start:0x02153d8c end:0x02153e20
+
+
+src/Combat/Overlay_4/CheckType16ThenTestBit_021552b8.cpp:
+    complete
+    .text start:0x021552b8 end:0x0215534c
+
+
+src/Combat/Overlay_4/ComputeChecksumAndNotify_0215adf8.cpp:
+    complete
+    .text start:0x0215adf8 end:0x0215aea8
+
+
+src/Combat/Overlay_4/EnqueueEventFromFlagByte_02159b8c.cpp:
+    complete
+    .text start:0x02159b8c end:0x02159bcc
+
+
+src/Combat/Overlay_4/InitAndNotifyStruct_0215b740.cpp:
+    complete
+    .text start:0x0215b740 end:0x0215b7c8
+
+
+src/Combat/Overlay_4/LoadGP2FileAndDispatch_0215bf94.cpp:
+    complete
+    .text start:0x0215bf94 end:0x0215c064
+
+
+src/Combat/Overlay_4/NotifyByBitfield_021560e8.cpp:
+    complete
+    .text start:0x021560e8 end:0x021561b0
+
+
+src/Combat/Overlay_4/SetPercent2AndDispatch_0215571c.cpp:
+    complete
+    .text start:0x0215571c end:0x021557ac
+
+
+src/Combat/Overlay_4/SetPercentAndFlags_02154250.cpp:
+    complete
+    .text start:0x02154250 end:0x0215434c
+
+
+src/Combat/Overlay_4/StoreDigitsAndNotify_0215ad34.cpp:
+    complete
+    .text start:0x0215ad34 end:0x0215adf8
