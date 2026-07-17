@@ -1763,3 +1763,38 @@ src/Combat/Overlay_0/PickTableValueWithRandomFill_0215fbe0.cpp:
 src/Combat/Overlay_0/SeedRandom32Wrapper_0215faa4.cpp:
     complete
     .text start:0x0215faa4 end:0x0215fab0
+
+
+src/Combat/Overlay_0/AllocateSlotAndConfigureField02166784.cpp:
+    complete
+    .text start:0x02166784 end:0x02166804
+
+
+src/Combat/Overlay_0/AppendUniqueShort0216346c.cpp:
+    complete
+    .text start:0x0216346c end:0x021634c8
+
+
+src/Combat/Overlay_0/AppendUniqueShort021634c8.cpp:
+    complete
+    .text start:0x021634c8 end:0x02163524
+
+
+src/Combat/Overlay_0/CheckSubstructAndRange02167bb4.cpp:
+    complete
+    .text start:0x02167bb4 end:0x02167c28
+
+
+src/Combat/Overlay_0/IsCombatantStateSpecial02163c0c.cpp:
+    complete
+    .text start:0x02163c0c end:0x02163c80
+
+
+src/Combat/Overlay_0/SetByteFieldOffset5950_02163338.cpp:
+    complete
+    .text start:0x02163338 end:0x02163344
+
+
+src/Combat/Overlay_0/StoreThreeFields02167b54.cpp:
+    complete
+    .text start:0x02167b54 end:0x02167b5c
