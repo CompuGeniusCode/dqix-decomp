@@ -1030,3 +1030,8 @@ src/Combat/Overlay_4/ToggleStateAndDispatchAll_02166fe4.cpp:
 src/Combat/Overlay_4/DispatchNodeIfType7_02156e2c.cpp:
     complete
     .text start:0x02156e2c end:0x02156e68
+
+
+src/Combat/Overlay_4/TickGlobalCounter_0215c268.cpp:
+    complete
+    .text start:0x0215c268 end:0x0215c30c
