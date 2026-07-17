@@ -795,3 +795,63 @@ src/Combat/Overlay_24/ReturnZero_021f59bc.cpp:
 src/Combat/Overlay_24/SelectResultCode_021e9320.cpp:
     complete
     .text start:0x021e9320 end:0x021e939c
+
+
+src/Combat/Overlay_24/CheckAllFlagsClear_021fa76c.cpp:
+    complete
+    .text start:0x021fa76c end:0x021fa7ec
+
+
+src/Combat/Overlay_24/NoOp_021fbec0.cpp:
+    complete
+    .text start:0x021fbec0 end:0x021fbec4
+
+
+src/Combat/Overlay_24/NoOp_021fbff4.cpp:
+    complete
+    .text start:0x021fbff4 end:0x021fbff8
+
+
+src/Combat/Overlay_24/NoOp_021fc378.cpp:
+    complete
+    .text start:0x021fc378 end:0x021fc37c
+
+
+src/Combat/Overlay_24/NoOp_021fc4bc.cpp:
+    complete
+    .text start:0x021fc4bc end:0x021fc4c0
+
+
+src/Combat/Overlay_24/NoOp_021fc68c.cpp:
+    complete
+    .text start:0x021fc68c end:0x021fc690
+
+
+src/Combat/Overlay_24/NoOp_021fc690.cpp:
+    complete
+    .text start:0x021fc690 end:0x021fc694
+
+
+src/Combat/Overlay_24/NoOp_021fc694.cpp:
+    complete
+    .text start:0x021fc694 end:0x021fc698
+
+
+src/Combat/Overlay_24/NoOp_021fc6d0.cpp:
+    complete
+    .text start:0x021fc6d0 end:0x021fc6d4
+
+
+src/Combat/Overlay_24/NoOp_021fc6d4.cpp:
+    complete
+    .text start:0x021fc6d4 end:0x021fc6d8
+
+
+src/Combat/Overlay_24/NoOp_021fc6d8.cpp:
+    complete
+    .text start:0x021fc6d8 end:0x021fc6dc
+
+
+src/Combat/Overlay_24/TailCallHandler_021fbff8.cpp:
+    complete
+    .text start:0x021fbff8 end:0x021fc004
