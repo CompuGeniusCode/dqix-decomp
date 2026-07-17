@@ -1798,3 +1798,48 @@ src/Combat/Overlay_0/SetByteFieldOffset5950_02163338.cpp:
 src/Combat/Overlay_0/StoreThreeFields02167b54.cpp:
     complete
     .text start:0x02167b54 end:0x02167b5c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216aad4.cpp:
+    complete
+    .text start:0x0216aad4 end:0x0216ab24
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216ab24.cpp:
+    complete
+    .text start:0x0216ab24 end:0x0216ab74
+
+
+src/Combat/Overlay_0/CopyBlob_02161dfc.cpp:
+    complete
+    .text start:0x02161dfc end:0x02161e30
+
+
+src/Combat/Overlay_0/GetByteField_02168720_02168720.cpp:
+    complete
+    .text start:0x02168720 end:0x0216872c
+
+
+src/Combat/Overlay_0/NoOpEventTag_0216a420_0216a420.cpp:
+    complete
+    .text start:0x0216a420 end:0x0216a428
+
+
+src/Combat/Overlay_0/NoOpEventTag_0216a428_0216a428.cpp:
+    complete
+    .text start:0x0216a428 end:0x0216a430
+
+
+src/Combat/Overlay_0/NoOpEventTag_0216a430_0216a430.cpp:
+    complete
+    .text start:0x0216a430 end:0x0216a438
+
+
+src/Combat/Overlay_0/NoOpEventTag_0216a4c0_0216a4c0.cpp:
+    complete
+    .text start:0x0216a4c0 end:0x0216a4c8
+
+
+src/Combat/Overlay_0/ReturnOne_02169d00.cpp:
+    complete
+    .text start:0x02169d00 end:0x02169d08

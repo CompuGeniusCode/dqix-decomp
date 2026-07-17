@@ -1,0 +1,30 @@
+#include <globaldefs.h>
+#include "Memory/SafeAllocator.h"
+
+extern "C" void func_ov000_02169b78(void*);
+
+struct Struct02184264 {
+    unsigned char pad[8];
+    SafeAllocator* alloc;
+};
+extern struct Struct02184264 data_ov000_02184264;
+
+struct Variant02030b0c { int tag; int u; };
+int GetIntFromVariant02030b0c(struct Variant02030b0c* p);
+
+struct VariantNodeTag0x1c {
+    int tag;
+    int unused;
+    short value;
+};
+
+// USA: func_ov000_0216ab24
+ARM int AllocateVariantNodeTag_0216ab24(struct Variant02030b0c* v) {
+    struct VariantNodeTag0x1c* node = (struct VariantNodeTag0x1c*)data_ov000_02184264.alloc->Allocate(sizeof(struct VariantNodeTag0x1c));
+    node->tag = 0;
+    node->unused = 0;
+    node->tag = 0x1c;
+    node->value = (short)GetIntFromVariant02030b0c(v);
+    func_ov000_02169b78(node);
+    return 1;
+}
