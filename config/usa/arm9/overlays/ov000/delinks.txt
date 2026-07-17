@@ -2123,3 +2123,18 @@ src/Combat/Overlay_0/RollChanceFromTable_021564cc.cpp:
 src/Combat/Overlay_0/SyncNameFlag_02161274.cpp:
     complete
     .text start:0x02161274 end:0x02161300
+
+
+src/Combat/Overlay_0/ClampScaledStat_0216352c.cpp:
+    complete
+    .text start:0x0216352c end:0x021635e4
+
+
+src/Combat/Overlay_0/ProcessCombatantSlot_02162aac.cpp:
+    complete
+    .text start:0x02162aac end:0x02162b70
+
+
+src/Combat/Overlay_0/ProcessSlot_02162b90.cpp:
+    complete
+    .text start:0x02162b90 end:0x02162c14
