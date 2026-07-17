@@ -705,3 +705,93 @@ src/Combat/Overlay_24/ScaleVectorBy1_25IfField4Is11_021f6d80.cpp:
 src/Combat/Overlay_24/UpdateStateIfFlagged_021fc2b4.cpp:
     complete
     .text start:0x021fc2b4 end:0x021fc320
+
+
+src/Combat/Overlay_24/ClearFirstField_021da550.cpp:
+    complete
+    .text start:0x021da550 end:0x021da55c
+
+
+src/Combat/Overlay_24/ClearFirstField_021f66c0.cpp:
+    complete
+    .text start:0x021f66c0 end:0x021f66cc
+
+
+src/Combat/Overlay_24/ComputeCombatantScaledValue_021d8db4.cpp:
+    complete
+    .text start:0x021d8db4 end:0x021d8e18
+
+
+src/Combat/Overlay_24/DispatchByCategory_021f736c.cpp:
+    complete
+    .text start:0x021f736c end:0x021f73b8
+
+
+src/Combat/Overlay_24/GetSixthArgDoubled_021d8e60.cpp:
+    complete
+    .text start:0x021d8e60 end:0x021d8e6c
+
+
+src/Combat/Overlay_24/GetSixthArg_021d8dac.cpp:
+    complete
+    .text start:0x021d8dac end:0x021d8db4
+
+
+src/Combat/Overlay_24/GetSixthArg_021d91b8.cpp:
+    complete
+    .text start:0x021d91b8 end:0x021d91c0
+
+
+src/Combat/Overlay_24/LookupValueByKey_021e8fa4.cpp:
+    complete
+    .text start:0x021e8fa4 end:0x021e9018
+
+
+src/Combat/Overlay_24/ReturnOne_021f5420.cpp:
+    complete
+    .text start:0x021f5420 end:0x021f5428
+
+
+src/Combat/Overlay_24/ReturnTrue_021f6d24.cpp:
+    complete
+    .text start:0x021f6d24 end:0x021f6d2c
+
+
+src/Combat/Overlay_24/ReturnTrue_021f6fe4.cpp:
+    complete
+    .text start:0x021f6fe4 end:0x021f6fec
+
+
+src/Combat/Overlay_24/ReturnTrue_021f7150.cpp:
+    complete
+    .text start:0x021f7150 end:0x021f7158
+
+
+src/Combat/Overlay_24/ReturnZero_021f4174.cpp:
+    complete
+    .text start:0x021f4174 end:0x021f417c
+
+
+src/Combat/Overlay_24/ReturnZero_021f417c.cpp:
+    complete
+    .text start:0x021f417c end:0x021f4184
+
+
+src/Combat/Overlay_24/ReturnZero_021f4184.cpp:
+    complete
+    .text start:0x021f4184 end:0x021f418c
+
+
+src/Combat/Overlay_24/ReturnZero_021f4878.cpp:
+    complete
+    .text start:0x021f4878 end:0x021f4880
+
+
+src/Combat/Overlay_24/ReturnZero_021f59bc.cpp:
+    complete
+    .text start:0x021f59bc end:0x021f59c4
+
+
+src/Combat/Overlay_24/SelectResultCode_021e9320.cpp:
+    complete
+    .text start:0x021e9320 end:0x021e939c
