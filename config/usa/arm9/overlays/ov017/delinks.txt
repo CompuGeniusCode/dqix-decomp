@@ -2510,3 +2510,8 @@ src/Combat/Overlay_17/EnqueueEventForFlaggedCombatants_021a33e0.cpp:
 src/Combat/Overlay_17/SyncVec3ForFlaggedCombatants_021a3338.cpp:
     complete
     .text start:0x021a3338 end:0x021a33e0
+
+
+src/Combat/Overlay_17/DispatchOrSetupCombatant_02191f4c.cpp:
+    complete
+    .text start:0x02191f4c end:0x02191fec
