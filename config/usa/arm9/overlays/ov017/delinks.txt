@@ -2270,3 +2270,63 @@ src/Combat/Overlay_17/SetBattleFlag728FromField6_021cbff4.cpp:
 src/Combat/Overlay_17/SetWorkFlagIfFieldsMatch_021c8bac.cpp:
     complete
     .text start:0x021c8bac end:0x021c8c04
+
+
+src/Combat/Overlay_17/CopyWordsWithOffset_021ccbdc.cpp:
+    complete
+    .text start:0x021ccbdc end:0x021ccc34
+
+
+src/Combat/Overlay_17/EmptyStub_021ce700.cpp:
+    complete
+    .text start:0x021ce700 end:0x021ce704
+
+
+src/Combat/Overlay_17/EnqueueEventTag105_021cd4c8.cpp:
+    complete
+    .text start:0x021cd4c8 end:0x021cd510
+
+
+src/Combat/Overlay_17/EnqueueEventTag107_021cdd70.cpp:
+    complete
+    .text start:0x021cdd70 end:0x021cddd4
+
+
+src/Combat/Overlay_17/EnqueueEventTag134_021c9544.cpp:
+    complete
+    .text start:0x021c9544 end:0x021c95b4
+
+
+src/Combat/Overlay_17/EnqueueEventTag141_021ce110.cpp:
+    complete
+    .text start:0x021ce110 end:0x021ce174
+
+
+src/Combat/Overlay_17/EnqueueEventTag142_021cd6d8.cpp:
+    complete
+    .text start:0x021cd6d8 end:0x021cd748
+
+
+src/Combat/Overlay_17/EnqueueEventTag38_021ce32c.cpp:
+    complete
+    .text start:0x021ce32c end:0x021ce3ac
+
+
+src/Combat/Overlay_17/NoOp_021cda9c.cpp:
+    complete
+    .text start:0x021cda9c end:0x021cdaa0
+
+
+src/Combat/Overlay_17/NoOp_021ce298.cpp:
+    complete
+    .text start:0x021ce298 end:0x021ce29c
+
+
+src/Combat/Overlay_17/PopFrontAndCompactEntries_0219531c.cpp:
+    complete
+    .text start:0x0219531c end:0x02195398
+
+
+src/Combat/Overlay_17/SetBitsFromRange16_021cd1ac.cpp:
+    complete
+    .text start:0x021cd1ac end:0x021cd218
