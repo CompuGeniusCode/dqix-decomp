@@ -1194,3 +1194,98 @@ src/Combat/Overlay_23/GetField1c_021f7128.cpp:
 src/Combat/Overlay_23/NoOp_021f7130.cpp:
     complete
     .text start:0x021f7130 end:0x021f7134
+
+
+src/Combat/Overlay_23/AddOffset20_021f7318.cpp:
+    complete
+    .text start:0x021f7318 end:0x021f7320
+
+
+src/Combat/Overlay_23/GetFieldA8_021f7190.cpp:
+    complete
+    .text start:0x021f7190 end:0x021f7198
+
+
+src/Combat/Overlay_23/GetFieldAA_021f71a0.cpp:
+    complete
+    .text start:0x021f71a0 end:0x021f71a8
+
+
+src/Combat/Overlay_23/NoOp_021f7344.cpp:
+    complete
+    .text start:0x021f7344 end:0x021f7348
+
+
+src/Combat/Overlay_23/NoOp_021f7350.cpp:
+    complete
+    .text start:0x021f7350 end:0x021f7354
+
+
+src/Combat/Overlay_23/NoOp_021f7354.cpp:
+    complete
+    .text start:0x021f7354 end:0x021f7358
+
+
+src/Combat/Overlay_23/NoOp_021f7358.cpp:
+    complete
+    .text start:0x021f7358 end:0x021f735c
+
+
+src/Combat/Overlay_23/NoOp_021f7388.cpp:
+    complete
+    .text start:0x021f7388 end:0x021f738c
+
+
+src/Combat/Overlay_23/NoOp_021f738c.cpp:
+    complete
+    .text start:0x021f738c end:0x021f7390
+
+
+src/Combat/Overlay_23/ReturnFifteen_021f7348.cpp:
+    complete
+    .text start:0x021f7348 end:0x021f7350
+
+
+src/Combat/Overlay_23/ReturnZero_021f732c.cpp:
+    complete
+    .text start:0x021f732c end:0x021f7334
+
+
+src/Combat/Overlay_23/ReturnZero_021f7334.cpp:
+    complete
+    .text start:0x021f7334 end:0x021f733c
+
+
+src/Combat/Overlay_23/ReturnZero_021f733c.cpp:
+    complete
+    .text start:0x021f733c end:0x021f7344
+
+
+src/Combat/Overlay_23/ReturnZero_021f7390.cpp:
+    complete
+    .text start:0x021f7390 end:0x021f7398
+
+
+src/Combat/Overlay_23/ReturnZero_021f7398.cpp:
+    complete
+    .text start:0x021f7398 end:0x021f73a0
+
+
+src/Combat/Overlay_23/SetField1cTo2_021f7320.cpp:
+    complete
+    .text start:0x021f7320 end:0x021f732c
+
+
+src/Combat/Overlay_23/SetFieldA8_021f7188.cpp:
+    complete
+    .text start:0x021f7188 end:0x021f7190
+
+
+src/Combat/Overlay_23/SetFieldAA_021f7198.cpp:
+    complete
+    .text start:0x021f7198 end:0x021f71a0
+
+
+src/Combat/Overlay_23/SetFlagFromBattleBlockBit_021e9190.cpp:
+    complete
+    .text start:0x021e9190 end:0x021e9208
