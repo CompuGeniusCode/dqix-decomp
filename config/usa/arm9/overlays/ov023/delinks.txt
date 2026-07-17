@@ -1594,3 +1594,78 @@ src/Combat/Overlay_23/SetFieldShort78_021f9c80.cpp:
 src/Combat/Overlay_23/SetFieldShort80_021f9c88.cpp:
     complete
     .text start:0x021f9c88 end:0x021f9c90
+
+
+src/Combat/Overlay_23/BlankFunction_021fa038.cpp:
+    complete
+    .text start:0x021fa038 end:0x021fa03c
+
+
+src/Combat/Overlay_23/BlankFunction_021faa58.cpp:
+    complete
+    .text start:0x021faa58 end:0x021faa5c
+
+
+src/Combat/Overlay_23/BlankFunction_021faa5c.cpp:
+    complete
+    .text start:0x021faa5c end:0x021faa60
+
+
+src/Combat/Overlay_23/DispatchWithLocalTable_021fa87c.cpp:
+    complete
+    .text start:0x021fa87c end:0x021fa8fc
+
+
+src/Combat/Overlay_23/FindClearBit_021f6e5c.cpp:
+    complete
+    .text start:0x021f6e5c end:0x021f6e90
+
+
+src/Combat/Overlay_23/FindFileOrRecord_021fad20.cpp:
+    complete
+    .text start:0x021fad20 end:0x021fad84
+
+
+src/Combat/Overlay_23/GetField1c_021fa580.cpp:
+    complete
+    .text start:0x021fa580 end:0x021fa588
+
+
+src/Combat/Overlay_23/GetField1c_021faa50.cpp:
+    complete
+    .text start:0x021faa50 end:0x021faa58
+
+
+src/Combat/Overlay_23/GetLinkedNodeIfKind6_021f9cb8.cpp:
+    complete
+    .text start:0x021f9cb8 end:0x021f9d14
+
+
+src/Combat/Overlay_23/InitEvent4_021fa298.cpp:
+    complete
+    .text start:0x021fa298 end:0x021fa2f4
+
+
+src/Combat/Overlay_23/SetFieldShort82_021f9c90.cpp:
+    complete
+    .text start:0x021f9c90 end:0x021f9c98
+
+
+src/Combat/Overlay_23/SetFieldShort84_021f9c98.cpp:
+    complete
+    .text start:0x021f9c98 end:0x021f9ca0
+
+
+src/Combat/Overlay_23/SetFieldShort86_021f9ca0.cpp:
+    complete
+    .text start:0x021f9ca0 end:0x021f9ca8
+
+
+src/Combat/Overlay_23/SetFieldShort88_021f9ca8.cpp:
+    complete
+    .text start:0x021f9ca8 end:0x021f9cb0
+
+
+src/Combat/Overlay_23/SetFieldShort90_021f9cb0.cpp:
+    complete
+    .text start:0x021f9cb0 end:0x021f9cb8
