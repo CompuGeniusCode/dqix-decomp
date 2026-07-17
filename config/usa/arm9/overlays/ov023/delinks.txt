@@ -1114,3 +1114,68 @@ src/Combat/Overlay_23/NoOpReturnTrue_021f55b0.cpp:
 src/Combat/Overlay_23/NoOpReturnTrue_021f5b94.cpp:
     complete
     .text start:0x021f5b94 end:0x021f5b9c
+
+
+src/Combat/Overlay_23/EmptyStub_021f66f0.cpp:
+    complete
+    .text start:0x021f66f0 end:0x021f66f4
+
+
+src/Combat/Overlay_23/GetField18_021f6f18.cpp:
+    complete
+    .text start:0x021f6f18 end:0x021f6f20
+
+
+src/Combat/Overlay_23/InitObjWithMisc_021f6f20.cpp:
+    complete
+    .text start:0x021f6f20 end:0x021f6f80
+
+
+src/Combat/Overlay_23/NoOp_021f6728.cpp:
+    complete
+    .text start:0x021f6728 end:0x021f672c
+
+
+src/Combat/Overlay_23/NoOp_021f6984.cpp:
+    complete
+    .text start:0x021f6984 end:0x021f6988
+
+
+src/Combat/Overlay_23/NoOp_021f6988.cpp:
+    complete
+    .text start:0x021f6988 end:0x021f698c
+
+
+src/Combat/Overlay_23/NoOp_021f69b8.cpp:
+    complete
+    .text start:0x021f69b8 end:0x021f69bc
+
+
+src/Combat/Overlay_23/NoOp_021f69e8.cpp:
+    complete
+    .text start:0x021f69e8 end:0x021f69ec
+
+
+src/Combat/Overlay_23/NoOp_021f6a18.cpp:
+    complete
+    .text start:0x021f6a18 end:0x021f6a1c
+
+
+src/Combat/Overlay_23/ReturnZero_021f6ab8.cpp:
+    complete
+    .text start:0x021f6ab8 end:0x021f6ac0
+
+
+src/Combat/Overlay_23/ReturnZero_021f6ac0.cpp:
+    complete
+    .text start:0x021f6ac0 end:0x021f6ac8
+
+
+src/Combat/Overlay_23/ReturnZero_021f6ba8.cpp:
+    complete
+    .text start:0x021f6ba8 end:0x021f6bb0
+
+
+src/Combat/Overlay_23/SetField2c_021f6504.cpp:
+    complete
+    .text start:0x021f6504 end:0x021f650c
