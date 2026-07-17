@@ -1469,3 +1469,93 @@ src/Combat/Overlay_23/ReturnZero_021f7d88.cpp:
 src/Combat/Overlay_23/ReturnZero_021f7d94.cpp:
     complete
     .text start:0x021f7d94 end:0x021f7d9c
+
+
+src/Combat/Overlay_23/EmptyStub_021f8cf0.cpp:
+    complete
+    .text start:0x021f8cf0 end:0x021f8cf4
+
+
+src/Combat/Overlay_23/EmptyStub_021f9b18.cpp:
+    complete
+    .text start:0x021f9b18 end:0x021f9b1c
+
+
+src/Combat/Overlay_23/GetFieldShort36_021f9ba0.cpp:
+    complete
+    .text start:0x021f9ba0 end:0x021f9ba8
+
+
+src/Combat/Overlay_23/GetFieldShort72_021f8c80.cpp:
+    complete
+    .text start:0x021f8c80 end:0x021f8c88
+
+
+src/Combat/Overlay_23/GetFieldShort74_021f8c90.cpp:
+    complete
+    .text start:0x021f8c90 end:0x021f8c98
+
+
+src/Combat/Overlay_23/GetFieldShort76_021f8ca0.cpp:
+    complete
+    .text start:0x021f8ca0 end:0x021f8ca8
+
+
+src/Combat/Overlay_23/GetShortAt_021f8c50_021f8c50.cpp:
+    complete
+    .text start:0x021f8c50 end:0x021f8c58
+
+
+src/Combat/Overlay_23/GetShortAt_021f8c60_021f8c60.cpp:
+    complete
+    .text start:0x021f8c60 end:0x021f8c68
+
+
+src/Combat/Overlay_23/GetShortAt_021f8c70_021f8c70.cpp:
+    complete
+    .text start:0x021f8c70 end:0x021f8c78
+
+
+src/Combat/Overlay_23/SetFieldByte98_021f9c30.cpp:
+    complete
+    .text start:0x021f9c30 end:0x021f9c38
+
+
+src/Combat/Overlay_23/SetFieldShort60_021f9c38.cpp:
+    complete
+    .text start:0x021f9c38 end:0x021f9c40
+
+
+src/Combat/Overlay_23/SetFieldShort62_021f9c40.cpp:
+    complete
+    .text start:0x021f9c40 end:0x021f9c48
+
+
+src/Combat/Overlay_23/SetFieldShort74_021f8c88.cpp:
+    complete
+    .text start:0x021f8c88 end:0x021f8c90
+
+
+src/Combat/Overlay_23/SetFieldShort76_021f8c98.cpp:
+    complete
+    .text start:0x021f8c98 end:0x021f8ca0
+
+
+src/Combat/Overlay_23/SetShortAt_021f8c48_021f8c48.cpp:
+    complete
+    .text start:0x021f8c48 end:0x021f8c50
+
+
+src/Combat/Overlay_23/SetShortAt_021f8c58_021f8c58.cpp:
+    complete
+    .text start:0x021f8c58 end:0x021f8c60
+
+
+src/Combat/Overlay_23/SetShortAt_021f8c68_021f8c68.cpp:
+    complete
+    .text start:0x021f8c68 end:0x021f8c70
+
+
+src/Combat/Overlay_23/SetShortAt_021f8c78_021f8c78.cpp:
+    complete
+    .text start:0x021f8c78 end:0x021f8c80
