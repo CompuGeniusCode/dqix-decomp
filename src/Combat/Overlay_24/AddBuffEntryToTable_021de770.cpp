@@ -1,0 +1,40 @@
+#include <globaldefs.h>
+#include "Combat/Overlay_0/GetCombatantByID.h"
+
+int CheckField0x14Bit0Clear(unsigned char* obj);
+void SetByte0x66AndFlag0x4000000(unsigned char* obj);
+unsigned short SelectByIndexRange0to3_021da644(int idx, int a, int b);
+extern "C" void* func_ov000_0215e958(void* a0);
+void AddEntryAndIncrementCount0215a88c(void* objRaw, void* listRaw, int c);
+extern "C" void func_ov000_0215cd44(void* a, void* b, void* c, int d, int e, int f, int g);
+
+struct PackedPair_021de770 {
+	unsigned int a : 10;
+	unsigned int b : 10;
+	unsigned int c : 10;
+	unsigned int hi : 2;
+};
+
+struct Flag_021de770 { unsigned char pad : 7; unsigned char flag : 1; };
+struct Obj_021de770 { char pad0[0xc]; void* field0xc; void* field0x10; };
+struct Range_021de770 { char pad[0x20]; struct PackedPair_021de770 f20; struct PackedPair_021de770 f24; };
+
+// USA: func_ov024_021de770
+ARM void* AddBuffEntryToTable_021de770(struct Obj_021de770* obj, int unused, int id, struct Range_021de770* range, int unused2, int unused3, unsigned char flagArg) {
+	struct CombatantStruct* c = GetCombatantByID((int)obj->field0x10, id);
+	if (!c) return 0;
+	int active = CheckField0x14Bit0Clear((unsigned char*)c->currentStats);
+	unsigned short sel;
+	if (active != 0 && flagArg != 0) {
+		SetByte0x66AndFlag0x4000000((unsigned char*)c->currentStats);
+		sel = SelectByIndexRange0to3_021da644(id, range->f20.c, range->f24.a);
+	} else {
+		sel = SelectByIndexRange0to3_021da644(id, range->f24.b, range->f24.c);
+	}
+	void* entry = func_ov000_0215e958(obj->field0x10);
+	if (!entry) return 0;
+	AddEntryAndIncrementCount0215a88c(obj->field0x10, entry, sel);
+	struct Flag_021de770* fl = (struct Flag_021de770*)((char*)obj->field0xc + 0x1c);
+	func_ov000_0215cd44(obj->field0x10, entry, c, 0, 0, 0, fl->flag != 0);
+	return entry;
+}

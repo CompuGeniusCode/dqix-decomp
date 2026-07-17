@@ -860,3 +860,98 @@ src/Combat/Overlay_24/TailCallHandler_021fbff8.cpp:
 src/Combat/Overlay_24/AddToTableAfterCheck_021e40d8.cpp:
     complete
     .text start:0x021e40d8 end:0x021e4158
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021de678.cpp:
+    complete
+    .text start:0x021de678 end:0x021de770
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021de770.cpp:
+    complete
+    .text start:0x021de770 end:0x021de868
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021dec50.cpp:
+    complete
+    .text start:0x021dec50 end:0x021ded48
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021deff8.cpp:
+    complete
+    .text start:0x021deff8 end:0x021df0f0
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021df0f0.cpp:
+    complete
+    .text start:0x021df0f0 end:0x021df1e8
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021df1e8.cpp:
+    complete
+    .text start:0x021df1e8 end:0x021df284
+
+
+src/Combat/Overlay_24/RandomScaleField6c125Plus2x_021d90c8.cpp:
+    complete
+    .text start:0x021d90c8 end:0x021d9174
+
+
+src/Combat/Overlay_24/RandomScaleField6cBy2Point5_021d93dc.cpp:
+    complete
+    .text start:0x021d93dc end:0x021d947c
+
+
+src/Combat/Overlay_24/RandomScaleField6cBy3_021d947c.cpp:
+    complete
+    .text start:0x021d947c end:0x021d951c
+
+
+src/Combat/Overlay_24/RandomScaleField6cDiv4Plus5_021d96d0.cpp:
+    complete
+    .text start:0x021d96d0 end:0x021d974c
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo35x2_021da328.cpp:
+    complete
+    .text start:0x021da328 end:0x021da404
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo5x50_021d9c7c.cpp:
+    complete
+    .text start:0x021d9c7c end:0x021d9d6c
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo6x160_021da248.cpp:
+    complete
+    .text start:0x021da248 end:0x021da328
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo6x180_021da080.cpp:
+    complete
+    .text start:0x021da080 end:0x021da168
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo7x260_021da168.cpp:
+    complete
+    .text start:0x021da168 end:0x021da248
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo7x280_021d9d80.cpp:
+    complete
+    .text start:0x021d9d80 end:0x021d9e60
+
+
+src/Combat/Overlay_24/RandomScaleField6cMaxOfTwo_021d9b8c.cpp:
+    complete
+    .text start:0x021d9b8c end:0x021d9c7c
+
+
+src/Combat/Overlay_24/RandomScaleField6cPlus10_021d9ad8.cpp:
+    complete
+    .text start:0x021d9ad8 end:0x021d9b8c
+
+
+src/Combat/Overlay_24/ScaleAndStoreHP_021d923c.cpp:
+    complete
+    .text start:0x021d923c end:0x021d92d0
