@@ -2305,3 +2305,73 @@ src/Combat/Overlay_31/ReadVarLenValue_02207dd4.cpp:
 src/Combat/Overlay_31/ReleaseHandleIfFull_0220a66c.cpp:
     complete
     .text start:0x0220a66c end:0x0220a6bc
+
+
+src/Combat/Overlay_31/BytesToShortArrayBE_0220c8d0.cpp:
+    complete
+    .text start:0x0220c8d0 end:0x0220c92c
+
+
+src/Combat/Overlay_31/ClearHandleIfStatusReady_0220ca88.cpp:
+    complete
+    .text start:0x0220ca88 end:0x0220cae0
+
+
+src/Combat/Overlay_31/CompareShortArraysDesc_0220bdcc.cpp:
+    complete
+    .text start:0x0220bdcc end:0x0220be04
+
+
+src/Combat/Overlay_31/ExpandScheduleWord_0220b148.cpp:
+    complete
+    .text start:0x0220b148 end:0x0220b18c
+
+
+src/Combat/Overlay_31/FinalizeMd5_0220b0e0.cpp:
+    complete
+    .text start:0x0220b0e0 end:0x0220b148
+
+
+src/Combat/Overlay_31/FinalizeSha1Digest_0220b9ac.cpp:
+    complete
+    .text start:0x0220b9ac end:0x0220ba14
+
+
+src/Combat/Overlay_31/GetRemainingOrStatus_0220a800.cpp:
+    complete
+    .text start:0x0220a800 end:0x0220a87c
+
+
+src/Combat/Overlay_31/InitMd5Ctx_0220afe0.cpp:
+    complete
+    .text start:0x0220afe0 end:0x0220b028
+
+
+src/Combat/Overlay_31/InitSha1State_0220b8a0.cpp:
+    complete
+    .text start:0x0220b8a0 end:0x0220b8f4
+
+
+src/Combat/Overlay_31/PropagateBorrowSub_0220bd64.cpp:
+    complete
+    .text start:0x0220bd64 end:0x0220bdcc
+
+
+src/Combat/Overlay_31/PropagateCarryFromIndex_0220be04.cpp:
+    complete
+    .text start:0x0220be04 end:0x0220be38
+
+
+src/Combat/Overlay_31/ResetStatusIfEight_0220a9b0.cpp:
+    complete
+    .text start:0x0220a9b0 end:0x0220aa30
+
+
+src/Combat/Overlay_31/ShortArrayToBytesBE_0220c92c.cpp:
+    complete
+    .text start:0x0220c92c end:0x0220c970
+
+
+src/Combat/Overlay_31/TrimTrailingZeroShorts_0220bb24_0220bee4.cpp:
+    complete
+    .text start:0x0220bee4 end:0x0220bf5c
