@@ -119,3 +119,28 @@ src/Combat/Overlay_27/DispatchEvent_021dcf44.cpp:
 src/Combat/Overlay_27/TailCallDispatch_021dcc80.cpp:
     complete
     .text start:0x021dcc80 end:0x021dcc8c
+
+
+src/Combat/Overlay_27/CheckSlotFlag7_021d8aec.cpp:
+    complete
+    .text start:0x021d8aec end:0x021d8b40
+
+
+src/Combat/Overlay_27/ComputeReadAheadSize_021d9e1c.cpp:
+    complete
+    .text start:0x021d9e1c end:0x021d9e9c
+
+
+src/Combat/Overlay_27/InitContextIfFree_021dd330.cpp:
+    complete
+    .text start:0x021dd330 end:0x021dd3b0
+
+
+src/Combat/Overlay_27/IssueIdleBattleCommand_021db490.cpp:
+    complete
+    .text start:0x021db490 end:0x021db4e0
+
+
+src/Combat/Overlay_27/ResetQueueThenClearFlags_021dadf0.cpp:
+    complete
+    .text start:0x021dadf0 end:0x021dae1c
