@@ -2620,3 +2620,53 @@ src/Combat/Overlay_31/ResetTimestampAndDispatch_02214c44.cpp:
 src/Combat/Overlay_31/ReturnErrorNeg6_022143ec.cpp:
     complete
     .text start:0x022143ec end:0x022143f4
+
+
+src/Combat/Overlay_31/ClearBufferAndNotify_022187fc.cpp:
+    complete
+    .text start:0x022187fc end:0x0221883c
+
+
+src/Combat/Overlay_31/ClearHighBit15_02218798.cpp:
+    complete
+    .text start:0x02218798 end:0x022187a4
+
+
+src/Combat/Overlay_31/GetBufferSize1da0_02215fcc.cpp:
+    complete
+    .text start:0x02215fcc end:0x02215fd8
+
+
+src/Combat/Overlay_31/GetFieldAndReleaseRef_02216ab4.cpp:
+    complete
+    .text start:0x02216ab4 end:0x02216b00
+
+
+src/Combat/Overlay_31/InvokeHandlerAndClear_02216a2c.cpp:
+    complete
+    .text start:0x02216a2c end:0x02216a84
+
+
+src/Combat/Overlay_31/IsPrintableRun10_02216710.cpp:
+    complete
+    .text start:0x02216710 end:0x02216744
+
+
+src/Combat/Overlay_31/RefreshRefIfFlagged_02217e70.cpp:
+    complete
+    .text start:0x02217e70 end:0x02217ecc
+
+
+src/Combat/Overlay_31/ReleaseContextPair_022166b4.cpp:
+    complete
+    .text start:0x022166b4 end:0x02216710
+
+
+src/Combat/Overlay_31/SetFieldWithRefGuard_02217598.cpp:
+    complete
+    .text start:0x02217598 end:0x022175dc
+
+
+src/Combat/Overlay_31/TryProcessAndSleep_02217ecc.cpp:
+    complete
+    .text start:0x02217ecc end:0x02217f44
