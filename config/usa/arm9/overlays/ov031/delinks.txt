@@ -2265,3 +2265,43 @@ src/Combat/Overlay_31/SwapActiveContextPriority_02207cf0.cpp:
 src/Combat/Overlay_31/Validate_022078f0.cpp:
     complete
     .text start:0x022078f0 end:0x02207970
+
+
+src/Combat/Overlay_31/BuildAndCopyContext_02208ef0.cpp:
+    complete
+    .text start:0x02208ef0 end:0x02208f50
+
+
+src/Combat/Overlay_31/CopyStreamedData_02209840.cpp:
+    complete
+    .text start:0x02209840 end:0x022098ac
+
+
+src/Combat/Overlay_31/Dispatch_02205ad4.cpp:
+    complete
+    .text start:0x02205ad4 end:0x02205b48
+
+
+src/Combat/Overlay_31/InitContextFromParams_02205648.cpp:
+    complete
+    .text start:0x02205648 end:0x022056bc
+
+
+src/Combat/Overlay_31/IsEligibleForList_022068cc.cpp:
+    complete
+    .text start:0x022068cc end:0x02206900
+
+
+src/Combat/Overlay_31/ParseEncodedDate_02207e90.cpp:
+    complete
+    .text start:0x02207e90 end:0x02207f10
+
+
+src/Combat/Overlay_31/ReadVarLenValue_02207dd4.cpp:
+    complete
+    .text start:0x02207dd4 end:0x02207e24
+
+
+src/Combat/Overlay_31/ReleaseHandleIfFull_0220a66c.cpp:
+    complete
+    .text start:0x0220a66c end:0x0220a6bc
