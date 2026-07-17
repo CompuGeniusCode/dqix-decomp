@@ -2380,3 +2380,38 @@ src/Combat/Overlay_17/EmptyStub_021d0798.cpp:
 src/Combat/Overlay_17/EnqueueEventTag20_021cee78.cpp:
     complete
     .text start:0x021cee78 end:0x021ceee0
+
+
+src/Combat/Overlay_17/CheckProximity_02196fc8.cpp:
+    complete
+    .text start:0x02196fc8 end:0x021970a0
+
+
+src/Combat/Overlay_17/NotifyEntriesFlag256_0218df50.cpp:
+    complete
+    .text start:0x0218df50 end:0x0218dfd8
+
+
+src/Combat/Overlay_17/ProcessEntry56_0218d818.cpp:
+    complete
+    .text start:0x0218d818 end:0x0218d8cc
+
+
+src/Combat/Overlay_17/RunCombatantUpdatePipeline_0219755c.cpp:
+    complete
+    .text start:0x0219755c end:0x021975e4
+
+
+src/Combat/Overlay_17/SetGroupShortValues_021919c8.cpp:
+    complete
+    .text start:0x021919c8 end:0x02191aac
+
+
+src/Combat/Overlay_17/SetupCombatantAllocations_021901ac.cpp:
+    complete
+    .text start:0x021901ac end:0x02190238
+
+
+src/Combat/Overlay_17/UpdateCombatantBitsFromField_02196398_02196398.cpp:
+    complete
+    .text start:0x02196398 end:0x02196430
