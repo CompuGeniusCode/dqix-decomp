@@ -1559,3 +1559,38 @@ src/Combat/Overlay_23/SetShortAt_021f8c68_021f8c68.cpp:
 src/Combat/Overlay_23/SetShortAt_021f8c78_021f8c78.cpp:
     complete
     .text start:0x021f8c78 end:0x021f8c80
+
+
+src/Combat/Overlay_23/SetFieldShort64_021f9c48.cpp:
+    complete
+    .text start:0x021f9c48 end:0x021f9c50
+
+
+src/Combat/Overlay_23/SetFieldShort66_021f9c50.cpp:
+    complete
+    .text start:0x021f9c50 end:0x021f9c58
+
+
+src/Combat/Overlay_23/SetFieldShort72_021f9c68.cpp:
+    complete
+    .text start:0x021f9c68 end:0x021f9c70
+
+
+src/Combat/Overlay_23/SetFieldShort74_021f9c70.cpp:
+    complete
+    .text start:0x021f9c70 end:0x021f9c78
+
+
+src/Combat/Overlay_23/SetFieldShort76_021f9c78.cpp:
+    complete
+    .text start:0x021f9c78 end:0x021f9c80
+
+
+src/Combat/Overlay_23/SetFieldShort78_021f9c80.cpp:
+    complete
+    .text start:0x021f9c80 end:0x021f9c88
+
+
+src/Combat/Overlay_23/SetFieldShort80_021f9c88.cpp:
+    complete
+    .text start:0x021f9c88 end:0x021f9c90
