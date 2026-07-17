@@ -1320,3 +1320,18 @@ src/Combat/Overlay_1/SetStateFromModeOrDefault_02163640.cpp:
 src/Combat/Overlay_1/AllocateAndRegisterCombatant_0215ba64.cpp:
     complete
     .text start:0x0215ba64 end:0x0215bb3c
+
+
+src/Combat/Overlay_1/ForwardVecsToRingAt15c_02158348.cpp:
+    complete
+    .text start:0x02158348 end:0x02158384
+
+
+src/Combat/Overlay_1/ProcessAndDispatchState_02154de4.cpp:
+    complete
+    .text start:0x02154de4 end:0x02154e40
+
+
+src/Combat/Overlay_1/ZeroEntryArrayAndTail_02156ba0.cpp:
+    complete
+    .text start:0x02156ba0 end:0x02156c14
