@@ -845,3 +845,63 @@ src/Combat/Overlay_4/DispatchTauntState_02167e6c.cpp:
 src/Combat/Overlay_4/DispatchTauntState_02168074.cpp:
     complete
     .text start:0x02168074 end:0x021680b8
+
+
+src/Combat/Overlay_4/AllocateAndCopyBuf20_021689d8.cpp:
+    complete
+    .text start:0x021689d8 end:0x02168a38
+
+
+src/Combat/Overlay_4/AllocateAndCopyBuf28_0216ae2c.cpp:
+    complete
+    .text start:0x0216ae2c end:0x0216ae9c
+
+
+src/Combat/Overlay_4/ClearMasksAndNotify_02169adc.cpp:
+    complete
+    .text start:0x02169adc end:0x02169b4c
+
+
+src/Combat/Overlay_4/GetNodeIfType11_02168ad4.cpp:
+    complete
+    .text start:0x02168ad4 end:0x02168b08
+
+
+src/Combat/Overlay_4/GetNodeIfType15_02168a38.cpp:
+    complete
+    .text start:0x02168a38 end:0x02168a6c
+
+
+src/Combat/Overlay_4/GetNodeIfType1_02168aa0.cpp:
+    complete
+    .text start:0x02168aa0 end:0x02168ad4
+
+
+src/Combat/Overlay_4/GetNodeIfType8_02168a6c.cpp:
+    complete
+    .text start:0x02168a6c end:0x02168aa0
+
+
+src/Combat/Overlay_4/InitBufferAndCopyByte_0216342c.cpp:
+    complete
+    .text start:0x0216342c end:0x02163478
+
+
+src/Combat/Overlay_4/Reset3FieldsAndDispatch_0216aa10.cpp:
+    complete
+    .text start:0x0216aa10 end:0x0216aa70
+
+
+src/Combat/Overlay_4/ResetFieldBlocks_021695fc.cpp:
+    complete
+    .text start:0x021695fc end:0x02169658
+
+
+src/Combat/Overlay_4/ReturnZero_0216ace8.cpp:
+    complete
+    .text start:0x0216ace8 end:0x0216acf0
+
+
+src/Combat/Overlay_4/ReturnZero_0216acf0.cpp:
+    complete
+    .text start:0x0216acf0 end:0x0216acf8
