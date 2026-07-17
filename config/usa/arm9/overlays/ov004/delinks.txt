@@ -980,3 +980,48 @@ src/Combat/Overlay_4/StoreDigitsAndNotify_0215ad34.cpp:
 src/Combat/Overlay_4/DispatchByFieldState_0215d670.cpp:
     complete
     .text start:0x0215d670 end:0x0215d6f8
+
+
+src/Combat/Overlay_4/CheckAndDispatchByShort28_0216556c.cpp:
+    complete
+    .text start:0x0216556c end:0x02165630
+
+
+src/Combat/Overlay_4/FindNodeAndNotifyByKind_02167370.cpp:
+    complete
+    .text start:0x02167370 end:0x02167424
+
+
+src/Combat/Overlay_4/FindTreasureMapIndexAndDivide_021635d0.cpp:
+    complete
+    .text start:0x021635d0 end:0x021636b0
+
+
+src/Combat/Overlay_4/HandleAxisZeroNameEntry_021650f8.cpp:
+    complete
+    .text start:0x021650f8 end:0x021651c8
+
+
+src/Combat/Overlay_4/SwapObjStatFieldWithData_02164670.cpp:
+    complete
+    .text start:0x02164670 end:0x02164738
+
+
+src/Combat/Overlay_4/SwapStatFieldIfCountAndAxis_021653e4.cpp:
+    complete
+    .text start:0x021653e4 end:0x021654a8
+
+
+src/Combat/Overlay_4/SwapStatFieldIfCountAndAxis_021654a8.cpp:
+    complete
+    .text start:0x021654a8 end:0x0216556c
+
+
+src/Combat/Overlay_4/ToggleFlag8OnTwoObjs_021651c8.cpp:
+    complete
+    .text start:0x021651c8 end:0x021652bc
+
+
+src/Combat/Overlay_4/ToggleStateAndDispatchAll_02166fe4.cpp:
+    complete
+    .text start:0x02166fe4 end:0x02167068
