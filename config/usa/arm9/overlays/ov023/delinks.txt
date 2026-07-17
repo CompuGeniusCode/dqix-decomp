@@ -1814,3 +1814,8 @@ src/Combat/Overlay_23/SetPackedFields_021e24b0.cpp:
 src/Combat/Overlay_23/UpdateEntryFromDoublePtr_021e6b04.cpp:
     complete
     .text start:0x021e6b04 end:0x021e6b8c
+
+
+src/Combat/Overlay_23/InitAndAppendTextB_021e0eb8.cpp:
+    complete
+    .text start:0x021e0eb8 end:0x021e0f44
