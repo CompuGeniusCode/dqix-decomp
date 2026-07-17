@@ -1780,3 +1780,93 @@ src/Combat/Overlay_17/SetBytesAt20And21_021a55a4.cpp:
 src/Combat/Overlay_17/StoreValueAndMaybeAppend_021991e4.cpp:
     complete
     .text start:0x021991e4 end:0x0219922c
+
+
+src/Combat/Overlay_17/AlwaysTrue_021ab6a0.cpp:
+    complete
+    .text start:0x021ab6a0 end:0x021ab6a8
+
+
+src/Combat/Overlay_17/AlwaysTrue_021ab6a8.cpp:
+    complete
+    .text start:0x021ab6a8 end:0x021ab6b0
+
+
+src/Combat/Overlay_17/AlwaysTrue_021aca1c.cpp:
+    complete
+    .text start:0x021aca1c end:0x021aca24
+
+
+src/Combat/Overlay_17/AlwaysTrue_021aca24.cpp:
+    complete
+    .text start:0x021aca24 end:0x021aca2c
+
+
+src/Combat/Overlay_17/BlankFunction_021aa3f0.cpp:
+    complete
+    .text start:0x021aa3f0 end:0x021aa3f4
+
+
+src/Combat/Overlay_17/BlankFunction_021accfc.cpp:
+    complete
+    .text start:0x021accfc end:0x021acd00
+
+
+src/Combat/Overlay_17/CheckFlagArrayAndMaybeDispatch_021b0224.cpp:
+    complete
+    .text start:0x021b0224 end:0x021b0288
+
+
+src/Combat/Overlay_17/CheckFlagArrayAndMaybeDispatch_021b042c.cpp:
+    complete
+    .text start:0x021b042c end:0x021b0490
+
+
+src/Combat/Overlay_17/InitAndInsertNode_021acd30.cpp:
+    complete
+    .text start:0x021acd30 end:0x021acd7c
+
+
+src/Combat/Overlay_17/InitAndRunScript_021acc8c.cpp:
+    complete
+    .text start:0x021acc8c end:0x021acce4
+
+
+src/Combat/Overlay_17/InitObj_021adc58.cpp:
+    complete
+    .text start:0x021adc58 end:0x021adcb0
+
+
+src/Combat/Overlay_17/SetByte1_021acd24.cpp:
+    complete
+    .text start:0x021acd24 end:0x021acd30
+
+
+src/Combat/Overlay_17/SetByteField2c_021afb84.cpp:
+    complete
+    .text start:0x021afb84 end:0x021afb8c
+
+
+src/Combat/Overlay_17/SetIntField28_021afb10.cpp:
+    complete
+    .text start:0x021afb10 end:0x021afb1c
+
+
+src/Combat/Overlay_17/SetIntField30_021afb1c.cpp:
+    complete
+    .text start:0x021afb1c end:0x021afb28
+
+
+src/Combat/Overlay_17/SetIntField34_021afb28.cpp:
+    complete
+    .text start:0x021afb28 end:0x021afb34
+
+
+src/Combat/Overlay_17/SetIntField_021ab698_021ab698.cpp:
+    complete
+    .text start:0x021ab698 end:0x021ab6a0
+
+
+src/Combat/Overlay_17/TailCallInit_021aee9c.cpp:
+    complete
+    .text start:0x021aee9c end:0x021aeea8
