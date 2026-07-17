@@ -439,3 +439,8 @@ src/Combat/Overlay_11/CallVTableFnAt172WithTaggedArgs_02187cd8.cpp:
 src/Combat/Overlay_11/CallVTableFns132And140WithTaggedArgs_021876b4.cpp:
     complete
     .text start:0x021876b4 end:0x02187720
+
+
+src/Combat/Overlay_11/CallVTableFnAt196WithTaggedArgs_02185fa8.cpp:
+    complete
+    .text start:0x02185fa8 end:0x02186018
