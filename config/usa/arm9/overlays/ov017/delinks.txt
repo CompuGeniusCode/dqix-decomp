@@ -2330,3 +2330,53 @@ src/Combat/Overlay_17/PopFrontAndCompactEntries_0219531c.cpp:
 src/Combat/Overlay_17/SetBitsFromRange16_021cd1ac.cpp:
     complete
     .text start:0x021cd1ac end:0x021cd218
+
+
+src/Combat/Overlay_17/ApplyEventTag22Fields_021cf694.cpp:
+    complete
+    .text start:0x021cf694 end:0x021cf704
+
+
+src/Combat/Overlay_17/ApplyEventTag24Fields_021cff0c.cpp:
+    complete
+    .text start:0x021cff0c end:0x021cff8c
+
+
+src/Combat/Overlay_17/CallBitHelperIfEntryMatches_021ced84.cpp:
+    complete
+    .text start:0x021ced84 end:0x021cedf4
+
+
+src/Combat/Overlay_17/DispatchModeHelper_021d0808.cpp:
+    complete
+    .text start:0x021d0808 end:0x021d0860
+
+
+src/Combat/Overlay_17/DispatchModeHelper_021d08cc.cpp:
+    complete
+    .text start:0x021d08cc end:0x021d0924
+
+
+src/Combat/Overlay_17/EmptyStub_021cea2c.cpp:
+    complete
+    .text start:0x021cea2c end:0x021cea30
+
+
+src/Combat/Overlay_17/EmptyStub_021cea30.cpp:
+    complete
+    .text start:0x021cea30 end:0x021cea34
+
+
+src/Combat/Overlay_17/EmptyStub_021d0358.cpp:
+    complete
+    .text start:0x021d0358 end:0x021d035c
+
+
+src/Combat/Overlay_17/EmptyStub_021d0798.cpp:
+    complete
+    .text start:0x021d0798 end:0x021d079c
+
+
+src/Combat/Overlay_17/EnqueueEventTag20_021cee78.cpp:
+    complete
+    .text start:0x021cee78 end:0x021ceee0
