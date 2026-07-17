@@ -369,3 +369,63 @@ src/Combat/Overlay_11/SetSingleCounterFromTaggedField_02187854.cpp:
 src/Combat/Overlay_11/InitEntry02184640.cpp:
     complete
     .text start:0x02184640 end:0x0218466c
+
+
+src/Combat/Overlay_11/GetField114Masked_021849bc.cpp:
+    complete
+    .text start:0x021849bc end:0x021849c8
+
+
+src/Combat/Overlay_11/GetField1c8_02184bd8.cpp:
+    complete
+    .text start:0x02184bd8 end:0x02184be0
+
+
+src/Combat/Overlay_11/GetField9c_021844ec.cpp:
+    complete
+    .text start:0x021844ec end:0x021844f4
+
+
+src/Combat/Overlay_11/GetFieldB0_02184540.cpp:
+    complete
+    .text start:0x02184540 end:0x02184548
+
+
+src/Combat/Overlay_11/GetFieldB4_02184548.cpp:
+    complete
+    .text start:0x02184548 end:0x02184550
+
+
+src/Combat/Overlay_11/GetShortField1b0_02184a00.cpp:
+    complete
+    .text start:0x02184a00 end:0x02184a0c
+
+
+src/Combat/Overlay_11/GetShortField1b2_02184a18.cpp:
+    complete
+    .text start:0x02184a18 end:0x02184a24
+
+
+src/Combat/Overlay_11/NoOp_021845f4.cpp:
+    complete
+    .text start:0x021845f4 end:0x021845f8
+
+
+src/Combat/Overlay_11/ReturnTrue_02185018.cpp:
+    complete
+    .text start:0x02185018 end:0x02185020
+
+
+src/Combat/Overlay_11/SetField1c8False_02184bcc.cpp:
+    complete
+    .text start:0x02184bcc end:0x02184bd8
+
+
+src/Combat/Overlay_11/SetField1c8True_02184ad8.cpp:
+    complete
+    .text start:0x02184ad8 end:0x02184ae4
+
+
+src/Combat/Overlay_11/SetFieldsB0B4_02184534.cpp:
+    complete
+    .text start:0x02184534 end:0x02184540
