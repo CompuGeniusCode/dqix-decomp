@@ -1365,3 +1365,13 @@ src/Combat/Overlay_1/EnqueueScaledVec3ToActor_0215d19c.cpp:
 src/Combat/Overlay_1/MakeScaledVec3EntryWithCount_0215c330.cpp:
     complete
     .text start:0x0215c330 end:0x0215c3e8
+
+
+src/Combat/Overlay_1/DispatchScaledVec3AndField18_0215d4bc.cpp:
+    complete
+    .text start:0x0215d4bc end:0x0215d560
+
+
+src/Combat/Overlay_1/DispatchTwoScaledVec3AndFields_0215d2cc.cpp:
+    complete
+    .text start:0x0215d2cc end:0x0215d418
