@@ -2495,3 +2495,8 @@ src/Combat/Overlay_17/AdvanceSlotState_021b04e0.cpp:
 src/Combat/Overlay_17/SetupAndDispatchCombatant_02191e5c.cpp:
     complete
     .text start:0x02191e5c end:0x02191f4c
+
+
+src/Combat/Overlay_17/InitObj_021a8670.cpp:
+    complete
+    .text start:0x021a8670 end:0x021a86d0
