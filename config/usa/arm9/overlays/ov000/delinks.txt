@@ -1843,3 +1843,88 @@ src/Combat/Overlay_0/NoOpEventTag_0216a4c0_0216a4c0.cpp:
 src/Combat/Overlay_0/ReturnOne_02169d00.cpp:
     complete
     .text start:0x02169d00 end:0x02169d08
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216ab74.cpp:
+    complete
+    .text start:0x0216ab74 end:0x0216abc4
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216ac90.cpp:
+    complete
+    .text start:0x0216ac90 end:0x0216ad0c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216adcc.cpp:
+    complete
+    .text start:0x0216adcc end:0x0216ae1c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216ae1c.cpp:
+    complete
+    .text start:0x0216ae1c end:0x0216ae70
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216b2bc.cpp:
+    complete
+    .text start:0x0216b2bc end:0x0216b328
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216b328.cpp:
+    complete
+    .text start:0x0216b328 end:0x0216b394
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216b754.cpp:
+    complete
+    .text start:0x0216b754 end:0x0216b7b8
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216bcac.cpp:
+    complete
+    .text start:0x0216bcac end:0x0216bcf0
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216bd9c.cpp:
+    complete
+    .text start:0x0216bd9c end:0x0216be00
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216bf40.cpp:
+    complete
+    .text start:0x0216bf40 end:0x0216bfa4
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c0f4.cpp:
+    complete
+    .text start:0x0216c0f4 end:0x0216c144
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c1ec.cpp:
+    complete
+    .text start:0x0216c1ec end:0x0216c23c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c23c.cpp:
+    complete
+    .text start:0x0216c23c end:0x0216c28c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c2c4.cpp:
+    complete
+    .text start:0x0216c2c4 end:0x0216c314
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c584.cpp:
+    complete
+    .text start:0x0216c584 end:0x0216c5d4
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c5d4.cpp:
+    complete
+    .text start:0x0216c5d4 end:0x0216c624
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c680.cpp:
+    complete
+    .text start:0x0216c680 end:0x0216c6d0
