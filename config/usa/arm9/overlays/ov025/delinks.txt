@@ -660,3 +660,28 @@ src/Combat/Overlay_25/SetTwoFields_021e8a40.cpp:
 src/Combat/Overlay_25/ShiftRowsDown_021deda0.cpp:
     complete
     .text start:0x021deda0 end:0x021dee20
+
+
+src/Combat/Overlay_25/GetByte2105_021ea46c.cpp:
+    complete
+    .text start:0x021ea46c end:0x021ea474
+
+
+src/Combat/Overlay_25/SetIntField356_021ed314.cpp:
+    complete
+    .text start:0x021ed314 end:0x021ed31c
+
+
+src/Combat/Overlay_25/SetIntField360_021ed31c.cpp:
+    complete
+    .text start:0x021ed31c end:0x021ed324
+
+
+src/Combat/Overlay_25/SetShortArrayEntry128_021ed350.cpp:
+    complete
+    .text start:0x021ed350 end:0x021ed35c
+
+
+src/Combat/Overlay_25/func_ov025_021eb188.cpp:
+    complete
+    .text start:0x021eb188 end:0x021eb204
