@@ -131,12 +131,12 @@ func_0200bd10 kind:function(arm,size=0xa4) addr:0x0200bd10
 func_0200bdb4 kind:function(arm,size=0x9c) addr:0x0200bdb4
 func_0200be50 kind:function(arm,size=0x8c) addr:0x0200be50
 func_0200bedc kind:function(arm,size=0x8c) addr:0x0200bedc
-func_0200bf68 kind:function(arm,size=0x5c) addr:0x0200bf68
-func_0200bfc4 kind:function(arm,size=0x5c) addr:0x0200bfc4
+_fgeq kind:function(arm,size=0x5c) addr:0x0200bf68
+_fgr kind:function(arm,size=0x5c) addr:0x0200bfc4
 _fleq kind:function(arm,size=0x68) addr:0x0200c020
 _fls kind:function(arm,size=0x5c) addr:0x0200c088
-func_0200c0e4 kind:function(arm,size=0x68) addr:0x0200c0e4
-func_0200c14c kind:function(arm,size=0x68) addr:0x0200c14c
+_feq kind:function(arm,size=0x68) addr:0x0200c0e4
+_fneq kind:function(arm,size=0x68) addr:0x0200c14c
 _fdiv kind:function(arm,size=0x3b8) addr:0x0200c1c0
 .L_0200c274 kind:data(byte[256]) addr:0x0200c274
 func_0200c578 kind:function(arm,size=0x84) addr:0x0200c578
