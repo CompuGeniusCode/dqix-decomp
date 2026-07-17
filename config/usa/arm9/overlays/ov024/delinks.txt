@@ -955,3 +955,73 @@ src/Combat/Overlay_24/RandomScaleField6cPlus10_021d9ad8.cpp:
 src/Combat/Overlay_24/ScaleAndStoreHP_021d923c.cpp:
     complete
     .text start:0x021d923c end:0x021d92d0
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e00c0.cpp:
+    complete
+    .text start:0x021e00c0 end:0x021e01b8
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e01b8.cpp:
+    complete
+    .text start:0x021e01b8 end:0x021e02b0
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e0a50.cpp:
+    complete
+    .text start:0x021e0a50 end:0x021e0b48
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e0b48.cpp:
+    complete
+    .text start:0x021e0b48 end:0x021e0bf4
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e0e38.cpp:
+    complete
+    .text start:0x021e0e38 end:0x021e0f30
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e0f30.cpp:
+    complete
+    .text start:0x021e0f30 end:0x021e1028
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e1028.cpp:
+    complete
+    .text start:0x021e1028 end:0x021e1120
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e1120.cpp:
+    complete
+    .text start:0x021e1120 end:0x021e1218
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e1328.cpp:
+    complete
+    .text start:0x021e1328 end:0x021e13e0
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e1824.cpp:
+    complete
+    .text start:0x021e1824 end:0x021e191c
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e1de8.cpp:
+    complete
+    .text start:0x021e1de8 end:0x021e1ed4
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e268c.cpp:
+    complete
+    .text start:0x021e268c end:0x021e2784
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e324c.cpp:
+    complete
+    .text start:0x021e324c end:0x021e32f4
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e32f4.cpp:
+    complete
+    .text start:0x021e32f4 end:0x021e33a4
