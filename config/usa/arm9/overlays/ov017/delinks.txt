@@ -2065,3 +2065,58 @@ src/Combat/Overlay_17/ReturnConst8_021bff24.cpp:
 src/Combat/Overlay_17/SetByte1True_021c178c.cpp:
     complete
     .text start:0x021c178c end:0x021c1798
+
+
+src/Combat/Overlay_17/CheckByteAtIndex_021c5bf8.cpp:
+    complete
+    .text start:0x021c5bf8 end:0x021c5c5c
+
+
+src/Combat/Overlay_17/EnqueueEventTag63_021c5f00.cpp:
+    complete
+    .text start:0x021c5f00 end:0x021c5f54
+
+
+src/Combat/Overlay_17/IsCombatantField2InMonsterRange_02190818.cpp:
+    complete
+    .text start:0x02190818 end:0x02190884
+
+
+src/Combat/Overlay_17/IsValidCombatantValue_021c5a1c.cpp:
+    complete
+    .text start:0x021c5a1c end:0x021c5a8c
+
+
+src/Combat/Overlay_17/MaybeResetEntry_021c5e28.cpp:
+    complete
+    .text start:0x021c5e28 end:0x021c5e80
+
+
+src/Combat/Overlay_17/ResetEntriesAndNotify_021b33d8.cpp:
+    complete
+    .text start:0x021b33d8 end:0x021b3444
+
+
+src/Combat/Overlay_17/ResetStopwatchesUnlessCurrent_021c6034.cpp:
+    complete
+    .text start:0x021c6034 end:0x021c60a4
+
+
+src/Combat/Overlay_17/SetByte1_021c1e34.cpp:
+    complete
+    .text start:0x021c1e34 end:0x021c1e40
+
+
+src/Combat/Overlay_17/SetByte1_021c2b1c.cpp:
+    complete
+    .text start:0x021c2b1c end:0x021c2b28
+
+
+src/Combat/Overlay_17/SetByte1_021c32a4.cpp:
+    complete
+    .text start:0x021c32a4 end:0x021c32b0
+
+
+src/Combat/Overlay_17/SetVec3_021c3f68.cpp:
+    complete
+    .text start:0x021c3f68 end:0x021c3f70
