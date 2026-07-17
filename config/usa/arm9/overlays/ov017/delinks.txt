@@ -2490,3 +2490,8 @@ src/Combat/Overlay_17/UpdateElementCoordFlag_021ab0c0.cpp:
 src/Combat/Overlay_17/AdvanceSlotState_021b04e0.cpp:
     complete
     .text start:0x021b04e0 end:0x021b05bc
+
+
+src/Combat/Overlay_17/SetupAndDispatchCombatant_02191e5c.cpp:
+    complete
+    .text start:0x02191e5c end:0x02191f4c
