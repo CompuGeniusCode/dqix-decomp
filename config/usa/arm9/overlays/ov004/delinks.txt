@@ -550,3 +550,103 @@ src/Combat/Overlay_4/ReturnZero_0215e35c.cpp:
 src/Combat/Overlay_4/ReturnZero_0215e368.cpp:
     complete
     .text start:0x0215e368 end:0x0215e370
+
+
+src/Combat/Overlay_4/DoNothing_0215e370.cpp:
+    complete
+    .text start:0x0215e370 end:0x0215e374
+
+
+src/Combat/Overlay_4/DoNothing_0215e37c.cpp:
+    complete
+    .text start:0x0215e37c end:0x0215e380
+
+
+src/Combat/Overlay_4/DoNothing_0215e388.cpp:
+    complete
+    .text start:0x0215e388 end:0x0215e38c
+
+
+src/Combat/Overlay_4/DoNothing_0215e394.cpp:
+    complete
+    .text start:0x0215e394 end:0x0215e398
+
+
+src/Combat/Overlay_4/DoNothing_0215e3a0.cpp:
+    complete
+    .text start:0x0215e3a0 end:0x0215e3a4
+
+
+src/Combat/Overlay_4/DoNothing_0215e3ac.cpp:
+    complete
+    .text start:0x0215e3ac end:0x0215e3b0
+
+
+src/Combat/Overlay_4/DoNothing_0215e3b8.cpp:
+    complete
+    .text start:0x0215e3b8 end:0x0215e3bc
+
+
+src/Combat/Overlay_4/DoNothing_0215e3c4.cpp:
+    complete
+    .text start:0x0215e3c4 end:0x0215e3c8
+
+
+src/Combat/Overlay_4/DoNothing_0215e3d0.cpp:
+    complete
+    .text start:0x0215e3d0 end:0x0215e3d4
+
+
+src/Combat/Overlay_4/DoNothing_0215e3dc.cpp:
+    complete
+    .text start:0x0215e3dc end:0x0215e3e0
+
+
+src/Combat/Overlay_4/ReturnZero_0215e380.cpp:
+    complete
+    .text start:0x0215e380 end:0x0215e388
+
+
+src/Combat/Overlay_4/ReturnZero_0215e38c.cpp:
+    complete
+    .text start:0x0215e38c end:0x0215e394
+
+
+src/Combat/Overlay_4/ReturnZero_0215e398.cpp:
+    complete
+    .text start:0x0215e398 end:0x0215e3a0
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3a4.cpp:
+    complete
+    .text start:0x0215e3a4 end:0x0215e3ac
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3b0.cpp:
+    complete
+    .text start:0x0215e3b0 end:0x0215e3b8
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3bc.cpp:
+    complete
+    .text start:0x0215e3bc end:0x0215e3c4
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3c8.cpp:
+    complete
+    .text start:0x0215e3c8 end:0x0215e3d0
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3d4.cpp:
+    complete
+    .text start:0x0215e3d4 end:0x0215e3dc
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3e0.cpp:
+    complete
+    .text start:0x0215e3e0 end:0x0215e3e8
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3ec.cpp:
+    complete
+    .text start:0x0215e3ec end:0x0215e3f4
