@@ -1289,3 +1289,103 @@ src/Combat/Overlay_23/SetFieldAA_021f7198.cpp:
 src/Combat/Overlay_23/SetFlagFromBattleBlockBit_021e9190.cpp:
     complete
     .text start:0x021e9190 end:0x021e9208
+
+
+src/Combat/Overlay_23/NoOpHandler_021f73c8.cpp:
+    complete
+    .text start:0x021f73c8 end:0x021f73cc
+
+
+src/Combat/Overlay_23/NoOpHandler_021f73d4.cpp:
+    complete
+    .text start:0x021f73d4 end:0x021f73d8
+
+
+src/Combat/Overlay_23/NoOpHandler_021f73e0.cpp:
+    complete
+    .text start:0x021f73e0 end:0x021f73e4
+
+
+src/Combat/Overlay_23/NoOpHandler_021f73ec.cpp:
+    complete
+    .text start:0x021f73ec end:0x021f73f0
+
+
+src/Combat/Overlay_23/NoOpHandler_021f73f8.cpp:
+    complete
+    .text start:0x021f73f8 end:0x021f73fc
+
+
+src/Combat/Overlay_23/NoOpHandler_021f7404.cpp:
+    complete
+    .text start:0x021f7404 end:0x021f7408
+
+
+src/Combat/Overlay_23/NoOpHandler_021f7410.cpp:
+    complete
+    .text start:0x021f7410 end:0x021f7414
+
+
+src/Combat/Overlay_23/NoOp_021f73a8.cpp:
+    complete
+    .text start:0x021f73a8 end:0x021f73ac
+
+
+src/Combat/Overlay_23/NoOp_021f73ac.cpp:
+    complete
+    .text start:0x021f73ac end:0x021f73b0
+
+
+src/Combat/Overlay_23/NoOp_021f73b0.cpp:
+    complete
+    .text start:0x021f73b0 end:0x021f73b4
+
+
+src/Combat/Overlay_23/NoOp_021f73bc.cpp:
+    complete
+    .text start:0x021f73bc end:0x021f73c0
+
+
+src/Combat/Overlay_23/NullHandler_021f73c0.cpp:
+    complete
+    .text start:0x021f73c0 end:0x021f73c8
+
+
+src/Combat/Overlay_23/NullHandler_021f73cc.cpp:
+    complete
+    .text start:0x021f73cc end:0x021f73d4
+
+
+src/Combat/Overlay_23/NullHandler_021f73d8.cpp:
+    complete
+    .text start:0x021f73d8 end:0x021f73e0
+
+
+src/Combat/Overlay_23/NullHandler_021f73e4.cpp:
+    complete
+    .text start:0x021f73e4 end:0x021f73ec
+
+
+src/Combat/Overlay_23/NullHandler_021f73f0.cpp:
+    complete
+    .text start:0x021f73f0 end:0x021f73f8
+
+
+src/Combat/Overlay_23/NullHandler_021f73fc.cpp:
+    complete
+    .text start:0x021f73fc end:0x021f7404
+
+
+src/Combat/Overlay_23/NullHandler_021f7408.cpp:
+    complete
+    .text start:0x021f7408 end:0x021f7410
+
+
+src/Combat/Overlay_23/ReturnZero_021f73a0.cpp:
+    complete
+    .text start:0x021f73a0 end:0x021f73a8
+
+
+src/Combat/Overlay_23/ReturnZero_021f73b4.cpp:
+    complete
+    .text start:0x021f73b4 end:0x021f73bc
