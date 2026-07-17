@@ -2035,3 +2035,33 @@ src/Combat/Overlay_17/SetFlagAndSyncVec3_021bd3d4.cpp:
 src/Combat/Overlay_17/TailCall_021b8d80_021b98f8.cpp:
     complete
     .text start:0x021b98f8 end:0x021b9904
+
+
+src/Combat/Overlay_17/BlankFunction_021bef48.cpp:
+    complete
+    .text start:0x021bef48 end:0x021bef4c
+
+
+src/Combat/Overlay_17/ClearFieldsAndResetAllocator_021bf398.cpp:
+    complete
+    .text start:0x021bf398 end:0x021bf410
+
+
+src/Combat/Overlay_17/InitObj021beba4.cpp:
+    complete
+    .text start:0x021beba4 end:0x021bec00
+
+
+src/Combat/Overlay_17/InitObjWithFlag_021c0760.cpp:
+    complete
+    .text start:0x021c0760 end:0x021c07d0
+
+
+src/Combat/Overlay_17/ReturnConst8_021bff24.cpp:
+    complete
+    .text start:0x021bff24 end:0x021bff2c
+
+
+src/Combat/Overlay_17/SetByte1True_021c178c.cpp:
+    complete
+    .text start:0x021c178c end:0x021c1798
