@@ -745,3 +745,73 @@ src/Combat/Overlay_4/SetFieldsAndFlagBit0_02163284.cpp:
 src/Combat/Overlay_4/SetNodeFieldsAndMaybeNotify_0215f6f4.cpp:
     complete
     .text start:0x0215f6f4 end:0x0215f74c
+
+
+src/Combat/Overlay_4/AllocateAndCopyHandlerTable_021677b4.cpp:
+    complete
+    .text start:0x021677b4 end:0x02167820
+
+
+src/Combat/Overlay_4/ClearFieldsIfType7_02164df4.cpp:
+    complete
+    .text start:0x02164df4 end:0x02164e40
+
+
+src/Combat/Overlay_4/ClearTreasureMapBitsLoop_02165b60.cpp:
+    complete
+    .text start:0x02165b60 end:0x02165bb8
+
+
+src/Combat/Overlay_4/ConsumeNameEntriesAndNotify_021658b0.cpp:
+    complete
+    .text start:0x021658b0 end:0x02165910
+
+
+src/Combat/Overlay_4/CopyGlobalBlockAndDispatch_02165df4.cpp:
+    complete
+    .text start:0x02165df4 end:0x02165e70
+
+
+src/Combat/Overlay_4/DecrementKeyForCount_02167a0c.cpp:
+    complete
+    .text start:0x02167a0c end:0x02167a6c
+
+
+src/Combat/Overlay_4/DispatchStateTransitions_02166608.cpp:
+    complete
+    .text start:0x02166608 end:0x02166684
+
+
+src/Combat/Overlay_4/GetScaledFieldValue_02166684.cpp:
+    complete
+    .text start:0x02166684 end:0x021666bc
+
+
+src/Combat/Overlay_4/GetScaledStat_021634dc_021634dc.cpp:
+    complete
+    .text start:0x021634dc end:0x0216351c
+
+
+src/Combat/Overlay_4/InitAndDispatchEntry_02167a6c.cpp:
+    complete
+    .text start:0x02167a6c end:0x02167adc
+
+
+src/Combat/Overlay_4/NoOpEventHandler_02166f90.cpp:
+    complete
+    .text start:0x02166f90 end:0x02166f98
+
+
+src/Combat/Overlay_4/NoOpEventHandler_02166f98.cpp:
+    complete
+    .text start:0x02166f98 end:0x02166fa0
+
+
+src/Combat/Overlay_4/SetFieldIfType1_02165ea4_02165ea4.cpp:
+    complete
+    .text start:0x02165ea4 end:0x02165ef4
+
+
+src/Combat/Overlay_4/SetIndexedNameFromField_02165d74_02165d74.cpp:
+    complete
+    .text start:0x02165d74 end:0x02165df4
