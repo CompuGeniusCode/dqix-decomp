@@ -1389,3 +1389,33 @@ src/Combat/Overlay_23/ReturnZero_021f73a0.cpp:
 src/Combat/Overlay_23/ReturnZero_021f73b4.cpp:
     complete
     .text start:0x021f73b4 end:0x021f73bc
+
+
+src/Combat/Overlay_23/NoOpHandler_021f741c.cpp:
+    complete
+    .text start:0x021f741c end:0x021f7420
+
+
+src/Combat/Overlay_23/NoOpHandler_021f7428.cpp:
+    complete
+    .text start:0x021f7428 end:0x021f742c
+
+
+src/Combat/Overlay_23/NoOpHandler_021f7434.cpp:
+    complete
+    .text start:0x021f7434 end:0x021f7438
+
+
+src/Combat/Overlay_23/NullHandler_021f7414.cpp:
+    complete
+    .text start:0x021f7414 end:0x021f741c
+
+
+src/Combat/Overlay_23/NullHandler_021f7420.cpp:
+    complete
+    .text start:0x021f7420 end:0x021f7428
+
+
+src/Combat/Overlay_23/NullHandler_021f742c.cpp:
+    complete
+    .text start:0x021f742c end:0x021f7434
