@@ -2595,3 +2595,8 @@ src/Combat/Overlay_17/HandleType2OrEntry_021d19b0.cpp:
 src/Combat/Overlay_17/SetHalfFieldsAndEnqueueIfActive_021d1c2c.cpp:
     complete
     .text start:0x021d1c2c end:0x021d1c84
+
+
+src/Combat/Overlay_17/SetupObj_021d49d0.cpp:
+    complete
+    .text start:0x021d49d0 end:0x021d4a24
