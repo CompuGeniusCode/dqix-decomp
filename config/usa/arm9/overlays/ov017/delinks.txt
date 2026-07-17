@@ -2515,3 +2515,43 @@ src/Combat/Overlay_17/SyncVec3ForFlaggedCombatants_021a3338.cpp:
 src/Combat/Overlay_17/DispatchOrSetupCombatant_02191f4c.cpp:
     complete
     .text start:0x02191f4c end:0x02191fec
+
+
+src/Combat/Overlay_17/ClearFlagAndZeroVec3Field_021bd440.cpp:
+    complete
+    .text start:0x021bd440 end:0x021bd4d0
+
+
+src/Combat/Overlay_17/ClearPendingAndDestroyAllocator_021b2200.cpp:
+    complete
+    .text start:0x021b2200 end:0x021b228c
+
+
+src/Combat/Overlay_17/CopySrcEntryIntoSlot_021ca4a8.cpp:
+    complete
+    .text start:0x021ca4a8 end:0x021ca534
+
+
+src/Combat/Overlay_17/DispatchFlagOrFilterBytes_021cc26c.cpp:
+    complete
+    .text start:0x021cc26c end:0x021cc2f0
+
+
+src/Combat/Overlay_17/EnqueueEventTag11_021cc97c.cpp:
+    complete
+    .text start:0x021cc97c end:0x021cca00
+
+
+src/Combat/Overlay_17/EnqueueEventTag61_021c5284.cpp:
+    complete
+    .text start:0x021c5284 end:0x021c530c
+
+
+src/Combat/Overlay_17/PickWeightedSubEntry_021b8a34.cpp:
+    complete
+    .text start:0x021b8a34 end:0x021b8abc
+
+
+src/Combat/Overlay_17/UpdateCountdownField_021bfe60_021bfe60.cpp:
+    complete
+    .text start:0x021bfe60 end:0x021bfee8
