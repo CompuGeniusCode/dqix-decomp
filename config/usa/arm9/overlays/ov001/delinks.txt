@@ -1315,3 +1315,8 @@ src/Combat/Overlay_1/ReturnTrue_02163510.cpp:
 src/Combat/Overlay_1/SetStateFromModeOrDefault_02163640.cpp:
     complete
     .text start:0x02163640 end:0x021636a8
+
+
+src/Combat/Overlay_1/AllocateAndRegisterCombatant_0215ba64.cpp:
+    complete
+    .text start:0x0215ba64 end:0x0215bb3c
