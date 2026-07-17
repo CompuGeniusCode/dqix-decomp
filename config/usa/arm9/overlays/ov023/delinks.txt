@@ -1419,3 +1419,53 @@ src/Combat/Overlay_23/NullHandler_021f7420.cpp:
 src/Combat/Overlay_23/NullHandler_021f742c.cpp:
     complete
     .text start:0x021f742c end:0x021f7434
+
+
+src/Combat/Overlay_23/BlankFunction_021f7d90.cpp:
+    complete
+    .text start:0x021f7d90 end:0x021f7d94
+
+
+src/Combat/Overlay_23/BlankFunction_021f7d9c.cpp:
+    complete
+    .text start:0x021f7d9c end:0x021f7da0
+
+
+src/Combat/Overlay_23/BlankFunction_021f8190.cpp:
+    complete
+    .text start:0x021f8190 end:0x021f8194
+
+
+src/Combat/Overlay_23/BlankFunction_021f8194.cpp:
+    complete
+    .text start:0x021f8194 end:0x021f8198
+
+
+src/Combat/Overlay_23/BlankFunction_021f8ae8.cpp:
+    complete
+    .text start:0x021f8ae8 end:0x021f8aec
+
+
+src/Combat/Overlay_23/ConvertFixedPoint_021f8198.cpp:
+    complete
+    .text start:0x021f8198 end:0x021f81f4
+
+
+src/Combat/Overlay_23/GetByteAt_021f86f4_021f86f4.cpp:
+    complete
+    .text start:0x021f86f4 end:0x021f86fc
+
+
+src/Combat/Overlay_23/GetIntAt_021f86dc_021f86dc.cpp:
+    complete
+    .text start:0x021f86dc end:0x021f86e4
+
+
+src/Combat/Overlay_23/ReturnZero_021f7d88.cpp:
+    complete
+    .text start:0x021f7d88 end:0x021f7d90
+
+
+src/Combat/Overlay_23/ReturnZero_021f7d94.cpp:
+    complete
+    .text start:0x021f7d94 end:0x021f7d9c
