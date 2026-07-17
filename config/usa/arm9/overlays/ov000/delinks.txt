@@ -2053,3 +2053,33 @@ src/Combat/Overlay_0/UpdateFieldIfDiffers_02174514_02174514.cpp:
 src/Combat/Overlay_0/UpdateFieldromTable_02174fc0_02174fc0.cpp:
     complete
     .text start:0x02174fc0 end:0x02175024
+
+
+src/Combat/Overlay_0/ApplyElemFieldsSlot14_021788d8.cpp:
+    complete
+    .text start:0x021788d8 end:0x02178938
+
+
+src/Combat/Overlay_0/ApplyElemFieldsSlot19_0217a628.cpp:
+    complete
+    .text start:0x0217a628 end:0x0217a688
+
+
+src/Combat/Overlay_0/ApplyElemFieldsSlot21_02179c6c.cpp:
+    complete
+    .text start:0x02179c6c end:0x02179cdc
+
+
+src/Combat/Overlay_0/ClearByteField_0217f5d0_0217f5d0.cpp:
+    complete
+    .text start:0x0217f5d0 end:0x0217f5dc
+
+
+src/Combat/Overlay_0/ProcessCombatantEntry0217f78c.cpp:
+    complete
+    .text start:0x0217f78c end:0x0217f7d4
+
+
+src/Combat/Overlay_0/TrimTrailingLetterCode_0217aa08.cpp:
+    complete
+    .text start:0x0217aa08 end:0x0217aa78
