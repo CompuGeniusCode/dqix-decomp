@@ -2415,3 +2415,13 @@ src/Combat/Overlay_17/SetupCombatantAllocations_021901ac.cpp:
 src/Combat/Overlay_17/UpdateCombatantBitsFromField_02196398_02196398.cpp:
     complete
     .text start:0x02196398 end:0x02196430
+
+
+src/Combat/Overlay_17/FindAndApplyEntryVec3_021a01f4.cpp:
+    complete
+    .text start:0x021a01f4 end:0x021a02f0
+
+
+src/Combat/Overlay_17/ProcessEntryFlagsAndCombatants_0219e014.cpp:
+    complete
+    .text start:0x0219e014 end:0x0219e0ec
