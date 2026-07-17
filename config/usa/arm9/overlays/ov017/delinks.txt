@@ -1610,3 +1610,88 @@ src/Combat/Overlay_17/func_ov017_021d6110.cpp:
 src/Combat/Overlay_17/func_ov017_021d6134.cpp:
     complete
     .text start:0x021d6134 end:0x021d6148
+
+
+src/Combat/Overlay_17/BuildAndForwardVec_0218da48.cpp:
+    complete
+    .text start:0x0218da48 end:0x0218daa8
+
+
+src/Combat/Overlay_17/CancelActionIfHeadIdMatches_02199e98.cpp:
+    complete
+    .text start:0x02199e98 end:0x02199f08
+
+
+src/Combat/Overlay_17/CopyVec3sAndDispatch_02196048.cpp:
+    complete
+    .text start:0x02196048 end:0x021960b8
+
+
+src/Combat/Overlay_17/GetDeltaAndForward_0218daa8.cpp:
+    complete
+    .text start:0x0218daa8 end:0x0218db14
+
+
+src/Combat/Overlay_17/GetField4328_0218d268.cpp:
+    complete
+    .text start:0x0218d268 end:0x0218d274
+
+
+src/Combat/Overlay_17/GetMaxFieldPlus1_02192548_02192548.cpp:
+    complete
+    .text start:0x02192548 end:0x02192594
+
+
+src/Combat/Overlay_17/InitFieldsFromCombatant_0219bcac.cpp:
+    complete
+    .text start:0x0219bcac end:0x0219bd1c
+
+
+src/Combat/Overlay_17/InitStruct_02196c08.cpp:
+    complete
+    .text start:0x02196c08 end:0x02196c4c
+
+
+src/Combat/Overlay_17/NoOp_0219a188.cpp:
+    complete
+    .text start:0x0219a188 end:0x0219a18c
+
+
+src/Combat/Overlay_17/ProcessCombatantsIfFlagged_0218f79c.cpp:
+    complete
+    .text start:0x0218f79c end:0x0218f80c
+
+
+src/Combat/Overlay_17/RegisterNodeAndNotify_0219593c.cpp:
+    complete
+    .text start:0x0219593c end:0x021959b4
+
+
+src/Combat/Overlay_17/SetFlag1ForFlagombatants_02192594_02192594.cpp:
+    complete
+    .text start:0x02192594 end:0x021925e0
+
+
+src/Combat/Overlay_17/SetName56AndFlag_0218d7b0.cpp:
+    complete
+    .text start:0x0218d7b0 end:0x0218d7fc
+
+
+src/Combat/Overlay_17/SetNameSlotAndClear_0219541c.cpp:
+    complete
+    .text start:0x0219541c end:0x02195494
+
+
+src/Combat/Overlay_17/SetSearchBitAndClearFlag_021954c4.cpp:
+    complete
+    .text start:0x021954c4 end:0x02195520
+
+
+src/Combat/Overlay_17/StoreThreeWords_0218cbcc.cpp:
+    complete
+    .text start:0x0218cbcc end:0x0218cbd4
+
+
+src/Combat/Overlay_17/StoreThreeWords_0218f574.cpp:
+    complete
+    .text start:0x0218f574 end:0x0218f57c
