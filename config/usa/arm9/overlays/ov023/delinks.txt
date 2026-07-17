@@ -1094,3 +1094,23 @@ src/Combat/Overlay_23/SumClampedField_021ea7e0.cpp:
 src/Combat/Overlay_23/SumTableBytes_021ea6bc.cpp:
     complete
     .text start:0x021ea6bc end:0x021ea71c
+
+
+src/Combat/Overlay_23/CheckThresholdOverAny_021f5228.cpp:
+    complete
+    .text start:0x021f5228 end:0x021f52a0
+
+
+src/Combat/Overlay_23/NoOpReturnTrue_021f55a8.cpp:
+    complete
+    .text start:0x021f55a8 end:0x021f55b0
+
+
+src/Combat/Overlay_23/NoOpReturnTrue_021f55b0.cpp:
+    complete
+    .text start:0x021f55b0 end:0x021f55b8
+
+
+src/Combat/Overlay_23/NoOpReturnTrue_021f5b94.cpp:
+    complete
+    .text start:0x021f5b94 end:0x021f5b9c
