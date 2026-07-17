@@ -2120,3 +2120,98 @@ src/Combat/Overlay_17/SetByte1_021c32a4.cpp:
 src/Combat/Overlay_17/SetVec3_021c3f68.cpp:
     complete
     .text start:0x021c3f68 end:0x021c3f70
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6b8c.cpp:
+    complete
+    .text start:0x021c6b8c end:0x021c6b90
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6b90.cpp:
+    complete
+    .text start:0x021c6b90 end:0x021c6b94
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6b94.cpp:
+    complete
+    .text start:0x021c6b94 end:0x021c6b98
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6b98.cpp:
+    complete
+    .text start:0x021c6b98 end:0x021c6b9c
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6b9c.cpp:
+    complete
+    .text start:0x021c6b9c end:0x021c6ba0
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6ba0.cpp:
+    complete
+    .text start:0x021c6ba0 end:0x021c6ba4
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6ba4.cpp:
+    complete
+    .text start:0x021c6ba4 end:0x021c6ba8
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6ba8.cpp:
+    complete
+    .text start:0x021c6ba8 end:0x021c6bac
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bac.cpp:
+    complete
+    .text start:0x021c6bac end:0x021c6bb0
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bb0.cpp:
+    complete
+    .text start:0x021c6bb0 end:0x021c6bb4
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bb4.cpp:
+    complete
+    .text start:0x021c6bb4 end:0x021c6bb8
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bb8.cpp:
+    complete
+    .text start:0x021c6bb8 end:0x021c6bbc
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bbc.cpp:
+    complete
+    .text start:0x021c6bbc end:0x021c6bc0
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bc0.cpp:
+    complete
+    .text start:0x021c6bc0 end:0x021c6bc4
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c6bc4.cpp:
+    complete
+    .text start:0x021c6bc4 end:0x021c6bc8
+
+
+src/Combat/Overlay_17/EmptyStub_ov017_021c8398.cpp:
+    complete
+    .text start:0x021c8398 end:0x021c839c
+
+
+src/Combat/Overlay_17/EnqueueEventTag67_021c6a9c.cpp:
+    complete
+    .text start:0x021c6a9c end:0x021c6b04
+
+
+src/Combat/Overlay_17/NoOp_021c839c.cpp:
+    complete
+    .text start:0x021c839c end:0x021c83a0
+
+
+src/Combat/Overlay_17/UpdateFieldIfHalfwordsMatch_021c840c.cpp:
+    complete
+    .text start:0x021c840c end:0x021c8478
