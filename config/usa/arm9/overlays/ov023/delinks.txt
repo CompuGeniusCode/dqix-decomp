@@ -1749,3 +1749,68 @@ src/Combat/Overlay_23/UpdateEntryAndReset_021db45c.cpp:
 src/Combat/Overlay_23/BuildAndDispatchVariantMsg_021e11ec.cpp:
     complete
     .text start:0x021e11ec end:0x021e12cc
+
+
+src/Combat/Overlay_23/CleanupAndReinitCombatState_021e2f38.cpp:
+    complete
+    .text start:0x021e2f38 end:0x021e3030
+
+
+src/Combat/Overlay_23/ConvertModelDataToFloats_021dbc58.cpp:
+    complete
+    .text start:0x021dbc58 end:0x021dbd10
+
+
+src/Combat/Overlay_23/CopyAndClampShorts_021e5fdc.cpp:
+    complete
+    .text start:0x021e5fdc end:0x021e6088
+
+
+src/Combat/Overlay_23/DispatchEntryByIndex_021e7bc4.cpp:
+    complete
+    .text start:0x021e7bc4 end:0x021e7c58
+
+
+src/Combat/Overlay_23/DispatchEntryByIndex_021e7c58.cpp:
+    complete
+    .text start:0x021e7c58 end:0x021e7cec
+
+
+src/Combat/Overlay_23/DrawGrid2x2Cells_021e2030.cpp:
+    complete
+    .text start:0x021e2030 end:0x021e20c0
+
+
+src/Combat/Overlay_23/InitBuffersAndConfigureEntry_021e761c.cpp:
+    complete
+    .text start:0x021e761c end:0x021e76a8
+
+
+src/Combat/Overlay_23/InitTenAllocatorsAndClearFields_021e4e8c.cpp:
+    complete
+    .text start:0x021e4e8c end:0x021e4f18
+
+
+src/Combat/Overlay_23/RefreshEntryStatusFlags_021e1474.cpp:
+    complete
+    .text start:0x021e1474 end:0x021e1518
+
+
+src/Combat/Overlay_23/ResetAndApplyLoop_021e7eb0.cpp:
+    complete
+    .text start:0x021e7eb0 end:0x021e7f68
+
+
+src/Combat/Overlay_23/ResetPendingSlotsAndFlags_021dcdf4.cpp:
+    complete
+    .text start:0x021dcdf4 end:0x021dce88
+
+
+src/Combat/Overlay_23/SetPackedFields_021e24b0.cpp:
+    complete
+    .text start:0x021e24b0 end:0x021e2550
+
+
+src/Combat/Overlay_23/UpdateEntryFromDoublePtr_021e6b04.cpp:
+    complete
+    .text start:0x021e6b04 end:0x021e6b8c
