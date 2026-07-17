@@ -506,7 +506,7 @@ _Z24CallIfFieldCSet_0217f218P11Obj0217f218 kind:function(arm,size=0x18) addr:0x0
 _Z24CallIfFieldCSet_0217f230P11Obj0217f230 kind:function(arm,size=0x18) addr:0x0217f230
 _Z24CallIfFieldCSet_0217f248P11Obj0217f248 kind:function(arm,size=0x18) addr:0x0217f248
 _Z19InitField1_0217f260P11Obj0217f260 kind:function(arm,size=0x18) addr:0x0217f260
-func_ov003_0217f278 kind:function(arm,size=0x8) addr:0x0217f278
+_Z19GetField12_0217f278Pi kind:function(arm,size=0x8) addr:0x0217f278
 data_ov003_0217f280 kind:data(any) addr:0x0217f280
 data_ov003_0217f288 kind:data(any) addr:0x0217f288
 data_ov003_0217f29c kind:data(any) addr:0x0217f29c

@@ -695,3 +695,8 @@ src/Combat/Overlay_3/SetField4b0_02167240.cpp:
 src/Combat/Overlay_3/SetField587_02159174.cpp:
     complete
     .text start:0x02159174 end:0x0215917c
+
+
+src/Combat/Overlay_3/GetField12_0217f278.cpp:
+    complete
+    .text start:0x0217f278 end:0x0217f280
