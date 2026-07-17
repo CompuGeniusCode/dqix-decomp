@@ -2138,3 +2138,58 @@ src/Combat/Overlay_0/ProcessCombatantSlot_02162aac.cpp:
 src/Combat/Overlay_0/ProcessSlot_02162b90.cpp:
     complete
     .text start:0x02162b90 end:0x02162c14
+
+
+src/Combat/Overlay_0/BuildEventFromVariantList0216a364.cpp:
+    complete
+    .text start:0x0216a364 end:0x0216a420
+
+
+src/Combat/Overlay_0/BuildEventFromVariantList0216a9dc.cpp:
+    complete
+    .text start:0x0216a9dc end:0x0216aad4
+
+
+src/Combat/Overlay_0/BuildEventFromVariantList0216abc4.cpp:
+    complete
+    .text start:0x0216abc4 end:0x0216ac68
+
+
+src/Combat/Overlay_0/BuildEventFromVariantList0216b088.cpp:
+    complete
+    .text start:0x0216b088 end:0x0216b110
+
+
+src/Combat/Overlay_0/BuildStringEventFromVariant0216b180.cpp:
+    complete
+    .text start:0x0216b180 end:0x0216b204
+
+
+src/Combat/Overlay_0/FindOrAssignSlot02167c28.cpp:
+    complete
+    .text start:0x02167c28 end:0x02167cd4
+
+
+src/Combat/Overlay_0/InitAndProcessCombat02166880.cpp:
+    complete
+    .text start:0x02166880 end:0x02166978
+
+
+src/Combat/Overlay_0/ProcessFlagits021674f4_021674f4.cpp:
+    complete
+    .text start:0x021674f4 end:0x021675a0
+
+
+src/Combat/Overlay_0/RunCombatTurnCycle02169770.cpp:
+    complete
+    .text start:0x02169770 end:0x02169850
+
+
+src/Combat/Overlay_0/RunFlagPassAndSetMode02167dd8_02167dd8.cpp:
+    complete
+    .text start:0x02167dd8 end:0x02167e6c
+
+
+src/Combat/Overlay_0/RunFlaglearAndSetMode02167e6c_02167e6c.cpp:
+    complete
+    .text start:0x02167e6c end:0x02167f10
