@@ -2180,3 +2180,38 @@ src/Combat/Overlay_31/WaitForField44_022034ac.cpp:
 src/Combat/Overlay_31/WaitOrCycle_02203500.cpp:
     complete
     .text start:0x02203500 end:0x0220357c
+
+
+src/Combat/Overlay_31/ClearField60_02203b8c.cpp:
+    complete
+    .text start:0x02203b8c end:0x02203bcc
+
+
+src/Combat/Overlay_31/CopyFieldsAndSetFlag_02204f94.cpp:
+    complete
+    .text start:0x02204f94 end:0x02205000
+
+
+src/Combat/Overlay_31/DoInitAndMaybeCall_02204df8.cpp:
+    complete
+    .text start:0x02204df8 end:0x02204e38
+
+
+src/Combat/Overlay_31/DrainList0224e230_02206c08.cpp:
+    complete
+    .text start:0x02206c08 end:0x02206c44
+
+
+src/Combat/Overlay_31/Func_022050c4.cpp:
+    complete
+    .text start:0x022050c4 end:0x0220510c
+
+
+src/Combat/Overlay_31/SetLookupFields_02205134.cpp:
+    complete
+    .text start:0x02205134 end:0x02205174
+
+
+src/Combat/Overlay_31/Wrapper0220376c.cpp:
+    complete
+    .text start:0x0220376c end:0x022037a8
