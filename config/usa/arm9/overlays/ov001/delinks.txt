@@ -1170,3 +1170,88 @@ src/Combat/Overlay_1/UpdateCounterFromBattleWord_0215b408.cpp:
 src/Combat/Overlay_1/UpdateFlagFromNodeState_0215ccdc.cpp:
     complete
     .text start:0x0215ccdc end:0x0215cd50
+
+
+src/Combat/Overlay_1/ApplyModeScaledAngle_0215f968.cpp:
+    complete
+    .text start:0x0215f968 end:0x0215f9dc
+
+
+src/Combat/Overlay_1/ClearFlagAcrossEntries_02161880.cpp:
+    complete
+    .text start:0x02161880 end:0x021618d0
+
+
+src/Combat/Overlay_1/DispatchEntryByType_02160938.cpp:
+    complete
+    .text start:0x02160938 end:0x021609a0
+
+
+src/Combat/Overlay_1/ForwardCombatantOrFallback_02161930.cpp:
+    complete
+    .text start:0x02161930 end:0x02161988
+
+
+src/Combat/Overlay_1/InitAllocAndClearBits_02163008.cpp:
+    complete
+    .text start:0x02163008 end:0x02163070
+
+
+src/Combat/Overlay_1/NotifyBitTestByIndex16_02163390.cpp:
+    complete
+    .text start:0x02163390 end:0x021633ec
+
+
+src/Combat/Overlay_1/NotifyBitTestByIndex3_02163334.cpp:
+    complete
+    .text start:0x02163334 end:0x02163390
+
+
+src/Combat/Overlay_1/NotifyBitTestResult_021632e4.cpp:
+    complete
+    .text start:0x021632e4 end:0x02163334
+
+
+src/Combat/Overlay_1/NotifyOrSetHeadMatchBit_02162f8c.cpp:
+    complete
+    .text start:0x02162f8c end:0x02163008
+
+
+src/Combat/Overlay_1/PackValuesIntoBitfield_02161374.cpp:
+    complete
+    .text start:0x02161374 end:0x021613d0
+
+
+src/Combat/Overlay_1/ReturnTrue_0215f304.cpp:
+    complete
+    .text start:0x0215f304 end:0x0215f30c
+
+
+src/Combat/Overlay_1/ReturnTrue_0215f30c.cpp:
+    complete
+    .text start:0x0215f30c end:0x0215f314
+
+
+src/Combat/Overlay_1/ReturnTrue_0215f314.cpp:
+    complete
+    .text start:0x0215f314 end:0x0215f31c
+
+
+src/Combat/Overlay_1/ReturnTrue_0215f31c.cpp:
+    complete
+    .text start:0x0215f31c end:0x0215f324
+
+
+src/Combat/Overlay_1/SetNodeFlagIfIdMatches_02161db0.cpp:
+    complete
+    .text start:0x02161db0 end:0x02161e00
+
+
+src/Combat/Overlay_1/SetOrClearBitsFromField8_0215f1b0.cpp:
+    complete
+    .text start:0x0215f1b0 end:0x0215f1fc
+
+
+src/Combat/Overlay_1/TransferBg3BufferByMode_02162900.cpp:
+    complete
+    .text start:0x02162900 end:0x0216297c
