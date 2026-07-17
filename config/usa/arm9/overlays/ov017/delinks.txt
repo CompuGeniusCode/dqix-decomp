@@ -1725,3 +1725,58 @@ src/Combat/Overlay_17/SetBitIfValueInTable_0219e290.cpp:
 src/Combat/Overlay_17/SetFieldB08_0219dffc.cpp:
     complete
     .text start:0x0219dffc end:0x0219e008
+
+
+src/Combat/Overlay_17/BlankFunction_021a9fec.cpp:
+    complete
+    .text start:0x021a9fec end:0x021a9ff0
+
+
+src/Combat/Overlay_17/ClearSlotsAndProcess_021a27e8.cpp:
+    complete
+    .text start:0x021a27e8 end:0x021a2840
+
+
+src/Combat/Overlay_17/CopyRelayoutFields_021a7c28.cpp:
+    complete
+    .text start:0x021a7c28 end:0x021a7c8c
+
+
+src/Combat/Overlay_17/GetField1c_021a193c.cpp:
+    complete
+    .text start:0x021a193c end:0x021a1944
+
+
+src/Combat/Overlay_17/InitObj_021a7adc.cpp:
+    complete
+    .text start:0x021a7adc end:0x021a7b38
+
+
+src/Combat/Overlay_17/NoOp_021a63cc.cpp:
+    complete
+    .text start:0x021a63cc end:0x021a63d0
+
+
+src/Combat/Overlay_17/ProcessSlotField58_021a2840.cpp:
+    complete
+    .text start:0x021a2840 end:0x021a28a8
+
+
+src/Combat/Overlay_17/ResetFieldGroup4444_0218b664.cpp:
+    complete
+    .text start:0x0218b664 end:0x0218b688
+
+
+src/Combat/Overlay_17/SetByte1_021a9670.cpp:
+    complete
+    .text start:0x021a9670 end:0x021a967c
+
+
+src/Combat/Overlay_17/SetBytesAt20And21_021a55a4.cpp:
+    complete
+    .text start:0x021a55a4 end:0x021a55b0
+
+
+src/Combat/Overlay_17/StoreValueAndMaybeAppend_021991e4.cpp:
+    complete
+    .text start:0x021991e4 end:0x0219922c
