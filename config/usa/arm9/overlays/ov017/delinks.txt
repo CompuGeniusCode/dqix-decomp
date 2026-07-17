@@ -1910,3 +1910,53 @@ src/Combat/Overlay_17/NoOp_021b1fa4.cpp:
 src/Combat/Overlay_17/SetByteField49_021b1d3c.cpp:
     complete
     .text start:0x021b1d3c end:0x021b1d44
+
+
+src/Combat/Overlay_17/DecodeEntry_021b8abc.cpp:
+    complete
+    .text start:0x021b8abc end:0x021b8b34
+
+
+src/Combat/Overlay_17/EmptyFunc_021b65d8.cpp:
+    complete
+    .text start:0x021b65d8 end:0x021b65dc
+
+
+src/Combat/Overlay_17/EmptyFunc_021b65dc.cpp:
+    complete
+    .text start:0x021b65dc end:0x021b65e0
+
+
+src/Combat/Overlay_17/GetField6b0_021b8470.cpp:
+    complete
+    .text start:0x021b8470 end:0x021b8478
+
+
+src/Combat/Overlay_17/GetField6b4_021b8480.cpp:
+    complete
+    .text start:0x021b8480 end:0x021b848c
+
+
+src/Combat/Overlay_17/NoOp_021b8d18.cpp:
+    complete
+    .text start:0x021b8d18 end:0x021b8d1c
+
+
+src/Combat/Overlay_17/ResetHeaderAndAllocator_021ae800.cpp:
+    complete
+    .text start:0x021ae800 end:0x021ae85c
+
+
+src/Combat/Overlay_17/SetFields30And34_021b2bd0.cpp:
+    complete
+    .text start:0x021b2bd0 end:0x021b2bdc
+
+
+src/Combat/Overlay_17/SetThreeEntryFlags_021ab060.cpp:
+    complete
+    .text start:0x021ab060 end:0x021ab0c0
+
+
+src/Combat/Overlay_17/func_ov017_021b5a30.cpp:
+    complete
+    .text start:0x021b5a24 end:0x021b5a30
