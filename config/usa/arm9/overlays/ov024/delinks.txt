@@ -1025,3 +1025,28 @@ src/Combat/Overlay_24/AddBuffEntryToTable_021e324c.cpp:
 src/Combat/Overlay_24/AddBuffEntryToTable_021e32f4.cpp:
     complete
     .text start:0x021e32f4 end:0x021e33a4
+
+
+src/Combat/Overlay_24/CanTargetCombatant_021ed9dc.cpp:
+    complete
+    .text start:0x021ed9dc end:0x021eda60
+
+
+src/Combat/Overlay_24/CheckAndClearOrEvaluateFlags_021eb1ec.cpp:
+    complete
+    .text start:0x021eb1ec end:0x021eb2b4
+
+
+src/Combat/Overlay_24/InitStruct_021eb510.cpp:
+    complete
+    .text start:0x021eb510 end:0x021eb5d0
+
+
+src/Combat/Overlay_24/SelectMessageByFlags2_021e939c.cpp:
+    complete
+    .text start:0x021e939c end:0x021e9464
+
+
+src/Combat/Overlay_24/SelectMessageByFlags_021e929c.cpp:
+    complete
+    .text start:0x021e929c end:0x021e9320
