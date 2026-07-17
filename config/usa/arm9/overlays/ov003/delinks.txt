@@ -700,3 +700,48 @@ src/Combat/Overlay_3/SetField587_02159174.cpp:
 src/Combat/Overlay_3/GetField12_0217f278.cpp:
     complete
     .text start:0x0217f278 end:0x0217f280
+
+
+src/Combat/Overlay_3/AppendFlagEvents_0215917c.cpp:
+    complete
+    .text start:0x0215917c end:0x02159240
+
+
+src/Combat/Overlay_3/HandleStateTransition2_02158184.cpp:
+    complete
+    .text start:0x02158184 end:0x02158214
+
+
+src/Combat/Overlay_3/HandleStateTransition_0215445c.cpp:
+    complete
+    .text start:0x0215445c end:0x021544ec
+
+
+src/Combat/Overlay_3/ResetIfFlagAndCategory_021538f4.cpp:
+    complete
+    .text start:0x021538f4 end:0x021539a0
+
+
+src/Combat/Overlay_3/StepStateMachine0215b7a4.cpp:
+    complete
+    .text start:0x0215b7a4 end:0x0215b8a0
+
+
+src/Combat/Overlay_3/StepStateMachine0215bd34.cpp:
+    complete
+    .text start:0x0215bd34 end:0x0215be20
+
+
+src/Combat/Overlay_3/UpdateChatResponseState_0215b0e8.cpp:
+    complete
+    .text start:0x0215b0e8 end:0x0215b1dc
+
+
+src/Combat/Overlay_3/UpdateHandshakeState_02159b20.cpp:
+    complete
+    .text start:0x02159b20 end:0x02159c04
+
+
+src/Combat/Overlay_3/UpdateResponseState_0215af00.cpp:
+    complete
+    .text start:0x0215af00 end:0x0215af9c
