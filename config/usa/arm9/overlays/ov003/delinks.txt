@@ -610,3 +610,88 @@ src/Combat/Overlay_3/UpdateEntryAndScale_0215e2a8.cpp:
 src/Combat/Overlay_3/UpdateEntryPosition_0216acf0.cpp:
     complete
     .text start:0x0216acf0 end:0x0216adbc
+
+
+src/Combat/Overlay_3/CallUnkThunk_02154450.cpp:
+    complete
+    .text start:0x02154450 end:0x0215445c
+
+
+src/Combat/Overlay_3/EmptyStub_02171d74.cpp:
+    complete
+    .text start:0x02171d74 end:0x02171d78
+
+
+src/Combat/Overlay_3/EmptyStub_021733cc.cpp:
+    complete
+    .text start:0x021733cc end:0x021733d0
+
+
+src/Combat/Overlay_3/EmptyStub_02173b48.cpp:
+    complete
+    .text start:0x02173b48 end:0x02173b4c
+
+
+src/Combat/Overlay_3/EmptyStub_02173f04.cpp:
+    complete
+    .text start:0x02173f04 end:0x02173f08
+
+
+src/Combat/Overlay_3/GetConst10_0215ef2c.cpp:
+    complete
+    .text start:0x0215ef2c end:0x0215ef34
+
+
+src/Combat/Overlay_3/GetConst12_0215ef4c.cpp:
+    complete
+    .text start:0x0215ef4c end:0x0215ef54
+
+
+src/Combat/Overlay_3/GetField224_021685c4.cpp:
+    complete
+    .text start:0x021685c4 end:0x021685cc
+
+
+src/Combat/Overlay_3/GetField94_0215916c.cpp:
+    complete
+    .text start:0x0215916c end:0x02159174
+
+
+src/Combat/Overlay_3/InitObj0217bcb8.cpp:
+    complete
+    .text start:0x0217bcb8 end:0x0217bd38
+
+
+src/Combat/Overlay_3/NoOp_02167b30.cpp:
+    complete
+    .text start:0x02167b30 end:0x02167b34
+
+
+src/Combat/Overlay_3/NoOp_02167c9c.cpp:
+    complete
+    .text start:0x02167c9c end:0x02167ca0
+
+
+src/Combat/Overlay_3/NoOp_02167ca0.cpp:
+    complete
+    .text start:0x02167ca0 end:0x02167ca4
+
+
+src/Combat/Overlay_3/NoOp_02167ca4.cpp:
+    complete
+    .text start:0x02167ca4 end:0x02167ca8
+
+
+src/Combat/Overlay_3/ResetHandlesAndFlags_02153874.cpp:
+    complete
+    .text start:0x02153874 end:0x021538e0
+
+
+src/Combat/Overlay_3/SetField4b0_02167240.cpp:
+    complete
+    .text start:0x02167240 end:0x0216724c
+
+
+src/Combat/Overlay_3/SetField587_02159174.cpp:
+    complete
+    .text start:0x02159174 end:0x0215917c
