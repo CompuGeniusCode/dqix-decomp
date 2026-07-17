@@ -1014,3 +1014,83 @@ src/Combat/Overlay_23/SetShiftedFieldsAndCallTwice_021e31e4.cpp:
 src/Combat/Overlay_23/SetShiftedFieldsAndCallTwice_021e3258.cpp:
     complete
     .text start:0x021e3258 end:0x021e32cc
+
+
+src/Combat/Overlay_23/ApplyElemFieldsTwice_021e81f4.cpp:
+    complete
+    .text start:0x021e81f4 end:0x021e8270
+
+
+src/Combat/Overlay_23/CheckCombatantMaxHP_021ea77c.cpp:
+    complete
+    .text start:0x021ea77c end:0x021ea7e0
+
+
+src/Combat/Overlay_23/CheckFlag2Set_021ea71c.cpp:
+    complete
+    .text start:0x021ea71c end:0x021ea77c
+
+
+src/Combat/Overlay_23/CheckSlotMatchesBitfield_021e9a9c.cpp:
+    complete
+    .text start:0x021e9a9c end:0x021e9b00
+
+
+src/Combat/Overlay_23/CreateTenAndOne_021e4f64.cpp:
+    complete
+    .text start:0x021e4f64 end:0x021e4fd8
+
+
+src/Combat/Overlay_23/CreateThreeAllocators_021e71b4.cpp:
+    complete
+    .text start:0x021e71b4 end:0x021e7220
+
+
+src/Combat/Overlay_23/InitEntryListAndReset_021e7f68.cpp:
+    complete
+    .text start:0x021e7f68 end:0x021e7fe4
+
+
+src/Combat/Overlay_23/InitObj_021f222c.cpp:
+    complete
+    .text start:0x021f222c end:0x021f229c
+
+
+src/Combat/Overlay_23/PackAndForward_021eae38.cpp:
+    complete
+    .text start:0x021eae38 end:0x021eaea0
+
+
+src/Combat/Overlay_23/ScaleOrResetCombatants_021ed988.cpp:
+    complete
+    .text start:0x021ed988 end:0x021ed9f8
+
+
+src/Combat/Overlay_23/SetByteC11_021e6150.cpp:
+    complete
+    .text start:0x021e6150 end:0x021e6158
+
+
+src/Combat/Overlay_23/SetIntC0C_021e6198.cpp:
+    complete
+    .text start:0x021e6198 end:0x021e61a0
+
+
+src/Combat/Overlay_23/SetThreeFieldsFromSub150_021e9370.cpp:
+    complete
+    .text start:0x021e9370 end:0x021e93e0
+
+
+src/Combat/Overlay_23/SetThreeInts_021f00f4.cpp:
+    complete
+    .text start:0x021f00f4 end:0x021f00fc
+
+
+src/Combat/Overlay_23/SumClampedField_021ea7e0.cpp:
+    complete
+    .text start:0x021ea7e0 end:0x021ea854
+
+
+src/Combat/Overlay_23/SumTableBytes_021ea6bc.cpp:
+    complete
+    .text start:0x021ea6bc end:0x021ea71c
