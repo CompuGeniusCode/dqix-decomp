@@ -1055,3 +1055,13 @@ src/Combat/Overlay_4/UpdateAxisFlagAndDispatch_021652e8.cpp:
 src/Combat/Overlay_4/DispatchMethodE0IfNode_02158b78.cpp:
     complete
     .text start:0x02158b78 end:0x02158bd4
+
+
+src/Combat/Overlay_4/NotifyChainIfConditions_02154c78.cpp:
+    complete
+    .text start:0x02154c78 end:0x02154da8
+
+
+src/Combat/Overlay_4/NotifyCountedEvents_02159384.cpp:
+    complete
+    .text start:0x02159384 end:0x02159468
