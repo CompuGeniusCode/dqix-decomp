@@ -855,3 +855,8 @@ src/Combat/Overlay_24/NoOp_021fc6d8.cpp:
 src/Combat/Overlay_24/TailCallHandler_021fbff8.cpp:
     complete
     .text start:0x021fbff8 end:0x021fc004
+
+
+src/Combat/Overlay_24/AddToTableAfterCheck_021e40d8.cpp:
+    complete
+    .text start:0x021e40d8 end:0x021e4158
