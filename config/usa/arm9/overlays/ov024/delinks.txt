@@ -1050,3 +1050,28 @@ src/Combat/Overlay_24/SelectMessageByFlags2_021e939c.cpp:
 src/Combat/Overlay_24/SelectMessageByFlags_021e929c.cpp:
     complete
     .text start:0x021e929c end:0x021e9320
+
+
+src/Combat/Overlay_24/RandomScaleField6cSqDiv23Plus100Alt_021d9e60.cpp:
+    complete
+    .text start:0x021d9e60 end:0x021d9f70
+
+
+src/Combat/Overlay_24/RandomScaleField6cSqDiv26Plus150_021d9f70.cpp:
+    complete
+    .text start:0x021d9f70 end:0x021da080
+
+
+src/Combat/Overlay_24/func_ov024_021e1218.cpp:
+    complete
+    .text start:0x021e1218 end:0x021e1328
+
+
+src/Combat/Overlay_24/func_ov024_021e1580.cpp:
+    complete
+    .text start:0x021e1580 end:0x021e16a4
+
+
+src/Combat/Overlay_24/func_ov024_021e2580.cpp:
+    complete
+    .text start:0x021e2580 end:0x021e268c
