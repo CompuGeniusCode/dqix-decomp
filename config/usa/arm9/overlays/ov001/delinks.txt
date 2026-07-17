@@ -1335,3 +1335,33 @@ src/Combat/Overlay_1/ProcessAndDispatchState_02154de4.cpp:
 src/Combat/Overlay_1/ZeroEntryArrayAndTail_02156ba0.cpp:
     complete
     .text start:0x02156ba0 end:0x02156c14
+
+
+src/Combat/Overlay_1/DispatchScaledVec3WithExtra_0215d418.cpp:
+    complete
+    .text start:0x0215d418 end:0x0215d4bc
+
+
+src/Combat/Overlay_1/EnqueueScaledVec3EventTransformed_0215c900.cpp:
+    complete
+    .text start:0x0215c900 end:0x0215c994
+
+
+src/Combat/Overlay_1/EnqueueScaledVec3EventType7_0215c138.cpp:
+    complete
+    .text start:0x0215c138 end:0x0215c1d0
+
+
+src/Combat/Overlay_1/EnqueueScaledVec3Event_0215bfd4.cpp:
+    complete
+    .text start:0x0215bfd4 end:0x0215c06c
+
+
+src/Combat/Overlay_1/EnqueueScaledVec3ToActor_0215d19c.cpp:
+    complete
+    .text start:0x0215d19c end:0x0215d234
+
+
+src/Combat/Overlay_1/MakeScaledVec3EntryWithCount_0215c330.cpp:
+    complete
+    .text start:0x0215c330 end:0x0215c3e8
