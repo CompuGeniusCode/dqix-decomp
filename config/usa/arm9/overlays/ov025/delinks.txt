@@ -560,3 +560,103 @@ src/Combat/Overlay_25/CopyStructFields_021ecb90.cpp:
 src/Combat/Overlay_25/GetByte_021dcc64_021dcc64.cpp:
     complete
     .text start:0x021dcc64 end:0x021dcc70
+
+
+src/Combat/Overlay_25/GetByte48_021e8ba4.cpp:
+    complete
+    .text start:0x021e8ba4 end:0x021e8bac
+
+
+src/Combat/Overlay_25/GetWord_021def24.cpp:
+    complete
+    .text start:0x021def24 end:0x021def30
+
+
+src/Combat/Overlay_25/ReturnNegOne_021e4a88.cpp:
+    complete
+    .text start:0x021e4a88 end:0x021e4a90
+
+
+src/Combat/Overlay_25/ReturnTrue_021e2f4c.cpp:
+    complete
+    .text start:0x021e2f4c end:0x021e2f54
+
+
+src/Combat/Overlay_25/ReturnTrue_021e3c78.cpp:
+    complete
+    .text start:0x021e3c78 end:0x021e3c80
+
+
+src/Combat/Overlay_25/ReturnTrue_021e40bc.cpp:
+    complete
+    .text start:0x021e40bc end:0x021e40c4
+
+
+src/Combat/Overlay_25/ReturnTrue_021e40c4.cpp:
+    complete
+    .text start:0x021e40c4 end:0x021e40cc
+
+
+src/Combat/Overlay_25/ReturnTrue_021e40cc.cpp:
+    complete
+    .text start:0x021e40cc end:0x021e40d4
+
+
+src/Combat/Overlay_25/ReturnTrue_021e40d4.cpp:
+    complete
+    .text start:0x021e40d4 end:0x021e40dc
+
+
+src/Combat/Overlay_25/ReturnTrue_021e40dc.cpp:
+    complete
+    .text start:0x021e40dc end:0x021e40e4
+
+
+src/Combat/Overlay_25/ReturnTrue_021e4a00.cpp:
+    complete
+    .text start:0x021e4a00 end:0x021e4a08
+
+
+src/Combat/Overlay_25/ReturnTrue_021e7eb8.cpp:
+    complete
+    .text start:0x021e7eb8 end:0x021e7ec0
+
+
+src/Combat/Overlay_25/ReturnTrue_021e8548.cpp:
+    complete
+    .text start:0x021e8548 end:0x021e8550
+
+
+src/Combat/Overlay_25/ReturnTrue_021e8740.cpp:
+    complete
+    .text start:0x021e8740 end:0x021e8748
+
+
+src/Combat/Overlay_25/SetByte_021dcc58.cpp:
+    complete
+    .text start:0x021dcc58 end:0x021dcc64
+
+
+src/Combat/Overlay_25/SetFieldNeg1_021e8d14.cpp:
+    complete
+    .text start:0x021e8d14 end:0x021e8d20
+
+
+src/Combat/Overlay_25/SetField_021e8a4c.cpp:
+    complete
+    .text start:0x021e8a4c end:0x021e8a54
+
+
+src/Combat/Overlay_25/SetThreeWords_021e4448.cpp:
+    complete
+    .text start:0x021e4448 end:0x021e4450
+
+
+src/Combat/Overlay_25/SetTwoFields_021e8a40.cpp:
+    complete
+    .text start:0x021e8a40 end:0x021e8a4c
+
+
+src/Combat/Overlay_25/ShiftRowsDown_021deda0.cpp:
+    complete
+    .text start:0x021deda0 end:0x021dee20
