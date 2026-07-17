@@ -2510,3 +2510,63 @@ src/Combat/Overlay_31/SetField4AndInvokeCallback_02211440.cpp:
 src/Combat/Overlay_31/SubtractOffset20_02211b20.cpp:
     complete
     .text start:0x02211b20 end:0x02211b28
+
+
+src/Combat/Overlay_31/CallStub022169a0_02212784.cpp:
+    complete
+    .text start:0x02212784 end:0x02212790
+
+
+src/Combat/Overlay_31/CallStub0221a854_022125bc.cpp:
+    complete
+    .text start:0x022125bc end:0x022125c8
+
+
+src/Combat/Overlay_31/CallWith5Args_02211d54.cpp:
+    complete
+    .text start:0x02211d54 end:0x02211db0
+
+
+src/Combat/Overlay_31/ClassifyField9_02212fb8.cpp:
+    complete
+    .text start:0x02212fb8 end:0x02213024
+
+
+src/Combat/Overlay_31/CopyMatchingTierData_02213054.cpp:
+    complete
+    .text start:0x02213054 end:0x022130ac
+
+
+src/Combat/Overlay_31/DispatchHandlerAndClearField_02213270.cpp:
+    complete
+    .text start:0x02213270 end:0x022132d4
+
+
+src/Combat/Overlay_31/InitAndProcessArray_02212c3c.cpp:
+    complete
+    .text start:0x02212c3c end:0x02212c84
+
+
+src/Combat/Overlay_31/ProcessAndClassify_02212cbc.cpp:
+    complete
+    .text start:0x02212cbc end:0x02212d20
+
+
+src/Combat/Overlay_31/RegisterAndDispatch_02212524.cpp:
+    complete
+    .text start:0x02212524 end:0x02212598
+
+
+src/Combat/Overlay_31/SetCallbackAndRegister_02212bcc.cpp:
+    complete
+    .text start:0x02212bcc end:0x02212c18
+
+
+src/Combat/Overlay_31/SetDataFromIndex_02211c50.cpp:
+    complete
+    .text start:0x02211c50 end:0x02211ca0
+
+
+src/Combat/Overlay_31/SetFlagAndInvoke_02213230.cpp:
+    complete
+    .text start:0x02213230 end:0x02213270
