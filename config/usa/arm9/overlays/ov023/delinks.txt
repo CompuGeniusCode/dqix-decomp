@@ -1704,3 +1704,43 @@ src/Combat/Overlay_23/SetField42_021fb24c.cpp:
 src/Combat/Overlay_23/SetField4b_021fb2a0.cpp:
     complete
     .text start:0x021fb2a0 end:0x021fb2a8
+
+
+src/Combat/Overlay_23/ClearBufferAndCheckField_021e05e4.cpp:
+    complete
+    .text start:0x021e05e4 end:0x021e0690
+
+
+src/Combat/Overlay_23/ConfigureBgSub1AndClear_021dcc58.cpp:
+    complete
+    .text start:0x021dcc58 end:0x021dcd18
+
+
+src/Combat/Overlay_23/FormatAndApplyPreferredField_021e0244.cpp:
+    complete
+    .text start:0x021e0244 end:0x021e0328
+
+
+src/Combat/Overlay_23/ParseCodeLetter_021db564.cpp:
+    complete
+    .text start:0x021db564 end:0x021db634
+
+
+src/Combat/Overlay_23/RefreshAndDispatch32_021dd974.cpp:
+    complete
+    .text start:0x021dd974 end:0x021dda04
+
+
+src/Combat/Overlay_23/SetupTag021d9c7c.cpp:
+    complete
+    .text start:0x021d9c7c end:0x021d9d34
+
+
+src/Combat/Overlay_23/SetupTag021d9da4.cpp:
+    complete
+    .text start:0x021d9da4 end:0x021d9e60
+
+
+src/Combat/Overlay_23/UpdateEntryAndReset_021db45c.cpp:
+    complete
+    .text start:0x021db45c end:0x021db4e4

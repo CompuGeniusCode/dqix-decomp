@@ -1,0 +1,26 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+unsigned int GetSubBg0ScreenBaseAddr(void);
+extern "C" unsigned int func_020c4da0(void);
+
+// USA: func_ov023_021dcc58
+ARM void ConfigureBgSub1AndClear_021dcc58(void* obj) {
+    if (*(signed char*)((char*)obj + 0x77c) != 1) return;
+
+    unsigned short* reg = (unsigned short*)0x4001008;
+    reg[0] = (reg[0] & 0x43) | 0xf00;
+    reg[1] = (reg[1] & 0x43) | 0xe00;
+    reg[0] = reg[0] & ~3;
+    reg[1] = (reg[1] & ~3) | 1;
+    reg[2] = (reg[2] & ~3) | 2;
+    reg[3] = (reg[3] & ~3) | 3;
+    *(unsigned int*)((char*)reg + 8) = 0;
+    *(unsigned int*)((char*)reg + 0xc) = 0;
+
+    memset((void*)GetSubBg0ScreenBaseAddr(), 0, 0x800);
+    memset((void*)func_020c4da0(), 0, 0x800);
+
+    unsigned int* reg2 = (unsigned int*)0x4001000;
+    *reg2 = (*reg2 & ~0x1f00) | 0x1300;
+}

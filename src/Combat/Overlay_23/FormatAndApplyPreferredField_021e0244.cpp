@@ -1,0 +1,50 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+int GetData02104304Field4();
+extern "C" void func_0200f374(void* buf, int len);
+struct StructDE234_020de234;
+unsigned short GetPreferredPackedField020de234(struct StructDE234_020de234* p, int preferMid);
+int CallFunc0202fa38ZeroPad(int a, int b, int c);
+struct InitStruct2075;
+void ClearStructFields(struct InitStruct2075* p);
+
+extern char data_ov023_021fdc23[];
+extern char data_ov023_021fdc36[];
+
+// USA: func_ov023_021e0244
+ARM int FormatAndApplyPreferredField_021e0244(void* obj) {
+    int listPtr = GetData02104304Field4();
+    int ok = 0;
+
+    if (*(void**)((char*)obj + 0x4c) != 0) {
+        char buf[0x40];
+        func_0200f374(buf, 0x40);
+
+        if ((*(unsigned short*)((char*)obj + 0x774) & 0x1000) != 0) {
+            struct StructDE234_020de234* sp2 = *(struct StructDE234_020de234**)((char*)obj + 0x4c);
+            unsigned short val = GetPreferredPackedField020de234(sp2, 0);
+            struct StructDE234_020de234* s2 = *(struct StructDE234_020de234**)((char*)obj + 0x4c);
+            unsigned int raw10 = *(unsigned int*)((char*)s2 + 0x10);
+            int percent = (raw10 << 4) >> 0x18;
+            sprintf(buf, data_ov023_021fdc23, percent, val);
+        } else {
+            struct StructDE234_020de234* sp2 = *(struct StructDE234_020de234**)((char*)obj + 0x4c);
+            unsigned short val = GetPreferredPackedField020de234(sp2, 0);
+            struct StructDE234_020de234* s2 = *(struct StructDE234_020de234**)((char*)obj + 0x4c);
+            unsigned int raw10 = *(unsigned int*)((char*)s2 + 0x10);
+            int percent = (raw10 << 4) >> 0x18;
+            sprintf(buf, data_ov023_021fdc36, percent, val);
+        }
+
+        int r = CallFunc0202fa38ZeroPad(listPtr, (int)buf, 0);
+        *(int*)((char*)obj + 0x738) = r;
+        ok = 1;
+    }
+
+    if (ok != 0) return 4;
+
+    *(unsigned short*)((char*)obj + 0x774) |= 8;
+    ClearStructFields(*(struct InitStruct2075**)((char*)obj + 0xc8));
+    return 6;
+}
