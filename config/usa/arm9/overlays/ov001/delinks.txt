@@ -1105,3 +1105,68 @@ src/Combat/Overlay_1/ReturnZero_02159b54.cpp:
 src/Combat/Overlay_1/RollRandomBetweenAndSet_0215afec.cpp:
     complete
     .text start:0x0215afec end:0x0215b040
+
+
+src/Combat/Overlay_1/CheckAllEntriesOrSetFlag_0215edb8.cpp:
+    complete
+    .text start:0x0215edb8 end:0x0215ee2c
+
+
+src/Combat/Overlay_1/CopyTableEntryPayload_0215e444.cpp:
+    complete
+    .text start:0x0215e444 end:0x0215e4b4
+
+
+src/Combat/Overlay_1/DestroyAllocatorAtIndex_0215ea40.cpp:
+    complete
+    .text start:0x0215ea40 end:0x0215eab0
+
+
+src/Combat/Overlay_1/DispatchChildFlagFromTable_0215c730.cpp:
+    complete
+    .text start:0x0215c730 end:0x0215c788
+
+
+src/Combat/Overlay_1/EnqueueContextEventType21_0215c858.cpp:
+    complete
+    .text start:0x0215c858 end:0x0215c8a4
+
+
+src/Combat/Overlay_1/SetCombatantFlag6cFromMode_0215bd5c.cpp:
+    complete
+    .text start:0x0215bd5c end:0x0215bdd0
+
+
+src/Combat/Overlay_1/SetEntryField10FromTable_0215d08c.cpp:
+    complete
+    .text start:0x0215d08c end:0x0215d0f4
+
+
+src/Combat/Overlay_1/SetEntryFromScaledFields_0215d608.cpp:
+    complete
+    .text start:0x0215d608 end:0x0215d684
+
+
+src/Combat/Overlay_1/SetOrClearCombatantFlag6c_0215eeb0.cpp:
+    complete
+    .text start:0x0215eeb0 end:0x0215ef20
+
+
+src/Combat/Overlay_1/UnlinkNodeFromTableState_0215cdf8.cpp:
+    complete
+    .text start:0x0215cdf8 end:0x0215ce4c
+
+
+src/Combat/Overlay_1/UpdateCounterFromBattleWordAlt_0215b4c0.cpp:
+    complete
+    .text start:0x0215b4c0 end:0x0215b50c
+
+
+src/Combat/Overlay_1/UpdateCounterFromBattleWord_0215b408.cpp:
+    complete
+    .text start:0x0215b408 end:0x0215b454
+
+
+src/Combat/Overlay_1/UpdateFlagFromNodeState_0215ccdc.cpp:
+    complete
+    .text start:0x0215ccdc end:0x0215cd50
