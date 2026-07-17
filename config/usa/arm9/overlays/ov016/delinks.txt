@@ -189,3 +189,58 @@ src/Combat/Overlay_16/TailCallAllocate_0218e7a4.cpp:
 src/Combat/Overlay_16/TailCallAllocate_0218f4f0.cpp:
     complete
     .text start:0x0218f4f0 end:0x0218f4fc
+
+
+src/Combat/Overlay_16/BlankFunction_0218e78c.cpp:
+    complete
+    .text start:0x0218e78c end:0x0218e790
+
+
+src/Combat/Overlay_16/BlankFunction_0218f6b4.cpp:
+    complete
+    .text start:0x0218f6b4 end:0x0218f6b8
+
+
+src/Combat/Overlay_16/CallIfNonNullBool_0218e6c0.cpp:
+    complete
+    .text start:0x0218e6c0 end:0x0218e6e4
+
+
+src/Combat/Overlay_16/CallIfNonNullBool_0218e6e4.cpp:
+    complete
+    .text start:0x0218e6e4 end:0x0218e708
+
+
+src/Combat/Overlay_16/CallIfNonNullBool_0218e708.cpp:
+    complete
+    .text start:0x0218e708 end:0x0218e72c
+
+
+src/Combat/Overlay_16/CallIfNonNullBool_0218e72c.cpp:
+    complete
+    .text start:0x0218e72c end:0x0218e750
+
+
+src/Combat/Overlay_16/GetConst25980_0218fc78.cpp:
+    complete
+    .text start:0x0218fc78 end:0x0218fc84
+
+
+src/Combat/Overlay_16/GetConst9600_0218fc84.cpp:
+    complete
+    .text start:0x0218fc84 end:0x0218fc8c
+
+
+src/Combat/Overlay_16/GetField4_0218e174.cpp:
+    complete
+    .text start:0x0218e174 end:0x0218e17c
+
+
+src/Combat/Overlay_16/GetField_0218ef14_0218ef14.cpp:
+    complete
+    .text start:0x0218ef14 end:0x0218ef1c
+
+
+src/Combat/Overlay_16/TailCallFree_0218f4fc.cpp:
+    complete
+    .text start:0x0218f4fc end:0x0218f508
