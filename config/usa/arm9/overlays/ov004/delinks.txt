@@ -650,3 +650,98 @@ src/Combat/Overlay_4/ReturnZero_0215e3e0.cpp:
 src/Combat/Overlay_4/ReturnZero_0215e3ec.cpp:
     complete
     .text start:0x0215e3ec end:0x0215e3f4
+
+
+src/Combat/Overlay_4/AllocateAndCopyStruct60_021633ac.cpp:
+    complete
+    .text start:0x021633ac end:0x021633e4
+
+
+src/Combat/Overlay_4/DispatchAndCallVTable240_02162b04.cpp:
+    complete
+    .text start:0x02162b04 end:0x02162b3c
+
+
+src/Combat/Overlay_4/DispatchAndCallVTable244_02162acc.cpp:
+    complete
+    .text start:0x02162acc end:0x02162b04
+
+
+src/Combat/Overlay_4/DoNothing_0215e3f4.cpp:
+    complete
+    .text start:0x0215e3f4 end:0x0215e3f8
+
+
+src/Combat/Overlay_4/DoNothing_0215e408.cpp:
+    complete
+    .text start:0x0215e408 end:0x0215e40c
+
+
+src/Combat/Overlay_4/DoNothing_0215e414.cpp:
+    complete
+    .text start:0x0215e414 end:0x0215e418
+
+
+src/Combat/Overlay_4/DoNothing_0215e420.cpp:
+    complete
+    .text start:0x0215e420 end:0x0215e424
+
+
+src/Combat/Overlay_4/DoNothing_0215e424.cpp:
+    complete
+    .text start:0x0215e424 end:0x0215e428
+
+
+src/Combat/Overlay_4/DoNothing_0215e428.cpp:
+    complete
+    .text start:0x0215e428 end:0x0215e42c
+
+
+src/Combat/Overlay_4/DoNothing_0215e42c.cpp:
+    complete
+    .text start:0x0215e42c end:0x0215e430
+
+
+src/Combat/Overlay_4/EmptyFunc_0215e430.cpp:
+    complete
+    .text start:0x0215e430 end:0x0215e434
+
+
+src/Combat/Overlay_4/EmptyFunc_0215e434.cpp:
+    complete
+    .text start:0x0215e434 end:0x0215e438
+
+
+src/Combat/Overlay_4/LoopClearBitndNotify_02162d78_02162d78.cpp:
+    complete
+    .text start:0x02162d78 end:0x02162dd8
+
+
+src/Combat/Overlay_4/ReturnZero_0215e3f8.cpp:
+    complete
+    .text start:0x0215e3f8 end:0x0215e400
+
+
+src/Combat/Overlay_4/ReturnZero_0215e400.cpp:
+    complete
+    .text start:0x0215e400 end:0x0215e408
+
+
+src/Combat/Overlay_4/ReturnZero_0215e40c.cpp:
+    complete
+    .text start:0x0215e40c end:0x0215e414
+
+
+src/Combat/Overlay_4/ReturnZero_0215e418.cpp:
+    complete
+    .text start:0x0215e418 end:0x0215e420
+
+
+src/Combat/Overlay_4/SetFieldsAndFlagBit0_02163284.cpp:
+    complete
+    .text start:0x02163284 end:0x021632bc
+
+
+src/Combat/Overlay_4/SetNodeFieldsAndMaybeNotify_0215f6f4.cpp:
+    complete
+    .text start:0x0215f6f4 end:0x0215f74c
