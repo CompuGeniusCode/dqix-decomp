@@ -429,3 +429,13 @@ src/Combat/Overlay_11/SetField1c8True_02184ad8.cpp:
 src/Combat/Overlay_11/SetFieldsB0B4_02184534.cpp:
     complete
     .text start:0x02184534 end:0x02184540
+
+
+src/Combat/Overlay_11/CallVTableFnAt172WithTaggedArgs_02187cd8.cpp:
+    complete
+    .text start:0x02187cd8 end:0x02187d44
+
+
+src/Combat/Overlay_11/CallVTableFns132And140WithTaggedArgs_021876b4.cpp:
+    complete
+    .text start:0x021876b4 end:0x02187720

@@ -1050,3 +1050,8 @@ src/Combat/Overlay_4/CheckTypeAndReturnNode_02165e70_02165e70.cpp:
 src/Combat/Overlay_4/UpdateAxisFlagAndDispatch_021652e8.cpp:
     complete
     .text start:0x021652e8 end:0x021653e4
+
+
+src/Combat/Overlay_4/DispatchMethodE0IfNode_02158b78.cpp:
+    complete
+    .text start:0x02158b78 end:0x02158bd4
