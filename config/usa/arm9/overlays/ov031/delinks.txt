@@ -2680,3 +2680,58 @@ src/Combat/Overlay_31/InitAndScrambleRegions_0221bdb8.cpp:
 src/Combat/Overlay_31/SetupTimingSlot_0221afb4.cpp:
     complete
     .text start:0x0221afb4 end:0x0221aff8
+
+
+src/Combat/Overlay_31/Advance_02214600.cpp:
+    complete
+    .text start:0x02214600 end:0x02214660
+
+
+src/Combat/Overlay_31/CheckAndCompare_0221b7fc.cpp:
+    complete
+    .text start:0x0221b7fc end:0x0221b848
+
+
+src/Combat/Overlay_31/ClearSlotByCallbackResult_02207c30.cpp:
+    complete
+    .text start:0x02207c30 end:0x02207c98
+
+
+src/Combat/Overlay_31/Configure_02213a68.cpp:
+    complete
+    .text start:0x02213a68 end:0x02213ab4
+
+
+src/Combat/Overlay_31/Configure_02213ab4.cpp:
+    complete
+    .text start:0x02213ab4 end:0x02213b20
+
+
+src/Combat/Overlay_31/FindAndTerminate_02218e84.cpp:
+    complete
+    .text start:0x02218e84 end:0x02218ed8
+
+
+src/Combat/Overlay_31/GetFieldAsHighWord_0220c090.cpp:
+    complete
+    .text start:0x0220c090 end:0x0220c09c
+
+
+src/Combat/Overlay_31/HandleState2AndRelease_02210250.cpp:
+    complete
+    .text start:0x02210250 end:0x022102c8
+
+
+src/Combat/Overlay_31/Rc4Crypt_02211938.cpp:
+    complete
+    .text start:0x02211938 end:0x022119b0
+
+
+src/Combat/Overlay_31/Setup_022187a4.cpp:
+    complete
+    .text start:0x022187a4 end:0x022187fc
+
+
+src/Combat/Overlay_31/Update_0221c208.cpp:
+    complete
+    .text start:0x0221c208 end:0x0221c258
