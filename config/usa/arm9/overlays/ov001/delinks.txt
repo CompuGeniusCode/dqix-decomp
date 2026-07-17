@@ -1045,3 +1045,63 @@ src/Combat/Overlay_1/UpdateFlagAndCopyVecs_02157890.cpp:
 src/Combat/Overlay_1/UpdateStateFlagAndDispatch_0215944c.cpp:
     complete
     .text start:0x0215944c end:0x021594ac
+
+
+src/Combat/Overlay_1/ApplyFlagSumIfCountValid_0215ae1c.cpp:
+    complete
+    .text start:0x0215ae1c end:0x0215ae84
+
+
+src/Combat/Overlay_1/DestroyActiveAllocators_0215aa5c.cpp:
+    complete
+    .text start:0x0215aa5c end:0x0215aaa8
+
+
+src/Combat/Overlay_1/ForwardTripleWithGlobal_02159b5c.cpp:
+    complete
+    .text start:0x02159b5c end:0x02159b94
+
+
+src/Combat/Overlay_1/InitColoredEffectFromFields_0215b3ac.cpp:
+    complete
+    .text start:0x0215b3ac end:0x0215b408
+
+
+src/Combat/Overlay_1/InitEntriesAndFlag_02159d44.cpp:
+    complete
+    .text start:0x02159d44 end:0x02159d9c
+
+
+src/Combat/Overlay_1/LoadResourceIntoGlobalBuffer_0215a750.cpp:
+    complete
+    .text start:0x0215a750 end:0x0215a79c
+
+
+src/Combat/Overlay_1/MakeEntry_0215a608.cpp:
+    complete
+    .text start:0x0215a608 end:0x0215a654
+
+
+src/Combat/Overlay_1/ResetGlobalStateArrays_0215a79c.cpp:
+    complete
+    .text start:0x0215a79c end:0x0215a818
+
+
+src/Combat/Overlay_1/ReturnOne_02159cf4.cpp:
+    complete
+    .text start:0x02159cf4 end:0x02159cfc
+
+
+src/Combat/Overlay_1/ReturnZero_02159b2c.cpp:
+    complete
+    .text start:0x02159b2c end:0x02159b34
+
+
+src/Combat/Overlay_1/ReturnZero_02159b54.cpp:
+    complete
+    .text start:0x02159b54 end:0x02159b5c
+
+
+src/Combat/Overlay_1/RollRandomBetweenAndSet_0215afec.cpp:
+    complete
+    .text start:0x0215afec end:0x0215b040
