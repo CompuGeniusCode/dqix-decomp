@@ -2555,3 +2555,43 @@ src/Combat/Overlay_17/PickWeightedSubEntry_021b8a34.cpp:
 src/Combat/Overlay_17/UpdateCountdownField_021bfe60_021bfe60.cpp:
     complete
     .text start:0x021bfe60 end:0x021bfee8
+
+
+src/Combat/Overlay_17/ApplyEventTag_021cf024.cpp:
+    complete
+    .text start:0x021cf024 end:0x021cf078
+
+
+src/Combat/Overlay_17/CheckAndEnqueueTag_021d1cb8_021d1cb8.cpp:
+    complete
+    .text start:0x021d1cb8 end:0x021d1d00
+
+
+src/Combat/Overlay_17/CopyIntoSizedBuffer_021d2368.cpp:
+    complete
+    .text start:0x021d2368 end:0x021d23bc
+
+
+src/Combat/Overlay_17/EnqueueEventTag183_021d38f8.cpp:
+    complete
+    .text start:0x021d38f8 end:0x021d3950
+
+
+src/Combat/Overlay_17/EnqueueEventTag35_021d2ad0.cpp:
+    complete
+    .text start:0x021d2ad0 end:0x021d2b24
+
+
+src/Combat/Overlay_17/EnqueueEventTagB5_021d1dc0.cpp:
+    complete
+    .text start:0x021d1dc0 end:0x021d1e50
+
+
+src/Combat/Overlay_17/HandleType2OrEntry_021d19b0.cpp:
+    complete
+    .text start:0x021d19b0 end:0x021d1a18
+
+
+src/Combat/Overlay_17/SetHalfFieldsAndEnqueueIfActive_021d1c2c.cpp:
+    complete
+    .text start:0x021d1c2c end:0x021d1c84
