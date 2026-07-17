@@ -1870,3 +1870,43 @@ src/Combat/Overlay_17/SetIntField_021ab698_021ab698.cpp:
 src/Combat/Overlay_17/TailCallInit_021aee9c.cpp:
     complete
     .text start:0x021aee9c end:0x021aeea8
+
+
+src/Combat/Overlay_17/GetByteField28_021b1fa8.cpp:
+    complete
+    .text start:0x021b1fa8 end:0x021b1fb0
+
+
+src/Combat/Overlay_17/GetByteField29_021b1fb0.cpp:
+    complete
+    .text start:0x021b1fb0 end:0x021b1fb8
+
+
+src/Combat/Overlay_17/GetByteFieldA_021b05bc.cpp:
+    complete
+    .text start:0x021b05bc end:0x021b05c4
+
+
+src/Combat/Overlay_17/GetPtrField2a_021b1fb8.cpp:
+    complete
+    .text start:0x021b1fb8 end:0x021b1fc0
+
+
+src/Combat/Overlay_17/NoOp_021b1f9c.cpp:
+    complete
+    .text start:0x021b1f9c end:0x021b1fa0
+
+
+src/Combat/Overlay_17/NoOp_021b1fa0.cpp:
+    complete
+    .text start:0x021b1fa0 end:0x021b1fa4
+
+
+src/Combat/Overlay_17/NoOp_021b1fa4.cpp:
+    complete
+    .text start:0x021b1fa4 end:0x021b1fa8
+
+
+src/Combat/Overlay_17/SetByteField49_021b1d3c.cpp:
+    complete
+    .text start:0x021b1d3c end:0x021b1d44
