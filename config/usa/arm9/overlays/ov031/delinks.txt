@@ -2570,3 +2570,53 @@ src/Combat/Overlay_31/SetDataFromIndex_02211c50.cpp:
 src/Combat/Overlay_31/SetFlagAndInvoke_02213230.cpp:
     complete
     .text start:0x02213230 end:0x02213270
+
+
+src/Combat/Overlay_31/CheckReadyOrAdvance_02215150.cpp:
+    complete
+    .text start:0x02215150 end:0x022151b0
+
+
+src/Combat/Overlay_31/CheckReadyState_022142ec.cpp:
+    complete
+    .text start:0x022142ec end:0x02214334
+
+
+src/Combat/Overlay_31/CopyBufferIfMatch_02215778.cpp:
+    complete
+    .text start:0x02215778 end:0x022157c4
+
+
+src/Combat/Overlay_31/DecodeBase64Char_02215af4.cpp:
+    complete
+    .text start:0x02215af4 end:0x02215b64
+
+
+src/Combat/Overlay_31/FindMatchingEntry_02213894.cpp:
+    complete
+    .text start:0x02213894 end:0x02213910
+
+
+src/Combat/Overlay_31/GetErrorCodeForCase_022143a8.cpp:
+    complete
+    .text start:0x022143a8 end:0x022143ec
+
+
+src/Combat/Overlay_31/IsEqualToData8_02215718.cpp:
+    complete
+    .text start:0x02215718 end:0x02215750
+
+
+src/Combat/Overlay_31/LoadBigEndian32AsLittle_022155e8.cpp:
+    complete
+    .text start:0x022155e8 end:0x0221563c
+
+
+src/Combat/Overlay_31/ResetTimestampAndDispatch_02214c44.cpp:
+    complete
+    .text start:0x02214c44 end:0x02214c94
+
+
+src/Combat/Overlay_31/ReturnErrorNeg6_022143ec.cpp:
+    complete
+    .text start:0x022143ec end:0x022143f4
