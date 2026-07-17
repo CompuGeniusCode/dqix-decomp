@@ -2410,3 +2410,43 @@ src/Combat/Overlay_31/GetOffset10FromResult_0220ec04.cpp:
 src/Combat/Overlay_31/InitOnce_0220ef5c.cpp:
     complete
     .text start:0x0220ef5c end:0x0220ef9c
+
+
+src/Combat/Overlay_31/ClearField28SetField2C_0220fed8.cpp:
+    complete
+    .text start:0x0220fed8 end:0x0220ff18
+
+
+src/Combat/Overlay_31/GetConst4816_02210044.cpp:
+    complete
+    .text start:0x02210044 end:0x02210050
+
+
+src/Combat/Overlay_31/GetConst8f4_0220f3f4.cpp:
+    complete
+    .text start:0x0220f3f4 end:0x0220f400
+
+
+src/Combat/Overlay_31/HandleMsgTypeD6_0220fff8.cpp:
+    complete
+    .text start:0x0220fff8 end:0x02210044
+
+
+src/Combat/Overlay_31/InvokeCallbackField28IfMatch_0220fdec.cpp:
+    complete
+    .text start:0x0220fdec end:0x0220fe44
+
+
+src/Combat/Overlay_31/MarkGlobal0224e580ContextReadyGuarded_0220f558.cpp:
+    complete
+    .text start:0x0220f558 end:0x0220f5b4
+
+
+src/Combat/Overlay_31/PopQueueEntryAndClear_0220f68c.cpp:
+    complete
+    .text start:0x0220f68c end:0x0220f6e0
+
+
+src/Combat/Overlay_31/WaitForField2CNonZero_0220fea0.cpp:
+    complete
+    .text start:0x0220fea0 end:0x0220fed8
