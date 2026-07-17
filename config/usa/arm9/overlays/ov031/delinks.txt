@@ -2375,3 +2375,38 @@ src/Combat/Overlay_31/ShortArrayToBytesBE_0220c92c.cpp:
 src/Combat/Overlay_31/TrimTrailingZeroShorts_0220bb24_0220bee4.cpp:
     complete
     .text start:0x0220bee4 end:0x0220bf5c
+
+
+src/Combat/Overlay_31/CallCallback28_0220ef9c.cpp:
+    complete
+    .text start:0x0220ef9c end:0x0220efd0
+
+
+src/Combat/Overlay_31/CheckCmdAndDispatch_0220dbc8.cpp:
+    complete
+    .text start:0x0220dbc8 end:0x0220dc40
+
+
+src/Combat/Overlay_31/CompareBytes6_0220f368.cpp:
+    complete
+    .text start:0x0220f368 end:0x0220f394
+
+
+src/Combat/Overlay_31/CountLeadingZeros_0220db64.cpp:
+    complete
+    .text start:0x0220db64 end:0x0220db6c
+
+
+src/Combat/Overlay_31/DispatchEvent_0220d9c8.cpp:
+    complete
+    .text start:0x0220d9c8 end:0x0220da1c
+
+
+src/Combat/Overlay_31/GetOffset10FromResult_0220ec04.cpp:
+    complete
+    .text start:0x0220ec04 end:0x0220ec5c
+
+
+src/Combat/Overlay_31/InitOnce_0220ef5c.cpp:
+    complete
+    .text start:0x0220ef5c end:0x0220ef9c
