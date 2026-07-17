@@ -1708,3 +1708,58 @@ src/Combat/Overlay_0/GetOffsetPtr02160f08.cpp:
 src/Combat/Overlay_0/NoOp02163778.cpp:
     complete
     .text start:0x02163778 end:0x0216377c
+
+
+src/Combat/Overlay_0/CheckKeyMatch_0215fb9c.cpp:
+    complete
+    .text start:0x0215fb9c end:0x0215fbe0
+
+
+src/Combat/Overlay_0/FindSlotIndexByShort02162864.cpp:
+    complete
+    .text start:0x02162864 end:0x021628c8
+
+
+src/Combat/Overlay_0/GetIntFieldFromOffset5000_02160f9c.cpp:
+    complete
+    .text start:0x02160f9c end:0x02160fa8
+
+
+src/Combat/Overlay_0/GetOffsetPtr02160f00.cpp:
+    complete
+    .text start:0x02160f00 end:0x02160f08
+
+
+src/Combat/Overlay_0/GetRandomFromObj02160ef8.cpp:
+    complete
+    .text start:0x02160ef8 end:0x02160f00
+
+
+src/Combat/Overlay_0/HandleField_02160de4.cpp:
+    complete
+    .text start:0x02160de4 end:0x02160e48
+
+
+src/Combat/Overlay_0/HandleField_02160e94.cpp:
+    complete
+    .text start:0x02160e94 end:0x02160ef8
+
+
+src/Combat/Overlay_0/NoOp02161be8.cpp:
+    complete
+    .text start:0x02161be8 end:0x02161bec
+
+
+src/Combat/Overlay_0/PickRandomFromTable_02153d10.cpp:
+    complete
+    .text start:0x02153d10 end:0x02153d78
+
+
+src/Combat/Overlay_0/PickTableValueWithRandomFill_0215fbe0.cpp:
+    complete
+    .text start:0x0215fbe0 end:0x0215fc60
+
+
+src/Combat/Overlay_0/SeedRandom32Wrapper_0215faa4.cpp:
+    complete
+    .text start:0x0215faa4 end:0x0215fab0
