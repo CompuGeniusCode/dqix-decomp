@@ -460,3 +460,93 @@ src/Combat/Overlay_4/InitAndRegister_0215e25c.cpp:
 src/Combat/Overlay_4/ReturnZero_0215e2d0.cpp:
     complete
     .text start:0x0215e2d0 end:0x0215e2d8
+
+
+src/Combat/Overlay_4/CheckBitAndNotify_0215c900.cpp:
+    complete
+    .text start:0x0215c900 end:0x0215c948
+
+
+src/Combat/Overlay_4/DoNothing_0215e2f8.cpp:
+    complete
+    .text start:0x0215e2f8 end:0x0215e2fc
+
+
+src/Combat/Overlay_4/DoNothing_0215e2fc.cpp:
+    complete
+    .text start:0x0215e2fc end:0x0215e300
+
+
+src/Combat/Overlay_4/DoNothing_0215e32c.cpp:
+    complete
+    .text start:0x0215e32c end:0x0215e330
+
+
+src/Combat/Overlay_4/DoNothing_0215e330.cpp:
+    complete
+    .text start:0x0215e330 end:0x0215e334
+
+
+src/Combat/Overlay_4/DoNothing_0215e354.cpp:
+    complete
+    .text start:0x0215e354 end:0x0215e358
+
+
+src/Combat/Overlay_4/DoNothing_0215e358.cpp:
+    complete
+    .text start:0x0215e358 end:0x0215e35c
+
+
+src/Combat/Overlay_4/DoNothing_0215e364.cpp:
+    complete
+    .text start:0x0215e364 end:0x0215e368
+
+
+src/Combat/Overlay_4/GetEntryFor_021570a4.cpp:
+    complete
+    .text start:0x021570a4 end:0x021570f0
+
+
+src/Combat/Overlay_4/ReturnFifteen_0215e2f0.cpp:
+    complete
+    .text start:0x0215e2f0 end:0x0215e2f8
+
+
+src/Combat/Overlay_4/ReturnZero_0215e2e0.cpp:
+    complete
+    .text start:0x0215e2e0 end:0x0215e2e8
+
+
+src/Combat/Overlay_4/ReturnZero_0215e2e8.cpp:
+    complete
+    .text start:0x0215e2e8 end:0x0215e2f0
+
+
+src/Combat/Overlay_4/ReturnZero_0215e334.cpp:
+    complete
+    .text start:0x0215e334 end:0x0215e33c
+
+
+src/Combat/Overlay_4/ReturnZero_0215e33c.cpp:
+    complete
+    .text start:0x0215e33c end:0x0215e344
+
+
+src/Combat/Overlay_4/ReturnZero_0215e344.cpp:
+    complete
+    .text start:0x0215e344 end:0x0215e34c
+
+
+src/Combat/Overlay_4/ReturnZero_0215e34c.cpp:
+    complete
+    .text start:0x0215e34c end:0x0215e354
+
+
+src/Combat/Overlay_4/ReturnZero_0215e35c.cpp:
+    complete
+    .text start:0x0215e35c end:0x0215e364
+
+
+src/Combat/Overlay_4/ReturnZero_0215e368.cpp:
+    complete
+    .text start:0x0215e368 end:0x0215e370
