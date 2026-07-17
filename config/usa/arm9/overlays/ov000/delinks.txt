@@ -1978,3 +1978,78 @@ src/Combat/Overlay_0/AllocateVariantNodeTag_0216d038.cpp:
 src/Combat/Overlay_0/StoreVec3Words0216d368.cpp:
     complete
     .text start:0x0216d368 end:0x0216d370
+
+
+src/Combat/Overlay_0/BeginListEntryTask_0216fd80.cpp:
+    complete
+    .text start:0x0216fd80 end:0x0216fdf8
+
+
+src/Combat/Overlay_0/CreateEventFromVariant_0216a95c.cpp:
+    complete
+    .text start:0x0216a95c end:0x0216a9dc
+
+
+src/Combat/Overlay_0/GetBoundedField156_02171674.cpp:
+    complete
+    .text start:0x02171674 end:0x02171698
+
+
+src/Combat/Overlay_0/GetBoundedField420_0217199c.cpp:
+    complete
+    .text start:0x0217199c end:0x021719c0
+
+
+src/Combat/Overlay_0/GetPointerField_02171b9c_02171b9c.cpp:
+    complete
+    .text start:0x02171b9c end:0x02171bc0
+
+
+src/Combat/Overlay_0/GetPtrField612_0216f208.cpp:
+    complete
+    .text start:0x0216f208 end:0x0216f210
+
+
+src/Combat/Overlay_0/NotifyIfActive_02170078.cpp:
+    complete
+    .text start:0x02170078 end:0x021700dc
+
+
+src/Combat/Overlay_0/SetByteField37_0216ff20.cpp:
+    complete
+    .text start:0x0216ff20 end:0x0216ff28
+
+
+src/Combat/Overlay_0/SetIntField540_0216f700.cpp:
+    complete
+    .text start:0x0216f700 end:0x0216f708
+
+
+src/Combat/Overlay_0/SetIntField552_0216f708.cpp:
+    complete
+    .text start:0x0216f708 end:0x0216f710
+
+
+src/Combat/Overlay_0/SetIntField556_0216f710.cpp:
+    complete
+    .text start:0x0216f710 end:0x0216f718
+
+
+src/Combat/Overlay_0/SetIntField560_0216f718.cpp:
+    complete
+    .text start:0x0216f718 end:0x0216f720
+
+
+src/Combat/Overlay_0/SetIntField564_0216f720.cpp:
+    complete
+    .text start:0x0216f720 end:0x0216f728
+
+
+src/Combat/Overlay_0/UpdateFieldIfDiffers_02174514_02174514.cpp:
+    complete
+    .text start:0x02174514 end:0x0217457c
+
+
+src/Combat/Overlay_0/UpdateFieldromTable_02174fc0_02174fc0.cpp:
+    complete
+    .text start:0x02174fc0 end:0x02175024
