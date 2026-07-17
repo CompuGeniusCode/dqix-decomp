@@ -2450,3 +2450,63 @@ src/Combat/Overlay_31/PopQueueEntryAndClear_0220f68c.cpp:
 src/Combat/Overlay_31/WaitForField2CNonZero_0220fea0.cpp:
     complete
     .text start:0x0220fea0 end:0x0220fed8
+
+
+src/Combat/Overlay_31/CheckRangeIfStateReady_02211484.cpp:
+    complete
+    .text start:0x02211484 end:0x022114fc
+
+
+src/Combat/Overlay_31/ClearBit15_02211018.cpp:
+    complete
+    .text start:0x02211018 end:0x02211020
+
+
+src/Combat/Overlay_31/ClearGlobal0224e598IfNotNine_02211820.cpp:
+    complete
+    .text start:0x02211820 end:0x02211848
+
+
+src/Combat/Overlay_31/CompareField10PairOrZero_02211608.cpp:
+    complete
+    .text start:0x02211608 end:0x02211644
+
+
+src/Combat/Overlay_31/DispatchByState4Field_02210720.cpp:
+    complete
+    .text start:0x02210720 end:0x02210780
+
+
+src/Combat/Overlay_31/GetField1c_022115d0.cpp:
+    complete
+    .text start:0x022115d0 end:0x022115d8
+
+
+src/Combat/Overlay_31/InitFlagObjFromPair_022114fc.cpp:
+    complete
+    .text start:0x022114fc end:0x0221156c
+
+
+src/Combat/Overlay_31/ResetFieldAndUnblock_022103f8.cpp:
+    complete
+    .text start:0x022103f8 end:0x0221042c
+
+
+src/Combat/Overlay_31/ResetIfInactive_0221126c.cpp:
+    complete
+    .text start:0x0221126c end:0x022112e4
+
+
+src/Combat/Overlay_31/SetField10PairAndFlag_022115d8.cpp:
+    complete
+    .text start:0x022115d8 end:0x02211608
+
+
+src/Combat/Overlay_31/SetField4AndInvokeCallback_02211440.cpp:
+    complete
+    .text start:0x02211440 end:0x02211484
+
+
+src/Combat/Overlay_31/SubtractOffset20_02211b20.cpp:
+    complete
+    .text start:0x02211b20 end:0x02211b28
