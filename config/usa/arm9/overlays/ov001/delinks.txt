@@ -995,3 +995,53 @@ src/Combat/Overlay_1/SetTypeCField1cFromFxScaled_0215d5d0.cpp:
 src/Combat/Overlay_1/InitEntry02158828.cpp:
     complete
     .text start:0x02158828 end:0x02158880
+
+
+src/Combat/Overlay_1/AppendVec3PairToRing_0215758c.cpp:
+    complete
+    .text start:0x0215758c end:0x021575ec
+
+
+src/Combat/Overlay_1/CheckAndDispatchState_02159a00.cpp:
+    complete
+    .text start:0x02159a00 end:0x02159a74
+
+
+src/Combat/Overlay_1/ClearMultipleFieldBits_02156b20.cpp:
+    complete
+    .text start:0x02156b20 end:0x02156ba0
+
+
+src/Combat/Overlay_1/CopyAndAccumulateVec3_021587c4.cpp:
+    complete
+    .text start:0x021587c4 end:0x02158828
+
+
+src/Combat/Overlay_1/InitOrClearAllocState_021538d4.cpp:
+    complete
+    .text start:0x021538d4 end:0x02153948
+
+
+src/Combat/Overlay_1/ReturnOne_02157bf4.cpp:
+    complete
+    .text start:0x02157bf4 end:0x02157bfc
+
+
+src/Combat/Overlay_1/StoreArgIfMatched_02153948.cpp:
+    complete
+    .text start:0x02153948 end:0x02153994
+
+
+src/Combat/Overlay_1/TailCallInitEffect_021538c8.cpp:
+    complete
+    .text start:0x021538c8 end:0x021538d4
+
+
+src/Combat/Overlay_1/UpdateFlagAndCopyVecs_02157890.cpp:
+    complete
+    .text start:0x02157890 end:0x02157908
+
+
+src/Combat/Overlay_1/UpdateStateFlagAndDispatch_0215944c.cpp:
+    complete
+    .text start:0x0215944c end:0x021594ac
