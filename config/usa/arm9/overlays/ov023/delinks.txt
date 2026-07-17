@@ -1179,3 +1179,18 @@ src/Combat/Overlay_23/ReturnZero_021f6ba8.cpp:
 src/Combat/Overlay_23/SetField2c_021f6504.cpp:
     complete
     .text start:0x021f6504 end:0x021f650c
+
+
+src/Combat/Overlay_23/DispatchByTableEntry_021f6f90.cpp:
+    complete
+    .text start:0x021f6f90 end:0x021f7010
+
+
+src/Combat/Overlay_23/GetField1c_021f7128.cpp:
+    complete
+    .text start:0x021f7128 end:0x021f7130
+
+
+src/Combat/Overlay_23/NoOp_021f7130.cpp:
+    complete
+    .text start:0x021f7130 end:0x021f7134
