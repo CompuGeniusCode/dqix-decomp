@@ -2115,3 +2115,68 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_022340c0.cpp:
 src/Combat/Overlay_31/TailCall_02222ddc_0222b22c.cpp:
     complete
     .text start:0x0222b22c end:0x0222b290
+
+
+src/Combat/Overlay_31/AdvanceAndClampField30_02200bb8.cpp:
+    complete
+    .text start:0x02200bb8 end:0x02200bfc
+
+
+src/Combat/Overlay_31/CopyHeaderAndDispatch_02200850.cpp:
+    complete
+    .text start:0x02200850 end:0x022008ac
+
+
+src/Combat/Overlay_31/CycleAndAdvanceState_02203398.cpp:
+    complete
+    .text start:0x02203398 end:0x022033e8
+
+
+src/Combat/Overlay_31/FindAndRescheduleContext_02202810.cpp:
+    complete
+    .text start:0x02202810 end:0x0220284c
+
+
+src/Combat/Overlay_31/IsChecksumValid_022006a0.cpp:
+    complete
+    .text start:0x022006a0 end:0x022006f0
+
+
+src/Combat/Overlay_31/IsMaskComplementSet_02200754.cpp:
+    complete
+    .text start:0x02200754 end:0x02200790
+
+
+src/Combat/Overlay_31/LoopSleepAndCheck_02200dc8.cpp:
+    complete
+    .text start:0x02200dc8 end:0x02200e38
+
+
+src/Combat/Overlay_31/MarkContextReadyIfInactive_022004d4.cpp:
+    complete
+    .text start:0x022004d4 end:0x02200524
+
+
+src/Combat/Overlay_31/SetPriorityAndApplyToContexts_0220057c.cpp:
+    complete
+    .text start:0x0220057c end:0x022005b4
+
+
+src/Combat/Overlay_31/UpdateAndWaitOnContext_02203424.cpp:
+    complete
+    .text start:0x02203424 end:0x022034ac
+
+
+src/Combat/Overlay_31/UpdateObjFromContext_022031bc.cpp:
+    complete
+    .text start:0x022031bc end:0x0220321c
+
+
+src/Combat/Overlay_31/WaitForField44_022034ac.cpp:
+    complete
+    .text start:0x022034ac end:0x02203500
+
+
+src/Combat/Overlay_31/WaitOrCycle_02203500.cpp:
+    complete
+    .text start:0x02203500 end:0x0220357c
