@@ -1928,3 +1928,53 @@ src/Combat/Overlay_0/AllocateVariantNodeTag_0216c5d4.cpp:
 src/Combat/Overlay_0/AllocateVariantNodeTag_0216c680.cpp:
     complete
     .text start:0x0216c680 end:0x0216c6d0
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c6d0.cpp:
+    complete
+    .text start:0x0216c6d0 end:0x0216c720
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c734.cpp:
+    complete
+    .text start:0x0216c734 end:0x0216c7a0
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c95c.cpp:
+    complete
+    .text start:0x0216c95c end:0x0216c9ac
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216c9ac.cpp:
+    complete
+    .text start:0x0216c9ac end:0x0216c9fc
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216cc88.cpp:
+    complete
+    .text start:0x0216cc88 end:0x0216ccd8
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216ccd8.cpp:
+    complete
+    .text start:0x0216ccd8 end:0x0216cd28
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216cec0.cpp:
+    complete
+    .text start:0x0216cec0 end:0x0216cf04
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216cf84.cpp:
+    complete
+    .text start:0x0216cf84 end:0x0216cfd4
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216d038.cpp:
+    complete
+    .text start:0x0216d038 end:0x0216d0a8
+
+
+src/Combat/Overlay_0/StoreVec3Words0216d368.cpp:
+    complete
+    .text start:0x0216d368 end:0x0216d370
