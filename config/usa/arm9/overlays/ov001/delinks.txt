@@ -1255,3 +1255,63 @@ src/Combat/Overlay_1/SetOrClearBitsFromField8_0215f1b0.cpp:
 src/Combat/Overlay_1/TransferBg3BufferByMode_02162900.cpp:
     complete
     .text start:0x02162900 end:0x0216297c
+
+
+src/Combat/Overlay_1/ClampAndDispatchState_021636d0.cpp:
+    complete
+    .text start:0x021636d0 end:0x02163724
+
+
+src/Combat/Overlay_1/DispatchSlotOrShort_02163564.cpp:
+    complete
+    .text start:0x02163564 end:0x021635d0
+
+
+src/Combat/Overlay_1/ForwardSlotOrClear_021635d0.cpp:
+    complete
+    .text start:0x021635d0 end:0x02163640
+
+
+src/Combat/Overlay_1/NotifyBitWithBiasTest_021633ec.cpp:
+    complete
+    .text start:0x021633ec end:0x02163438
+
+
+src/Combat/Overlay_1/ReturnTrue_021634e0.cpp:
+    complete
+    .text start:0x021634e0 end:0x021634e8
+
+
+src/Combat/Overlay_1/ReturnTrue_021634e8.cpp:
+    complete
+    .text start:0x021634e8 end:0x021634f0
+
+
+src/Combat/Overlay_1/ReturnTrue_021634f0.cpp:
+    complete
+    .text start:0x021634f0 end:0x021634f8
+
+
+src/Combat/Overlay_1/ReturnTrue_021634f8.cpp:
+    complete
+    .text start:0x021634f8 end:0x02163500
+
+
+src/Combat/Overlay_1/ReturnTrue_02163500.cpp:
+    complete
+    .text start:0x02163500 end:0x02163508
+
+
+src/Combat/Overlay_1/ReturnTrue_02163508.cpp:
+    complete
+    .text start:0x02163508 end:0x02163510
+
+
+src/Combat/Overlay_1/ReturnTrue_02163510.cpp:
+    complete
+    .text start:0x02163510 end:0x02163518
+
+
+src/Combat/Overlay_1/SetStateFromModeOrDefault_02163640.cpp:
+    complete
+    .text start:0x02163640 end:0x021636a8
