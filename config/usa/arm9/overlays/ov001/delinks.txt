@@ -1375,3 +1375,18 @@ src/Combat/Overlay_1/DispatchScaledVec3AndField18_0215d4bc.cpp:
 src/Combat/Overlay_1/DispatchTwoScaledVec3AndFields_0215d2cc.cpp:
     complete
     .text start:0x0215d2cc end:0x0215d418
+
+
+src/Combat/Overlay_1/DispatchScaledVec3AndExtra_0215d8f4.cpp:
+    complete
+    .text start:0x0215d8f4 end:0x0215d984
+
+
+src/Combat/Overlay_1/DispatchScaledVec3AndExtra_0215d984.cpp:
+    complete
+    .text start:0x0215d984 end:0x0215da14
+
+
+src/Combat/Overlay_1/SetOrClearFieldByMode_0215ee2c.cpp:
+    complete
+    .text start:0x0215ee2c end:0x0215eeb0
