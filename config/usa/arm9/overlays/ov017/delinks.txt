@@ -2500,3 +2500,13 @@ src/Combat/Overlay_17/SetupAndDispatchCombatant_02191e5c.cpp:
 src/Combat/Overlay_17/InitObj_021a8670.cpp:
     complete
     .text start:0x021a8670 end:0x021a86d0
+
+
+src/Combat/Overlay_17/EnqueueEventForFlaggedCombatants_021a33e0.cpp:
+    complete
+    .text start:0x021a33e0 end:0x021a3498
+
+
+src/Combat/Overlay_17/SyncVec3ForFlaggedCombatants_021a3338.cpp:
+    complete
+    .text start:0x021a3338 end:0x021a33e0
