@@ -2700,3 +2700,103 @@ src/Combat/Overlay_17/SetFlagPairB_0218b5a0.cpp:
 src/Combat/Overlay_17/SetNodeField8AndAppend_0218d77c.cpp:
     complete
     .text start:0x0218d77c end:0x0218d7b0
+
+
+src/Combat/Overlay_17/CallField6acPtrProcessSlot_021b8420.cpp:
+    complete
+    .text start:0x021b8420 end:0x021b8438
+
+
+src/Combat/Overlay_17/EnqueueEventTag125_021c9cd8.cpp:
+    complete
+    .text start:0x021c9cd8 end:0x021c9d08
+
+
+src/Combat/Overlay_17/EnqueueEventTag86_021c9ad4.cpp:
+    complete
+    .text start:0x021c9ad4 end:0x021c9b04
+
+
+src/Combat/Overlay_17/ForwardTeardownB_021b9928.cpp:
+    complete
+    .text start:0x021b9928 end:0x021b994c
+
+
+src/Combat/Overlay_17/GetField6ac_021b8468.cpp:
+    complete
+    .text start:0x021b8468 end:0x021b8470
+
+
+src/Combat/Overlay_17/GetFieldAddr1c_021b8478.cpp:
+    complete
+    .text start:0x021b8478 end:0x021b8480
+
+
+src/Combat/Overlay_17/GetHalfwordAtField284_021bbc04.cpp:
+    complete
+    .text start:0x021bbc04 end:0x021bbc10
+
+
+src/Combat/Overlay_17/GetWordAtField17208_021bdbcc.cpp:
+    complete
+    .text start:0x021bdbcc end:0x021bdbd8
+
+
+src/Combat/Overlay_17/InitAndAppendNode_021b2c24.cpp:
+    complete
+    .text start:0x021b2c24 end:0x021b2c4c
+
+
+src/Combat/Overlay_17/InitAndAppendState16_021ba8e0.cpp:
+    complete
+    .text start:0x021ba8e0 end:0x021ba90c
+
+
+src/Combat/Overlay_17/InitByteHeader_021be0a0.cpp:
+    complete
+    .text start:0x021be0a0 end:0x021be0c4
+
+
+src/Combat/Overlay_17/InitByteHeader_021c16a8.cpp:
+    complete
+    .text start:0x021c16a8 end:0x021c16cc
+
+
+src/Combat/Overlay_17/InitByteHeader_021c1acc.cpp:
+    complete
+    .text start:0x021c1acc end:0x021c1af0
+
+
+src/Combat/Overlay_17/InitByteHeader_021c2688.cpp:
+    complete
+    .text start:0x021c2688 end:0x021c26ac
+
+
+src/Combat/Overlay_17/InitState47_021c17cc.cpp:
+    complete
+    .text start:0x021c17cc end:0x021c17fc
+
+
+src/Combat/Overlay_17/InitStructAndSetBattleField_021a9bc4.cpp:
+    complete
+    .text start:0x021a9bc4 end:0x021a9bf8
+
+
+src/Combat/Overlay_17/RemoveIfFieldNonNegative_021c235c.cpp:
+    complete
+    .text start:0x021c235c end:0x021c2380
+
+
+src/Combat/Overlay_17/ResetAndForwardCount2_021acd00.cpp:
+    complete
+    .text start:0x021acd00 end:0x021acd24
+
+
+src/Combat/Overlay_17/SetField11a_021bbbec.cpp:
+    complete
+    .text start:0x021bbbec end:0x021bbbf8
+
+
+src/Combat/Overlay_17/SwapArgsAndForward_021b213c.cpp:
+    complete
+    .text start:0x021b213c end:0x021b2164
