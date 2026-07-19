@@ -3880,3 +3880,113 @@ src/Combat/Overlay_31/func_ov031_02233c90.cpp:
 src/Combat/Overlay_31/func_ov031_02233f50.cpp:
     complete
     .text start:0x02233f50 end:0x02233f54
+
+
+src/Combat/Overlay_31/AllocateFromMainAllocator_0223cf00_0223cf4c.cpp:
+    complete
+    .text start:0x0223cf4c end:0x0223cf70
+
+
+src/Combat/Overlay_31/CheckMaskAgainstField34_0223d394.cpp:
+    complete
+    .text start:0x0223d394 end:0x0223d3d4
+
+
+src/Combat/Overlay_31/ClearAndNotifyQueue_0223e348.cpp:
+    complete
+    .text start:0x0223e348 end:0x0223e38c
+
+
+src/Combat/Overlay_31/ContextEntryCallback_0223fde4.cpp:
+    complete
+    .text start:0x0223fde4 end:0x0223fe20
+
+
+src/Combat/Overlay_31/DecodeBase64Char_0223e3d4.cpp:
+    complete
+    .text start:0x0223e3d4 end:0x0223e42c
+
+
+src/Combat/Overlay_31/EnableSpecificInterrupts_0223cf70.cpp:
+    complete
+    .text start:0x0223cf70 end:0x0223cfb4
+
+
+src/Combat/Overlay_31/FindNodeByField8_022401b8.cpp:
+    complete
+    .text start:0x022401b8 end:0x02240210
+
+
+src/Combat/Overlay_31/IncrementAlnumChar_0223ff7c.cpp:
+    complete
+    .text start:0x0223ff7c end:0x0223ffb0
+
+
+src/Combat/Overlay_31/PopFrontCircularList_0223ff38.cpp:
+    complete
+    .text start:0x0223ff38 end:0x0223ff7c
+
+
+src/Combat/Overlay_31/PushFrontCircularList_0223d8d8.cpp:
+    complete
+    .text start:0x0223d8d8 end:0x0223d908
+
+
+src/Combat/Overlay_31/RunQueuedCallbacksAndFire_0223e868.cpp:
+    complete
+    .text start:0x0223e868 end:0x0223e8ac
+
+
+src/Combat/Overlay_31/SetField8_0223e2b8.cpp:
+    complete
+    .text start:0x0223e2b8 end:0x0223e2c0
+
+
+src/Combat/Overlay_31/func_ov031_0223d06c.cpp:
+    complete
+    .text start:0x0223d06c end:0x0223d0a4
+
+
+src/Combat/Overlay_31/func_ov031_0223d8a0_0223d8a0.cpp:
+    complete
+    .text start:0x0223d8a0 end:0x0223d8d8
+
+
+src/Combat/Overlay_31/func_ov031_0223da58.cpp:
+    complete
+    .text start:0x0223da58 end:0x0223daa4
+
+
+src/Combat/Overlay_31/func_ov031_0223dcf4.cpp:
+    complete
+    .text start:0x0223dcf4 end:0x0223dd34
+
+
+src/Combat/Overlay_31/func_ov031_0223dd60.cpp:
+    complete
+    .text start:0x0223dd60 end:0x0223dda8
+
+
+src/Combat/Overlay_31/func_ov031_0223e2c0.cpp:
+    complete
+    .text start:0x0223e2c0 end:0x0223e2e0
+
+
+src/Combat/Overlay_31/func_ov031_0223fa08.cpp:
+    complete
+    .text start:0x0223fa08 end:0x0223fa0c
+
+
+src/Combat/Overlay_31/func_ov031_0223fa5c.cpp:
+    complete
+    .text start:0x0223fa5c end:0x0223fa60
+
+
+src/Combat/Overlay_31/func_ov031_0223fd9c.cpp:
+    complete
+    .text start:0x0223fd9c end:0x0223fde4
+
+
+src/Combat/Overlay_31/func_ov031_0224030c.cpp:
+    complete
+    .text start:0x0224030c end:0x02240310
