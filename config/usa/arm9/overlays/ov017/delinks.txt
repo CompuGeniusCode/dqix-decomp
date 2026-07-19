@@ -3420,3 +3420,68 @@ src/Combat/Overlay_17/func_ov017_021a05a8.cpp:
 src/Combat/Overlay_17/func_ov017_021ac32c.cpp:
     complete
     .text start:0x021ac32c end:0x021ac3b0
+
+
+src/Combat/Overlay_17/CopyShortsIntoField150IfAbsent_021d00c8.cpp:
+    complete
+    .text start:0x021d00c8 end:0x021d0164
+
+
+src/Combat/Overlay_17/DispatchAllEventStages_021cdf80.cpp:
+    complete
+    .text start:0x021cdf80 end:0x021ce014
+
+
+src/Combat/Overlay_17/HandleEntryEvent_021d0a18.cpp:
+    complete
+    .text start:0x021d0a18 end:0x021d0aa8
+
+
+src/Combat/Overlay_17/InitObjAndClearFields_021a967c.cpp:
+    complete
+    .text start:0x021a967c end:0x021a9714
+
+
+src/Combat/Overlay_17/ResetTaskAndDestroyAllocators_021a050c.cpp:
+    complete
+    .text start:0x021a050c end:0x021a05a8
+
+
+src/Combat/Overlay_17/UpdateCombatantField150_021d0e64.cpp:
+    complete
+    .text start:0x021d0e64 end:0x021d0ef8
+
+
+src/Combat/Overlay_17/func_02046608.cpp:
+    complete
+    .text start:0x021c2ea4 end:0x021c2f3c
+
+
+src/Combat/Overlay_17/func_ov017_021bb108.cpp:
+    complete
+    .text start:0x021bb108 end:0x021bb1a4
+
+
+src/Combat/Overlay_17/func_ov017_021bc6e0.cpp:
+    complete
+    .text start:0x021bc6e0 end:0x021bc77c
+
+
+src/Combat/Overlay_17/func_ov017_021c4854.cpp:
+    complete
+    .text start:0x021c4854 end:0x021c48f0
+
+
+src/Combat/Overlay_17/func_ov017_021c66e8.cpp:
+    complete
+    .text start:0x021c66e8 end:0x021c6784
+
+
+src/Combat/Overlay_17/func_ov017_021c8654.cpp:
+    complete
+    .text start:0x021c8654 end:0x021c86f4
+
+
+src/Combat/Overlay_17/func_ov017_021ca918.cpp:
+    complete
+    .text start:0x021ca918 end:0x021ca9bc
