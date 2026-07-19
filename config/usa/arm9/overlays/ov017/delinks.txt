@@ -3335,3 +3335,28 @@ src/Combat/Overlay_17/FindKeyInArray_021d4df8.cpp:
 src/Combat/Overlay_17/StoreByteAndFinalize_021d3e7c.cpp:
     complete
     .text start:0x021d3e7c end:0x021d3eb4
+
+
+src/Combat/Overlay_17/AddPositiveField150EntriesToMap_021b6bb8.cpp:
+    complete
+    .text start:0x021b6bb8 end:0x021b6c2c
+
+
+src/Combat/Overlay_17/ApplyEventVec3AndMode_021c91f4.cpp:
+    complete
+    .text start:0x021c91f4 end:0x021c927c
+
+
+src/Combat/Overlay_17/ClearFieldAndDestroyAllocator_021c1a24.cpp:
+    complete
+    .text start:0x021c1a24 end:0x021c1a98
+
+
+src/Combat/Overlay_17/InitByteHeaderState_021bf410.cpp:
+    complete
+    .text start:0x021bf410 end:0x021bf490
+
+
+src/Combat/Overlay_17/InitObjState_021b2174.cpp:
+    complete
+    .text start:0x021b2174 end:0x021b2200
