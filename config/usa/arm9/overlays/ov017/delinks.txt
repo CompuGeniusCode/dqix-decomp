@@ -3550,3 +3550,28 @@ src/Combat/Overlay_17/SendField464Chunks_021ccc34.cpp:
 src/Combat/Overlay_17/UpdateCombatantTagTimestamp_021ce054.cpp:
     complete
     .text start:0x021ce054 end:0x021ce110
+
+
+src/Combat/Overlay_17/CheckProximityAndEnqueue_021d1d00.cpp:
+    complete
+    .text start:0x021d1d00 end:0x021d1dc0
+
+
+src/Combat/Overlay_17/DispatchTableEntry_021d1078.cpp:
+    complete
+    .text start:0x021d1078 end:0x021d1118
+
+
+src/Combat/Overlay_17/EnqueueEventTag21_021cf078.cpp:
+    complete
+    .text start:0x021cf078 end:0x021cf234
+
+
+src/Combat/Overlay_17/InitNodeRangeIfTagMatches_021d4c04.cpp:
+    complete
+    .text start:0x021d4c04 end:0x021d4cc0
+
+
+src/Combat/Overlay_17/func_ov017_021d46a4.cpp:
+    complete
+    .text start:0x021d45e0 end:0x021d46a4
