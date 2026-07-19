@@ -3090,3 +3090,58 @@ src/Combat/Overlay_17/ResetObj_021b2c4c.cpp:
 src/Combat/Overlay_17/TeardownState_021c0160.cpp:
     complete
     .text start:0x021c0160 end:0x021c01a4
+
+
+src/Combat/Overlay_17/EnqueueEventTag124_021c9c64.cpp:
+    complete
+    .text start:0x021c9c64 end:0x021c9cb0
+
+
+src/Combat/Overlay_17/EnqueueEventTag145_021cdb00.cpp:
+    complete
+    .text start:0x021cdb00 end:0x021cdb4c
+
+
+src/Combat/Overlay_17/EnqueueEventTag161_021cfabc.cpp:
+    complete
+    .text start:0x021cfabc end:0x021cfb0c
+
+
+src/Combat/Overlay_17/EnqueueEventTag165_021cfde0.cpp:
+    complete
+    .text start:0x021cfde0 end:0x021cfe24
+
+
+src/Combat/Overlay_17/EnqueueEventTag166_021cfe40.cpp:
+    complete
+    .text start:0x021cfe40 end:0x021cfe84
+
+
+src/Combat/Overlay_17/EnqueueEventTag19_021cedf4.cpp:
+    complete
+    .text start:0x021cedf4 end:0x021cee34
+
+
+src/Combat/Overlay_17/EnqueueEventTag30_021d24a8.cpp:
+    complete
+    .text start:0x021d24a8 end:0x021d24f0
+
+
+src/Combat/Overlay_17/EnqueueEventTag53_021ced48.cpp:
+    complete
+    .text start:0x021ced48 end:0x021ced84
+
+
+src/Combat/Overlay_17/EnqueueEventTag7_021cc340.cpp:
+    complete
+    .text start:0x021cc340 end:0x021cc388
+
+
+src/Combat/Overlay_17/NotifyFlag2048AndMaybeSet_021d2c78.cpp:
+    complete
+    .text start:0x021d2c78 end:0x021d2cc0
+
+
+src/Combat/Overlay_17/NotifyIfFlagMatchesGroup_021d097c.cpp:
+    complete
+    .text start:0x021d097c end:0x021d09c4
