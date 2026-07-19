@@ -4610,3 +4610,13 @@ src/Combat/Overlay_31/func_ov031_022368bc.cpp:
 src/Combat/Overlay_31/GetListNodeAtBlock_02240410.cpp:
     complete
     .text start:0x02240410 end:0x0224046c
+
+
+src/Combat/Overlay_31/CheckFieldCAndCallField30_02240820.cpp:
+    complete
+    .text start:0x02240820 end:0x02240890
+
+
+src/Combat/Overlay_31/func_ov031_0224046c.cpp:
+    complete
+    .text start:0x0224046c end:0x022404e8
