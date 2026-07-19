@@ -1964,3 +1964,83 @@ src/Combat/Overlay_23/SetFlagt_021e338c_021e338c.cpp:
 src/Combat/Overlay_23/TestBattleBlockBit_021ed6cc.cpp:
     complete
     .text start:0x021ed6cc end:0x021ed724
+
+
+src/Combat/Overlay_23/DispatchNodeVTableCallsIfState15_021f64a8.cpp:
+    complete
+    .text start:0x021f64a8 end:0x021f6504
+
+
+src/Combat/Overlay_23/FindNodeByShort6_021f6880.cpp:
+    complete
+    .text start:0x021f6880 end:0x021f68b8
+
+
+src/Combat/Overlay_23/GetField4_021f6bb8.cpp:
+    complete
+    .text start:0x021f6bb8 end:0x021f6bc0
+
+
+src/Combat/Overlay_23/GetNodeIfType7_021f6524.cpp:
+    complete
+    .text start:0x021f6524 end:0x021f6558
+
+
+src/Combat/Overlay_23/NoOp_021f7440.cpp:
+    complete
+    .text start:0x021f7440 end:0x021f7444
+
+
+src/Combat/Overlay_23/NoOp_021f744c.cpp:
+    complete
+    .text start:0x021f744c end:0x021f7450
+
+
+src/Combat/Overlay_23/NoOp_021f7458.cpp:
+    complete
+    .text start:0x021f7458 end:0x021f745c
+
+
+src/Combat/Overlay_23/ReleaseHandleAndClearFields_021f5410.cpp:
+    complete
+    .text start:0x021f5410 end:0x021f5448
+
+
+src/Combat/Overlay_23/ResetElemEntryAtField20_021f8120.cpp:
+    complete
+    .text start:0x021f8120 end:0x021f8130
+
+
+src/Combat/Overlay_23/ResetObjectAtField20_021f8130.cpp:
+    complete
+    .text start:0x021f8130 end:0x021f8140
+
+
+src/Combat/Overlay_23/ReturnZero_021f7444.cpp:
+    complete
+    .text start:0x021f7444 end:0x021f744c
+
+
+src/Combat/Overlay_23/ReturnZero_021f7450.cpp:
+    complete
+    .text start:0x021f7450 end:0x021f7458
+
+
+src/Combat/Overlay_23/SetBitsInArray021f6bec.cpp:
+    complete
+    .text start:0x021f6bec end:0x021f6c3c
+
+
+src/Combat/Overlay_23/SetFieldForListedCombatants021f50fc.cpp:
+    complete
+    .text start:0x021f50fc end:0x021f5150
+
+
+src/Combat/Overlay_23/SetShortsAndDispatch_021f7d14.cpp:
+    complete
+    .text start:0x021f7d14 end:0x021f7d48
+
+
+src/Combat/Overlay_23/Unlink_021f6d9c.cpp:
+    complete
+    .text start:0x021f6d9c end:0x021f6dd8
