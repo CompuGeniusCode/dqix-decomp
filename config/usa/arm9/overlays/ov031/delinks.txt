@@ -4090,3 +4090,238 @@ src/Combat/Overlay_31/func_ov031_02205814.cpp:
 src/Combat/Overlay_31/func_ov031_02206f3c.cpp:
     complete
     .text start:0x02206f3c end:0x02206fa4
+
+
+src/Combat/Overlay_31/AdvanceFieldA90If5_02227874.cpp:
+    complete
+    .text start:0x02227874 end:0x02227880
+
+
+src/Combat/Overlay_31/AdvanceLoadStage0_02225760.cpp:
+    complete
+    .text start:0x02225760 end:0x022257d4
+
+
+src/Combat/Overlay_31/AdvanceLoadStage1_022256ec.cpp:
+    complete
+    .text start:0x022256ec end:0x02225760
+
+
+src/Combat/Overlay_31/AdvanceLoadStage2_02225678.cpp:
+    complete
+    .text start:0x02225678 end:0x022256ec
+
+
+src/Combat/Overlay_31/AdvanceLoadStage3_02225604.cpp:
+    complete
+    .text start:0x02225604 end:0x02225678
+
+
+src/Combat/Overlay_31/AllocProcessAndDispatch_02223998.cpp:
+    complete
+    .text start:0x02223998 end:0x022239f4
+
+
+src/Combat/Overlay_31/Build_02227630.cpp:
+    complete
+    .text start:0x02227630 end:0x02227688
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02227ce4.cpp:
+    complete
+    .text start:0x02227ce4 end:0x02227d20
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02227f74.cpp:
+    complete
+    .text start:0x02227f74 end:0x02227fb0
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02228a24.cpp:
+    complete
+    .text start:0x02228a24 end:0x02228a58
+
+
+src/Combat/Overlay_31/CheckField10AndChain_02226cd8.cpp:
+    complete
+    .text start:0x02226cd8 end:0x02226d48
+
+
+src/Combat/Overlay_31/CheckField116OrSetFlag_02226f68.cpp:
+    complete
+    .text start:0x02226f68 end:0x02226fc8
+
+
+src/Combat/Overlay_31/CheckField1cAndChain_02226c68.cpp:
+    complete
+    .text start:0x02226c68 end:0x02226cd8
+
+
+src/Combat/Overlay_31/CheckField28AndChain_02226bf8.cpp:
+    complete
+    .text start:0x02226bf8 end:0x02226c68
+
+
+src/Combat/Overlay_31/CheckField34AndChain_02226b88.cpp:
+    complete
+    .text start:0x02226b88 end:0x02226bf8
+
+
+src/Combat/Overlay_31/CheckFlagsThenSetHandler_022281e0.cpp:
+    complete
+    .text start:0x022281e0 end:0x0222821c
+
+
+src/Combat/Overlay_31/CheckFlagsThenSetHandler_022286b8.cpp:
+    complete
+    .text start:0x022286b8 end:0x022286f4
+
+
+src/Combat/Overlay_31/CheckFlagsThenTerminate_02228b78.cpp:
+    complete
+    .text start:0x02228b78 end:0x02228bac
+
+
+src/Combat/Overlay_31/CheckLow4ThenDispatchOrInit_02227fb0.cpp:
+    complete
+    .text start:0x02227fb0 end:0x02228024
+
+
+src/Combat/Overlay_31/CheckThreshold170ThenChain_02225ea0.cpp:
+    complete
+    .text start:0x02225ea0 end:0x02225f14
+
+
+src/Combat/Overlay_31/CopyNameAndResolveSuffix_02223478.cpp:
+    complete
+    .text start:0x02223478 end:0x022234d8
+
+
+src/Combat/Overlay_31/DispatchByField16_02228388.cpp:
+    complete
+    .text start:0x02228388 end:0x022283d8
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_0222876c.cpp:
+    complete
+    .text start:0x0222876c end:0x022287d4
+
+
+src/Combat/Overlay_31/GetStatusCode_022275a0.cpp:
+    complete
+    .text start:0x022275a0 end:0x022275e0
+
+
+src/Combat/Overlay_31/HasExtraFlags_0221b1f4.cpp:
+    complete
+    .text start:0x0221b1f4 end:0x0221b258
+
+
+src/Combat/Overlay_31/InitAndSetHandler_0222859c.cpp:
+    complete
+    .text start:0x0222859c end:0x022285e4
+
+
+src/Combat/Overlay_31/Init_0222818c.cpp:
+    complete
+    .text start:0x0222818c end:0x022281e0
+
+
+src/Combat/Overlay_31/Init_02228664.cpp:
+    complete
+    .text start:0x02228664 end:0x022286b8
+
+
+src/Combat/Overlay_31/NoOp_02228384.cpp:
+    complete
+    .text start:0x02228384 end:0x02228388
+
+
+src/Combat/Overlay_31/NoOp_02228768.cpp:
+    complete
+    .text start:0x02228768 end:0x0222876c
+
+
+src/Combat/Overlay_31/NoOp_02228ae0.cpp:
+    complete
+    .text start:0x02228ae0 end:0x02228ae4
+
+
+src/Combat/Overlay_31/QueueLookupEvent13_022235a0.cpp:
+    complete
+    .text start:0x022235a0 end:0x02223614
+
+
+src/Combat/Overlay_31/ResetSlotsAndTailCall_02227d20.cpp:
+    complete
+    .text start:0x02227d20 end:0x02227d94
+
+
+src/Combat/Overlay_31/SetField18_02222e98_022287d4.cpp:
+    complete
+    .text start:0x022287d4 end:0x022287f4
+
+
+src/Combat/Overlay_31/SetFields08Validate_022270ac.cpp:
+    complete
+    .text start:0x022270ac end:0x02227128
+
+
+src/Combat/Overlay_31/SetHandlerIfNotNegTwo_02228a84.cpp:
+    complete
+    .text start:0x02228a84 end:0x02228aac
+
+
+src/Combat/Overlay_31/SetupAndDispatchRow_02228024.cpp:
+    complete
+    .text start:0x02228024 end:0x022280a0
+
+
+src/Combat/Overlay_31/SetupOrArmHandler_02228910.cpp:
+    complete
+    .text start:0x02228910 end:0x02228960
+
+
+src/Combat/Overlay_31/TailCall_02222ddc_022287f4.cpp:
+    complete
+    .text start:0x022287f4 end:0x02228858
+
+
+src/Combat/Overlay_31/WaitAndRegisterHandler4_0221b848.cpp:
+    complete
+    .text start:0x0221b848 end:0x0221b8b4
+
+
+src/Combat/Overlay_31/func_ov031_0222318c.cpp:
+    complete
+    .text start:0x0222318c end:0x022231f0
+
+
+src/Combat/Overlay_31/func_ov031_02227804.cpp:
+    complete
+    .text start:0x02227804 end:0x02227840
+
+
+src/Combat/Overlay_31/func_ov031_022283f8.cpp:
+    complete
+    .text start:0x022283f8 end:0x02228444
+
+
+src/Combat/Overlay_31/func_ov031_022284ec.cpp:
+    complete
+    .text start:0x022284ec end:0x0222855c
+
+
+src/Combat/Overlay_31/func_ov031_02228730.cpp:
+    complete
+    .text start:0x02228730 end:0x02228768
+
+
+src/Combat/Overlay_31/func_ov031_02228ac0.cpp:
+    complete
+    .text start:0x02228ac0 end:0x02228ae0
+
+
+src/Combat/Overlay_31/func_ov031_02228b2c.cpp:
+    complete
+    .text start:0x02228b2c end:0x02228b78
