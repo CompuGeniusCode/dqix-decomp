@@ -2144,3 +2144,48 @@ src/Combat/Overlay_23/SetFieldB1_021fba70.cpp:
 src/Combat/Overlay_23/SetField_021fbcb8_021fbcb8.cpp:
     complete
     .text start:0x021fbcb8 end:0x021fbcc0
+
+
+src/Combat/Overlay_23/BlankFunction_021fc514.cpp:
+    complete
+    .text start:0x021fc514 end:0x021fc518
+
+
+src/Combat/Overlay_23/BlankFunction_021fd390.cpp:
+    complete
+    .text start:0x021fd390 end:0x021fd394
+
+
+src/Combat/Overlay_23/GetField1c_021fc3f8.cpp:
+    complete
+    .text start:0x021fc3f8 end:0x021fc400
+
+
+src/Combat/Overlay_23/GetField2a_021fd464.cpp:
+    complete
+    .text start:0x021fd464 end:0x021fd46c
+
+
+src/Combat/Overlay_23/GetField2c_021fc504.cpp:
+    complete
+    .text start:0x021fc504 end:0x021fc50c
+
+
+src/Combat/Overlay_23/GetFieldPtr20_021fc400.cpp:
+    complete
+    .text start:0x021fc400 end:0x021fc408
+
+
+src/Combat/Overlay_23/InitAndDispatch_021fd2b8.cpp:
+    complete
+    .text start:0x021fd2b8 end:0x021fd2f8
+
+
+src/Combat/Overlay_23/ReinitEntriesAndAngle021fc6cc.cpp:
+    complete
+    .text start:0x021fc6cc end:0x021fc71c
+
+
+src/Combat/Overlay_23/SetField2e_021fc50c.cpp:
+    complete
+    .text start:0x021fc50c end:0x021fc514
