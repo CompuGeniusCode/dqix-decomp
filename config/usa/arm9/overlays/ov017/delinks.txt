@@ -2800,3 +2800,98 @@ src/Combat/Overlay_17/SetField11a_021bbbec.cpp:
 src/Combat/Overlay_17/SwapArgsAndForward_021b213c.cpp:
     complete
     .text start:0x021b213c end:0x021b2164
+
+
+src/Combat/Overlay_17/BlankFunction_021d09c4.cpp:
+    complete
+    .text start:0x021d09c4 end:0x021d09c8
+
+
+src/Combat/Overlay_17/BlankFunction_021d09c8.cpp:
+    complete
+    .text start:0x021d09c8 end:0x021d09cc
+
+
+src/Combat/Overlay_17/BlankFunction_021d1010.cpp:
+    complete
+    .text start:0x021d1010 end:0x021d1014
+
+
+src/Combat/Overlay_17/BlankFunction_021d24a4.cpp:
+    complete
+    .text start:0x021d24a4 end:0x021d24a8
+
+
+src/Combat/Overlay_17/CallField38HandlerIfSet_021d4ccc.cpp:
+    complete
+    .text start:0x021d4ccc end:0x021d4ce4
+
+
+src/Combat/Overlay_17/CopyFourSignedBytesToOffset27_021ce2fc.cpp:
+    complete
+    .text start:0x021ce2fc end:0x021ce32c
+
+
+src/Combat/Overlay_17/DispatchIfNoCurrentArrEntry_021cf704.cpp:
+    complete
+    .text start:0x021cf704 end:0x021cf730
+
+
+src/Combat/Overlay_17/EnqueueEventTag130_021cc050.cpp:
+    complete
+    .text start:0x021cc050 end:0x021cc080
+
+
+src/Combat/Overlay_17/EnqueueEventTag158_021d23bc.cpp:
+    complete
+    .text start:0x021d23bc end:0x021d23ec
+
+
+src/Combat/Overlay_17/EnqueueEventTag27_021d2400.cpp:
+    complete
+    .text start:0x021d2400 end:0x021d2428
+
+
+src/Combat/Overlay_17/EnqueueEventTag28_021d243c.cpp:
+    complete
+    .text start:0x021d243c end:0x021d246c
+
+
+src/Combat/Overlay_17/EnqueueEventTag49_021cea34.cpp:
+    complete
+    .text start:0x021cea34 end:0x021cea64
+
+
+src/Combat/Overlay_17/EnqueueEventTag6_021cc2f0.cpp:
+    complete
+    .text start:0x021cc2f0 end:0x021cc320
+
+
+src/Combat/Overlay_17/EnqueueEventTag89_021ca174.cpp:
+    complete
+    .text start:0x021ca174 end:0x021ca1a4
+
+
+src/Combat/Overlay_17/GetField4_021d612c.cpp:
+    complete
+    .text start:0x021d612c end:0x021d6134
+
+
+src/Combat/Overlay_17/SetCombatantFlagAndSearchBit_021ceab4.cpp:
+    complete
+    .text start:0x021ceab4 end:0x021ceae4
+
+
+src/Combat/Overlay_17/SetField5729Flag_021d2428.cpp:
+    complete
+    .text start:0x021d2428 end:0x021d243c
+
+
+src/Combat/Overlay_17/SetFields4And8_021d4cc0.cpp:
+    complete
+    .text start:0x021d4cc0 end:0x021d4ccc
+
+
+src/Combat/Overlay_17/SetGrottoUnknown4_021cfd2c.cpp:
+    complete
+    .text start:0x021cfd2c end:0x021cfd5c
