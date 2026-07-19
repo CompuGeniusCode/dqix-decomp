@@ -1,0 +1,6 @@
+#include <globaldefs.h>
+
+// USA: func_ov023_021fba78
+ARM void SetByte_021fba78_021fba78(void* obj, unsigned char v) {
+    *(unsigned char*)((char*)obj + 0xb0) = v;
+}
