@@ -3325,3 +3325,13 @@ src/Combat/Overlay_17/ForwardResetAndCaptureTimestamp_021c2e50.cpp:
 src/Combat/Overlay_17/SetBitsFromByteList_021ccf70.cpp:
     complete
     .text start:0x021ccf70 end:0x021ccfd0
+
+
+src/Combat/Overlay_17/FindKeyInArray_021d4df8.cpp:
+    complete
+    .text start:0x021d4df8 end:0x021d4e38
+
+
+src/Combat/Overlay_17/StoreByteAndFinalize_021d3e7c.cpp:
+    complete
+    .text start:0x021d3e7c end:0x021d3eb4
