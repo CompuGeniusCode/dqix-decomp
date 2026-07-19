@@ -3360,3 +3360,13 @@ src/Combat/Overlay_17/InitByteHeaderState_021bf410.cpp:
 src/Combat/Overlay_17/InitObjState_021b2174.cpp:
     complete
     .text start:0x021b2174 end:0x021b2200
+
+
+src/Combat/Overlay_17/AppendTagIfHeadMatch_021d0f94.cpp:
+    complete
+    .text start:0x021d0f94 end:0x021d1010
+
+
+src/Combat/Overlay_17/func_ov017_021ccb58.cpp:
+    complete
+    .text start:0x021ccb58 end:0x021ccbdc
