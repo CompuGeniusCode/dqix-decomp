@@ -4560,3 +4560,48 @@ src/Combat/Overlay_31/func_ov031_022310c4.cpp:
 src/Combat/Overlay_31/func_ov031_02231bb0.cpp:
     complete
     .text start:0x02231bb0 end:0x02231c0c
+
+
+src/Combat/Overlay_31/ClearSlotAndInvalidate_02236484.cpp:
+    complete
+    .text start:0x02236484 end:0x022364c0
+
+
+src/Combat/Overlay_31/CopyIntoBlock440_02235f0c.cpp:
+    complete
+    .text start:0x02235f0c end:0x02235f30
+
+
+src/Combat/Overlay_31/DispatchByField8IfTag38_022359e0.cpp:
+    complete
+    .text start:0x022359e0 end:0x02235a44
+
+
+src/Combat/Overlay_31/ForwardWithOffsetThenTag_02235744_0223552c.cpp:
+    complete
+    .text start:0x0223552c end:0x02235594
+
+
+src/Combat/Overlay_31/SubmitContextEntry1648_022358b4.cpp:
+    complete
+    .text start:0x022358b4 end:0x022358e8
+
+
+src/Combat/Overlay_31/func_ov031_02235620.cpp:
+    complete
+    .text start:0x02235620 end:0x0223566c
+
+
+src/Combat/Overlay_31/func_ov031_02236878.cpp:
+    complete
+    .text start:0x02236878 end:0x0223689c
+
+
+src/Combat/Overlay_31/func_ov031_0223689c.cpp:
+    complete
+    .text start:0x0223689c end:0x022368bc
+
+
+src/Combat/Overlay_31/func_ov031_022368bc.cpp:
+    complete
+    .text start:0x022368bc end:0x022368e0
