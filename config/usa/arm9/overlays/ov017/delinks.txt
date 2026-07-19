@@ -2995,3 +2995,98 @@ src/Combat/Overlay_17/TestFlagBit55dIfActive_0218b628.cpp:
 src/Combat/Overlay_17/func_ov017_0218b5c0.cpp:
     complete
     .text start:0x0218b5c0 end:0x0218b5f8
+
+
+src/Combat/Overlay_17/AppendNode_021b66b8.cpp:
+    complete
+    .text start:0x021b66b8 end:0x021b66f0
+
+
+src/Combat/Overlay_17/ClearFieldcIfSet_021b4760.cpp:
+    complete
+    .text start:0x021b4760 end:0x021b478c
+
+
+src/Combat/Overlay_17/EnqueueEventTag122_021c8b78.cpp:
+    complete
+    .text start:0x021c8b78 end:0x021c8bac
+
+
+src/Combat/Overlay_17/EnqueueEventTag123_021c9b90.cpp:
+    complete
+    .text start:0x021c9b90 end:0x021c9bc8
+
+
+src/Combat/Overlay_17/FinalizeState_021beb48.cpp:
+    complete
+    .text start:0x021beb48 end:0x021beb8c
+
+
+src/Combat/Overlay_17/ForwardAndClearField8_021c2710.cpp:
+    complete
+    .text start:0x021c2710 end:0x021c2744
+
+
+src/Combat/Overlay_17/ForwardTeardownA_021b9904.cpp:
+    complete
+    .text start:0x021b9904 end:0x021b9928
+
+
+src/Combat/Overlay_17/Init021bac58.cpp:
+    complete
+    .text start:0x021bac58 end:0x021bac8c
+
+
+src/Combat/Overlay_17/InitAndAppendNode_021bac24.cpp:
+    complete
+    .text start:0x021bac24 end:0x021bac58
+
+
+src/Combat/Overlay_17/InitAndEnqueueTag33_021c12fc.cpp:
+    complete
+    .text start:0x021c12fc end:0x021c1350
+
+
+src/Combat/Overlay_17/InitBattleObj_021b61e4.cpp:
+    complete
+    .text start:0x021b61e4 end:0x021b621c
+
+
+src/Combat/Overlay_17/InitObj_021b6790.cpp:
+    complete
+    .text start:0x021b6790 end:0x021b67d8
+
+
+src/Combat/Overlay_17/InitStruct_021b46d8.cpp:
+    complete
+    .text start:0x021b46d8 end:0x021b4710
+
+
+src/Combat/Overlay_17/PopStackAndForwardAllocator_021ba94c.cpp:
+    complete
+    .text start:0x021ba94c end:0x021ba998
+
+
+src/Combat/Overlay_17/PopStackAndForwardAllocator_021bac8c.cpp:
+    complete
+    .text start:0x021bac8c end:0x021bacd8
+
+
+src/Combat/Overlay_17/ResetFieldAndForwardAllocator_021c0364.cpp:
+    complete
+    .text start:0x021c0364 end:0x021c03a4
+
+
+src/Combat/Overlay_17/ResetFlagAndDestroyAllocator_021c07d0.cpp:
+    complete
+    .text start:0x021c07d0 end:0x021c0820
+
+
+src/Combat/Overlay_17/ResetObj_021b2c4c.cpp:
+    complete
+    .text start:0x021b2c4c end:0x021b2c88
+
+
+src/Combat/Overlay_17/TeardownState_021c0160.cpp:
+    complete
+    .text start:0x021c0160 end:0x021c01a4
