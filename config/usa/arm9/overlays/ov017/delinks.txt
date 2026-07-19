@@ -3145,3 +3145,93 @@ src/Combat/Overlay_17/NotifyFlag2048AndMaybeSet_021d2c78.cpp:
 src/Combat/Overlay_17/NotifyIfFlagMatchesGroup_021d097c.cpp:
     complete
     .text start:0x021d097c end:0x021d09c4
+
+
+src/Combat/Overlay_17/CheckByteFlagsAt4488_021922ac.cpp:
+    complete
+    .text start:0x021922ac end:0x0219230c
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a0790.cpp:
+    complete
+    .text start:0x021a0790 end:0x021a07f4
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a0964.cpp:
+    complete
+    .text start:0x021a0964 end:0x021a09c8
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a0ba8.cpp:
+    complete
+    .text start:0x021a0ba8 end:0x021a0c0c
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a0d6c.cpp:
+    complete
+    .text start:0x021a0d6c end:0x021a0dd0
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a0f40.cpp:
+    complete
+    .text start:0x021a0f40 end:0x021a0fa4
+
+
+src/Combat/Overlay_17/DestroyAllocatorsFromTable_021a1114.cpp:
+    complete
+    .text start:0x021a1114 end:0x021a1178
+
+
+src/Combat/Overlay_17/FindCombatantWithNegativeField2_021a20c0.cpp:
+    complete
+    .text start:0x021a20c0 end:0x021a2128
+
+
+src/Combat/Overlay_17/ForwardAndDestroyAllocatorAt48_021a7280.cpp:
+    complete
+    .text start:0x021a7280 end:0x021a72dc
+
+
+src/Combat/Overlay_17/GetOffsetForIndex_0219219c.cpp:
+    complete
+    .text start:0x0219219c end:0x021921fc
+
+
+src/Combat/Overlay_17/InitFieldArenaLists_021a5b48.cpp:
+    complete
+    .text start:0x021a5b48 end:0x021a5bac
+
+
+src/Combat/Overlay_17/InitStateAndFields_021b8d1c.cpp:
+    complete
+    .text start:0x021b8d1c end:0x021b8d80
+
+
+src/Combat/Overlay_17/ProcessFlaggedCombatants800_021a205c.cpp:
+    complete
+    .text start:0x021a205c end:0x021a20c0
+
+
+src/Combat/Overlay_17/ResetAndPopStacks_021c1394.cpp:
+    complete
+    .text start:0x021c1394 end:0x021c1404
+
+
+src/Combat/Overlay_17/ResetFlagAndDestroyAllocator_021a18c8.cpp:
+    complete
+    .text start:0x021a18c8 end:0x021a1924
+
+
+src/Combat/Overlay_17/ResetObjAndDestroyAllocator_021b2c88.cpp:
+    complete
+    .text start:0x021b2c88 end:0x021b2ce8
+
+
+src/Combat/Overlay_17/SyncEntryAndSetBit_021b6174.cpp:
+    complete
+    .text start:0x021b6174 end:0x021b61e4
+
+
+src/Combat/Overlay_17/UpdateFlagsFromField12_0219e234.cpp:
+    complete
+    .text start:0x0219e234 end:0x0219e290
