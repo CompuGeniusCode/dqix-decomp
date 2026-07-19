@@ -2895,3 +2895,103 @@ src/Combat/Overlay_17/SetFields4And8_021d4cc0.cpp:
 src/Combat/Overlay_17/SetGrottoUnknown4_021cfd2c.cpp:
     complete
     .text start:0x021cfd2c end:0x021cfd5c
+
+
+src/Combat/Overlay_17/CancelActionAndInsertNode_021a5530.cpp:
+    complete
+    .text start:0x021a5530 end:0x021a5568
+
+
+src/Combat/Overlay_17/CheckFlagAndBitAt14_021959b4.cpp:
+    complete
+    .text start:0x021959b4 end:0x021959ec
+
+
+src/Combat/Overlay_17/ClearAndEncodeEntries_021996bc.cpp:
+    complete
+    .text start:0x021996bc end:0x021996fc
+
+
+src/Combat/Overlay_17/ClearAndEncodeField14_021a5b08.cpp:
+    complete
+    .text start:0x021a5b08 end:0x021a5b48
+
+
+src/Combat/Overlay_17/CopyEntry15_02195214.cpp:
+    complete
+    .text start:0x02195214 end:0x02195250
+
+
+src/Combat/Overlay_17/DestroyAllocatorAndResetState_021a55b0.cpp:
+    complete
+    .text start:0x021a55b0 end:0x021a5600
+
+
+src/Combat/Overlay_17/DestroySafeAllocatorField2c_021aeea8.cpp:
+    complete
+    .text start:0x021aeea8 end:0x021aeedc
+
+
+src/Combat/Overlay_17/DestroySafeAllocatorField8_021adb1c.cpp:
+    complete
+    .text start:0x021adb1c end:0x021adb50
+
+
+src/Combat/Overlay_17/FinalizeState30_021ac2a8.cpp:
+    complete
+    .text start:0x021ac2a8 end:0x021ac2ec
+
+
+src/Combat/Overlay_17/Init021a124c.cpp:
+    complete
+    .text start:0x021a124c end:0x021a1284
+
+
+src/Combat/Overlay_17/InitAndAppendState25_021aa4cc.cpp:
+    complete
+    .text start:0x021aa4cc end:0x021aa50c
+
+
+src/Combat/Overlay_17/InitAndAppendState30_0219931c.cpp:
+    complete
+    .text start:0x0219931c end:0x02199360
+
+
+src/Combat/Overlay_17/InitAndAppendState61_021a65c4.cpp:
+    complete
+    .text start:0x021a65c4 end:0x021a6608
+
+
+src/Combat/Overlay_17/ResetObj_021a5568.cpp:
+    complete
+    .text start:0x021a5568 end:0x021a55a4
+
+
+src/Combat/Overlay_17/ResetOrDestroyObj_021a7dd8.cpp:
+    complete
+    .text start:0x021a7dd8 end:0x021a7e14
+
+
+src/Combat/Overlay_17/RestoreStateAndFinalize_021a6b30.cpp:
+    complete
+    .text start:0x021a6b30 end:0x021a6b84
+
+
+src/Combat/Overlay_17/RunBattleScaleStepAndFinalize_021a9638.cpp:
+    complete
+    .text start:0x021a9638 end:0x021a9670
+
+
+src/Combat/Overlay_17/SetByteAndAppendNode_021b146c.cpp:
+    complete
+    .text start:0x021b146c end:0x021b14a0
+
+
+src/Combat/Overlay_17/TestFlagBit55dIfActive_0218b628.cpp:
+    complete
+    .text start:0x0218b628 end:0x0218b664
+
+
+src/Combat/Overlay_17/func_ov017_0218b5c0.cpp:
+    complete
+    .text start:0x0218b5c0 end:0x0218b5f8
