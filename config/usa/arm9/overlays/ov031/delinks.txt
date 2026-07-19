@@ -4620,3 +4620,8 @@ src/Combat/Overlay_31/CheckFieldCAndCallField30_02240820.cpp:
 src/Combat/Overlay_31/func_ov031_0224046c.cpp:
     complete
     .text start:0x0224046c end:0x022404e8
+
+
+src/Combat/Overlay_31/WaitForState02241c8_022413c8.cpp:
+    complete
+    .text start:0x022413c8 end:0x02241404
