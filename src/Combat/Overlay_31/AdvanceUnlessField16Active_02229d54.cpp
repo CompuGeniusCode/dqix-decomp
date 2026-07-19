@@ -1,0 +1,13 @@
+#include <globaldefs.h>
+
+int GetField16_02222e0c(void);
+extern "C" void func_ov031_02236878(int);
+void SetField_022274c0_022274c0(int v);
+void SetField18AndAdvance_02229d7c(void);
+
+// USA: func_ov031_02229d54  (semantic: AdvanceUnlessField16Active_02229d54)
+extern "C" ARM void func_ov031_02229d54(void) {
+	if (GetField16_02222e0c() != 0) return;
+	func_ov031_02236878(6);
+	SetField_022274c0_022274c0((int)SetField18AndAdvance_02229d7c);
+}
