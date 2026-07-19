@@ -4605,3 +4605,8 @@ src/Combat/Overlay_31/func_ov031_0223689c.cpp:
 src/Combat/Overlay_31/func_ov031_022368bc.cpp:
     complete
     .text start:0x022368bc end:0x022368e0
+
+
+src/Combat/Overlay_31/GetListNodeAtBlock_02240410.cpp:
+    complete
+    .text start:0x02240410 end:0x0224046c
