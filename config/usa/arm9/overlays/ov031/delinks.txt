@@ -3990,3 +3990,103 @@ src/Combat/Overlay_31/func_ov031_0223fd9c.cpp:
 src/Combat/Overlay_31/func_ov031_0224030c.cpp:
     complete
     .text start:0x0224030c end:0x02240310
+
+
+src/Combat/Overlay_31/AlignUp4_022070bc.cpp:
+    complete
+    .text start:0x022070bc end:0x022070c8
+
+
+src/Combat/Overlay_31/CallWithClearedState_02206ebc.cpp:
+    complete
+    .text start:0x02206ebc end:0x02206f08
+
+
+src/Combat/Overlay_31/FindBEValueMatch_022089f4.cpp:
+    complete
+    .text start:0x022089f4 end:0x02208a40
+
+
+src/Combat/Overlay_31/FindEntryByName_02207d88.cpp:
+    complete
+    .text start:0x02207d88 end:0x02207dd4
+
+
+src/Combat/Overlay_31/FindMatchingArrayEntry_02208a40.cpp:
+    complete
+    .text start:0x02208a40 end:0x02208aa0
+
+
+src/Combat/Overlay_31/FindNodeLink_0220713c.cpp:
+    complete
+    .text start:0x0220713c end:0x02207168
+
+
+src/Combat/Overlay_31/GetDiffAndFields_02205c50.cpp:
+    complete
+    .text start:0x02205c50 end:0x02205cc4
+
+
+src/Combat/Overlay_31/InitAndFinalize455_0220911c.cpp:
+    complete
+    .text start:0x0220911c end:0x02209158
+
+
+src/Combat/Overlay_31/InitSha1State_0220b8a0_02209e28.cpp:
+    complete
+    .text start:0x02209e28 end:0x02209e98
+
+
+src/Combat/Overlay_31/InitSha1State_0220b8a0_0220a540.cpp:
+    complete
+    .text start:0x0220a540 end:0x0220a594
+
+
+src/Combat/Overlay_31/ProcessPendingItemOrActivate_02206d90.cpp:
+    complete
+    .text start:0x02206d90 end:0x02206e0c
+
+
+src/Combat/Overlay_31/PushFrontGlobal0224e22c_022070c8.cpp:
+    complete
+    .text start:0x022070c8 end:0x022070e0
+
+
+src/Combat/Overlay_31/ReleaseAndClearField248_02205ebc.cpp:
+    complete
+    .text start:0x02205ebc end:0x02205ef8
+
+
+src/Combat/Overlay_31/ResetStatusAndReleaseHandle_0220aa30.cpp:
+    complete
+    .text start:0x0220aa30 end:0x0220aa68
+
+
+src/Combat/Overlay_31/TailCallForward_02207428.cpp:
+    complete
+    .text start:0x02207428 end:0x02207434
+
+
+src/Combat/Overlay_31/UnlinkNode_02207120.cpp:
+    complete
+    .text start:0x02207120 end:0x0220713c
+
+
+src/Combat/Overlay_31/Wrapper02206900_02207434.cpp:
+    complete
+    .text start:0x02207434 end:0x02207440
+
+
+src/Combat/Overlay_31/Wrapper02206c44_022077c0.cpp:
+    complete
+    .text start:0x022077c0 end:0x022077cc
+
+
+src/Combat/Overlay_31/func_ov031_02205814.cpp:
+    complete
+    .text start:0x022056bc end:0x0220572c
+
+
+src/Combat/Overlay_31/func_ov031_02206f3c.cpp:
+    complete
+    .text start:0x02206f3c end:0x02206fa4
