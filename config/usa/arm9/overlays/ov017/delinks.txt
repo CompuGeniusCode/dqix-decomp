@@ -3235,3 +3235,93 @@ src/Combat/Overlay_17/SyncEntryAndSetBit_021b6174.cpp:
 src/Combat/Overlay_17/UpdateFlagsFromField12_0219e234.cpp:
     complete
     .text start:0x0219e234 end:0x0219e290
+
+
+src/Combat/Overlay_17/AppendClampedDataAndMaybeNotify_021cdccc.cpp:
+    complete
+    .text start:0x021cdccc end:0x021cdd30
+
+
+src/Combat/Overlay_17/ApplyConfigToContext_021cf448.cpp:
+    complete
+    .text start:0x021cf448 end:0x021cf4b0
+
+
+src/Combat/Overlay_17/ApplyEventTag38Fields_021ce3ac.cpp:
+    complete
+    .text start:0x021ce3ac end:0x021ce400
+
+
+src/Combat/Overlay_17/CheckAndCopyEntryData_021d2278.cpp:
+    complete
+    .text start:0x021d2278 end:0x021d22d4
+
+
+src/Combat/Overlay_17/CopyEntryFields_021d2d00.cpp:
+    complete
+    .text start:0x021d2d00 end:0x021d2d64
+
+
+src/Combat/Overlay_17/CopyShortArrayIntoField150_021ccaf8.cpp:
+    complete
+    .text start:0x021ccaf8 end:0x021ccb58
+
+
+src/Combat/Overlay_17/CopySrcBytesToWordArrayIfFieldMatch_021cbe50.cpp:
+    complete
+    .text start:0x021cbe50 end:0x021cbeb0
+
+
+src/Combat/Overlay_17/EnqueueEventTag127ForParty_021c3f70.cpp:
+    complete
+    .text start:0x021c3f70 end:0x021c3fb4
+
+
+src/Combat/Overlay_17/EnqueueEventTag153_021d079c.cpp:
+    complete
+    .text start:0x021d079c end:0x021d0808
+
+
+src/Combat/Overlay_17/EnqueueEventTag154_021d0860.cpp:
+    complete
+    .text start:0x021d0860 end:0x021d08cc
+
+
+src/Combat/Overlay_17/EnqueueEventTag155_021d0924.cpp:
+    complete
+    .text start:0x021d0924 end:0x021d097c
+
+
+src/Combat/Overlay_17/EnqueueEventTag174_021d1874.cpp:
+    complete
+    .text start:0x021d1874 end:0x021d18d8
+
+
+src/Combat/Overlay_17/EnqueueEventTag24_021d0e00.cpp:
+    complete
+    .text start:0x021d0e00 end:0x021d0e64
+
+
+src/Combat/Overlay_17/EnqueueEventTag39_021ce400.cpp:
+    complete
+    .text start:0x021ce400 end:0x021ce458
+
+
+src/Combat/Overlay_17/EnqueueNameTag3_021c45b4.cpp:
+    complete
+    .text start:0x021c45b4 end:0x021c4618
+
+
+src/Combat/Overlay_17/ForwardAndDestroyAllocator_021c310c.cpp:
+    complete
+    .text start:0x021c310c end:0x021c316c
+
+
+src/Combat/Overlay_17/ForwardResetAndCaptureTimestamp_021c2e50.cpp:
+    complete
+    .text start:0x021c2e50 end:0x021c2ea4
+
+
+src/Combat/Overlay_17/SetBitsFromByteList_021ccf70.cpp:
+    complete
+    .text start:0x021ccf70 end:0x021ccfd0
