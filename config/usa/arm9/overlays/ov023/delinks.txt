@@ -1864,3 +1864,103 @@ src/Combat/Overlay_23/DecodePacked021dbb34.cpp:
 src/Combat/Overlay_23/FormatAndDispatchValue_021db3c0.cpp:
     complete
     .text start:0x021db3c0 end:0x021db45c
+
+
+src/Combat/Overlay_23/BuildChain_021e15b4.cpp:
+    complete
+    .text start:0x021e15b4 end:0x021e1604
+
+
+src/Combat/Overlay_23/BuildChain_021e1b0c.cpp:
+    complete
+    .text start:0x021e1b0c end:0x021e1b5c
+
+
+src/Combat/Overlay_23/BuildChain_021e1b5c.cpp:
+    complete
+    .text start:0x021e1b5c end:0x021e1bac
+
+
+src/Combat/Overlay_23/CallIfFieldNot0Or3_021d8c60.cpp:
+    complete
+    .text start:0x021d8c60 end:0x021d8c94
+
+
+src/Combat/Overlay_23/CallIfFlagValidAndFieldSet_021e3184.cpp:
+    complete
+    .text start:0x021e3184 end:0x021e31b0
+
+
+src/Combat/Overlay_23/ClearShortAndTwoBytes_021e71a0.cpp:
+    complete
+    .text start:0x021e71a0 end:0x021e71b4
+
+
+src/Combat/Overlay_23/CopyByteFieldToNextAndSet_021e33a0_021e33a0.cpp:
+    complete
+    .text start:0x021e33a0 end:0x021e33b4
+
+
+src/Combat/Overlay_23/CopyIntAndByte_021dbb20.cpp:
+    complete
+    .text start:0x021dbb20 end:0x021dbb34
+
+
+src/Combat/Overlay_23/DispatchIfFlagsOrByteSet_021ed014.cpp:
+    complete
+    .text start:0x021ed014 end:0x021ed064
+
+
+src/Combat/Overlay_23/GetByteViaFieldIndirectOffset_021e4250_021e4250.cpp:
+    complete
+    .text start:0x021e4250 end:0x021e4264
+
+
+src/Combat/Overlay_23/GetTableEntry138_021eea98.cpp:
+    complete
+    .text start:0x021eea98 end:0x021eeaac
+
+
+src/Combat/Overlay_23/ResetIntAndShortPair_021dad78.cpp:
+    complete
+    .text start:0x021dad78 end:0x021dad8c
+
+
+src/Combat/Overlay_23/ResetPendingSlotsIfActive_021dca88.cpp:
+    complete
+    .text start:0x021dca88 end:0x021dcae0
+
+
+src/Combat/Overlay_23/RunChainIfFlagSet_021e3134.cpp:
+    complete
+    .text start:0x021e3134 end:0x021e3184
+
+
+src/Combat/Overlay_23/SetBattleBlockBit_021e92f0.cpp:
+    complete
+    .text start:0x021e92f0 end:0x021e934c
+
+
+src/Combat/Overlay_23/SetFieldFromPercentOver232_021e9a10.cpp:
+    complete
+    .text start:0x021e9a10 end:0x021e9a44
+
+
+src/Combat/Overlay_23/SetFieldFromPercentOver448_021e99dc.cpp:
+    complete
+    .text start:0x021e99dc end:0x021e9a10
+
+
+src/Combat/Overlay_23/SetFieldFromPercentOver944_021e9a44.cpp:
+    complete
+    .text start:0x021e9a44 end:0x021e9a78
+
+
+src/Combat/Overlay_23/SetFlagt_021e338c_021e338c.cpp:
+    complete
+    .text start:0x021e338c end:0x021e33a0
+
+
+src/Combat/Overlay_23/TestBattleBlockBit_021ed6cc.cpp:
+    complete
+    .text start:0x021ed6cc end:0x021ed724
