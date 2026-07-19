@@ -2985,3 +2985,213 @@ src/Combat/Overlay_31/SetField_022274c0_022274c0_0222a328.cpp:
 src/Combat/Overlay_31/func_ov031_0222b168.cpp:
     complete
     .text start:0x0222b168 end:0x0222b1a0
+
+
+src/Combat/Overlay_31/AddDivideByField4_022305e8.cpp:
+    complete
+    .text start:0x022305e8 end:0x0223060c
+
+
+src/Combat/Overlay_31/AdvanceFieldA90IfSet_0223a718.cpp:
+    complete
+    .text start:0x0223a718 end:0x0223a760
+
+
+src/Combat/Overlay_31/AdvanceUnlessField16Active_0222e8c8.cpp:
+    complete
+    .text start:0x0222e8c8 end:0x0222e8f0
+
+
+src/Combat/Overlay_31/CallEntryAndClearField14_02236e38.cpp:
+    complete
+    .text start:0x02236e38 end:0x02236e60
+
+
+src/Combat/Overlay_31/CallFn1_022314ec.cpp:
+    complete
+    .text start:0x022314ec end:0x02231518
+
+
+src/Combat/Overlay_31/CallFn1_0223193c.cpp:
+    complete
+    .text start:0x0223193c end:0x02231968
+
+
+src/Combat/Overlay_31/CallFn1_022324bc.cpp:
+    complete
+    .text start:0x022324bc end:0x022324e8
+
+
+src/Combat/Overlay_31/CallFn2_022316f8.cpp:
+    complete
+    .text start:0x022316f8 end:0x02231724
+
+
+src/Combat/Overlay_31/CallFn2_02231dcc.cpp:
+    complete
+    .text start:0x02231dcc end:0x02231df8
+
+
+src/Combat/Overlay_31/CallFn2_02232354.cpp:
+    complete
+    .text start:0x02232354 end:0x02232380
+
+
+src/Combat/Overlay_31/CallGlobalPtrOffset94_022368e0.cpp:
+    complete
+    .text start:0x022368e0 end:0x02236900
+
+
+src/Combat/Overlay_31/CallStringLength_0223fb48.cpp:
+    complete
+    .text start:0x0223fb48 end:0x0223fb54
+
+
+src/Combat/Overlay_31/CallStringLength_022415a8.cpp:
+    complete
+    .text start:0x022415a8 end:0x022415b4
+
+
+src/Combat/Overlay_31/CallStub020bbd9c_02236900.cpp:
+    complete
+    .text start:0x02236900 end:0x0223690c
+
+
+src/Combat/Overlay_31/CallStub02242d3c_0223fb8c.cpp:
+    complete
+    .text start:0x0223fb8c end:0x0223fb98
+
+
+src/Combat/Overlay_31/CallStub02242dd4_0223fb98.cpp:
+    complete
+    .text start:0x0223fb98 end:0x0223fba4
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02231088.cpp:
+    complete
+    .text start:0x02231088 end:0x022310c4
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02231a44.cpp:
+    complete
+    .text start:0x02231a44 end:0x02231a78
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02231ab0.cpp:
+    complete
+    .text start:0x02231ab0 end:0x02231aec
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02233ee8.cpp:
+    complete
+    .text start:0x02233ee8 end:0x02233f1c
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_022343d4.cpp:
+    complete
+    .text start:0x022343d4 end:0x02234408
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02234440.cpp:
+    complete
+    .text start:0x02234440 end:0x0223447c
+
+
+src/Combat/Overlay_31/CallStubsThenSetHandler_02234a08.cpp:
+    complete
+    .text start:0x02234a08 end:0x02234a3c
+
+
+src/Combat/Overlay_31/CallWithZeroExtra_0223e218_022373b4.cpp:
+    complete
+    .text start:0x022373b4 end:0x022373fc
+
+
+src/Combat/Overlay_31/CheckField1dAndSetHandler_02232a84.cpp:
+    complete
+    .text start:0x02232a84 end:0x02232ac0
+
+
+src/Combat/Overlay_31/ClearGlobalBuffers_0223b07c.cpp:
+    complete
+    .text start:0x0223b07c end:0x0223b0c0
+
+
+src/Combat/Overlay_31/ClearHolderIfFieldZero_0222ee34.cpp:
+    complete
+    .text start:0x0222ee34 end:0x0222ee70
+
+
+src/Combat/Overlay_31/CopyPaletteBufferAndNotify_0223508c.cpp:
+    complete
+    .text start:0x0223508c end:0x022350bc
+
+
+src/Combat/Overlay_31/DispatchIndexedTailCall_02230ca4.cpp:
+    complete
+    .text start:0x02230ca4 end:0x02230cd8
+
+
+src/Combat/Overlay_31/DispatchThenSetup_0222b4f8.cpp:
+    complete
+    .text start:0x0222b4f8 end:0x0222b52c
+
+
+src/Combat/Overlay_31/DispatchThenSetup_0222e7f8.cpp:
+    complete
+    .text start:0x0222e7f8 end:0x0222e82c
+
+
+src/Combat/Overlay_31/DispatchThenSetup_022311fc.cpp:
+    complete
+    .text start:0x022311fc end:0x02231230
+
+
+src/Combat/Overlay_31/DispatchThenSetup_02231614.cpp:
+    complete
+    .text start:0x02231614 end:0x02231648
+
+
+src/Combat/Overlay_31/DoNothing_0222d090.cpp:
+    complete
+    .text start:0x0222d090 end:0x0222d094
+
+
+src/Combat/Overlay_31/DoNothing_0222de04.cpp:
+    complete
+    .text start:0x0222de04 end:0x0222de08
+
+
+src/Combat/Overlay_31/DoNothing_0222e8c4.cpp:
+    complete
+    .text start:0x0222e8c4 end:0x0222e8c8
+
+
+src/Combat/Overlay_31/DoNothing_02231084.cpp:
+    complete
+    .text start:0x02231084 end:0x02231088
+
+
+src/Combat/Overlay_31/EmptyFunc_02233c8c.cpp:
+    complete
+    .text start:0x02233c8c end:0x02233c90
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_02232810.cpp:
+    complete
+    .text start:0x02232810 end:0x02232844
+
+
+src/Combat/Overlay_31/GetField16_02222e0c_02234ae0.cpp:
+    complete
+    .text start:0x02234ae0 end:0x02234b2c
+
+
+src/Combat/Overlay_31/func_ov031_022312a4.cpp:
+    complete
+    .text start:0x022312a4 end:0x022312dc
+
+
+src/Combat/Overlay_31/func_ov031_0223d8a0.cpp:
+    complete
+    .text start:0x0223e2ec end:0x0223e330
