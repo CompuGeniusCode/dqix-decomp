@@ -2600,3 +2600,103 @@ src/Combat/Overlay_17/SetHalfFieldsAndEnqueueIfActive_021d1c2c.cpp:
 src/Combat/Overlay_17/SetupObj_021d49d0.cpp:
     complete
     .text start:0x021d49d0 end:0x021d4a24
+
+
+src/Combat/Overlay_17/ClearByteField17182_02195520.cpp:
+    complete
+    .text start:0x02195520 end:0x02195530
+
+
+src/Combat/Overlay_17/ClearByteField17201_0218d500.cpp:
+    complete
+    .text start:0x0218d500 end:0x0218d510
+
+
+src/Combat/Overlay_17/ClearBytes0And1_021941ec.cpp:
+    complete
+    .text start:0x021941ec end:0x021941fc
+
+
+src/Combat/Overlay_17/ClearFlag320_02195540.cpp:
+    complete
+    .text start:0x02195540 end:0x02195550
+
+
+src/Combat/Overlay_17/ClearFlag658_0219aa5c.cpp:
+    complete
+    .text start:0x0219aa5c end:0x0219aa6c
+
+
+src/Combat/Overlay_17/ForwardObjAndField0_021a3af0.cpp:
+    complete
+    .text start:0x021a3af0 end:0x021a3b00
+
+
+src/Combat/Overlay_17/ForwardObjAndField0_021a3b30.cpp:
+    complete
+    .text start:0x021a3b30 end:0x021a3b40
+
+
+src/Combat/Overlay_17/ForwardObjAndField0_021a3dcc.cpp:
+    complete
+    .text start:0x021a3dcc end:0x021a3ddc
+
+
+src/Combat/Overlay_17/ForwardObjAndField0_021a4358.cpp:
+    complete
+    .text start:0x021a4358 end:0x021a4368
+
+
+src/Combat/Overlay_17/GetAbsAngleDeltaBetween_021a4754.cpp:
+    complete
+    .text start:0x021a4754 end:0x021a476c
+
+
+src/Combat/Overlay_17/IsFieldByteZero_02195760.cpp:
+    complete
+    .text start:0x02195760 end:0x0219577c
+
+
+src/Combat/Overlay_17/MaybeSetFlag6cForCombatant_021a23b0.cpp:
+    complete
+    .text start:0x021a23b0 end:0x021a23e4
+
+
+src/Combat/Overlay_17/MaybeUpdateOrDispatchEntry_021959ec.cpp:
+    complete
+    .text start:0x021959ec end:0x02195a20
+
+
+src/Combat/Overlay_17/SetBoolFieldAt20_021a932c.cpp:
+    complete
+    .text start:0x021a932c end:0x021a933c
+
+
+src/Combat/Overlay_17/SetFieldFlag17188_0218d258.cpp:
+    complete
+    .text start:0x0218d258 end:0x0218d268
+
+
+src/Combat/Overlay_17/SetFlag2e6_0219aa6c.cpp:
+    complete
+    .text start:0x0219aa6c end:0x0219aa7c
+
+
+src/Combat/Overlay_17/SetFlag320_02195530.cpp:
+    complete
+    .text start:0x02195530 end:0x02195540
+
+
+src/Combat/Overlay_17/SetFlagBits55eIfActive_0218b5f8.cpp:
+    complete
+    .text start:0x0218b5f8 end:0x0218b628
+
+
+src/Combat/Overlay_17/SetFlagPairB_0218b5a0.cpp:
+    complete
+    .text start:0x0218b5a0 end:0x0218b5b0
+
+
+src/Combat/Overlay_17/SetNodeField8AndAppend_0218d77c.cpp:
+    complete
+    .text start:0x0218d77c end:0x0218d7b0
