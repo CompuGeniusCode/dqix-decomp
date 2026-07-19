@@ -3370,3 +3370,53 @@ src/Combat/Overlay_17/AppendTagIfHeadMatch_021d0f94.cpp:
 src/Combat/Overlay_17/func_ov017_021ccb58.cpp:
     complete
     .text start:0x021ccb58 end:0x021ccbdc
+
+
+src/Combat/Overlay_17/ApplyOrAdvanceListEntry_021b8c84.cpp:
+    complete
+    .text start:0x021b8c84 end:0x021b8d18
+
+
+src/Combat/Overlay_17/CheckCombatantsAndBit4_021b0b4c.cpp:
+    complete
+    .text start:0x021b0b4c end:0x021b0bc0
+
+
+src/Combat/Overlay_17/DispatchStateAndMaybeInit_021aef0c.cpp:
+    complete
+    .text start:0x021aef0c end:0x021aef80
+
+
+src/Combat/Overlay_17/FinalizeAndPopStacks_021b14ec.cpp:
+    complete
+    .text start:0x021b14ec end:0x021b1564
+
+
+src/Combat/Overlay_17/InitAndCopyVecsFromCombatant_0219c6f4.cpp:
+    complete
+    .text start:0x0219c6f4 end:0x0219c774
+
+
+src/Combat/Overlay_17/InitAndDispatchField67_0219bf04.cpp:
+    complete
+    .text start:0x0219bf04 end:0x0219bf74
+
+
+src/Combat/Overlay_17/InitFieldArenaListsAndCounters_021996fc.cpp:
+    complete
+    .text start:0x021996fc end:0x02199780
+
+
+src/Combat/Overlay_17/InitObj_021acd7c.cpp:
+    complete
+    .text start:0x021acd7c end:0x021acdf4
+
+
+src/Combat/Overlay_17/func_ov017_021a05a8.cpp:
+    complete
+    .text start:0x021a05a8 end:0x021a0630
+
+
+src/Combat/Overlay_17/func_ov017_021ac32c.cpp:
+    complete
+    .text start:0x021ac32c end:0x021ac3b0
