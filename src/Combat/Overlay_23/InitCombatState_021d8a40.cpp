@@ -41,8 +41,8 @@ struct CombatState_021d8a40 {
     int f120;
 };
 
-// USA: func_ov023_021d8a40
-ARM void InitCombatState_021d8a40(struct CombatState_021d8a40* obj) {
+// USA: func_ov023_021d8a40  (semantic: InitCombatState_021d8a40)
+extern "C" ARM void func_ov023_021d8a40(struct CombatState_021d8a40* obj) {
     obj->f18 = 0;
     obj->f19 = 0;
     BackupSubBgControlRegisters((struct SubBgControlBackup02074b64*)((char*)obj + 8));

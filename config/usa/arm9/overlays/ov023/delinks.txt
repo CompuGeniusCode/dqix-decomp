@@ -1834,3 +1834,33 @@ src/Combat/Overlay_23/CountCombatantsByStatus1_021ea46c.cpp:
 src/Combat/Overlay_23/CountCombatantsByStatus2_021ea51c.cpp:
     complete
     .text start:0x021ea51c end:0x021ea5a4
+
+
+src/Combat/Overlay_23/AddOffset32_021fa598.cpp:
+    complete
+    .text start:0x021fa598 end:0x021fa5a0
+
+
+src/Combat/Overlay_23/AppendManagerFieldToBuffer_021e915c.cpp:
+    complete
+    .text start:0x021e915c end:0x021e9190
+
+
+src/Combat/Overlay_23/AreAllListedCombatantsFlagged_021ed92c.cpp:
+    complete
+    .text start:0x021ed92c end:0x021ed988
+
+
+src/Combat/Overlay_23/BlankFunction_021fc46c.cpp:
+    complete
+    .text start:0x021fc46c end:0x021fc470
+
+
+src/Combat/Overlay_23/DecodePacked021dbb34.cpp:
+    complete
+    .text start:0x021dbb34 end:0x021dbc58
+
+
+src/Combat/Overlay_23/FormatAndDispatchValue_021db3c0.cpp:
+    complete
+    .text start:0x021db3c0 end:0x021db45c

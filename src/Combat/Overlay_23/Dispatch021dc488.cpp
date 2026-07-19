@@ -29,8 +29,8 @@ extern Dst021dc488 data_ov023_021fda60;
 
 extern Fn021dc488 data_ov023_021fda88[];
 
-// USA: func_ov023_021dc488
-ARM int Dispatch021dc488(Obj021dc488* obj) {
+// USA: func_ov023_021dc488  (semantic: Dispatch021dc488)
+extern "C" ARM int func_ov023_021dc488(Obj021dc488* obj) {
     func_ov023_021db110(&data_ov023_021ffa0c);
     if (!(data_ov023_021ff9e0.flags & 1)) {
         data_ov023_021fda60.a = data_020e6d5c.x;

@@ -15,8 +15,8 @@ extern "C" int func_ov017_021bdbe4(void* base);
 extern "C" int func_ov017_021bdbd8(void* base);
 extern "C" void func_ov023_021e5628(void* a, int* b);
 
-// USA: func_ov023_021e3084
-ARM void UpdateTimerAndDispatchReport_021e3084(struct Obj021e3084* obj) {
+// USA: func_ov023_021e3084  (semantic: UpdateTimerAndDispatchReport_021e3084)
+extern "C" ARM void func_ov023_021e3084(struct Obj021e3084* obj) {
 	GetBattleStruct();
 	if (obj->field134 > 0) {
 		obj->field134--;

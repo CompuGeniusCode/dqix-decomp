@@ -5,8 +5,8 @@ extern struct DataObj0224e5ac data_ov031_0224e5ac;
 struct Header02211b28 { int magic; int value; };
 void* InitHeaderMagic_02211b28(Header02211b28*, int);
 
-// USA: func_ov031_02211b64
-ARM void* Alloc_02211b64(void *a, int b) {
+// USA: func_ov031_02211b64  (semantic: Alloc_02211b64)
+extern "C" ARM void* func_ov031_02211b64(void *a, int b) {
 	asm {
 		ldr r3, =data_ov031_0224e5ac
 		mov r4, b
