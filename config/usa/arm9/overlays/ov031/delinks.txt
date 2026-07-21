@@ -5625,3 +5625,158 @@ src/Combat/Overlay_31/func_ov031_0223f1e8.cpp:
 src/Combat/Overlay_31/func_ov031_02240104.cpp:
     complete
     .text start:0x02240ee8 end:0x02240f74
+
+
+src/Combat/Overlay_31/AdvanceRingBufferAndMaybeTailCall_022035e0.cpp:
+    complete
+    .text start:0x022035e0 end:0x02203670
+
+
+src/Combat/Overlay_31/ApplyActionBuffer_022140e8.cpp:
+    complete
+    .text start:0x022140e8 end:0x022141d4
+
+
+src/Combat/Overlay_31/ComputeHmacMd5_02209158.cpp:
+    complete
+    .text start:0x02209158 end:0x02209234
+
+
+src/Combat/Overlay_31/ComputeHmacSha1_02209234.cpp:
+    complete
+    .text start:0x02209234 end:0x02209310
+
+
+src/Combat/Overlay_31/CycleAndAdvanceState_02203398_022033e8.cpp:
+    complete
+    .text start:0x022033e8 end:0x02203424
+
+
+src/Combat/Overlay_31/DispatchHandlerBySel_022127c0.cpp:
+    complete
+    .text start:0x022127c0 end:0x022128b8
+
+
+src/Combat/Overlay_31/Dispatch_02205a38.cpp:
+    complete
+    .text start:0x02205a38 end:0x02205ad4
+
+
+src/Combat/Overlay_31/ExpireHandlesAndReadyPending_0220aa98.cpp:
+    complete
+    .text start:0x0220aa98 end:0x0220ab78
+
+
+src/Combat/Overlay_31/FindMatchingNode_02201e0c.cpp:
+    complete
+    .text start:0x02201e0c end:0x02201e70
+
+
+src/Combat/Overlay_31/GetChecked144AndValue4a_0220f084.cpp:
+    complete
+    .text start:0x0220f084 end:0x0220f0e4
+
+
+src/Combat/Overlay_31/GetField0AndMapToOutParam_022119d0.cpp:
+    complete
+    .text start:0x022119d0 end:0x02211acc
+
+
+src/Combat/Overlay_31/GetSetInterruptFlag26a_0220eb88.cpp:
+    complete
+    .text start:0x0220eb88 end:0x0220ec04
+
+
+src/Combat/Overlay_31/InitOrResumeContext_02217db4.cpp:
+    complete
+    .text start:0x02217db4 end:0x02217e70
+
+
+src/Combat/Overlay_31/IsNotState76_0220a444_0220a474.cpp:
+    complete
+    .text start:0x0220a474 end:0x0220a540
+
+
+src/Combat/Overlay_31/ProcessAndMaybeNotify_022051a8.cpp:
+    complete
+    .text start:0x022051a8 end:0x022051f4
+
+
+src/Combat/Overlay_31/SelectFieldOrValue_02200730.cpp:
+    complete
+    .text start:0x02200730 end:0x02200754
+
+
+src/Combat/Overlay_31/StartSession_02204c20.cpp:
+    complete
+    .text start:0x02204c20 end:0x02204c84
+
+
+src/Combat/Overlay_31/TailCallType16_02201f84_02202744.cpp:
+    complete
+    .text start:0x02202744 end:0x02202810
+
+
+src/Combat/Overlay_31/WaitForField44_022034ac_0220357c.cpp:
+    complete
+    .text start:0x0220357c end:0x022035e0
+
+
+src/Combat/Overlay_31/func_ov031_022005b4.cpp:
+    complete
+    .text start:0x022005b4 end:0x02200668
+
+
+src/Combat/Overlay_31/func_ov031_022017c4.cpp:
+    complete
+    .text start:0x022017c4 end:0x0220186c
+
+
+src/Combat/Overlay_31/func_ov031_022046b8.cpp:
+    complete
+    .text start:0x022046b8 end:0x02204710
+
+
+src/Combat/Overlay_31/func_ov031_02205364.cpp:
+    complete
+    .text start:0x02205364 end:0x022053a0
+
+
+src/Combat/Overlay_31/func_ov031_022053a0.cpp:
+    complete
+    .text start:0x022053a0 end:0x02205414
+
+
+src/Combat/Overlay_31/func_ov031_02206b68.cpp:
+    complete
+    .text start:0x02206a68 end:0x02206b68
+
+
+src/Combat/Overlay_31/func_ov031_0220cce4.cpp:
+    complete
+    .text start:0x0220cce4 end:0x0220cdd4
+
+
+src/Combat/Overlay_31/func_ov031_0220e4bc.cpp:
+    complete
+    .text start:0x0220e4bc end:0x0220e584
+
+
+src/Combat/Overlay_31/func_ov031_02212184.cpp:
+    complete
+    .text start:0x02212184 end:0x02212248
+
+
+src/Combat/Overlay_31/func_ov031_02212ee8.cpp:
+    complete
+    .text start:0x02212ee8 end:0x02212fb8
+
+
+src/Combat/Overlay_31/func_ov031_022168ec.cpp:
+    complete
+    .text start:0x022168ec end:0x022169a0
+
+
+src/Combat/Overlay_31/func_ov031_02217d1c.cpp:
+    complete
+    .text start:0x02217d1c end:0x02217db4
