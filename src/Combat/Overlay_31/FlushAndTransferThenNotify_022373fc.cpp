@@ -1,0 +1,17 @@
+#include <globaldefs.h>
+#include "System/Cache.h"
+
+int TransferToSubBg1ScreenBase(int arg0, int arg1, unsigned int arg2);
+extern "C" void func_ov031_0223b710(void* p);
+extern "C" void func_ov031_0223e2c0(int idx, void* obj);
+
+struct State02290d04 { void* field0; };
+extern State02290d04 data_ov031_02290d04;
+
+// USA: func_ov031_022373fc  (semantic: FlushAndTransferThenNotify_022373fc)
+extern "C" ARM void func_ov031_022373fc(void* arg) {
+	CleanInvalidateCacheRange(data_ov031_02290d04.field0, 0x600);
+	TransferToSubBg1ScreenBase((int)data_ov031_02290d04.field0, 0, 0x600);
+	func_ov031_0223b710(data_ov031_02290d04.field0);
+	func_ov031_0223e2c0(1, arg);
+}
