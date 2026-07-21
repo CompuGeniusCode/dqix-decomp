@@ -3575,3 +3575,73 @@ src/Combat/Overlay_17/InitNodeRangeIfTagMatches_021d4c04.cpp:
 src/Combat/Overlay_17/func_ov017_021d46a4.cpp:
     complete
     .text start:0x021d45e0 end:0x021d46a4
+
+
+src/Combat/Overlay_17/AdvanceSlotQueue_021b05c4.cpp:
+    complete
+    .text start:0x021b05c4 end:0x021b06b0
+
+
+src/Combat/Overlay_17/AppendPacketAndSetFlag_021a99dc.cpp:
+    complete
+    .text start:0x021a99dc end:0x021a9a9c
+
+
+src/Combat/Overlay_17/CheckFlagsOrByteAndDispatch_021aa080.cpp:
+    complete
+    .text start:0x021aa080 end:0x021aa16c
+
+
+src/Combat/Overlay_17/CheckStateAndDispatchGlobal_021b2698.cpp:
+    complete
+    .text start:0x021b2698 end:0x021b2758
+
+
+src/Combat/Overlay_17/CheckStateAndDispatchResetOrAdvance_021b5f00.cpp:
+    complete
+    .text start:0x021b5f00 end:0x021b5fc0
+
+
+src/Combat/Overlay_17/DispatchEventByType_021a3ddc.cpp:
+    complete
+    .text start:0x021a3ddc end:0x021a3ef0
+
+
+src/Combat/Overlay_17/DispatchOrEnqueueEvent_021a7c94.cpp:
+    complete
+    .text start:0x021a7c94 end:0x021a7d78
+
+
+src/Combat/Overlay_17/EnqueueEventTagX_021c6814.cpp:
+    complete
+    .text start:0x021c6814 end:0x021c68e8
+
+
+src/Combat/Overlay_17/InitStruct_021af59c.cpp:
+    complete
+    .text start:0x021af59c end:0x021af66c
+
+
+src/Combat/Overlay_17/SetSubStateAndDispatch_0219de70.cpp:
+    complete
+    .text start:0x0219de70 end:0x0219dffc
+
+
+src/Combat/Overlay_17/SomeFunc_02199138.cpp:
+    complete
+    .text start:0x02199138 end:0x021991e4
+
+
+src/Combat/Overlay_17/SyncOrAimCombatantByHeadState_021ceee0.cpp:
+    complete
+    .text start:0x021ceee0 end:0x021cefe0
+
+
+src/Combat/Overlay_17/UpdateFieldsAndCounters_021c16cc.cpp:
+    complete
+    .text start:0x021c16cc end:0x021c178c
+
+
+src/Combat/Overlay_17/UpdateVec3XYFromFixed_0219b578.cpp:
+    complete
+    .text start:0x0219b578 end:0x0219b624

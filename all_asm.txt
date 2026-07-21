@@ -1,0 +1,744 @@
+=== 0220e7b0 ===
+build/usa/asm/ov031/ov031_49.s:func_ov031_0220e7b0: ; 0x0220e7b0
+build/usa/asm/ov031/ov031_49.s-    stmdb sp!, {r3, r4, lr}
+build/usa/asm/ov031/ov031_49.s-    sub sp, sp, #0x4
+build/usa/asm/ov031/ov031_49.s-    ldrh r0, [r0, #0x2]
+build/usa/asm/ov031/ov031_49.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_49.s-    bne .L_0220ea88
+build/usa/asm/ov031/ov031_49.s-    ldr r2, .L_0220eaac
+build/usa/asm/ov031/ov031_49.s-    mov r0, #0x0
+build/usa/asm/ov031/ov031_49.s-    ldr r1, [r2, #0x0]
+build/usa/asm/ov031/ov031_49.s-    add r1, r1, #0x2000
+build/usa/asm/ov031/ov031_49.s-    strb r0, [r1, #0x26b]
+build/usa/asm/ov031/ov031_49.s-    ldr r1, [r2, #0x0]
+build/usa/asm/ov031/ov031_49.s-    add r1, r1, #0x2200
+build/usa/asm/ov031/ov031_49.s-    strh r0, [r1, #0x82]
+build/usa/asm/ov031/ov031_49.s-    ldr r3, [r2, #0x0]
+build/usa/asm/ov031/ov031_49.s-    add r1, r3, #0x2000
+build/usa/asm/ov031/ov031_49.s-    ldr r1, [r1, #0x260]
+build/usa/asm/ov031/ov031_49.s-    cmp r1, #0xd
+build/usa/asm/ov031/ov031_49.s-    addls pc, pc, r1, lsl #0x2
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58
+build/usa/asm/ov031/ov031_49.s-.L_0220e7fc: ; jump table
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 0
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 1
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 2
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 3
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 4
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e834 ; case 5
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e834 ; case 6
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e858 ; case 7
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e87c ; case 8
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e994 ; case 9
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e9c0 ; case 10
+build/usa/asm/ov031/ov031_49.s-    b .L_0220ea58 ; case 11
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e994 ; case 12
+build/usa/asm/ov031/ov031_49.s-    b .L_0220e9ec ; case 13
+build/usa/asm/ov031/ov031_49.s-.L_0220e834:
+build/usa/asm/ov031/ov031_49.s-    mov r0, #0x3
+build/usa/asm/ov031/ov031_49.s-    bl func_ov031_0220da1c
+build/usa/asm/ov031/ov031_49.s-    mov r1, #0x0
+build/usa/asm/ov031/ov031_49.s-    ldr r3, .L_0220eab0
+build/usa/asm/ov031/ov031_49.s-    mov r2, r1
+build/usa/asm/ov031/ov031_49.s-    mov r0, #0x1
+build/usa/asm/ov031/ov031_49.s-    bl func_ov031_0220d984
+build/usa/asm/ov031/ov031_49.s-    add sp, sp, #0x4
+build/usa/asm/ov031/ov031_49.s-    ldmia sp!, {r3, r4, pc}
+build/usa/asm/ov031/ov031_49.s-.L_0220e858:
+build/usa/asm/ov031/ov031_49.s-    mov r0, #0x3
+build/usa/asm/ov031/ov031_49.s-    bl func_ov031_0220da1c
+build/usa/asm/ov031/ov031_49.s-    mov r0, #0x0
+build/usa/asm/ov031/ov031_49.s-    ldr r3, .L_0220eab4
+build/usa/asm/ov031/ov031_49.s-    mov r1, r0
+build/usa/asm/ov031/ov031_49.s-    mov r2, r0
+build/usa/asm/ov031/ov031_49.s-    bl func_ov031_0220d984
+build/usa/asm/ov031/ov031_49.s-    add sp, sp, #0x4
+build/usa/asm/ov031/ov031_49.s-    ldmia sp!, {r3, r4, pc}
+build/usa/asm/ov031/ov031_49.s-.L_0220e87c:
+build/usa/asm/ov031/ov031_49.s-    add r1, r3, #0x2200
+build/usa/asm/ov031/ov031_49.s-    ldrh r4, [r1, #0xf8]
+build/usa/asm/ov031/ov031_49.s-    strh r0, [r1, #0xf8]
+build/usa/asm/ov031/ov031_49.s-    cmp r4, #0x12
+build/usa/asm/ov031/ov031_49.s-    bne .L_0220e968
+=== 02237b2c ===
+build/usa/asm/ov031/ov031_210.s:func_ov031_02237b2c: ; 0x02237b2c
+build/usa/asm/ov031/ov031_210.s-    stmdb sp!, {r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_210.s-    sub sp, sp, #0x24
+build/usa/asm/ov031/ov031_210.s-    ldr r5, .L_02237e28
+build/usa/asm/ov031/ov031_210.s-    ldr r4, .L_02237e2c
+build/usa/asm/ov031/ov031_210.s-    ldrb r10, [r5, #0x4]
+build/usa/asm/ov031/ov031_210.s-    ldrb r9, [r5, #0x5]
+build/usa/asm/ov031/ov031_210.s-    ldrb r8, [r5, #0x6]
+build/usa/asm/ov031/ov031_210.s-    ldrb r7, [r5, #0x7]
+build/usa/asm/ov031/ov031_210.s-    ldrb r6, [r5, #0x8]
+build/usa/asm/ov031/ov031_210.s-    ldrb r5, [r5, #0x9]
+build/usa/asm/ov031/ov031_210.s-    strb r10, [sp, #0x1c]
+build/usa/asm/ov031/ov031_210.s-    mov r11, r0
+build/usa/asm/ov031/ov031_210.s-    str r2, [sp, #0x10]
+build/usa/asm/ov031/ov031_210.s-    mov r2, r3
+build/usa/asm/ov031/ov031_210.s-    mov r10, r1
+build/usa/asm/ov031/ov031_210.s-    ldr r0, [r4, #0x0]
+build/usa/asm/ov031/ov031_210.s-    ldr r3, [sp, #0x48]
+build/usa/asm/ov031/ov031_210.s-    mov r1, r11
+build/usa/asm/ov031/ov031_210.s-    strb r9, [sp, #0x1d]
+build/usa/asm/ov031/ov031_210.s-    strb r8, [sp, #0x1e]
+build/usa/asm/ov031/ov031_210.s-    strb r7, [sp, #0x1f]
+build/usa/asm/ov031/ov031_210.s-    strb r6, [sp, #0x20]
+build/usa/asm/ov031/ov031_210.s-    strb r5, [sp, #0x21]
+build/usa/asm/ov031/ov031_210.s-    bl func_ov031_022276cc
+build/usa/asm/ov031/ov031_210.s-    str r0, [sp, #0x14]
+build/usa/asm/ov031/ov031_210.s-    mov r0, #0x20
+build/usa/asm/ov031/ov031_210.s-    mov r1, #0x4
+build/usa/asm/ov031/ov031_210.s-    bl func_ov031_0223cf4c
+build/usa/asm/ov031/ov031_210.s-    ldr r1, .L_02237e30
+build/usa/asm/ov031/ov031_210.s-    mvn r3, #0x1
+build/usa/asm/ov031/ov031_210.s-    str r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_210.s-    strb r10, [r0, #0x1c]
+build/usa/asm/ov031/ov031_210.s-    ldr r2, [r1, #0x0]
+build/usa/asm/ov031/ov031_210.s-    ldr r0, .L_02237e34
+build/usa/asm/ov031/ov031_210.s-    strb r3, [r2, #0x1b]
+build/usa/asm/ov031/ov031_210.s-    ldr r3, [r1, #0x0]
+build/usa/asm/ov031/ov031_210.s-    ldr r2, [sp, #0x10]
+build/usa/asm/ov031/ov031_210.s-    mov r1, #0x1f
+build/usa/asm/ov031/ov031_210.s-    strb r2, [r3, #0x1e]
+build/usa/asm/ov031/ov031_210.s-    mov r2, #0x0
+build/usa/asm/ov031/ov031_210.s-    bl _Z31StoreSignedPairWithFlag020c5100Ptii
+build/usa/asm/ov031/ov031_210.s-    ldr r1, .L_02237e38
+build/usa/asm/ov031/ov031_210.s-    mov r0, #0x0
+build/usa/asm/ov031/ov031_210.s-    ldrb r1, [r1, r10]
+build/usa/asm/ov031/ov031_210.s-    mov r2, r0
+build/usa/asm/ov031/ov031_210.s-    bl func_ov031_0223be70
+build/usa/asm/ov031/ov031_210.s-    ldr r3, .L_02237e30
+build/usa/asm/ov031/ov031_210.s-    mvn r1, #0x0
+build/usa/asm/ov031/ov031_210.s-    ldr r4, [r3, #0x0]
+build/usa/asm/ov031/ov031_210.s-    mov r2, #0x100
+build/usa/asm/ov031/ov031_210.s-    str r0, [r4, #0x0]
+build/usa/asm/ov031/ov031_210.s-    ldr r0, [r3, #0x0]
+build/usa/asm/ov031/ov031_210.s-    mov r3, #0x0
+build/usa/asm/ov031/ov031_210.s-    ldr r0, [r0, #0x0]
+build/usa/asm/ov031/ov031_210.s-    bl func_ov031_0223bbd8
+build/usa/asm/ov031/ov031_210.s-    ldr r0, .L_02237e30
+build/usa/asm/ov031/ov031_210.s-    mvn r1, #0x0
+build/usa/asm/ov031/ov031_210.s-    ldr r0, [r0, #0x0]
+build/usa/asm/ov031/ov031_210.s-    mov r2, #0x0
+build/usa/asm/ov031/ov031_210.s-    ldr r0, [r0, #0x0]
+=== 0223ea84 ===
+build/usa/asm/ov031/ov031_251.s:func_ov031_0223ea84: ; 0x0223ea84
+build/usa/asm/ov031/ov031_251.s-    stmdb sp!, {r3, r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_251.s-    sub sp, sp, #0x18
+build/usa/asm/ov031/ov031_251.s-    mov r9, r2
+build/usa/asm/ov031/ov031_251.s-    mov r10, r1
+build/usa/asm/ov031/ov031_251.s-    ldr r1, [r9, #0x8]
+build/usa/asm/ov031/ov031_251.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_251.s-    str r1, [sp, #0x8]
+build/usa/asm/ov031/ov031_251.s-    ldr r1, [r9, #0xc]
+build/usa/asm/ov031/ov031_251.s-    ldr r5, [r9, #0x4]
+build/usa/asm/ov031/ov031_251.s-    str r1, [sp, #0x4]
+build/usa/asm/ov031/ov031_251.s-    mvn r1, #0x0
+build/usa/asm/ov031/ov031_251.s-    str r1, [sp, #0x0]
+build/usa/asm/ov031/ov031_251.s-    beq .L_0223eacc
+build/usa/asm/ov031/ov031_251.s-    cmp r0, #0x6
+build/usa/asm/ov031/ov031_251.s-    beq .L_0223eca8
+build/usa/asm/ov031/ov031_251.s-    cmp r0, #0x8
+build/usa/asm/ov031/ov031_251.s-    beq .L_0223eca0
+build/usa/asm/ov031/ov031_251.s-    b .L_0223ecb0
+build/usa/asm/ov031/ov031_251.s-.L_0223eacc:
+build/usa/asm/ov031/ov031_251.s-    ldr r1, .L_0223ed9c
+build/usa/asm/ov031/ov031_251.s-    add r2, sp, #0x14
+build/usa/asm/ov031/ov031_251.s-    mov r0, r10
+build/usa/asm/ov031/ov031_251.s-    bl func_ov031_022411e4
+build/usa/asm/ov031/ov031_251.s-    cmp r0, #0x3
+build/usa/asm/ov031/ov031_251.s-    movne r4, #0x3
+build/usa/asm/ov031/ov031_251.s-    bne .L_0223ecb4
+build/usa/asm/ov031/ov031_251.s-    ldr r0, [sp, #0x14]
+build/usa/asm/ov031/ov031_251.s-    mov r1, #0x3
+build/usa/asm/ov031/ov031_251.s-    bl func_ov031_0223fb8c
+build/usa/asm/ov031/ov031_251.s-    ldr r1, .L_0223eda0
+build/usa/asm/ov031/ov031_251.s-    cmp r0, r1
+build/usa/asm/ov031/ov031_251.s-    bne .L_0223ec18
+build/usa/asm/ov031/ov031_251.s-    add r1, sp, #0x10
+build/usa/asm/ov031/ov031_251.s-    mov r0, r10
+build/usa/asm/ov031/ov031_251.s-    mov r8, #0x0
+build/usa/asm/ov031/ov031_251.s-    bl _Z19GetField24_022412e8P14Struct022412e8Pi
+build/usa/asm/ov031/ov031_251.s-    movs r6, r0
+build/usa/asm/ov031/ov031_251.s-    movmi r4, #0x3
+build/usa/asm/ov031/ov031_251.s-    bmi .L_0223ecb4
+build/usa/asm/ov031/ov031_251.s-    cmp r6, #0x0
+build/usa/asm/ov031/ov031_251.s-    mov r7, r8
+build/usa/asm/ov031/ov031_251.s-    ble .L_0223ec04
+build/usa/asm/ov031/ov031_251.s-    ldr r4, .L_0223eda4
+build/usa/asm/ov031/ov031_251.s-    mov r11, #0x8
+build/usa/asm/ov031/ov031_251.s-.L_0223eb30:
+build/usa/asm/ov031/ov031_251.s-    ldr r3, [sp, #0x10]
+build/usa/asm/ov031/ov031_251.s-    mov r1, r7
+build/usa/asm/ov031/ov031_251.s-    add r2, r3, r7
+build/usa/asm/ov031/ov031_251.s-    b .L_0223eb48
+build/usa/asm/ov031/ov031_251.s-.L_0223eb40:
+build/usa/asm/ov031/ov031_251.s-    add r2, r2, #0x1
+build/usa/asm/ov031/ov031_251.s-    add r7, r7, #0x1
+build/usa/asm/ov031/ov031_251.s-.L_0223eb48:
+build/usa/asm/ov031/ov031_251.s-    ldrsb r0, [r2, #0x0]
+build/usa/asm/ov031/ov031_251.s-    cmp r0, #0x3d
+build/usa/asm/ov031/ov031_251.s-    beq .L_0223eb5c
+build/usa/asm/ov031/ov031_251.s-    cmp r7, r6
+build/usa/asm/ov031/ov031_251.s-    blt .L_0223eb40
+build/usa/asm/ov031/ov031_251.s-.L_0223eb5c:
+build/usa/asm/ov031/ov031_251.s-    sub r0, r7, r1
+=== 02216360 ===
+build/usa/asm/ov031/ov031_84.s:func_ov031_02216360: ; 0x02216360
+build/usa/asm/ov031/ov031_84.s-    stmdb sp!, {r4, r5, r6, r7, r8, lr}
+build/usa/asm/ov031/ov031_84.s-    ldr r1, .L_02216678
+build/usa/asm/ov031/ov031_84.s-    ldr r0, [r1, #0x4]
+build/usa/asm/ov031/ov031_84.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_84.s-    ldrne r3, [r1, #0x0]
+build/usa/asm/ov031/ov031_84.s-    cmpne r3, #0x0
+build/usa/asm/ov031/ov031_84.s-    moveq r0, #0x3
+build/usa/asm/ov031/ov031_84.s-    ldmeqia sp!, {r4, r5, r6, r7, r8, pc}
+build/usa/asm/ov031/ov031_84.s-    ldr r2, [r1, #0x8]
+build/usa/asm/ov031/ov031_84.s-    mov r6, #0x1
+build/usa/asm/ov031/ov031_84.s-    cmp r2, #0xb
+build/usa/asm/ov031/ov031_84.s-    addls pc, pc, r2, lsl #0x2
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670
+build/usa/asm/ov031/ov031_84.s-.L_02216394: ; jump table
+build/usa/asm/ov031/ov031_84.s-    b .L_022163c4 ; case 0
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670 ; case 1
+build/usa/asm/ov031/ov031_84.s-    b .L_022163f0 ; case 2
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670 ; case 3
+build/usa/asm/ov031/ov031_84.s-    b .L_02216448 ; case 4
+build/usa/asm/ov031/ov031_84.s-    b .L_022164ac ; case 5
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670 ; case 6
+build/usa/asm/ov031/ov031_84.s-    b .L_022164d4 ; case 7
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670 ; case 8
+build/usa/asm/ov031/ov031_84.s-    b .L_022165a8 ; case 9
+build/usa/asm/ov031/ov031_84.s-    b .L_02216644 ; case 10
+build/usa/asm/ov031/ov031_84.s-    b .L_0221666c ; case 11
+build/usa/asm/ov031/ov031_84.s-.L_022163c4:
+build/usa/asm/ov031/ov031_84.s-    str r6, [r1, #0x8]
+build/usa/asm/ov031/ov031_84.s-    ldr r3, [r3, #0x790]
+build/usa/asm/ov031/ov031_84.s-    ldr r1, .L_0221667c
+build/usa/asm/ov031/ov031_84.s-    mov r2, #0x0
+build/usa/asm/ov031/ov031_84.s-    bl func_ov031_02215fd8
+build/usa/asm/ov031/ov031_84.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_84.s-    beq .L_02216670
+build/usa/asm/ov031/ov031_84.s-    ldr r0, .L_02216678
+build/usa/asm/ov031/ov031_84.s-    mov r1, #0xb
+build/usa/asm/ov031/ov031_84.s-    str r1, [r0, #0x8]
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670
+build/usa/asm/ov031/ov031_84.s-.L_022163f0:
+build/usa/asm/ov031/ov031_84.s-    ldr r0, .L_02216680
+build/usa/asm/ov031/ov031_84.s-    mov r2, #0x3
+build/usa/asm/ov031/ov031_84.s-    str r2, [r1, #0x8]
+build/usa/asm/ov031/ov031_84.s-    bl func_ov031_022160b0
+build/usa/asm/ov031/ov031_84.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_84.s-    bne .L_02216438
+build/usa/asm/ov031/ov031_84.s-    ldr r0, .L_02216678
+build/usa/asm/ov031/ov031_84.s-    ldr r1, [r0, #0x0]
+build/usa/asm/ov031/ov031_84.s-    ldr r0, [r1, #0x8]
+build/usa/asm/ov031/ov031_84.s-    ldr r1, [r1, #0x4]
+build/usa/asm/ov031/ov031_84.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_84.s-    cmpeq r1, #0x0
+build/usa/asm/ov031/ov031_84.s-    bne .L_02216670
+build/usa/asm/ov031/ov031_84.s-    bl _Z19GetCurrentTimestampv
+build/usa/asm/ov031/ov031_84.s-    ldr r2, .L_02216678
+build/usa/asm/ov031/ov031_84.s-    ldr r2, [r2, #0x0]
+build/usa/asm/ov031/ov031_84.s-    stmib r2, {r0, r1}
+build/usa/asm/ov031/ov031_84.s-    b .L_02216670
+build/usa/asm/ov031/ov031_84.s-.L_02216438:
+build/usa/asm/ov031/ov031_84.s-    ldr r0, .L_02216678
+build/usa/asm/ov031/ov031_84.s-    mov r1, #0xa
+=== 022258b4 ===
+build/usa/asm/ov031/ov031_104.s:func_ov031_022258b4: ; 0x022258b4
+build/usa/asm/ov031/ov031_104.s-    stmdb sp!, {r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_104.s-    sub sp, sp, #0x24
+build/usa/asm/ov031/ov031_104.s-    ldr r0, .L_02225bd4
+build/usa/asm/ov031/ov031_104.s-    mov r3, #0x1c
+build/usa/asm/ov031/ov031_104.s-    ldrh r5, [r0, #0x20]
+build/usa/asm/ov031/ov031_104.s-    ldrh r4, [r0, #0x22]
+build/usa/asm/ov031/ov031_104.s-    mov r2, #0x14
+build/usa/asm/ov031/ov031_104.s-    mov r0, #0x6c
+build/usa/asm/ov031/ov031_104.s-    mov r1, #0x4
+build/usa/asm/ov031/ov031_104.s-    strh r5, [sp, #0x1c]
+build/usa/asm/ov031/ov031_104.s-    strh r4, [sp, #0x1e]
+build/usa/asm/ov031/ov031_104.s-    strh r3, [sp, #0x20]
+build/usa/asm/ov031/ov031_104.s-    strh r2, [sp, #0x22]
+build/usa/asm/ov031/ov031_104.s-    bl func_ov031_0223cf4c
+build/usa/asm/ov031/ov031_104.s-    ldr r8, .L_02225bd8
+build/usa/asm/ov031/ov031_104.s-    mov r6, #0x0
+build/usa/asm/ov031/ov031_104.s-    mov r1, #0x1f
+build/usa/asm/ov031/ov031_104.s-    str r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    strb r1, [r0, #0x60]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    mov r1, #0x1
+build/usa/asm/ov031/ov031_104.s-    strb r6, [r0, #0x63]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    ldr r7, .L_02225bdc
+build/usa/asm/ov031/ov031_104.s-    strb r1, [r0, #0x66]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    mov r5, r6
+build/usa/asm/ov031/ov031_104.s-    strb r1, [r0, #0x67]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    mov r4, #0x36
+build/usa/asm/ov031/ov031_104.s-    strb r1, [r0, #0x68]
+build/usa/asm/ov031/ov031_104.s-.L_02225930:
+build/usa/asm/ov031/ov031_104.s-    mov r0, r5
+build/usa/asm/ov031/ov031_104.s-    mov r1, r4
+build/usa/asm/ov031/ov031_104.s-    bl _Z29CallTailCallThenBdb0_0223be44ii
+build/usa/asm/ov031/ov031_104.s-    ldr r1, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    add r1, r1, r6, lsl #0x2
+build/usa/asm/ov031/ov031_104.s-    str r0, [r1, #0x10]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    add r0, r0, r6, lsl #0x2
+build/usa/asm/ov031/ov031_104.s-    ldr r1, [r0, #0x10]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_104.s-    and r0, r0, r7
+build/usa/asm/ov031/ov031_104.s-    orr r0, r0, #0x200
+build/usa/asm/ov031/ov031_104.s-    str r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_104.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_104.s-    add r0, r0, r6, lsl #0x2
+build/usa/asm/ov031/ov031_104.s-    ldr r1, [r0, #0x10]
+build/usa/asm/ov031/ov031_104.s-    add r6, r6, #0x1
+build/usa/asm/ov031/ov031_104.s-    ldrh r0, [r1, #0x4]
+build/usa/asm/ov031/ov031_104.s-    cmp r6, #0xa
+build/usa/asm/ov031/ov031_104.s-    bic r0, r0, #0xc00
+build/usa/asm/ov031/ov031_104.s-    orr r0, r0, #0xc00
+build/usa/asm/ov031/ov031_104.s-    strh r0, [r1, #0x4]
+build/usa/asm/ov031/ov031_104.s-    blt .L_02225930
+build/usa/asm/ov031/ov031_104.s-    mov r6, #0x0
+build/usa/asm/ov031/ov031_104.s-    ldr r5, .L_02225be0
+build/usa/asm/ov031/ov031_104.s-    ldr r8, .L_02225bd8
+build/usa/asm/ov031/ov031_104.s-    ldr r7, .L_02225bdc
+build/usa/asm/ov031/ov031_104.s-    mov r4, r6
+=== 022178b4 ===
+build/usa/asm/ov031/ov031_88.s:func_ov031_022178b4: ; 0x022178b4
+build/usa/asm/ov031/ov031_88.s-    stmdb sp!, {r4, r5, r6, lr}
+build/usa/asm/ov031/ov031_88.s-    sub sp, sp, #0x28
+build/usa/asm/ov031/ov031_88.s-    mov r4, r2
+build/usa/asm/ov031/ov031_88.s-    mov r6, r0
+build/usa/asm/ov031/ov031_88.s-    mov r5, r1
+build/usa/asm/ov031/ov031_88.s-    mov ip, #0x1
+build/usa/asm/ov031/ov031_88.s-    ldr r2, .L_02217bb8
+build/usa/asm/ov031/ov031_88.s-    add r0, sp, #0x4
+build/usa/asm/ov031/ov031_88.s-    mov r1, #0x21
+build/usa/asm/ov031/ov031_88.s-    mov r3, #0x3
+build/usa/asm/ov031/ov031_88.s-    str ip, [sp, #0x0]
+build/usa/asm/ov031/ov031_88.s-    bl _Z23VariadicForward020c7170iiiz
+build/usa/asm/ov031/ov031_88.s-    add r0, sp, #0x4
+build/usa/asm/ov031/ov031_88.s-    bl strlen
+build/usa/asm/ov031/ov031_88.s-    mov r3, r0
+build/usa/asm/ov031/ov031_88.s-    ldr r1, .L_02217bbc
+build/usa/asm/ov031/ov031_88.s-    mov r0, r6
+build/usa/asm/ov031/ov031_88.s-    add r2, sp, #0x4
+build/usa/asm/ov031/ov031_88.s-    bl func_ov031_02218604
+build/usa/asm/ov031/ov031_88.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    addne sp, sp, #0x28
+build/usa/asm/ov031/ov031_88.s-    movne r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    ldmneia sp!, {r4, r5, r6, pc}
+build/usa/asm/ov031/ov031_88.s-    mov r0, r5
+build/usa/asm/ov031/ov031_88.s-    bl strlen
+build/usa/asm/ov031/ov031_88.s-    mov r3, r0
+build/usa/asm/ov031/ov031_88.s-    ldr r1, .L_02217bc0
+build/usa/asm/ov031/ov031_88.s-    mov r0, r6
+build/usa/asm/ov031/ov031_88.s-    mov r2, r5
+build/usa/asm/ov031/ov031_88.s-    bl func_ov031_02218604
+build/usa/asm/ov031/ov031_88.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    addne sp, sp, #0x28
+build/usa/asm/ov031/ov031_88.s-    movne r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    ldmneia sp!, {r4, r5, r6, pc}
+build/usa/asm/ov031/ov031_88.s-    add r0, r5, #0xe
+build/usa/asm/ov031/ov031_88.s-    bl strlen
+build/usa/asm/ov031/ov031_88.s-    mov r3, r0
+build/usa/asm/ov031/ov031_88.s-    ldr r1, .L_02217bc4
+build/usa/asm/ov031/ov031_88.s-    mov r0, r6
+build/usa/asm/ov031/ov031_88.s-    add r2, r5, #0xe
+build/usa/asm/ov031/ov031_88.s-    bl func_ov031_02218604
+build/usa/asm/ov031/ov031_88.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    addne sp, sp, #0x28
+build/usa/asm/ov031/ov031_88.s-    movne r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    ldmneia sp!, {r4, r5, r6, pc}
+build/usa/asm/ov031/ov031_88.s-    add r0, r5, #0x41
+build/usa/asm/ov031/ov031_88.s-    bl strlen
+build/usa/asm/ov031/ov031_88.s-    mov r3, r0
+build/usa/asm/ov031/ov031_88.s-    ldr r1, .L_02217bc8
+build/usa/asm/ov031/ov031_88.s-    mov r0, r6
+build/usa/asm/ov031/ov031_88.s-    add r2, r5, #0x41
+build/usa/asm/ov031/ov031_88.s-    bl func_ov031_02218604
+build/usa/asm/ov031/ov031_88.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    addne sp, sp, #0x28
+build/usa/asm/ov031/ov031_88.s-    movne r0, #0x0
+build/usa/asm/ov031/ov031_88.s-    ldmneia sp!, {r4, r5, r6, pc}
+build/usa/asm/ov031/ov031_88.s-    add r0, r5, #0x6f
+build/usa/asm/ov031/ov031_88.s-    bl strlen
+build/usa/asm/ov031/ov031_88.s-    mov r3, r0
+build/usa/asm/ov031/ov031_88.s-    ldr r1, .L_02217bcc
+=== 02204368 ===
+build/usa/asm/ov031/ov031_12.s:func_ov031_02204368: ; 0x02204368
+build/usa/asm/ov031/ov031_12.s-    stmdb sp!, {r3, r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_12.s-    sub sp, sp, #0x8
+build/usa/asm/ov031/ov031_12.s-    add r1, r1, #0x1
+build/usa/asm/ov031/ov031_12.s-    str r0, [sp, #0x0]
+build/usa/asm/ov031/ov031_12.s-    rsb r11, r1, r1, lsl #0x4
+build/usa/asm/ov031/ov031_12.s-    bl _Z19GetCurrentTimestampv
+build/usa/asm/ov031/ov031_12.s-    mov r4, r0, lsr #0x10
+build/usa/asm/ov031/ov031_12.s-    orr r4, r4, r1, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r5, #0x0
+build/usa/asm/ov031/ov031_12.s-    b .L_02204670
+build/usa/asm/ov031/ov031_12.s-.L_02204390:
+build/usa/asm/ov031/ov031_12.s-    bl func_ov031_02203b1c
+build/usa/asm/ov031/ov031_12.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_12.s-    bne .L_022043a4
+build/usa/asm/ov031/ov031_12.s-    bl _Z23DispatchContext02200264v
+build/usa/asm/ov031/ov031_12.s-    b .L_02204670
+build/usa/asm/ov031/ov031_12.s-.L_022043a4:
+build/usa/asm/ov031/ov031_12.s-    add r0, sp, #0x4
+build/usa/asm/ov031/ov031_12.s-    bl func_ov031_0220357c
+build/usa/asm/ov031/ov031_12.s-    ldr r1, [sp, #0x4]
+build/usa/asm/ov031/ov031_12.s-    mov r6, r0
+build/usa/asm/ov031/ov031_12.s-    cmp r1, #0xf0
+build/usa/asm/ov031/ov031_12.s-    bls .L_02204668
+build/usa/asm/ov031/ov031_12.s-    ldrb r0, [r6, #0x0]
+build/usa/asm/ov031/ov031_12.s-    cmp r0, #0x2
+build/usa/asm/ov031/ov031_12.s-    bne .L_02204668
+build/usa/asm/ov031/ov031_12.s-    ldrh r3, [r6, #0x6]
+build/usa/asm/ov031/ov031_12.s-    ldrh r2, [r6, #0x4]
+build/usa/asm/ov031/ov031_12.s-    mov r0, r3, lsl #0x8
+build/usa/asm/ov031/ov031_12.s-    mov r1, r2, lsl #0x8
+build/usa/asm/ov031/ov031_12.s-    orr r2, r1, r2, asr #0x8
+build/usa/asm/ov031/ov031_12.s-    orr r1, r0, r3, asr #0x8
+build/usa/asm/ov031/ov031_12.s-    mov r0, r2, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r1, r1, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r2, r0, lsr #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r0, r1, lsr #0x10
+build/usa/asm/ov031/ov031_12.s-    orr r1, r0, r2, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    ldr r0, [sp, #0x0]
+build/usa/asm/ov031/ov031_12.s-    cmp r0, r1
+build/usa/asm/ov031/ov031_12.s-    bne .L_02204668
+build/usa/asm/ov031/ov031_12.s-    ldr r1, .L_022046b0
+build/usa/asm/ov031/ov031_12.s-    add r0, r6, #0x1c
+build/usa/asm/ov031/ov031_12.s-    bl _Z30CompareThreeU16sDiffer02200824PtS_
+build/usa/asm/ov031/ov031_12.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_12.s-    bne .L_02204668
+build/usa/asm/ov031/ov031_12.s-    ldrb r3, [r6, #0x10]
+build/usa/asm/ov031/ov031_12.s-    ldrb r2, [r6, #0x11]
+build/usa/asm/ov031/ov031_12.s-    ldrb r1, [r6, #0x12]
+build/usa/asm/ov031/ov031_12.s-    ldrb r0, [r6, #0x13]
+build/usa/asm/ov031/ov031_12.s-    orr r3, r2, r3, lsl #0x8
+build/usa/asm/ov031/ov031_12.s-    ldrb r2, [r6, #0xec]
+build/usa/asm/ov031/ov031_12.s-    orr r1, r0, r1, lsl #0x8
+build/usa/asm/ov031/ov031_12.s-    mov r0, r3, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r1, r1, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r5, r0, lsr #0x10
+build/usa/asm/ov031/ov031_12.s-    mov r0, r1, lsr #0x10
+build/usa/asm/ov031/ov031_12.s-    cmp r2, #0x63
+build/usa/asm/ov031/ov031_12.s-    orr r2, r0, r5, lsl #0x10
+build/usa/asm/ov031/ov031_12.s-    ldreqb r0, [r6, #0xed]
+build/usa/asm/ov031/ov031_12.s-    ldr r3, [sp, #0x4]
+=== 02223c08 ===
+build/usa/asm/ov031/ov031_101.s:func_ov031_02223c08: ; 0x02223c08
+build/usa/asm/ov031/ov031_101.s-    stmdb sp!, {r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_101.s-    sub sp, sp, #0x24
+build/usa/asm/ov031/ov031_101.s-    add r5, sp, #0x1c
+build/usa/asm/ov031/ov031_101.s-    mov r4, #0x0
+build/usa/asm/ov031/ov031_101.s-    strh r4, [r5, #0x4]
+build/usa/asm/ov031/ov031_101.s-    mov r3, #0x11
+build/usa/asm/ov031/ov031_101.s-    strh r4, [r5, #0x6]
+build/usa/asm/ov031/ov031_101.s-    mov r2, #0x12
+build/usa/asm/ov031/ov031_101.s-    mov r0, #0x128
+build/usa/asm/ov031/ov031_101.s-    mov r1, #0x4
+build/usa/asm/ov031/ov031_101.s-    strh r4, [r5, #0x0]
+build/usa/asm/ov031/ov031_101.s-    strh r4, [r5, #0x2]
+build/usa/asm/ov031/ov031_101.s-    strh r3, [sp, #0x20]
+build/usa/asm/ov031/ov031_101.s-    strh r2, [sp, #0x22]
+build/usa/asm/ov031/ov031_101.s-    bl func_ov031_0223cf4c
+build/usa/asm/ov031/ov031_101.s-    ldr r8, .L_02223f54
+build/usa/asm/ov031/ov031_101.s-    mov r1, #0xff
+build/usa/asm/ov031/ov031_101.s-    str r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    strb r1, [r0, #0x11c]
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    mov r6, r4
+build/usa/asm/ov031/ov031_101.s-    strb r6, [r0, #0x121]
+build/usa/asm/ov031/ov031_101.s-    mov r5, r4
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    mov r1, #0x1
+build/usa/asm/ov031/ov031_101.s-    strb r1, [r0, #0x123]
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    ldr r7, .L_02223f58
+build/usa/asm/ov031/ov031_101.s-    strb r1, [r0, #0x124]
+build/usa/asm/ov031/ov031_101.s-    mov r4, #0x34
+build/usa/asm/ov031/ov031_101.s-.L_02223c80:
+build/usa/asm/ov031/ov031_101.s-    mov r0, r5
+build/usa/asm/ov031/ov031_101.s-    mov r1, r4
+build/usa/asm/ov031/ov031_101.s-    bl _Z29CallTailCallThenBdb0_0223be44ii
+build/usa/asm/ov031/ov031_101.s-    ldr r1, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    add r1, r1, r6, lsl #0x2
+build/usa/asm/ov031/ov031_101.s-    str r0, [r1, #0x30]
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    add r0, r0, r6, lsl #0x2
+build/usa/asm/ov031/ov031_101.s-    ldr r1, [r0, #0x30]
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_101.s-    and r0, r0, r7
+build/usa/asm/ov031/ov031_101.s-    orr r0, r0, #0x200
+build/usa/asm/ov031/ov031_101.s-    str r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_101.s-    ldr r0, [r8, #0x0]
+build/usa/asm/ov031/ov031_101.s-    add r0, r0, r6, lsl #0x2
+build/usa/asm/ov031/ov031_101.s-    ldr r1, [r0, #0x30]
+build/usa/asm/ov031/ov031_101.s-    add r6, r6, #0x1
+build/usa/asm/ov031/ov031_101.s-    ldrh r0, [r1, #0x4]
+build/usa/asm/ov031/ov031_101.s-    cmp r6, #0x2f
+build/usa/asm/ov031/ov031_101.s-    bic r0, r0, #0xc00
+build/usa/asm/ov031/ov031_101.s-    orr r0, r0, #0xc00
+build/usa/asm/ov031/ov031_101.s-    strh r0, [r1, #0x4]
+build/usa/asm/ov031/ov031_101.s-    blt .L_02223c80
+build/usa/asm/ov031/ov031_101.s-    mov r6, #0x0
+build/usa/asm/ov031/ov031_101.s-    ldr r5, .L_02223f5c
+build/usa/asm/ov031/ov031_101.s-    ldr r8, .L_02223f54
+build/usa/asm/ov031/ov031_101.s-    ldr r7, .L_02223f58
+build/usa/asm/ov031/ov031_101.s-    mov r4, r6
+build/usa/asm/ov031/ov031_101.s-.L_02223cf0:
+=== 02203c6c ===
+build/usa/asm/ov031/ov031_11.s:func_ov031_02203c6c: ; 0x02203c6c
+build/usa/asm/ov031/ov031_11.s-    stmdb sp!, {r3, r4, r5, r6, r7, r8, r9, r10, r11, lr}
+build/usa/asm/ov031/ov031_11.s-    ldr r3, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    mov r1, #0x0
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fc0
+build/usa/asm/ov031/ov031_11.s-    mov r2, #0x64
+build/usa/asm/ov031/ov031_11.s-    str r1, [r3, #0x44]
+build/usa/asm/ov031/ov031_11.s-    bl VectorizedMemset
+build/usa/asm/ov031/ov031_11.s-    ldr r1, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    mov r3, #0x180
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fc4
+build/usa/asm/ov031/ov031_11.s-    str r3, [r1, #0x11c]
+build/usa/asm/ov031/ov031_11.s-    str r0, [r1, #0x120]
+build/usa/asm/ov031/ov031_11.s-    ldr r2, .L_02203fc8
+build/usa/asm/ov031/ov031_11.s-    str r3, [r1, #0x128]
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fc0
+build/usa/asm/ov031/ov031_11.s-    str r2, [r1, #0x12c]
+build/usa/asm/ov031/ov031_11.s-    bl _Z20SetField164_02203164i
+build/usa/asm/ov031/ov031_11.s-    mov r10, #0x1
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    mov r11, r10
+build/usa/asm/ov031/ov031_11.s-    str r10, [sp, #0x0]
+build/usa/asm/ov031/ov031_11.s-    str r10, [r0, #0xc]
+build/usa/asm/ov031/ov031_11.s-    mov r4, #0x0
+build/usa/asm/ov031/ov031_11.s-.L_02203cc8:
+build/usa/asm/ov031/ov031_11.s-    mov r0, #0x3e8
+build/usa/asm/ov031/ov031_11.s-    bl _Z19SleepCurrentContextj
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    ldr r1, [r0, #0x44]
+build/usa/asm/ov031/ov031_11.s-    cmp r1, #0x0
+build/usa/asm/ov031/ov031_11.s-    bne .L_02203f9c
+build/usa/asm/ov031/ov031_11.s-    bl _Z19GetCurrentTimestampv
+build/usa/asm/ov031/ov031_11.s-    ldr r2, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    mov r5, r0, lsr #0x10
+build/usa/asm/ov031/ov031_11.s-    ldr r0, [r2, #0x48]
+build/usa/asm/ov031/ov031_11.s-    orr r5, r5, r1, lsl #0x10
+build/usa/asm/ov031/ov031_11.s-    blx r0
+build/usa/asm/ov031/ov031_11.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_11.s-    beq .L_02203df4
+build/usa/asm/ov031/ov031_11.s-    ldr r0, [sp, #0x0]
+build/usa/asm/ov031/ov031_11.s-    subs r0, r0, #0x1
+build/usa/asm/ov031/ov031_11.s-    str r0, [sp, #0x0]
+build/usa/asm/ov031/ov031_11.s-    bne .L_02203e08
+build/usa/asm/ov031/ov031_11.s-    ldr r0, .L_02203fbc
+build/usa/asm/ov031/ov031_11.s-    ldr r1, [r0, #0x10]
+build/usa/asm/ov031/ov031_11.s-    tst r1, #0x1
+build/usa/asm/ov031/ov031_11.s-    beq .L_02203d34
+build/usa/asm/ov031/ov031_11.s-    cmp r4, #0x0
+build/usa/asm/ov031/ov031_11.s-    bne .L_02203e08
+build/usa/asm/ov031/ov031_11.s-    bl func_ov031_02203bcc
+build/usa/asm/ov031/ov031_11.s-    mov r4, #0x1
+build/usa/asm/ov031/ov031_11.s-    b .L_02203e08
+build/usa/asm/ov031/ov031_11.s-.L_02203d34:
+build/usa/asm/ov031/ov031_11.s-    cmp r4, #0x3
+build/usa/asm/ov031/ov031_11.s-    addls pc, pc, r4, lsl #0x2
+build/usa/asm/ov031/ov031_11.s-    b .L_02203e08
+build/usa/asm/ov031/ov031_11.s-.L_02203d40: ; jump table
+build/usa/asm/ov031/ov031_11.s-    b .L_02203d50 ; case 0
+build/usa/asm/ov031/ov031_11.s-    b .L_02203d94 ; case 1
+build/usa/asm/ov031/ov031_11.s-    b .L_02203db8 ; case 2
+build/usa/asm/ov031/ov031_11.s-    b .L_02203e08 ; case 3
+=== 0222e484 ===
+build/usa/asm/ov031/ov031_161.s:func_ov031_0222e484: ; 0x0222e484
+build/usa/asm/ov031/ov031_161.s-    stmdb sp!, {r4, r5, r6, r7, lr}
+build/usa/asm/ov031/ov031_161.s-    sub sp, sp, #0x2c
+build/usa/asm/ov031/ov031_161.s-    add r1, sp, #0x18
+build/usa/asm/ov031/ov031_161.s-    mov r0, #0x0
+build/usa/asm/ov031/ov031_161.s-    bl _Z22GetFields181c_02227520PiS_
+build/usa/asm/ov031/ov031_161.s-    ldr r0, .L_0222e7cc
+build/usa/asm/ov031/ov031_161.s-    ldr r2, .L_0222e7d0
+build/usa/asm/ov031/ov031_161.s-    ldr r1, [r0, #0x0]
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r2
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x0
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0x1
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x2
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0x2
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x13
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0x8
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x2
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0x9
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x12
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0xa
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x2
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0xb
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x3
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r2, #0x384
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x2
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    ldr r0, .L_0222e7d4
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x0
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r0, r0, #0x3e8
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x13
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    ldr r0, .L_0222e7d8
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r0
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x0
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r2, r0, #0x3
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r2
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x7
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r2, r0, #0x4
+build/usa/asm/ov031/ov031_161.s-    cmp r1, r2
+build/usa/asm/ov031/ov031_161.s-    movge r6, #0x5
+build/usa/asm/ov031/ov031_161.s-    bge .L_0222e6e0
+build/usa/asm/ov031/ov031_161.s-    sub r2, r0, #0x63
+=== 02244ad0 ===
+build/usa/asm/ov031/ov031_273.s:func_ov031_02244ad0: ; 0x02244ad0
+build/usa/asm/ov031/ov031_273.s-    stmdb sp!, {r3, r4, r5, r6, lr}
+build/usa/asm/ov031/ov031_273.s-    sub sp, sp, #0x84
+build/usa/asm/ov031/ov031_273.s-    mov r6, r0
+build/usa/asm/ov031/ov031_273.s-    bl _Z15GetBattleStructv
+build/usa/asm/ov031/ov031_273.s-    ldrb r1, [r6, #0x35]
+build/usa/asm/ov031/ov031_273.s-    mov r4, r0
+build/usa/asm/ov031/ov031_273.s-    cmp r1, #0x6
+build/usa/asm/ov031/ov031_273.s-    addls pc, pc, r1, lsl #0x2
+build/usa/asm/ov031/ov031_273.s-    b .L_02244e10
+build/usa/asm/ov031/ov031_273.s-.L_02244af4: ; jump table
+build/usa/asm/ov031/ov031_273.s-    b .L_02244b10 ; case 0
+build/usa/asm/ov031/ov031_273.s-    b .L_02244e10 ; case 1
+build/usa/asm/ov031/ov031_273.s-    b .L_02244e10 ; case 2
+build/usa/asm/ov031/ov031_273.s-    b .L_02244cd4 ; case 3
+build/usa/asm/ov031/ov031_273.s-    b .L_02244d78 ; case 4
+build/usa/asm/ov031/ov031_273.s-    b .L_02244de0 ; case 5
+build/usa/asm/ov031/ov031_273.s-    b .L_02244df0 ; case 6
+build/usa/asm/ov031/ov031_273.s-.L_02244b10:
+build/usa/asm/ov031/ov031_273.s-    bl _Z20GetField260_0220d540v
+build/usa/asm/ov031/ov031_273.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_273.s-    beq .L_02244b30
+build/usa/asm/ov031/ov031_273.s-    cmp r0, #0x6
+build/usa/asm/ov031/ov031_273.s-    beq .L_02244c58
+build/usa/asm/ov031/ov031_273.s-    cmp r0, #0x9
+build/usa/asm/ov031/ov031_273.s-    beq .L_02244c80
+build/usa/asm/ov031/ov031_273.s-    b .L_02244c8c
+build/usa/asm/ov031/ov031_273.s-.L_02244b30:
+build/usa/asm/ov031/ov031_273.s-    ldr r0, .L_02244e18
+build/usa/asm/ov031/ov031_273.s-    ldrb r0, [r0, #0x1]
+build/usa/asm/ov031/ov031_273.s-    cmp r0, #0x0
+build/usa/asm/ov031/ov031_273.s-    bne .L_02244c8c
+build/usa/asm/ov031/ov031_273.s-    add r0, r4, #0x7000
+build/usa/asm/ov031/ov031_273.s-    ldrb r1, [r0, #0xff0]
+build/usa/asm/ov031/ov031_273.s-    mov r5, #0x16
+build/usa/asm/ov031/ov031_273.s-    mov r1, r1, lsl #0x1c
+build/usa/asm/ov031/ov031_273.s-    movs r1, r1, lsr #0x1f
+build/usa/asm/ov031/ov031_273.s-    ldrneb r5, [r0, #0xff1]
+build/usa/asm/ov031/ov031_273.s-    mov r0, #0xd0
+build/usa/asm/ov031/ov031_273.s-    mul r0, r5, r0
+build/usa/asm/ov031/ov031_273.s-    add r1, r0, #0x30c
+build/usa/asm/ov031/ov031_273.s-    ldr r0, .L_02244e1c
+build/usa/asm/ov031/ov031_273.s-    add r1, r1, #0x2000
+build/usa/asm/ov031/ov031_273.s-    bl _ZN13SafeAllocator8AllocateEj
+build/usa/asm/ov031/ov031_273.s-    and r1, r5, #0xff
+build/usa/asm/ov031/ov031_273.s-    bl _Z18SetFields_02245858ic
+build/usa/asm/ov031/ov031_273.s-    ldr lr, .L_02244e20
+build/usa/asm/ov031/ov031_273.s-    add ip, sp, #0x8
+build/usa/asm/ov031/ov031_273.s-    mov r5, #0x7
+build/usa/asm/ov031/ov031_273.s-.L_02244b84:
+build/usa/asm/ov031/ov031_273.s-    ldmia lr!, {r0, r1, r2, r3}
+build/usa/asm/ov031/ov031_273.s-    stmia ip!, {r0, r1, r2, r3}
+build/usa/asm/ov031/ov031_273.s-    subs r5, r5, #0x1
+build/usa/asm/ov031/ov031_273.s-    bne .L_02244b84
+build/usa/asm/ov031/ov031_273.s-    ldmia lr, {r0, r1, r2}
+build/usa/asm/ov031/ov031_273.s-    stmia ip, {r0, r1, r2}
+build/usa/asm/ov031/ov031_273.s-    ldr r0, .L_02244e24
+build/usa/asm/ov031/ov031_273.s-    add r1, sp, #0x8
+build/usa/asm/ov031/ov031_273.s-    mov r2, #0x7c
+build/usa/asm/ov031/ov031_273.s-    bl memcpy
+build/usa/asm/ov031/ov031_273.s-    mov r0, #0x1
+=== 0223a794 ===
+build/usa/asm/ov031/ov031_221.s:func_ov031_0223a794: ; 0x0223a794
+build/usa/asm/ov031/ov031_221.s-    stmdb sp!, {r3, lr}
+build/usa/asm/ov031/ov031_221.s-    ldr r1, .L_0223ab10
+build/usa/asm/ov031/ov031_221.s-    ldr r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_221.s-    ldrb r2, [r0, #0xa90]
+build/usa/asm/ov031/ov031_221.s-    cmp r2, #0x22
+build/usa/asm/ov031/ov031_221.s-    addls pc, pc, r2, lsl #0x2
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc}
+build/usa/asm/ov031/ov031_221.s-.L_0223a7b0: ; jump table
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 0
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a83c ; case 1
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a878 ; case 2
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a880 ; case 3
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a898 ; case 4
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8ac ; case 5
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8ac ; case 6
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8b4 ; case 7
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8bc ; case 8
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8bc ; case 9
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8bc ; case 10
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8c4 ; case 11
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 12
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 13
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 14
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 15
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8cc ; case 16
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a8e4 ; case 17
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a900 ; case 18
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a924 ; case 19
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 20
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a95c ; case 21
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a980 ; case 22
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 23
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a9b8 ; case 24
+build/usa/asm/ov031/ov031_221.s-    b .L_0223a9dc ; case 25
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 26
+build/usa/asm/ov031/ov031_221.s-    b .L_0223aa14 ; case 27
+build/usa/asm/ov031/ov031_221.s-    b .L_0223aa38 ; case 28
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 29
+build/usa/asm/ov031/ov031_221.s-    b .L_0223ab08 ; case 30
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 31
+build/usa/asm/ov031/ov031_221.s-    b .L_0223aaac ; case 32
+build/usa/asm/ov031/ov031_221.s-    b .L_0223aad0 ; case 33
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc} ; case 34
+build/usa/asm/ov031/ov031_221.s-.L_0223a83c:
+build/usa/asm/ov031/ov031_221.s-    ldrb r2, [r0, #0xaac]
+build/usa/asm/ov031/ov031_221.s-    cmp r2, #0x1
+build/usa/asm/ov031/ov031_221.s-    bne .L_0223a858
+build/usa/asm/ov031/ov031_221.s-    mov r1, #0x0
+build/usa/asm/ov031/ov031_221.s-    strb r1, [r0, #0xaac]
+build/usa/asm/ov031/ov031_221.s-    bl func_ov031_0223a718
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc}
+build/usa/asm/ov031/ov031_221.s-.L_0223a858:
+build/usa/asm/ov031/ov031_221.s-    cmp r2, #0x2
+build/usa/asm/ov031/ov031_221.s-    ldmneia sp!, {r3, pc}
+build/usa/asm/ov031/ov031_221.s-    mov r2, #0x0
+build/usa/asm/ov031/ov031_221.s-    strb r2, [r0, #0xaac]
+build/usa/asm/ov031/ov031_221.s-    ldr r0, [r1, #0x0]
+build/usa/asm/ov031/ov031_221.s-    mov r1, #0x22
+build/usa/asm/ov031/ov031_221.s-    strb r1, [r0, #0xa90]
+build/usa/asm/ov031/ov031_221.s-    ldmia sp!, {r3, pc}
