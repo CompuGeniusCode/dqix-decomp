@@ -1,0 +1,636 @@
+############ 021ceb28 (ov017_147.s) ############
+func_ov017_021ceb28: ; 0x021ceb28
+    stmdb sp!, {r4, r5, r6, lr}
+    mov r6, r0
+    mov r5, r1
+    bl _Z15GetData02153637v
+    mov r4, r0
+    ldr r0, [sp, #0x10]
+    bl func_0202c508
+    cmp r0, #0x0
+    beq .L_021ceb80
+    cmp r6, #0x0
+    ble .L_021ceb80
+    ldrb r0, [r5, #0x4]
+    ldrb r1, [r5, #0x5]
+    ldrb r2, [r5, #0x7]
+    cmp r0, #0x0
+    beq .L_021ceb74
+    mov r0, r4
+    bl func_020e321c
+    ldmia sp!, {r4, r5, r6, pc}
+.L_021ceb74:
+    mov r0, r4
+    bl func_020e33b4
+    ldmia sp!, {r4, r5, r6, pc}
+.L_021ceb80:
+    cmp r6, #0x0
+    ldmneia sp!, {r4, r5, r6, pc}
+    ldr r0, [sp, #0x10]
+    bl _Z30GetSearchStructCurrentArrEntryP20SearchStruct0202c1a4
+    ldrb r1, [r5, #0x7]
+    cmp r1, r0
+    ldmneia sp!, {r4, r5, r6, pc}
+    ldrb r1, [r5, #0x5]
+    mov r0, r4
+    bl _Z17FindEntryByField1P13Entry020e3054i
+    cmp r0, #0x0
+    ldmeqia sp!, {r4, r5, r6, pc}
+    ldrb r1, [r5, #0x4]
+    cmp r1, #0x0
+    movne r1, #0x1
+    strneb r1, [r0, #0x2]
+    moveq r1, #0x3
+    streqb r1, [r0, #0x2]
+    ldmia sp!, {r4, r5, r6, pc}
+    arm_func_end func_ov017_021ceb28
+
+    .global func_ov017_021cebcc
+    arm_func_start func_ov017_021cebcc
+func_ov017_021cebcc: ; 0x021cebcc
+
+############ 021d0b30 (ov017_160.s) ############
+func_ov017_021d0b30: ; 0x021d0b30
+    stmdb sp!, {r4, r5, r6, r7, lr}
+    sub sp, sp, #0x44
+    mov r7, r0
+    mov r6, r1
+    mov r4, r2
+    bl _Z15GetData02100044v
+    add r2, sp, #0x34
+    mov r1, #0x2a
+    mov r5, r0
+    strb r1, [sp, #0x30]
+    strh r7, [r2, #0x0]
+    strh r6, [r2, #0x2]
+    cmp r4, #0x0
+    beq .L_021d0b74
+    mov r1, r4
+    add r0, r2, #0x4
+    bl strcpy
+.L_021d0b74:
+    add r1, sp, #0x30
+    mov r0, r5
+    mov r2, #0x0
+    bl func_0205e330
+    cmp r7, #0x0
+    bne .L_021d0bcc
+    bl func_ov017_0218b5b0
+    mov r1, #0x30
+    mul r2, r6, r1
+    add r0, r0, #0x35c
+    add r0, r0, #0x4000
+    adds r5, r0, r2
+    beq .L_021d0bcc
+    add r0, sp, #0x0
+    bl func_0200f374
+    add r1, sp, #0x0
+    mov r0, r4
+    mov r2, #0x1
+    bl func_02042764
+    add r1, sp, #0x0
+    mov r0, r5
+    bl strcpy
+.L_021d0bcc:
+    add sp, sp, #0x44
+    ldmia sp!, {r4, r5, r6, r7, pc}
+    arm_func_end func_ov017_021d0b30
+
+    .global func_ov017_021d0bd4
+    arm_func_start func_ov017_021d0bd4
+func_ov017_021d0bd4: ; 0x021d0bd4
+
+############ 021a4658 (ov017_36.s) ############
+func_ov017_021a4658: ; 0x021a4658
+    stmdb sp!, {r3, r4, r5, lr}
+    mov lr, #0x0
+    mov r3, #0x48
+    b .L_021a46a8
+.L_021a4668:
+    mul ip, lr, r3
+    add r5, r0, ip
+    add r2, r5, #0x3000
+    ldrb r4, [r2, #0x73e]
+    cmp r4, #0x0
+    beq .L_021a46a4
+    ldrb r2, [r2, #0x73f]
+    cmp r2, #0x0
+    addeq r2, r5, #0x3700
+    ldreqsh r2, [r2, #0x44]
+    cmpeq r1, r2
+    addeq r0, r0, #0x33c
+    addeq r0, r0, #0x3400
+    addeq r0, r0, ip
+    ldmeqia sp!, {r3, r4, r5, pc}
+.L_021a46a4:
+    add lr, lr, #0x1
+.L_021a46a8:
+    cmp lr, #0xc
+    blt .L_021a4668
+    mov r3, #0x0
+    mov r1, #0x48
+    b .L_021a46f0
+.L_021a46bc:
+    mul r5, r3, r1
+    add r2, r0, r5
+    add r2, r2, #0x3000
+    ldrb r2, [r2, #0x73e]
+    cmp r2, #0x0
+    bne .L_021a46ec
+    add r0, r0, #0x33c
+    add r4, r0, #0x3400
+    add r0, r4, r5
+    bl _Z12Init021b2f64Ph
+    add r0, r4, r5
+    ldmia sp!, {r3, r4, r5, pc}
+.L_021a46ec:
+    add r3, r3, #0x1
+.L_021a46f0:
+    cmp r3, #0xc
+    blt .L_021a46bc
+.L_021a46f8:
+    b .L_021a46f8
+    ldmia sp!, {r3, r4, r5, pc}
+    arm_func_end func_ov017_021a4658
+
+
+############ 021d360c (ov017_172.s) ############
+func_ov017_021d360c: ; 0x021d360c
+    stmdb sp!, {r0, r1, r2, r3}
+    stmdb sp!, {r3, r4, r5, r6, r7, r8, lr}
+    sub sp, sp, #0x14
+    mov r7, r0
+    mov r6, r1
+    mov r8, r2
+    bl _Z15GetData02100044v
+    mov r4, r0
+    cmp r7, #0x1
+    add r5, sp, #0x4
+    bne .L_021d3674
+    cmp r8, #0x3
+    movls r0, #0x1
+    movhi r0, #0x0
+    cmp r0, #0x0
+    bne .L_021d3674
+    bl _Z15GetBattleStructv
+    mov r1, r8
+    bl _Z24GetCombatantWithFlag0x20P12BattleStructi
+    cmp r0, #0x0
+    beq .L_021d36a4
+    add r0, r0, #0x100
+    ldrh r0, [r0, #0x6a]
+    add r0, r0, #0x4
+    mov r0, r0, lsl #0x10
+    mov r8, r0, lsr #0x10
+.L_021d3674:
+    mov r2, #0xb6
+    add r1, sp, #0x3c
+    add r0, r5, #0x4
+    strb r2, [sp, #0x0]
+    strb r7, [r5, #0x0]
+    strb r6, [r5, #0x1]
+    strh r8, [r5, #0x2]
+    bl _Z18CopyVec3s_02030fc8P13Vec3s02030fc8S0_
+    add r1, sp, #0x0
+    mov r0, r4
+    mov r2, #0x0
+    bl func_0205e330
+.L_021d36a4:
+    add sp, sp, #0x14
+    ldmia sp!, {r3, r4, r5, r6, r7, r8, lr}
+    add sp, sp, #0x10
+    bx lr
+    arm_func_end func_ov017_021d360c
+
+    .global func_ov017_021d36b4
+    arm_func_start func_ov017_021d36b4
+func_ov017_021d36b4: ; 0x021d36b4
+
+############ 021d3f00 (ov017_175.s) ############
+func_ov017_021d3f00: ; 0x021d3f00
+    stmdb sp!, {r3, r4, r5, r6, r7, r8, lr}
+    sub sp, sp, #0x14
+    movs r8, r0
+    mov r4, r1
+    mov r7, r2
+    beq .L_021d3fa0
+    bl _Z15GetBattleStructv
+    mov r5, r0
+    bl func_0202ae18
+    mov r1, #0x0
+    bl _Z16TestFlagBitAt0xeP12SearchStructi
+    cmp r0, #0x0
+    bne .L_021d3fa0
+    bl _Z15GetData02100044v
+    add r6, sp, #0x4
+    mov r1, #0x3b
+    strb r1, [sp, #0x0]
+    ldrb r2, [r6, #0x2]
+    ldrb r3, [r8, #0x1]
+    and r1, r4, #0xf
+    bic r2, r2, #0xf
+    orr r1, r2, r1
+    strb r3, [r6, #0x0]
+    and r1, r1, #0xff
+    ldrb r2, [r8, #0x3]
+    mov r4, r0
+    bic r1, r1, #0xf0
+    mov r0, r7, lsl #0x1c
+    orr r0, r1, r0, lsr #0x18
+    strb r0, [r6, #0x2]
+    strb r2, [r6, #0x1]
+    ldr r1, [r8, #0x48]
+    mov r0, r5
+    str r1, [r6, #0x4]
+    bl _Z19GetField0x397cValueP12BattleStruct
+    strb r0, [r6, #0x3]
+    add r1, sp, #0x0
+    mov r0, r4
+    mov r2, #0x0
+    bl func_0205e330
+.L_021d3fa0:
+    add sp, sp, #0x14
+    ldmia sp!, {r3, r4, r5, r6, r7, r8, pc}
+    arm_func_end func_ov017_021d3f00
+
+    .global func_ov017_021d3fa8
+    arm_func_start func_ov017_021d3fa8
+func_ov017_021d3fa8: ; 0x021d3fa8
+
+############ 02192654 (ov017_13.s) ############
+func_ov017_02192654: ; 0x02192654
+    stmdb sp!, {r4, r5, r6, r7, r8, lr}
+    mov r8, r0
+    mov r7, r1
+    mov r6, r2
+    bl func_ov017_0218b5b0
+    mov r5, r0
+    bl _Z15GetBattleStructv
+    mov r4, r0
+    bl func_0202ae18
+    bl func_0202c508
+    cmp r0, #0x0
+    beq .L_021926ec
+    mov r0, r4
+    mov r1, r7
+    bl _Z25FindCombatantByField0x16aP12BattleStructi
+    movs r4, r0
+    ldmeqia sp!, {r4, r5, r6, r7, r8, pc}
+    mov r1, r8
+    mov r2, r6
+    bl _Z23SetField0x17eBitAndHighPhii
+    mov r0, r4
+    bl _Z36CheckAndSetAllCombatantFlags0207973cPh
+    cmp r0, #0x0
+    ldmeqia sp!, {r4, r5, r6, r7, r8, pc}
+    mov r0, r4
+    bl _Z18IsField0x17eAllSetPh
+    cmp r0, #0x0
+    beq .L_021926e0
+    mov r0, r7, lsl #0x10
+    mov r0, r0, lsr #0x10
+    mov r1, #0x1
+    bl _Z27EnqueueEventTag140_021d0aa8th
+    mov r0, r5
+    mov r1, r7
+    bl func_ov017_021a23b0
+.L_021926e0:
+    mov r0, r4
+    bl _Z15ClearField0x17ePh
+    ldmia sp!, {r4, r5, r6, r7, r8, pc}
+.L_021926ec:
+    mov r0, r7, lsl #0x10
+    mov r1, r6
+    mov r0, r0, lsr #0x10
+    bl _Z27EnqueueEventTag140_021d0aa8th
+    ldmia sp!, {r4, r5, r6, r7, r8, pc}
+    arm_func_end func_ov017_02192654
+
+    .global func_ov017_02192700
+    arm_func_start func_ov017_02192700
+func_ov017_02192700: ; 0x02192700
+
+############ 02194140 (ov017_14.s) ############
+func_ov017_02194140: ; 0x02194140
+    stmdb sp!, {r4, r5, r6, lr}
+    mov r4, r1
+    mov r5, r0
+    bl _Z12GetIntAt0x68P21IntField0x68_020377bc
+    mov r6, r0
+    mov r0, r4
+    bl _Z12GetIntAt0x68P21IntField0x68_020377bc
+    ldr r3, [r5, #0x48]
+    ldr r2, [r4, #0x48]
+    add r1, r3, r6
+    cmp r1, r2
+    addge r0, r2, r0
+    cmpge r0, r3
+    movlt r0, #0x0
+    ldmltia sp!, {r4, r5, r6, pc}
+    mov r0, r5
+    bl _Z12GetIntAt0x64Ph
+    mov r6, r0
+    mov r0, r4
+    bl _Z12GetIntAt0x64Ph
+    mov r2, r0, asr #0x1
+    ldr r1, [r5, #0x44]
+    ldr r0, [r4, #0x44]
+    add r6, r2, r6, asr #0x1
+    sub r0, r1, r0
+    bl _Z6AbsInti
+    cmp r6, r0
+    blt .L_021941c8
+    ldr r1, [r5, #0x4c]
+    ldr r0, [r4, #0x4c]
+    sub r0, r1, r0
+    bl _Z6AbsInti
+    cmp r6, r0
+    bge .L_021941d0
+.L_021941c8:
+    mov r0, #0x0
+    ldmia sp!, {r4, r5, r6, pc}
+.L_021941d0:
+    add r0, r5, #0x44
+    add r1, r4, #0x44
+    bl _Z18Distance3D020c3030P16Vec3s32_020c3030S0_
+    cmp r6, r0
+    movge r0, #0x1
+    movlt r0, #0x0
+    ldmia sp!, {r4, r5, r6, pc}
+    arm_func_end func_ov017_02194140
+
+    .global func_ov017_021941ec
+    arm_func_start func_ov017_021941ec
+func_ov017_021941ec: ; 0x021941ec
+
+############ 021b2090 (ov017_76.s) ############
+func_ov017_021b2090: ; 0x021b2090
+    stmdb sp!, {r0, r1, r2, r3}
+    stmdb sp!, {r4, r5, r6, r7, r8, lr}
+    ldr r3, [sp, #0x18]
+    ldr r5, [sp, #0x1c]
+    mov r0, r3, lsl #0x14
+    mov r4, r5, lsl #0x6
+    mov ip, r5, lsl #0xb
+    mov r2, r3, lsl #0x6
+    mov r1, r3, lsl #0xb
+    mov r7, r3, lsl #0x10
+    mov r6, r0, lsr #0x14
+    mov r0, r5, lsl #0x14
+    cmp r6, r0, lsr #0x14
+    mov r8, r5, lsl #0x10
+    mov lr, ip, lsr #0x1b
+    mov r4, r4, lsr #0x1b
+    mov ip, r8, lsr #0x1c
+    mov r2, r2, lsr #0x1b
+    mov r1, r1, lsr #0x1b
+    mov r7, r7, lsr #0x1c
+    movlo r0, #0x1
+    blo .L_021b2128
+    cmp r6, r0, lsr #0x14
+    mov r0, #0x0
+    bhi .L_021b2128
+    ldr r6, .L_021b2134
+    mla r8, r7, r6, r0
+    mla r6, ip, r6, r0
+    ldr r7, .L_021b2138
+    mla ip, r1, r7, r8
+    mla r6, lr, r7, r6
+    mov r1, #0x64
+    mla r7, r2, r1, ip
+    mla r1, r4, r1, r6
+    add r2, r7, r3, lsr #0x1a
+    add r1, r1, r5, lsr #0x1a
+    cmp r2, r1
+    movlt r0, #0x1
+.L_021b2128:
+    ldmia sp!, {r4, r5, r6, r7, r8, lr}
+    add sp, sp, #0x10
+    bx lr
+.L_021b2134: .word 0xf4240
+.L_021b2138: .word 0x2710
+    arm_func_end func_ov017_021b2090
+
+    .global func_ov017_021b213c
+    arm_func_start func_ov017_021b213c
+func_ov017_021b213c: ; 0x021b213c
+
+############ 021b71d8 (ov017_86.s) ############
+func_ov017_021b71d8: ; 0x021b71d8
+    stmdb sp!, {r3, r4, r5, lr}
+    mov r5, r0
+    bl _Z15GetBattleStructv
+    bl func_02012fe4
+    mov r4, r0
+    ldr r0, .L_021b7278
+    bl _Z17EmptyStub02012de4v
+    ldr r0, .L_021b727c
+    bl func_020a0cc4
+    ldr r0, .L_021b7278
+    ldr r1, .L_021b727c
+    bl _Z16AllocateAligned4P14AllocatorUnionj
+    mov r1, r0
+    ldr r2, .L_021b727c
+    add r0, r5, #0x8
+    bl _ZN13SafeAllocator11CreateTypeAEPvj
+    ldrh r2, [r4, #0x0]
+    ldr r1, .L_021b7280
+    add r0, r5, #0x8
+    strh r2, [r5, #0x1c]
+    bl _ZN13SafeAllocator8AllocateEj
+    str r0, [r5, #0x6b0]
+    bl func_ov000_0215ce80
+    mov r4, #0x0
+    b .L_021b7250
+.L_021b723c:
+    add r0, r5, r4
+    ldrb r1, [r0, #0x6c0]
+    ldr r0, [r5, #0x6b0]
+    bl func_ov000_0215fab0
+    add r4, r4, #0x1
+.L_021b7250:
+    ldrb r0, [r5, #0x6c3]
+    cmp r4, r0
+    blt .L_021b723c
+    add r0, r5, #0x6c0
+    mov r1, #0x0
+    mov r2, #0x3
+    bl memset
+    mov r0, #0x0
+    strb r0, [r5, #0x6c3]
+    ldmia sp!, {r3, r4, r5, pc}
+.L_021b7278: .word data_02114e20
+.L_021b727c: .word 0x1f7dc
+.L_021b7280: .word 0x8eb4
+    arm_func_end func_ov017_021b71d8
+
+    .global func_ov017_021b7284
+    arm_func_start func_ov017_021b7284
+func_ov017_021b7284: ; 0x021b7284
+
+############ 021921fc (ov017_12.s) ############
+func_ov017_021921fc: ; 0x021921fc
+    stmdb sp!, {r3, r4, r5, r6, r7, r8, r9, r10, r11, lr}
+    mov r10, r0
+    mov r11, r1
+    mov r9, r2
+    bl _Z15GetBattleStructv
+    mov r5, r0
+    bl _Z17GetPtrField0x2a04P12BattleStruct
+    mov r6, r0
+    add r0, r6, #0x378
+    mov r7, #0x0
+    add r4, r0, #0xc00
+    b .L_0219229c
+.L_0219222c:
+    ldrb r1, [r4, r7]
+    mov r0, r5
+    bl _Z25GetCombatantWithFlag0x800P12BattleStructi
+    movs r8, r0
+    beq .L_02192298
+    mov r1, r10
+    add r0, r8, #0x44
+    bl _Z8CopyVec3PiS_
+    mov r0, r8
+    mov r1, r11
+    bl _Z24SetVecYFromValue02033874P11Obj02033874i
+    cmp r9, #0x0
+    beq .L_0219227c
+    mov r0, r8
+    mov r1, #0x0
+    bl _Z20SetByte0xbeShiftPrevP13Bytes02033b88i
+    mov r1, #0x0
+    mov r0, r8
+    strh r1, [r8, #0xb2]
+    bl _Z30ClearBytesAndZeroBlock02039d24Ph
+.L_0219227c:
+    mov r0, r5
+    bl _Z19GetField0x397cValueP12BattleStruct
+    ldrb r1, [r4, r7]
+    cmp r1, r0
+    beq .L_02192298
+    mov r0, r8
+    bl _Z18SetFlag0x1ceBit0x4Ph
+.L_02192298:
+    add r7, r7, #0x1
+.L_0219229c:
+    ldrb r0, [r6, #0xf7c]
+    cmp r7, r0
+    blt .L_0219222c
+    ldmia sp!, {r3, r4, r5, r6, r7, r8, r9, r10, r11, pc}
+    arm_func_end func_ov017_021921fc
+
+    .global func_ov017_021922ac
+    arm_func_start func_ov017_021922ac
+func_ov017_021922ac: ; 0x021922ac
+
+############ 021a1a20 (ov017_34.s) ############
+func_ov017_021a1a20: ; 0x021a1a20
+    stmdb sp!, {r4, r5, r6, r7, r8, r9, r10, lr}
+    bl _Z15GetBattleStructv
+    mov r8, r0
+    bl _Z15GetData02108ea8v
+    ldr r7, .L_021a1ac8
+    ldr r5, .L_021a1acc
+    mov r9, r0
+    mov r6, #0x0
+    add r4, r7, #0x7
+.L_021a1a44:
+    ldrh r0, [r5, #0x2]
+    mov r10, r6
+    cmp r0, r4
+    strhih r7, [r5, #0x2]
+    b .L_021a1a8c
+.L_021a1a58:
+    mov r0, r8
+    mov r1, r10
+    bl _Z25GetCombatantWithFlag0x100P12BattleStructi
+    cmp r0, #0x0
+    beq .L_021a1a88
+    add r0, r0, #0x100
+    ldrh r1, [r5, #0x2]
+    ldrh r0, [r0, #0xb2]
+    cmp r1, r0
+    addeq r0, r1, #0x1
+    streqh r0, [r5, #0x2]
+    beq .L_021a1a44
+.L_021a1a88:
+    add r10, r10, #0x1
+.L_021a1a8c:
+    cmp r10, #0x4
+    blt .L_021a1a58
+    ldrh r1, [r5, #0x2]
+    mov r0, r9
+    bl _Z19FindEntryByHalfwordP13Entry0207d9bct
+    cmp r0, #0x0
+    ldrneh r0, [r5, #0x2]
+    addne r0, r0, #0x1
+    strneh r0, [r5, #0x2]
+    bne .L_021a1a44
+    ldr r1, .L_021a1acc
+    ldrh r0, [r1, #0x2]
+    add r2, r0, #0x1
+    strh r2, [r1, #0x2]
+    ldmia sp!, {r4, r5, r6, r7, r8, r9, r10, pc}
+.L_021a1ac8: .word 0x7ff8
+.L_021a1acc: .word data_ov017_021d7654
+    arm_func_end func_ov017_021a1a20
+
+    .global func_ov017_021a1ad0
+    arm_func_start func_ov017_021a1ad0
+func_ov017_021a1ad0: ; 0x021a1ad0
+
+############ 021aa41c (ov017_55.s) ############
+func_ov017_021aa41c: ; 0x021aa41c
+    stmdb sp!, {r3, r4, r5, r6, r7, lr}
+    mov r6, r0
+    bl _Z15GetBattleStructv
+    mov r5, r0
+    bl _Z17GetField5cb0ValuePc
+    mov r4, r0
+    mov r0, r5
+    bl _Z17GetField5cb4ValuePc
+    mov r7, r0
+    mov r0, r5
+    bl _Z17GetField5cb8ValuePc
+    mov r2, #0x64
+    ldrh r3, [r6, #0xa]
+    mul ip, r7, r2
+    ldr r1, .L_021aa4c8
+    mul r2, r3, r2
+    ldrh r3, [r6, #0x8]
+    mla ip, r4, r1, ip
+    mla r1, r3, r1, r2
+    ldrh r2, [r6, #0xc]
+    add r3, r0, ip
+    add r0, r2, r1
+    cmp r3, r0
+    beq .L_021aa488
+    mov r0, #0x0
+    bl func_ov017_0219bcac
+    b .L_021aa498
+.L_021aa488:
+    bl func_ov017_0218b5b0
+    mov r1, #0x0
+    mov r2, #0x1e
+    bl _Z15SetBothCountersPvii
+.L_021aa498:
+    ldrh r1, [r6, #0x8]
+    mov r0, r5
+    bl _Z26SetField5cb0AndRecordByte0Pci
+    ldrh r1, [r6, #0xa]
+    mov r0, r5
+    bl _Z26SetField5cb4AndRecordByte1Pci
+    ldrh r1, [r6, #0xc]
+    mov r0, r5
+    bl _Z19SetSlotByte020107dcPci
+    mov r0, #0x1
+    strb r0, [r6, #0x1]
+    ldmia sp!, {r3, r4, r5, r6, r7, pc}
+.L_021aa4c8: .word 0x2710
+    arm_func_end func_ov017_021aa41c
+
+    .global func_ov017_021aa4cc
+    arm_func_start func_ov017_021aa4cc
+func_ov017_021aa4cc: ; 0x021aa4cc
+

@@ -35,7 +35,7 @@ struct Struct020dae68;
 void ReleaseResource020dae68(Struct020dae68* obj);
 
 // USA: func_ov017_021a3b40
-extern "C" ARM void func_ov017_021a3b40(void* unused, void* obj) {
+ARM void DispatchObjTypeCode_021a3b40(void* unused, void* obj) {
 	if (!obj) return;
 	if (*((unsigned char*)obj + 1) != 0) return;
 
@@ -63,6 +63,9 @@ extern "C" ARM void func_ov017_021a3b40(void* unused, void* obj) {
 		break;
 	case 0x11:
 		CallCallbackIfField20Set_0217e580((int*)obj);
+		break;
+	case 4:
+		func_ov017_021bb930(obj);
 		break;
 	case 0x12:
 		((void (*)(void*))CallHelperIfFlag_021b2f0c)(obj);

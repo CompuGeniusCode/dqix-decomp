@@ -2198,3 +2198,103 @@ src/Combat/Overlay_0/RunFlaglearAndSetMode02167e6c_02167e6c.cpp:
 src/Combat/Overlay_0/ApplyField41ToGatheredCombatants02163a7c.cpp:
     complete
     .text start:0x02163a7c end:0x02163b14
+
+
+src/Combat/Overlay_0/AllocateAndEnqueueTagNode_02169bb4.cpp:
+    complete
+    .text start:0x02169bb4 end:0x02169bf0
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216a1a4.cpp:
+    complete
+    .text start:0x0216a1a4 end:0x0216a208
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216a300.cpp:
+    complete
+    .text start:0x0216a300 end:0x0216a350
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216a4c8.cpp:
+    complete
+    .text start:0x0216a4c8 end:0x0216a55c
+
+
+src/Combat/Overlay_0/AllocateVariantNodeTag_0216bcf0.cpp:
+    complete
+    .text start:0x0216bcf0 end:0x0216bd9c
+
+
+src/Combat/Overlay_0/BuildStringEventFromVariant_0216b394.cpp:
+    complete
+    .text start:0x0216b394 end:0x0216b408
+
+
+src/Combat/Overlay_0/CountValidEntries_02171bc0.cpp:
+    complete
+    .text start:0x02171bc0 end:0x02171c04
+
+
+src/Combat/Overlay_0/EnqueueEventNode_02169b78.cpp:
+    complete
+    .text start:0x02169b78 end:0x02169bb4
+
+
+src/Combat/Overlay_0/EnqueueEventWithScaledFloatAndIntField_0216c7a0.cpp:
+    complete
+    .text start:0x0216c7a0 end:0x0216c804
+
+
+src/Combat/Overlay_0/EnqueueEventWithScaledFloatAndIntField_0216ce5c.cpp:
+    complete
+    .text start:0x0216ce5c end:0x0216cec0
+
+
+src/Combat/Overlay_0/FindElementByIdField_02161318.cpp:
+    complete
+    .text start:0x02161318 end:0x02161380
+
+
+src/Combat/Overlay_0/GetByteField_0217f5dc.cpp:
+    complete
+    .text start:0x0217f5dc end:0x0217f5e4
+
+
+src/Combat/Overlay_0/GetFieldPtr_02160f14.cpp:
+    complete
+    .text start:0x02160f14 end:0x02160f20
+
+
+src/Combat/Overlay_0/GetSlotValueAndStore_02181990.cpp:
+    complete
+    .text start:0x02181990 end:0x021819c8
+
+
+src/Combat/Overlay_0/ResetCombatState_0218048c.cpp:
+    complete
+    .text start:0x0218048c end:0x02180528
+
+
+src/Combat/Overlay_0/ResetSubFlagsForCombatants_02167f10.cpp:
+    complete
+    .text start:0x02167f10 end:0x02167fb0
+
+
+src/Combat/Overlay_0/SetCombatantIdAndSyncStats_021710ac.cpp:
+    complete
+    .text start:0x021710ac end:0x02171138
+
+
+src/Combat/Overlay_0/SetIndexIfCombatantValid_021819c8.cpp:
+    complete
+    .text start:0x021819c8 end:0x02181a5c
+
+
+src/Combat/Overlay_0/SomeFunc_0216d560.cpp:
+    complete
+    .text start:0x0216d560 end:0x0216d600
+
+
+src/Combat/Overlay_0/SwapReadyCombatEntries_021814bc.cpp:
+    complete
+    .text start:0x021814bc end:0x0218155c
