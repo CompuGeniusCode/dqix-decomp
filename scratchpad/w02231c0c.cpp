@@ -6,15 +6,15 @@ extern int TransferToBgCharBase020c5c58(int arg0, int arg1, unsigned int arg2);
 typedef void (*Callback_022234d8)(void*, int, int);
 extern "C" void func_ov031_022234d8(int a0, Callback_022234d8 cb);
 
-extern unsigned char data_ov031_0224b99c;
-extern unsigned char data_ov031_0224b9b4;
-extern unsigned char data_ov031_0224b9cc;
+extern unsigned char data_ov031_0224bc0c;
+extern unsigned char data_ov031_0224bc24;
+extern unsigned char data_ov031_0224bc3c;
 
-// USA: func_ov031_0222af14
-extern "C" ARM void TransferGraphicsAndSetBgPriority_0222af14(void) {
-	func_ov031_022234d8((int)&data_ov031_0224b99c, (Callback_022234d8)TransferBg2CharData);
-	func_ov031_022234d8((int)&data_ov031_0224b9b4, (Callback_022234d8)CopyToPaletteA);
-	func_ov031_022234d8((int)&data_ov031_0224b9cc, (Callback_022234d8)TransferToBgCharBase020c5c58);
+// USA: func_ov031_02231c0c
+extern "C" ARM void TransferGraphicsAndSetBgPriority_02231c0c(void) {
+	func_ov031_022234d8((int)&data_ov031_0224bc0c, (Callback_022234d8)TransferBg2CharData);
+	func_ov031_022234d8((int)&data_ov031_0224bc24, (Callback_022234d8)CopyToPaletteA);
+	func_ov031_022234d8((int)&data_ov031_0224bc3c, (Callback_022234d8)TransferToBgCharBase020c5c58);
 	volatile unsigned short* subBg0 = (volatile unsigned short*)0x4001008;
 	volatile unsigned short* bg0 = (volatile unsigned short*)0x4000008;
 	volatile unsigned short* bg1 = (volatile unsigned short*)0x400000a;

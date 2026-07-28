@@ -19,7 +19,7 @@ extern "C" void func_ov031_02227468(void);
 extern int data_ov031_0224b608;
 
 // USA: func_ov031_02226fe4
-extern "C" ARM int func_ov031_02226fe4(int param0, int param1, int param2) {
+extern "C" ARM int SetupAndRunUpdateLoop_02226fe4(int param0, int param1, int param2) {
 	*(int*)((char*)&data_ov031_02250c0c + 0x4) = param0;
 	if (func_ov031_022270ac(param1, param2) == 0) {
 		return -1;

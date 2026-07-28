@@ -20,7 +20,7 @@ extern StateObj02211138* data_ov031_0224e590;
 
 #pragma optimize_for_size off
 // USA: func_ov031_02211138
-ARM void func_ov031_02211138(void) {
+ARM void DispatchPendingCallback_02211138(void) {
 	unsigned char buf[0x20];
 	func_020c9b10(buf);
 	func_ov031_02209e28(buf, 0x20);

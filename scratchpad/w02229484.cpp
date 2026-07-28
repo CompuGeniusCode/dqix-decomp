@@ -15,7 +15,7 @@ extern IdxFlag02229484 data_ov031_02290c5c;
 
 #pragma optimize_for_size off
 // USA: func_ov031_02229484
-ARM void func_ov031_02229484(void) {
+ARM void SetHandlerFromField16_02229484(void) {
 	int mode = GetField16_02222e0c();
 	switch (mode) {
 	case 0:

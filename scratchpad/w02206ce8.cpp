@@ -8,14 +8,14 @@ struct ListNode0224e22c_02206ce8 {
 	ListNode0224e22c_02206ce8* next;
 };
 
-extern "C" void* func_ov031_02206900(void* a);
+extern "C" int func_ov031_02206900(void* a);
 extern ListNode0224e22c_02206ce8* data_ov031_0224e1cc;
 extern ListNode0224e22c_02206ce8* data_ov031_0224e22c;
 extern void* data_ov031_0224e230;
 
 #pragma optimize_for_size off
 // USA: func_ov031_02206ce8
-extern "C" ARM int func_ov031_02206ce8(void* g) {
+extern "C" ARM int DrainFlaggedContexts_02206ce8(void* g) {
 	ListNode0224e22c_02206ce8* node;
 	for (;;) {
 		int state = DisableIRQInterrupts();
