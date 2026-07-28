@@ -6415,3 +6415,33 @@ src/Combat/Overlay_31/func_ov031_0224587c.cpp:
 src/Combat/Overlay_31/func_ov031_02245e5c.cpp:
     complete
     .text start:0x02245e5c end:0x02245fa8
+
+
+src/Combat/Overlay_31/CallWithZeroExtra_0223e218_02237f2c.cpp:
+    complete
+    .text start:0x02237f2c end:0x02238000
+
+
+src/Combat/Overlay_31/FillRemainder_02204168_0220419c.cpp:
+    complete
+    .text start:0x0220419c end:0x02204260
+
+
+src/Combat/Overlay_31/InsertNewEntry_0220ece8.cpp:
+    complete
+    .text start:0x0220ece8 end:0x0220edb4
+
+
+src/Combat/Overlay_31/ProcessHeader_02201bb4.cpp:
+    complete
+    .text start:0x02201bb4 end:0x02201c84
+
+
+src/Combat/Overlay_31/SetupField4AndFlags_02222c18.cpp:
+    complete
+    .text start:0x02222c18 end:0x02222ce4
+
+
+src/Combat/Overlay_31/func_ov031_02229484.cpp:
+    complete
+    .text start:0x02229484 end:0x02229528
