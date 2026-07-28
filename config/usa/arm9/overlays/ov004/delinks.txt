@@ -1975,3 +1975,73 @@ src/Combat/Overlay_4/func_ov004_0216e490.cpp:
 src/Combat/Overlay_4/MapAffinityIdToIndex_0216f8c0.cpp:
     complete
     .text start:0x0216f8c0 end:0x0216f990
+
+
+src/Combat/Overlay_4/DispatchByIndex_0216b498.cpp:
+    complete
+    .text start:0x0216b498 end:0x0216b7bc
+
+
+src/Combat/Overlay_4/ResetOv017FieldsAndClearFlag_02169144.cpp:
+    complete
+    .text start:0x02169144 end:0x0216920c
+
+
+src/Combat/Overlay_4/SetFieldFromDividedStat_02165ef4.cpp:
+    complete
+    .text start:0x02165ef4 end:0x02165f2c
+
+
+src/Combat/Overlay_4/SetFlagsOnNodes38And39_0216d720.cpp:
+    complete
+    .text start:0x0216d720 end:0x0216d7f8
+
+
+src/Combat/Overlay_4/TickCounterAndConsumeResource_0215c0c0.cpp:
+    complete
+    .text start:0x0215c0c0 end:0x0215c194
+
+
+src/Combat/Overlay_4/func_ov004_0215883c.cpp:
+    complete
+    .text start:0x0215883c end:0x021589e8
+
+
+src/Combat/Overlay_4/func_ov004_0215d384.cpp:
+    complete
+    .text start:0x0215d384 end:0x0215d534
+
+
+src/Combat/Overlay_4/func_ov004_0215de9c.cpp:
+    complete
+    .text start:0x0215de9c end:0x0215e148
+
+
+src/Combat/Overlay_4/func_ov004_021680cc.cpp:
+    complete
+    .text start:0x021680cc end:0x02168244
+
+
+src/Combat/Overlay_4/func_ov004_021698f4.cpp:
+    complete
+    .text start:0x021698f4 end:0x02169a28
+
+
+src/Combat/Overlay_4/func_ov004_0216b390.cpp:
+    complete
+    .text start:0x0216b390 end:0x0216b498
+
+
+src/Combat/Overlay_4/func_ov004_0216d1c4.cpp:
+    complete
+    .text start:0x0216d1c4 end:0x0216d358
+
+
+src/Combat/Overlay_4/func_ov004_0216d358.cpp:
+    complete
+    .text start:0x0216d358 end:0x0216d504
+
+
+src/Combat/Overlay_4/func_ov004_0216dd78.cpp:
+    complete
+    .text start:0x0216dd78 end:0x0216df7c
