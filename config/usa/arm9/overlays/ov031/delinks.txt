@@ -7405,3 +7405,128 @@ src/Combat/Overlay_31/func_ov031_022073a4.cpp:
 src/Combat/Overlay_31/func_ov031_022073a4_02220178.cpp:
     complete
     .text start:0x02220178 end:0x02220190
+
+
+src/Combat/Overlay_31/BuildAndDispatch_02222af0.cpp:
+    complete
+    .text start:0x02222af0 end:0x02222b0c
+
+
+src/Combat/Overlay_31/ByteSwap16_0221e5f8.cpp:
+    complete
+    .text start:0x0221e5f8 end:0x0221e610
+
+
+src/Combat/Overlay_31/ByteSwap16_0221e638.cpp:
+    complete
+    .text start:0x0221e638 end:0x0221e650
+
+
+src/Combat/Overlay_31/ByteSwap32_0221e5d0.cpp:
+    complete
+    .text start:0x0221e5d0 end:0x0221e5f8
+
+
+src/Combat/Overlay_31/ByteSwap32_0221e610.cpp:
+    complete
+    .text start:0x0221e610 end:0x0221e638
+
+
+src/Combat/Overlay_31/ClearQueue_0221e6d4.cpp:
+    complete
+    .text start:0x0221e6d4 end:0x0221e6e0
+
+
+src/Combat/Overlay_31/CopyAndSucceed_022205d8.cpp:
+    complete
+    .text start:0x022205d8 end:0x022205e4
+
+
+src/Combat/Overlay_31/CopyBytes_02222818.cpp:
+    complete
+    .text start:0x02222818 end:0x02222830
+
+
+src/Combat/Overlay_31/CopyToDest_0221e51c.cpp:
+    complete
+    .text start:0x0221e51c end:0x0221e52c
+
+
+src/Combat/Overlay_31/FillBytes_0221e52c.cpp:
+    complete
+    .text start:0x0221e52c end:0x0221e538
+
+
+src/Combat/Overlay_31/FillBytes_02222830.cpp:
+    complete
+    .text start:0x02222830 end:0x02222848
+
+
+src/Combat/Overlay_31/GetGlobalField10_0221d06c.cpp:
+    complete
+    .text start:0x0221d06c end:0x0221d078
+
+
+src/Combat/Overlay_31/HasFlag10_0221dc58.cpp:
+    complete
+    .text start:0x0221dc58 end:0x0221dc68
+
+
+src/Combat/Overlay_31/InvokeCallback_0221c49c.cpp:
+    complete
+    .text start:0x0221c49c end:0x0221c4ac
+
+
+src/Combat/Overlay_31/InvokeHandlerC_022228b0.cpp:
+    complete
+    .text start:0x022228b0 end:0x022228c0
+
+
+src/Combat/Overlay_31/InvokeHandlerIfSet_0221ecb4.cpp:
+    complete
+    .text start:0x0221ecb4 end:0x0221ecc8
+
+
+src/Combat/Overlay_31/InvokeIfPositive_0221e458.cpp:
+    complete
+    .text start:0x0221e458 end:0x0221e470
+
+
+src/Combat/Overlay_31/InvokeWithSecondArg_0221e470.cpp:
+    complete
+    .text start:0x0221e470 end:0x0221e480
+
+
+src/Combat/Overlay_31/NoOp_0221e5b0.cpp:
+    complete
+    .text start:0x0221e5b0 end:0x0221e5b4
+
+
+src/Combat/Overlay_31/SetGlobalField10_0221d060.cpp:
+    complete
+    .text start:0x0221d060 end:0x0221d06c
+
+
+src/Combat/Overlay_31/SetQueueHead_0221e6e0.cpp:
+    complete
+    .text start:0x0221e6e0 end:0x0221e6e8
+
+
+src/Combat/Overlay_31/SleepThumb_0221ecac.cpp:
+    complete
+    .text start:0x0221ecac end:0x0221ecb4
+
+
+src/Combat/Overlay_31/StringLength_0221e650.cpp:
+    complete
+    .text start:0x0221e650 end:0x0221e664
+
+
+src/Combat/Overlay_31/ValidatePrintable_0221d270.cpp:
+    complete
+    .text start:0x0221d270 end:0x0221d294
+
+
+src/Combat/Overlay_31/XorBlock8_0222127c.cpp:
+    complete
+    .text start:0x0222127c end:0x022212c4
