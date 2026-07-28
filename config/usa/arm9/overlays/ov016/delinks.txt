@@ -244,3 +244,13 @@ src/Combat/Overlay_16/GetField_0218ef14_0218ef14.cpp:
 src/Combat/Overlay_16/TailCallFree_0218f4fc.cpp:
     complete
     .text start:0x0218f4fc end:0x0218f508
+
+
+src/Combat/Overlay_16/CallVTableFnAt20_0218f6a0.cpp:
+    complete
+    .text start:0x0218f6a0 end:0x0218f6b4
+
+
+src/Combat/Overlay_16/InitAndReturnSelf_0218e790.cpp:
+    complete
+    .text start:0x0218e790 end:0x0218e7a4
