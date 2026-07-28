@@ -21720,3 +21720,63 @@ src/Combat/Main/RotateTileGrid3x3.cpp:
 src/Combat/Main/TestSweptTriangleBarycentric02031b84.cpp:
     complete
     .text start:0x02031b84 end:0x02031d20
+
+
+src/Combat/Main/AbsInt020017a4.cpp:
+    complete
+    .text start:0x020017a4 end:0x020017b0
+
+
+src/Combat/Main/BlankFunction02000b98.cpp:
+    complete
+    .text start:0x02000b98 end:0x02000b9c
+
+
+src/Combat/Main/BlankFunction02000b9c.cpp:
+    complete
+    .text start:0x02000b9c end:0x02000ba0
+
+
+src/Combat/Main/BlankFunction020017bc.cpp:
+    complete
+    .text start:0x020017bc end:0x020017c0
+
+
+src/Combat/Main/BlankFunction02009668.cpp:
+    complete
+    .text start:0x02009668 end:0x0200966c
+
+
+src/Combat/Main/BlankFunction0200d890.cpp:
+    complete
+    .text start:0x0200d890 end:0x0200d894
+
+
+src/Combat/Main/BlankFunction0203af44.cpp:
+    complete
+    .text start:0x0203af44 end:0x0203af48
+
+
+src/Combat/Main/ForwardIfNonNull02001728.cpp:
+    complete
+    .text start:0x02001728 end:0x0200173c
+
+
+src/Combat/Main/ForwardIfNonNull0200edb4.cpp:
+    complete
+    .text start:0x0200edb4 end:0x0200edc8
+
+
+src/Combat/Main/GetFieldValue020457e0.cpp:
+    complete
+    .text start:0x020457e0 end:0x020457e8
+
+
+src/Combat/Main/GetGlobalStruct02012fe4.cpp:
+    complete
+    .text start:0x02012fe4 end:0x02012ff0
+
+
+src/Combat/Main/ReturnZero020c7dc4.cpp:
+    complete
+    .text start:0x020c7dc4 end:0x020c7dcc
