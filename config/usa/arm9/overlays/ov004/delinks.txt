@@ -2050,3 +2050,88 @@ src/Combat/Overlay_4/func_ov004_0216dd78.cpp:
 src/Combat/Overlay_4/ClearAndSetOv017FieldsThenSync_0216ecd0.cpp:
     complete
     .text start:0x0216ecd0 end:0x0216ed9c
+
+
+src/Combat/Overlay_4/CheckOutcomeAndNotify_02167d90.cpp:
+    complete
+    .text start:0x02167d90 end:0x02167e28
+
+
+src/Combat/Overlay_4/InitCombatObjAllocators_02167820.cpp:
+    complete
+    .text start:0x02167820 end:0x021678bc
+
+
+src/Combat/Overlay_4/PopulateCombatantContextFields_02159650.cpp:
+    complete
+    .text start:0x02159650 end:0x02159888
+
+
+src/Combat/Overlay_4/StoreEntryNameForKey_02157374.cpp:
+    complete
+    .text start:0x02157374 end:0x0215781c
+
+
+src/Combat/Overlay_4/func_ov004_021540a4.cpp:
+    complete
+    .text start:0x021540a4 end:0x02154210
+
+
+src/Combat/Overlay_4/func_ov004_02155ea4.cpp:
+    complete
+    .text start:0x02155ea4 end:0x02155fa0
+
+
+src/Combat/Overlay_4/func_ov004_02157128.cpp:
+    complete
+    .text start:0x02157128 end:0x021571d8
+
+
+src/Combat/Overlay_4/func_ov004_02159ce0.cpp:
+    complete
+    .text start:0x02159ce0 end:0x02159fb0
+
+
+src/Combat/Overlay_4/func_ov004_0215c50c.cpp:
+    complete
+    .text start:0x0215c50c end:0x0215c684
+
+
+src/Combat/Overlay_4/func_ov004_0215da0c.cpp:
+    complete
+    .text start:0x0215da0c end:0x0215db14
+
+
+src/Combat/Overlay_4/func_ov004_02163530.cpp:
+    complete
+    .text start:0x02163530 end:0x021635d0
+
+
+src/Combat/Overlay_4/func_ov004_02165c04.cpp:
+    complete
+    .text start:0x02165c04 end:0x02165d74
+
+
+src/Combat/Overlay_4/func_ov004_02167adc.cpp:
+    complete
+    .text start:0x02167adc end:0x02167b78
+
+
+src/Combat/Overlay_4/func_ov004_021688d4.cpp:
+    complete
+    .text start:0x021688d4 end:0x021689d8
+
+
+src/Combat/Overlay_4/func_ov004_0216b120.cpp:
+    complete
+    .text start:0x0216b120 end:0x0216b1c4
+
+
+src/Combat/Overlay_4/func_ov004_0216f3b0.cpp:
+    complete
+    .text start:0x0216f3b0 end:0x0216f4fc
+
+
+src/Combat/Overlay_4/func_ov004_0216f788.cpp:
+    complete
+    .text start:0x0216f788 end:0x0216f824
