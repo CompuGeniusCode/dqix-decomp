@@ -24,19 +24,15 @@ ARM int FormatAndStoreCodeIfType8_0216f4fc(void* obj) {
     func_ov004_0216ea38(obj, 4);
     GetGlobalField0x1c020421a0();
 
-    void* base = func_ov011_021849c8(obj);
-    void* node1 = func_ov023_021f6880(base, 0x65);
-    if (!node1 || ScaleStatsIfType12_021f6f10(node1) != 8) {
-        node1 = 0;
+    NodeField20_0216f4fc* n = (NodeField20_0216f4fc*)func_ov023_021f6880(func_ov011_021849c8(obj), 0x65);
+    if (!n || ScaleStatsIfType12_021f6f10(n) != 8) {
+        n = 0;
     }
 
-    NodeField20_0216f4fc* n = (NodeField20_0216f4fc*)node1;
     if (n) {
         char* q = (char*)battle + 0x2380 + 0x4000;
-        int v48 = *(int*)(q + 0x48);
-        int v4c = *(int*)(q + 0x4c);
         char buf[13];
-        VariadicForward020c7170((int)buf, 13, (int)&data_ov004_021707b0, v48, v4c);
+        VariadicForward020c7170((int)buf, 13, (int)&data_ov004_021707b0, *(int*)(q + 0x48), *(int*)(q + 0x4c));
 
         char* src = buf;
         char* dst = data_ov004_02171048.ptr + 0xe;
@@ -52,8 +48,7 @@ ARM int FormatAndStoreCodeIfType8_0216f4fc(void* obj) {
         n->field20 = data_ov004_02171048.ptr + 0xe;
     }
 
-    void* base2 = func_ov011_021849c8(obj);
-    void* node2 = func_ov023_021f6880(base2, 0x14);
+    void* node2 = func_ov023_021f6880(func_ov011_021849c8(obj), 0x14);
     if (!node2 || ScaleStatsIfType12_021f6f10(node2) != 6) {
         node2 = 0;
     }

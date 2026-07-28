@@ -2135,3 +2135,48 @@ src/Combat/Overlay_4/func_ov004_0216f3b0.cpp:
 src/Combat/Overlay_4/func_ov004_0216f788.cpp:
     complete
     .text start:0x0216f788 end:0x0216f824
+
+
+src/Combat/Overlay_4/AddSaveDataEntryAndDispatch_0216a464.cpp:
+    complete
+    .text start:0x0216a464 end:0x0216a5e8
+
+
+src/Combat/Overlay_4/AllocateAndAimAtEntry_02168684.cpp:
+    complete
+    .text start:0x02168684 end:0x02168760
+
+
+src/Combat/Overlay_4/SyncFlagWordsAndDispatch_02158298.cpp:
+    complete
+    .text start:0x02158298 end:0x021583a8
+
+
+src/Combat/Overlay_4/TryConsumeEntryAndDispatch_02159888.cpp:
+    complete
+    .text start:0x02159888 end:0x021599b4
+
+
+src/Combat/Overlay_4/func_ov004_02155a3c.cpp:
+    complete
+    .text start:0x02155a3c end:0x02155b6c
+
+
+src/Combat/Overlay_4/func_ov004_021564f0.cpp:
+    complete
+    .text start:0x021564f0 end:0x02156760
+
+
+src/Combat/Overlay_4/func_ov004_02158bd4.cpp:
+    complete
+    .text start:0x02158bd4 end:0x02158dcc
+
+
+src/Combat/Overlay_4/func_ov004_0216afb0.cpp:
+    complete
+    .text start:0x0216afb0 end:0x0216b06c
+
+
+src/Combat/Overlay_4/func_ov004_0216c750.cpp:
+    complete
+    .text start:0x0216c750 end:0x0216c810
