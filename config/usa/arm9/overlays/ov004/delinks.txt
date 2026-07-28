@@ -2045,3 +2045,8 @@ src/Combat/Overlay_4/func_ov004_0216d358.cpp:
 src/Combat/Overlay_4/func_ov004_0216dd78.cpp:
     complete
     .text start:0x0216dd78 end:0x0216df7c
+
+
+src/Combat/Overlay_4/ClearAndSetOv017FieldsThenSync_0216ecd0.cpp:
+    complete
+    .text start:0x0216ecd0 end:0x0216ed9c
