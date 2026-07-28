@@ -1,0 +1,39 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+int GetGlobalField0x1c020421a0();
+
+extern "C" void func_ov000_0217c638(void* obj, int a, int b);
+extern "C" void func_ov000_02177d04(void* obj, void* buf);
+extern "C" void func_0205d304(void* s, void* buf, int a, int b, int c, int d, int e, int f);
+
+struct InStruct_02177bf0 {
+    char pad[0x44];
+    int x;
+    int y;
+};
+
+// USA: func_ov000_02177bf0
+extern "C" ARM void func_ov000_02177bf0(void* objRaw, struct InStruct_02177bf0* in, int arg2, int arg3) {
+    char* obj = (char*)objRaw;
+    if (in == 0) {
+        return;
+    }
+    int x = in->x;
+    int y = in->y;
+    func_ov000_0217c638(obj, arg2, arg3);
+    char* s = obj + 0x188;
+    *(short*)(s + 0xa0) = 0x15;
+    *(short*)(s + 0xa2) = 7;
+    *(short*)(s + 0xa4) = (x >> 3) + 9;
+    *(short*)(s + 0xa6) = (y >> 3) + 1;
+    *(short*)(s + 0xa8) = 0xc;
+    *(short*)(s + 0xaa) = 5;
+    *(short*)(s + 0xac) = 0xa;
+    *(short*)(s + 0xae) = 0xc;
+    *(unsigned char*)(s + 0xb1) = 5;
+    void* buf = *(void**)((char*)GetGlobalField0x1c020421a0() + 0x5c);
+    memset(buf, 0, 0x960);
+    func_ov000_02177d04(obj, buf);
+    func_0205d304(obj + 0x188, buf, 0, 0, 0, 1, 0, 0);
+}

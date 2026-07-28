@@ -1,0 +1,19 @@
+#include <globaldefs.h>
+
+struct DataLimit02175348 { int f0; int limit; };
+extern struct DataLimit02175348 data_ov000_02184288;
+
+// USA: func_ov000_0217538c  (semantic: CountDistinctGroups_0217538c)
+extern "C" ARM int func_ov000_0217538c(void* objRaw) {
+    char* obj = (char*)objRaw;
+    int tracked = -1;
+    int count = 0;
+    for (int i = 0; i < data_ov000_02184288.limit; i++) {
+        int v = *(int*)(obj + i * 4 + 0x1000 + 0xd1c);
+        if (tracked != v) {
+            tracked = v;
+            count++;
+        }
+    }
+    return count;
+}
