@@ -22770,3 +22770,28 @@ src/Combat/Main/TickCastCounter0208767c.cpp:
 src/Combat/Main/UpdateCombatantOffsetVec020a2be8.cpp:
     complete
     .text start:0x020a2be8 end:0x020a2c70
+
+
+src/Combat/Main/AllocateAndRunScript02014900.cpp:
+    complete
+    .text start:0x02014900 end:0x0201498c
+
+
+src/Combat/Main/InitAndStartLoop0202f894.cpp:
+    complete
+    .text start:0x0202f894 end:0x0202f920
+
+
+src/Combat/Main/InitBigContext0202f808.cpp:
+    complete
+    .text start:0x0202f808 end:0x0202f894
+
+
+src/Combat/Main/IssueBattleCommandSlot24Dispatch0202cd50.cpp:
+    complete
+    .text start:0x0202cd50 end:0x0202cddc
+
+
+src/Combat/Main/SubmitCommandWithPopcount0202bc00.cpp:
+    complete
+    .text start:0x0202bc00 end:0x0202bc8c
