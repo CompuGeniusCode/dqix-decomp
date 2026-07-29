@@ -22580,3 +22580,118 @@ src/Combat/Main/UpdateStateMachine02092f00.cpp:
 src/Combat/Main/func_020728ac.cpp:
     complete
     .text start:0x020728ac end:0x02072928
+
+
+src/Combat/Main/AcquireNodeRef020c8074.cpp:
+    complete
+    .text start:0x020c8074 end:0x020c80f8
+
+
+src/Combat/Main/AdvanceTowardOrSnap020412f4.cpp:
+    complete
+    .text start:0x020412f4 end:0x02041378
+
+
+src/Combat/Main/AllocateAndDispatchFile02036120.cpp:
+    complete
+    .text start:0x02036120 end:0x020361a4
+
+
+src/Combat/Main/ApplyConsumedFlagOffsets020c64a0.cpp:
+    complete
+    .text start:0x020c64a0 end:0x020c64fc
+
+
+src/Combat/Main/CheckListOrArrayForId0205e4f8.cpp:
+    complete
+    .text start:0x0205e4f8 end:0x0205e57c
+
+
+src/Combat/Main/ClearActionStateForIdOrAll02027304.cpp:
+    complete
+    .text start:0x02027304 end:0x0202738c
+
+
+src/Combat/Main/ComputeDivisions0205bb04.cpp:
+    complete
+    .text start:0x0205bb04 end:0x0205bb84
+
+
+src/Combat/Main/ComputeHalvedSum020b9850.cpp:
+    complete
+    .text start:0x020b9850 end:0x020b98b8
+
+
+src/Combat/Main/DispatchIfHeadEligible020a66a4.cpp:
+    complete
+    .text start:0x020a66a4 end:0x020a6728
+
+
+src/Combat/Main/EncodeIfValid020e23f4.cpp:
+    complete
+    .text start:0x020e23f4 end:0x020e2478
+
+
+src/Combat/Main/Func020017f0.cpp:
+    complete
+    .text start:0x020017f0 end:0x02001878
+
+
+src/Combat/Main/Func0202fdd0.cpp:
+    complete
+    .text start:0x0202fdd0 end:0x0202fe58
+
+
+src/Combat/Main/InitAndBuildFreeList020a1614.cpp:
+    complete
+    .text start:0x020a1614 end:0x020a1698
+
+
+src/Combat/Main/InitManagerAndAllocateBuffers0209fd64.cpp:
+    complete
+    .text start:0x0209fd64 end:0x0209fde8
+
+
+src/Combat/Main/InitStructFromFixedTable020c99c8.cpp:
+    complete
+    .text start:0x020c99c8 end:0x020c9a4c
+
+
+src/Combat/Main/ProcessSlotEntry020ac9ac.cpp:
+    complete
+    .text start:0x020ac9ac end:0x020aca30
+
+
+src/Combat/Main/ReleaseAndRelinkAllocator020bc79c.cpp:
+    complete
+    .text start:0x020bc79c end:0x020bc820
+
+
+src/Combat/Main/ResolveAndDispatchListEntry020bddec.cpp:
+    complete
+    .text start:0x020bddec end:0x020bde70
+
+
+src/Combat/Main/SendLockedArm7Command020ce4e8.cpp:
+    complete
+    .text start:0x020ce4e8 end:0x020ce56c
+
+
+src/Combat/Main/SetNodeScaledFloatFromVariant0206cb48.cpp:
+    complete
+    .text start:0x0206cb48 end:0x0206cbcc
+
+
+src/Combat/Main/SetupAndRunStream0209c008.cpp:
+    complete
+    .text start:0x0209c008 end:0x0209c08c
+
+
+src/Combat/Main/StoreVramFlagsAndShift020c6688.cpp:
+    complete
+    .text start:0x020c6688 end:0x020c66bc
+
+
+src/Combat/Main/SyncBattleAndGrottoBuffers020a9e30.cpp:
+    complete
+    .text start:0x020a9e30 end:0x020a9ea4
