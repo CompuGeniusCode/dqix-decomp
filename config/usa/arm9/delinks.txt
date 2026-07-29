@@ -22440,3 +22440,143 @@ src/Combat/Main/SyncBrightnessRegistersIfDirty0203b080.cpp:
 src/Combat/Main/UpdateCanvasState0204c87c.cpp:
     complete
     .text start:0x0204c87c end:0x0204c8f0
+
+
+src/Combat/Main/AddPlayClockSeconds020ac6b8.cpp:
+    complete
+    .text start:0x020ac6b8 end:0x020ac734
+
+
+src/Combat/Main/BlockReleaseInsertLoop020c015c.cpp:
+    complete
+    .text start:0x020c015c end:0x020c01ac
+
+
+src/Combat/Main/ClassifyByteRun020095b0.cpp:
+    complete
+    .text start:0x020095b0 end:0x0200961c
+
+
+src/Combat/Main/ClassifyValue020528c4.cpp:
+    complete
+    .text start:0x020528c4 end:0x02052944
+
+
+src/Combat/Main/DecodeAndCopyString020019c8.cpp:
+    complete
+    .text start:0x020019c8 end:0x02001a40
+
+
+src/Combat/Main/DispatchNodeByCategory020b2ce0.cpp:
+    complete
+    .text start:0x020b2ce0 end:0x020b2d60
+
+
+src/Combat/Main/EnterCombatModeAlt020cf1e0.cpp:
+    complete
+    .text start:0x020cf1e0 end:0x020cf25c
+
+
+src/Combat/Main/FindEntryById0209a594.cpp:
+    complete
+    .text start:0x0209a594 end:0x0209a614
+
+
+src/Combat/Main/FormatAndCollectCombatants0202c360.cpp:
+    complete
+    .text start:0x0202c360 end:0x0202c3e0
+
+
+src/Combat/Main/GetSubBg2ScreenBaseAddr.cpp:
+    complete
+    .text start:0x020c4da0 end:0x020c4e14
+
+
+src/Combat/Main/GetSubBg3ScreenBaseAddr.cpp:
+    complete
+    .text start:0x020c4e98 end:0x020c4f0c
+
+
+src/Combat/Main/NextCharOrCmd_02003d58.cpp:
+    complete
+    .text start:0x02003d58 end:0x02003ddc
+
+
+src/Combat/Main/ParseDelimitedInts020696bc.cpp:
+    complete
+    .text start:0x020696bc end:0x0206973c
+
+
+src/Combat/Main/PopulateEntriesFromVariantPairs0201f8d0.cpp:
+    complete
+    .text start:0x0201f8d0 end:0x0201f950
+
+
+src/Combat/Main/RecalcLow9FieldFromType0208ec04.cpp:
+    complete
+    .text start:0x0208ec04 end:0x0208ec78
+
+
+src/Combat/Main/ReleaseAllHandlesAndReset02094ab0.cpp:
+    complete
+    .text start:0x02094ab0 end:0x02094b2c
+
+
+src/Combat/Main/ReleaseBattleBuffersAlt020a395c.cpp:
+    complete
+    .text start:0x020a395c end:0x020a39d8
+
+
+src/Combat/Main/RemoveNode020b2d60.cpp:
+    complete
+    .text start:0x020b2d60 end:0x020b2dd4
+
+
+src/Combat/Main/RemoveNodeAndResetTail02046a8c.cpp:
+    complete
+    .text start:0x02046a8c end:0x02046b08
+
+
+src/Combat/Main/ResetAndCopyRecords02093ad8.cpp:
+    complete
+    .text start:0x02093ad8 end:0x02093b54
+
+
+src/Combat/Main/ResetBigStruct0206ddb8.cpp:
+    complete
+    .text start:0x0206ddb8 end:0x0206de40
+
+
+src/Combat/Main/SetIndexedShortField02052d7c.cpp:
+    complete
+    .text start:0x02052d7c end:0x02052df8
+
+
+src/Combat/Main/SetNodeVec3AndFlag0206d464.cpp:
+    complete
+    .text start:0x0206d464 end:0x0206d4e0
+
+
+src/Combat/Main/UpdateActorAnimState0203b318.cpp:
+    complete
+    .text start:0x0203b318 end:0x0203b398
+
+
+src/Combat/Main/UpdateFlagCountdown0201248c.cpp:
+    complete
+    .text start:0x0201248c end:0x0201250c
+
+
+src/Combat/Main/UpdateIndexPair0205d7a0.cpp:
+    complete
+    .text start:0x0205d7a0 end:0x0205d81c
+
+
+src/Combat/Main/UpdateStateMachine02092f00.cpp:
+    complete
+    .text start:0x02092f00 end:0x02092f80
+
+
+src/Combat/Main/func_020728ac.cpp:
+    complete
+    .text start:0x020728ac end:0x02072928
