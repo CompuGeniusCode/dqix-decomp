@@ -22695,3 +22695,78 @@ src/Combat/Main/StoreVramFlagsAndShift020c6688.cpp:
 src/Combat/Main/SyncBattleAndGrottoBuffers020a9e30.cpp:
     complete
     .text start:0x020a9e30 end:0x020a9ea4
+
+
+src/Combat/Main/AddNamedEntry020277f4.cpp:
+    complete
+    .text start:0x020277f4 end:0x02027878
+
+
+src/Combat/Main/CopyRemappedPair_020e5334.cpp:
+    complete
+    .text start:0x020e5334 end:0x020e53bc
+
+
+src/Combat/Main/DispatchMatchingCommandBlockFromList.cpp:
+    complete
+    .text start:0x02037bf8 end:0x02037c80
+
+
+src/Combat/Main/FindMatchingListElement_020ded1c.cpp:
+    complete
+    .text start:0x020ded1c end:0x020deda4
+
+
+src/Combat/Main/FlushAndEnqueue020bd08c.cpp:
+    complete
+    .text start:0x020bd08c end:0x020bd110
+
+
+src/Combat/Main/FreePoolBlockAtIndex020c895c.cpp:
+    complete
+    .text start:0x020c895c end:0x020c89c4
+
+
+src/Combat/Main/InitGlobalSystemsOnce020bbd14.cpp:
+    complete
+    .text start:0x020bbd14 end:0x020bbd9c
+
+
+src/Combat/Main/LookupAndCopyNodeName_020e046c.cpp:
+    complete
+    .text start:0x020e046c end:0x020e04f4
+
+
+src/Combat/Main/MapArm7ChannelCodeAndDispatch_020ce648.cpp:
+    complete
+    .text start:0x020ce648 end:0x020ce6d0
+
+
+src/Combat/Main/PickBestEntry020a8458.cpp:
+    complete
+    .text start:0x020a8458 end:0x020a84e0
+
+
+src/Combat/Main/PollAndDispatchReadyNode_020d2404.cpp:
+    complete
+    .text start:0x020d2404 end:0x020d248c
+
+
+src/Combat/Main/ProcessNodeFlags02019678.cpp:
+    complete
+    .text start:0x02019678 end:0x020196fc
+
+
+src/Combat/Main/SetActionSlotOrDispatch0203ac40.cpp:
+    complete
+    .text start:0x0203ac40 end:0x0203acc8
+
+
+src/Combat/Main/TickCastCounter0208767c.cpp:
+    complete
+    .text start:0x0208767c end:0x02087704
+
+
+src/Combat/Main/UpdateCombatantOffsetVec020a2be8.cpp:
+    complete
+    .text start:0x020a2be8 end:0x020a2c70
