@@ -22310,3 +22310,133 @@ src/Combat/Main/UpdateFlagAndNotify_02083c48.cpp:
 src/Combat/Main/VsnprintfCore02003c80.cpp:
     complete
     .text start:0x02003c80 end:0x02003ce8
+
+
+src/Combat/Main/ClassifyDouble0200aa74.cpp:
+    complete
+    .text start:0x0200aa74 end:0x0200aae4
+
+
+src/Combat/Main/ClearBytesReturnPtr0200f374.cpp:
+    complete
+    .text start:0x0200f374 end:0x0200f398
+
+
+src/Combat/Main/ClearElemFlag4ByKeys_0201bd04.cpp:
+    complete
+    .text start:0x0201bd04 end:0x0201bd3c
+
+
+src/Combat/Main/ClearEntryAndEnqueue020e33b4.cpp:
+    complete
+    .text start:0x020e33b4 end:0x020e3428
+
+
+src/Combat/Main/ComputeThermometerAreaProduct020b2054.cpp:
+    complete
+    .text start:0x020b2054 end:0x020b20b0
+
+
+src/Combat/Main/ConfigureSubEngineAndElement0202720c.cpp:
+    complete
+    .text start:0x0202720c end:0x02027288
+
+
+src/Combat/Main/GetRandomInRange020323c4.cpp:
+    complete
+    .text start:0x020323c4 end:0x02032424
+
+
+src/Combat/Main/HandleCommandSlotResult0202d108.cpp:
+    complete
+    .text start:0x0202d108 end:0x0202d180
+
+
+src/Combat/Main/InitAndFillArray020724f4.cpp:
+    complete
+    .text start:0x020724f4 end:0x02072560
+
+
+src/Combat/Main/InitAndRunScript0201c724.cpp:
+    complete
+    .text start:0x0201c724 end:0x0201c79c
+
+
+src/Combat/Main/InitCombatantFlagsAndSubBlock02037d10.cpp:
+    complete
+    .text start:0x02037d10 end:0x02037d88
+
+
+src/Combat/Main/InitEntryArray020729b4.cpp:
+    complete
+    .text start:0x020729b4 end:0x02072a28
+
+
+src/Combat/Main/InitExceptionHandlerHook020c8a3c.cpp:
+    complete
+    .text start:0x020c8a3c end:0x020c8aac
+
+
+src/Combat/Main/InitIPCCommandDispatch020cd890.cpp:
+    complete
+    .text start:0x020cd890 end:0x020cd908
+
+
+src/Combat/Main/InitObject0207f84c.cpp:
+    complete
+    .text start:0x0207f84c end:0x0207f8bc
+
+
+src/Combat/Main/IsElemFlag4ClearByKeys_0201bd74.cpp:
+    complete
+    .text start:0x0201bd74 end:0x0201bdac
+
+
+src/Combat/Main/PopMaskedFieldsFromStack0200f1a0.cpp:
+    complete
+    .text start:0x0200f1a0 end:0x0200f1fc
+
+
+src/Combat/Main/ReadLineUntilNewline_0200d8cc.cpp:
+    complete
+    .text start:0x0200d8cc end:0x0200d91c
+
+
+src/Combat/Main/ResetAndSyncBattlerFields02012938.cpp:
+    complete
+    .text start:0x02012938 end:0x020129b4
+
+
+src/Combat/Main/SetElemFlag4ByKeys_0201bd3c.cpp:
+    complete
+    .text start:0x0201bd3c end:0x0201bd74
+
+
+src/Combat/Main/SetQueueEntryAndArm020cf134.cpp:
+    complete
+    .text start:0x020cf134 end:0x020cf1a8
+
+
+src/Combat/Main/SetStatStageBit0.cpp:
+    complete
+    .text start:0x020877c0 end:0x02087838
+
+
+src/Combat/Main/SetStatStageBit3.cpp:
+    complete
+    .text start:0x020878b4 end:0x0208792c
+
+
+src/Combat/Main/SetStatStageBit6.cpp:
+    complete
+    .text start:0x020879a8 end:0x02087a20
+
+
+src/Combat/Main/SyncBrightnessRegistersIfDirty0203b080.cpp:
+    complete
+    .text start:0x0203b080 end:0x0203b0f8
+
+
+src/Combat/Main/UpdateCanvasState0204c87c.cpp:
+    complete
+    .text start:0x0204c87c end:0x0204c8f0
