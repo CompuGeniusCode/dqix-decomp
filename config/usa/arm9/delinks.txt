@@ -22180,3 +22180,133 @@ src/Combat/Main/WriteReg04000488020653e4.cpp:
 src/Combat/Main/WriteToRingBuf_02003c3c.cpp:
     complete
     .text start:0x02003c3c end:0x02003c80
+
+
+src/Combat/Main/AllocateAlignedFromSharedArena020c86fc.cpp:
+    complete
+    .text start:0x020c86fc end:0x020c8768
+
+
+src/Combat/Main/AppendEntry02027910.cpp:
+    complete
+    .text start:0x02027910 end:0x02027974
+
+
+src/Combat/Main/ApplyCounterIfValid020dd0b0.cpp:
+    complete
+    .text start:0x020dd0b0 end:0x020dd11c
+
+
+src/Combat/Main/BinarySearchByRange0200da70.cpp:
+    complete
+    .text start:0x0200da70 end:0x0200dad4
+
+
+src/Combat/Main/CheckField2ThenSubmitOrError0202d584.cpp:
+    complete
+    .text start:0x0202d584 end:0x0202d5ec
+
+
+src/Combat/Main/ClampArg1_02008f3c.cpp:
+    complete
+    .text start:0x02008f3c end:0x02008f5c
+
+
+src/Combat/Main/CopyToBg1Screen020c5b98.cpp:
+    complete
+    .text start:0x020c5b98 end:0x020c5bf8
+
+
+src/Combat/Main/CountSetBitsThenEnqueue020d1f0c.cpp:
+    complete
+    .text start:0x020d1f0c end:0x020d1f70
+
+
+src/Combat/Main/GetGrottoFloorOrRemainder0209fd00.cpp:
+    complete
+    .text start:0x0209fd00 end:0x0209fd64
+
+
+src/Combat/Main/InitAndConstructEntries02071c64.cpp:
+    complete
+    .text start:0x02071c64 end:0x02071cc8
+
+
+src/Combat/Main/InitProtectionRegionsFromSharedWords020c84b4.cpp:
+    complete
+    .text start:0x020c84b4 end:0x020c8520
+
+
+src/Combat/Main/InitStageAndNotify02001578.cpp:
+    complete
+    .text start:0x02001578 end:0x0200159c
+
+
+src/Combat/Main/InitTaskContext020bf2f8.cpp:
+    complete
+    .text start:0x020bf2f8 end:0x020bf358
+
+
+src/Combat/Main/InitVibrationIPCHandler_020c983c.cpp:
+    complete
+    .text start:0x020c983c end:0x020c9890
+
+
+src/Combat/Main/LockAndAcquireGBABus.cpp:
+    complete
+    .text start:0x020d14e4 end:0x020d1540
+
+
+src/Combat/Main/PopulateListEntry0200ec44.cpp:
+    complete
+    .text start:0x0200ec44 end:0x0200eca0
+
+
+src/Combat/Main/PrepareAndRegisterRecord0202ae4c.cpp:
+    complete
+    .text start:0x0202ae4c end:0x0202aebc
+
+
+src/Combat/Main/ProcessArm7CommandsWhileLocked020ce1d8.cpp:
+    complete
+    .text start:0x020ce1d8 end:0x020ce234
+
+
+src/Combat/Main/QueueRangedUpdate0204f3bc.cpp:
+    complete
+    .text start:0x0204f3bc end:0x0204f41c
+
+
+src/Combat/Main/RunBufferedScript0207b928.cpp:
+    complete
+    .text start:0x0207b928 end:0x0207b98c
+
+
+src/Combat/Main/RunTweenQueueTick020bd02c.cpp:
+    complete
+    .text start:0x020bd02c end:0x020bd08c
+
+
+src/Combat/Main/SendOrCopyBlockWithOffset020c66bc.cpp:
+    complete
+    .text start:0x020c66bc end:0x020c6728
+
+
+src/Combat/Main/SetupAndScaleMatrix_020b3994.cpp:
+    complete
+    .text start:0x020b3994 end:0x020b39ec
+
+
+src/Combat/Main/ShutdownTask020dae08.cpp:
+    complete
+    .text start:0x020dae08 end:0x020dae68
+
+
+src/Combat/Main/UpdateFlagAndNotify_02083c48.cpp:
+    complete
+    .text start:0x02083c48 end:0x02083ca0
+
+
+src/Combat/Main/VsnprintfCore02003c80.cpp:
+    complete
+    .text start:0x02003c80 end:0x02003ce8
