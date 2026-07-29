@@ -2035,3 +2035,33 @@ src/Combat/Overlay_1/UpdateCounterAndNotify_0215b50c.cpp:
 src/Combat/Overlay_1/UpdateProgressValue_02159820.cpp:
     complete
     .text start:0x02159820 end:0x021598bc
+
+
+src/Combat/Overlay_1/AllocateAndInitNode_021619bc.cpp:
+    complete
+    .text start:0x021619bc end:0x02161a1c
+
+
+src/Combat/Overlay_1/AllocateAndInitStateNode_02160768.cpp:
+    complete
+    .text start:0x02160768 end:0x0216089c
+
+
+src/Combat/Overlay_1/DispatchEntryByType_02164908.cpp:
+    complete
+    .text start:0x02164908 end:0x021649d4
+
+
+src/Combat/Overlay_1/ResetEntryFields_02159d9c.cpp:
+    complete
+    .text start:0x02159d9c end:0x02159ea8
+
+
+src/Combat/Overlay_1/UpdateCounterAndSetFlagB_0215b454.cpp:
+    complete
+    .text start:0x0215b454 end:0x0215b4c0
+
+
+src/Combat/Overlay_1/UpdateCounterAndSetFlag_0215b318.cpp:
+    complete
+    .text start:0x0215b318 end:0x0215b384
