@@ -1300,3 +1300,13 @@ src/Combat/Overlay_3/UpdateSearchAndDispatch_02171af0.cpp:
 src/Combat/Overlay_3/UpdateVecFromCombatant_02154f80.cpp:
     complete
     .text start:0x02154f80 end:0x02154fd0
+
+
+src/Combat/Overlay_3/RepositionEntriesInRange_02160794.cpp:
+    complete
+    .text start:0x02160794 end:0x02160854
+
+
+src/Combat/Overlay_3/SyncPositionAndFlags_021600b8.cpp:
+    complete
+    .text start:0x021600b8 end:0x02160134
