@@ -3299,3 +3299,83 @@ src/Combat/Overlay_23/func_ov023_021f6ac8.cpp:
 src/Combat/Overlay_23/func_ov023_021fa644.cpp:
     complete
     .text start:0x021fa644 end:0x021fa760
+
+
+src/Combat/Overlay_23/AppendLogEntryAndCheckFlag_021dde00.cpp:
+    complete
+    .text start:0x021dde00 end:0x021ddf5c
+
+
+src/Combat/Overlay_23/CheckBirthdayFlags_021e61f4.cpp:
+    complete
+    .text start:0x021e61f4 end:0x021e6378
+
+
+src/Combat/Overlay_23/ComputeUpdatedPlayClock_021e8fe8.cpp:
+    complete
+    .text start:0x021e8fe8 end:0x021e915c
+
+
+src/Combat/Overlay_23/FormatAndDispatchByField20_021fa8fc.cpp:
+    complete
+    .text start:0x021fa8fc end:0x021fa9a4
+
+
+src/Combat/Overlay_23/PackBitFieldsRecord_021ed804.cpp:
+    complete
+    .text start:0x021ed804 end:0x021ed92c
+
+
+src/Combat/Overlay_23/SetupTag021d9f88.cpp:
+    complete
+    .text start:0x021d9f88 end:0x021da100
+
+
+src/Combat/Overlay_23/func_ov023_021d8f2c.cpp:
+    complete
+    .text start:0x021d8f2c end:0x021d90d0
+
+
+src/Combat/Overlay_23/func_ov023_021db110.cpp:
+    complete
+    .text start:0x021db110 end:0x021db2b8
+
+
+src/Combat/Overlay_23/func_ov023_021e9be4.cpp:
+    complete
+    .text start:0x021e9be4 end:0x021e9c54
+
+
+src/Combat/Overlay_23/func_ov023_021e9c54.cpp:
+    complete
+    .text start:0x021e9c54 end:0x021e9cc4
+
+
+src/Combat/Overlay_23/func_ov023_021e9fd4.cpp:
+    complete
+    .text start:0x021e9fd4 end:0x021ea044
+
+
+src/Combat/Overlay_23/func_ov023_021ea044.cpp:
+    complete
+    .text start:0x021ea044 end:0x021ea0b4
+
+
+src/Combat/Overlay_23/func_ov023_021f7688.cpp:
+    complete
+    .text start:0x021f7688 end:0x021f7784
+
+
+src/Combat/Overlay_23/func_ov023_021f7da0.cpp:
+    complete
+    .text start:0x021f7da0 end:0x021f7eb8
+
+
+src/Combat/Overlay_23/func_ov023_021fa108.cpp:
+    complete
+    .text start:0x021fa108 end:0x021fa298
+
+
+src/Combat/Overlay_23/func_ov023_021fad84.cpp:
+    complete
+    .text start:0x021fad84 end:0x021fae88
