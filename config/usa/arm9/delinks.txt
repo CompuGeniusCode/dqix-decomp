@@ -22795,3 +22795,28 @@ src/Combat/Main/IssueBattleCommandSlot24Dispatch0202cd50.cpp:
 src/Combat/Main/SubmitCommandWithPopcount0202bc00.cpp:
     complete
     .text start:0x0202bc00 end:0x0202bc8c
+
+
+src/Combat/Main/AdjustAndScaleField0_02034a30.cpp:
+    complete
+    .text start:0x02034a30 end:0x02034b34
+
+
+src/Combat/Main/AdvanceActiveEntryPhysics_02017208.cpp:
+    complete
+    .text start:0x02017208 end:0x0201730c
+
+
+src/Combat/Main/BackupMainBgControlRegisters_02074af4.cpp:
+    complete
+    .text start:0x02074af4 end:0x02074b64
+
+
+src/Combat/Main/DispatchEventListByType_020bdce8.cpp:
+    complete
+    .text start:0x020bdce8 end:0x020bddec
+
+
+src/Combat/Main/InitSharedWordsForAllSlots_020c83b0.cpp:
+    complete
+    .text start:0x020c83b0 end:0x020c84b4
