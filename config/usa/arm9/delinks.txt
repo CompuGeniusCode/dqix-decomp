@@ -23315,3 +23315,8 @@ src/Combat/Main/func_0208ad68.cpp:
 src/Combat/Main/func_020e462c.cpp:
     complete
     .text start:0x020e462c end:0x020e46c4
+
+
+src/Combat/Main/InitIPCHandler020ce270.cpp:
+    complete
+    .text start:0x020ce270 end:0x020ce308
