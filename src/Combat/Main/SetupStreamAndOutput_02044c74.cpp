@@ -1,0 +1,34 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+extern "C" void func_0204c684(void* obj);
+int EncodeStreamValue020dc0b0(int value);
+
+// USA: func_02044c74  (semantic: SetupStreamAndOutput_02044c74)
+extern "C" ARM void func_02044c74(void* obj, void* out) {
+    char* o = (char*)obj;
+    char* dst = (char*)out;
+    func_0204c684(out);
+    void* buf = (void*)EncodeStreamValue020dc0b0(0x4800);
+    if (buf) {
+        unsigned char* p = (unsigned char*)(o + 0x1000);
+        if (p[0x9cd]) {
+            p[0x9cd] = 0;
+            memset(buf, 0, 0x4800);
+        }
+        *(short*)(dst + 0xac) = 0;
+        *(short*)(dst + 0xae) = 6;
+        *(short*)(dst + 0xa8) = 0x20;
+        *(short*)(dst + 0xaa) = 0x12;
+        *(void**)(dst + 0x8) = buf;
+        *(int*)(dst + 0xa4) = 0x4800;
+        *(int*)(dst + 0xa0) = 0;
+        *(short*)(dst + 0xc2) = 0;
+        *(short*)(dst + 0xb0) = 0;
+        *(short*)(dst + 0xb2) = 0;
+        *(short*)(dst + 0xb4) = 8;
+        *(short*)(dst + 0xb6) = 8;
+        *(short*)(dst + 0xb8) = 8;
+        *(short*)(dst + 0xba) = 8;
+    }
+}

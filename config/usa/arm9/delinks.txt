@@ -23170,3 +23170,148 @@ src/Combat/Main/RunFlaggedEntries020b3284.cpp:
 src/Combat/Main/func_020699c4.cpp:
     complete
     .text start:0x020699c4 end:0x02069a4c
+
+
+src/Combat/Main/AcquireFlushAndReleaseContext020bf1a0.cpp:
+    complete
+    .text start:0x020bf1a0 end:0x020bf238
+
+
+src/Combat/Main/AllocateAndLinkVec3PointList0206c82c.cpp:
+    complete
+    .text start:0x0206c82c end:0x0206c938
+
+
+src/Combat/Main/BuildDescriptor020de9a4.cpp:
+    complete
+    .text start:0x020de9a4 end:0x020dea40
+
+
+src/Combat/Main/CopyEntityFields_02036d88.cpp:
+    complete
+    .text start:0x02036d88 end:0x02036e20
+
+
+src/Combat/Main/DecodeHeaderFlags0200f1fc.cpp:
+    complete
+    .text start:0x0200f1fc end:0x0200f29c
+
+
+src/Combat/Main/GenerateDeviceRandomBytes_020120f0.cpp:
+    complete
+    .text start:0x020120f0 end:0x02012200
+
+
+src/Combat/Main/IncrementCounterAndSyncBlockBit02095ff0.cpp:
+    complete
+    .text start:0x02095ff0 end:0x02096088
+
+
+src/Combat/Main/InitEntryFromList_020370a0.cpp:
+    complete
+    .text start:0x020370a0 end:0x02037138
+
+
+src/Combat/Main/InsertEntryIfNewKey0206ed44.cpp:
+    complete
+    .text start:0x0206ed44 end:0x0206ee50
+
+
+src/Combat/Main/ProcessCombatantTagEntry_020e321c.cpp:
+    complete
+    .text start:0x020e321c end:0x020e3328
+
+
+src/Combat/Main/RegisterAllEntries020be6c4.cpp:
+    complete
+    .text start:0x020be6c4 end:0x020be760
+
+
+src/Combat/Main/RelocateTable020b0108.cpp:
+    complete
+    .text start:0x020b0108 end:0x020b01a4
+
+
+src/Combat/Main/ResetGXAndDisplay020c51dc.cpp:
+    complete
+    .text start:0x020c51dc end:0x020c52e8
+
+
+src/Combat/Main/SendArm7CommandAndUpdateFlags020cdbe4.cpp:
+    complete
+    .text start:0x020cdbe4 end:0x020cdc7c
+
+
+src/Combat/Main/SetCombatantPositionOrTransform_020d74a4.cpp:
+    complete
+    .text start:0x020d74a4 end:0x020d7534
+
+
+src/Combat/Main/SetupAndRunBufferedScript0203461c.cpp:
+    complete
+    .text start:0x0203461c end:0x020346b4
+
+
+src/Combat/Main/SetupStreamAndOutput_02044c74.cpp:
+    complete
+    .text start:0x02044c74 end:0x02044d0c
+
+
+src/Combat/Main/ShutdownAndReinitObj02092b34.cpp:
+    complete
+    .text start:0x02092b34 end:0x02092bcc
+
+
+src/Combat/Main/StoreVariantTriple0208e2c0.cpp:
+    complete
+    .text start:0x0208e2c0 end:0x0208e35c
+
+
+src/Combat/Main/SubmitTranslatedQuadGeometry_020292ec.cpp:
+    complete
+    .text start:0x020292ec end:0x02029384
+
+
+src/Combat/Main/UpdateSublistFlagBit02080558.cpp:
+    complete
+    .text start:0x02080558 end:0x020805f4
+
+
+src/Combat/Main/func_020098fc.cpp:
+    complete
+    .text start:0x020098fc end:0x02009998
+
+
+src/Combat/Main/func_020362e4.cpp:
+    complete
+    .text start:0x020362e4 end:0x02036380
+
+
+src/Combat/Main/func_0204df9c.cpp:
+    complete
+    .text start:0x0204df9c end:0x0204e038
+
+
+src/Combat/Main/func_02050064.cpp:
+    complete
+    .text start:0x02050064 end:0x02050100
+
+
+src/Combat/Main/func_0205d048.cpp:
+    complete
+    .text start:0x0205d048 end:0x0205d0e0
+
+
+src/Combat/Main/func_0208a91c.cpp:
+    complete
+    .text start:0x0208a91c end:0x0208a9b4
+
+
+src/Combat/Main/func_0208ad68.cpp:
+    complete
+    .text start:0x0208ad68 end:0x0208ae00
+
+
+src/Combat/Main/func_020e462c.cpp:
+    complete
+    .text start:0x020e462c end:0x020e46c4
