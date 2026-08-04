@@ -2764,3 +2764,48 @@ src/Combat/Overlay_23/UpdateFieldOrDispatch_021dcae0.cpp:
 src/Combat/Overlay_23/UpdateFlagsAndByte4e6_021e3e98.cpp:
     complete
     .text start:0x021e3e98 end:0x021e3f34
+
+
+src/Combat/Overlay_23/ClearEntriesAndSetGlobalFlags_021fa7d4.cpp:
+    complete
+    .text start:0x021fa7d4 end:0x021fa854
+
+
+src/Combat/Overlay_23/ClearEntryFlag8IfPending_021fb364.cpp:
+    complete
+    .text start:0x021fb364 end:0x021fb3c8
+
+
+src/Combat/Overlay_23/ComputeVecFromNode_021f8b78.cpp:
+    complete
+    .text start:0x021f8b78 end:0x021f8c1c
+
+
+src/Combat/Overlay_23/CreateAndInitSlot_021fa078.cpp:
+    complete
+    .text start:0x021fa078 end:0x021fa108
+
+
+src/Combat/Overlay_23/InitField1cOrRegisterZeroPadCallback_021fb700.cpp:
+    complete
+    .text start:0x021fb700 end:0x021fb76c
+
+
+src/Combat/Overlay_23/InitField1cOrRegisterZeroPadCallback_021fceb8.cpp:
+    complete
+    .text start:0x021fceb8 end:0x021fcf24
+
+
+src/Combat/Overlay_23/LookupTableEntryForNode_021f6558.cpp:
+    complete
+    .text start:0x021f6558 end:0x021f6590
+
+
+src/Combat/Overlay_23/TryFormatAndDispatch_021f7010.cpp:
+    complete
+    .text start:0x021f7010 end:0x021f707c
+
+
+src/Combat/Overlay_23/func_ov023_021f645c.cpp:
+    complete
+    .text start:0x021f645c end:0x021f64a8
