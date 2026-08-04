@@ -23115,3 +23115,58 @@ src/Combat/Main/func_0200e984.cpp:
 src/Combat/Main/func_0207de48.cpp:
     complete
     .text start:0x0207de48 end:0x0207df50
+
+
+src/Combat/Main/AdjustEntryArrayFieldByManagerDelta0209d2a8.cpp:
+    complete
+    .text start:0x0209d2a8 end:0x0209d334
+
+
+src/Combat/Main/AdvanceBattlePhaseTimerAndDispatch_02092bcc.cpp:
+    complete
+    .text start:0x02092bcc end:0x02092cd0
+
+
+src/Combat/Main/ClearMatchingBitsInMaskTable020c9a88.cpp:
+    complete
+    .text start:0x020c9a88 end:0x020c9b10
+
+
+src/Combat/Main/ComputeDaySerialFromDate_020cf8e4.cpp:
+    complete
+    .text start:0x020cf8e4 end:0x020cf978
+
+
+src/Combat/Main/GetCharBaseAddrByKind_020e12c0.cpp:
+    complete
+    .text start:0x020e12c0 end:0x020e1354
+
+
+src/Combat/Main/InitBattleConfig0205157c.cpp:
+    complete
+    .text start:0x0205157c end:0x02051688
+
+
+src/Combat/Main/LoadAndDecompressResource_02015134.cpp:
+    complete
+    .text start:0x02015134 end:0x020151cc
+
+
+src/Combat/Main/LookupWordField0209cc3c.cpp:
+    complete
+    .text start:0x0209cc3c end:0x0209ccc8
+
+
+src/Combat/Main/ProcessCombatEffect0205c5b0.cpp:
+    complete
+    .text start:0x0205c5b0 end:0x0205c6bc
+
+
+src/Combat/Main/RunFlaggedEntries020b3284.cpp:
+    complete
+    .text start:0x020b3284 end:0x020b3310
+
+
+src/Combat/Main/func_020699c4.cpp:
+    complete
+    .text start:0x020699c4 end:0x02069a4c
