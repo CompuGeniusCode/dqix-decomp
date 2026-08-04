@@ -1,0 +1,68 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+#include "std_library_functions.h"
+
+extern "C" int func_ov017_0218b5b0(void);
+extern "C" void* func_0202ae18(void);
+struct CombatantStruct* GetCombatantAtField0x3ac(struct BattleStruct* battleStruct);
+void* GetData02100044(void);
+void* GetData02153637(void);
+void* GetData02153634(void);
+extern "C" int func_0202b000(void* obj);
+extern "C" void func_ov017_021c37a4(void);
+void OrByte0x1029With0x30ClearField0x1034(unsigned char* obj);
+int SetStateToThreeAndDispatch0202b800(int* p);
+extern "C" void func_0205e22c(void* p);
+struct SlotTable020e3004;
+void InitSlotTable020e3004(struct SlotTable020e3004* p);
+struct Bytes020e358c;
+void ClearThreeBytes020e358c(struct Bytes020e358c* s);
+void ClearTwoBytesAtField_02195748(unsigned char* base);
+void CollectValidCombatants02010890(struct BattleStruct* bs, int* outList, int* outCount);
+extern "C" void func_0200f374(void* buf, int len);
+int StringLength(const char* s);
+extern "C" void func_0202c360(void* obj, char* name);
+void ClearBufferAndFlag_021972cc(char* p);
+void ClearByteField17182_02195520(void* obj);
+
+// USA: func_ov017_021c36a0  (semantic: ProcessTurnStartOrRestart_021c36a0)
+extern "C" ARM void func_ov017_021c36a0(void) {
+	struct BattleStruct* bs = GetBattleStruct();
+	void* objA = (void*)(int)func_ov017_0218b5b0();
+	void* objB = func_0202ae18();
+	struct CombatantStruct* combatant = GetCombatantAtField0x3ac(bs);
+	void* d100044 = GetData02100044();
+	void* d153637 = GetData02153637();
+	void* d153634 = GetData02153634();
+
+	if (func_0202b000(objB) != 0) {
+		func_ov017_021c37a4();
+		return;
+	}
+
+	OrByte0x1029With0x30ClearField0x1034((unsigned char*)objB);
+	SetStateToThreeAndDispatch0202b800((int*)objB);
+	func_0205e22c(d100044);
+	InitSlotTable020e3004((struct SlotTable020e3004*)d153637);
+	ClearThreeBytes020e358c((struct Bytes020e358c*)d153634);
+	ClearTwoBytesAtField_02195748((unsigned char*)objA);
+
+	int list[4];
+	int count;
+	CollectValidCombatants02010890(bs, list, &count);
+
+	char buf[20];
+	func_0200f374(buf, 0x14);
+
+	int len = StringLength(*(char**)((char*)combatant + 0x134));
+	if (len > 0x14) {
+		len = 0x14;
+	}
+	memcpy(buf, *(char**)((char*)combatant + 0x134), len);
+	buf[len] = 0;
+	buf[0x13] = (char)count;
+
+	func_0202c360(objB, *(char**)((char*)combatant + 0x134));
+	ClearBufferAndFlag_021972cc((char*)objA);
+	ClearByteField17182_02195520(objA);
+}

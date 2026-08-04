@@ -1,0 +1,27 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov017_0218b5b0(void);
+void* GetData02100044(void);
+extern "C" void func_0205e330(void* a, void* b, int c);
+
+struct LocalEvt021ce29c {
+	unsigned char tag;
+	char pad1[3];
+	signed char data[4];
+	char pad2[12];
+};
+
+// USA: func_ov017_021ce29c  (semantic: CopyBytesAndEnqueueTag_021ce29c)
+extern "C" ARM void func_ov017_021ce29c(void) {
+	void* p = GetData02100044();
+	int raw = func_ov017_0218b5b0();
+	unsigned char* src = *(unsigned char**)((char*)raw + 0x3000 + 0xb30);
+
+	struct LocalEvt021ce29c buf;
+	buf.tag = 0x2e;
+	signed char* dst = buf.data;
+	for (int i = 0; i < 4; i++) {
+		dst[i] = *(unsigned char*)(src + i + 0x1b);
+	}
+	func_0205e330(p, &buf, 0);
+}

@@ -1,0 +1,59 @@
+#include <globaldefs.h>
+#include "Memory/SafeAllocator.h"
+#include "Memory/AllocatorUnion.h"
+#include "std_library_functions.h"
+
+int GetData02104304Field4(void);
+extern "C" void func_020301c8(int a, int b);
+struct NotifyEntriesStruct0207f8bc;
+void FlushNotifyEntries(struct NotifyEntriesStruct0207f8bc* p);
+extern "C" int func_ov017_0218b5b0(void);
+void* GetDataPtr02114e04_020d6c00(void);
+void ClearBitsInField4(unsigned int* obj, unsigned int mask);
+void ClearFlags020466f4(struct FlagWord020466f4* word, unsigned int mask);
+void TailForward02012da4(AllocatorUnion* alloc, void* data);
+void CleanInvalidateCacheRange(const void* addr, unsigned int size);
+int TransferBg1CharData(int arg0, int arg1, unsigned int arg2);
+int TransferBg2CharData(int arg0, int arg1, unsigned int arg2);
+extern "C" void func_020c5b98(void* p, int a, int b);
+int TransferToBgCharBase020c5c58(int arg0, int arg1, unsigned int arg2);
+
+extern int data_02114e20;
+
+// USA: func_ov017_021aaf08  (semantic: ResetGraphicsBuffersAndAllocator_021aaf08)
+extern "C" ARM void func_ov017_021aaf08(char* self) {
+    int listPtr = GetData02104304Field4();
+    if (*(int*)(self + 0x50) >= 0) {
+        func_020301c8(listPtr, *(int*)(self + 0x50));
+        *(int*)(self + 0x50) = -1;
+    }
+
+    if (*(void**)(self + 0x18) != 0) {
+        FlushNotifyEntries(*(struct NotifyEntriesStruct0207f8bc**)(self + 0x18));
+        *(void**)(self + 0x18) = 0;
+    }
+
+    int h = func_ov017_0218b5b0();
+    void* d = GetDataPtr02114e04_020d6c00();
+    ClearBitsInField4((unsigned int*)h, 0x80);
+    ClearFlags020466f4((struct FlagWord020466f4*)d, 0x200);
+
+    SafeAllocator* allocator = (SafeAllocator*)(self + 0x24);
+    void* p = allocator->GetSignedAllocator();
+    allocator->Destroy();
+    if (p) {
+        TailForward02012da4((AllocatorUnion*)&data_02114e20, p);
+    }
+
+    int buf = *(int*)(self + 0x8);
+    if (buf != 0) {
+        memset((void*)buf, 0, 0x800);
+        CleanInvalidateCacheRange(*(void**)(self + 0x8), 0x800);
+        TransferBg1CharData(*(int*)(self + 0x8), 0, 0x20);
+        TransferBg2CharData(*(int*)(self + 0x8), 0, 0x20);
+        func_020c5b98(*(void**)(self + 0x8), 0, 0x800);
+        TransferToBgCharBase020c5c58(*(int*)(self + 0x8), 0, 0x800);
+        *(int*)(self + 0x8) = 0;
+    }
+    *(int*)(self + 0x64) = 0;
+}
