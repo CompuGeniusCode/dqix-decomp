@@ -3534,3 +3534,48 @@ src/Combat/Overlay_23/ClearOrSetEntryFieldsBySlot_021dbd10.cpp:
 src/Combat/Overlay_23/ReleaseQueuedListEntry_021e04e8.cpp:
     complete
     .text start:0x021e04e8 end:0x021e05e4
+
+
+src/Combat/Overlay_23/ProcessEntries_021e257c.cpp:
+    complete
+    .text start:0x021e257c end:0x021e27f8
+
+
+src/Combat/Overlay_23/ReleaseListEntryAndUpdateFlags_021e0840.cpp:
+    complete
+    .text start:0x021e0840 end:0x021e0a48
+
+
+src/Combat/Overlay_23/SyncTagFieldsAndNotify_021e5628.cpp:
+    complete
+    .text start:0x021e5628 end:0x021e5974
+
+
+src/Combat/Overlay_23/func_ov023_021d8bb4.cpp:
+    complete
+    .text start:0x021d8bb4 end:0x021d8c60
+
+
+src/Combat/Overlay_23/func_ov023_021da9b4.cpp:
+    complete
+    .text start:0x021da9b4 end:0x021dab5c
+
+
+src/Combat/Overlay_23/func_ov023_021e20f0.cpp:
+    complete
+    .text start:0x021e20f0 end:0x021e23d0
+
+
+src/Combat/Overlay_23/func_ov023_021e83c8.cpp:
+    complete
+    .text start:0x021e83c8 end:0x021e853c
+
+
+src/Combat/Overlay_23/func_ov023_021f2368.cpp:
+    complete
+    .text start:0x021f2368 end:0x021f2638
+
+
+src/Combat/Overlay_23/func_ov023_021faed0.cpp:
+    complete
+    .text start:0x021faed0 end:0x021fb1c8
