@@ -7545,3 +7545,78 @@ src/Combat/Overlay_31/ForwardSkipArg_022201cc.cpp:
 src/Combat/Overlay_31/StoreAndForward_0221e798.cpp:
     complete
     .text start:0x0221e798 end:0x0221e7a8
+
+
+src/Combat/Overlay_31/BitwiseCompute_0221cfc4.cpp:
+    complete
+    .text start:0x0221cfc4 end:0x0221cfdc
+
+
+src/Combat/Overlay_31/ComputeChecksumReversed_0221d8e8.cpp:
+    complete
+    .text start:0x0221d8e8 end:0x0221d90c
+
+
+src/Combat/Overlay_31/ComputeScaledTimestamp_02222870.cpp:
+    complete
+    .text start:0x02222870 end:0x0222288c
+
+
+src/Combat/Overlay_31/CopyTemplate_02222adc.cpp:
+    complete
+    .text start:0x02222adc end:0x02222af0
+
+
+src/Combat/Overlay_31/ForwardArgToCallback_0221c4ac.cpp:
+    complete
+    .text start:0x0221c4ac end:0x0221c4bc
+
+
+src/Combat/Overlay_31/GetGlobalField2c_0221f994.cpp:
+    complete
+    .text start:0x0221f994 end:0x0221f9a0
+
+
+src/Combat/Overlay_31/SetActiveField4_0221d384.cpp:
+    complete
+    .text start:0x0221d384 end:0x0221d3b0
+
+
+src/Combat/Overlay_31/StoreByteAndForwardPacket02207204.cpp:
+    complete
+    .text start:0x0221e5bc end:0x0221e5c8
+
+
+src/Combat/Overlay_31/StoreByteAndForward_0221e538.cpp:
+    complete
+    .text start:0x0221e538 end:0x0221e54c
+
+
+src/Combat/Overlay_31/TailCallWrapper02207434_0221e5c8.cpp:
+    complete
+    .text start:0x0221e5c8 end:0x0221e5d0
+
+
+src/Combat/Overlay_31/Wrapper020c7e0c_0221e7a8.cpp:
+    complete
+    .text start:0x0221e7a8 end:0x0221e7bc
+
+
+src/Combat/Overlay_31/Wrapper020c7e0c_0221e7bc.cpp:
+    complete
+    .text start:0x0221e7bc end:0x0221e7d0
+
+
+src/Combat/Overlay_31/XorCopyBytes_0221e250.cpp:
+    complete
+    .text start:0x0221e250 end:0x0221e27c
+
+
+src/Combat/Overlay_31/func_ov031_0221d310.cpp:
+    complete
+    .text start:0x0221d310 end:0x0221d354
+
+
+src/Combat/Overlay_31/func_ov031_022201d8.cpp:
+    complete
+    .text start:0x022201d8 end:0x02220248
