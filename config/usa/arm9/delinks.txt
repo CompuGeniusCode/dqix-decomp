@@ -23005,3 +23005,113 @@ src/Combat/Main/func_020be2ec.cpp:
 src/Combat/Main/func_020c93d0.cpp:
     complete
     .text start:0x020c93d0 end:0x020c945c
+
+
+src/Combat/Main/AccumulateDistanceAndDecay020a7ce0.cpp:
+    complete
+    .text start:0x020a7ce0 end:0x020a7d74
+
+
+src/Combat/Main/AllocPoolBlockAtIndex_020c8854.cpp:
+    complete
+    .text start:0x020c8854 end:0x020c895c
+
+
+src/Combat/Main/BuildViewMatrix020c20d4.cpp:
+    complete
+    .text start:0x020c20d4 end:0x020c21dc
+
+
+src/Combat/Main/ConfigureVramFlags02097c18.cpp:
+    complete
+    .text start:0x02097c18 end:0x02097cac
+
+
+src/Combat/Main/CreateAndRegisterNode02057e6c.cpp:
+    complete
+    .text start:0x02057e6c end:0x02057f00
+
+
+src/Combat/Main/FindOrAllocateNode_02055ed0.cpp:
+    complete
+    .text start:0x02055ed0 end:0x02055f5c
+
+
+src/Combat/Main/GetEntryHighByteIfMatches_020342ac.cpp:
+    complete
+    .text start:0x020342ac end:0x02034340
+
+
+src/Combat/Main/HandlePendingFlagsCase_020c676c.cpp:
+    complete
+    .text start:0x020c676c end:0x020c67fc
+
+
+src/Combat/Main/ProcessSlotSequence0206b104.cpp:
+    complete
+    .text start:0x0206b104 end:0x0206b198
+
+
+src/Combat/Main/PushQueueEntryOrWait020c7e0c.cpp:
+    complete
+    .text start:0x020c7e0c end:0x020c7ea0
+
+
+src/Combat/Main/RefreshBg1TileMap_02028f54.cpp:
+    complete
+    .text start:0x02028f54 end:0x02029060
+
+
+src/Combat/Main/ResetAllSubsystems_0201c124.cpp:
+    complete
+    .text start:0x0201c124 end:0x0201c1b8
+
+
+src/Combat/Main/ResetBattleRecordFlags_0202bf40.cpp:
+    complete
+    .text start:0x0202bf40 end:0x0202c04c
+
+
+src/Combat/Main/ResetMatrixStacks020c5414.cpp:
+    complete
+    .text start:0x020c5414 end:0x020c54a4
+
+
+src/Combat/Main/SetFlagOrEnqueueEntry_020a8a34.cpp:
+    complete
+    .text start:0x020a8a34 end:0x020a8ac8
+
+
+src/Combat/Main/SetupAndRunBufferedScript0209a3dc.cpp:
+    complete
+    .text start:0x0209a3dc end:0x0209a470
+
+
+src/Combat/Main/SomeHashWrapper_020c0c3c.cpp:
+    complete
+    .text start:0x020c0c3c end:0x020c0cd0
+
+
+src/Combat/Main/SubmitTransformedGxCommands_02047448.cpp:
+    complete
+    .text start:0x02047448 end:0x02047554
+
+
+src/Combat/Main/TryReclaimAndForward020a0cc4.cpp:
+    complete
+    .text start:0x020a0cc4 end:0x020a0d58
+
+
+src/Combat/Main/UpdateElementStreamAndCache_0203f430.cpp:
+    complete
+    .text start:0x0203f430 end:0x0203f53c
+
+
+src/Combat/Main/func_0200e984.cpp:
+    complete
+    .text start:0x0200e984 end:0x0200ea08
+
+
+src/Combat/Main/func_0207de48.cpp:
+    complete
+    .text start:0x0207de48 end:0x0207df50
