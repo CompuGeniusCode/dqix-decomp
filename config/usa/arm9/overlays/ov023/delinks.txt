@@ -3379,3 +3379,78 @@ src/Combat/Overlay_23/func_ov023_021fa108.cpp:
 src/Combat/Overlay_23/func_ov023_021fad84.cpp:
     complete
     .text start:0x021fad84 end:0x021fae88
+
+
+src/Combat/Overlay_23/AccumulateBlendDeltas_021e96a8.cpp:
+    complete
+    .text start:0x021e96a8 end:0x021e9818
+
+
+src/Combat/Overlay_23/BuildElemPaletteTags_021d9a6c.cpp:
+    complete
+    .text start:0x021d9a6c end:0x021d9c7c
+
+
+src/Combat/Overlay_23/FindEntryAndApply_021e7cec.cpp:
+    complete
+    .text start:0x021e7cec end:0x021e7d8c
+
+
+src/Combat/Overlay_23/FindSlotAndDispatch_021f9d14.cpp:
+    complete
+    .text start:0x021f9d14 end:0x021f9da0
+
+
+src/Combat/Overlay_23/ReleaseListEntryAndFinalizeDisplay_021e0690.cpp:
+    complete
+    .text start:0x021e0690 end:0x021e07f8
+
+
+src/Combat/Overlay_23/StoreCombatantFieldByIndex_021e94cc.cpp:
+    complete
+    .text start:0x021e94cc end:0x021e96a8
+
+
+src/Combat/Overlay_23/func_ov023_021e1bac.cpp:
+    complete
+    .text start:0x021e1bac end:0x021e1ca8
+
+
+src/Combat/Overlay_23/func_ov023_021e1ca8.cpp:
+    complete
+    .text start:0x021e1ca8 end:0x021e1da4
+
+
+src/Combat/Overlay_23/func_ov023_021e2dd8.cpp:
+    complete
+    .text start:0x021e2dd8 end:0x021e2f38
+
+
+src/Combat/Overlay_23/func_ov023_021e802c.cpp:
+    complete
+    .text start:0x021e802c end:0x021e81f4
+
+
+src/Combat/Overlay_23/func_ov023_021eb26c.cpp:
+    complete
+    .text start:0x021eb26c end:0x021eb414
+
+
+src/Combat/Overlay_23/func_ov023_021f5848.cpp:
+    complete
+    .text start:0x021f5848 end:0x021f5a1c
+
+
+src/Combat/Overlay_23/func_ov023_021f6158.cpp:
+    complete
+    .text start:0x021f6158 end:0x021f6324
+
+
+src/Combat/Overlay_23/func_ov023_021fa370.cpp:
+    complete
+    .text start:0x021fa370 end:0x021fa4c8
+
+
+src/Combat/Overlay_23/func_ov023_021fab48.cpp:
+    complete
+    .text start:0x021fab48 end:0x021fad18
