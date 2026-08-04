@@ -3454,3 +3454,73 @@ src/Combat/Overlay_23/func_ov023_021fa370.cpp:
 src/Combat/Overlay_23/func_ov023_021fab48.cpp:
     complete
     .text start:0x021fab48 end:0x021fad18
+
+
+src/Combat/Overlay_23/AccumulateNodeVecByMode_021f98e0.cpp:
+    complete
+    .text start:0x021f98e0 end:0x021f9b18
+
+
+src/Combat/Overlay_23/AdvanceCombatPhaseAndDispatch_021f2638.cpp:
+    complete
+    .text start:0x021f2638 end:0x021f288c
+
+
+src/Combat/Overlay_23/AdvanceTargetCombatant_021e4c18.cpp:
+    complete
+    .text start:0x021e4c18 end:0x021e4e1c
+
+
+src/Combat/Overlay_23/AppendMatchedEntryTags_021d9290.cpp:
+    complete
+    .text start:0x021d9290 end:0x021d94e4
+
+
+src/Combat/Overlay_23/ConfigureEntryPositions_021da770.cpp:
+    complete
+    .text start:0x021da770 end:0x021da9b4
+
+
+src/Combat/Overlay_23/DispatchBoundsEdges_021f86fc.cpp:
+    complete
+    .text start:0x021f86fc end:0x021f88b8
+
+
+src/Combat/Overlay_23/ParseListValuesAndDispatch_021e0c80.cpp:
+    complete
+    .text start:0x021e0c80 end:0x021e0eb8
+
+
+src/Combat/Overlay_23/SomeDispatch_021dfc90.cpp:
+    complete
+    .text start:0x021dfc90 end:0x021dfecc
+
+
+src/Combat/Overlay_23/UpdateStateAndDispatch_021f288c.cpp:
+    complete
+    .text start:0x021f288c end:0x021f2a48
+
+
+src/Combat/Overlay_23/func_ov023_021dbfd0.cpp:
+    complete
+    .text start:0x021dbfd0 end:0x021dc134
+
+
+src/Combat/Overlay_23/func_ov023_021dc134.cpp:
+    complete
+    .text start:0x021dc134 end:0x021dc354
+
+
+src/Combat/Overlay_23/func_ov023_021e7404.cpp:
+    complete
+    .text start:0x021e7404 end:0x021e761c
+
+
+src/Combat/Overlay_23/func_ov023_021ecbe8.cpp:
+    complete
+    .text start:0x021ecbe8 end:0x021ecdfc
+
+
+src/Combat/Overlay_23/func_ov023_021ed9f8.cpp:
+    complete
+    .text start:0x021ed9f8 end:0x021edc08
