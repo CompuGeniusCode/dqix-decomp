@@ -2215,3 +2215,13 @@ src/Combat/Overlay_4/FormatSerialAndBindEntries_0216f4fc.cpp:
 src/Combat/Overlay_4/func_ov004_0215dd3c.cpp:
     complete
     .text start:0x0215dd3c end:0x0215de80
+
+
+src/Combat/Overlay_4/AllocateAndScanBits_021567f8.cpp:
+    complete
+    .text start:0x021567f8 end:0x02156a00
+
+
+src/Combat/Overlay_4/DispatchByType_0216b7bc.cpp:
+    complete
+    .text start:0x0216b7bc end:0x0216ba70
