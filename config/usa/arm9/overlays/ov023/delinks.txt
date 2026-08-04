@@ -3149,3 +3149,153 @@ src/Combat/Overlay_23/func_ov023_021fd03c.cpp:
 src/Combat/Overlay_23/func_ov023_021fd120.cpp:
     complete
     .text start:0x021fd120 end:0x021fd1e0
+
+
+src/Combat/Overlay_23/CheckStateFlagsAndDispatch_021f4fc8.cpp:
+    complete
+    .text start:0x021f4fc8 end:0x021f50fc
+
+
+src/Combat/Overlay_23/DecryptAndRunBufferedScript_021f5d58.cpp:
+    complete
+    .text start:0x021f5d58 end:0x021f5e70
+
+
+src/Combat/Overlay_23/DestroySlotAllocatorsAndDispatch_021e7340.cpp:
+    complete
+    .text start:0x021e7340 end:0x021e7404
+
+
+src/Combat/Overlay_23/DispatchBufferedScriptsByTag_021f5b9c.cpp:
+    complete
+    .text start:0x021f5b9c end:0x021f5cd8
+
+
+src/Combat/Overlay_23/DispatchByFlag2_021f7ca0.cpp:
+    complete
+    .text start:0x021f7ca0 end:0x021f7d14
+
+
+src/Combat/Overlay_23/DispatchListEntryCodes_021e0a90.cpp:
+    complete
+    .text start:0x021e0a90 end:0x021e0b54
+
+
+src/Combat/Overlay_23/DispatchListThenCheck_021f68dc.cpp:
+    complete
+    .text start:0x021f68dc end:0x021f6984
+
+
+src/Combat/Overlay_23/InitEntryStateAndDispatchHandlers_021ed064.cpp:
+    complete
+    .text start:0x021ed064 end:0x021ed194
+
+
+src/Combat/Overlay_23/InitEvent7WithBuffer_021f8cf4.cpp:
+    complete
+    .text start:0x021f8cf4 end:0x021f8e1c
+
+
+src/Combat/Overlay_23/IsPointInScaledRect_021f8970.cpp:
+    complete
+    .text start:0x021f8970 end:0x021f89f4
+
+
+src/Combat/Overlay_23/ResetCombatOverlayState_021eb138.cpp:
+    complete
+    .text start:0x021eb138 end:0x021eb26c
+
+
+src/Combat/Overlay_23/TeardownStateAndAllocators_021dc354.cpp:
+    complete
+    .text start:0x021dc354 end:0x021dc488
+
+
+src/Combat/Overlay_23/func_ov023_021d90d0.cpp:
+    complete
+    .text start:0x021d90d0 end:0x021d921c
+
+
+src/Combat/Overlay_23/func_ov023_021dab5c.cpp:
+    complete
+    .text start:0x021dab5c end:0x021dac40
+
+
+src/Combat/Overlay_23/func_ov023_021dfb4c.cpp:
+    complete
+    .text start:0x021dfb4c end:0x021dfc90
+
+
+src/Combat/Overlay_23/func_ov023_021e18cc.cpp:
+    complete
+    .text start:0x021e18cc end:0x021e19ec
+
+
+src/Combat/Overlay_23/func_ov023_021e19ec.cpp:
+    complete
+    .text start:0x021e19ec end:0x021e1b0c
+
+
+src/Combat/Overlay_23/func_ov023_021e1de8.cpp:
+    complete
+    .text start:0x021e1de8 end:0x021e1f0c
+
+
+src/Combat/Overlay_23/func_ov023_021e1f0c.cpp:
+    complete
+    .text start:0x021e1f0c end:0x021e2030
+
+
+src/Combat/Overlay_23/func_ov023_021e2868.cpp:
+    complete
+    .text start:0x021e2868 end:0x021e29b8
+
+
+src/Combat/Overlay_23/func_ov023_021e2ce8.cpp:
+    complete
+    .text start:0x021e2ce8 end:0x021e2dd8
+
+
+src/Combat/Overlay_23/func_ov023_021e66ac.cpp:
+    complete
+    .text start:0x021e66ac end:0x021e67f4
+
+
+src/Combat/Overlay_23/func_ov023_021e7220.cpp:
+    complete
+    .text start:0x021e7220 end:0x021e7340
+
+
+src/Combat/Overlay_23/func_ov023_021e8270.cpp:
+    complete
+    .text start:0x021e8270 end:0x021e83c8
+
+
+src/Combat/Overlay_23/func_ov023_021e8cdc.cpp:
+    complete
+    .text start:0x021e8cdc end:0x021e8e34
+
+
+src/Combat/Overlay_23/func_ov023_021ed4b8.cpp:
+    complete
+    .text start:0x021ed4b8 end:0x021ed600
+
+
+src/Combat/Overlay_23/func_ov023_021f5150.cpp:
+    complete
+    .text start:0x021f5150 end:0x021f5228
+
+
+src/Combat/Overlay_23/func_ov023_021f5448.cpp:
+    complete
+    .text start:0x021f5448 end:0x021f5524
+
+
+src/Combat/Overlay_23/func_ov023_021f6ac8.cpp:
+    complete
+    .text start:0x021f6ac8 end:0x021f6ba8
+
+
+src/Combat/Overlay_23/func_ov023_021fa644.cpp:
+    complete
+    .text start:0x021fa644 end:0x021fa760
