@@ -484,3 +484,53 @@ src/Combat/Overlay_11/Trans_02184324.cpp:
 src/Combat/Overlay_11/Trans_02184a0c.cpp:
     complete
     .text start:0x02184a0c end:0x02184a18
+
+
+src/Combat/Overlay_11/Trans_021842a0.cpp:
+    complete
+    .text start:0x021842a0 end:0x021842c8
+
+
+src/Combat/Overlay_11/Trans_02184c7c.cpp:
+    complete
+    .text start:0x02184c7c end:0x02184cc0
+
+
+src/Combat/Overlay_11/Trans_021851ec.cpp:
+    complete
+    .text start:0x021851ec end:0x02185214
+
+
+src/Combat/Overlay_11/Trans_02186e30.cpp:
+    complete
+    .text start:0x02186e30 end:0x02186e54
+
+
+src/Combat/Overlay_11/Trans_02187e08.cpp:
+    complete
+    .text start:0x02187e08 end:0x02187e20
+
+
+src/Combat/Overlay_11/Trans_02187f4c.cpp:
+    complete
+    .text start:0x02187f4c end:0x02187f68
+
+
+src/Combat/Overlay_11/Trans_02188014.cpp:
+    complete
+    .text start:0x02188014 end:0x02188030
+
+
+src/Combat/Overlay_11/Trans_02188384.cpp:
+    complete
+    .text start:0x02188384 end:0x021883a8
+
+
+src/Combat/Overlay_11/Trans_02188438.cpp:
+    complete
+    .text start:0x02188438 end:0x02188460
+
+
+src/Combat/Overlay_11/Trans_021884ac.cpp:
+    complete
+    .text start:0x021884ac end:0x021884d0
