@@ -23505,3 +23505,118 @@ src/Combat/Main/func_020c60d8.cpp:
 src/Combat/Main/func_020d5b5c.cpp:
     complete
     .text start:0x020d5b5c end:0x020d5bfc
+
+
+src/Combat/Main/AppendQueueEntry0205addc.cpp:
+    complete
+    .text start:0x0205addc end:0x0205ae8c
+
+
+src/Combat/Main/ApplyContextToTarget_020a9a50.cpp:
+    complete
+    .text start:0x020a9a50 end:0x020a9af8
+
+
+src/Combat/Main/ApplyGlobalTableAndFinalize02020aec.cpp:
+    complete
+    .text start:0x02020aec end:0x02020b98
+
+
+src/Combat/Main/ApplyLevelValue0205e944.cpp:
+    complete
+    .text start:0x0205e944 end:0x0205e9f4
+
+
+src/Combat/Main/ApplySlotElementEffectIfFlagged020ddcbc.cpp:
+    complete
+    .text start:0x020ddcbc end:0x020dddcc
+
+
+src/Combat/Main/ClassifyHPRatio020dcc98.cpp:
+    complete
+    .text start:0x020dcc98 end:0x020dcd40
+
+
+src/Combat/Main/ContinueDmaStream020ca1a0.cpp:
+    complete
+    .text start:0x020ca1a0 end:0x020ca24c
+
+
+src/Combat/Main/CountUnflaggedFilteredSlots020dc428.cpp:
+    complete
+    .text start:0x020dc428 end:0x020dc4d0
+
+
+src/Combat/Main/EncodeStringWithEscapes_02068418.cpp:
+    complete
+    .text start:0x02068418 end:0x0206852c
+
+
+src/Combat/Main/FillAndConvertDigitBuffer_0200a300.cpp:
+    complete
+    .text start:0x0200a300 end:0x0200a3a8
+
+
+src/Combat/Main/GetModeValue_020c862c.cpp:
+    complete
+    .text start:0x020c862c end:0x020c86d4
+
+
+src/Combat/Main/HandleBrightnessOrDispatchState02012de8.cpp:
+    complete
+    .text start:0x02012de8 end:0x02012efc
+
+
+src/Combat/Main/InitAndAssignBestEntries_020a8304.cpp:
+    complete
+    .text start:0x020a8304 end:0x020a83b0
+
+
+src/Combat/Main/LookupCategoryOverride_0209cd50.cpp:
+    complete
+    .text start:0x0209cd50 end:0x0209cdf8
+
+
+src/Combat/Main/PopStackAndResetEntries0205d6e4.cpp:
+    complete
+    .text start:0x0205d6e4 end:0x0205d794
+
+
+src/Combat/Main/QueueVec3Event_02092d60.cpp:
+    complete
+    .text start:0x02092d60 end:0x02092e0c
+
+
+src/Combat/Main/ResetBattleManagerState_020da244.cpp:
+    complete
+    .text start:0x020da244 end:0x020da2e4
+
+
+src/Combat/Main/ResetEntryTableAndContext020982b4.cpp:
+    complete
+    .text start:0x020982b4 end:0x02098364
+
+
+src/Combat/Main/ResetStruct02071b38.cpp:
+    complete
+    .text start:0x02071b38 end:0x02071be8
+
+
+src/Combat/Main/RestoreProcessBackupPairTablesTwice020daa58.cpp:
+    complete
+    .text start:0x020daa58 end:0x020dab68
+
+
+src/Combat/Main/SlideAndClearEntries_020945ac.cpp:
+    complete
+    .text start:0x020945ac end:0x02094654
+
+
+src/Combat/Main/TranslateMatrix020c189c.cpp:
+    complete
+    .text start:0x020c189c end:0x020c1948
+
+
+src/Combat/Main/WaitForInterrupt.cpp:
+    complete
+    .text start:0x020c9778 end:0x020c9820
