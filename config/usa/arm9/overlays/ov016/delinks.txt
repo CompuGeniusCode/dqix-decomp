@@ -254,3 +254,28 @@ src/Combat/Overlay_16/CallVTableFnAt20_0218f6a0.cpp:
 src/Combat/Overlay_16/InitAndReturnSelf_0218e790.cpp:
     complete
     .text start:0x0218e790 end:0x0218e7a4
+
+
+src/Combat/Overlay_16/Synth_0218b5c0.cpp:
+    complete
+    .text start:0x0218b5c0 end:0x0218b5c4
+
+
+src/Combat/Overlay_16/Synth_0218ef1c.cpp:
+    complete
+    .text start:0x0218ef1c end:0x0218ef24
+
+
+src/Combat/Overlay_16/Synth_0218ef24.cpp:
+    complete
+    .text start:0x0218ef24 end:0x0218ef2c
+
+
+src/Combat/Overlay_16/Trans_0218e00c.cpp:
+    complete
+    .text start:0x0218e00c end:0x0218e020
+
+
+src/Combat/Overlay_16/Trans_0218fea0.cpp:
+    complete
+    .text start:0x0218fea0 end:0x0218feb4
