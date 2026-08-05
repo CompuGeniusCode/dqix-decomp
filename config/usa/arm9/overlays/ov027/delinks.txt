@@ -144,3 +144,33 @@ src/Combat/Overlay_27/IssueIdleBattleCommand_021db490.cpp:
 src/Combat/Overlay_27/ResetQueueThenClearFlags_021dadf0.cpp:
     complete
     .text start:0x021dadf0 end:0x021dae1c
+
+
+src/Combat/Overlay_27/Trans_021dab00.cpp:
+    complete
+    .text start:0x021dab00 end:0x021dab38
+
+
+src/Combat/Overlay_27/Trans_021dcc8c.cpp:
+    complete
+    .text start:0x021dcc8c end:0x021dcd20
+
+
+src/Combat/Overlay_27/Trans_021dcd20.cpp:
+    complete
+    .text start:0x021dcd20 end:0x021dcd5c
+
+
+src/Combat/Overlay_27/Trans_021dcee8.cpp:
+    complete
+    .text start:0x021dcee8 end:0x021dcef8
+
+
+src/Combat/Overlay_27/Trans_021dd024.cpp:
+    complete
+    .text start:0x021dd024 end:0x021dd038
+
+
+src/Combat/Overlay_27/Trans_021dd038.cpp:
+    complete
+    .text start:0x021dd038 end:0x021dd04c
