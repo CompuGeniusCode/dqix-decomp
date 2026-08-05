@@ -1310,3 +1310,18 @@ src/Combat/Overlay_3/RepositionEntriesInRange_02160794.cpp:
 src/Combat/Overlay_3/SyncPositionAndFlags_021600b8.cpp:
     complete
     .text start:0x021600b8 end:0x02160134
+
+
+src/Combat/Overlay_3/Trans_02154eec.cpp:
+    complete
+    .text start:0x02154eec end:0x02154f80
+
+
+src/Combat/Overlay_3/Trans_0215ec68.cpp:
+    complete
+    .text start:0x0215ec68 end:0x0215ec90
+
+
+src/Combat/Overlay_3/Trans_02163d7c.cpp:
+    complete
+    .text start:0x02163d7c end:0x02163e4c
