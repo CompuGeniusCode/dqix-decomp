@@ -444,3 +444,43 @@ src/Combat/Overlay_11/CallVTableFns132And140WithTaggedArgs_021876b4.cpp:
 src/Combat/Overlay_11/CallVTableFnAt196WithTaggedArgs_02185fa8.cpp:
     complete
     .text start:0x02185fa8 end:0x02186018
+
+
+src/Combat/Overlay_11/Synth_021848a0.cpp:
+    complete
+    .text start:0x021848a0 end:0x021848a8
+
+
+src/Combat/Overlay_11/Synth_021849c8.cpp:
+    complete
+    .text start:0x021849c8 end:0x021849d0
+
+
+src/Combat/Overlay_11/Synth_021849d0.cpp:
+    complete
+    .text start:0x021849d0 end:0x021849d8
+
+
+src/Combat/Overlay_11/Synth_021849d8.cpp:
+    complete
+    .text start:0x021849d8 end:0x021849e0
+
+
+src/Combat/Overlay_11/Synth_02184a24.cpp:
+    complete
+    .text start:0x02184a24 end:0x02184a30
+
+
+src/Combat/Overlay_11/Synth_02184c28.cpp:
+    complete
+    .text start:0x02184c28 end:0x02184c30
+
+
+src/Combat/Overlay_11/Trans_02184324.cpp:
+    complete
+    .text start:0x02184324 end:0x02184354
+
+
+src/Combat/Overlay_11/Trans_02184a0c.cpp:
+    complete
+    .text start:0x02184a0c end:0x02184a18
