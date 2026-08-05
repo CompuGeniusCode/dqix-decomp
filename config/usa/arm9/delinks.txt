@@ -23795,3 +23795,108 @@ src/Combat/Main/UpdateSlotFlagsAndDispatch_020b2e78.cpp:
 src/Combat/Main/func_020bd99c.cpp:
     complete
     .text start:0x020bd99c end:0x020bda58
+
+
+src/Combat/Main/ComputeFixedTerms_020b9ffc.cpp:
+    complete
+    .text start:0x020b9ffc end:0x020ba0b4
+
+
+src/Combat/Main/FindClosestNodeId_02028638.cpp:
+    complete
+    .text start:0x02028638 end:0x020286fc
+
+
+src/Combat/Main/FindClosestNodeIndex_02028460.cpp:
+    complete
+    .text start:0x02028460 end:0x02028524
+
+
+src/Combat/Main/FormatAndDispatchWeightedEntries_020230fc.cpp:
+    complete
+    .text start:0x020230fc end:0x02023218
+
+
+src/Combat/Main/HandleActorStateTransition_020679d4.cpp:
+    complete
+    .text start:0x020679d4 end:0x02067a9c
+
+
+src/Combat/Main/MatchesCipheredCombatantName_0206483c.cpp:
+    complete
+    .text start:0x0206483c end:0x02064904
+
+
+src/Combat/Main/MoveTowardTargetAndSetAnim_02041470.cpp:
+    complete
+    .text start:0x02041470 end:0x02041538
+
+
+src/Combat/Main/PackFields_020e4b34.cpp:
+    complete
+    .text start:0x020e4b34 end:0x020e4bf4
+
+
+src/Combat/Main/RunCombatantEffectSequence_02046608.cpp:
+    complete
+    .text start:0x02046608 end:0x020466c8
+
+
+src/Combat/Main/SetActorTimerFromAxis_02021428.cpp:
+    complete
+    .text start:0x02021428 end:0x020214f0
+
+
+src/Combat/Main/SetBusyAndDispatchByMode_0203b8bc.cpp:
+    complete
+    .text start:0x0203b8bc end:0x0203b97c
+
+
+src/Combat/Main/SetSteeringFromTarget_02052350.cpp:
+    complete
+    .text start:0x02052350 end:0x02052410
+
+
+src/Combat/Main/SetupChunksAndDispatch_0205ab78.cpp:
+    complete
+    .text start:0x0205ab78 end:0x0205ac40
+
+
+src/Combat/Main/SortListAndCount_0203066c.cpp:
+    complete
+    .text start:0x0203066c end:0x02030734
+
+
+src/Combat/Main/func_02028e90.cpp:
+    complete
+    .text start:0x02028e90 end:0x02028f54
+
+
+src/Combat/Main/func_0202f24c.cpp:
+    complete
+    .text start:0x0202f24c end:0x0202f310
+
+
+src/Combat/Main/func_0202fc38.cpp:
+    complete
+    .text start:0x0202fc38 end:0x0202fcfc
+
+
+src/Combat/Main/func_0203f370.cpp:
+    complete
+    .text start:0x0203f370 end:0x0203f430
+
+
+src/Combat/Main/func_0204fc40.cpp:
+    complete
+    .text start:0x0204fc40 end:0x0204fd00
+
+
+src/Combat/Main/func_02069c1c.cpp:
+    complete
+    .text start:0x02069c1c end:0x02069ce0
+
+
+src/Combat/Main/func_02078cc0.cpp:
+    complete
+    .text start:0x02078cc0 end:0x02078d84
