@@ -279,3 +279,23 @@ src/Combat/Overlay_16/Trans_0218e00c.cpp:
 src/Combat/Overlay_16/Trans_0218fea0.cpp:
     complete
     .text start:0x0218fea0 end:0x0218feb4
+
+
+src/Combat/Overlay_16/Trans_0218b5a0.cpp:
+    complete
+    .text start:0x0218b5a0 end:0x0218b5c0
+
+
+src/Combat/Overlay_16/Trans_0218e62c.cpp:
+    complete
+    .text start:0x0218e62c end:0x0218e640
+
+
+src/Combat/Overlay_16/Trans_0218e7ec.cpp:
+    complete
+    .text start:0x0218e7ec end:0x0218e800
+
+
+src/Combat/Overlay_16/Trans_0218f330.cpp:
+    complete
+    .text start:0x0218f330 end:0x0218f340
