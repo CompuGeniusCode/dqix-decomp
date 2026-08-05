@@ -60,3 +60,38 @@ src/Combat/Overlay_28/TailCallInit_021d98d4.cpp:
 src/Combat/Overlay_28/InitElement_021d987c.cpp:
     complete
     .text start:0x021d987c end:0x021d9898
+
+
+src/Combat/Overlay_28/Trans_021d8a40.cpp:
+    complete
+    .text start:0x021d8a40 end:0x021d8a74
+
+
+src/Combat/Overlay_28/Trans_021d8b90.cpp:
+    complete
+    .text start:0x021d8b90 end:0x021d8c20
+
+
+src/Combat/Overlay_28/Trans_021d9714.cpp:
+    complete
+    .text start:0x021d9714 end:0x021d9734
+
+
+src/Combat/Overlay_28/Trans_021d979c.cpp:
+    complete
+    .text start:0x021d979c end:0x021d97b0
+
+
+src/Combat/Overlay_28/Trans_021d97b0.cpp:
+    complete
+    .text start:0x021d97b0 end:0x021d97d8
+
+
+src/Combat/Overlay_28/Trans_021d9898.cpp:
+    complete
+    .text start:0x021d9898 end:0x021d98b8
+
+
+src/Combat/Overlay_28/Trans_021d98b8.cpp:
+    complete
+    .text start:0x021d98b8 end:0x021d98d4
