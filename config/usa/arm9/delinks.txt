@@ -23620,3 +23620,83 @@ src/Combat/Main/TranslateMatrix020c189c.cpp:
 src/Combat/Main/WaitForInterrupt.cpp:
     complete
     .text start:0x020c9778 end:0x020c9820
+
+
+src/Combat/Main/AppendScaledElementFromVariants_0201f3b4.cpp:
+    complete
+    .text start:0x0201f3b4 end:0x0201f4cc
+
+
+src/Combat/Main/DispatchStateChange_020678bc.cpp:
+    complete
+    .text start:0x020678bc end:0x020679d4
+
+
+src/Combat/Main/FormatAndDispatchWeightedEntries_02023218.cpp:
+    complete
+    .text start:0x02023218 end:0x02023330
+
+
+src/Combat/Main/GetSequentialValues_020b0f00.cpp:
+    complete
+    .text start:0x020b0f00 end:0x020b0fac
+
+
+src/Combat/Main/InitCombatRuntimeState_0208b9a0.cpp:
+    complete
+    .text start:0x0208b9a0 end:0x0208ba54
+
+
+src/Combat/Main/InitIPCAndSubsystems_020d15fc.cpp:
+    complete
+    .text start:0x020d15fc end:0x020d16b0
+
+
+src/Combat/Main/ProcessSublistEntryAndDispatch_020813ec.cpp:
+    complete
+    .text start:0x020813ec end:0x02081498
+
+
+src/Combat/Main/ProcessTargetNodeList_0208f410.cpp:
+    complete
+    .text start:0x0208f410 end:0x0208f4bc
+
+
+src/Combat/Main/SetStateAndDispatch0209c480.cpp:
+    complete
+    .text start:0x0209c480 end:0x0209c530
+
+
+src/Combat/Main/SetVramBankFlag020c45b0.cpp:
+    complete
+    .text start:0x020c45b0 end:0x020c4658
+
+
+src/Combat/Main/SyncEntryStateFromTarget_020e1a74.cpp:
+    complete
+    .text start:0x020e1a74 end:0x020e1b24
+
+
+src/Combat/Main/UpdateInputStateAndBit_0201229c.cpp:
+    complete
+    .text start:0x0201229c end:0x02012354
+
+
+src/Combat/Main/UpdateSelfFields_02034d20.cpp:
+    complete
+    .text start:0x02034d20 end:0x02034e38
+
+
+src/Combat/Main/func_02030110.cpp:
+    complete
+    .text start:0x02030110 end:0x020301c8
+
+
+src/Combat/Main/func_02047a78.cpp:
+    complete
+    .text start:0x02047a78 end:0x02047b30
+
+
+src/Combat/Main/func_020b357c.cpp:
+    complete
+    .text start:0x020b357c end:0x020b362c

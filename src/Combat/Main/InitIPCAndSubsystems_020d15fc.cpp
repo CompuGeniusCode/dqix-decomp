@@ -1,0 +1,42 @@
+#include <globaldefs.h>
+#include "System/IPC.h"
+
+void FillBufferAndStoreResult(void);
+void InitializeInterProcessorCommunication(void);
+bool IsIPCCommandHandlerRegistered(int command, IPCSide side);
+void SetArm9IPCCommandHandler(int command, IPCCommandHandler handler);
+extern "C" void func_020d16b0(void);
+void InitSubsystemContextOnce020d1954(void* obj);
+void SetModeFlagAndUpdatePermission020d15b4(int flag);
+extern "C" void _Z17HandleMsg1SetFlagii(int a, int msg);
+extern "C" void _Z28DispatchType0x11ShutdownOnceii(int context, int code);
+void ClearField4At02112160(void);
+
+struct Guard020d15fc {
+    char pad0[8];
+    int flag8;
+    int fc;
+    char pad10[8];
+    int f18;
+};
+extern struct Guard020d15fc data_02112160;
+extern int data_02112240;
+
+// USA: func_020d15fc  (semantic: InitIPCAndSubsystems_020d15fc)
+extern "C" ARM void func_020d15fc(void) {
+    if (data_02112160.flag8 != 0) return;
+    data_02112160.flag8 = 1;
+    FillBufferAndStoreResult();
+    data_02112160.fc = 0;
+    InitializeInterProcessorCommunication();
+    do {
+    } while (!IsIPCCommandHandlerRegistered(0xd, IPCSide_Arm7));
+    SetArm9IPCCommandHandler(0xd, (IPCCommandHandler)_Z17HandleMsg1SetFlagii);
+    func_020d16b0();
+    SetArm9IPCCommandHandler(0xd, 0);
+    SetArm9IPCCommandHandler(0xd, (IPCCommandHandler)_Z28DispatchType0x11ShutdownOnceii);
+    data_02112160.f18 = 0;
+    InitSubsystemContextOnce020d1954(&data_02112240);
+    SetArm9IPCCommandHandler(0x11, (IPCCommandHandler)ClearField4At02112160);
+    SetModeFlagAndUpdatePermission020d15b4(0);
+}
