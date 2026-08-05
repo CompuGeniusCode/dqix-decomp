@@ -64,3 +64,23 @@ src/Combat/Overlay_5/RunTwoCallbacksAndReset02155d38.cpp:
 src/Combat/Overlay_5/SetPtrFieldByte021583fc.cpp:
     complete
     .text start:0x021583fc end:0x0215840c
+
+
+src/Combat/Overlay_5/Trans_021536e0.cpp:
+    complete
+    .text start:0x021536e0 end:0x02153728
+
+
+src/Combat/Overlay_5/Trans_02153728.cpp:
+    complete
+    .text start:0x02153728 end:0x021537bc
+
+
+src/Combat/Overlay_5/Trans_021551d4.cpp:
+    complete
+    .text start:0x021551d4 end:0x021551fc
+
+
+src/Combat/Overlay_5/Trans_02159208.cpp:
+    complete
+    .text start:0x02159208 end:0x02159274
