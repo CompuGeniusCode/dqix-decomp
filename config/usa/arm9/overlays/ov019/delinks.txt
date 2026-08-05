@@ -9,3 +9,13 @@
 src/Combat/Overlay_19/TriggerDispatchIfFlagOrByte_0218c240.cpp:
     complete
     .text start:0x0218c240 end:0x0218c290
+
+
+src/Combat/Overlay_19/Synth_0218b5a0.cpp:
+    complete
+    .text start:0x0218b5a0 end:0x0218b5a4
+
+
+src/Combat/Overlay_19/Synth_0218b5a4.cpp:
+    complete
+    .text start:0x0218b5a4 end:0x0218b5a8
