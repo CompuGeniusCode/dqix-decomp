@@ -4400,3 +4400,8 @@ src/Combat/Overlay_17/func_ov017_021ca6dc.cpp:
 src/Combat/Overlay_17/func_ov017_021d24f0.cpp:
     complete
     .text start:0x021d24f0 end:0x021d257c
+
+
+src/Combat/Overlay_17/ResetEncounterState_021a63d0.cpp:
+    complete
+    .text start:0x021a63d0 end:0x021a65c4
