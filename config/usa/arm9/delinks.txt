@@ -23700,3 +23700,98 @@ src/Combat/Main/func_02047a78.cpp:
 src/Combat/Main/func_020b357c.cpp:
     complete
     .text start:0x020b357c end:0x020b362c
+
+
+src/Combat/Main/AllocateAndEnqueuePointVariantNode0201f728.cpp:
+    complete
+    .text start:0x0201f728 end:0x0201f844
+
+
+src/Combat/Main/ConsumeOrForceCounterAndFlag_0208aebc.cpp:
+    complete
+    .text start:0x0208aebc end:0x0208af78
+
+
+src/Combat/Main/DequeueCopyOrSpinWait_0205e330.cpp:
+    complete
+    .text start:0x0205e330 end:0x0205e3ec
+
+
+src/Combat/Main/DmaTransferToFifoAsync020ca2ac.cpp:
+    complete
+    .text start:0x020ca2ac end:0x020ca364
+
+
+src/Combat/Main/EnableVramBanksFromMask020c3aac.cpp:
+    complete
+    .text start:0x020c3aac end:0x020c3b64
+
+
+src/Combat/Main/Frexp0200911c.cpp:
+    complete
+    .text start:0x0200911c end:0x020091d8
+
+
+src/Combat/Main/LoadTreasureMapLanguageBuffers_020a3844.cpp:
+    complete
+    .text start:0x020a3844 end:0x020a395c
+
+
+src/Combat/Main/NormalizeAndScaleVec3_020c2f18.cpp:
+    complete
+    .text start:0x020c2f18 end:0x020c3030
+
+
+src/Combat/Main/ProcessSlotsAndRunBufferedScripts020a93e0.cpp:
+    complete
+    .text start:0x020a93e0 end:0x020a94f8
+
+
+src/Combat/Main/RotateRadialOffsetAndAdvance_0202e5d8.cpp:
+    complete
+    .text start:0x0202e5d8 end:0x0202e694
+
+
+src/Combat/Main/RunBoxTestAgainstElem_0207e97c.cpp:
+    complete
+    .text start:0x0207e97c end:0x0207ea38
+
+
+src/Combat/Main/RunDivTableCallback_020bcd30.cpp:
+    complete
+    .text start:0x020bcd30 end:0x020bcde0
+
+
+src/Combat/Main/SetOrClearAxisFlagAndNotify_020a8c4c.cpp:
+    complete
+    .text start:0x020a8c4c end:0x020a8d08
+
+
+src/Combat/Main/SyncCombatantToGrottoEntrance_0208f68c.cpp:
+    complete
+    .text start:0x0208f68c end:0x0208f748
+
+
+src/Combat/Main/SyncPositionFromCombatant0202445c.cpp:
+    complete
+    .text start:0x0202445c end:0x02024518
+
+
+src/Combat/Main/TryRunPendingScript02097a04.cpp:
+    complete
+    .text start:0x02097a04 end:0x02097ac0
+
+
+src/Combat/Main/UpdateAndClampField4_0207e168.cpp:
+    complete
+    .text start:0x0207e168 end:0x0207e224
+
+
+src/Combat/Main/UpdateSlotFlagsAndDispatch_020b2e78.cpp:
+    complete
+    .text start:0x020b2e78 end:0x020b2f30
+
+
+src/Combat/Main/func_020bd99c.cpp:
+    complete
+    .text start:0x020bd99c end:0x020bda58
