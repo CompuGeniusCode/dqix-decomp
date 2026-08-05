@@ -79,3 +79,13 @@ src/Combat/Overlay_12/SetupBattleTag0218a7a0.cpp:
 src/Combat/Overlay_12/SetupBattleTag0218aabc.cpp:
     complete
     .text start:0x0218aabc end:0x0218ab34
+
+
+src/Combat/Overlay_12/Trans_02185a24.cpp:
+    complete
+    .text start:0x02185a24 end:0x02185ab8
+
+
+src/Combat/Overlay_12/Trans_02185ab8.cpp:
+    complete
+    .text start:0x02185ab8 end:0x02185af0
