@@ -90,3 +90,28 @@ src/Combat/Overlay_14/InitHandleState_02188bd0.cpp:
 src/Combat/Overlay_14/CheckFlagAndPointInElement_02186ff0.cpp:
     complete
     .text start:0x02186ff0 end:0x02187074
+
+
+src/Combat/Overlay_14/Synth_02188b18.cpp:
+    complete
+    .text start:0x02188b18 end:0x02188b20
+
+
+src/Combat/Overlay_14/Trans_02185c48.cpp:
+    complete
+    .text start:0x02185c48 end:0x02185c90
+
+
+src/Combat/Overlay_14/Trans_02186d7c.cpp:
+    complete
+    .text start:0x02186d7c end:0x02186dc8
+
+
+src/Combat/Overlay_14/Trans_02186dc8.cpp:
+    complete
+    .text start:0x02186dc8 end:0x02186df0
+
+
+src/Combat/Overlay_14/Trans_02188bfc.cpp:
+    complete
+    .text start:0x02188bfc end:0x02188c34
