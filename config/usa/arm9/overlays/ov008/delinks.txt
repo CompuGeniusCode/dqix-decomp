@@ -99,3 +99,8 @@ src/Combat/Overlay_8/ConfigureSubsystem_021889f8.cpp:
 src/Combat/Overlay_8/UpdateElementBuffer_021873ac.cpp:
     complete
     .text start:0x021873ac end:0x0218747c
+
+
+src/Combat/Overlay_8/Trans_02188ef0.cpp:
+    complete
+    .text start:0x02188ef0 end:0x02188f5c
