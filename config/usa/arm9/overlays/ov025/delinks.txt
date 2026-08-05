@@ -685,3 +685,88 @@ src/Combat/Overlay_25/SetShortArrayEntry128_021ed350.cpp:
 src/Combat/Overlay_25/func_ov025_021eb188.cpp:
     complete
     .text start:0x021eb188 end:0x021eb204
+
+
+src/Combat/Overlay_25/Synth_021eb050.cpp:
+    complete
+    .text start:0x021eb050 end:0x021eb05c
+
+
+src/Combat/Overlay_25/Synth_021ed11c.cpp:
+    complete
+    .text start:0x021ed11c end:0x021ed124
+
+
+src/Combat/Overlay_25/Trans_021e3048.cpp:
+    complete
+    .text start:0x021e3048 end:0x021e3084
+
+
+src/Combat/Overlay_25/Trans_021e5f40.cpp:
+    complete
+    .text start:0x021e5f40 end:0x021e5f54
+
+
+src/Combat/Overlay_25/Trans_021e6340.cpp:
+    complete
+    .text start:0x021e6340 end:0x021e6374
+
+
+src/Combat/Overlay_25/Trans_021e74f4.cpp:
+    complete
+    .text start:0x021e74f4 end:0x021e7520
+
+
+src/Combat/Overlay_25/Trans_021e8008.cpp:
+    complete
+    .text start:0x021e8008 end:0x021e8024
+
+
+src/Combat/Overlay_25/Trans_021e8100.cpp:
+    complete
+    .text start:0x021e8100 end:0x021e812c
+
+
+src/Combat/Overlay_25/Trans_021e812c.cpp:
+    complete
+    .text start:0x021e812c end:0x021e8148
+
+
+src/Combat/Overlay_25/Trans_021e821c.cpp:
+    complete
+    .text start:0x021e821c end:0x021e8248
+
+
+src/Combat/Overlay_25/Trans_021e8584.cpp:
+    complete
+    .text start:0x021e8584 end:0x021e85a8
+
+
+src/Combat/Overlay_25/Trans_021e85a8.cpp:
+    complete
+    .text start:0x021e85a8 end:0x021e85c8
+
+
+src/Combat/Overlay_25/Trans_021e8af8.cpp:
+    complete
+    .text start:0x021e8af8 end:0x021e8b6c
+
+
+src/Combat/Overlay_25/Trans_021e8b6c.cpp:
+    complete
+    .text start:0x021e8b6c end:0x021e8ba4
+
+
+src/Combat/Overlay_25/Trans_021eb044.cpp:
+    complete
+    .text start:0x021eb044 end:0x021eb050
+
+
+src/Combat/Overlay_25/Trans_021ed110.cpp:
+    complete
+    .text start:0x021ed110 end:0x021ed11c
+
+
+src/Combat/Overlay_25/Trans_021ed344.cpp:
+    complete
+    .text start:0x021ed344 end:0x021ed350
