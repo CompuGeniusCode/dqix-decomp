@@ -23900,3 +23900,93 @@ src/Combat/Main/func_02069c1c.cpp:
 src/Combat/Main/func_02078cc0.cpp:
     complete
     .text start:0x02078cc0 end:0x02078d84
+
+
+src/Combat/Main/AddOrIncrementEntry0204027c.cpp:
+    complete
+    .text start:0x0204027c end:0x0204039c
+
+
+src/Combat/Main/AimAtFlaggedTargetCombatant_0207964c.cpp:
+    complete
+    .text start:0x0207964c end:0x02079710
+
+
+src/Combat/Main/DispatchBufferedGlyph02029140.cpp:
+    complete
+    .text start:0x02029140 end:0x0202920c
+
+
+src/Combat/Main/EnqueueItemIntoQueue_0201c4d4.cpp:
+    complete
+    .text start:0x0201c4d4 end:0x0201c5f4
+
+
+src/Combat/Main/Format0201403c.cpp:
+    complete
+    .text start:0x0201403c end:0x02014108
+
+
+src/Combat/Main/InitPointerTableFromBase_020bd368.cpp:
+    complete
+    .text start:0x020bd368 end:0x020bd42c
+
+
+src/Combat/Main/InitPoolTables0207c258.cpp:
+    complete
+    .text start:0x0207c258 end:0x0207c378
+
+
+src/Combat/Main/LookupValueByMode_020b0d80.cpp:
+    complete
+    .text start:0x020b0d80 end:0x020b0e48
+
+
+src/Combat/Main/PopulateEntryTableAndLink_020beaec.cpp:
+    complete
+    .text start:0x020beaec end:0x020bebb4
+
+
+src/Combat/Main/RemoveEntryById_0209645c.cpp:
+    complete
+    .text start:0x0209645c end:0x02096524
+
+
+src/Combat/Main/SendRetriedArm7CommandsAndWait020ce39c.cpp:
+    complete
+    .text start:0x020ce39c end:0x020ce45c
+
+
+src/Combat/Main/UpdateAccumulatorAndSelectIndex_02010288.cpp:
+    complete
+    .text start:0x02010288 end:0x02010354
+
+
+src/Combat/Main/UpdateAndEnqueueBitHistory0208f048.cpp:
+    complete
+    .text start:0x0208f048 end:0x0208f168
+
+
+src/Combat/Main/WriteToRingBuffer_020c0368.cpp:
+    complete
+    .text start:0x020c0368 end:0x020c0430
+
+
+src/Combat/Main/func_0201f660.cpp:
+    complete
+    .text start:0x0201f660 end:0x0201f728
+
+
+src/Combat/Main/func_020695f4.cpp:
+    complete
+    .text start:0x020695f4 end:0x020696bc
+
+
+src/Combat/Main/func_02073dfc.cpp:
+    complete
+    .text start:0x02073dfc end:0x02073ec4
+
+
+src/Combat/Main/func_020be53c.cpp:
+    complete
+    .text start:0x020be53c end:0x020be604
