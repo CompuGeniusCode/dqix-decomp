@@ -199,3 +199,33 @@ src/Combat/Overlay_6/FindNodeOrMark_02158d8c.cpp:
 src/Combat/Overlay_6/TailCallInitStruct_02153730.cpp:
     complete
     .text start:0x02153730 end:0x0215373c
+
+
+src/Combat/Overlay_6/Synth_0215373c.cpp:
+    complete
+    .text start:0x0215373c end:0x02153744
+
+
+src/Combat/Overlay_6/Synth_02153c60.cpp:
+    complete
+    .text start:0x02153c60 end:0x02153c6c
+
+
+src/Combat/Overlay_6/Trans_021537c8.cpp:
+    complete
+    .text start:0x021537c8 end:0x021537d0
+
+
+src/Combat/Overlay_6/Trans_02158038.cpp:
+    complete
+    .text start:0x02158038 end:0x02158054
+
+
+src/Combat/Overlay_6/Trans_0215a5dc.cpp:
+    complete
+    .text start:0x0215a5dc end:0x0215a5fc
+
+
+src/Combat/Overlay_6/Trans_0215f9e8.cpp:
+    complete
+    .text start:0x0215f9e8 end:0x0215fa1c
