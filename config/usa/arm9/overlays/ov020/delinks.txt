@@ -65,3 +65,8 @@ src/Combat/Overlay_20/InitPointerPair_0218c7f0.cpp:
 src/Combat/Overlay_20/ResetAndReloadContext_0218cd98.cpp:
     complete
     .text start:0x0218cd98 end:0x0218cf8c
+
+
+src/Combat/Overlay_20/CheckCountersActive_0218d898.cpp:
+    complete
+    .text start:0x0218d898 end:0x0218d8d8
