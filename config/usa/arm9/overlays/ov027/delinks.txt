@@ -394,3 +394,8 @@ src/Combat/Overlay_27/TrySetStateField_021d8b40.cpp:
 src/Combat/Overlay_27/func_ov027_021d9940.cpp:
     complete
     .text start:0x021d9940 end:0x021d9bdc
+
+
+src/Combat/Overlay_27/ReadFromMappedRegion_021dd180.cpp:
+    complete
+    .text start:0x021dd180 end:0x021dd218
