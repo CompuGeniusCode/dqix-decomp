@@ -1,0 +1,70 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+#include "Memory/SafeAllocator.h"
+
+int GetGlobal02109400(void);
+void BlankFunction02094b38(void);
+
+struct Obj02094ab0;
+extern "C" void func_02094ab0(struct Obj02094ab0* obj);
+
+struct EntryList0204af14;
+void* GetEntryByIndexStride0x10(struct EntryList0204af14* list, unsigned int index);
+
+void CleanInvalidateCacheRange(const void* where, unsigned int len);
+void TransferBg1CharData(int, int, unsigned int);
+
+struct List0204b0e8;
+void FlushAndDispatchList0204b0e8(struct List0204b0e8* obj, void* buf);
+
+struct Struct02074bd0;
+void ClearFlag0x10IfSet(struct Struct02074bd0* obj);
+
+struct Struct02074bf4;
+void ClearFlag0x11IfSet(struct Struct02074bf4* obj);
+
+int GetData02104304Field4();
+extern "C" void func_020301c8(int a, int handle);
+
+// USA: func_ov013_02186fa0  (semantic: ResetAndFlushDisplayState02186fa0)
+extern "C" ARM void func_ov013_02186fa0(unsigned char* obj) {
+    struct Obj02094ab0* g = (struct Obj02094ab0*)GetGlobal02109400();
+    ((void(*)(void*, int))&BlankFunction02094b38)(g, 0x68);
+    func_02094ab0(g);
+
+    if (obj[0x64] == 0) {
+        void* entry = GetEntryByIndexStride0x10((struct EntryList0204af14*)(obj + 0x28), 0);
+        void* buf;
+        if (entry != 0 && (buf = *(void**)((char*)entry + 0xc)) != 0) {
+            memset(buf, 0, 0x600);
+            CleanInvalidateCacheRange(buf, 0x20);
+            TransferBg1CharData((int)buf, 0, 0x20);
+            FlushAndDispatchList0204b0e8((struct List0204b0e8*)(obj + 0x28), buf);
+        }
+
+        ClearFlag0x10IfSet((struct Struct02074bd0*)(obj + 0x14));
+        {
+            volatile unsigned int* reg = (unsigned int*)0x4000000;
+            *reg = (*reg & ~0x1f00) | (*(unsigned int*)(obj + 0x60) << 8);
+        }
+    } else {
+        ClearFlag0x11IfSet((struct Struct02074bf4*)(obj + 0x14));
+        {
+            volatile unsigned int* reg = (unsigned int*)0x4001000;
+            *reg = (*reg & ~0x1f00) | (*(unsigned int*)(obj + 0x60) << 8);
+        }
+    }
+
+    if (*(int*)(obj + 0x5c) >= 0) {
+        int a = GetData02104304Field4();
+        func_020301c8(a, *(int*)(obj + 0x5c));
+        *(int*)(obj + 0x5c) = -1;
+    }
+
+    if (*(void**)(obj + 0x0) == 0) return;
+
+    unsigned char i;
+    for (i = 0; i < 5; i++) {
+        ((SafeAllocator*)(*(void**)(obj + 0x0)))[i].Destroy();
+    }
+}
