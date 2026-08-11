@@ -95,3 +95,63 @@ src/Combat/Overlay_28/Trans_021d9898.cpp:
 src/Combat/Overlay_28/Trans_021d98b8.cpp:
     complete
     .text start:0x021d98b8 end:0x021d98d4
+
+
+src/Combat/Overlay_28/AdvanceStateMachine_021d8dd0.cpp:
+    complete
+    .text start:0x021d8dd0 end:0x021d9188
+
+
+src/Combat/Overlay_28/ApplyElementListEffects_021d9208.cpp:
+    complete
+    .text start:0x021d9208 end:0x021d942c
+
+
+src/Combat/Overlay_28/ResetStateAndCounters_021d8c20.cpp:
+    complete
+    .text start:0x021d8c20 end:0x021d8d40
+
+
+src/Combat/Overlay_28/func_ov028_021d8b44.cpp:
+    complete
+    .text start:0x021d8b44 end:0x021d8b90
+
+
+src/Combat/Overlay_28/func_ov028_021d9188.cpp:
+    complete
+    .text start:0x021d9188 end:0x021d9208
+
+
+src/Combat/Overlay_28/func_ov028_021d942c.cpp:
+    complete
+    .text start:0x021d942c end:0x021d9494
+
+
+src/Combat/Overlay_28/func_ov028_021d9530.cpp:
+    complete
+    .text start:0x021d9530 end:0x021d9574
+
+
+src/Combat/Overlay_28/func_ov028_021d9624_021d9624.cpp:
+    complete
+    .text start:0x021d9624 end:0x021d9668
+
+
+src/Combat/Overlay_28/func_ov028_021d9668.cpp:
+    complete
+    .text start:0x021d9668 end:0x021d96bc
+
+
+src/Combat/Overlay_28/func_ov028_021d96bc.cpp:
+    complete
+    .text start:0x021d96bc end:0x021d9714
+
+
+src/Combat/Overlay_28/func_ov028_021d9748.cpp:
+    complete
+    .text start:0x021d9748 end:0x021d977c
+
+
+src/Combat/Overlay_28/func_ov028_021d97d8.cpp:
+    complete
+    .text start:0x021d97d8 end:0x021d987c
