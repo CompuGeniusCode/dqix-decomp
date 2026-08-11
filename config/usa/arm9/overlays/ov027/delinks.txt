@@ -349,3 +349,48 @@ src/Combat/Overlay_27/func_ov027_021dd3f8.cpp:
 src/Combat/Overlay_27/func_ov027_021dd6bc.cpp:
     complete
     .text start:0x021dd6bc end:0x021dd7d8
+
+
+src/Combat/Overlay_27/AdvanceDispatchNode_021daecc.cpp:
+    complete
+    .text start:0x021daecc end:0x021daf6c
+
+
+src/Combat/Overlay_27/CommitStagedEntry_021dd7d8.cpp:
+    complete
+    .text start:0x021dd7d8 end:0x021dd864
+
+
+src/Combat/Overlay_27/ComputeChecksumMod20_021dc618.cpp:
+    complete
+    .text start:0x021dc618 end:0x021dc680
+
+
+src/Combat/Overlay_27/InitEntryFromDescriptor_021dab84.cpp:
+    complete
+    .text start:0x021dab84 end:0x021dac74
+
+
+src/Combat/Overlay_27/PollBattleCommandState_021dc96c.cpp:
+    complete
+    .text start:0x021dc96c end:0x021dca40
+
+
+src/Combat/Overlay_27/SerializeEventEntry_021dd638.cpp:
+    complete
+    .text start:0x021dd638 end:0x021dd6bc
+
+
+src/Combat/Overlay_27/TransIfState15_021dbd7c.cpp:
+    complete
+    .text start:0x021dbd7c end:0x021dbdec
+
+
+src/Combat/Overlay_27/TrySetStateField_021d8b40.cpp:
+    complete
+    .text start:0x021d8b40 end:0x021d8c20
+
+
+src/Combat/Overlay_27/func_ov027_021d9940.cpp:
+    complete
+    .text start:0x021d9940 end:0x021d9bdc
