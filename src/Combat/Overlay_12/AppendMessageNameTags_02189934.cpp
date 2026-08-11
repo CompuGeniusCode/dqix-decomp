@@ -1,0 +1,43 @@
+#include <globaldefs.h>
+
+struct TableA68;
+void* FindEntryByKey(struct TableA68* table, int key);
+int AppendFrameTag02041c08(char* dst, int a1, int a2, int a3, int a4, int a5);
+int AppendCursorTag(char* dst, int cursor);
+int AppendNameTag(char* dst, int n, const char* name);
+int AppendString02042058(char* dst, const char* src);
+int AppendPaletteTag(char* dst, int palette);
+
+struct PaletteFlags02189934 {
+    unsigned short field : 5;
+};
+
+// USA: func_ov012_02189934  (semantic: AppendMessageNameTags_02189934)
+extern "C" ARM void func_ov012_02189934(char* base, char* dst, int flag) {
+    if (dst == NULL) return;
+
+    int cursor = *(int*)(base + 0x13d8);
+    if (flag != 0) {
+        AppendFrameTag02041c08(dst, cursor, 8, 5, 5, 5);
+    }
+    AppendCursorTag(dst, cursor);
+
+    AppendNameTag(dst, 0, (const char*)FindEntryByKey((struct TableA68*)(base + 0x133c), 7));
+    AppendString02042058(dst, *(char**)(base + 0x1378));
+
+    AppendNameTag(dst, 1, (const char*)FindEntryByKey((struct TableA68*)(base + 0x133c), 8));
+    AppendString02042058(dst, *(char**)(base + 0x1378));
+
+    if (((struct PaletteFlags02189934*)(base + 0x13c4))->field == 0) {
+        AppendPaletteTag(dst, 3);
+    }
+
+    AppendNameTag(dst, 2, (const char*)FindEntryByKey((struct TableA68*)(base + 0x133c), 9));
+    AppendString02042058(dst, *(char**)(base + 0x1378));
+
+    if (((struct PaletteFlags02189934*)(base + 0x13c4))->field == 0) {
+        AppendPaletteTag(dst, 0xf);
+    }
+
+    AppendNameTag(dst, 3, (const char*)FindEntryByKey((struct TableA68*)(base + 0x133c), 0x6d));
+}
