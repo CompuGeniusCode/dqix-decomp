@@ -4410,3 +4410,23 @@ src/Combat/Overlay_17/ResetEncounterState_021a63d0.cpp:
 src/Combat/Overlay_17/Trans_021cbeec.cpp:
     complete
     .text start:0x021cbeec end:0x021cbf18
+
+
+src/Combat/Overlay_17/BroadcastCombatantFieldFlags_021c847c.cpp:
+    complete
+    .text start:0x021c847c end:0x021c8588
+
+
+src/Combat/Overlay_17/FindNearbyCombatantWithDifferentTag_021971c4.cpp:
+    complete
+    .text start:0x021971c4 end:0x021972cc
+
+
+src/Combat/Overlay_17/func_ov017_021b5348.cpp:
+    complete
+    .text start:0x021b5348 end:0x021b5458
+
+
+src/Combat/Overlay_17/func_ov017_021cbcc0.cpp:
+    complete
+    .text start:0x021cbcc0 end:0x021cbdcc
