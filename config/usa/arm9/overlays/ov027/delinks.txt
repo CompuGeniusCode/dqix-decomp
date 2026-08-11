@@ -309,3 +309,43 @@ src/Combat/Overlay_27/UnsignedMax_021d9dd8.cpp:
 src/Combat/Overlay_27/ValidateAndFillSourceDesc_021da690.cpp:
     complete
     .text start:0x021da690 end:0x021da808
+
+
+src/Combat/Overlay_27/ClampAndFillOrCopyRegion_021da314.cpp:
+    complete
+    .text start:0x021da314 end:0x021da38c
+
+
+src/Combat/Overlay_27/DispatchCombatMessage_021d8c94.cpp:
+    complete
+    .text start:0x021d8c94 end:0x021d9134
+
+
+src/Combat/Overlay_27/IssueCommandAndClearSlotFields_021dcd5c.cpp:
+    complete
+    .text start:0x021dcd5c end:0x021dcee8
+
+
+src/Combat/Overlay_27/PickAndRelayRandomSlot_021d9704.cpp:
+    complete
+    .text start:0x021d9704 end:0x021d989c
+
+
+src/Combat/Overlay_27/PrepareSlotEntry_021d8a68.cpp:
+    complete
+    .text start:0x021d8a68 end:0x021d8aec
+
+
+src/Combat/Overlay_27/UpdateEntryCounter_021d9d5c.cpp:
+    complete
+    .text start:0x021d9d5c end:0x021d9dd8
+
+
+src/Combat/Overlay_27/func_ov027_021dd3f8.cpp:
+    complete
+    .text start:0x021dd3f8 end:0x021dd55c
+
+
+src/Combat/Overlay_27/func_ov027_021dd6bc.cpp:
+    complete
+    .text start:0x021dd6bc end:0x021dd7d8
