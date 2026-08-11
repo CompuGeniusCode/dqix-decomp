@@ -155,3 +155,8 @@ src/Combat/Overlay_28/func_ov028_021d9748.cpp:
 src/Combat/Overlay_28/func_ov028_021d97d8.cpp:
     complete
     .text start:0x021d97d8 end:0x021d987c
+
+
+src/Combat/Overlay_28/SetupAndRunStream_021d98e0.cpp:
+    complete
+    .text start:0x021d98e0 end:0x021d9940
