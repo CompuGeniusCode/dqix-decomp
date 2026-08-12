@@ -7630,3 +7630,8 @@ src/Combat/Overlay_31/func_ov031_0221ef80.cpp:
 src/Combat/Overlay_31/Trans_02205cc4.cpp:
     complete
     .text start:0x02205cc4 end:0x02205d10
+
+
+src/Combat/Overlay_31/FillElapsedResult_02222aa4.cpp:
+    complete
+    .text start:0x02222aa4 end:0x02222adc
