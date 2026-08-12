@@ -905,3 +905,78 @@ src/Combat/Overlay_25/func_ov025_021e72a8.cpp:
 src/Combat/Overlay_25/func_ov025_021eb3e0.cpp:
     complete
     .text start:0x021eb3e0 end:0x021eb42c
+
+
+src/Combat/Overlay_25/CheckAllKeysInList_021eb0f4.cpp:
+    complete
+    .text start:0x021eb0f4 end:0x021eb148
+
+
+src/Combat/Overlay_25/CheckThresholdAndReset_021e30e8.cpp:
+    complete
+    .text start:0x021e30e8 end:0x021e3158
+
+
+src/Combat/Overlay_25/DispatchAndSetFields_021e7afc.cpp:
+    complete
+    .text start:0x021e7afc end:0x021e7b74
+
+
+src/Combat/Overlay_25/DispatchListEntries_021d8ab8.cpp:
+    complete
+    .text start:0x021d8ab8 end:0x021d8bfc
+
+
+src/Combat/Overlay_25/DispatchNodeFlagOrClear_021e8670.cpp:
+    complete
+    .text start:0x021e8670 end:0x021e86f0
+
+
+src/Combat/Overlay_25/FormatGenderTagAndDispatch_021e8344.cpp:
+    complete
+    .text start:0x021e8344 end:0x021e83c4
+
+
+src/Combat/Overlay_25/RecordTagAndDispatch_021e25a4.cpp:
+    complete
+    .text start:0x021e25a4 end:0x021e2628
+
+
+src/Combat/Overlay_25/ResetEntry_021e3084.cpp:
+    complete
+    .text start:0x021e3084 end:0x021e30e8
+
+
+src/Combat/Overlay_25/SearchTagAndDispatch_021e4aac.cpp:
+    complete
+    .text start:0x021e4aac end:0x021e4be4
+
+
+src/Combat/Overlay_25/SyncCombatantVecToWork_021e8748.cpp:
+    complete
+    .text start:0x021e8748 end:0x021e8798
+
+
+src/Combat/Overlay_25/func_ov025_021e7248.cpp:
+    complete
+    .text start:0x021e7248 end:0x021e72a8
+
+
+src/Combat/Overlay_25/func_ov025_021e7470.cpp:
+    complete
+    .text start:0x021e7470 end:0x021e74d0
+
+
+src/Combat/Overlay_25/func_ov025_021e88d8.cpp:
+    complete
+    .text start:0x021e88d8 end:0x021e8a20
+
+
+src/Combat/Overlay_25/func_ov025_021e8bc4.cpp:
+    complete
+    .text start:0x021e8bc4 end:0x021e8cf0
+
+
+src/Combat/Overlay_25/func_ov025_021ebb24.cpp:
+    complete
+    .text start:0x021ebb24 end:0x021ebb90
