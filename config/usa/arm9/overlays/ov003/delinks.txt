@@ -1460,3 +1460,93 @@ src/Combat/Overlay_3/func_ov003_0217a14c.cpp:
 src/Combat/Overlay_3/StepStateMachine02169b30.cpp:
     complete
     .text start:0x02169b30 end:0x02169c3c
+
+
+src/Combat/Overlay_3/ApplyEntryAndCheckKind_021753a0.cpp:
+    complete
+    .text start:0x021753a0 end:0x0217545c
+
+
+src/Combat/Overlay_3/ConfigureAndDispatchElement_021612c0.cpp:
+    complete
+    .text start:0x021612c0 end:0x02161344
+
+
+src/Combat/Overlay_3/DrawFullscreenColorQuad_0215c270.cpp:
+    complete
+    .text start:0x0215c270 end:0x0215c300
+
+
+src/Combat/Overlay_3/SetupLookAndTurnEntries_0217577c.cpp:
+    complete
+    .text start:0x0217577c end:0x0217585c
+
+
+src/Combat/Overlay_3/UpdateEntryElementsAndSetIcons_0217019c.cpp:
+    complete
+    .text start:0x0217019c end:0x02170280
+
+
+src/Combat/Overlay_3/func_ov003_02155740.cpp:
+    complete
+    .text start:0x02155740 end:0x0215582c
+
+
+src/Combat/Overlay_3/func_ov003_0215e510.cpp:
+    complete
+    .text start:0x0215e510 end:0x0215e5fc
+
+
+src/Combat/Overlay_3/func_ov003_02163e4c.cpp:
+    complete
+    .text start:0x02163e4c end:0x02163f60
+
+
+src/Combat/Overlay_3/func_ov003_02168324.cpp:
+    complete
+    .text start:0x02168324 end:0x02168438
+
+
+src/Combat/Overlay_3/func_ov003_02169c3c.cpp:
+    complete
+    .text start:0x02169c3c end:0x02169d10
+
+
+src/Combat/Overlay_3/func_ov003_0216e124.cpp:
+    complete
+    .text start:0x0216e124 end:0x0216e200
+
+
+src/Combat/Overlay_3/func_ov003_021704e8.cpp:
+    complete
+    .text start:0x021704e8 end:0x021705d4
+
+
+src/Combat/Overlay_3/func_ov003_02171550.cpp:
+    complete
+    .text start:0x02171550 end:0x02171640
+
+
+src/Combat/Overlay_3/func_ov003_02171ba0.cpp:
+    complete
+    .text start:0x02171ba0 end:0x02171cac
+
+
+src/Combat/Overlay_3/func_ov003_02177300.cpp:
+    complete
+    .text start:0x02177300 end:0x02177410
+
+
+src/Combat/Overlay_3/func_ov003_021785d4.cpp:
+    complete
+    .text start:0x021785d4 end:0x021786bc
+
+
+src/Combat/Overlay_3/func_ov003_0217c974.cpp:
+    complete
+    .text start:0x0217c974 end:0x0217ca84
+
+
+src/Combat/Overlay_3/func_ov003_0217ce3c.cpp:
+    complete
+    .text start:0x0217ce3c end:0x0217cf10
