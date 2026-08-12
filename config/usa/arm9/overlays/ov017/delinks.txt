@@ -4585,3 +4585,28 @@ src/Combat/Overlay_17/func_ov017_021cf5d4.cpp:
 src/Combat/Overlay_17/func_ov017_021d3aa4.cpp:
     complete
     .text start:0x021d3aa4 end:0x021d3bbc
+
+
+src/Combat/Overlay_17/DispatchEventTag153ByListState_021b996c.cpp:
+    complete
+    .text start:0x021b996c end:0x021b9a98
+
+
+src/Combat/Overlay_17/UpdateCombatantSlotAndFlags_02191108.cpp:
+    complete
+    .text start:0x02191108 end:0x02191234
+
+
+src/Combat/Overlay_17/func_ov017_02195658.cpp:
+    complete
+    .text start:0x02195658 end:0x02195748
+
+
+src/Combat/Overlay_17/func_ov017_0219922c.cpp:
+    complete
+    .text start:0x0219922c end:0x0219931c
+
+
+src/Combat/Overlay_17/func_ov017_021c616c.cpp:
+    complete
+    .text start:0x021c616c end:0x021c6254
