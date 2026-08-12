@@ -624,3 +624,93 @@ src/Combat/Overlay_11/func_ov011_021842c8.cpp:
 src/Combat/Overlay_11/func_ov011_021845f8.cpp:
     complete
     .text start:0x021845f8 end:0x02184604
+
+
+src/Combat/Overlay_11/AllocateAndInitNode_02187a14.cpp:
+    complete
+    .text start:0x02187a14 end:0x02187b30
+
+
+src/Combat/Overlay_11/AllocateAndRestorePairTables_02184fb0.cpp:
+    complete
+    .text start:0x02184fb0 end:0x02185018
+
+
+src/Combat/Overlay_11/AllocateAndSetFieldsFromTagged_02186fc8.cpp:
+    complete
+    .text start:0x02186fc8 end:0x0218702c
+
+
+src/Combat/Overlay_11/AllocateNodeAndSetFieldE2_0218735c.cpp:
+    complete
+    .text start:0x0218735c end:0x021873c4
+
+
+src/Combat/Overlay_11/AllocateSizedBufferFromTagged_021878dc.cpp:
+    complete
+    .text start:0x021878dc end:0x0218792c
+
+
+src/Combat/Overlay_11/CallVTableFns64And6cWithTaggedArgs_021874d0.cpp:
+    complete
+    .text start:0x021874d0 end:0x0218753c
+
+
+src/Combat/Overlay_11/InitCombatState_0218438c.cpp:
+    complete
+    .text start:0x0218438c end:0x021844a4
+
+
+src/Combat/Overlay_11/SetBit7IfType8_02188884.cpp:
+    complete
+    .text start:0x02188884 end:0x021888ec
+
+
+src/Combat/Overlay_11/SetByte38IfNodeTypeIsOne_02187c0c.cpp:
+    complete
+    .text start:0x02187c0c end:0x02187c6c
+
+
+src/Combat/Overlay_11/SetByteAtOffset60IfType7FromTaggedFlag_02187d44.cpp:
+    complete
+    .text start:0x02187d44 end:0x02187da8
+
+
+src/Combat/Overlay_11/SetByteField39IfNodeTypeIsOne_02187da8.cpp:
+    complete
+    .text start:0x02187da8 end:0x02187e08
+
+
+src/Combat/Overlay_11/SetField10AndFlags3IfType2_02186f08.cpp:
+    complete
+    .text start:0x02186f08 end:0x02186f74
+
+
+src/Combat/Overlay_11/SetFieldFromTaggedIfNodeType7_021858f4.cpp:
+    complete
+    .text start:0x021858f4 end:0x02185948
+
+
+src/Combat/Overlay_11/TriggerDispatchIfFlagOrByte55_021884d0.cpp:
+    complete
+    .text start:0x021884d0 end:0x02188534
+
+
+src/Combat/Overlay_11/TrySetFlagAIndex_02184a40.cpp:
+    complete
+    .text start:0x02184a40 end:0x02184a84
+
+
+src/Combat/Overlay_11/func_ov011_02185ea4.cpp:
+    complete
+    .text start:0x02185ea4 end:0x02185fa8
+
+
+src/Combat/Overlay_11/func_ov011_02188658.cpp:
+    complete
+    .text start:0x02188658 end:0x02188774
+
+
+src/Combat/Overlay_11/func_ov011_02188774.cpp:
+    complete
+    .text start:0x02188774 end:0x02188884
