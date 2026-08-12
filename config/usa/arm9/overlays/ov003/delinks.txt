@@ -1645,3 +1645,43 @@ src/Combat/Overlay_3/func_ov003_02177820.cpp:
 src/Combat/Overlay_3/func_ov003_0217cd24.cpp:
     complete
     .text start:0x0217cd24 end:0x0217ce3c
+
+
+src/Combat/Overlay_3/FindTableEntry_02175f20.cpp:
+    complete
+    .text start:0x02175f20 end:0x02175f90
+
+
+src/Combat/Overlay_3/HandleStateTransition3_02158214.cpp:
+    complete
+    .text start:0x02158214 end:0x02158334
+
+
+src/Combat/Overlay_3/PopulateStatFieldsAndDispatchName_02170960.cpp:
+    complete
+    .text start:0x02170960 end:0x02170a7c
+
+
+src/Combat/Overlay_3/func_ov003_0215c924.cpp:
+    complete
+    .text start:0x0215c924 end:0x0215ca1c
+
+
+src/Combat/Overlay_3/func_ov003_0216e02c.cpp:
+    complete
+    .text start:0x0216e02c end:0x0216e124
+
+
+src/Combat/Overlay_3/func_ov003_0216fe74.cpp:
+    complete
+    .text start:0x0216fe74 end:0x0216ff90
+
+
+src/Combat/Overlay_3/func_ov003_02171764.cpp:
+    complete
+    .text start:0x02171764 end:0x02171854
+
+
+src/Combat/Overlay_3/func_ov003_02171854.cpp:
+    complete
+    .text start:0x02171854 end:0x0217193c
