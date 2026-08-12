@@ -980,3 +980,38 @@ src/Combat/Overlay_25/func_ov025_021e8bc4.cpp:
 src/Combat/Overlay_25/func_ov025_021ebb24.cpp:
     complete
     .text start:0x021ebb24 end:0x021ebb90
+
+
+src/Combat/Overlay_25/AdvanceAllocatorChainState_021e8a74.cpp:
+    complete
+    .text start:0x021e8a74 end:0x021e8af8
+
+
+src/Combat/Overlay_25/AdvanceStateAndNotify_021e4450.cpp:
+    complete
+    .text start:0x021e4450 end:0x021e44fc
+
+
+src/Combat/Overlay_25/DispatchAndUpdateFlag_021e7e34.cpp:
+    complete
+    .text start:0x021e7e34 end:0x021e7eb8
+
+
+src/Combat/Overlay_25/IsTargetEligible_021e4868.cpp:
+    complete
+    .text start:0x021e4868 end:0x021e49e0
+
+
+src/Combat/Overlay_25/RebaseAndQueueCombatantPositions_021e75a4.cpp:
+    complete
+    .text start:0x021e75a4 end:0x021e771c
+
+
+src/Combat/Overlay_25/func_ov025_021e83c4.cpp:
+    complete
+    .text start:0x021e83c4 end:0x021e8510
+
+
+src/Combat/Overlay_25/func_ov025_021eedb0.cpp:
+    complete
+    .text start:0x021eedb0 end:0x021eee48
