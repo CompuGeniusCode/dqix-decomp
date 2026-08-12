@@ -1685,3 +1685,23 @@ src/Combat/Overlay_3/func_ov003_02171764.cpp:
 src/Combat/Overlay_3/func_ov003_02171854.cpp:
     complete
     .text start:0x02171854 end:0x0217193c
+
+
+src/Combat/Overlay_3/InitAllocatorArray1_021536e0.cpp:
+    complete
+    .text start:0x021536e0 end:0x0215376c
+
+
+src/Combat/Overlay_3/UpdateStateAndDispatch_02168438.cpp:
+    complete
+    .text start:0x02168438 end:0x02168560
+
+
+src/Combat/Overlay_3/func_ov003_0215c800.cpp:
+    complete
+    .text start:0x0215c800 end:0x0215c924
+
+
+src/Combat/Overlay_3/func_ov003_02167370.cpp:
+    complete
+    .text start:0x02167370 end:0x02167494
