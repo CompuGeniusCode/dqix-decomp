@@ -2788,3 +2788,33 @@ src/Combat/Overlay_0/func_ov000_021718a4.cpp:
 src/Combat/Overlay_0/func_ov000_02177454.cpp:
     complete
     .text start:0x02177454 end:0x02177558
+
+
+src/Combat/Overlay_0/AllocateAndEnqueueVariantArrayNode_02169bf0.cpp:
+    complete
+    .text start:0x02169bf0 end:0x02169d00
+
+
+src/Combat/Overlay_0/ApplyElemFieldsWithMode_0217768c.cpp:
+    complete
+    .text start:0x0217768c end:0x02177798
+
+
+src/Combat/Overlay_0/AssignFormationPositions_02167cd4.cpp:
+    complete
+    .text start:0x02167cd4 end:0x02167dd8
+
+
+src/Combat/Overlay_0/CheckCombatantFlagBit_02156068.cpp:
+    complete
+    .text start:0x02156068 end:0x02156118
+
+
+src/Combat/Overlay_0/func_ov000_02155e94.cpp:
+    complete
+    .text start:0x02155e94 end:0x02155f9c
+
+
+src/Combat/Overlay_0/func_ov000_021629ec.cpp:
+    complete
+    .text start:0x021629ec end:0x02162aac
