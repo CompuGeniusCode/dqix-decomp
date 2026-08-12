@@ -1640,3 +1640,68 @@ src/Combat/Overlay_24/UpdateDamageCounter_021e5be4.cpp:
 src/Combat/Overlay_24/Trans_021f6bc0.cpp:
     complete
     .text start:0x021f6bc0 end:0x021f6bf0
+
+
+src/Combat/Overlay_24/AddBuffEntryToTable_021e04e0.cpp:
+    complete
+    .text start:0x021e04e0 end:0x021e05e4
+
+
+src/Combat/Overlay_24/Dispatch021f10e0.cpp:
+    complete
+    .text start:0x021f10e0 end:0x021f1198
+
+
+src/Combat/Overlay_24/SelectMsgOrValue_021e9198.cpp:
+    complete
+    .text start:0x021e9198 end:0x021e929c
+
+
+src/Combat/Overlay_24/func_ov024_021e3cec.cpp:
+    complete
+    .text start:0x021e3cec end:0x021e3d88
+
+
+src/Combat/Overlay_24/func_ov024_021eb2b4.cpp:
+    complete
+    .text start:0x021eb2b4 end:0x021eb344
+
+
+src/Combat/Overlay_24/func_ov024_021ee9b4.cpp:
+    complete
+    .text start:0x021ee9b4 end:0x021eeab8
+
+
+src/Combat/Overlay_24/func_ov024_021eeab8.cpp:
+    complete
+    .text start:0x021eeab8 end:0x021eebbc
+
+
+src/Combat/Overlay_24/func_ov024_021f24fc.cpp:
+    complete
+    .text start:0x021f24fc end:0x021f2548
+
+
+src/Combat/Overlay_24/func_ov024_021f4ed4.cpp:
+    complete
+    .text start:0x021f4ed4 end:0x021f4fd8
+
+
+src/Combat/Overlay_24/func_ov024_021f51d4.cpp:
+    complete
+    .text start:0x021f51d4 end:0x021f5220
+
+
+src/Combat/Overlay_24/func_ov024_021f6298.cpp:
+    complete
+    .text start:0x021f6298 end:0x021f639c
+
+
+src/Combat/Overlay_24/func_ov024_021fcd7c.cpp:
+    complete
+    .text start:0x021fcd7c end:0x021fce14
+
+
+src/Combat/Overlay_24/func_ov024_021fd358.cpp:
+    complete
+    .text start:0x021fd358 end:0x021fd3f0
