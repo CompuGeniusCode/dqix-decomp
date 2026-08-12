@@ -1705,3 +1705,48 @@ src/Combat/Overlay_24/func_ov024_021fcd7c.cpp:
 src/Combat/Overlay_24/func_ov024_021fd358.cpp:
     complete
     .text start:0x021fd358 end:0x021fd3f0
+
+
+src/Combat/Overlay_24/SelectBuffedCombatantsAndPick_021f57a8.cpp:
+    complete
+    .text start:0x021f57a8 end:0x021f5888
+
+
+src/Combat/Overlay_24/SumEligibleAttackWithRandomFactor_021da47c.cpp:
+    complete
+    .text start:0x021da47c end:0x021da550
+
+
+src/Combat/Overlay_24/func_ov024_021ee3e8.cpp:
+    complete
+    .text start:0x021ee3e8 end:0x021ee454
+
+
+src/Combat/Overlay_24/func_ov024_021eebbc.cpp:
+    complete
+    .text start:0x021eebbc end:0x021eecc8
+
+
+src/Combat/Overlay_24/func_ov024_021eef68.cpp:
+    complete
+    .text start:0x021eef68 end:0x021ef074
+
+
+src/Combat/Overlay_24/func_ov024_021f22d8.cpp:
+    complete
+    .text start:0x021f22d8 end:0x021f23e0
+
+
+src/Combat/Overlay_24/func_ov024_021f3440.cpp:
+    complete
+    .text start:0x021f3440 end:0x021f3524
+
+
+src/Combat/Overlay_24/func_ov024_021f50cc.cpp:
+    complete
+    .text start:0x021f50cc end:0x021f51d4
+
+
+src/Combat/Overlay_24/func_ov024_021f606c.cpp:
+    complete
+    .text start:0x021f606c end:0x021f6150
