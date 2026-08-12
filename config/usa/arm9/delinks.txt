@@ -23990,3 +23990,113 @@ src/Combat/Main/func_02073dfc.cpp:
 src/Combat/Main/func_020be53c.cpp:
     complete
     .text start:0x020be53c end:0x020be604
+
+
+src/Combat/Main/ComputeTrajectoryOffsets_020adfa8.cpp:
+    complete
+    .text start:0x020adfa8 end:0x020ae074
+
+
+src/Combat/Main/ConvertU64ToDigits_020096ac.cpp:
+    complete
+    .text start:0x020096ac end:0x02009778
+
+
+src/Combat/Main/InitAndRegisterEntry_0209d8a8.cpp:
+    complete
+    .text start:0x0209d8a8 end:0x0209d974
+
+
+src/Combat/Main/InitCombatObject_02020720.cpp:
+    complete
+    .text start:0x02020720 end:0x02020838
+
+
+src/Combat/Main/InitField3b0Struct_0202df68.cpp:
+    complete
+    .text start:0x0202df68 end:0x0202e08c
+
+
+src/Combat/Main/InitLargeStruct_02046380.cpp:
+    complete
+    .text start:0x02046380 end:0x020464a4
+
+
+src/Combat/Main/InitObjectState_02076a8c.cpp:
+    complete
+    .text start:0x02076a8c end:0x02076b58
+
+
+src/Combat/Main/InitStateBlock_0204c684.cpp:
+    complete
+    .text start:0x0204c684 end:0x0204c754
+
+
+src/Combat/Main/InsertQueueNode020d2b34.cpp:
+    complete
+    .text start:0x020d2b34 end:0x020d2c00
+
+
+src/Combat/Main/PickSlotAndSubmitBattleContext_0202cddc.cpp:
+    complete
+    .text start:0x0202cddc end:0x0202cefc
+
+
+src/Combat/Main/ProcessEntityFieldsAndQueueEvent_0207853c.cpp:
+    complete
+    .text start:0x0207853c end:0x02078660
+
+
+src/Combat/Main/ProcessObjCallbacks_020db894.cpp:
+    complete
+    .text start:0x020db894 end:0x020db964
+
+
+src/Combat/Main/SetElemFlagRangeByModeAndNotify_020aee04.cpp:
+    complete
+    .text start:0x020aee04 end:0x020aeec8
+
+
+src/Combat/Main/SubmitBattleContextEntry020d54d0.cpp:
+    complete
+    .text start:0x020d54d0 end:0x020d559c
+
+
+src/Combat/Main/TransformAndSyncPosition_02059f54.cpp:
+    complete
+    .text start:0x02059f54 end:0x0205a020
+
+
+src/Combat/Main/UpdateKeyedStackAmount_0207d134.cpp:
+    complete
+    .text start:0x0207d134 end:0x0207d200
+
+
+src/Combat/Main/UpdateStateAndSeedEntry_020ddea0.cpp:
+    complete
+    .text start:0x020ddea0 end:0x020ddfb4
+
+
+src/Combat/Main/UpdateStreamStateAndDispatch02044f3c.cpp:
+    complete
+    .text start:0x02044f3c end:0x0204500c
+
+
+src/Combat/Main/UpdateTweenScaleAndSetEntryBytes_0209c2e0.cpp:
+    complete
+    .text start:0x0209c2e0 end:0x0209c3ac
+
+
+src/Combat/Main/func_020341e0.cpp:
+    complete
+    .text start:0x020341e0 end:0x020342ac
+
+
+src/Combat/Main/func_020489e8.cpp:
+    complete
+    .text start:0x020489e8 end:0x02048ab4
+
+
+src/Combat/Main/func_020a3720.cpp:
+    complete
+    .text start:0x020a3720 end:0x020a3844
