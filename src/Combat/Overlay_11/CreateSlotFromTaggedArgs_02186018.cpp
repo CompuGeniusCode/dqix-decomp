@@ -1,0 +1,29 @@
+#include <globaldefs.h>
+
+struct TaggedNumber02184c30;
+extern int GetTaggedValueAsInt_02184c30(struct TaggedNumber02184c30* v);
+struct TaggedNumber02184c4c;
+extern float GetTaggedValueAsFloat_02184c4c(struct TaggedNumber02184c4c* v);
+
+extern "C" void* func_ov017_021b2164(void);
+extern "C" void* func_ov011_021849c8(void*);
+extern "C" void* func_ov023_021f6880(void*, int);
+extern "C" void func_ov023_021fa078(void* obj, void* ctx, unsigned short val, int* srcVec, int p5, int p6);
+
+// USA: func_ov011_02186018  (semantic: CreateSlotFromTaggedArgs_02186018)
+extern "C" ARM int func_ov011_02186018(struct TaggedNumber02184c30* tagged) {
+    int key = GetTaggedValueAsInt_02184c30(tagged);
+    int arr[3];
+    arr[0] = (int)(4096.0f * GetTaggedValueAsFloat_02184c4c((struct TaggedNumber02184c4c*)((char*)tagged + 8)));
+    arr[1] = (int)(4096.0f * GetTaggedValueAsFloat_02184c4c((struct TaggedNumber02184c4c*)((char*)tagged + 0x10)));
+    arr[2] = (int)(4096.0f * GetTaggedValueAsFloat_02184c4c((struct TaggedNumber02184c4c*)((char*)tagged + 0x18)));
+    int p5 = (int)(4096.0f * GetTaggedValueAsFloat_02184c4c((struct TaggedNumber02184c4c*)((char*)tagged + 0x20)));
+    int p6 = (int)(4096.0f * GetTaggedValueAsFloat_02184c4c((struct TaggedNumber02184c4c*)((char*)tagged + 0x28)));
+    void* base = func_ov017_021b2164();
+    void* ptr1 = func_ov011_021849c8(base);
+    if (!func_ov023_021f6880(ptr1, key)) return 0;
+    void* node2 = func_ov023_021f6880(ptr1, 0xffff);
+    if (!node2) return 0;
+    func_ov023_021fa078(node2, base, key, arr, p5, p6);
+    return 1;
+}

@@ -534,3 +534,93 @@ src/Combat/Overlay_11/Trans_02188438.cpp:
 src/Combat/Overlay_11/Trans_021884ac.cpp:
     complete
     .text start:0x021884ac end:0x021884d0
+
+
+src/Combat/Overlay_11/AllocateAndInitEventD_02186548.cpp:
+    complete
+    .text start:0x02186548 end:0x02186650
+
+
+src/Combat/Overlay_11/AllocateAndQueueTaggedEvent_02185214.cpp:
+    complete
+    .text start:0x02185214 end:0x02185318
+
+
+src/Combat/Overlay_11/CallFunc02184c68IfNotFdd0_02185600.cpp:
+    complete
+    .text start:0x02185600 end:0x0218563c
+
+
+src/Combat/Overlay_11/CallFunc02184c68IfState3_02188534.cpp:
+    complete
+    .text start:0x02188534 end:0x02188560
+
+
+src/Combat/Overlay_11/CallFunc02184c68UnlessState0Or3_02187480.cpp:
+    complete
+    .text start:0x02187480 end:0x021874b0
+
+
+src/Combat/Overlay_11/CallVTableLoopAt118_02184740.cpp:
+    complete
+    .text start:0x02184740 end:0x02184750
+
+
+src/Combat/Overlay_11/CallVTableLoopAt118_02184750.cpp:
+    complete
+    .text start:0x02184750 end:0x02184760
+
+
+src/Combat/Overlay_11/CallVTableLoopAt118_02184760.cpp:
+    complete
+    .text start:0x02184760 end:0x02184770
+
+
+src/Combat/Overlay_11/CreateAndAppendEvent13Node_021871b8.cpp:
+    complete
+    .text start:0x021871b8 end:0x021872c8
+
+
+src/Combat/Overlay_11/CreateSlotFromTaggedArgs_02186018.cpp:
+    complete
+    .text start:0x02186018 end:0x02186124
+
+
+src/Combat/Overlay_11/DispatchIfTaggedCountPositive_02186808.cpp:
+    complete
+    .text start:0x02186808 end:0x02186834
+
+
+src/Combat/Overlay_11/SetGlobalFlagByte9caFromTagged_02188158.cpp:
+    complete
+    .text start:0x02188158 end:0x02188184
+
+
+src/Combat/Overlay_11/SetLinkedField4IfTag3_02184c68.cpp:
+    complete
+    .text start:0x02184c68 end:0x02184c7c
+
+
+src/Combat/Overlay_11/SetXY1c0FromTagged_0218753c.cpp:
+    complete
+    .text start:0x0218753c end:0x02187570
+
+
+src/Combat/Overlay_11/SetXY1c4FromTagged_02187f04.cpp:
+    complete
+    .text start:0x02187f04 end:0x02187f38
+
+
+src/Combat/Overlay_11/UpdateBattleScaleAndPollTicket_021848a8.cpp:
+    complete
+    .text start:0x021848a8 end:0x021849ac
+
+
+src/Combat/Overlay_11/func_ov011_021842c8.cpp:
+    complete
+    .text start:0x021842c8 end:0x02184324
+
+
+src/Combat/Overlay_11/func_ov011_021845f8.cpp:
+    complete
+    .text start:0x021845f8 end:0x02184604
