@@ -24100,3 +24100,23 @@ src/Combat/Main/func_020489e8.cpp:
 src/Combat/Main/func_020a3720.cpp:
     complete
     .text start:0x020a3720 end:0x020a3844
+
+
+src/Combat/Main/FilterCombatantArraysBySlotValue0209ef2c.cpp:
+    complete
+    .text start:0x0209ef2c end:0x0209f030
+
+
+src/Combat/Main/MergeCombatantArrays0209f864.cpp:
+    complete
+    .text start:0x0209f864 end:0x0209f968
+
+
+src/Combat/Main/func_0206c938.cpp:
+    complete
+    .text start:0x0206c938 end:0x0206ca3c
+
+
+src/Combat/Main/func_020d7534.cpp:
+    complete
+    .text start:0x020d7534 end:0x020d7638
