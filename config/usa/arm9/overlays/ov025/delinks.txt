@@ -810,3 +810,48 @@ src/Combat/Overlay_25/Func_021e413c.cpp:
 src/Combat/Overlay_25/Func_021e45c4.cpp:
     complete
     .text start:0x021e45c4 end:0x021e4624
+
+
+src/Combat/Overlay_25/AddMatchingShort_021eb05c.cpp:
+    complete
+    .text start:0x021eb05c end:0x021eb084
+
+
+src/Combat/Overlay_25/AppendRow_021ded50.cpp:
+    complete
+    .text start:0x021ded50 end:0x021ded84
+
+
+src/Combat/Overlay_25/FormatAndDispatchMessage_021e4168.cpp:
+    complete
+    .text start:0x021e4168 end:0x021e41a0
+
+
+src/Combat/Overlay_25/InitBattleState_021db6dc.cpp:
+    complete
+    .text start:0x021db6dc end:0x021db7f8
+
+
+src/Combat/Overlay_25/ProcessTableRowEvent_021dee20.cpp:
+    complete
+    .text start:0x021dee20 end:0x021def24
+
+
+src/Combat/Overlay_25/SetActiveCombatFlagFd8_021e8898.cpp:
+    complete
+    .text start:0x021e8898 end:0x021e88b8
+
+
+src/Combat/Overlay_25/SetActiveCombatFlagFf9_021e88b8.cpp:
+    complete
+    .text start:0x021e88b8 end:0x021e88d8
+
+
+src/Combat/Overlay_25/UpdateAndDispatchSlot_021dc220.cpp:
+    complete
+    .text start:0x021dc220 end:0x021dc324
+
+
+src/Combat/Overlay_25/UpdateSlotEntryAndFlag_021dc590.cpp:
+    complete
+    .text start:0x021dc590 end:0x021dc694

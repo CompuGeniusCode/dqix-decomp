@@ -32,8 +32,8 @@ struct List02160094_dc220 {
     struct ListNode02160094_dc220* head;
 };
 
-// USA: func_ov025_021dc220
-ARM void UpdateAndDispatchSlot_021dc220(void* obj) {
+// USA: func_ov025_021dc220  (semantic: UpdateAndDispatchSlot_021dc220)
+extern "C" ARM void func_ov025_021dc220(void* obj) {
     struct Obj021dc220* self = (struct Obj021dc220*)obj;
     struct BattleStruct* battle = GetBattleStruct();
     void* slot = GetSlotPtr02160f20(obj);
