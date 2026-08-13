@@ -444,3 +444,33 @@ src/Combat/Overlay_2/func_ov002_0215b0a8.cpp:
 src/Combat/Overlay_2/InitBattleTag0215c614.cpp:
     complete
     .text start:0x0215c614 end:0x0215c72c
+
+
+src/Combat/Overlay_2/TagInitAndDispatch_0215ddbc.cpp:
+    complete
+    .text start:0x0215ddbc end:0x0215de9c
+
+
+src/Combat/Overlay_2/func_ov002_02153be0.cpp:
+    complete
+    .text start:0x02153be0 end:0x02153ccc
+
+
+src/Combat/Overlay_2/func_ov002_02154944.cpp:
+    complete
+    .text start:0x02154944 end:0x021549c8
+
+
+src/Combat/Overlay_2/func_ov002_0215d654.cpp:
+    complete
+    .text start:0x0215d654 end:0x0215d72c
+
+
+src/Combat/Overlay_2/func_ov002_0215e900.cpp:
+    complete
+    .text start:0x0215e900 end:0x0215e9c4
+
+
+src/Combat/Overlay_2/func_ov002_021619b4.cpp:
+    complete
+    .text start:0x021619b4 end:0x02161a8c
