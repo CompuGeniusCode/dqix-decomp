@@ -3634,3 +3634,93 @@ src/Combat/Overlay_23/Trans_021ec3f4.cpp:
 src/Combat/Overlay_23/Trans_021ec454.cpp:
     complete
     .text start:0x021ec454 end:0x021ec480
+
+
+src/Combat/Overlay_23/GetBgBaseAddrBySelector_021db2b8.cpp:
+    complete
+    .text start:0x021db2b8 end:0x021db2e4
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021e9cc4.cpp:
+    complete
+    .text start:0x021e9cc4 end:0x021e9cf8
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021e9cf8.cpp:
+    complete
+    .text start:0x021e9cf8 end:0x021e9d2c
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021e9d2c.cpp:
+    complete
+    .text start:0x021e9d2c end:0x021e9d60
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021e9d60.cpp:
+    complete
+    .text start:0x021e9d60 end:0x021e9d94
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset0_021e9d94.cpp:
+    complete
+    .text start:0x021e9d94 end:0x021e9dc8
+
+
+src/Combat/Overlay_23/SetFieldWidth4Offset16_021e9bb0.cpp:
+    complete
+    .text start:0x021e9bb0 end:0x021e9be4
+
+
+src/Combat/Overlay_23/SetFieldWidth7Offset9_021e9b7c.cpp:
+    complete
+    .text start:0x021e9b7c end:0x021e9bb0
+
+
+src/Combat/Overlay_23/SetFieldWidth9Offset0_021e9b48.cpp:
+    complete
+    .text start:0x021e9b48 end:0x021e9b7c
+
+
+src/Combat/Overlay_23/SetTableEntryField_021e2550_021e2550.cpp:
+    complete
+    .text start:0x021e2550 end:0x021e257c
+
+
+src/Combat/Overlay_23/func_ov023_021e9dc8.cpp:
+    complete
+    .text start:0x021e9dc8 end:0x021e9dfc
+
+
+src/Combat/Overlay_23/func_ov023_021e9dfc.cpp:
+    complete
+    .text start:0x021e9dfc end:0x021e9e30
+
+
+src/Combat/Overlay_23/func_ov023_021e9e30.cpp:
+    complete
+    .text start:0x021e9e30 end:0x021e9e64
+
+
+src/Combat/Overlay_23/func_ov023_021eae0c.cpp:
+    complete
+    .text start:0x021eae0c end:0x021eae38
+
+
+src/Combat/Overlay_23/func_ov023_021ecbbc.cpp:
+    complete
+    .text start:0x021ecbbc end:0x021ecbe8
+
+
+src/Combat/Overlay_23/func_ov023_021f65d4.cpp:
+    complete
+    .text start:0x021f65d4 end:0x021f6600
+
+
+src/Combat/Overlay_23/func_ov023_021f6bc0.cpp:
+    complete
+    .text start:0x021f6bc0 end:0x021f6bec
+
+
+src/Combat/Overlay_23/func_ov023_021f735c.cpp:
+    complete
+    .text start:0x021f735c end:0x021f7388
