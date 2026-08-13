@@ -3724,3 +3724,93 @@ src/Combat/Overlay_23/func_ov023_021f6bc0.cpp:
 src/Combat/Overlay_23/func_ov023_021f735c.cpp:
     complete
     .text start:0x021f735c end:0x021f7388
+
+
+src/Combat/Overlay_23/SetFieldFromBattleField7ac0_021e9ecc.cpp:
+    complete
+    .text start:0x021e9ecc end:0x021e9f00
+
+
+src/Combat/Overlay_23/SetFieldFromBlock20_021ea884.cpp:
+    complete
+    .text start:0x021ea884 end:0x021ea8b8
+
+
+src/Combat/Overlay_23/SetFieldFromBlock24Low16_021e9f30.cpp:
+    complete
+    .text start:0x021e9f30 end:0x021e9f64
+
+
+src/Combat/Overlay_23/SetFieldFromBlock70Low16_021ea0b4.cpp:
+    complete
+    .text start:0x021ea0b4 end:0x021ea0e8
+
+
+src/Combat/Overlay_23/SetFieldFromBlock74Low16_021ea118.cpp:
+    complete
+    .text start:0x021ea118 end:0x021ea14c
+
+
+src/Combat/Overlay_23/SetFieldFromBlock78Low16_021ea17c.cpp:
+    complete
+    .text start:0x021ea17c end:0x021ea1b0
+
+
+src/Combat/Overlay_23/SetFieldFromBlock7cLow10_021ea1e0.cpp:
+    complete
+    .text start:0x021ea1e0 end:0x021ea214
+
+
+src/Combat/Overlay_23/SetFieldFromBlock88_021ea344.cpp:
+    complete
+    .text start:0x021ea344 end:0x021ea378
+
+
+src/Combat/Overlay_23/SetFieldFromBlock8c_021ea378.cpp:
+    complete
+    .text start:0x021ea378 end:0x021ea3ac
+
+
+src/Combat/Overlay_23/SetFieldWidth10Offset0_021ea2dc.cpp:
+    complete
+    .text start:0x021ea2dc end:0x021ea310
+
+
+src/Combat/Overlay_23/SetFieldWidth10Offset10_021ea214.cpp:
+    complete
+    .text start:0x021ea214 end:0x021ea248
+
+
+src/Combat/Overlay_23/SetFieldWidth16Offset0_021ea278.cpp:
+    complete
+    .text start:0x021ea278 end:0x021ea2ac
+
+
+src/Combat/Overlay_23/SetFieldWidth16Offset10_021ea310.cpp:
+    complete
+    .text start:0x021ea310 end:0x021ea344
+
+
+src/Combat/Overlay_23/SetFieldWidth16Offset1c_021e9e64.cpp:
+    complete
+    .text start:0x021e9e64 end:0x021e9e98
+
+
+src/Combat/Overlay_23/SetFieldWidth24Offset40_021e9e98.cpp:
+    complete
+    .text start:0x021e9e98 end:0x021e9ecc
+
+
+src/Combat/Overlay_23/func_ov023_021eaba0.cpp:
+    complete
+    .text start:0x021eaba0 end:0x021eabd4
+
+
+src/Combat/Overlay_23/func_ov023_021eabd4.cpp:
+    complete
+    .text start:0x021eabd4 end:0x021eac08
+
+
+src/Combat/Overlay_23/func_ov023_021eac08.cpp:
+    complete
+    .text start:0x021eac08 end:0x021eac3c
