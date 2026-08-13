@@ -1940,3 +1940,28 @@ src/Combat/Overlay_24/func_ov024_021f83f8.cpp:
 src/Combat/Overlay_24/func_ov024_021fd1bc.cpp:
     complete
     .text start:0x021fd1bc end:0x021fd2b4
+
+
+src/Combat/Overlay_24/FilterEligibleByHPRatioOrDefault_021ee7a4.cpp:
+    complete
+    .text start:0x021ee7a4 end:0x021ee8b4
+
+
+src/Combat/Overlay_24/RandomScaleField6cSqDiv23Plus100Max170_021d99c8.cpp:
+    complete
+    .text start:0x021d99c8 end:0x021d9ad8
+
+
+src/Combat/Overlay_24/SelectEligiblePositiveStatAndPick_021f5f6c.cpp:
+    complete
+    .text start:0x021f5f6c end:0x021f606c
+
+
+src/Combat/Overlay_24/func_ov024_021f1330.cpp:
+    complete
+    .text start:0x021f1330 end:0x021f1440
+
+
+src/Combat/Overlay_24/func_ov024_021f18fc.cpp:
+    complete
+    .text start:0x021f18fc end:0x021f1a0c
