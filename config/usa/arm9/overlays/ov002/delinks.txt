@@ -439,3 +439,8 @@ src/Combat/Overlay_2/UpdateStatusCodeAndDispatch0215eec0.cpp:
 src/Combat/Overlay_2/func_ov002_0215b0a8.cpp:
     complete
     .text start:0x0215b0a8 end:0x0215b138
+
+
+src/Combat/Overlay_2/InitBattleTag0215c614.cpp:
+    complete
+    .text start:0x0215c614 end:0x0215c72c
