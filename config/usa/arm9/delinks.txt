@@ -23185,3 +23185,43 @@ src/Combat/Main/UpdateGPCSignatures020e6710.cpp:
 src/Combat/Main/InitBattleContexts_020e5b28.cpp:
     complete
     .init start:0x020e5b28 end:0x020e5b78
+
+
+src/Combat/Main/CreateBattleRandom_020e60c0.cpp:
+    complete
+    .init start:0x020e60c0 end:0x020e60e0
+
+
+src/Combat/Main/InitAllEntries_020e5eb4.cpp:
+    complete
+    .init start:0x020e5eb4 end:0x020e5ee0
+
+
+src/Combat/Main/InitCallClearAndReturn0207c244_020e6234.cpp:
+    complete
+    .init start:0x020e6234 end:0x020e6260
+
+
+src/Combat/Main/InitClearFourRegions_020e60f8.cpp:
+    complete
+    .init start:0x020e60f8 end:0x020e6124
+
+
+src/Combat/Main/InitCombatBattleObjectCallbacks020e5c2c.cpp:
+    complete
+    .init start:0x020e5c2c end:0x020e5c58
+
+
+src/Combat/Main/InitEmptyDestructorObj_020e5ee0.cpp:
+    complete
+    .init start:0x020e5ee0 end:0x020e5f0c
+
+
+src/Combat/Main/InitEntries020e5afc.cpp:
+    complete
+    .init start:0x020e5afc end:0x020e5b28
+
+
+src/Combat/Main/StaticInit020e66a0.cpp:
+    complete
+    .init start:0x020e66a0 end:0x020e66fc
