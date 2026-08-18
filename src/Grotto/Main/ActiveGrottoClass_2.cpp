@@ -2,23 +2,12 @@
 #include "Combat/Main/BattleList.h"
 #include <globaldefs.h>
 
-#ifdef jpn
-extern "C"
-{
-    // Just (vector)-memsets to zero
-    void func_020a5f00(DetailedTreasureMapData*);
-}
-#define ClearOverallMapData(obj) func_020a5f00(obj)
-#else
-#define ClearOverallMapData(obj) (obj)->Clear()
-#endif
-
 // USA: func_0209033c
 // JPN: func_02090c5c
 void ActiveGrottoClass::Clear()
 {
     pGenerator = NULL;
-    ClearOverallMapData(&overallMapData);
+    overallMapData.Clear();
     floorMap.Clear();
     floorWidth = 16;
     floorHeight = 16;

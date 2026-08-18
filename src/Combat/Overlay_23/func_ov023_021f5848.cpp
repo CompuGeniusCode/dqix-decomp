@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 struct Variant02030b0c;
 int GetIntFromVariant02030b0c(struct Variant02030b0c* p);

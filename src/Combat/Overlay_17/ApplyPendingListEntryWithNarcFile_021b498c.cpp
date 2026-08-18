@@ -1,20 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Filesystem/FileIO.h"
 
-int GetData02104304Field4();
-extern "C" int func_0202fdd0(int list, int key);
 struct List0202fe68;
-int LookupListValueByKey(struct List0202fe68* obj, int key);
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 struct InitStruct;
 ARM void InitializeStruct(struct InitStruct* s);
 struct Struct0202811c;
 void ProcessAndCheckPairs02028104(struct Struct0202811c* s, int b, int c, int d);
 extern "C" void func_02028214(void* a, int b);
-extern "C" void func_020301c8(int list, int key);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
 extern char data_ov017_021d7b4f;
 extern char data_ov017_021d7b3a;
@@ -31,14 +26,14 @@ struct Obj021b498c {
 // USA: func_ov017_021b498c  (semantic: ApplyPendingListEntryWithNarcFile_021b498c)
 extern "C" ARM void func_ov017_021b498c(struct Obj021b498c* obj) {
     GetBattleStruct();
-    int list = GetData02104304Field4();
-    if (!func_0202fdd0(list, obj->key)) {
+    int list = (int)BackgroundLoader::GetInstance();
+    if (!((BackgroundLoader*)(list))->GetTaskStatus((int)(obj->key))) {
         return;
     }
 
-    if (LookupListValueByKey((struct List0202fe68*)list, obj->key) == 2) {
+    if (((BackgroundLoader*)((struct List0202fe68*)list))->GetDetailedTaskStatus((int)(obj->key)) == 2) {
         int out2, out1;
-        GetListEntryValues0202fec8((struct List0202fec8*)list, obj->key, &out1, &out2);
+        ((BackgroundLoader*)((struct List0202fec8*)list))->GetLoadedFileByID((int)(obj->key), (void**)(&out1), (unsigned int*)(&out2));
         if (out1 != 0) {
             unsigned int fileSize;
             const void* filePtr;
@@ -53,8 +48,8 @@ extern "C" ARM void func_ov017_021b498c(struct Obj021b498c* obj) {
         }
     }
 
-    func_020301c8(list, obj->key);
+    ((BackgroundLoader*)(list))->RemoveTask((int)(obj->key));
     obj->key = -1;
-    obj->key = CallFunc0202fa38ZeroPad(list, (int)&data_ov017_021d7b3a, 0);
+    obj->key = ((BackgroundLoader*)(list))->QueueLoadFile((const char*)((int)&data_ov017_021d7b3a), (SafeAllocator*)(0));
     obj->field10 = 3;
 }

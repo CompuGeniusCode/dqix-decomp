@@ -7,18 +7,18 @@ struct Struct0224e5e8_022169a0 {
 };
 extern struct Struct0224e5e8_022169a0 data_ov031_0224e5e8;
 
-extern "C" void* func_020c8074(void *node);
+extern "C" void* _Z9LockMutexP5Mutex(void *node);
 struct RefNode020c80f8;
-void ReleaseNodeRef020c80f8(struct RefNode020c80f8 *node);
+extern "C" void _Z11UnlockMutexP5Mutex(struct RefNode020c80f8 *node);
 void RefreshRefIfFlagged_02217e70(char *self);
 
 // USA: func_ov031_022169a0  (semantic: ClearFlagAwaitContext_022169a0)
 extern "C" ARM void func_ov031_022169a0(void) {
 	char *base = data_ov031_0224e5e8.field8;
 	if (base == 0) return;
-	func_020c8074(base + 0x1000 + 0x3d8);
+	_Z9LockMutexP5Mutex(base + 0x1000 + 0x3d8);
 	*(int*)(data_ov031_0224e5e8.field8 + 0x1000 + 0x3f0) = 1;
-	ReleaseNodeRef020c80f8((struct RefNode020c80f8*)(data_ov031_0224e5e8.field8 + 0x3d8 + 0x1000));
+	_Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)(data_ov031_0224e5e8.field8 + 0x3d8 + 0x1000));
 	char *ctx = *(char**)(data_ov031_0224e5e8.field8 + 0x1000 + 0x314);
 	if (ctx != 0) {
 		RefreshRefIfFlagged_02217e70(ctx);

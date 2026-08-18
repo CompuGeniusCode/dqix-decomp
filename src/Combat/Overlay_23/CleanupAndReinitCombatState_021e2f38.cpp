@@ -1,11 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
 void* GetDataPtr02114e04_020d6c00(void);
 struct FlagWord020466f4;
 void ClearFlags020466f4(struct FlagWord020466f4*, unsigned int);
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int, int);
 int GetGlobal02109400(void);
 void BlankFunction02094b40(void);
 extern "C" void func_02094ab0(int);
@@ -26,9 +25,9 @@ ARM void CleanupAndReinitCombatState_021e2f38(void* obj) {
 
     ClearFlags020466f4((struct FlagWord020466f4*)GetDataPtr02114e04_020d6c00(), 0xf);
 
-    int data4 = GetData02104304Field4();
+    int data4 = (int)BackgroundLoader::GetInstance();
     if (*(int*)(o + 0x630) > 0) {
-        func_020301c8(data4, *(int*)(o + 0x630));
+        ((BackgroundLoader*)(data4))->RemoveTask((int)(*(int*)(o + 0x630)));
         *(int*)(o + 0x630) = -1;
     }
 

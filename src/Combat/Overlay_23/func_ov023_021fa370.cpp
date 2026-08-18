@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
 extern "C" void* func_ov011_021849c8(void* obj);
@@ -7,15 +8,12 @@ struct Struct_021f6bb8 { int unk0; int field4; };
 extern "C" int func_ov023_021f6bb8(struct Struct_021f6bb8* obj);
 extern "C" void func_ov023_021f6bb0(void* obj, int v);
 
-extern int GetData02104304Field4();
 
 struct BattleStruct;
 extern struct BattleStruct* GetBattleStruct(void);
 extern int GetField0x3acValue(struct BattleStruct* battleStruct);
 extern void* GetCombatantWithFlag0x800(struct BattleStruct* battleStruct, int combatantId);
 
-extern int CallFunc0202fa38Mode2(int a, int b, int c, int d);
-extern int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
 extern "C" void* func_0200f374(void* dst, int count);
 
@@ -58,7 +56,7 @@ extern "C" ARM int func_ov023_021fa370(struct Obj021fa370* obj, void* param1) {
     query = func_ov023_021f6bb8((struct Struct_021f6bb8*)handleObj);
     if (query >= 0) goto earlyOut;
 
-    handle = GetData02104304Field4();
+    handle = (int)BackgroundLoader::GetInstance();
     zeroPad = 0;
     if (obj->kind == 1) {
         struct BattleStruct* bs = GetBattleStruct();
@@ -90,9 +88,9 @@ extern "C" ARM int func_ov023_021fa370(struct Obj021fa370* obj, void* param1) {
         if (obj->fmt28 != 0) {
             memset(buf40, 0, 0x20);
             sprintf(buf40, obj->fmt10, zeroPad);
-            result = CallFunc0202fa38Mode2(handle, (int)buf0, (int)buf40, 0);
+            result = ((BackgroundLoader*)(handle))->QueueLoadFileInGP2((const char*)((int)buf0), (const char*)((int)buf40), (SafeAllocator*)(0));
         } else {
-            result = CallFunc0202fa38ZeroPad(handle, (int)buf0, 0);
+            result = ((BackgroundLoader*)(handle))->QueueLoadFile((const char*)((int)buf0), (SafeAllocator*)(0));
         }
         func_ov023_021f6bb0(handleObj, result);
     }

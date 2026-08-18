@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 struct ActiveEntry02046900;
 int CountActiveEntries(struct ActiveEntry02046900* entry);
@@ -40,7 +39,6 @@ void FlushAndDispatchList0204b0e8(struct List0204b0e8* obj, void* buf);
 struct List0204afb4;
 void ResetRecordList0204afb4(struct List0204afb4* obj);
 
-extern "C" void func_020301c8(int, int);
 
 struct LocalListStruct02020cb8 {
     unsigned char pad0[0x1c];
@@ -51,7 +49,7 @@ struct LocalListStruct02020cb8 {
 
 // USA: func_02020cb8
 ARM void FinalizeRecordListDisplay02020cb8(void* self, int* handle) {
-    int data4 = GetData02104304Field4();
+    int data4 = (int)BackgroundLoader::GetInstance();
     int recListHead = 0;
     int val2Ignored = 0;
     void* dummyPtr;
@@ -60,7 +58,7 @@ ARM void FinalizeRecordListDisplay02020cb8(void* self, int* handle) {
     LocalListStruct02020cb8 s;
     unsigned char struct2[0x10];
 
-    GetListEntryValues0202fec8((struct List0202fec8*)data4, *handle, &recListHead, &val2Ignored);
+    ((BackgroundLoader*)((struct List0202fec8*)data4))->GetLoadedFileByID((int)(*handle), (void**)(&recListHead), (unsigned int*)(&val2Ignored));
     int count = CountActiveEntries((struct ActiveEntry02046900*)recListHead);
     for (int i = 0; i < count; i++) {
         arrayC[i] = FindRecordByIndex((struct Rec020467f0*)recListHead, i, &dummyPtr, &arrayB[i]);
@@ -94,7 +92,7 @@ ARM void FinalizeRecordListDisplay02020cb8(void* self, int* handle) {
     FlushAndDispatchList0204b0e8((struct List0204b0e8*)&s, 0);
     ResetRecordList0204afb4((struct List0204afb4*)&s);
 
-    int data4b = GetData02104304Field4();
-    func_020301c8(data4b, *handle);
+    int data4b = (int)BackgroundLoader::GetInstance();
+    ((BackgroundLoader*)(data4b))->RemoveTask((int)(*handle));
     *handle = -1;
 }

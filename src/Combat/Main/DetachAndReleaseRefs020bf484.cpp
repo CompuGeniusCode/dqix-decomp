@@ -1,13 +1,13 @@
 #include <globaldefs.h>
 
-extern "C" int func_020c8074(void* p);
+extern "C" int _Z9LockMutexP5Mutex(void* p);
 extern "C" void func_020bf1a0(void* entry);
 
 struct BattleTarget9a8;
 void ClearTargetMask(struct BattleTarget9a8* obj);
 
 struct RefNode020c80f8;
-void ReleaseNodeRef020c80f8(struct RefNode020c80f8* node);
+extern "C" void _Z11UnlockMutexP5Mutex(struct RefNode020c80f8* node);
 
 struct Ctx0211_020bf484 { int f0; unsigned char* f4; };
 extern struct Ctx0211_020bf484 data_021103b0;
@@ -28,9 +28,9 @@ ARM void DetachAndReleaseRefs020bf484(int expected, void* unused1, struct Ctx020
         return;
     }
 
-    func_020c8074(&data_02110a28);
+    _Z9LockMutexP5Mutex(&data_02110a28);
     if (data_021103b0.f4 != 0) {
-        func_020c8074(data_021103b0.f4 + 0x4c8);
+        _Z9LockMutexP5Mutex(data_021103b0.f4 + 0x4c8);
     }
 
     func_020bf1a0(obj);
@@ -42,8 +42,8 @@ ARM void DetachAndReleaseRefs020bf484(int expected, void* unused1, struct Ctx020
         obj->count0x120 = 0;
     }
 
-    ReleaseNodeRef020c80f8((struct RefNode020c80f8*)&data_02110a28);
+    _Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)&data_02110a28);
     if (data_021103b0.f4 != 0) {
-        ReleaseNodeRef020c80f8((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
+        _Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
     }
 }

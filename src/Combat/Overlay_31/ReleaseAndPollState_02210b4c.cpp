@@ -2,14 +2,14 @@
 #include "System/ProcessorContext.h"
 
 extern void* data_ov031_0224e588;
-extern "C" int func_020c8074(void* p);
+extern "C" int _Z9LockMutexP5Mutex(void* p);
 
 struct RefNode020c80f8 {
 	unsigned char unk[8];
 	void* owner;
 	int refCount;
 };
-extern void ReleaseNodeRef020c80f8(struct RefNode020c80f8* node);
+extern "C" extern void _Z11UnlockMutexP5Mutex(struct RefNode020c80f8* node);
 
 extern "C" int func_ov031_02207434(void* a);
 extern "C" void func_ov031_02210358(int a, int b);
@@ -18,9 +18,9 @@ extern void SetGlobal0224e588Deref_022103dc(void* value);
 // USA: func_ov031_02210b4c  (semantic: ReleaseAndPollState_02210b4c)
 extern "C" ARM void func_ov031_02210b4c(void) {
 	int savedState = *(int*)((char*)data_ov031_0224e588 + 0x1b8);
-	func_020c8074((char*)data_ov031_0224e588 + 0x1bc);
+	_Z9LockMutexP5Mutex((char*)data_ov031_0224e588 + 0x1bc);
 	*(int*)((char*)data_ov031_0224e588 + 0x1b8) = -59;
-	ReleaseNodeRef020c80f8((struct RefNode020c80f8*)((char*)data_ov031_0224e588 + 0x1bc));
+	_Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)((char*)data_ov031_0224e588 + 0x1bc));
 
 	if (savedState >= 0) {
 		int result = func_ov031_02207434((void*)savedState);

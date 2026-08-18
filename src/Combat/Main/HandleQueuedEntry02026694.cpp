@@ -1,15 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4(void);
-void AddEntryOrOverflow(unsigned char* obj);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
-extern "C" void func_020301c8(int a, int b);
-extern "C" int func_0202fdd0(int a, int b);
 extern "C" int func_02026780(void* self, int a, int b);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 extern int data_020ef6d7;
 
@@ -23,12 +18,12 @@ ARM void HandleQueuedEntry02026694(char* self) {
         return;
     }
 
-    obj = GetData02104304Field4();
+    obj = (int)BackgroundLoader::GetInstance();
 
     if (*(unsigned char*)(self + 0x9b9) == 0) {
-        func_020301c8(obj, *(int*)(self + 0xa2c));
-        AddEntryOrOverflow((unsigned char*)obj);
-        *(int*)(self + 0xa2c) = CallFunc0202fa38ZeroPad(obj, (int)&data_020ef6d7, 0);
+        ((BackgroundLoader*)(obj))->RemoveTask((int)(*(int*)(self + 0xa2c)));
+        ((BackgroundLoader*)((unsigned char*)obj))->AddFence();
+        *(int*)(self + 0xa2c) = ((BackgroundLoader*)(obj))->QueueLoadFile((const char*)((int)&data_020ef6d7), (SafeAllocator*)(0));
         *(unsigned char*)(self + 0x9b9) += 1;
         return;
     }
@@ -37,13 +32,13 @@ ARM void HandleQueuedEntry02026694(char* self) {
         return;
     }
 
-    if (func_0202fdd0(obj, *(int*)(self + 0xa2c)) == 0) {
+    if (((BackgroundLoader*)(obj))->GetTaskStatus((int)(*(int*)(self + 0xa2c))) == 0) {
         return;
     }
 
     out1 = 0;
     out2 = 0;
-    GetListEntryValues0202fec8((struct List0202fec8*)obj, *(int*)(self + 0xa2c), &out1, &out2);
+    ((BackgroundLoader*)((struct List0202fec8*)obj))->GetLoadedFileByID((int)(*(int*)(self + 0xa2c)), (void**)(&out1), (unsigned int*)(&out2));
 
     if (func_02026780(self, out1, out2) == 0) {
         *(unsigned char*)(self + 0x9ba) = 1;
@@ -52,7 +47,7 @@ ARM void HandleQueuedEntry02026694(char* self) {
         *(unsigned char*)(self + 0x9ba) = 1;
     }
 
-    func_020301c8(obj, *(int*)(self + 0xa2c));
+    ((BackgroundLoader*)(obj))->RemoveTask((int)(*(int*)(self + 0xa2c)));
     *(int*)(self + 0xa2c) = -1;
     *(unsigned char*)(self + 0x9b8) = 0;
     *(unsigned char*)(self + 0x9b9) += 1;

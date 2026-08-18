@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
@@ -7,7 +8,6 @@
 extern "C" int func_ov017_0218b5b0(void);
 struct CombatantStruct* GetCombatantAtField0x397c(struct BattleStruct* battleStruct);
 int GetFieldIfFlag4(char* obj);
-int GetData02104304Field4();
 unsigned int GetField4(unsigned int* obj);
 struct Obj020397cc;
 void CancelPendingAction020397cc(struct Obj020397cc* obj, int arg1);
@@ -18,7 +18,6 @@ void SetBitsInWord(unsigned int* obj, unsigned int mask);
 extern "C" void func_020a0cc4(unsigned int);
 void* AllocateAligned4(AllocatorUnion* alloc, unsigned int size);
 extern "C" void func_020c9be0(void);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 void SetBothCounters(void* obj, int value, int frames);
 struct ResetObj020d7a5c;
 struct ResetObj020d7a5c* GetGlobalResetObj020d7a50();
@@ -54,7 +53,7 @@ extern "C" ARM int func_ov017_021b2388(struct Obj021b2388* ctx) {
     unsigned char* fieldPtr;
     struct CombatantStruct* combatant = GetCombatantAtField0x397c(battle);
     fieldPtr = (unsigned char*)GetFieldIfFlag4((char*)battle);
-    int loadedList = GetData02104304Field4();
+    int loadedList = (int)BackgroundLoader::GetInstance();
     void** entry = *(void***)((char*)base + 0x3700);
     unsigned int val40 = GetField4((unsigned int*)base);
     ctx->field40 = val40;
@@ -84,7 +83,7 @@ extern "C" ARM int func_ov017_021b2388(struct Obj021b2388* ctx) {
 
     char tmp[0x50];
     sprintf(tmp, &data_ov017_021d7a28, ctx->name);
-    ctx->fieldc = CallFunc0202fa38ZeroPad(loadedList, (int)tmp, (int)&ctx->allocator);
+    ctx->fieldc = ((BackgroundLoader*)(loadedList))->QueueLoadFile((const char*)((int)tmp), (SafeAllocator*)((int)&ctx->allocator));
 
     if (!ctx->field38.bit4) {
         SetBothCounters((void*)base, -16, 30);

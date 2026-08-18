@@ -1,5 +1,5 @@
 #include <globaldefs.h>
-#include "System/Random.h"
+#include "Util/Random.h"
 
 // USA: func_02074838
 ARM float ApplyRandomVariance(int value, int narrow, struct Random* random) {

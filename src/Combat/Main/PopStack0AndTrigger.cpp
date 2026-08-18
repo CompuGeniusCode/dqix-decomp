@@ -5,7 +5,7 @@ extern volatile unsigned char data_02109da4;
 extern signed char data_02109dae[];
 extern signed char data_020f1962[];
 
-// USA: func_020a1e54
+// USA: _Z19PopStack0AndTriggeri
 ARM void PopStack0AndTrigger(int flag) {
     if (data_02109da4 == 0) return;
     data_02109da4--;

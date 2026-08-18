@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Combat/Main/BattleList.h"
 
 int GetGlobalField0x1c020421a0(void);
-int GetData02104304Field4();
 struct ArrayContainsByteStruct;
 int ArrayContainsByte(struct ArrayContainsByteStruct* s, int val);
 struct Holder0209a9dc;
@@ -52,7 +52,7 @@ extern "C" ARM int func_ov023_021f2368(unsigned char* obj) {
     struct GlobalState021f2368* g = data_ov023_021ffefc;
     int state = GetGlobalField0x1c020421a0();
     unsigned char* stateObj = (unsigned char*)state;
-    GetData02104304Field4();
+    (int)BackgroundLoader::GetInstance();
     int id = g->id;
     int contains = ArrayContainsByte((struct ArrayContainsByteStruct*)GetPtrField0x2a04(battleStruct), id);
 

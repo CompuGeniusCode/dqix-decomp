@@ -1,5 +1,3 @@
-#include "Grotto/Main/TreasureMapMetadata.h"
-unsigned int GetField0x3acValue(struct BattleStruct*);
 #include "Grotto/Main/TreasureMapDataStructs.h"
 #include "System/Memory.h"
 #include "std_library_functions.h"
@@ -8,17 +6,20 @@ unsigned int GetField0x3acValue(struct BattleStruct*);
 #include <globaldefs.h>
 
 #ifdef jpn
-#define func_020100a8 func_0200ff04
+#define _Z18GetField0x3acValueP12BattleStruct func_0200ff04
+#define _Z25GetCombatantWithFlag0x100P12BattleStructi func_0200fd78
 #define func_02012fe4 func_02012dac
-// GetCombatantWithFlag0x100 lives at func_0200fd78 in the JPN build.
-extern "C" struct CombatantStruct* func_0200fd78(BattleStruct*, int);
-#define GetCombatantWithFlag0x100 func_0200fd78
 #endif
 
 extern "C"
 {
 // Seems to return a u32 whose address is just past the end of the BattleStruct.
 // Maybe BattleStruct is just the beginning of some larger struct?
+extern "C" unsigned int _Z18GetField0x3acValueP12BattleStruct(BattleStruct*);
+
+// Appears to index into the CombatantList and return the pointer after checking flags.
+// For now we just return a char*, but should probably be a CombatantStruct*.
+extern "C" char* _Z25GetCombatantWithFlag0x100P12BattleStructi(BattleStruct*, unsigned int);
 
 // This just returns some data. It's also being spam-called in TileFeatures.cpp,
 // discarding the return value.
@@ -30,7 +31,7 @@ int func_02012fe4(void);
 unsigned short GenerateNewMapQuality()
 {
     BattleStruct* battle = GetBattleStruct();
-    char* maybeMainCharDataPtr = (char*)GetCombatantWithFlag0x100(battle, GetField0x3acValue((struct BattleStruct*)(battle)));
+    char* maybeMainCharDataPtr = _Z25GetCombatantWithFlag0x100P12BattleStructi(battle, _Z18GetField0x3acValueP12BattleStruct(battle));
     // Another pointless function call
     func_02012fe4();
     GrottoStruct* grotto = GetGrottoStruct(battle);

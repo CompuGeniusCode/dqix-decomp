@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 void* GetPtrField0x2a04(struct BattleStruct* battleStruct);
 struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);

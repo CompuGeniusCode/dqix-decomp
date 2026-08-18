@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
 
 struct Container020dedd0;
 struct Element020de650_021e0414 {
@@ -12,7 +12,6 @@ Element020de650_021e0414* FindElementByKey020dedd0(struct Container020dedd0*, in
 
 void ClearFields_021e20c0(void*);
 
-int CallFunc0202fa38ZeroPad(int, int, int);
 
 extern int data_ov023_021fdc4c;
 extern int data_ov023_021fdc61;
@@ -31,7 +30,7 @@ struct Obj021e0414 {
 
 // USA: func_ov023_021e0414  (semantic: RefreshEntryElementAndDispatch_021e0414)
 extern "C" ARM int func_ov023_021e0414(struct Obj021e0414* obj) {
-    int a = GetData02104304Field4();
+    int a = (int)BackgroundLoader::GetInstance();
     if (obj->field48 != NULL) {
         obj->field4c = FindElementByKey020dedd0(obj->field48, obj->field770);
     }
@@ -47,9 +46,9 @@ extern "C" ARM int func_ov023_021e0414(struct Obj021e0414* obj) {
             unsigned int nibble2 = elem->nibble;
             int cond2 = (nibble2 <= 7);
             if (cond2) {
-                obj->field73c = CallFunc0202fa38ZeroPad(a, (int)&data_ov023_021fdc4c, 0);
+                obj->field73c = ((BackgroundLoader*)(a))->QueueLoadFile((const char*)((int)&data_ov023_021fdc4c), (SafeAllocator*)(0));
             } else {
-                obj->field73c = CallFunc0202fa38ZeroPad(a, (int)&data_ov023_021fdc61, 0);
+                obj->field73c = ((BackgroundLoader*)(a))->QueueLoadFile((const char*)((int)&data_ov023_021fdc61), (SafeAllocator*)(0));
             }
         }
     }

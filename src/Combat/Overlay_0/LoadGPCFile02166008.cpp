@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Filesystem/GPC.h"
 
-void ShiftInBitOnGlobalObject(void);
-void CallFunc02030110OnGlobalObject(void);
 
 extern char data_ov000_02183a2f[];
 extern char data_0211e33c[];
@@ -11,8 +10,8 @@ extern char data_0211e33c[];
 ARM unsigned int LoadGPCFile02166008(void* unused, GPCReadPair* readPair, int flag) {
     unsigned int length;
     if (flag) {
-        ShiftInBitOnGlobalObject();
-        CallFunc02030110OnGlobalObject();
+        BackgroundLoader::AddLockGlobal();
+        BackgroundLoader::FreeAllocationsGlobal();
     }
     readPair->ZeroInitialize();
     LoadAndDecompressGPCHeaderAndInnerFileInfo(&readPair->pGPCFile, readPair->machine,

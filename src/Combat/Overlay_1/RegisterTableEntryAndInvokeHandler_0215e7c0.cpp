@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 struct List0204af64 {
     char pad0[0xc];
@@ -56,14 +57,11 @@ void SetField0xa0AndByte0xc4IfFlag0x1Clear(unsigned char* obj, int value, unsign
 
 extern "C" void func_0204f41c(void* obj, short b, int c, void* field18, int nibble, int initial4, short* fieldAaddr, short* fieldCaddr, int zero);
 
-void HalveGlobalObjectCounter(void);
-void ShiftInBitOnGlobalObject(void);
-void CallFunc02030110OnGlobalObject(void);
 
 // USA: func_ov001_0215e7c0  (semantic: RegisterTableEntryAndInvokeHandler_0215e7c0)
 extern "C" ARM int func_ov001_0215e7c0(void* combatant) {
-    ShiftInBitOnGlobalObject();
-    CallFunc02030110OnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
+    BackgroundLoader::FreeAllocationsGlobal();
 
     struct List0204af64 list;
     ResetList0204af64(&list);
@@ -89,7 +87,7 @@ extern "C" ARM int func_ov001_0215e7c0(void* combatant) {
     int key = func_ov017_021d60f4(combatant);
     struct Entry_02153884* entry = (struct Entry_02153884*)FindTableEntry_02153884(&data_ov001_021658d8, key);
     if (entry == 0) {
-        HalveGlobalObjectCounter();
+        BackgroundLoader::RemoveLockGlobal();
         return 0;
     }
 
@@ -100,6 +98,6 @@ extern "C" ARM int func_ov001_0215e7c0(void* combatant) {
     func_0204f41c(&obj, 0, 0, (void*)entry->val, 0xc, 0xf, &fieldA, &fieldC, 0);
 
     InvokeHandlerAfterCacheFlush0204fbf8(&obj);
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     return 1;
 }

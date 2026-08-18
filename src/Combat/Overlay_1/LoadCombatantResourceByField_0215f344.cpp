@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
@@ -9,9 +10,7 @@ extern "C" int func_ov017_021d60f4(TaggedValue_021d60f4* a);
 int AbsPlus159IfNegative0215ad2c(int x);
 struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 
-int GetData02104304Field4();
 struct SearchObj0202ff34;
-int FindTableEntryByFormattedName(SearchObj0202ff34*, char*, int*, int*);
 
 struct Obj020363b4;
 void LoadStreamIntoSlot020363b4(struct Obj020363b4* obj, SafeAllocator* alloc, void* header, int size);
@@ -35,7 +34,7 @@ extern "C" ARM int func_ov001_0215f344(void* obj) {
     struct CombatantStruct* combatant = GetCombatantUnchecked(battle, idx);
     if (combatant == 0) return 0;
     SafeAllocator* alloc = (SafeAllocator*)data_ov001_021658b8.field0;
-    FindTableEntryByFormattedName((SearchObj0202ff34*)GetData02104304Field4(), buf, &out1, &out2);
+    ((BackgroundLoader*)((SearchObj0202ff34*)(int)BackgroundLoader::GetInstance()))->GetLoadedFileByName((const char*)(buf), (void**)(&out1), (unsigned int*)(&out2));
     if (out1 != 0) {
         LoadStreamIntoSlot020363b4((struct Obj020363b4*)combatant, alloc, (void*)out1, out2);
     } else {

@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 #include "std_library_functions.h"
 
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 
 struct ResetStruct;
 int ResetFieldsReturnTrue(struct ResetStruct* s);
@@ -30,7 +29,7 @@ ARM void SetupAndRunBufferedScript0209a810(struct Ctx0209a810* ctx, void* value)
     unsigned int count;
     char buf[0x430];
 
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
 
     if (LoadFileIntoMemory(data_020f1668, data_0211e33c, &count) != NULL) {
         ctx->field0 = value;
@@ -42,5 +41,5 @@ ARM void SetupAndRunBufferedScript0209a810(struct Ctx0209a810* ctx, void* value)
         RunLoopIfValid02030774((struct Struct02030774*)buf);
         data_02109ba8 = NULL;
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

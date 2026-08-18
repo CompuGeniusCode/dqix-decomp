@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 struct Container020e0310;
 int GetFieldByKey020e0434(struct Container020e0310*, int);
 extern "C" char* func_020e046c(char* buf, void* b, void* c, int idx);
@@ -12,8 +11,6 @@ struct Struct020dfc40;
 void ResetAndDetach020dfc6c(struct Struct020dfc40* p);
 
 extern "C" {
-    int func_0202fdd0(int a, int b);
-    void func_020301c8(int a, int b);
     void func_ov023_021ddf5c(void* obj);
     void func_ov023_021df218(void* obj);
     void func_ov023_021df558(void* obj);
@@ -32,9 +29,9 @@ struct BitField021e0690 {
 // USA: func_ov023_021e0690  (semantic: ReleaseListEntryAndFinalizeDisplay_021e0690)
 extern "C" ARM int func_ov023_021e0690(void* obj_) {
     char* obj = (char*)obj_;
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     unsigned short flags = *(unsigned short*)(obj + 0x774);
-    if ((flags & 0x1000) || func_0202fdd0(listPtr, *(int*)(obj + 0x740))) {
+    if ((flags & 0x1000) || ((BackgroundLoader*)(listPtr))->GetTaskStatus((int)(*(int*)(obj + 0x740)))) {
         memset(obj + 0x630, 0, 0x100);
         flags = *(unsigned short*)(obj + 0x774);
         if (flags & 0x1000) {
@@ -42,12 +39,12 @@ extern "C" ARM int func_ov023_021e0690(void* obj_) {
             strcpy(obj + 0x630, s);
         } else {
             int out1, out2;
-            GetListEntryValues0202fec8((struct List0202fec8*)listPtr, *(int*)(obj + 0x740), &out1, &out2);
+            ((BackgroundLoader*)((struct List0202fec8*)listPtr))->GetLoadedFileByID((int)(*(int*)(obj + 0x740)), (void**)(&out1), (unsigned int*)(&out2));
             if (out1 != 0 && out2 != 0) {
                 int v = *(short*)(obj + 0x770);
                 func_020e046c(obj + 0x630, (void*)out1, (void*)out2, v);
             }
-            func_020301c8(listPtr, *(int*)(obj + 0x740));
+            ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)(obj + 0x740)));
             *(int*)(obj + 0x740) = -1;
         }
 

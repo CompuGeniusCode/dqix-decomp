@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int, int);
 struct BattleStruct* GetBattleStruct();
 struct CombatantStruct* GetCombatantAtField0x397c(struct BattleStruct* battleStruct);
 void SetByteField0x253(void* obj);
@@ -19,11 +18,11 @@ struct Struct020d9fc8 {
 
 // USA: func_020d9fc8
 ARM void ClearHandleArrayAndFinalize020d9fc8(struct Struct020d9fc8* p) {
-    int x = GetData02104304Field4();
+    int x = (int)BackgroundLoader::GetInstance();
     int i;
     for (i = 0; i < 1; i++) {
         if (p->arr[i] != -1) {
-            func_020301c8(x, p->arr[i]);
+            ((BackgroundLoader*)(x))->RemoveTask((int)(p->arr[i]));
             p->arr[i] = -1;
         }
     }

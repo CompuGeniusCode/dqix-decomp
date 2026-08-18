@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4(void);
 
 struct Entry0202fdd0 {
     char pad0[0x30];
@@ -15,7 +15,6 @@ struct List0202fdd0 {
     struct Entry0202fdd0 entries[1];
 };
 
-extern "C" int func_0202fdd0(struct List0202fdd0* obj, int key);
 
 struct Obj021eb0f4 {
     char pad[0x582];
@@ -26,10 +25,10 @@ struct Obj021eb0f4 {
 
 // USA: func_ov025_021eb0f4  (semantic: CheckAllKeysInList_021eb0f4)
 extern "C" ARM int func_ov025_021eb0f4(struct Obj021eb0f4* obj) {
-    struct List0202fdd0* list = (struct List0202fdd0*)GetData02104304Field4();
+    struct List0202fdd0* list = (struct List0202fdd0*)(int)BackgroundLoader::GetInstance();
     unsigned short* p = obj->arr;
     for (int i = 0; i < obj->count; p++, i++) {
-        if (!func_0202fdd0(list, *p)) {
+        if (!((BackgroundLoader*)(list))->GetTaskStatus((int)(*p))) {
             return 0;
         }
     }

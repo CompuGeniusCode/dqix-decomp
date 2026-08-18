@@ -6,20 +6,20 @@ struct Struct0224e5e8_02216ab4 {
 };
 extern struct Struct0224e5e8_02216ab4 data_ov031_0224e5e8;
 
-extern "C" void* func_020c8074(void *node);
+extern "C" void* _Z9LockMutexP5Mutex(void *node);
 
 struct RefNode020c80f8;
-void ReleaseNodeRef020c80f8(struct RefNode020c80f8 *node);
+extern "C" void _Z11UnlockMutexP5Mutex(struct RefNode020c80f8 *node);
 
 // USA: func_ov031_02216ab4
 ARM int GetFieldAndReleaseRef_02216ab4(void) {
 	void *base = data_ov031_0224e5e8.field8;
 	if (base == 0) return 0x16;
 	void *node = (char*)base + 0x1000 + 0x3d8;
-	func_020c8074(node);
+	_Z9LockMutexP5Mutex(node);
 	base = data_ov031_0224e5e8.field8;
 	node = (char*)base + 0x1000 + 0x3d8;
 	int r4 = *(int*)((char*)base + 0x1000 + 0x4);
-	ReleaseNodeRef020c80f8((struct RefNode020c80f8*)node);
+	_Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)node);
 	return r4;
 }

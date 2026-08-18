@@ -21,7 +21,10 @@
 #define data_02111f00 data_02111ba0
 #endif
 
-CBool GetGlobalWord02112140();
+extern "C"
+{
+    CBool func_020d1198();
+}
 
 #define GET_FLAG_BIT(what, idx) (((what) & (1 << (idx))) ? 1 : 0)
 

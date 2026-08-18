@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
 extern "C" int func_ov017_021d60f4(void*);
 int AbsPlus159IfNegative0215ad2c(int x);
-int GetData02104304Field4();
 struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 struct Container02037364;
 void RemoveMatchingNodes02037364(struct Container02037364* obj, int key);
@@ -13,7 +13,7 @@ extern int data_ov001_02165769;
 // USA: func_ov001_0215bcc0  (semantic: RemoveCombatantEntry_0215bcc0)
 extern "C" ARM int func_ov001_0215bcc0(void* self, int mode) {
     struct BattleStruct* battle = GetBattleStruct();
-    GetData02104304Field4();
+    (int)BackgroundLoader::GetInstance();
     int mode2;
     int id = AbsPlus159IfNegative0215ad2c(func_ov017_021d60f4(self));
     mode2 = 3;

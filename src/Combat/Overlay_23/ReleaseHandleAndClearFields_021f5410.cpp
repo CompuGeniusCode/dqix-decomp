@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int, int);
 
 struct Obj021f5410 {
     char pad0[0xc];
@@ -13,9 +12,9 @@ struct Obj021f5410 {
 
 // USA: func_ov023_021f5410  (semantic: ReleaseHandleAndClearFields_021f5410)
 extern "C" ARM int func_ov023_021f5410(struct Obj021f5410* obj) {
-    int v = GetData02104304Field4();
+    int v = (int)BackgroundLoader::GetInstance();
     if (obj->field10 >= 0) {
-        func_020301c8(v, obj->field10);
+        ((BackgroundLoader*)(v))->RemoveTask((int)(obj->field10));
         obj->field10 = -1;
     }
     obj->fieldc = 0;

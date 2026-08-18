@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
 void EncodeSignFlaggedHalfword(short* out, int value);
@@ -11,14 +12,12 @@ extern "C" void func_0204b5b4(void*, int, void*, int);
 extern "C" void _Z30AllocateAndClearBuffer0204b12cP19AllocTarget0204b12cP13SafeAllocator(void*, void*);
 extern "C" void _Z21AllocateArray0204af38P11Foo0204af38iP13SafeAllocator(void*, int, void*);
 extern "C" void _Z24DispatchViaTable0204b5e8P11Obj0204b5e8ii(void*, int, int);
-extern "C" void _Z24ShiftInBitOnGlobalObjectv();
 extern "C" void _Z18LoadFileIntoMemoryPKcPvPj(const char*, void*, unsigned int*);
 extern "C" int _Z18CountActiveEntriesP19ActiveEntry02046900(void*);
 extern "C" void* _Z17FindRecordByIndexP11Rec020467f0iPPvPi(void*, int, void**, int*);
 extern "C" void func_0204b174(void*, void*, void*, int);
 extern "C" void _Z21DispatchEntry0204b8d0P11Obj0204b8d0jiisssst(void*, unsigned int, int, int, short, short, short, short, unsigned short);
 extern "C" void _Z28FlushAndDispatchList0204b0e8P12List0204b0e8Pv(void*, void*);
-extern "C" void _Z24HalveGlobalObjectCounterv();
 
 extern char data_ov020_0218dcb3;
 extern int data_0211e33c;
@@ -50,7 +49,7 @@ extern "C" ARM void func_ov020_0218cd98(struct ResetContext0218cd98* self) {
     _Z30AllocateAndClearBuffer0204b12cP19AllocTarget0204b12cP13SafeAllocator(base + 0xbc + 0x400, &self->allocator);
     _Z21AllocateArray0204af38P11Foo0204af38iP13SafeAllocator(base + 0xbc + 0x400, 1, &self->allocator);
     _Z24DispatchViaTable0204b5e8P11Obj0204b5e8ii(base + 0xbc + 0x400, 0, 0);
-    _Z24ShiftInBitOnGlobalObjectv();
+    BackgroundLoader::AddLockGlobal();
 
     unsigned int local1c = 0;
     _Z18LoadFileIntoMemoryPKcPvPj((const char*)&data_ov020_0218dcb3, (void*)&data_0211e33c, &local1c);
@@ -67,7 +66,7 @@ extern "C" ARM void func_ov020_0218cd98(struct ResetContext0218cd98* self) {
 
     _Z21DispatchEntry0204b8d0P11Obj0204b8d0jiisssst(base + 0xbc + 0x400, 0, 0, 0, 0, 0, 0x20, 0x18, 0xffff);
     _Z28FlushAndDispatchList0204b0e8P12List0204b0e8Pv(base + 0xbc + 0x400, (void*)0);
-    _Z24HalveGlobalObjectCounterv();
+    BackgroundLoader::RemoveLockGlobal();
 
     *(volatile unsigned short*)0x4000050 = 0;
     *(volatile unsigned short*)0x4001050 = 0;

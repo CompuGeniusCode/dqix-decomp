@@ -2,11 +2,11 @@
 
 #pragma optimize_for_size off
 
-extern "C" void* func_020c8074(void* a);
+extern "C" void* _Z9LockMutexP5Mutex(void* a);
 void UpdateObjFromContext_022031bc(int a, unsigned short b, unsigned int c);
 extern "C" int func_ov031_02203358(void);
 struct RefNode020c80f8;
-void ReleaseNodeRef020c80f8(RefNode020c80f8* node);
+extern "C" void _Z11UnlockMutexP5Mutex(RefNode020c80f8* node);
 
 struct Ctx_0220586c {
 	char pad0[0x64];
@@ -31,14 +31,14 @@ extern "C" ARM int func_ov031_0220586c(Obj_0220586c* self) {
 	Ctx_0220586c* ctx = self->ctx;
 	char* inner = (char*)ctx->inner;
 	int flag = 0;
-	func_020c8074(inner + 0xe0);
+	_Z9LockMutexP5Mutex(inner + 0xe0);
 	UpdateObjFromContext_022031bc(self->field10, self->field12, self->field14);
 	*(int*)(inner + 0xf8) = 0;
 	signed char b = self->fieldC;
 	if (b == 0 || b == 4) {
 		flag = func_ov031_02203358();
 	}
-	ReleaseNodeRef020c80f8((RefNode020c80f8*)(inner + 0xe0));
+	_Z11UnlockMutexP5Mutex((RefNode020c80f8*)(inner + 0xe0));
 	if (flag != 0) {
 		ctx->field70 |= 0x40;
 		return -0x4c;

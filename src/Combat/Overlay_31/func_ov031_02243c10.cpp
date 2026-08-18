@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
-extern "C" void _Z21GetData02104304Field4v(void);
-extern "C" int _Z13GetField0x124Pv(void);
 struct Struct_02245528;
 extern "C" void _Z32SetField34AndClear35_37_02245528P15Struct_02245528i(struct Struct_02245528* p, int v);
 int ProcessAndClassify_02212cbc(void* p);
@@ -33,8 +32,8 @@ extern "C" ARM void func_ov031_02243c10(S02243c10* obj) {
 	case 0:
 		if (!(obj->flags374 & 1) && !(obj->flags374 & 2)) goto skip374;
 		if (obj->ptr37c == 0) {
-			_Z21GetData02104304Field4v();
-			if (_Z13GetField0x124Pv() > 0) {
+			BackgroundLoader* loader = BackgroundLoader::GetInstance();
+			if (loader->GetNumQueuedTasks() > 0) {
 				_Z32SetField34AndClear35_37_02245528P15Struct_02245528i((struct Struct_02245528*)obj, 0);
 				return;
 			}

@@ -1,5 +1,5 @@
 #include <globaldefs.h>
-#include "System/Random.h"
+#include "Util/Random.h"
 
 extern "C" void* func_ov000_02153710(void*, short);
 extern "C" int func_ov000_02159dbc(void*, short);

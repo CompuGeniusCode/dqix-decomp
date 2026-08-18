@@ -1,4 +1,5 @@
 #include "System/ProcessorContext.h"
+#include "System/Mutex.h"
 #include "System/Interrupts.h"
 #include <globaldefs.h>
 #include <asmhacks.h>
@@ -10,9 +11,6 @@ extern "C"
     void func_020c7c08(PFNSwitchContextProc);
     void func_020c75b4(ProcessorContext*, const void* proc, void* maybeUserdata, void* stackBottom, unsigned stackSize, int prio);
 }
-
-// USA: func_020c7d80
-extern "C" void RestoreContext(ProcessorContext*);
 
 int GenerateUniqueContextID()
 {
@@ -109,30 +107,17 @@ ProcessorContext* BlockedContextList::Remove(ProcessorContext* context)
     return searchNode;
 }
 
-extern "C" void* UnknownImplementedFunction_020c72bc(void* input)
+Mutex* PopFrontMutexFromList(MutexList* list)
 {
-    struct Entry {
-        BlockedContextList contexts;
-        unsigned int unknown[2];
-        Entry* next; // strange
-        Entry* prev;
-    };
-
-    struct List {
-        Entry* first;
-        Entry* last;
-    } *list = (List*)input;
-
-    // Pop and return front entry
-    Entry* front = list->first;
+    Mutex* front = list->pFirst;
     if (front != NULL)
     {
-        Entry* next = front->next;
-        list->first = next;
+        Mutex* next = front->pNext_;
+        list->pFirst = next;
         if (next != NULL)  
-            next->prev = NULL;
+            next->pPrev_ = NULL;
         else
-            list->last = NULL;
+            list->pLast = NULL;
     }
     return front;
 }

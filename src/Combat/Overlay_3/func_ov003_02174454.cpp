@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int a, int b);
 int GetGlobalField0x1c020421a0();
 
 struct Struct02074bd0;
@@ -16,9 +15,9 @@ int TransferBg1CharData(int arg0, int arg1, unsigned int arg2);
 extern "C" ARM void func_ov003_02174454(char* self) {
     unsigned char i;
 
-    int data4 = GetData02104304Field4();
+    int data4 = (int)BackgroundLoader::GetInstance();
     if (*(int*)(self + 0xfec) >= 0) {
-        func_020301c8(data4, *(int*)(self + 0xfec));
+        ((BackgroundLoader*)(data4))->RemoveTask((int)(*(int*)(self + 0xfec)));
         *(int*)(self + 0xfec) = -1;
     }
 

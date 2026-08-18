@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
 
 extern "C" int func_ov017_0218b5b0(void);
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 int GetGlobalField0x1c020421a0();
 struct StructAllocGroup0208ba54;
 void DestroyStructAllocGroup0208ba54(struct StructAllocGroup0208ba54* self);
@@ -22,8 +21,8 @@ extern int data_02114e20;
 extern "C" ARM void func_ov017_021b8d80(unsigned char* self) {
     int handle = func_ov017_0218b5b0();
     if (*(int*)(self + 0x120) > -1) {
-        int field4 = GetData02104304Field4();
-        func_020301c8(field4, *(int*)(self + 0x120));
+        int field4 = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(field4))->RemoveTask((int)(*(int*)(self + 0x120)));
     }
 
     if (self[0x137] == 0) {

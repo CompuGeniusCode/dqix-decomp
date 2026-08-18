@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "System/Cache.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int a, int b);
 
 struct Struct020dfc40;
 void ResetAndDetach020dfc6c(struct Struct020dfc40* p);
@@ -50,8 +49,8 @@ extern "C" ARM void func_ov017_02199780(unsigned char* self) {
 
 		int off = *(int*)(self + 0x4000 + 0x7c);
 		if (off >= 0) {
-			int p = GetData02104304Field4();
-			func_020301c8(p, *(int*)(self + 0x4000 + 0x7c));
+			int p = (int)BackgroundLoader::GetInstance();
+			((BackgroundLoader*)(p))->RemoveTask((int)(*(int*)(self + 0x4000 + 0x7c)));
 		}
 
 		*(volatile unsigned short*)0x4000050 = 0;

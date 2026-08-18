@@ -1,5 +1,5 @@
 #include <globaldefs.h>
-#include "System/Random.h"
+#include "Util/Random.h"
 
 int CheckField0x14FiveFlagsClear0208810c(unsigned char* obj);
 void ResetAndSetFlag0x1000000(void* obj);

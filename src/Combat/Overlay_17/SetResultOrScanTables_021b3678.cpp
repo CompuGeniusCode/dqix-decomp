@@ -1,11 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
-int GetData02104304Field4();
 struct Obj150_021b354c;
 unsigned char GetSubByteField56e_021b354c(Obj150_021b354c* obj);
 int GetFieldAt0x150(unsigned char* obj);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
 extern int data_ov017_021d7ab6;
 extern short data_ov017_021d6b56;
@@ -21,7 +20,7 @@ struct Obj_021b3678 {
 // USA: func_ov017_021b3678  (semantic: SetResultOrScanTables_021b3678)
 extern "C" ARM int func_ov017_021b3678(struct Obj_021b3678* obj) {
     struct BattleStruct* bs = GetBattleStruct();
-    int field4 = GetData02104304Field4();
+    int field4 = (int)BackgroundLoader::GetInstance();
     struct CombatantStruct* combatant = GetCombatantWithFlag0x100(bs, obj->id);
     if (!combatant) {
         return 0;
@@ -35,7 +34,7 @@ extern "C" ARM int func_ov017_021b3678(struct Obj_021b3678* obj) {
         if (sub) {
             *(unsigned char*)(sub + 0x56e) = 0;
         }
-        obj->result = CallFunc0202fa38ZeroPad(field4, (int)&data_ov017_021d7ab6, 0);
+        obj->result = ((BackgroundLoader*)(field4))->QueueLoadFile((const char*)((int)&data_ov017_021d7ab6), (SafeAllocator*)(0));
         return 1;
     }
 
@@ -54,7 +53,7 @@ extern "C" ARM int func_ov017_021b3678(struct Obj_021b3678* obj) {
         if (valA == valB) {
             continue;
         }
-        obj->result = CallFunc0202fa38ZeroPad(field4, (int)&data_ov017_021d7ab6, 0);
+        obj->result = ((BackgroundLoader*)(field4))->QueueLoadFile((const char*)((int)&data_ov017_021d7ab6), (SafeAllocator*)(0));
         return 1;
     }
     return 1;

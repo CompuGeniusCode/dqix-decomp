@@ -1,16 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 
 // USA: func_ov003_02153874
 ARM void ResetHandlesAndFlags_02153874(void* obj) {
-    int v = GetData02104304Field4();
+    int v = (int)BackgroundLoader::GetInstance();
     if (*(int*)((char*)obj + 0x50) >= 0) {
-        func_020301c8(v, *(int*)((char*)obj + 0x50));
+        ((BackgroundLoader*)(v))->RemoveTask((int)(*(int*)((char*)obj + 0x50)));
     }
     if (*(int*)((char*)obj + 0x54) >= 0) {
-        func_020301c8(v, *(int*)((char*)obj + 0x54));
+        ((BackgroundLoader*)(v))->RemoveTask((int)(*(int*)((char*)obj + 0x54)));
     }
     *(int*)((char*)obj + 0x14) = 0;
     *(int*)((char*)obj + 0x10) = 0;

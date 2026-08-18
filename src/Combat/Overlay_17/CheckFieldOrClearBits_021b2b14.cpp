@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4(void);
-int GetField0x124(void* obj);
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" void func_ov017_021a2fa0(int h);
 void ClearBitsInField4(unsigned int* obj, unsigned int mask);
@@ -15,7 +14,7 @@ struct Obj021b2b14 {
 
 // USA: func_ov017_021b2b14
 ARM int CheckFieldOrClearBits_021b2b14(Obj021b2b14* p) {
-    if (GetField0x124((void*)GetData02104304Field4()) > 0) {
+    if (((BackgroundLoader*)((void*)(int)BackgroundLoader::GetInstance()))->GetNumQueuedTasks() > 0) {
         return p->f8;
     }
     int h = func_ov017_0218b5b0();

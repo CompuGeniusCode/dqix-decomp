@@ -1,5 +1,5 @@
 #include <globaldefs.h>
-#include "System/Random.h"
+#include "Util/Random.h"
 
 struct Wrapper_02203120 { unsigned char pad[0x68]; struct Random rng; };
 extern struct Wrapper_02203120 data_ov031_0224c980;

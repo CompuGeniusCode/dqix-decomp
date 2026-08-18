@@ -6,7 +6,7 @@ struct SelfObj020bc8d0;
 void InitAllocatorObj020bc8d0(struct SelfObj020bc8d0* obj);
 
 struct FourWords;
-void ClearFourWords(struct FourWords* p);
+extern "C" void _Z19ZeroInitializeMutexP5Mutex(struct FourWords* p);
 
 extern "C" void func_020beaec(void* arg);
 extern "C" void func_020bf2f8(void* a, void* b);
@@ -58,7 +58,7 @@ ARM void InitAllocatorsAndVmPoolOnce(void* arg0, void* arg1) {
         data_021103bc.InsertAtEnd(&data_021103e0[i].header);
     }
 
-    ClearFourWords(&data_021103c8);
+    _Z19ZeroInitializeMutexP5Mutex(&data_021103c8);
 
     data_021103b0.field8 = &data_02111020;
 

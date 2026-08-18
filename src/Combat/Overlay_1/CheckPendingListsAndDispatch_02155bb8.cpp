@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-extern "C" int func_0202fdd0(void* obj, int key);
 extern "C" int func_ov001_021539d8(void* self);
 extern "C" void func_ov001_02154c64(void* self);
 int StoreArgIfMatched_02153948(unsigned short arg);
-int GetData02104304Field4();
 
 struct Node1_02155bb8 {
     char pad0[0x2c];
@@ -38,12 +37,12 @@ struct Self02155bb8 {
 
 // USA: func_ov001_02155bb8  (semantic: CheckPendingListsAndDispatch_02155bb8)
 extern "C" ARM int func_ov001_02155bb8(struct Self02155bb8* self) {
-    int val = GetData02104304Field4();
+    int val = (int)BackgroundLoader::GetInstance();
 
     struct Node1_02155bb8* n = self->field0xd0;
     while (n) {
         if (n->field0x2c > -1 && n->field0x31 == 0) {
-            if (func_0202fdd0((void*)val, n->field0x2c) == 0) {
+            if (((BackgroundLoader*)((void*)val))->GetTaskStatus((int)(n->field0x2c)) == 0) {
                 return self->field0xa;
             }
         }
@@ -53,7 +52,7 @@ extern "C" ARM int func_ov001_02155bb8(struct Self02155bb8* self) {
     struct Node2_02155bb8* m = self->field0xd4;
     while (m) {
         if (m->field0x24 > -1 && m->field0x2c == 0) {
-            if (func_0202fdd0((void*)val, m->field0x24) == 0) {
+            if (((BackgroundLoader*)((void*)val))->GetTaskStatus((int)(m->field0x24)) == 0) {
                 return self->field0xa;
             }
         }
@@ -61,7 +60,7 @@ extern "C" ARM int func_ov001_02155bb8(struct Self02155bb8* self) {
     }
 
     if (self->field0xf4 > -1) {
-        if (func_0202fdd0((void*)val, self->field0xf4) == 0) {
+        if (((BackgroundLoader*)((void*)val))->GetTaskStatus((int)(self->field0xf4)) == 0) {
             return self->field0xa;
         }
     }

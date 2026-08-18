@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 extern "C" void func_ov011_02184770(void);
 void PopStack1AndTrigger(int flag);
 void PopStack0AndTrigger(int flag);
@@ -27,9 +26,9 @@ struct Obj021b2200 {
 // USA: func_ov017_021b2200
 ARM void ClearPendingAndDestroyAllocator_021b2200(struct Obj021b2200* self) {
 	if (self->fieldc > -1) {
-		int x = GetData02104304Field4();
+		int x = (int)BackgroundLoader::GetInstance();
 		int y = self->fieldc;
-		func_020301c8(x, y);
+		((BackgroundLoader*)(x))->RemoveTask((int)(y));
 		self->fieldc = -1;
 	}
 

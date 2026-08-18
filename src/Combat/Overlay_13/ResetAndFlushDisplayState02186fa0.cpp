@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Memory/SafeAllocator.h"
 
@@ -23,8 +24,6 @@ void ClearFlag0x10IfSet(struct Struct02074bd0* obj);
 struct Struct02074bf4;
 void ClearFlag0x11IfSet(struct Struct02074bf4* obj);
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int handle);
 
 // USA: func_ov013_02186fa0  (semantic: ResetAndFlushDisplayState02186fa0)
 extern "C" ARM void func_ov013_02186fa0(unsigned char* obj) {
@@ -56,8 +55,8 @@ extern "C" ARM void func_ov013_02186fa0(unsigned char* obj) {
     }
 
     if (*(int*)(obj + 0x5c) >= 0) {
-        int a = GetData02104304Field4();
-        func_020301c8(a, *(int*)(obj + 0x5c));
+        int a = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(a))->RemoveTask((int)(*(int*)(obj + 0x5c)));
         *(int*)(obj + 0x5c) = -1;
     }
 

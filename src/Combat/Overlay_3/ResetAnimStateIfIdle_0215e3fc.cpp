@@ -1,12 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 int IsAnimationActive0209ca2c(void* obj);
 void* GetData02153637(void);
-int GetData02104304Field4(void);
 
 extern "C" void func_0205e944(void* data, int flag);
-extern "C" void func_02030110(int x);
-extern "C" void func_020301c8(int a, int b);
 extern "C" void func_ov003_0215c800(void* self);
 
 extern int data_02109bf4;
@@ -35,11 +33,11 @@ ARM void ResetAnimStateIfIdle_0215e3fc(struct Self0215e3fc* self) {
     GetData02153637();
 
     if (self->f3b4 != NULL) {
-        int x = GetData02104304Field4();
-        func_02030110(x);
+        int x = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(x))->MaybeFreeAllocations();
         int i;
         for (i = 0; i < 3; i++) {
-            func_020301c8(x, self->f3b4[i]);
+            ((BackgroundLoader*)(x))->RemoveTask((int)(self->f3b4[i]));
             self->f3b4[i] = -1;
         }
     }

@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
 struct Obj02092b34 {
@@ -17,8 +18,6 @@ struct Obj02092b34 {
     unsigned char field3b;
 };
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 int GetGlobalField0x1c020421a0();
 void ReinitController02043204(char* obj);
 extern "C" void func_02043124(char* obj);
@@ -31,8 +30,8 @@ void InitObj02092aa4(struct Obj02092aa4* obj, unsigned char param);
 // USA: func_02092b34  (semantic: ShutdownAndReinitObj02092b34)
 extern "C" ARM void func_02092b34(struct Obj02092b34* obj) {
     if (obj->field2c >= 0) {
-        int v = GetData02104304Field4();
-        func_020301c8(v, obj->field2c);
+        int v = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(v))->RemoveTask((int)(obj->field2c));
         obj->field2c = -1;
     }
     void* g = (void*)GetGlobalField0x1c020421a0();

@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Filesystem/FileIO.h"
 #include "System/Memory.h"
@@ -9,8 +10,6 @@ unsigned char* GetTreasureMapLanguageData(struct BattleStruct* battle);
 void SetTreasureMapLanguageDataPtr(struct BattleStruct* battle, unsigned char* to);
 extern "C" void func_020a395c(void);
 int AllocateIndexedSlot020a36cc(void** out, unsigned int idx);
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 extern "C" void func_020c9be0(void);
 
 extern const char data_020f1a9c[];
@@ -29,7 +28,7 @@ extern "C" ARM int func_020a3720(void) {
     if (!AllocateIndexedSlot020a36cc((void**)(base + 0x4000 + 0x48c), 0x44)) return 0;
 
     unsigned int fileSize = 0;
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     void* extracted = ExtractFileFromGP2(data_020f1a9c, data_020f1ab0, &fileSize);
     memcpy(buf, extracted, fileSize);
     if (fileSize > 0x2000) {
@@ -47,7 +46,7 @@ extern "C" ARM int func_020a3720(void) {
         ++i;
     }
 
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     SetTreasureMapLanguageDataPtr(battleStruct, buf);
     return 1;
 }

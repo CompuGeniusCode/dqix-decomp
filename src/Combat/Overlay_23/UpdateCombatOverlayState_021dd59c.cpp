@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/AllocatorUnion.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4(void);
 struct BattleStruct* GetBattleStruct(void);
 int GetWord0x0(int* obj);
 
@@ -17,17 +17,13 @@ int AlwaysTrue02094b4c(void);
 struct SubBgControlBackup02074b64;
 void BackupSubBgControlRegisters(struct SubBgControlBackup02074b64* obj);
 extern "C" void func_02074af4(void* p);
-int CallFunc0202fa38Mode2(int a, int b, int c, int d);
 
-extern "C" int func_0202fdd0(int listPtr, int handle);
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 struct ActiveEntry02046900;
 int CountActiveEntries(struct ActiveEntry02046900* entry);
 struct Rec020467f0;
 void* FindRecordByIndex(struct Rec020467f0* rec, int index, void** out, int* out44);
 extern "C" void func_0205a528(void* a, void* ptr, int val, void* d);
-extern "C" void func_020301c8(int listPtr, int handle);
 extern "C" void func_020dfec0(void* dest, void* allocator, void* fileData, unsigned int size);
 
 void ConfigureBgSub1AndClear_021dcc58(void* obj);
@@ -49,7 +45,7 @@ extern int data_ov023_021fdb99;
 // USA: func_ov023_021dd59c  (semantic: UpdateCombatOverlayState_021dd59c)
 extern "C" ARM void func_ov023_021dd59c(void* objRaw) {
     char* obj = (char*)objRaw;
-    int dataResult = GetData02104304Field4();
+    int dataResult = (int)BackgroundLoader::GetInstance();
     GetWord0x0((int*)GetBattleStruct());
 
     if (*(unsigned char*)(obj + 0x777) == 0) {
@@ -99,15 +95,15 @@ extern "C" ARM void func_ov023_021dd59c(void* objRaw) {
         *(char*)(obj + 0x17c) = *(signed char*)(obj + 0x77c);
         *(void**)(obj + 0x16c) = obj + 0x180;
         *(short*)(obj + 0x178) = 30;
-        *(int*)(obj + 0x734) = CallFunc0202fa38Mode2(dataResult, (int)&data_ov023_021fdb60, (int)&data_ov023_021fdb72, 0);
+        *(int*)(obj + 0x734) = ((BackgroundLoader*)(dataResult))->QueueLoadFileInGP2((const char*)((int)&data_ov023_021fdb60), (const char*)((int)&data_ov023_021fdb72), (SafeAllocator*)(0));
         *(unsigned char*)(obj + 0x777) = *(unsigned char*)(obj + 0x777) + 1;
     } else if (*(unsigned char*)(obj + 0x777) == 5) {
-        if (func_0202fdd0(dataResult, *(int*)(obj + 0x734)) != 0) {
+        if (((BackgroundLoader*)(dataResult))->GetTaskStatus((int)(*(int*)(obj + 0x734))) != 0) {
             ((SafeAllocator*)(*(void**)(obj + 0x44)))->Reset();
             void* dummyOut;
             int out1, out2;
             int fieldOut;
-            GetListEntryValues0202fec8((struct List0202fec8*)dataResult, *(int*)(obj + 0x734), &out1, &out2);
+            ((BackgroundLoader*)((struct List0202fec8*)dataResult))->GetLoadedFileByID((int)(*(int*)(obj + 0x734)), (void**)(&out1), (unsigned int*)(&out2));
             if (out1 != 0 && out2 != 0) {
                 int count = CountActiveEntries((struct ActiveEntry02046900*)out1);
                 for (int i = 0; i < count; i++) {
@@ -116,24 +112,24 @@ extern "C" ARM void func_ov023_021dd59c(void* objRaw) {
                 }
             }
             *(signed char*)(obj + 0x77d) = 1;
-            func_020301c8(dataResult, *(int*)(obj + 0x734));
+            ((BackgroundLoader*)(dataResult))->RemoveTask((int)(*(int*)(obj + 0x734)));
             *(int*)(obj + 0x734) = -1;
             *(unsigned char*)(obj + 0x777) = *(unsigned char*)(obj + 0x777) + 1;
         }
     }
 
     if (*(unsigned char*)(obj + 0x777) == 6) {
-        *(int*)(obj + 0x734) = CallFunc0202fa38Mode2(dataResult, (int)&data_ov023_021fdb80, (int)&data_ov023_021fdb99, 0);
+        *(int*)(obj + 0x734) = ((BackgroundLoader*)(dataResult))->QueueLoadFileInGP2((const char*)((int)&data_ov023_021fdb80), (const char*)((int)&data_ov023_021fdb99), (SafeAllocator*)(0));
         *(unsigned char*)(obj + 0x777) = *(unsigned char*)(obj + 0x777) + 1;
     } else if (*(unsigned char*)(obj + 0x777) == 7) {
-        if (func_0202fdd0(dataResult, *(int*)(obj + 0x734)) != 0) {
+        if (((BackgroundLoader*)(dataResult))->GetTaskStatus((int)(*(int*)(obj + 0x734))) != 0) {
             int out1b, out2b;
-            GetListEntryValues0202fec8((struct List0202fec8*)dataResult, *(int*)(obj + 0x734), &out1b, &out2b);
+            ((BackgroundLoader*)((struct List0202fec8*)dataResult))->GetLoadedFileByID((int)(*(int*)(obj + 0x734)), (void**)(&out1b), (unsigned int*)(&out2b));
             ((SafeAllocator*)(obj + 0x14))->Reset();
             if (out1b != 0 && out2b != 0) {
                 func_020dfec0(obj + 0x54, obj + 0x14, (void*)out1b, (unsigned int)out2b);
             }
-            func_020301c8(dataResult, *(int*)(obj + 0x734));
+            ((BackgroundLoader*)(dataResult))->RemoveTask((int)(*(int*)(obj + 0x734)));
             *(int*)(obj + 0x734) = -1;
             *(unsigned char*)(obj + 0x777) = *(unsigned char*)(obj + 0x777) + 1;
         }

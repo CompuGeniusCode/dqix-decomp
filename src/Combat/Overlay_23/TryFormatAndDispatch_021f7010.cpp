@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 extern "C" int func_ov011_021849c8(int x);
 extern "C" int func_ov023_021f6bb8(int handle);
 extern "C" void func_ov023_021f6bb0(int handle, int value);
-int GetData02104304Field4();
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 extern "C" int sprintf(char* dst, const char* fmt, ...);
 extern char data_ov023_021fe4e0;
 
@@ -23,9 +22,9 @@ extern "C" ARM int func_ov023_021f7010(Obj021f7010* obj, int x) {
     if (status >= 0) {
         return obj->f1c;
     }
-    int h2 = GetData02104304Field4();
+    int h2 = (int)BackgroundLoader::GetInstance();
     sprintf(buf, &data_ov023_021fe4e0, obj->f10);
-    int r = CallFunc0202fa38ZeroPad(h2, (int)buf, 0);
+    int r = ((BackgroundLoader*)(h2))->QueueLoadFile((const char*)((int)buf), (SafeAllocator*)(0));
     func_ov023_021f6bb0(handle, r);
     return 1;
 }

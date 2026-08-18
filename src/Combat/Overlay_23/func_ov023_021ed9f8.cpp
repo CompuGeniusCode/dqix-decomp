@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 struct BattleStruct;
 BattleStruct* GetBattleStruct();
-int GetData02104304Field4();
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" int func_ov017_02195658(void);
 void* GetData02108ea8(void);
@@ -21,7 +21,6 @@ void ResetAndReinit_021f52c8(void* obj);
 void InitCombatEntry_021d8b6c(void* obj);
 extern "C" void func_ov023_021d8af8(void* obj);
 extern "C" void func_ov023_021d8bb4(void* obj);
-extern "C" void func_020301c8(int a, int b);
 
 struct Pair021ed9f8 { unsigned int a; unsigned int b; };
 extern struct Pair021ed9f8 data_020e6d5c;
@@ -46,7 +45,7 @@ struct InnerReset021ed9f8 {
 // USA: func_ov023_021ed9f8  (semantic: ScaleOrResetCombatants_021ed9f8)
 extern "C" ARM void func_ov023_021ed9f8(char* obj) {
     GetBattleStruct();
-    int dataX = GetData02104304Field4();
+    int dataX = (int)BackgroundLoader::GetInstance();
     func_ov017_0218b5b0();
     unsigned char* p = *(unsigned char**)(obj + 0x2a0);
     int n = func_ov017_02195658();
@@ -103,13 +102,13 @@ extern "C" ARM void func_ov023_021ed9f8(char* obj) {
         }
 
         if (((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f4 > -1) {
-            func_020301c8(dataX, ((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f4);
+            ((BackgroundLoader*)(dataX))->RemoveTask((int)(((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f4));
         }
         if (((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f8 > -1) {
-            func_020301c8(dataX, ((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f8);
+            ((BackgroundLoader*)(dataX))->RemoveTask((int)(((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f8));
         }
         if (((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->fc > -1) {
-            func_020301c8(dataX, ((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->fc);
+            ((BackgroundLoader*)(dataX))->RemoveTask((int)(((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->fc));
         }
 
         ((InnerReset021ed9f8*)data_ov023_021ffefc.inner)->f4 = -1;

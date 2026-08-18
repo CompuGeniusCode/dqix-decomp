@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
 
 struct Element020de650;
 struct Container020dedd0;
@@ -17,8 +17,6 @@ extern "C" void func_0200f374(void* buf, int len);
 extern "C" void func_ov023_021dde00(void* obj);
 extern "C" void func_ov023_021dbd10(void* a, void* b);
 
-extern int CallFunc0202fa38Mode2(int a, int b, int c, int d);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
 extern char data_ov023_021fdba9[];
 extern char data_ov023_021fdbbe[];
@@ -29,7 +27,7 @@ extern char data_ov023_021fdc12[];
 
 // USA: func_ov023_021dfc90  (semantic: SomeDispatch_021dfc90)
 extern "C" ARM int func_ov023_021dfc90(void* obj) {
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
 
     if (*(void**)((char*)obj + 0x48) != 0) {
         short key = *(short*)((char*)obj + 0x700 + 0x70);
@@ -112,9 +110,9 @@ tail021dfc90:
     {
         int result;
         if (useTwoStrings) {
-            result = CallFunc0202fa38Mode2(listPtr, (int)buf1, (int)buf2, 0);
+            result = ((BackgroundLoader*)(listPtr))->QueueLoadFileInGP2((const char*)((int)buf1), (const char*)((int)buf2), (SafeAllocator*)(0));
         } else {
-            result = CallFunc0202fa38ZeroPad(listPtr, (int)buf1, 0);
+            result = ((BackgroundLoader*)(listPtr))->QueueLoadFile((const char*)((int)buf1), (SafeAllocator*)(0));
         }
         *(int*)((char*)obj + 0x734) = result;
     }

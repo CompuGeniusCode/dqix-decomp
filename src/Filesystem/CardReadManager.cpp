@@ -20,24 +20,27 @@
 #define ROMCTRL_FLAG_BUSY (1u << 31)
 
 #if defined(jpn)
-#define func_020c89e4 func_020ca4b0
-#define func_020ca8e8 func_020cc3b4
-#define func_020d1118 func_020d2be4
-#define func_020d1234 func_020d2d00
+#define _Z20GetDataTcmRegionBasev func_020ca4b0
+#define _Z25StartDmaWithFlush020ca8e8jjjj func_020cc3b4
+#define _Z23RegisterType0x11Handlerv func_020d2be4
+#define _Z24SyncIfBufferValueChangedj func_020d2d00
 #endif
 
 void SendTaskToReadContext(CardReadManager::ReadProc);
 
-// Gets the base of the tightly coupled memory region
-unsigned int GetDataTcmRegionBase();
+extern "C"
+{
+    // Gets the base of the tightly coupled memory region
+    extern "C" unsigned int _Z20GetDataTcmRegionBasev();
 
-// Seems to set up DMA to repeatedly read from the read parameter into write
-// pointer, incrementing the write pointer but not the read pointer.
-void StartDmaWithFlush020ca8e8(unsigned int dmaChannel, unsigned int readFrom, unsigned int writeTo, unsigned int length);
+    // Seems to set up DMA to repeatedly read from the read parameter into write
+    // pointer, incrementing the write pointer but not the read pointer.
+    extern "C" void _Z25StartDmaWithFlush020ca8e8jjjj(unsigned int dmaChannel, const void* readFrom, void* writeTo, unsigned int length);
+    
+    extern "C" void _Z23RegisterType0x11Handlerv();
 
-void SyncIfBufferValueChanged(unsigned int);
-
-void RegisterType0x11Handler();
+    extern "C" void _Z24SyncIfBufferValueChangedj(unsigned int);
+}
 
 void WaitForReadManagerIdle_Internal();
 Struct_02111f20::LowLevelReadProc GetLowLevelCartridgeReadProc();
@@ -97,7 +100,7 @@ void ReadSingleSegmentFromCartridge()
 
     DECLARE_ASM_NOP();
 
-    StartDmaWithFlush020ca8e8(readManager->dmaChannel, (unsigned int)gamecardReceivedDataRegister, (unsigned int)readManager->writeDst, 0x200);
+    _Z25StartDmaWithFlush020ca8e8jjjj(readManager->dmaChannel, gamecardReceivedDataRegister, readManager->writeDst, 0x200);
     unsigned int offset = readManager->cartridgeReadOffset;
     SendGamecardBusCommand(0xb7000000 | (offset >> 8), offset << 24);
     *(unsigned int*)ADDR_GAMECARD_BUS_ROMCTRL = ps1f20->control_4;
@@ -121,7 +124,7 @@ void DMAChainSegmentInterruptHandler()
         AcknowledgeSpecificInterrupts(IRQ_MASK_GAMECARD_DATA_TRANSFER_DONE);
         CardReadManager* readManager = &data_021118e0;
         unsigned int romChipID = SetupNormalGamecardBusCommandMode();
-        SyncIfBufferValueChanged(romChipID);
+        _Z24SyncIfBufferValueChangedj(romChipID);
 
         readManager->pSharedData->unknown_0 = 0;
         CardReadManager::CompletionCallback cleanProc = readManager->onComplete;
@@ -163,7 +166,7 @@ extern "C" bool TryReadViaDMA(Struct_02111f20* handler)
     
     if (destinationIsCacheAligned)
     {
-        unsigned int dtcmBase = GetDataTcmRegionBase();
+        unsigned int dtcmBase = _Z20GetDataTcmRegionBasev();
         bool isDTCM = true;
         bool isITCM = false;
         if (destination + length > ADDR_ITCM_START && destination < ADDR_ITCM_END)
@@ -310,7 +313,7 @@ extern "C" void SafeReadBlocksFromCartridge(CardReadManager*)
     unsigned int romChipID = SetupNormalGamecardBusCommandMode();
     // Does a few things, but in the end it resets all four DMA channels,
     // so it's some kind of cleanup
-    SyncIfBufferValueChanged(romChipID);
+    _Z24SyncIfBufferValueChangedj(romChipID);
 
     readManager->pSharedData->unknown_0 = 0;
     CardReadManager::CompletionCallback callback = readManager->onComplete;
@@ -389,7 +392,7 @@ void InitializeCardReading()
     data_02111f00.number = 0;
     InitializeCardReadManager();
     data_02111f00.innerStruct.lowLevelReadProc = GetLowLevelCartridgeReadProc();
-    RegisterType0x11Handler();
+    _Z23RegisterType0x11Handlerv();
 }
 
 void WaitForReadManagerIdle_Internal()

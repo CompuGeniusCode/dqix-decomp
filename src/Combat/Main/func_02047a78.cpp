@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
 extern "C" void func_0204719c(void* obj, int flag);
@@ -6,8 +7,6 @@ extern "C" void* func_0200f374(void* dst, int count);
 extern "C" void func_02047b40(void* obj, void* handle, void* extra);
 
 int GetData02107800Word0(void);
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 void* LoadFileIntoMemory(const char* path, void* dst, unsigned int* outCount);
 
 extern int data_020f0118;
@@ -40,9 +39,9 @@ extern "C" ARM void func_02047a78(struct Obj02047a78* obj, const char* path, voi
     func_0200f374(buf, 0x80);
     sprintf(buf, (const char*)&data_020f0118, path);
     handle = (void*)GetData02107800Word0();
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     if (LoadFileIntoMemory(buf, handle, 0) != 0) {
         func_02047b40(obj, handle, extra);
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

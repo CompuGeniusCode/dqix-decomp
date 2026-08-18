@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
-extern "C" void func_020301c8(int a, int b);
-int GetData02104304Field4(void);
 unsigned int GetBg1CharBaseAddr(void);
 
 struct Node0x20_021a5ad0;
@@ -32,7 +31,7 @@ extern "C" ARM void func_ov017_021a5bac(unsigned char* base) {
         *dispcnt = (*dispcnt & ~0x1f00) | 0x100;
 
         if (*(int*)(base + 0x41bc) >= 0) {
-            func_020301c8(GetData02104304Field4(), *(int*)(base + 0x41bc));
+            ((BackgroundLoader*)((int)BackgroundLoader::GetInstance()))->RemoveTask((int)(*(int*)(base + 0x41bc)));
             *(int*)(base + 0x41bc) = -1;
         }
 

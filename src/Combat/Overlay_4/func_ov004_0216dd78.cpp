@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
 extern "C" void* func_ov011_021849c8(void*);
@@ -8,8 +9,6 @@ extern "C" void* func_ov023_021fa598(void*);
 extern "C" void* _Z15GetBattleStructv();
 extern "C" void* _Z26GetGlobalField0x1c020421a0v(void);
 void* GetDataPtr02114e04_020d6c00(void);
-void ShiftInBitOnGlobalObject(void);
-void CallFunc02030110OnGlobalObject(void);
 extern "C" int func_020ab7a8(void* obj, int flag);
 struct FlagWord020466f4;
 void ClearFlags020466f4(struct FlagWord020466f4* word, unsigned int mask);
@@ -17,7 +16,6 @@ extern "C" void func_ov011_021848a0(void* obj, int val);
 void* FindEntryByKey(struct TableA68* table, int key);
 extern "C" void func_0204500c(void*, const char*, int, int);
 void SetByte0x7f70(void* obj, unsigned char value);
-void HalveGlobalObjectCounter(void);
 
 struct FieldGroup02171034 {
     unsigned char pad0[0x10];
@@ -36,8 +34,8 @@ extern "C" ARM int func_ov004_0216dd78(void* a) {
     void* battle = _Z15GetBattleStructv();
     void* globalField = _Z26GetGlobalField0x1c020421a0v();
     struct FlagWord020466f4* flagWord = (struct FlagWord020466f4*)GetDataPtr02114e04_020d6c00();
-    ShiftInBitOnGlobalObject();
-    CallFunc02030110OnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
+    BackgroundLoader::FreeAllocationsGlobal();
 
     int ret = 1;
     void* node2 = func_ov023_021f6880(battler, 2);
@@ -78,6 +76,6 @@ extern "C" ARM int func_ov004_0216dd78(void* a) {
     if (ret == 0) {
         *(unsigned char*)((char*)node2 + 0xc) |= 8;
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     return ret;
 }

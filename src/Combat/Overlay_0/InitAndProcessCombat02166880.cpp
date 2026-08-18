@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "System/Timing.h"
 
 extern "C" int func_ov017_0218b5b0(void);
-int GetData02104304Field4();
 struct CombatantStruct* GetCombatantAtField0x3ac(struct BattleStruct*);
 extern "C" void func_0202ae18(void);
 void InitStruct02013718(char* obj, int a, int b);
@@ -16,7 +16,6 @@ struct SearchEntry* FindEntryByHalfwordKey(struct SearchTable* table, int key);
 extern "C" void func_0201383c(void* g, int val, int flag);
 extern "C" void func_02012de8(void);
 struct Obj0202fa00;
-void ClearCounterField0x788(struct Obj0202fa00* obj);
 extern "C" void func_02015438(void* p);
 void BlankFunction020d84f4(void);
 void SetCombatWorkFlags0x55f4(void* work, int mask);
@@ -25,7 +24,7 @@ void SetCombatWorkFlags0x55f4(void* work, int mask);
 ARM void InitAndProcessCombat02166880(unsigned char* obj) {
     func_ov017_0218b5b0();
     struct BattleStruct* battle = GetBattleStruct();
-    struct Obj0202fa00* fieldObj = (struct Obj0202fa00*)GetData02104304Field4();
+    struct Obj0202fa00* fieldObj = (struct Obj0202fa00*)(int)BackgroundLoader::GetInstance();
     GetCombatantAtField0x3ac(battle);
     func_0202ae18();
     InitStruct02013718((char*)(obj + 0x2c8 + 0xc00), (int)(obj + 8), (int)(obj + 0x6f0 + 0x3000));
@@ -47,7 +46,7 @@ ARM void InitAndProcessCombat02166880(unsigned char* obj) {
     GetCurrentTimestamp();
     for (;;) {
         func_02012de8();
-        ClearCounterField0x788(fieldObj);
+        ((BackgroundLoader*)(fieldObj))->RemoveAllLocks();
         func_02015438(obj + 0x2c8 + 0xc00);
         if (*(int*)(obj + 0x1000 + 0x2ec) == 0) break;
         BlankFunction020d84f4();

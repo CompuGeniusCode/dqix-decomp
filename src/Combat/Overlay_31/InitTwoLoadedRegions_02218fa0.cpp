@@ -20,7 +20,7 @@ extern unsigned char data_ov031_0224a038;
 extern unsigned char data_ov031_0224a04c;
 extern "C" void VectorizedMemset(void* dst, int val, int size);
 struct FourWords;
-void ClearFourWords(struct FourWords* p);
+extern "C" void _Z19ZeroInitializeMutexP5Mutex(struct FourWords* p);
 extern "C" void func_ov031_02219238(void);
 
 // USA: func_ov031_02218fa0  (semantic: InitTwoLoadedRegions_02218fa0)
@@ -48,7 +48,7 @@ extern "C" ARM int func_ov031_02218fa0(LoadParams_02218fa0* params) {
         return 4;
     }
     data_ov031_0224e60c.field4 = 0;
-    ClearFourWords((struct FourWords*)((char*)data_ov031_0224e60c.base + 0x1dc + 0x1000));
+    _Z19ZeroInitializeMutexP5Mutex((struct FourWords*)((char*)data_ov031_0224e60c.base + 0x1dc + 0x1000));
     func_ov031_02219238();
     return 0;
 }

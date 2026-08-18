@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
-void ShiftInBitOnGlobalObject(void);
-void CallFunc02030110OnGlobalObject(void);
 extern "C" int func_020ab7a8(void* obj, int flag);
 void SetByte0x4(char* obj, unsigned char value);
 void* GetDataPtr02114e04_020d6c00(void);
@@ -14,7 +13,6 @@ void ReinitController02043204(char* obj);
 extern "C" void func_02043124(char* obj);
 void* GetNodeIfType6_0216ae9c(void* a, int id);
 void SetOffset100Fields_021f8960(char* base, short a, short b);
-void HalveGlobalObjectCounter(void);
 
 struct FieldGroup02171034 {
     unsigned char pad0[2];
@@ -28,8 +26,8 @@ extern struct FieldGroup02171034 data_ov004_02171034;
 // USA: func_ov004_0216e258  (semantic: DispatchByBattleState_0216e258)
 extern "C" ARM int func_ov004_0216e258(void* a) {
     struct BattleStruct* battle = GetBattleStruct();
-    ShiftInBitOnGlobalObject();
-    CallFunc02030110OnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
+    BackgroundLoader::FreeAllocationsGlobal();
     int state = func_020ab7a8((void*)data_ov004_02171034.ptr10, 0);
     int ret = 1;
     if (state == 5) {
@@ -69,6 +67,6 @@ extern "C" ARM int func_ov004_0216e258(void* a) {
         func_ov011_021848a0(a, 0x190);
         ret = 0;
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     return ret;
 }

@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Memory/SafeAllocator.h"
 
-extern int GetData02104304Field4();
 extern "C" int func_ov017_021d60f4(void*);
 extern int AbsPlus159IfNegative0215ad2c(int x);
 extern SafeAllocator* data_ov001_021658b8[8];
@@ -17,7 +17,7 @@ extern "C" void func_020370a0(void* self, int a, int b);
 // USA: func_ov001_0215ba64
 ARM int AllocateAndRegisterCombatant_0215ba64(char* self, int type) {
 	struct BattleStruct* bs = GetBattleStruct();
-	GetData02104304Field4();
+	(int)BackgroundLoader::GetInstance();
 
 	int id1 = AbsPlus159IfNegative0215ad2c(func_ov017_021d60f4(self));
 	int id2 = AbsPlus159IfNegative0215ad2c(func_ov017_021d60f4(self + 0x8));

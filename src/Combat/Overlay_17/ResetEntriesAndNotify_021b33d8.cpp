@@ -1,16 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int a, int b);
 
 // USA: func_ov017_021b33d8
 ARM void ResetEntriesAndNotify_021b33d8(void* obj) {
-	int common = GetData02104304Field4();
+	int common = (int)BackgroundLoader::GetInstance();
 	int i;
 	for (i = 0; i < 0xe; i++) {
 		int v = *(int*)((char*)obj + i * 4 + 0x10);
 		if (v >= 0) {
-			func_020301c8(common, v);
+			((BackgroundLoader*)(common))->RemoveTask((int)(v));
 		}
 	}
 	*(short*)((char*)obj + 8) = -1;

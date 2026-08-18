@@ -6,16 +6,14 @@
 #include "Filesystem/GPC.h"
 #include "Combat/Main/BattleList.h"
 #include "Filesystem/NarcHandle.h"
+#include "Filesystem/BackgroundLoader.h"
 #include "System/Memory.h"
+#include "Resource/ResourceMutex.h"
 #include "std_library_functions.h"
 #include <globaldefs.h>
 #include <asmhacks.h>
 
 #ifdef jpn
-#define func_0202f7a8 func_0202f318
-
-#define func_020d970c func_020db118
-#define func_020d974c func_020db158
 
 #define data_020e692c data_020e71d4
 
@@ -34,22 +32,16 @@ extern "C"
     // returns pointer to some unknown struct (at 02114e04)
     void* func_020d6c00();
 
+    // get system language?
+    extern "C" int _Z24NormalizeField5_0200fb08P14Struct0200fb08(BattleStruct*);
+
     // Looks like a custom implementation of strstr
     char* func_020d2f88(char* searchString, const char* targetString);
     // Custom implementation of strlen
     int func_020d2ff0(const char* str);
 
-    // some kind of mutex lock/unlock or something
-    void func_020d970c();
-    void func_020d974c();
-
     void LZ77UnCompReadNormalWrite8bit(const void* src, void* dst);
 }
-
-void CallFunc02030110OnGlobalObject();
-
-struct Struct0200fb08;
-int NormalizeField5_0200fb08(struct Struct0200fb08*);
 
 int MakeCharUpperCase(char ch);
 
@@ -80,7 +72,7 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
     char replacedPath[128];
     func_0200f374(replacedPath, sizeof(replacedPath));
 
-    int language = NormalizeField5_0200fb08((struct Struct0200fb08*)battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08((BattleStruct*)battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -89,7 +81,7 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
     void* alwaysNull = NULL;
     
     if (buffer >= data_0211e33c && buffer < &data_0211e33c[0x30000])
-        CallFunc02030110OnGlobalObject();
+        BackgroundLoader::FreeAllocationsGlobal();
 
     ExtendedNitroVM reader;
     reader.ZeroInitialize();
@@ -121,7 +113,7 @@ void* LoadFileIntoNewAllocation(const char* path, SafeAllocator& alloc, unsigned
     char replacedPath[128];
     func_0200f374(replacedPath, sizeof(replacedPath));
 
-    int language = NormalizeField5_0200fb08((struct Struct0200fb08*)battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08(battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -156,7 +148,7 @@ bool GetFileInNarc(const void *narcBuffer, const char *targetFilePath,
     const void **pOutFilePtr, unsigned int *pOutFileSize, unsigned int firstFileIdx)
 {
     bool success = false;
-    func_020d970c();
+    LockResourceMutex();
     NarcHandle handle;
     if (handle.Initialize(data_020f0db8, (const unsigned char*)narcBuffer))
     {
@@ -185,7 +177,7 @@ bool GetFileInNarc(const void *narcBuffer, const char *targetFilePath,
         }
         handle.Destroy();
     }
-    func_020d974c();
+    UnlockResourceMutex();
     return success;
 }
 
@@ -193,7 +185,7 @@ bool GetFileInNarcPermissive(const void *narcBuffer, const char *targetFilePath,
     const void **pOutFilePtr, unsigned int *pOutFileSize, unsigned int firstFileIdx)
 {
     bool success = false;
-    func_020d970c();
+    LockResourceMutex();
     NarcHandle handle;
     if (handle.Initialize(data_020f0db8, (const unsigned char*)narcBuffer))
     {
@@ -252,7 +244,7 @@ bool GetFileInNarcPermissive(const void *narcBuffer, const char *targetFilePath,
 
         handle.Destroy();
     }
-    func_020d974c();
+    UnlockResourceMutex();
     return success;
 }
 
@@ -271,7 +263,7 @@ unsigned int FindFilesInNarcBySubstring(const void* narcBuffer, const char* subs
     NitroVM* pMachine; // will point to a stack variable created shortly
     int numFound = 0;
 
-    func_020d970c();
+    LockResourceMutex();
 
     NarcHandle handle;
     if (handle.Initialize(data_020f0db8, (const unsigned char*)narcBuffer))
@@ -309,7 +301,7 @@ unsigned int FindFilesInNarcBySubstring(const void* narcBuffer, const char* subs
         }
         handle.Destroy();
     }
-    func_020d974c();
+    UnlockResourceMutex();
     return numFound;
 }
 
@@ -346,12 +338,12 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     if (outSize != NULL)
         *outSize = 0;
 
-    CallFunc02030110OnGlobalObject();
+    func_0202f7a8();
     BattleStruct* battle = GetBattleStruct();
     char innerFileReplacedPath[128];
     func_0200f374(innerFileReplacedPath, 128);
 
-    int language = NormalizeField5_0200fb08((struct Struct0200fb08*)battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08(battle);
     StringReplaceLanguageTag(innerFilePath, innerFileReplacedPath, language);
 
     unsigned int metadataLength = 0;

@@ -1,5 +1,5 @@
 #include <globaldefs.h>
-#include "System/Random.h"
+#include "Util/Random.h"
 
 int RegisterSlotB020cf1a8(int a);
 void CopyFrom027ffcf4(void* dst);

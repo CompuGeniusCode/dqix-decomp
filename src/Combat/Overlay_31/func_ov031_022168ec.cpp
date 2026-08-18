@@ -8,7 +8,7 @@ struct FourWords {
 	int fieldc;
 };
 
-void ClearFourWords(FourWords* p);
+extern "C" void _Z19ZeroInitializeMutexP5Mutex(FourWords* p);
 bool IsContextInactive(ProcessorContext* context);
 extern "C" void func_ov031_02216ca0(void);
 
@@ -19,7 +19,7 @@ extern int data_ov031_0224e5f0;
 // USA: func_ov031_022168ec
 #pragma optimize_for_size off
 extern "C" ARM void func_ov031_022168ec(void) {
-	ClearFourWords((FourWords*)(data_ov031_0224e5e8.base + 0x13d8));
+	_Z19ZeroInitializeMutexP5Mutex((FourWords*)(data_ov031_0224e5e8.base + 0x13d8));
 
 	*(int*)(data_ov031_0224e5e8.base + 0x13f0) = 0;
 

@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int, int);
 struct Struct02074bf4;
 void ClearFlag0x11IfSet(struct Struct02074bf4*);
 int func_020c4ac0(void);
@@ -12,9 +11,9 @@ extern "C" void func_020c45b0(int);
 // USA: func_ov023_021e7340  (semantic: DestroySlotAllocatorsAndDispatch_021e7340)
 extern "C" ARM void func_ov023_021e7340(void* obj) {
     char* o = (char*)obj;
-    int data4 = GetData02104304Field4();
+    int data4 = (int)BackgroundLoader::GetInstance();
     if (*(int*)(o + 0x5e4) >= 0) {
-        func_020301c8(data4, *(int*)(o + 0x5e4));
+        ((BackgroundLoader*)(data4))->RemoveTask((int)(*(int*)(o + 0x5e4)));
         *(int*)(o + 0x5e4) = -1;
     }
 

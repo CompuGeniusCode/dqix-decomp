@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Filesystem/FileIO.h"
 
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 void* Clear0x54Bytes0208247c(void* obj);
 extern "C" void func_02082490(void* obj, void* addr, unsigned int size, unsigned short val, int extra);
 extern "C" void func_02083cbc(void* a, void* obj, void* tail);
@@ -25,7 +24,7 @@ struct Combined0208 {
 ARM void LoadAndApplyResourceEntry02082fc4(void* a, void* b) {
     char path[0x18];
     sprintf(path, data_020f1019, *(int*)((char*)a + 0x950));
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     unsigned int size;
     void* addr = LoadFileIntoMemory(path, &data_0211e33c, &size);
     if (addr != NULL) {
@@ -43,5 +42,5 @@ ARM void LoadAndApplyResourceEntry02082fc4(void* a, void* b) {
             dst->tail = local.tail;
         }
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

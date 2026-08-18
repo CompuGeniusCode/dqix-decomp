@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-extern "C" void func_020301c8(int a, int handle);
-int GetData02104304Field4();
 
 struct Obj0208becc {
     char pad0[0xbc];
@@ -23,8 +22,8 @@ ARM void SetFieldD2IfChanged0208becc(struct Obj0208becc* obj, int value, unsigne
     obj->field_d2 = value;
     obj->field_dd = b;
     if (obj->handle >= 0) {
-        int owner = GetData02104304Field4();
-        func_020301c8(owner, obj->handle);
+        int owner = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(owner))->RemoveTask((int)(obj->handle));
         obj->handle = -1;
     }
     obj->flags_da |= 0x20;

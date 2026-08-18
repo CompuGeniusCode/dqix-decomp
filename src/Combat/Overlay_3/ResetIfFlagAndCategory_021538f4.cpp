@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int, int);
 
 // USA: func_ov003_021538f4
 ARM void ResetIfFlagAndCategory_021538f4(void* obj, int cat) {
@@ -17,11 +16,11 @@ check:
     if (cat >= 0xd) return;
     if (*(int*)(o + 0x14) == cat) return;
 
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     int f50 = *(int*)(o + 0x50);
-    if (f50 >= 0) func_020301c8(listPtr, f50);
+    if (f50 >= 0) ((BackgroundLoader*)(listPtr))->RemoveTask((int)(f50));
     int f54 = *(int*)(o + 0x54);
-    if (f54 >= 0) func_020301c8(listPtr, f54);
+    if (f54 >= 0) ((BackgroundLoader*)(listPtr))->RemoveTask((int)(f54));
     *(int*)(o + 0x50) = -1;
     *(int*)(o + 0x54) = -1;
     *(int*)(o + 0x14) = cat;

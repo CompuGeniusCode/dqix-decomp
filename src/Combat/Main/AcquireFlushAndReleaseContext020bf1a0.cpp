@@ -1,8 +1,8 @@
 #include <globaldefs.h>
 
 struct RefNode020c80f8;
-extern "C" void func_020c8074(struct RefNode020c80f8* node);
-void ReleaseNodeRef020c80f8(struct RefNode020c80f8* node);
+extern "C" void _Z9LockMutexP5Mutex(struct RefNode020c80f8* node);
+extern "C" void _Z11UnlockMutexP5Mutex(struct RefNode020c80f8* node);
 
 struct Foo020bcbc4;
 void CallIfFlag0x24Bit0(struct Foo020bcbc4* obj);
@@ -17,9 +17,9 @@ extern struct Ctx020bf1a0 data_021103b0;
 
 // USA: func_020bf1a0  (semantic: AcquireFlushAndReleaseContext020bf1a0)
 extern "C" ARM void func_020bf1a0(void* obj) {
-    func_020c8074((struct RefNode020c80f8*)&data_02110a28);
+    _Z9LockMutexP5Mutex((struct RefNode020c80f8*)&data_02110a28);
     if (data_021103b0.f4 != 0) {
-        func_020c8074((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
+        _Z9LockMutexP5Mutex((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
     }
 
     if ((*(int*)((char*)obj + 0x110) << 30) >> 31) {
@@ -31,8 +31,8 @@ extern "C" ARM void func_020bf1a0(void* obj) {
     }
 
     ReleaseAndFlushContext020bf238((struct Obj020bf238*)obj);
-    ReleaseNodeRef020c80f8((struct RefNode020c80f8*)&data_02110a28);
+    _Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)&data_02110a28);
     if (data_021103b0.f4 != 0) {
-        ReleaseNodeRef020c80f8((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
+        _Z11UnlockMutexP5Mutex((struct RefNode020c80f8*)(data_021103b0.f4 + 0x4c8));
     }
 }

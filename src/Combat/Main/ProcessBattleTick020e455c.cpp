@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
 int GetGlobal02109400(void);
@@ -13,8 +14,6 @@ void ClearFlags020466f4(struct FlagWord020466f4* word, unsigned int mask);
 struct CombatantStruct* GetCombatantWithFlag0x800(struct BattleStruct* battleStruct, int combatantId);
 void ClearBitsInField0x6c(unsigned char* obj, unsigned int mask);
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 
 int GetFieldIfFlag4(char* obj);
 void SetField0x23cTrue(void* obj);
@@ -54,8 +53,8 @@ ARM void ProcessBattleTick020e455c(struct MainStruct020e455c* obj) {
     }
 
     if (obj->fc >= 0) {
-        int val = GetData02104304Field4();
-        func_020301c8(val, obj->fc);
+        int val = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(val))->RemoveTask((int)(obj->fc));
         obj->fc = -1;
     }
 

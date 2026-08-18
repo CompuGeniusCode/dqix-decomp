@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4();
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 struct Struct020dfc40;
 void ResetAndDetach020dfc6c(struct Struct020dfc40* p);
 void ClearStruct16(void* p);
@@ -14,8 +13,6 @@ int InitBufferFromDataField4_021ddc34(void* obj, short a, short b, short c, shor
 int TestBitInByteArray(int unused, unsigned char* arr, int index);
 
 extern "C" {
-    int func_0202fdd0(int a, int b);
-    void func_020301c8(int a, int b);
     void func_020df850(void* a, void* b, int out1, int out2, int fifth);
     void* func_0205ec34(void);
     int func_02005a94(signed char* s);
@@ -52,12 +49,12 @@ extern "C" ARM int func_ov023_021e0840(void* obj_) {
         return 0xd;
     }
 
-    int listPtr = GetData02104304Field4();
-    if (!func_0202fdd0(listPtr, *(int*)(obj + 0x744))) {
+    int listPtr = (int)BackgroundLoader::GetInstance();
+    if (!((BackgroundLoader*)(listPtr))->GetTaskStatus((int)(*(int*)(obj + 0x744)))) {
         goto ret9;
     }
 
-    GetListEntryValues0202fec8((struct List0202fec8*)listPtr, *(int*)(obj + 0x744), &out1, &out2);
+    ((BackgroundLoader*)((struct List0202fec8*)listPtr))->GetLoadedFileByID((int)(*(int*)(obj + 0x744)), (void**)(&out1), (unsigned int*)(&out2));
     if (out1 == 0 || out2 == 0) {
         goto ret9;
     }
@@ -91,7 +88,7 @@ extern "C" ARM int func_ov023_021e0840(void* obj_) {
         }
     }
 
-    func_020301c8(listPtr, *(int*)(obj + 0x744));
+    ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)(obj + 0x744)));
     *(int*)(obj + 0x744) = -1;
 
     count2 = 0;

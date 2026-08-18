@@ -1,11 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
 extern "C" void func_0200f374(void* buf, int len);
 struct StructDE234_020de234;
 unsigned short GetPreferredPackedField020de234(struct StructDE234_020de234* p, int preferMid);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 struct InitStruct2075;
 void ClearStructFields(struct InitStruct2075* p);
 
@@ -14,7 +13,7 @@ extern char data_ov023_021fdc36[];
 
 // USA: func_ov023_021e0244
 ARM int FormatAndApplyPreferredField_021e0244(void* obj) {
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     int ok = 0;
 
     if (*(void**)((char*)obj + 0x4c) != 0) {
@@ -37,7 +36,7 @@ ARM int FormatAndApplyPreferredField_021e0244(void* obj) {
             sprintf(buf, data_ov023_021fdc36, percent, val);
         }
 
-        int r = CallFunc0202fa38ZeroPad(listPtr, (int)buf, 0);
+        int r = ((BackgroundLoader*)(listPtr))->QueueLoadFile((const char*)((int)buf), (SafeAllocator*)(0));
         *(int*)((char*)obj + 0x738) = r;
         ok = 1;
     }

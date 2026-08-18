@@ -1,16 +1,14 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Memory/SafeAllocator.h"
 #include "Filesystem/FileIO.h"
 
-int GetData02104304Field4();
-extern "C" int func_0202fdd0(int, int);
 
 struct Obj021dcb70;
 unsigned char LookupByField8_021dcb70(struct Obj021dcb70* p);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 struct List0204af64 {
     char pad0[0xc];
@@ -49,7 +47,6 @@ extern "C" int func_ov023_021e20f0(void*, void*, void*, void*);
 
 void ClearFields_021e20c0(void* p);
 
-extern "C" void func_020301c8(int, int);
 extern "C" void func_ov023_021dde00(void* obj);
 extern "C" void func_ov023_021dbd10(void* obj, void* p);
 
@@ -69,11 +66,11 @@ extern "C" ARM int func_ov023_021dfecc(void* objRaw) {
     void* dummyOut;
     int result;
 
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     int handle = *(int*)(obj + 0x734);
-    if (func_0202fdd0(listPtr, handle) != 0) {
+    if (((BackgroundLoader*)(listPtr))->GetTaskStatus((int)(handle)) != 0) {
         unsigned char lookupResult = LookupByField8_021dcb70((struct Obj021dcb70*)*(void**)(obj + 0x50));
-        GetListEntryValues0202fec8((struct List0202fec8*)listPtr, *(int*)(obj + 0x734), &listVal1, &listVal2);
+        ((BackgroundLoader*)((struct List0202fec8*)listPtr))->GetLoadedFileByID((int)(*(int*)(obj + 0x734)), (void**)(&listVal1), (unsigned int*)(&listVal2));
 
         if (listVal1 != 0 && listVal2 != 0) {
             ResetList0204af64(&listObj);
@@ -148,7 +145,7 @@ extern "C" ARM int func_ov023_021dfecc(void* objRaw) {
         }
 
         *(unsigned char*)(obj + 0x779) = lookupResult;
-        func_020301c8(listPtr, *(int*)(obj + 0x734));
+        ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)(obj + 0x734)));
         *(int*)(obj + 0x734) = -1;
         *(void**)(obj + 0x4c) = *(void**)(obj + 0x50);
         *(void**)(obj + 0x50) = 0;

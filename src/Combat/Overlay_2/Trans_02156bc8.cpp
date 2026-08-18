@@ -1,14 +1,11 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 extern int data_020f2a0c;
 extern int data_020f2a18;
 extern int data_ov002_0216cf21;
 extern int data_ov002_0216cf39;
-extern "C" unsigned int _Z18AddEntryOrOverflowPh();
 extern "C" unsigned int _Z19ClearField00209a804Pi(unsigned int, unsigned int);
-extern "C" unsigned int _Z21CallFunc0202fa38Mode2iiii(unsigned int, unsigned int, unsigned int, unsigned int);
-extern "C" unsigned int _Z21GetData02104304Field4v(unsigned int);
-extern "C" unsigned int _Z23CallFunc0202fa38ZeroPadiii(unsigned int, unsigned int, unsigned int);
 extern "C" unsigned int _Z26ClearFirstTwoWords0209a338P12Pair0209a338(unsigned int);
 
 // USA: func_ov002_02156bc8  (semantic: Trans_02156bc8)
@@ -21,28 +18,28 @@ extern "C" ARM unsigned int func_ov002_02156bc8(unsigned int r0, unsigned int r1
     r0 = *(unsigned int*)((char*)r0 + 0x47c);
     cc = (int)(r0 & 0x10);
     if (cc != 0) { return r0; }
-    r0 = (unsigned int)_Z21GetData02104304Field4v(r0);
+    r0 = (unsigned int)(int)BackgroundLoader::GetInstance();
     r5 = r0;
-    r0 = (unsigned int)_Z18AddEntryOrOverflowPh();
+    ((BackgroundLoader*)(r5))->AddFence();
     r1 = (unsigned int)&data_020f2a18;
     r0 = (unsigned int)&data_020f2a0c;
     r1 = *(unsigned int*)((char*)r1 + 0x0);
     r2 = *(unsigned int*)((char*)r0 + 0x0);
     r0 = r5;
     r3 = 0x0;
-    r0 = (unsigned int)_Z21CallFunc0202fa38Mode2iiii(r0, r1, r2, r3);
+    r0 = (unsigned int)((BackgroundLoader*)(r0))->QueueLoadFileInGP2((const char*)(r1), (const char*)(r2), (SafeAllocator*)(r3));
     r1 = r4 + 0x1000;
     *(unsigned int*)((char*)r1 + 0xba4) = (unsigned int)r0;
     r1 = (unsigned int)&data_ov002_0216cf21;
     r0 = r5;
     r2 = 0x0;
-    r0 = (unsigned int)_Z23CallFunc0202fa38ZeroPadiii(r0, r1, r2);
+    r0 = (unsigned int)((BackgroundLoader*)(r0))->QueueLoadFile((const char*)(r1), (SafeAllocator*)(r2));
     r1 = r4 + 0x1000;
     *(unsigned int*)((char*)r1 + 0xba8) = (unsigned int)r0;
     r0 = r5;
     r1 = (unsigned int)&data_ov002_0216cf39;
     r2 = 0x0;
-    r0 = (unsigned int)_Z23CallFunc0202fa38ZeroPadiii(r0, r1, r2);
+    r0 = (unsigned int)((BackgroundLoader*)(r0))->QueueLoadFile((const char*)(r1), (SafeAllocator*)(r2));
     r1 = r4 + 0x1000;
     *(unsigned int*)((char*)r1 + 0xbac) = (unsigned int)r0;
     r0 = r4 + 0x44;

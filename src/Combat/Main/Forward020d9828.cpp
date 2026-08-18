@@ -2,7 +2,7 @@
 struct ProcessorContext;
 void MarkContextReadyAndSwitch(struct ProcessorContext*);
 
-// USA: func_020d9828
+// USA: _Z15Forward020d9828Pv
 ARM void Forward020d9828(void* p) {
     MarkContextReadyAndSwitch((struct ProcessorContext*)p);
 }

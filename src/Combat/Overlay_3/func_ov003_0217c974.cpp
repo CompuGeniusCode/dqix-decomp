@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Filesystem/FileIO.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4();
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 extern "C" void* func_ov017_0218b5b0(void);
 
@@ -36,9 +35,9 @@ struct Params02036804 {
 
 // USA: func_ov003_0217c974  (semantic: LoadAndApplyNarcResource_0217c974)
 extern "C" ARM void func_ov003_0217c974(char* self) {
-    int list = GetData02104304Field4();
+    int list = (int)BackgroundLoader::GetInstance();
     int out1, out2;
-    GetListEntryValues0202fec8((struct List0202fec8*)list, *(int*)(self + 0x130), &out1, &out2);
+    ((BackgroundLoader*)((struct List0202fec8*)list))->GetLoadedFileByID((int)(*(int*)(self + 0x130)), (void**)(&out1), (unsigned int*)(&out2));
 
     void* mgr = func_ov017_0218b5b0();
     CopyInternalFields0207df50((struct Foo0207df50*)((char*)mgr + 0x2cc));

@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 struct RngHolder_021d9654 { struct Random* rng; };
 

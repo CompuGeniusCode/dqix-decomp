@@ -1,21 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Memory/SafeAllocator.h"
 
 extern "C" void* func_ov011_021845f8(void* a, int b);
-int GetData02104304Field4();
-int CallFunc0202fa38Mode2(int a, int b, int c, int d);
 
 struct Obj0202fa00;
-void ClearCounterField0x788(struct Obj0202fa00* obj);
-extern "C" int func_0202fdd0(void* obj, int key);
 
 struct List0202fe68;
-int LookupListValueByKey(struct List0202fe68* obj, int key);
-extern "C" void func_020301c8(void* obj, int key);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 struct S020a13c4;
 void ClearStruct020a13c4(struct S020a13c4* p);
@@ -37,31 +31,31 @@ extern char data_ov004_021703af;
 // USA: func_ov004_021567f8  (semantic: AllocateAndScanBits_021567f8)
 extern "C" ARM int func_ov004_021567f8(void* a) {
     void* base = func_ov011_021845f8(a, 4);
-    int f4 = GetData02104304Field4();
+    int f4 = (int)BackgroundLoader::GetInstance();
     SafeAllocator* alloc = (SafeAllocator*)((char*)base + 4);
     data_ov004_021707c8.fc = alloc->Allocate(0x14);
 
-    int key = CallFunc0202fa38Mode2(f4, (int)&data_ov004_0217039a, (int)&data_ov004_021703af, 0);
+    int key = ((BackgroundLoader*)(f4))->QueueLoadFileInGP2((const char*)((int)&data_ov004_0217039a), (const char*)((int)&data_ov004_021703af), (SafeAllocator*)(0));
     if (key < 0) {
         return 0;
     }
-    while (!func_0202fdd0((void*)f4, key)) {
-        ClearCounterField0x788((Obj0202fa00*)f4);
+    while (!((BackgroundLoader*)((void*)f4))->GetTaskStatus((int)(key))) {
+        ((BackgroundLoader*)((Obj0202fa00*)f4))->RemoveAllLocks();
     }
 
-    if (LookupListValueByKey((List0202fe68*)f4, key) != 2) {
-        func_020301c8((void*)f4, key);
+    if (((BackgroundLoader*)((List0202fe68*)f4))->GetDetailedTaskStatus((int)(key)) != 2) {
+        ((BackgroundLoader*)((void*)f4))->RemoveTask((int)(key));
         return 0;
     }
 
     int out1, out2;
-    GetListEntryValues0202fec8((List0202fec8*)f4, key, &out1, &out2);
+    ((BackgroundLoader*)((List0202fec8*)f4))->GetLoadedFileByID((int)(key), (void**)(&out1), (unsigned int*)(&out2));
     if (out1 != 0) {
         ClearStruct020a13c4((S020a13c4*)data_ov004_021707c8.fc);
         SetupGlobalAndRunScript020a147c(data_ov004_021707c8.fc, (void*)((char*)base + 4), (StreamHeader*)out1, out2, 0, 0, 0xf);
     }
 
-    func_020301c8((void*)f4, key);
+    ((BackgroundLoader*)((void*)f4))->RemoveTask((int)(key));
     if (out1 == 0) {
         return 0;
     }

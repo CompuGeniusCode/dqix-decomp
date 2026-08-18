@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
 extern "C" int func_ov017_021959b4(void);
@@ -9,15 +10,10 @@ void ClearFlag0x10IfSet(struct Struct02074bd0* obj);
 struct Struct02074bf4;
 void ClearFlag0x11IfSet(struct Struct02074bf4* obj);
 
-void ShiftInBitOnGlobalObject(void);
-void CallFunc02030110OnGlobalObject(void);
 void CleanInvalidateCacheRange(const void* addr, unsigned int size);
 int TransferBg1CharData(int arg0, int arg1, unsigned int arg2);
 extern "C" void func_020c5b98(void* p, int a, int b);
-int GetData02104304Field4(void);
 extern "C" int func_ov023_021f6bb8(void* obj);
-extern "C" void func_020301c8(int a, int b);
-void HalveGlobalObjectCounter(void);
 extern "C" int func_ov017_0218b5b0(void);
 void ClearBitsInField4(unsigned int* obj, unsigned int mask);
 
@@ -41,8 +37,8 @@ extern "C" ARM void func_ov011_02184770(char* self) {
     int flag190 = *(int*)(self + 0x190);
     *reg304 = (flag190 << 15) | (*reg304 & ~0x8000);
 
-    ShiftInBitOnGlobalObject();
-    CallFunc02030110OnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
+    BackgroundLoader::FreeAllocationsGlobal();
 
     void* buf = data_0211e33c;
     memset(buf, 0, 0x600);
@@ -58,10 +54,10 @@ extern "C" ARM void func_ov011_02184770(char* self) {
     unsigned int f1ac = *(unsigned int*)(self + 0x1ac);
     *reg1000 = (f1ac << 8) | (*reg1000 & ~0x1f00);
 
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     int key = func_ov023_021f6bb8(self + 0x118);
-    func_020301c8(listPtr, key);
+    ((BackgroundLoader*)(listPtr))->RemoveTask((int)(key));
 
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     ClearBitsInField4((unsigned int*)func_ov017_0218b5b0(), 0xc0);
 }

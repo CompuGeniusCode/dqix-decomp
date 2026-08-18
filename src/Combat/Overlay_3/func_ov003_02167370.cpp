@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int a, int b);
 struct NotifyEntriesStruct0207f8bc;
 void FlushNotifyEntries(struct NotifyEntriesStruct0207f8bc* p);
 struct Struct02074bf4;
@@ -17,9 +16,9 @@ void ResetObject0204c754(struct Obj0204c754* obj);
 
 // USA: func_ov003_02167370  (semantic: ResetListsAndDestroyAllocators_02167370)
 extern "C" ARM void func_ov003_02167370(char* obj) {
-    int data4 = GetData02104304Field4();
+    int data4 = (int)BackgroundLoader::GetInstance();
     if (*(int*)(obj + 0x64) >= 0) {
-        func_020301c8(data4, *(int*)(obj + 0x64));
+        ((BackgroundLoader*)(data4))->RemoveTask((int)(*(int*)(obj + 0x64)));
         *(int*)(obj + 0x64) = -1;
     }
 

@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
 #include "Combat/Overlay_0/GetCombatantByID.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 extern "C" int func_ov000_0215eb1c(int battle, short* table, int count, int flag);
 int PickRandomTableEntryResetCounter_021ed890(struct Random** rngPtr, int* maxAndFlag, short* table);

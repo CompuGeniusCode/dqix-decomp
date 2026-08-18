@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 extern "C" int func_ov000_0215eb1c(int a0, short* buf, int count, int flag);
 struct CombatantStruct* GetCombatantWithFlag0x400ByID(int unused, int id);

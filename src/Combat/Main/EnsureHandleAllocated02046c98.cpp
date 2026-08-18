@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 extern int data_020f00cc;
 
 struct Handle02046c98 {
@@ -13,5 +12,5 @@ struct Handle02046c98 {
 // USA: func_02046c98
 ARM void EnsureHandleAllocated02046c98(struct Handle02046c98* h) {
     if (h->f_e8 != 0) return;
-    h->f_ec = CallFunc0202fa38ZeroPad(GetData02104304Field4(), (int)&data_020f00cc, 0);
+    h->f_ec = ((BackgroundLoader*)((int)BackgroundLoader::GetInstance()))->QueueLoadFile((const char*)((int)&data_020f00cc), (SafeAllocator*)(0));
 }

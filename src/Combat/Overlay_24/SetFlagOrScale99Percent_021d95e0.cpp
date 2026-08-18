@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 // USA: func_ov024_021d95e0
 ARM int SetFlagOrScale99Percent_021d95e0(struct Random** rngPtr, int unused1, int combatantId, int unused3, int unused4, volatile int value) {

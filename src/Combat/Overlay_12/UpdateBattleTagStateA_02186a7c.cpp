@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 extern "C" void* _Z15GetBattleStructv();
 extern "C" void* _Z10GetWord0x0Pi(void* battle);
-extern "C" void* _Z21GetData02104304Field4v();
 extern "C" void* _Z17GetGlobal02109400v();
 
 struct Struct0205de24;
@@ -28,7 +28,7 @@ extern "C" void func_ov012_0218943c(void* self);
 // USA: func_ov012_02186a7c  (semantic: UpdateBattleTagStateA_02186a7c)
 extern "C" ARM void func_ov012_02186a7c(char* self) {
 	_Z10GetWord0x0Pi(_Z15GetBattleStructv());
-	_Z21GetData02104304Field4v();
+	(int)BackgroundLoader::GetInstance();
 	_Z17GetGlobal02109400v();
 
 	unsigned char state = *(unsigned char*)(self + 0x1370);

@@ -1,13 +1,11 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
-extern "C" int func_0202fdd0(int a, int b);
 int GetFieldAt0x150(unsigned char* obj);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 void* Clear12Bytes(void* dst);
 
 struct BitField0209a088;
@@ -18,7 +16,6 @@ void InitObjFromSource0209a088(struct Obj0209a088* obj, struct BitField0209a088*
 
 void* BinarySearchRecord0209a004(void* list, int key);
 
-extern "C" void func_020301c8(int a, int b);
 extern "C" void func_02083e28(void* a, int arg2);
 
 extern unsigned char data_ov017_021d6b20;
@@ -39,8 +36,8 @@ struct Ctx_021b3780 {
 // USA: func_ov017_021b3780
 extern "C" ARM int func_ov017_021b3780(struct Ctx_021b3780* ctx) {
     struct BattleStruct* battle = GetBattleStruct();
-    int loadedList = GetData02104304Field4();
-    if (!func_0202fdd0(loadedList, ctx->listKey)) {
+    int loadedList = (int)BackgroundLoader::GetInstance();
+    if (!((BackgroundLoader*)(loadedList))->GetTaskStatus((int)(ctx->listKey))) {
         return 0;
     }
     struct CombatantStruct* combatant = GetCombatantWithFlag0x100(battle, ctx->combatantId);
@@ -55,7 +52,7 @@ extern "C" ARM int func_ov017_021b3780(struct Ctx_021b3780* ctx) {
     int key = ctx->listKey;
     int val1;
     volatile int val2;
-    GetListEntryValues0202fec8((struct List0202fec8*)loadedList, key, &val1, (int*)&val2);
+    ((BackgroundLoader*)((struct List0202fec8*)loadedList))->GetLoadedFileByID((int)(key), (void**)(&val1), (unsigned int*)((int*)&val2));
 
     struct Obj0209a088 obj;
     Clear12Bytes(&obj);
@@ -88,7 +85,7 @@ extern "C" ARM int func_ov017_021b3780(struct Ctx_021b3780* ctx) {
         }
     }
 
-    func_020301c8(loadedList, key);
+    ((BackgroundLoader*)(loadedList))->RemoveTask((int)(key));
     ctx->listKey = -1;
     func_02083e28((void*)base150, 0);
     return 1;

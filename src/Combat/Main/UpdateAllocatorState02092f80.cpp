@@ -1,16 +1,12 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
-int GetData02104304Field4();
 
-int CallFunc0202fa38Mode2(int a, int b, int c, int d);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 extern "C" {
-    int func_0202fdd0(int a, int b);
-    void func_020301c8(int a, int b);
     void func_020dfec0(void* dest, void* allocator, void* fileData, unsigned int size);
 }
 
@@ -29,19 +25,19 @@ struct Obj02092f80 {
 
 // USA: func_02092f80
 ARM void UpdateAllocatorState02092f80(Obj02092f80* obj) {
-    int ctx = GetData02104304Field4();
+    int ctx = (int)BackgroundLoader::GetInstance();
     unsigned char state = obj->field_35;
 
     if (state == 0) {
-        obj->field_2c = CallFunc0202fa38Mode2(ctx, (int)&data_020f1368, (int)&data_020f1382, 0);
+        obj->field_2c = ((BackgroundLoader*)(ctx))->QueueLoadFileInGP2((const char*)((int)&data_020f1368), (const char*)((int)&data_020f1382), (SafeAllocator*)(0));
         obj->field_35++;
     } else if (state == 1) {
-        if (func_0202fdd0(ctx, obj->field_2c)) {
+        if (((BackgroundLoader*)(ctx))->GetTaskStatus((int)(obj->field_2c))) {
             int out1, out2;
-            GetListEntryValues0202fec8((struct List0202fec8*)ctx, obj->field_2c, &out1, &out2);
+            ((BackgroundLoader*)((struct List0202fec8*)ctx))->GetLoadedFileByID((int)(obj->field_2c), (void**)(&out1), (unsigned int*)(&out2));
             ((SafeAllocator*)obj)->Reset();
             func_020dfec0((char*)obj + 0x14, obj, (void*)out1, (unsigned int)out2);
-            func_020301c8(ctx, obj->field_2c);
+            ((BackgroundLoader*)(ctx))->RemoveTask((int)(obj->field_2c));
             obj->field_2c = -1;
             obj->field_35++;
         }

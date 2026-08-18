@@ -1,9 +1,8 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Grotto/Main/ActiveGrottoClass.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 extern "C" void func_020145a8(void* obj);
 
 extern char data_020ef19f;
@@ -39,9 +38,9 @@ ARM void UpdateGrottoRankLabelAndDispatch02014b04(void* obj) {
         return;
     }
 
-    int handle = GetData02104304Field4();
+    int handle = (int)BackgroundLoader::GetInstance();
     signed char b = *(signed char*)(o + 0xc);
     char buf[0x28];
     sprintf(buf, &data_020ef1c7, &data_020ef116, b);
-    *(int*)(o + 0x440) = CallFunc0202fa38ZeroPad(handle, (int)buf, 0);
+    *(int*)(o + 0x440) = ((BackgroundLoader*)(handle))->QueueLoadFile((const char*)((int)buf), (SafeAllocator*)(0));
 }

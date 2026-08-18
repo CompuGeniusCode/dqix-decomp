@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 extern "C" void func_ov023_021dcae0(void* obj, int val);
 void ResetIfNonNeg_021db2e4(volatile int* p);
-int GetData02104304Field4();
 struct DispatchEntry_021fdaa8 { int handler; int offsetFlag; };
 extern DispatchEntry_021fdaa8 data_ov023_021fdaa8[];
 
@@ -30,7 +30,7 @@ extern "C" ARM void func_ov023_021dfb4c(void* obj) {
         }
     }
 
-    GetData02104304Field4();
+    (int)BackgroundLoader::GetInstance();
     DispatchEntry_021fdaa8* table = data_ov023_021fdaa8;
 
     while (*(int*)((char*)obj + 0x754) >= 0 &&

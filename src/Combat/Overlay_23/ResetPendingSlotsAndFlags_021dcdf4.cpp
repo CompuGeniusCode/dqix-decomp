@@ -1,11 +1,11 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
 void ResetIfNonNeg_021db2e4(volatile int* p);
 
 // USA: func_ov023_021dcdf4
 ARM void ResetPendingSlotsAndFlags_021dcdf4(void* obj) {
-    GetData02104304Field4();
+    (int)BackgroundLoader::GetInstance();
     if (*((unsigned char*)obj + 0x776)) {
         ResetIfNonNeg_021db2e4((volatile int*)((char*)obj + 0x734));
         for (int i = 0; i < 7; i++) {

@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
 void ReleaseHandle02022b90(void* owner, int* handle);
-int CallFunc0202fa38Mode2(int a, int b, int c, int d);
 
 struct Obj020e063c {
     unsigned char pad0[0x9c5];
@@ -13,8 +12,8 @@ struct Obj020e063c {
 
 // USA: func_020e063c
 ARM void RestartTaskHandle020e063c(struct Obj020e063c* self, int b, int c) {
-    int h = GetData02104304Field4();
+    int h = (int)BackgroundLoader::GetInstance();
     self->flag_9c5 = 1;
     ReleaseHandle02022b90(self, &self->handle_a0c);
-    self->handle_a0c = CallFunc0202fa38Mode2(h, b, c, 0);
+    self->handle_a0c = ((BackgroundLoader*)(h))->QueueLoadFileInGP2((const char*)(b), (const char*)(c), (SafeAllocator*)(0));
 }

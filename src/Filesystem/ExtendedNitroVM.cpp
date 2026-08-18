@@ -1,18 +1,14 @@
 #include "Filesystem/ExtendedNitroVM.h"
 #include "Filesystem/FSInnerDefs.h"
+#include "Resource/ResourceMutex.h"
 #include "System/Cache.h"
 #include "std_library_functions.h"
 #include <globaldefs.h>
 
 //#pragma optimize_for_size off
 #if defined(jpn)
-#define func_020d84f8 func_020d9e5c
-#define func_020d8524 func_020d9e88
-
-#define func_020d970c func_020db118
-#define func_020d974c func_020db158
-
-#define func_020d9788 func_020db194
+#define _Z20ClearAndInit020d84f8Pvj func_020d9e5c
+#define _Z23CopyRegionAndFlushCachePvPKvj func_020d9e88
 
 #define func_020ca95c func_020cc428
 
@@ -35,29 +31,23 @@ extern "C"
     // Get CRC hash for a null terminated string
     unsigned int func_01ff860c(const char*);
 
-    // probably some kind of mutex lock/unlock
-    void func_020d970c();
-    void func_020d974c();
+    // Zero memory and flush cache
+    extern "C" void _Z20ClearAndInit020d84f8Pvj(void*, unsigned);
+    // another memcpy-style function, cleans/invalidates the cache in destination after
+    extern "C" unsigned int _Z23CopyRegionAndFlushCachePvPKvj(void*, const void*, unsigned);
 
     void DecompressA(Decompressor*, const void*, unsigned);
     void DecompressB(Decompressor*, const void*, unsigned);
     void DecompressC(Decompressor*, const void*, unsigned);
 }
-
-// Zero memory and flush cache
-void ClearAndInit020d84f8(void*, unsigned int);
-// Sleep for the specified number of milliseconds
-void RunWhenCounterZero020d9788(int);
-// another memcpy-style function, cleans/invalidates the cache in destination after
-unsigned int CopyRegionAndFlushCache(void*, const void*, unsigned);
+// files to prepare accessors in cache for
+extern const char* cachedFilePaths[];
 // Seems to hold whether cached file accessors have been saved or not
 extern bool data_01ffd998;
 // CRC hashes for cached file accessors
 extern unsigned int data_01ffd99c[NUM_CACHED_FILES];
 // cached file accessors
 extern NitroFileAccessor data_01ffda90[NUM_CACHED_FILES];
-// files to prepare accessors in cache for
-extern const char* cachedFilePaths[];
 // holds the intended length of compression metadata (4 bytes)
 // there are two copies of it, the first is used in USA version and the
 // second in JPN version
@@ -73,7 +63,7 @@ unsigned int CompressionPrefix::GetDecompressedLength() const
 
 bool Decompressor::InitAndDecompress(void *out, unsigned int outCapacity, const void *in, unsigned int inLength)
 {
-    ClearAndInit020d84f8(this, sizeof(Decompressor));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(Decompressor));
     if (out == NULL || in == NULL || inLength < 4)
         return false;
     
@@ -118,7 +108,7 @@ bool Decompressor::InitAndDecompress(void *out, unsigned int outCapacity, const 
 bool Decompressor::ProcessBytes(const void* input, unsigned int inputLength)
 {
     bool success = false;
-    func_020d970c();
+    LockResourceMutex();
     unsigned char* writeStart = writeOutputPtr;
     if (writeOutputPtr != NULL && compressionType < 5 && input != NULL && inputLength != NULL)
     {
@@ -138,13 +128,13 @@ bool Decompressor::ProcessBytes(const void* input, unsigned int inputLength)
         default:
             if (inputLength >= remainingOutputBytes)
                 inputLength = remainingOutputBytes;
-            remainingOutputBytes -= CopyRegionAndFlushCache(writeStart + probablyDecompressedSize - remainingOutputBytes, input, inputLength);
+            remainingOutputBytes -= _Z23CopyRegionAndFlushCachePvPKvj(writeStart + probablyDecompressedSize - remainingOutputBytes, input, inputLength);
             break;
         }
         CleanInvalidateCacheRange(writeStart, writeOutputPtr - writeStart);
         success = true;
     }
-    func_020d974c();
+    UnlockResourceMutex();
     return success;
 }
 
@@ -155,7 +145,7 @@ void CacheMainFileAccessors()
         char fullFilePath[64];
 
         const char** pCurrentFilePath = cachedFilePaths;
-
+        
         for (unsigned int i = 0; i < NUM_CACHED_FILES; )
         {
             strcpy(fullFilePath, data_020f27b8);
@@ -166,7 +156,7 @@ void CacheMainFileAccessors()
             // silly goofy register hack (see RemoveFurigana)
             unsigned int iplusone = i + 1;
             data_01ffd99c[iplusone - 1] = crc;
-            i++;
+            i++;            
             pCurrentFilePath++;
         }
 
@@ -186,7 +176,7 @@ void CacheMainFileAccessors()
                 ((NitroFileAccessor*)&nextAccessor)->handle = pAccessor[1].handle;
                 ((NitroFileAccessor*)&nextAccessor)->fileID = pAccessor[1].fileID;
                 unsigned int currentCRC = pCRC[0];
-
+                
                 unsigned int nextCRC = pCRC[1];
                 if (currentCRC > nextCRC)
                 {
@@ -194,7 +184,7 @@ void CacheMainFileAccessors()
                     pAccessor[0].fileID = nextAccessor.fileID;
                     pAccessor[1].handle = currentAccessor.handle;
                     pAccessor[1].fileID = currentAccessor.fileID;
-
+                    
                     pCRC[0] = nextCRC;
                     pCRC[1] = currentCRC;
                     changesMadeThisPass = true;
@@ -211,7 +201,7 @@ void CacheMainFileAccessors()
 
 void ExtendedNitroVM::ZeroInitialize()
 {
-    ClearAndInit020d84f8(this, sizeof(ExtendedNitroVM));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(ExtendedNitroVM));
     status = Status_NotOpen;
     isBadState = false;
 }
@@ -265,7 +255,7 @@ bool ExtendedNitroVM::Close()
     else if (NitroVM_FinishRead(&machine))
         didSomething = true;
 
-    ClearAndInit020d84f8(this, sizeof(ExtendedNitroVM));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(ExtendedNitroVM));
     status = Status_NotOpen;
     isBadState = false;
     return didSomething;
@@ -332,7 +322,7 @@ unsigned int ExtendedNitroVM::Read(void* into, unsigned int capacity)
     case Status_Open:
         length = NitroVM_ReadAsync(&machine, into, capacity);
         while (GET_FLAG_BIT(machine.flags, NITROVM_FLAG_IN_HANDLE_QUEUE))
-            RunWhenCounterZero020d9788(1);
+            SleepIfResourceMutexNotLocked(1);
         break;
     case Status_2_Unknown:
         break;
@@ -349,7 +339,7 @@ unsigned int ExtendedNitroVM::Read(void* into, unsigned int capacity)
 bool ExtendedNitroVM::Abort()
 {
     bool wasProcessing = false;
-    func_020d970c();
+    LockResourceMutex();
 
     if (status == Status_Open)
     {
@@ -358,7 +348,7 @@ bool ExtendedNitroVM::Abort()
     }
     isBadState = true;
     
-    func_020d974c();
+    UnlockResourceMutex();
     return wasProcessing;
 }
 
@@ -409,7 +399,7 @@ unsigned int ExtendedNitroVM::DecompressWithScratchSpace(Decompressor& decompres
     unsigned int scratchSpaceUsedAmount = (decompressor.probablyDecompressedSize + 4) & ~3;
     if (scratchSpaceUsedAmount >= scratchSpaceCapacity)
         scratchSpaceUsedAmount = scratchSpaceCapacity;
-    ClearAndInit020d84f8((unsigned char*)scratchSpace + decompressor.probablyDecompressedSize, 
+    _Z20ClearAndInit020d84f8Pvj((unsigned char*)scratchSpace + decompressor.probablyDecompressedSize, 
         scratchSpaceUsedAmount - decompressor.probablyDecompressedSize);
     CleanInvalidateCacheRange(scratchSpace, scratchSpaceUsedAmount);
     outDecompressedLength = decompressor.probablyDecompressedSize;

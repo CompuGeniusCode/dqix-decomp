@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-extern "C" int func_0202fdd0(int a, int b);
-int GetData02104304Field4();
 
 struct Struct0216fd38 {
     volatile int field0;
@@ -13,7 +12,7 @@ struct Struct0216fd38 {
 ARM int CheckOrSetFlagA0_0216fd38(struct Struct0216fd38* obj) {
     if (obj->flagA0) return 1;
     if (obj->field0 < 0) return 0;
-    if (func_0202fdd0(GetData02104304Field4(), obj->field0) == 0) {
+    if (((BackgroundLoader*)((int)BackgroundLoader::GetInstance()))->GetTaskStatus((int)(obj->field0)) == 0) {
         return 0;
     }
     obj->flagA0 = 1;

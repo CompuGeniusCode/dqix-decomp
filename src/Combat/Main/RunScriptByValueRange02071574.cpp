@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 
 int LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength);
 
@@ -18,28 +17,28 @@ extern char data_0211e33c;
 ARM struct Obj02071488* RunScriptByValueRange02071574(unsigned int value, struct Obj02071488* obj) {
     unsigned int length;
 
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
 
     if (value >= 0x5208 && value < 0x9c40) {
         if (LoadFileIntoMemory(&data_020f0c24, &data_0211e33c, &length) &&
             RunScriptAndAdjustObj02071488((struct StreamHeader*)&data_0211e33c, length, value, obj)) {
-            HalveGlobalObjectCounter();
+            BackgroundLoader::RemoveLockGlobal();
             return obj;
         }
     } else if (value >= 0x9c40) {
         if (LoadFileIntoMemory(&data_020f0c45, &data_0211e33c, &length) &&
             RunScriptAndAdjustObj02071488((struct StreamHeader*)&data_0211e33c, length, value, obj)) {
-            HalveGlobalObjectCounter();
+            BackgroundLoader::RemoveLockGlobal();
             return obj;
         }
     } else {
         if (LoadFileIntoMemory(&data_020f0c5e, &data_0211e33c, &length) &&
             RunScriptAndAdjustObj02071488((struct StreamHeader*)&data_0211e33c, length, value, obj)) {
-            HalveGlobalObjectCounter();
+            BackgroundLoader::RemoveLockGlobal();
             return obj;
         }
     }
 
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     return NULL;
 }

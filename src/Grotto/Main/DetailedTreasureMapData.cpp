@@ -3,18 +3,16 @@
 #include "Grotto/Main/GrottoStruct.h"
 #include "Grotto/Overlay_17/Struct44C8.h"
 #include "Filesystem/FileIO.h"
+#include "Filesystem/BackgroundLoader.h"
 #include "System/Memory.h"
 #include "std_library_functions.h"
 #include <asmhacks.h>
 
 #ifdef jpn
-#define func_020a1df8 func_020a3b70
-#define func_020a1e54 func_020a3bcc
+#define _Z13PushInputLogAi func_020a3b70
+#define _Z19PopStack0AndTriggeri func_020a3bcc
 
-#define func_0200fdcc func_0200fc28
-
-#define func_0202f7c8 func_0202f338
-#define func_0202f7e8 func_0202f358
+#define _Z24GetCombatantAtField0x3acP12BattleStruct func_0200fc28
 
 #define func_02075098 func_02076224
 #define func_02075248 func_02076378
@@ -26,44 +24,26 @@
 
 extern "C"
 {
+    extern "C" void _Z13PushInputLogAi(unsigned int);
+    extern "C" void _Z19PopStack0AndTriggeri(unsigned int);
+
+    extern "C" unsigned int _Z24GetCombatantAtField0x3acP12BattleStruct(BattleStruct*);
     // zeroes out memory (not used in jpn version)
     void func_0200f374(void* where, unsigned int len);
     // copies character name into the buffer? (not used in jpn version)
     void func_020426bc(void*, char* buffer, int);
+
+    // Based on where it's called, this is probably returning a language-
+    // dependent string for "Lv. " (at least, if called with 1011 as arg).
+    // Not used in jpn version
+    extern "C" const char* _Z28CallFunc020e0434With02153694i(int);
+
+    // seems to get the game language. In the USA version, if it would
+    // return a value other than 2 or 5, it returns 1, which seems to reflect
+    // lack of support for German & Italian.
+    // not used in jpn version
+    extern "C" int _Z24NormalizeField5_0200fb08P14Struct0200fb08(BattleStruct*);
 }
-
-// The following were independently decompiled elsewhere under descriptive
-// names before this file was adopted; alias the placeholder identifiers
-// used throughout this file to those real (already-matching) symbols.
-void PushInputLogA(int id);
-#define func_020a1df8(x) PushInputLogA(x)
-
-void PopStack0AndTrigger(int flag);
-#define func_020a1e54(x) PopStack0AndTrigger(x)
-
-struct CombatantStruct;
-CombatantStruct* GetCombatantAtField0x3ac(BattleStruct*);
-#define func_0200fdcc(x) ((unsigned int)GetCombatantAtField0x3ac(x))
-
-// Based on where it's called, this is probably returning a language-
-// dependent string for "Lv. " (at least, if called with 1011 as arg).
-// Not used in jpn version
-int CallFunc020e0434With02153694(int value);
-#define func_020e51cc(x) ((const char*)CallFunc020e0434With02153694(x))
-
-// seems to get the game language. In the USA version, if it would
-// return a value other than 2 or 5, it returns 1, which seems to reflect
-// lack of support for German & Italian.
-// not used in jpn version
-struct Struct0200fb08;
-unsigned char NormalizeField5_0200fb08(Struct0200fb08*);
-#define func_0200fb08(x) ((int)NormalizeField5_0200fb08((Struct0200fb08*)(x)))
-
-void ShiftInBitOnGlobalObject();
-#define func_0202f7c8() ShiftInBitOnGlobalObject()
-
-void HalveGlobalObjectCounter();
-#define func_0202f7e8() HalveGlobalObjectCounter()
 
 #define BINARY_READ_AND_ADVANCE(buffer, offset, dst, len) \
     (VectorizedInvertedMemcpy((buffer) + (offset), (dst), (len)), offset += (len))
@@ -233,7 +213,7 @@ void DetailedTreasureMapData::RegularMapData::Populate(unsigned short newseed, u
     seed = newseed;
     srand(seed);
     quality = newquality;
-    func_020a1df8(4);
+    _Z13PushInputLogAi(4);
 
     GenerateUnknownData();
     GenerateEnviron();
@@ -257,7 +237,7 @@ void DetailedTreasureMapData::RegularMapData::Populate(unsigned short newseed, u
     GenerateNameBuffers();
     GeneratePopupName();
     
-    func_020a1e54(1);
+    _Z19PopStack0AndTriggeri(1);
 }
 
 unsigned short DetailedTreasureMapData::LegacyBossMapData::MaybeGetCurrentAlternateID() const
@@ -284,7 +264,7 @@ bool DetailedTreasureMapData::UpdateFollowingCompletion(bool levelledUp, unsigne
 #ifndef jpn
     // Based on how the jpn version works, I would guess this is undoing the
     // custom text encoding (e.g. lowercase a is 0x2A vs ascii 0x61)
-    void* playerRelatedPtr = *(void**)(func_0200fdcc(GetBattleStruct()) + 0x134);
+    void* playerRelatedPtr = *(void**)(_Z24GetCombatantAtField0x3acP12BattleStruct(GetBattleStruct()) + 0x134);
     char asciiName[10]; // maybe 12
     func_0200f374(asciiName, 10);
     func_020426bc(playerRelatedPtr, asciiName, 1);
@@ -440,7 +420,7 @@ void DetailedTreasureMapData::LegacyBossMapData::Populate(
 #if defined(usa)
     sprintf(mapNameNoLevel_v2, data_020f1ac0, mapNameNoLevel);
     strcpy(seeminglyEmptyBuffer, data_020f1ac3);
-    sprintf(mapLevelString, data_020f1ac4, func_020e51cc(1011), level);
+    sprintf(mapLevelString, data_020f1ac4, _Z28CallFunc020e0434With02153694i(1011), level);
     sprintf(topScreenName, data_020f1ac9, mapNameNoLevel, mapLevelString);
     sprintf(popupName, data_020f1ac9, bossName, mapLevelString);
 #elif defined(jpn)
@@ -462,7 +442,7 @@ void DetailedTreasureMapData::LegacyBossMapData::Populate(
 void DetailedTreasureMapData::LegacyBossMapData::WriteMapLevelString()
 {
 #if defined(usa)
-    const char* lvlPrefix = func_020e51cc(1011);
+    const char* lvlPrefix = _Z28CallFunc020e0434With02153694i(1011);
     sprintf(mapLevelString, data_020f1ac4, lvlPrefix, level);
 #elif defined(jpn)
     sprintf(mapLevelString, data_020f1c27, level);
@@ -865,7 +845,7 @@ void DetailedTreasureMapData::RegularMapData::GenerateNameBuffers()
 
     // choose the order of the words based on the language
     unsigned char partOrder[3]; 
-    switch (func_0200fb08(GetBattleStruct()))
+    switch (_Z24NormalizeField5_0200fb08P14Struct0200fb08(GetBattleStruct()))
     {
     // English & German
     // e.g. Granite (0) Tunnel (2) of Woe (1)
@@ -946,7 +926,7 @@ void DetailedTreasureMapData::RegularMapData::GenerateNameBuffers()
         }
     }
 
-    sprintf(levelString, data_020f1ad0, func_020e51cc(1011), level);
+    sprintf(levelString, data_020f1ad0, _Z28CallFunc020e0434With02153694i(1011), level);
     sprintf(topScreenName, data_020f1ad5, nameNoLevel, levelString);
 }
 
@@ -978,7 +958,7 @@ void DetailedTreasureMapData::RegularMapData::GeneratePopupName()
 
     // choose the order of the words based on the language
     unsigned char partOrder[3]; 
-    switch (func_0200fb08(GetBattleStruct()))
+    switch (_Z24NormalizeField5_0200fb08P14Struct0200fb08(GetBattleStruct()))
     {
     // English & German
     // e.g. Granite (0) Tunnel (2) of Woe (1)
@@ -1059,7 +1039,7 @@ void DetailedTreasureMapData::RegularMapData::GeneratePopupName()
         }
     }
 
-    sprintf(tempBuffer, data_020f1adb, func_020e51cc(1011), level);
+    sprintf(tempBuffer, data_020f1adb, _Z28CallFunc020e0434With02153694i(1011), level);
     strcat(popupName, tempBuffer);
 }
 
@@ -1240,7 +1220,7 @@ void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned c
         return;
     }
     
-    func_0202f7c8();
+    BackgroundLoader::AddLockGlobal();
     unsigned int archiveSize = 0;
     const unsigned char* usedArchive = data_0211e33c;
     
@@ -1250,7 +1230,7 @@ void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned c
     {
         if (!LoadFileIntoMemory(data_020f1ae4, const_cast<unsigned char*>(usedArchive), &archiveSize))
         {
-            func_0202f7e8();
+            BackgroundLoader::RemoveLockGlobal();
             return;
         }
     }
@@ -1261,11 +1241,11 @@ void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned c
     unsigned int innerFileSize;
     if (!GetFileInNarc(usedArchive, innerFileName, reinterpret_cast<const void**>(&innerFileData), &innerFileSize, 0))
     {
-        func_0202f7e8();
+        BackgroundLoader::RemoveLockGlobal();
         return;
     }
 
-    func_0202f7e8();
+    BackgroundLoader::RemoveLockGlobal();
 
     const unsigned char* copyOfInnerFilePtr;
     unsigned int loadlevel = legacy.level;

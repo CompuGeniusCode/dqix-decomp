@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
@@ -8,9 +9,7 @@ extern "C" int func_ov017_021d60f4(void* a);
 int AbsPlus159IfNegative0215ad2c(int x);
 struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 
-int GetData02104304Field4();
 struct SearchObj0202ff34;
-int FindTableEntryByFormattedName(SearchObj0202ff34*, char*, int*, int*);
 
 void ResetTimersAndBuffers0207e264(unsigned char* self);
 struct Obj0207e378;
@@ -40,7 +39,7 @@ extern "C" ARM int func_ov001_0215ef54(char* obj, int count) {
 
     int out1;
     int out2;
-    FindTableEntryByFormattedName((SearchObj0202ff34*)GetData02104304Field4(), buf, &out1, &out2);
+    ((BackgroundLoader*)((SearchObj0202ff34*)(int)BackgroundLoader::GetInstance()))->GetLoadedFileByName((const char*)(buf), (void**)(&out1), (unsigned int*)(&out2));
     if (out1 != 0) {
         SetBufferAndFlushCache0207e378((struct Obj0207e378*)newBuf, (char*)alloc + 4, (void*)out1, out2, 0);
     } else {

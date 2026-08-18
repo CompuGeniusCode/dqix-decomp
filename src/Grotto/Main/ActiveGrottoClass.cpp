@@ -1,17 +1,17 @@
 #include "Grotto/Main/ActiveGrottoClass.h"
-bool IsInRange0201b588(int);
 #include "Combat/Main/BattleList.h"
+#include "Grotto/Main/TreasureMapDataStructs.h"
 #include <globaldefs.h>
 
 #ifdef jpn
     #define func_020323c4 func_02031efc
 
     #define func_02012fe4 func_02012dac
-    #define func_0201b588 func_0201b300
+    #define _Z17IsInRange0201b588i func_0201b300
 
     #define func_020a3720 func_020a5498
     #define func_020a395c func_020a5698
-    #define ExportDetailedTreasureMapData func_020a5770
+    #define func_020a3a34 func_020a5770
 #endif
 
 extern "C"
@@ -24,14 +24,13 @@ extern "C"
 
     // Returns true if the value is between 40001 and 41505, respectively.
     // Most likely these are the zone IDs corresponding to grottos.
+    extern "C" bool _Z17IsInRange0201b588i(unsigned short zoneID);
 
     // No idea what these do, but they seem to be called before and after
-    // each call to ExportDetailedTreasureMapData.
+    // each call to func_020a3a34.
     void func_020a3720();
     void func_020a395c();
 }
-
-bool ExportDetailedTreasureMapData(const TreasureMapMetadata*, DetailedTreasureMapData*, bool, const unsigned char*);
 
 // USA: func_0209fe68
 // JPN: func_02090780
@@ -160,7 +159,7 @@ int ActiveGrottoClass::GetFloorCount() const
 {
     GrottoStruct* grotto = GetGrottoStruct(GetBattleStruct());
     void* zone = func_02012fe4();
-    if (!IsInRange0201b588((int)(*(unsigned short*)zone)))
+    if (!_Z17IsInRange0201b588i(*(unsigned short*)zone))
         return 0;
 
     if (grotto->activeMapData.GetMapType() == TreasureMapType_Legacy)
@@ -170,7 +169,7 @@ int ActiveGrottoClass::GetFloorCount() const
     {
         func_020a3720();
         DetailedTreasureMapData data;
-        ExportDetailedTreasureMapData(&grotto->activeMapData, &data, true, NULL);
+        ExportDetailedTreasureMapData(&grotto->activeMapData, &data, 1, 0);
         func_020a395c();
         return data.regular.floorCount;
     }
@@ -195,7 +194,7 @@ const char* ActiveGrottoClass::GetPopupName() const
     // Would have to call another function after this which uses the stack.
     func_020a3720();
     DetailedTreasureMapData data;
-    ExportDetailedTreasureMapData(&grotto->activeMapData, &data, true, NULL);
+    ExportDetailedTreasureMapData(&grotto->activeMapData, &data, 1, 0);
     func_020a395c();
 
     if (data.mapType == TreasureMapType_Legacy)

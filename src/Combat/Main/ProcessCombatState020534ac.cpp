@@ -1,16 +1,14 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
 struct FlagWord02046708;
 void* GetDataPtr02114e04_020d6c00(void);
 int TestFlags02046708(struct FlagWord02046708* word, unsigned int mask);
-int GetData02104304Field4(void);
 
 struct List0202fe68;
-int LookupListValueByKey(struct List0202fe68* obj, int key);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 
 struct Foo0207df50;
 void CopyInternalFields0207df50(struct Foo0207df50* p);
@@ -19,7 +17,6 @@ void BackupPairTables0207dfac(char* obj);
 
 extern "C" void func_0204719c(void);
 extern "C" void func_02047b40(void* a, int b, void* c);
-extern "C" void func_020301c8(void* obj, int key);
 extern "C" void func_0205308c(void* ctx, int val);
 
 // USA: func_020534ac
@@ -39,10 +36,10 @@ ARM void ProcessCombatState020534ac(char* ctx) {
         return;
     }
 
-    obj = (void*)GetData02104304Field4();
+    obj = (void*)(int)BackgroundLoader::GetInstance();
 
-    if (LookupListValueByKey((struct List0202fe68*)obj, *(int*)(ctx + 0x194)) == 2) {
-        GetListEntryValues0202fec8((struct List0202fec8*)obj, *(int*)(ctx + 0x194), &out1, &out2);
+    if (((BackgroundLoader*)((struct List0202fe68*)obj))->GetDetailedTaskStatus((int)(*(int*)(ctx + 0x194))) == 2) {
+        ((BackgroundLoader*)((struct List0202fec8*)obj))->GetLoadedFileByID((int)(*(int*)(ctx + 0x194)), (void**)(&out1), (unsigned int*)(&out2));
         if (out1 != 0) {
             base = *(int*)(ctx + 0x154);
             blockA = (char*)(base + 0x168);
@@ -60,7 +57,7 @@ ARM void ProcessCombatState020534ac(char* ctx) {
         }
     }
 
-    func_020301c8(obj, *(int*)(ctx + 0x194));
+    ((BackgroundLoader*)(obj))->RemoveTask((int)(*(int*)(ctx + 0x194)));
     *(int*)(ctx + 0x194) = -1;
     *(unsigned char*)(ctx + 0x185) = 0;
 

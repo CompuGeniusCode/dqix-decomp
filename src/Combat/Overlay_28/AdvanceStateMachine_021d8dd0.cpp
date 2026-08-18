@@ -1,10 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "System/Cache.h"
 #include "std_library_functions.h"
 
 extern "C" void* _Z17GetGlobal02109400v();
-extern "C" void* _Z21GetData02104304Field4v();
 extern "C" void* _Z15GetBattleStructv();
 extern "C" void* _Z10GetWord0x0Pi(void* battle);
 extern "C" void func_02094ab0(void*);
@@ -32,11 +32,7 @@ extern "C" void _Z14CopyToPaletteBiij(int, int, unsigned int);
 extern "C" void _Z26TransferToSubBg1ScreenBaseiij(int, int, unsigned int);
 extern "C" void _Z22TransferSubBg1CharDataiij(int, int, unsigned int);
 
-extern "C" int _Z23CallFunc0202fa38ZeroPadiii(int, int, int);
-extern "C" int func_0202fdd0(void*, int);
-extern "C" void _Z26GetListEntryValues0202fec8P12List0202fec8iPiS1_(void*, int, int*, int*);
 extern "C" void func_ov028_021d98e0(void*, void*, int, int);
-extern "C" void func_020301c8(void*, int);
 extern "C" int _Z28CheckField0x14Or0x20PositivePi(void*);
 
 extern int data_ov028_021d9aa0;
@@ -44,7 +40,7 @@ extern int data_ov028_021d9aa0;
 // USA: func_ov028_021d8dd0  (semantic: AdvanceStateMachine_021d8dd0)  (semantic: AdvanceStateMachine_021d8dd0)
 extern "C" ARM void func_ov028_021d8dd0(unsigned char* self) {
     void* g = _Z17GetGlobal02109400v();
-    void* data = _Z21GetData02104304Field4v();
+    void* data = BackgroundLoader::GetInstance();
     void* battle = _Z15GetBattleStructv();
     void* word = _Z10GetWord0x0Pi(battle);
     unsigned char state = self[0x81];
@@ -116,18 +112,18 @@ extern "C" ARM void func_ov028_021d8dd0(unsigned char* self) {
 
         self[0x81] = self[0x81] + 1;
     } else if (state == 3) {
-        int r = _Z23CallFunc0202fa38ZeroPadiii((int)data, (int)&data_ov028_021d9aa0, 0);
+        int r = ((BackgroundLoader*)((int)data))->QueueLoadFile((const char*)((int)&data_ov028_021d9aa0), (SafeAllocator*)(0));
         *(int*)(self + 0x70) = r;
         self[0x81] = self[0x81] + 1;
     } else if (state == 4) {
-        if (func_0202fdd0(data, *(int*)(self + 0x70)) != 0) {
+        if (((BackgroundLoader*)(data))->GetTaskStatus((int)(*(int*)(self + 0x70))) != 0) {
             int a, b;
-            _Z26GetListEntryValues0202fec8P12List0202fec8iPiS1_(data, *(int*)(self + 0x70), &a, &b);
+            ((BackgroundLoader*)(data))->GetLoadedFileByID((int)(*(int*)(self + 0x70)), (void**)(&a), (unsigned int*)(&b));
             if (a != 0 && b != 0) {
                 ((SafeAllocator*)(self + 0x44))->Reset();
                 func_ov028_021d98e0(self, self + 0x44, a, b);
             }
-            func_020301c8(data, *(int*)(self + 0x70));
+            ((BackgroundLoader*)(data))->RemoveTask((int)(*(int*)(self + 0x70)));
             *(int*)(self + 0x70) = -1;
             self[0x81] = self[0x81] + 1;
         }

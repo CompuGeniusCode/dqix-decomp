@@ -1,15 +1,13 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
 
-extern int GetData02104304Field4();
 extern "C" int func_ov017_021d60f4(void* a);
 extern int AbsPlus159IfNegative0215ad2c(int x);
 extern "C" int func_ov017_0218b5b0(void);
 int GetFieldPtrA0_021bbbe4(void* p);
-extern void ShiftInBitOnGlobalObject(void);
-extern void HalveGlobalObjectCounter(void);
 unsigned int LoadResourceIntoGlobalBuffer_0215a750(const char* path, void** outPtr);
 extern SafeAllocator* data_ov001_021658b8[8];
 extern char data_ov001_021657df[];
@@ -42,17 +40,17 @@ extern "C" ARM int func_ov001_0216066c(void* self) {
     int id;
 
     bs = GetBattleStruct();
-    GetData02104304Field4();
+    (int)BackgroundLoader::GetInstance();
     allocator = data_ov001_021658b8[0];
     id = AbsPlus159IfNegative0215ad2c(func_ov017_021d60f4(self));
     base = func_ov017_0218b5b0();
     base = *(int*)((char*)base + 0x3000 + 0x734);
     base = GetFieldPtrA0_021bbbe4((void*)base);
     sprintf(path, data_ov001_021657df, base + 0x4);
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     size = LoadResourceIntoGlobalBuffer_0215a750(path, &outPtr);
     if (size == 0) {
-        HalveGlobalObjectCounter();
+        BackgroundLoader::RemoveLockGlobal();
         return 0;
     }
     newObj = allocator->Allocate(0xac);
@@ -62,7 +60,7 @@ extern "C" ARM int func_ov001_0216066c(void* self) {
     ctx.size = size;
     ctx.flag = 1;
     RunWithLock02036410((int)newObj, (int)&ctx);
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     RegisterCombatantSlot(bs, id, (struct CombatantStruct*)newObj);
     SetShorts0x5cTo0x60((struct Shorts5c_374e0*)newObj, 0x10a, 0x10a, 0x10a);
     func_020370a0(newObj, 0, 0);

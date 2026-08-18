@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 
 struct ResetStruct;
 int ResetFieldsReturnTrue(struct ResetStruct* s);
@@ -32,7 +31,7 @@ ARM void RegisterObjectAndRunScript0218e098(struct Obj0218e098* param0, int para
 
     param0->field8 = param1;
     data_ov016_0219d1bc = param0;
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
 
     struct StreamHeader* header = (struct StreamHeader*)LoadFileIntoMemory(data_ov016_0219d054, data_0211e33c, &count);
     if (header != 0) {
@@ -41,6 +40,6 @@ ARM void RegisterObjectAndRunScript0218e098(struct Obj0218e098* param0, int para
         InitBufferReader((struct StreamState*)local, header, count);
         RunLoopIfValid02030774((struct Struct02030774*)local);
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     param0->field8 = 0;
 }

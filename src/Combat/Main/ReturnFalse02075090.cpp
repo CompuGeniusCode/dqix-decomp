@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-// USA: func_02075090
+// USA: _Z19ReturnFalse02075090PKc
 ARM int ReturnFalse02075090(const char*) {
     return 0;
 }

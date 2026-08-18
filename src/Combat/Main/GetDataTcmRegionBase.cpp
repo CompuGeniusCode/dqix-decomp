@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-// USA: func_020c89e4
+// USA: _Z20GetDataTcmRegionBasev
 ARM unsigned int GetDataTcmRegionBase(void) {
     unsigned int v;
     asm {

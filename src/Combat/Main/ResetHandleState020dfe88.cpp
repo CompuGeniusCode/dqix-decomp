@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int handle);
 
 struct Obj020dfe88 {
     char pad[0xe];
@@ -12,9 +11,9 @@ struct Obj020dfe88 {
 
 // USA: func_020dfe88
 ARM int ResetHandleState020dfe88(struct Obj020dfe88* obj) {
-    int src = GetData02104304Field4();
+    int src = (int)BackgroundLoader::GetInstance();
     if (obj->handle >= 0) {
-        func_020301c8(src, obj->handle);
+        ((BackgroundLoader*)(src))->RemoveTask((int)(obj->handle));
         obj->handle = -1;
     }
     obj->field_e = 0;

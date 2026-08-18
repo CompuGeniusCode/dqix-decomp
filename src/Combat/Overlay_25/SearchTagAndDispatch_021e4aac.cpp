@@ -1,18 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 #include "Combat/Main/BattleList.h"
 
-int GetData02104304Field4();
 void* GetArrayEntry_021e8a54_021e8a54(char* obj);
 int FindTagAndCopy_021e24d0(char* s, char* out2, char* out1);
 
 struct SearchObj0202ffd8;
-int FindTableEntryByTwoNames(struct SearchObj0202ffd8* obj, char* name1, char* name2, int* out1, int* out2);
 struct SearchObj0202ff34;
-int FindTableEntryByFormattedName(struct SearchObj0202ff34* obj, char* name, int* out1, int* out2);
 int DispatchByIndex021820bc(void* obj, int unused, int index, int arg);
 extern "C" void func_ov025_021e267c(int combatantId, int arg1, int arg2, int flag);
-extern "C" void func_020301c8(int handle, int id);
 struct RemoveList021eb084;
 void RemoveMatchingShort_021eb084(struct RemoveList021eb084* obj, int val);
 
@@ -29,7 +26,7 @@ struct Param021e4aac {
 // USA: func_ov025_021e4aac  (semantic: SearchTagAndDispatch_021e4aac)
 extern "C" ARM int func_ov025_021e4aac(struct Param021e4aac* p, int unused, int unusedR2, void* dispatchObj) {
     GetBattleStruct();
-    int handle = GetData02104304Field4();
+    int handle = (int)BackgroundLoader::GetInstance();
     GetArrayEntry_021e8a54_021e8a54(*(char**)((char*)&data_ov025_021ef988 + 0xc));
 
     char buf[0x50];
@@ -49,9 +46,9 @@ extern "C" ARM int func_ov025_021e4aac(struct Param021e4aac* p, int unused, int 
     int out2;
     int id;
     if (FindTagAndCopy_021e24d0(buf, name1, name2)) {
-        id = FindTableEntryByTwoNames((struct SearchObj0202ffd8*)handle, name1, name2, &out1, &out2);
+        id = ((BackgroundLoader*)((struct SearchObj0202ffd8*)handle))->GetLoadedFileInArchive((const char*)(name1), (const char*)(name2), (void**)(&out1), (unsigned int*)(&out2));
     } else {
-        id = FindTableEntryByFormattedName((struct SearchObj0202ff34*)handle, buf, &out1, &out2);
+        id = ((BackgroundLoader*)((struct SearchObj0202ff34*)handle))->GetLoadedFileByName((const char*)(buf), (void**)(&out1), (unsigned int*)(&out2));
     }
 
     if (out1 != 0) {
@@ -64,7 +61,7 @@ extern "C" ARM int func_ov025_021e4aac(struct Param021e4aac* p, int unused, int 
         }
     }
 
-    func_020301c8(handle, id);
+    ((BackgroundLoader*)(handle))->RemoveTask((int)(id));
     RemoveMatchingShort_021eb084((struct RemoveList021eb084*)(*(char**)((char*)&data_ov025_021ef988 + 0xc)), id);
     return 1;
 }

@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-// USA: func_020ca7e0
+// USA: _Z10AtomicSwapiPi
 ARM int AtomicSwap(int value, int* addr) {
     asm {
         swp value, value, [addr]

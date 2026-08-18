@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
 struct ResetStruct {
     int w0;
@@ -26,8 +27,6 @@ extern "C" void func_0203066c(void* p, void* q);
 struct Struct02030774;
 int RunLoopIfValid02030774(struct Struct02030774* p);
 
-void ShiftInBitOnGlobalObject();
-void HalveGlobalObjectCounter(void);
 extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePath, unsigned int* outSize);
 
 struct Pair020a818c { void* a; void* b; };
@@ -39,7 +38,7 @@ extern int data_020f1b6c;
 
 // USA: func_020a818c  (semantic: SetupPairAndRunBufferedScript_020a818c)
 extern "C" ARM void func_020a818c(void* param0, void* param1) {
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     int localVar = 0;
     void* result = ExtractFileFromGP2((const char*)&data_020f1b97, (const char*)&data_020f1baa, (unsigned int*)&localVar);
     if (result != 0) {
@@ -51,5 +50,5 @@ extern "C" ARM void func_020a818c(void* param0, void* param1) {
         InitBufferReader((struct StreamState*)&local, (struct StreamHeader*)result, localVar);
         RunLoopIfValid02030774((struct Struct02030774*)&local);
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

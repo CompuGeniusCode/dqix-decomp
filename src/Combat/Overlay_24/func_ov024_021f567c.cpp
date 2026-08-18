@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Overlay_0/GetCombatantByID.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 extern "C" int func_ov000_0215e9fc(int a, short* buf, int max, int start);
 int IsCombatantFlagMask512_021eda60(struct CombatantStruct* combatant);

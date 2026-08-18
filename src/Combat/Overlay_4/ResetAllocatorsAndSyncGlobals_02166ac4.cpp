@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
 
 extern char* data_ov004_0217101c;
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 extern "C" void* func_0205ec34(void);
 int* GetGlobal02109418(void);
 int GetGlobalField0x1c020421a0(void);
@@ -12,9 +11,9 @@ int GetGlobalField0x1c020421a0(void);
 // USA: func_ov004_02166ac4  (semantic: ResetAllocatorsAndSyncGlobals_02166ac4)
 extern "C" ARM int func_ov004_02166ac4() {
     char* base = data_ov004_0217101c;
-    int a = GetData02104304Field4();
+    int a = (int)BackgroundLoader::GetInstance();
     int b = *(int*)(base + 0x44);
-    func_020301c8(a, b);
+    ((BackgroundLoader*)(a))->RemoveTask((int)(b));
     *(int*)(base + 0x44) = -1;
     ((SafeAllocator*)(base + 0x30))->Destroy();
     ((SafeAllocator*)(base + 0x1c))->Destroy();

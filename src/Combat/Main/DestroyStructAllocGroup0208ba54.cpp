@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
-extern "C" void func_020301c8(int, int);
 extern "C" void func_0208b9a0(void*, int);
 
-int GetData02104304Field4();
 void* GetDataPtr02114e04_020d6c00(void);
 struct FlagWord020466f4;
 void ClearFlags020466f4(struct FlagWord020466f4* word, unsigned int mask);
@@ -18,10 +17,10 @@ struct StructAllocGroup0208ba54 {
 
 // USA: func_0208ba54
 ARM void DestroyStructAllocGroup0208ba54(struct StructAllocGroup0208ba54* self) {
-    int v = GetData02104304Field4();
-    func_020301c8(v, self->field_bc);
+    int v = (int)BackgroundLoader::GetInstance();
+    ((BackgroundLoader*)(v))->RemoveTask((int)(self->field_bc));
     self->field_bc = -1;
-    func_020301c8(v, self->field_c0);
+    ((BackgroundLoader*)(v))->RemoveTask((int)(self->field_c0));
     self->field_c0 = -1;
 
     if (self->allocatorArray != NULL) {

@@ -1,14 +1,11 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "std_library_functions.h"
 
 extern "C" int func_02005a94(signed char* p);
 extern "C" void func_ov023_021e0f44(void* obj);
 
-int GetData02104304Field4();
-extern "C" int func_0202fdd0(int a, int b);
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
-extern "C" void func_020301c8(int a, int b);
 extern "C" int func_020e0028(void* p, void* b, int out1, int out2, void* p2, int field84);
 
 int CopyIndexedRegion0x75f0(void* unused, short* indices, int* dest, int count);
@@ -95,18 +92,18 @@ extern "C" ARM int func_ov023_021e0c80(void* obj) {
         return -1;
     }
 
-    int listPtr = GetData02104304Field4();
-    if (!func_0202fdd0(listPtr, *(int*)((char*)obj + 0x750))) {
+    int listPtr = (int)BackgroundLoader::GetInstance();
+    if (!((BackgroundLoader*)(listPtr))->GetTaskStatus((int)(*(int*)((char*)obj + 0x750)))) {
         goto retf_021e0c80;
     }
 
-    GetListEntryValues0202fec8((struct List0202fec8*)listPtr, *(int*)((char*)obj + 0x750), &out1, &out2);
+    ((BackgroundLoader*)((struct List0202fec8*)listPtr))->GetLoadedFileByID((int)(*(int*)((char*)obj + 0x750)), (void**)(&out1), (unsigned int*)(&out2));
     if (out1 != 0 && out2 != 0) {
         unsigned short cnt = *(unsigned short*)((char*)obj + 0xc2);
         func_020e0028((char*)obj + 0xa4, (char*)obj + 0x28, out1, out2, (char*)obj + 0xbc, cnt);
     }
 
-    func_020301c8(listPtr, *(int*)((char*)obj + 0x750));
+    ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)((char*)obj + 0x750)));
     *(int*)((char*)obj + 0x750) = -1;
     func_ov023_021e0f44(obj);
     return -1;

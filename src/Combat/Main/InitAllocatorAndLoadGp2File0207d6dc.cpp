@@ -1,12 +1,11 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
 #include "Filesystem/FileIO.h"
 
 void* AllocateAligned4(AllocatorUnion* alloc, unsigned int size);
 void ZeroInit020de848(void* obj);
-void ShiftInBitOnGlobalObject();
-void HalveGlobalObjectCounter();
 
 extern "C" void* func_020de9a4(void* a, void* b, void* c, unsigned int d, int e, unsigned int f);
 
@@ -21,13 +20,13 @@ ARM void* InitAllocatorAndLoadGp2File0207d6dc(SafeAllocator* self, int param1, i
     self->CreateTypeA(mem, allocSize);
     self->Reset();
     ZeroInit020de848((char*)self + 0x14);
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
     unsigned int fileSize = 0;
     void* fileData = ExtractFileFromGP2(data_020f2a38, data_020f2a30, &fileSize);
     if (fileData != NULL) {
         func_020de9a4((char*)self + 0x14, self, fileData, fileSize, param1, (unsigned int)param2 & 0xffff);
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     *(void**)((char*)self + 0x2c) = (char*)self + 0x14;
     return (char*)self + 0x14;
 }

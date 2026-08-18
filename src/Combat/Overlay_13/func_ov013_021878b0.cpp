@@ -1,14 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_02030110(void* obj);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
-extern "C" void func_020301c8(int, int);
 
-extern "C" int func_0202fdd0(void* obj, int key);
 
 struct List0202fec8;
-void GetListEntryValues0202fec8(struct List0202fec8* obj, int id, int* out1, int* out2);
 struct ActiveEntry02046900;
 int CountActiveEntries(struct ActiveEntry02046900* entry);
 struct Rec020467f0;
@@ -44,7 +39,7 @@ struct LocalBuf021878b0 {
 // USA: func_ov013_021878b0  (semantic: HandleQueuedListEntry021878b0)
 extern "C" ARM void func_ov013_021878b0(void* obj) {
     unsigned char* o = (unsigned char*)obj;
-    int g = GetData02104304Field4();
+    int g = (int)BackgroundLoader::GetInstance();
     unsigned char flag = o[0x66];
 
     if (flag == 0) {
@@ -54,15 +49,15 @@ extern "C" ARM void func_ov013_021878b0(void* obj) {
             (*(unsigned char**)(o + 0x58))[i] = 2;
         }
         *(signed char*)(o + 0x6a) = -1;
-        func_02030110((void*)g);
-        *(int*)(o + 0x5c) = CallFunc0202fa38ZeroPad(g, (int)&data_ov013_02187eaf, 0);
+        ((BackgroundLoader*)((void*)g))->MaybeFreeAllocations();
+        *(int*)(o + 0x5c) = ((BackgroundLoader*)(g))->QueueLoadFile((const char*)((int)&data_ov013_02187eaf), (SafeAllocator*)(0));
         o[0x66]++;
     } else if (flag == 1) {
-        if (func_0202fdd0((void*)g, *(int*)(o + 0x5c)) != 0) {
+        if (((BackgroundLoader*)((void*)g))->GetTaskStatus((int)(*(int*)(o + 0x5c))) != 0) {
             void* recOut;
             int out1, out2;
             int field44;
-            GetListEntryValues0202fec8((struct List0202fec8*)g, *(int*)(o + 0x5c), &out1, &out2);
+            ((BackgroundLoader*)((struct List0202fec8*)g))->GetLoadedFileByID((int)(*(int*)(o + 0x5c)), (void**)(&out1), (unsigned int*)(&out2));
             CountActiveEntries((struct ActiveEntry02046900*)out1);
             void* end = FindRecordByIndex((struct Rec020467f0*)out1, 0, &recOut, &field44);
             if (end != 0) {
@@ -76,7 +71,7 @@ extern "C" ARM void func_ov013_021878b0(void* obj) {
                 func_ov013_02187a58(obj, &buf);
                 func_0204b174(o + 0x28, end, 0, field44);
             }
-            func_020301c8(g, *(int*)(o + 0x5c));
+            ((BackgroundLoader*)(g))->RemoveTask((int)(*(int*)(o + 0x5c)));
             *(int*)(o + 0x5c) = -1;
             void* e = GetEntryByIndexStride0x10((struct EntryList0204af14*)(o + 0x28), 0);
             if (e != 0) {

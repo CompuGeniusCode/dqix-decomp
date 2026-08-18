@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Filesystem/NarcHandle.h"
 
 void* AllocateAligned4(AllocatorUnion* alloc, unsigned int size);
-void ShiftInBitOnGlobalObject(void);
-void HalveGlobalObjectCounter(void);
 void* LoadFileIntoMemory(const char*, void*, unsigned int*);
 void LoadEightEntriesFromTable(char*, void*);
 
@@ -29,7 +28,7 @@ extern "C" ARM void func_0202f24c(struct EntryTable0202f24c* obj) {
     } else {
         obj->alloc->Reset();
     }
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
 
     unsigned int size;
     void* fileData = LoadFileIntoMemory(data_020ef7ac, data_0211e33c, &size);
@@ -40,5 +39,5 @@ extern "C" ARM void func_0202f24c(struct EntryTable0202f24c* obj) {
             handle.Destroy();
         }
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

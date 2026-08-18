@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
 struct FourWords;
-void ClearFourWords(struct FourWords* p);
+extern "C" void _Z19ZeroInitializeMutexP5Mutex(struct FourWords* p);
 
 struct GuardStruct_0220ef5c {
     unsigned char guard;
@@ -24,5 +24,5 @@ ARM void InitOnce_0220ef5c(void) {
     data_ov031_0224e540.field24 = 0;
     data_ov031_0224e540.field8 = 0;
     data_ov031_0224e540.field4 = 0;
-    ClearFourWords(&data_ov031_0224e54c);
+    _Z19ZeroInitializeMutexP5Mutex(&data_ov031_0224e54c);
 }

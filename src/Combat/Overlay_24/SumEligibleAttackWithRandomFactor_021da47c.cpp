@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 extern "C" int func_ov000_0215e9fc(int battle, unsigned short* table, int count, int flag);
 extern unsigned short data_ov024_021fe6c8;

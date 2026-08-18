@@ -4,7 +4,7 @@ unsigned int DisableIRQInterrupts(void);
 unsigned int SetIRQInterruptState(int mask);
 void DispatchType0x11InitOnce(int, int);
 
-// USA: func_020d1234
+// USA: _Z24SyncIfBufferValueChangedj
 ARM asm void SyncIfBufferValueChanged(unsigned int newVal) {
         stmdb sp!, {r3, r4, lr}
         sub sp, sp, #4

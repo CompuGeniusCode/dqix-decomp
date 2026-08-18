@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
 #include "Combat/Overlay_0/GetCombatantByID.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 struct FlagInner_021dd010 { char unk[0x14]; int flags; };
 struct FlagObj_021dd010 { char unk[0x138]; struct FlagInner_021dd010* inner; };

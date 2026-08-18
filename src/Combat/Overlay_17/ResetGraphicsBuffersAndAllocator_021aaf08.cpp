@@ -1,10 +1,9 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4(void);
-extern "C" void func_020301c8(int a, int b);
 struct NotifyEntriesStruct0207f8bc;
 void FlushNotifyEntries(struct NotifyEntriesStruct0207f8bc* p);
 extern "C" int func_ov017_0218b5b0(void);
@@ -22,9 +21,9 @@ extern int data_02114e20;
 
 // USA: func_ov017_021aaf08  (semantic: ResetGraphicsBuffersAndAllocator_021aaf08)
 extern "C" ARM void func_ov017_021aaf08(char* self) {
-    int listPtr = GetData02104304Field4();
+    int listPtr = (int)BackgroundLoader::GetInstance();
     if (*(int*)(self + 0x50) >= 0) {
-        func_020301c8(listPtr, *(int*)(self + 0x50));
+        ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)(self + 0x50)));
         *(int*)(self + 0x50) = -1;
     }
 

@@ -1,16 +1,15 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Filesystem/FileIO.h"
 #include "Memory/SafeAllocator.h"
 #include "Memory/AllocatorUnion.h"
 #include "System/Memory.h"
 
 void* AllocateAligned4(AllocatorUnion* alloc, unsigned int size);
-void ShiftInBitOnGlobalObject();
 char* FindEntryAndGetNext(void* a, char* b, void** outField44);
 int GetCharBlock(void* file, void** out);
 struct Hdr02b0288;
 int FindPlttChunkAndRelocate(struct Hdr02b0288* h, void** out);
-void HalveGlobalObjectCounter(void);
 extern "C" void func_020c9be0(void);
 
 extern AllocatorUnion data_02114e20;
@@ -52,7 +51,7 @@ ARM void LoadObjLoadingGraphicsResources(Manager020db0f0* mgr) {
 
     mgr->allocator.CreateTypeA(AllocateAligned4(&data_02114e20, 0x300), 0x300);
     mgr->allocator.Reset();
-    ShiftInBitOnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
 
     buf = data_0211e33c;
 
@@ -82,5 +81,5 @@ ARM void LoadObjLoadingGraphicsResources(Manager020db0f0* mgr) {
     mgr->plttBuf = mgr->allocator.Allocate(mgr->plttBufSize);
     VectorizedInvertedMemcpy(plttChunk->data, mgr->plttBuf, mgr->plttBufSize);
 
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
 }

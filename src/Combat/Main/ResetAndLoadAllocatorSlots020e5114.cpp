@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 #include "Filesystem/FileIO.h"
 
@@ -17,9 +18,6 @@ struct Slot020e5114 {
 extern Slot020e5114 data_02153694[2];
 extern SafeAllocator data_02153680;
 
-void ShiftInBitOnGlobalObject();
-void CallFunc02030110OnGlobalObject();
-void HalveGlobalObjectCounter();
 
 extern "C" void func_020dfec0(void* dest, void* allocator, void* fileData, unsigned int size);
 
@@ -31,8 +29,8 @@ extern char data_020f2e0e;
 // USA: func_020e5114
 ARM int ResetAndLoadAllocatorSlots020e5114(void) {
     data_02153680.Reset();
-    ShiftInBitOnGlobalObject();
-    CallFunc02030110OnGlobalObject();
+    BackgroundLoader::AddLockGlobal();
+    BackgroundLoader::FreeAllocationsGlobal();
     for (int i = 0; i < 2; i++) {
         Slot020e5114* slot = &data_02153694[i];
         ResetStruct020dfc40(&slot->inner);
@@ -47,6 +45,6 @@ ARM int ResetAndLoadAllocatorSlots020e5114(void) {
             func_020dfec0(slot, &data_02153680, fileData, size);
         }
     }
-    HalveGlobalObjectCounter();
+    BackgroundLoader::RemoveLockGlobal();
     return 0;
 }

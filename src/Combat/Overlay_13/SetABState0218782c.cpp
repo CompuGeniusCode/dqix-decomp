@@ -1,7 +1,6 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 
-int GetData02104304Field4();
-extern "C" void func_020301c8(int a, int b);
 
 // USA: func_ov013_0218782c  (semantic: SetABState0218782c)
 extern "C" ARM void func_ov013_0218782c(void* obj, int a, int b) {
@@ -16,8 +15,8 @@ extern "C" ARM void func_ov013_0218782c(void* obj, int a, int b) {
     o[0x68] = (char)b;
 
     if (*(int*)(o + 0x5c) >= 0) {
-        int p = GetData02104304Field4();
-        func_020301c8(p, *(int*)(o + 0x5c));
+        int p = (int)BackgroundLoader::GetInstance();
+        ((BackgroundLoader*)(p))->RemoveTask((int)(*(int*)(o + 0x5c)));
         *(int*)(o + 0x5c) = -1;
     }
 

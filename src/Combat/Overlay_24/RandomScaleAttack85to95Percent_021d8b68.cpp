@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 // USA: func_ov024_021d8b68
 ARM int RandomScaleAttack85to95Percent_021d8b68(struct Random** rngPtr, int id, int a2, int a3, int a4, int val) {

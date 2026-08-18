@@ -1,8 +1,7 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Grotto/Overlay_17/Struct44C8.h"
 
-int GetData02104304Field4(void);
-int GetField0x124(void* obj);
 int CheckField0x14Or0x20Positive(int* obj);
 void SetBothCounters(void* obj, int value, int frames);
 extern "C" void func_ov017_021a2fa0(void* ov);
@@ -18,7 +17,7 @@ struct Obj021c16cc {
 // USA: func_ov017_021c16cc  (semantic: UpdateFieldsAndCounters_021c16cc)
 extern "C" ARM void func_ov017_021c16cc(Obj021c16cc* self) {
     Struct_ov017_44C8* ov = func_ov017_0218b5b0();
-    int data = GetData02104304Field4();
+    int data = (int)BackgroundLoader::GetInstance();
     signed char state = self->field8;
     if (state == 0) {
         SetBothCounters(ov, -0x10, 0xf);
@@ -31,7 +30,7 @@ extern "C" ARM void func_ov017_021c16cc(Obj021c16cc* self) {
     if (CheckField0x14Or0x20Positive((int*)ov) != 0) {
         return;
     }
-    if (GetField0x124((void*)data) > 0) {
+    if (((BackgroundLoader*)((void*)data))->GetNumQueuedTasks() > 0) {
         return;
     }
     func_ov017_021a2fa0(ov);

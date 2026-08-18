@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
 #include "Combat/Overlay_0/GetCombatantByID.h"
-#include "System/Random.h"
+#include "Util/Random.h"
 
 struct CombatantStruct* GetCombatantWithFlag0x400ByID(int unused, int id);
 struct S_bf3c_021f1440;

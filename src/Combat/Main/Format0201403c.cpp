@@ -1,11 +1,10 @@
 #include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
 #include "Grotto/Main/ActiveGrottoClass.h"
 #include "std_library_functions.h"
 
-int GetData02104304Field4();
 int IsInRange0201b5b0(int id);
 int IsValueInRange0201b5d8(int x);
-int CallFunc0202fa38ZeroPad(int a, int b, int c);
 
 extern char data_020ef106;
 extern char data_020ef116;
@@ -15,7 +14,7 @@ extern char data_020ef12f;
 // USA: func_0201403c  (semantic: Format0201403c)
 extern "C" ARM void func_0201403c(void* obj) {
     char* o = (char*)obj;
-    int handle = GetData02104304Field4();
+    int handle = (int)BackgroundLoader::GetInstance();
     char buf[0x14];
 
     if (IsInRange0201b5b0(*(unsigned short*)o)) {
@@ -32,5 +31,5 @@ extern "C" ARM void func_0201403c(void* obj) {
         sprintf(buf, &data_020ef12f, &data_020ef116, *(int*)(o + 8) + 5);
     }
 
-    *(int*)(o + 0x438) = CallFunc0202fa38ZeroPad(handle, (int)buf, 0);
+    *(int*)(o + 0x438) = ((BackgroundLoader*)(handle))->QueueLoadFile((const char*)((int)buf), (SafeAllocator*)(0));
 }

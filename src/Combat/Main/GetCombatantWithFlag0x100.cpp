@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
 
-// USA: func_0200ff1c
+// USA: _Z25GetCombatantWithFlag0x100P12BattleStructi
 ARM struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId) {
     struct CombatantStruct* combatant;
     if (combatantId < 0) {
