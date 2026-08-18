@@ -145,3 +145,23 @@ src/Combat/Overlay_14/func_ov014_02186d64.cpp:
 src/Combat/Overlay_14/func_ov014_0218940c.cpp:
     complete
     .text start:0x0218940c end:0x02189430
+
+
+src/Combat/Overlay_14/BinarySearchByCallback_021892d4.cpp:
+    complete
+    .text start:0x021892d4 end:0x0218934c
+
+
+src/Combat/Overlay_14/ComputeGroupIndexAndFindHead_021872dc.cpp:
+    complete
+    .text start:0x021872dc end:0x02187340
+
+
+src/Combat/Overlay_14/SetSublistEntriesForId25_021884cc.cpp:
+    complete
+    .text start:0x021884cc end:0x0218854c
+
+
+src/Combat/Overlay_14/SetSublistEntriesForId26_0218854c.cpp:
+    complete
+    .text start:0x0218854c end:0x021885bc
