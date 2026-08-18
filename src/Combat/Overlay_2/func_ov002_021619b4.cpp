@@ -7,7 +7,7 @@ struct CombatantStruct* GetCombatantWithFlag0x800(struct BattleStruct* battleStr
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" int func_ov017_021bdbcc(void* obj);
 ARM void* GetTableEntry020421b0(int idx);
-extern "C" int func_020c5a28(int, int, unsigned int);
+extern "C" int _Z32TransferMainObjCharData_020c5a28iij(int, int, unsigned int);
 
 // USA: func_ov002_021619b4
 extern "C" ARM void func_ov002_021619b4(int combatantId, void* p1, void* dst) {
@@ -43,6 +43,6 @@ extern "C" ARM void func_ov002_021619b4(int combatantId, void* p1, void* dst) {
     int sizeAccum = masked << 5;
 
     CleanInvalidateCacheRange(dst, 0x80);
-    func_020c5a28((int)dst, sizeAccum, 0x80);
+    _Z32TransferMainObjCharData_020c5a28iij((int)dst, sizeAccum, 0x80);
     CleanCacheRange(dst, 0x80);
 }

@@ -6,7 +6,7 @@ struct CombatantStruct* GetCombatantWithFlag0x800(struct BattleStruct* battleStr
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" int func_ov017_021bdbcc(void* obj);
 ARM void* GetTableEntry020421b0(int idx);
-extern "C" int func_020c5a28(int, int, unsigned int);
+extern "C" int _Z32TransferMainObjCharData_020c5a28iij(int, int, unsigned int);
 
 // USA: func_ov023_021e2ce8
 extern "C" ARM void func_ov023_021e2ce8(int combatantId, void* p1) {
@@ -41,7 +41,7 @@ extern "C" ARM void func_ov023_021e2ce8(int combatantId, void* p1) {
                 for (i = 0; i < 4; i++) {
                     void* tableEntry = GetTableEntry020421b0(tableIdx);
                     CleanInvalidateCacheRange(tableEntry, 0x20);
-                    func_020c5a28((int)tableEntry, sizeAccum, 0x20);
+                    _Z32TransferMainObjCharData_020c5a28iij((int)tableEntry, sizeAccum, 0x20);
                     CleanCacheRange(tableEntry, 0x20);
                     tableIdx = (tableIdx + 1) & 0xff;
                     sizeAccum += 0x20;
