@@ -586,6 +586,7 @@ data_ov003_0217fb98 kind:data(any) addr:0x0217fb98
 data_ov003_0217fbc8 kind:data(any) addr:0x0217fbc8
 func_ov003_0217fbf0 kind:function(arm,size=0x88) addr:0x0217fbf0
 data_ov003_0217fc80 kind:data(any) addr:0x0217fc80
+data_ov003_0217fc80_tbl kind:data(any) addr:0x0217fc80
 data_ov003_0217fca0 kind:data(any) addr:0x0217fca0
 data_ov003_0217fcb5 kind:data(any) addr:0x0217fcb5
 data_ov003_0217fcc7 kind:data(any) addr:0x0217fcc7
