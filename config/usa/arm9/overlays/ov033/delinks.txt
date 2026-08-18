@@ -18,3 +18,7 @@ src/Combat/Overlay_33/InitField0202f808_022a296c.cpp:
 src/Combat/Overlay_33/InitField0202f808_022a2998.cpp:
     complete
     .text start:0x022a2998 end:0x022a29b8
+
+src/Combat/Overlay_33/InitOv33Loader_022a29b8.cpp:
+    complete
+    .init start:0x022a29b8 end:0x022a29e4
