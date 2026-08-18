@@ -2830,3 +2830,8 @@ src/Combat/Overlay_0/RemoveQueuedTasksForObject_02168284.cpp:
 src/Combat/Overlay_0/Name_02153e40.cpp:
     complete
     .text start:0x02153e40 end:0x02153e78
+
+
+src/Combat/Overlay_0/FindNextFreeSlot_02161bb8.cpp:
+    complete
+    .text start:0x02161bb8 end:0x02161bec
