@@ -23225,3 +23225,18 @@ src/Combat/Main/InitEntries020e5afc.cpp:
 src/Combat/Main/StaticInit020e66a0.cpp:
     complete
     .init start:0x020e66a0 end:0x020e66fc
+
+
+src/Combat/Main/InitCallConstructStructArray0207ddf0_020e6260.cpp:
+    complete
+    .init start:0x020e6260 end:0x020e628c
+
+
+src/Combat/Main/InitCallInitAndReturnSelf0208f4bc_020e62b4.cpp:
+    complete
+    .init start:0x020e62b4 end:0x020e62e0
+
+
+src/Combat/Main/InitEntries020e5c00.cpp:
+    complete
+    .init start:0x020e5c00 end:0x020e5c2c
