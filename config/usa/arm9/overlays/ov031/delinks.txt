@@ -7635,3 +7635,28 @@ src/Combat/Overlay_31/Trans_02205cc4.cpp:
 src/Combat/Overlay_31/FillElapsedResult_02222aa4.cpp:
     complete
     .text start:0x02222aa4 end:0x02222adc
+
+
+src/Combat/Overlay_31/AllocZeroed_0222288c.cpp:
+    complete
+    .text start:0x0222288c end:0x022228b0
+
+
+src/Combat/Overlay_31/CheckStatusAndFlag_0221e4d8.cpp:
+    complete
+    .text start:0x0221e4d8 end:0x0221e4fc
+
+
+src/Combat/Overlay_31/CompareBytesReturnDiff_0221e4fc.cpp:
+    complete
+    .text start:0x0221e4fc end:0x0221e51c
+
+
+src/Combat/Overlay_31/InvokeAndInvertByte_0221e2bc.cpp:
+    complete
+    .text start:0x0221e2bc end:0x0221e2e4
+
+
+src/Combat/Overlay_31/SetupAndVectorCopy_0221e774.cpp:
+    complete
+    .text start:0x0221e774 end:0x0221e798
