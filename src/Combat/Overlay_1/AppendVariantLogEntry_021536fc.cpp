@@ -1,0 +1,33 @@
+#include <globaldefs.h>
+#include "std_library_functions.h"
+
+extern "C" int _Z25GetIntFromVariant02030b0cP15Variant02030b0c(void* variant);
+extern "C" void* _Z21GetField4IfField0ZeroP14Struct02030b7c(void* s);
+extern "C" void* _ZN13SafeAllocator8AllocateEj(void* self, unsigned int size);
+
+struct LogEntry021536fc { int val; char* str; };
+struct LogHeader021536fc { int count; void* allocator; LogEntry021536fc** entries; };
+extern LogHeader021536fc data_ov001_02165800;
+
+// USA: func_ov001_021536fc  (semantic: AppendVariantLogEntry_021536fc)
+extern "C" ARM int func_ov001_021536fc(void* variant) {
+    int val = _Z25GetIntFromVariant02030b0cP15Variant02030b0c(variant);
+    LogEntry021536fc* entries = *data_ov001_02165800.entries;
+    entries[data_ov001_02165800.count].val = val;
+
+    char* s = (char*)_Z21GetField4IfField0ZeroP14Struct02030b7c((char*)variant + 8);
+    if (!s) {
+        return 0;
+    }
+
+    unsigned int len = strlen(s);
+    void* buf = _ZN13SafeAllocator8AllocateEj(data_ov001_02165800.allocator, len + 1);
+    (*data_ov001_02165800.entries)[data_ov001_02165800.count].str = (char*)buf;
+    if ((*data_ov001_02165800.entries)[data_ov001_02165800.count].str == 0) {
+        return 0;
+    }
+
+    strcpy((*data_ov001_02165800.entries)[data_ov001_02165800.count].str, s);
+    data_ov001_02165800.count += 1;
+    return 1;
+}

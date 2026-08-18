@@ -2312,3 +2312,23 @@ src/Combat/Overlay_1/RecordChangeFromTaggedValues_02164004.cpp:
 src/Combat/Overlay_1/SnapshotBgControlByOv17Result_0216297c.cpp:
     complete
     .text start:0x0216297c end:0x02162a90
+
+
+src/Combat/Overlay_1/AppendVariantLogEntry_021536fc.cpp:
+    complete
+    .text start:0x021536fc end:0x021537a0
+
+
+src/Combat/Overlay_1/EnqueueScaledVec3EventWithLabel_0215c06c.cpp:
+    complete
+    .text start:0x0215c06c end:0x0215c138
+
+
+src/Combat/Overlay_1/func_ov001_02155ca8.cpp:
+    complete
+    .text start:0x02155ca8 end:0x02155d54
+
+
+src/Combat/Overlay_1/func_ov001_0216013c.cpp:
+    complete
+    .text start:0x0216013c end:0x021601f8
