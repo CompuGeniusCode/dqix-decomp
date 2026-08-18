@@ -165,3 +165,23 @@ src/Combat/Overlay_14/SetSublistEntriesForId25_021884cc.cpp:
 src/Combat/Overlay_14/SetSublistEntriesForId26_0218854c.cpp:
     complete
     .text start:0x0218854c end:0x021885bc
+
+
+src/Combat/Overlay_14/FindAndSetByKey_02188a8c.cpp:
+    complete
+    .text start:0x02188a8c end:0x02188b18
+
+
+src/Combat/Overlay_14/InitArrayEntries_02188b20.cpp:
+    complete
+    .text start:0x02188b20 end:0x02188ba0
+
+
+src/Combat/Overlay_14/ResetLoaderAndAllocators_02186b30.cpp:
+    complete
+    .text start:0x02186b30 end:0x02186bc8
+
+
+src/Combat/Overlay_14/SetKeyFlagsForRange_02187488.cpp:
+    complete
+    .text start:0x02187488 end:0x021874f8
