@@ -1025,3 +1025,18 @@ src/Combat/Overlay_25/StoreFieldIntoSub_021e6cd4.cpp:
 src/Combat/Overlay_25/StoreHalfIntoSub_021e7450.cpp:
     complete
     .text start:0x021e7450 end:0x021e7470
+
+
+src/Combat/Overlay_25/AccumulateFloats_021ef200.cpp:
+    complete
+    .init start:0x021ef200 end:0x021ef288
+
+
+src/Combat/Overlay_25/AccumulateFloats_021ef288.cpp:
+    complete
+    .init start:0x021ef288 end:0x021ef310
+
+
+src/Combat/Overlay_25/AccumulateFloats_021ef310.cpp:
+    complete
+    .init start:0x021ef310 end:0x021ef398
