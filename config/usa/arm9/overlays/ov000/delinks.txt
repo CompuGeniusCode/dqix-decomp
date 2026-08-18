@@ -2835,3 +2835,13 @@ src/Combat/Overlay_0/Name_02153e40.cpp:
 src/Combat/Overlay_0/FindNextFreeSlot_02161bb8.cpp:
     complete
     .text start:0x02161bb8 end:0x02161bec
+
+
+src/Combat/Overlay_0/ApplyClassifiedCopyAndCacheOp_021750e4.cpp:
+    complete
+    .text start:0x021750e4 end:0x021751ac
+
+
+src/Combat/Overlay_0/ApplyReplacementModeToEntry_02174428.cpp:
+    complete
+    .text start:0x02174428 end:0x021744f4
