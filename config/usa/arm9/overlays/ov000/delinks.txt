@@ -1745,9 +1745,6 @@ src/Combat/Overlay_0/HandleField_02160e94.cpp:
     .text start:0x02160e94 end:0x02160ef8
 
 
-src/Combat/Overlay_0/NoOp02161be8.cpp:
-    complete
-    .text start:0x02161be8 end:0x02161bec
 
 
 src/Combat/Overlay_0/PickRandomFromTable_02153d10.cpp:

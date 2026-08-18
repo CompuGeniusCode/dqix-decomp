@@ -150,9 +150,6 @@ src/Combat/Main/ClassifyByteRun020095b0.cpp:
     .text start:0x020095b0 end:0x0200961c
 
 
-src/Combat/Main/BlankFunction02009668.cpp:
-    complete
-    .text start:0x02009668 end:0x0200966c
 
 
 src/Combat/Main/UpdateByte4AndBumpCounter.cpp:
