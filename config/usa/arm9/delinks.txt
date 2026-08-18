@@ -23155,3 +23155,28 @@ src/Combat/Main/ResetArg_020e66fc.cpp:
 src/Combat/Main/ResetSelf_020e62a0.cpp:
     complete
     .init start:0x020e62a0 end:0x020e62b4
+
+
+src/Combat/Main/SetNegatedPairFields020c111c.cpp:
+    complete
+    .text start:0x020c111c end:0x020c1128
+
+
+src/Combat/Main/recovered_020c1264.cpp:
+    complete
+    .text start:0x020c1264 end:0x020c1280
+
+
+src/Combat/Main/Trans_020e60e0.cpp:
+    complete
+    .init start:0x020e60e0 end:0x020e60f8
+
+
+src/Combat/Main/Trans_020e68f4.cpp:
+    complete
+    .init start:0x020e68f4 end:0x020e692c
+
+
+src/Combat/Main/UpdateGPCSignatures020e6710.cpp:
+    complete
+    .init start:0x020e6710 end:0x020e677c

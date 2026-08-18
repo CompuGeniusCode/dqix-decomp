@@ -70,3 +70,8 @@ src/Combat/Overlay_20/ResetAndReloadContext_0218cd98.cpp:
 src/Combat/Overlay_20/CheckCountersActive_0218d898.cpp:
     complete
     .text start:0x0218d898 end:0x0218d8d8
+
+
+src/Combat/Overlay_20/SetFieldFromFieldPlus11_0218db90.cpp:
+    complete
+    .init start:0x0218db90 end:0x0218dba8
