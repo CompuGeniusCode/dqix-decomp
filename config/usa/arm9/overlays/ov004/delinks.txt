@@ -2245,3 +2245,13 @@ src/Combat/Overlay_4/DispatchByIdRangeState_02162b3c.cpp:
 src/Combat/Overlay_4/SetVec3PtrPairFromCallbackTable_021632bc.cpp:
     complete
     .text start:0x021632bc end:0x02163304
+
+
+src/Combat/Overlay_4/SumMatchedElemField5_021537e0.cpp:
+    complete
+    .text start:0x021537e0 end:0x02153860
+
+
+src/Combat/Overlay_4/UpdateThenResetAndFlag_0215a294.cpp:
+    complete
+    .text start:0x0215a294 end:0x0215a2f8
