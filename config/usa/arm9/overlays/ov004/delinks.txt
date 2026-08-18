@@ -2225,3 +2225,23 @@ src/Combat/Overlay_4/AllocateAndScanBits_021567f8.cpp:
 src/Combat/Overlay_4/DispatchByType_0216b7bc.cpp:
     complete
     .text start:0x0216b7bc end:0x0216ba70
+
+
+src/Combat/Overlay_4/BuildTableNameForNode_02164e40.cpp:
+    complete
+    .text start:0x02164e40 end:0x02164f48
+
+
+src/Combat/Overlay_4/CountBitFlagMatchesAndTotal_02153b6c.cpp:
+    complete
+    .text start:0x02153b6c end:0x02153c74
+
+
+src/Combat/Overlay_4/DispatchByIdRangeState_02162b3c.cpp:
+    complete
+    .text start:0x02162b3c end:0x02162b84
+
+
+src/Combat/Overlay_4/SetVec3PtrPairFromCallbackTable_021632bc.cpp:
+    complete
+    .text start:0x021632bc end:0x02163304

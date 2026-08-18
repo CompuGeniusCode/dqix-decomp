@@ -6,7 +6,7 @@ extern "C" int func_ov023_021f6f10(void*);
 extern "C" void* func_0205ec34(void);
 extern "C" int func_020deb58(void*, int, int, int, int);
 extern "C" void* func_020dec30(void*, int, int, int, int, int);
-int TestBitInByteArray(int unused, unsigned char* arr, int index);
+extern int TestBitInByteArray(int unused, unsigned char* arr, int index);
 
 // Real virtual call: index 0xe8/4=58 (Method58).
 class VObj02153b6c {
@@ -36,7 +36,7 @@ struct Entry02153b6c {
     unsigned int fieldC;
 };
 
-// USA: func_ov004_02153b6c
+// USA: func_ov004_02153b6c  (semantic: CountBitFlagMatchesAndTotal_02153b6c)
 extern "C" ARM void func_ov004_02153b6c(void* obj, int arg1, int arg2, int arg3, short* out1, short* out2) {
     void* node = func_ov023_021f6880(func_ov011_021849c8(obj), 0x2d);
     if (node) {
