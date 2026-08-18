@@ -2292,3 +2292,23 @@ src/Combat/Overlay_1/AccumulateFloats_02164aec.cpp:
 src/Combat/Overlay_1/func_ov001_02164a58.cpp:
     complete
     .init start:0x02164a58 end:0x02164aec
+
+
+src/Combat/Overlay_1/HandleField160AndUnlockCounters_02155d54.cpp:
+    complete
+    .text start:0x02155d54 end:0x02155dd0
+
+
+src/Combat/Overlay_1/QueueTaskForPathOrFormatted_0215ec94.cpp:
+    complete
+    .text start:0x0215ec94 end:0x0215ed2c
+
+
+src/Combat/Overlay_1/RecordChangeFromTaggedValues_02164004.cpp:
+    complete
+    .text start:0x02164004 end:0x02164080
+
+
+src/Combat/Overlay_1/SnapshotBgControlByOv17Result_0216297c.cpp:
+    complete
+    .text start:0x0216297c end:0x02162a90
