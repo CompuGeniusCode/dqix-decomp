@@ -7660,3 +7660,8 @@ src/Combat/Overlay_31/InvokeAndInvertByte_0221e2bc.cpp:
 src/Combat/Overlay_31/SetupAndVectorCopy_0221e774.cpp:
     complete
     .text start:0x0221e774 end:0x0221e798
+
+
+src/Combat/Overlay_31/InvokeGuardedCallback_0221f9d0.cpp:
+    complete
+    .text start:0x0221f9d0 end:0x0221f9f8
