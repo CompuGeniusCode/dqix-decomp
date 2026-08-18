@@ -189,3 +189,28 @@ src/Combat/Overlay_15/Trans_0218b6bc.cpp:
 src/Combat/Overlay_15/Trans_02191284.cpp:
     complete
     .text start:0x02191284 end:0x02191294
+
+
+src/Combat/Overlay_15/CheckFlagAndDispatch_0218e574.cpp:
+    complete
+    .text start:0x0218e574 end:0x0218e5c0
+
+
+src/Combat/Overlay_15/CheckFlagAndDispatch_0218e5c0.cpp:
+    complete
+    .text start:0x0218e5c0 end:0x0218e60c
+
+
+src/Combat/Overlay_15/DispatchHolderWithFlag8_0218f364.cpp:
+    complete
+    .text start:0x0218f364 end:0x0218f39c
+
+
+src/Combat/Overlay_15/FindEntryInHolder_0218f39c.cpp:
+    complete
+    .text start:0x0218f39c end:0x0218f3c4
+
+
+src/Combat/Overlay_15/GetSubVal_0218f344.cpp:
+    complete
+    .text start:0x0218f344 end:0x0218f364
