@@ -235,3 +235,8 @@ src/Combat/Overlay_14/InitState_021844c4.cpp:
 src/Combat/Overlay_14/func_ov014_021845ec.cpp:
     complete
     .text start:0x021845ec end:0x02184700
+
+
+src/Combat/Overlay_14/AccumulateFloats_02189510_02189510.cpp:
+    complete
+    .init start:0x02189510 end:0x02189598
