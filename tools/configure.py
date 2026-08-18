@@ -26,6 +26,7 @@ GAME = "dqix"
 DSD_VERSION = 'v0.6.0'
 WIBO_VERSION = '0.6.16'
 OBJDIFF_VERSION = 'v2.7.1'
+CC_OVERRIDES_PATH = "tools/cc_overrides.txt"
 MWCC_VERSION = "2.0/sp1p5"
 DECOMP_ME_COMPILER = "mwcc_30_131"
 CC_FLAGS = " ".join([
@@ -77,6 +78,11 @@ extract_path     = root_path / "extract"
 tools_path       = root_path / "tools"
 mwcc_root        = args.compiler or tools_path / "mwccarm"
 mwcc_path        = mwcc_root / MWCC_VERSION
+CC_OVERRIDES = {}
+if os.path.isfile(CC_OVERRIDES_PATH):
+    for _line in open(CC_OVERRIDES_PATH, encoding="utf-8"):
+        _line = _line.split("#")[0].split()
+        if len(_line) == 2: CC_OVERRIDES[_line[0].replace("\\", "/")] = _line[1]
 
 
 # Includes
@@ -200,7 +206,7 @@ def main():
         n.newline()
 
         # -MMD excludes all includes instead of just system includes for some reason, so use -MD instead.
-        mwcc_cmd = f'{WINE} "{CC}" {CC_FLAGS} {CC_INCLUDES} $cc_flags -d $game_version -MD -c $in -o $basedir'
+        mwcc_cmd = f'{WINE} "$cc_exe" {CC_FLAGS} {CC_INCLUDES} $cc_flags -d $game_version -MD -c $in -o $basedir'
         mwcc_implicit = [CC]
         if platform.system != "windows":
             transform_dep = "tools/transform_dep.py"
@@ -413,6 +419,11 @@ def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: lis
     for source_file in get_c_cpp_files([src_path, libs_path]):
         src_obj_path = project.game_build / source_file
         cc_flags = []
+        # per-file compiler override (see tools/cc_overrides.txt)
+        _cc_exe = CC
+        _ovr = CC_OVERRIDES.get(str(source_file).replace("\\", "/"))
+        if _ovr:
+            _cc_exe = os.path.join(".", str(mwcc_root / _ovr / "mwccarm.exe"))
         if is_cpp(source_file): cc_flags.append("-lang=c++")
         elif is_c(source_file): cc_flags.append("-lang=c")
         n.build(
@@ -423,6 +434,7 @@ def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: lis
             variables={
                 "game_version": project.game_version,
                 "cc_flags": " ".join(cc_flags),
+                "cc_exe": _cc_exe,
                 "basedir": os.path.dirname(src_obj_path),
                 "basefile": str(src_obj_path.with_suffix("")),
             },
