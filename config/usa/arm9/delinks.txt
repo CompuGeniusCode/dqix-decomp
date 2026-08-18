@@ -1206,9 +1206,6 @@ src/Combat/Main/ClearByte0x62IfArg0x10.cpp:
     .text start:0x02012bbc end:0x02012bd8
 
 
-src/Combat/Main/InitOverlay17ObjAndBumpBattleCounter02012bd8.cpp:
-    complete
-    .text start:0x02012bd8 end:0x02012c34
 
 
 
@@ -2234,14 +2231,8 @@ src/Combat/Main/ResetStateTimer0201fc40.cpp:
     .text start:0x0201fc40 end:0x0201fca0
 
 
-src/Combat/Main/SubmitFlag0x800CombatantDataA0201fca0.cpp:
-    complete
-    .text start:0x0201fca0 end:0x0201fd38
 
 
-src/Combat/Main/SubmitFlag0x800CombatantDataB0201fd38.cpp:
-    complete
-    .text start:0x0201fd38 end:0x0201fdd0
 
 
 src/Combat/Main/SetOrClearFlagBit0x55d.cpp:
@@ -3654,9 +3645,6 @@ src/Combat/Main/ClearThreeHalfwords.cpp:
     .text start:0x0202e98c end:0x0202e9a4
 
 
-src/Combat/Main/SetAngleAndTrigTable0202e9a4.cpp:
-    complete
-    .text start:0x0202e9a4 end:0x0202e9ec
 
 
 
@@ -11014,9 +11002,6 @@ src/Combat/Main/FindMatchingEntryByMask02073ec4.cpp:
     .text start:0x02073ec4 end:0x02073fdc
 
 
-src/Combat/Main/SelectWeightedEntry02073fdc.cpp:
-    complete
-    .text start:0x02073fdc end:0x02074060
 
 
 src/Util/Random.cpp:
@@ -13946,9 +13931,6 @@ src/Combat/Main/InitObjectTables0208b508.cpp:
     .text start:0x0208b508 end:0x0208b548
 
 
-src/Combat/Main/WriteTexImageParam0208b548.cpp:
-    complete
-    .text start:0x0208b548 end:0x0208b588
 
 
 src/Combat/Main/WritePolygonAttr0208b588.cpp:
@@ -17607,9 +17589,6 @@ src/Combat/Main/func_020b357c.cpp:
     .text start:0x020b357c end:0x020b362c
 
 
-src/Combat/Main/InvokeHandlerAndClearFlags020b3814.cpp:
-    complete
-    .text start:0x020b3814 end:0x020b3850
 
 
 
@@ -19182,9 +19161,6 @@ src/Combat/Main/BuildViewMatrix020c20d4.cpp:
     .text start:0x020c20d4 end:0x020c21dc
 
 
-src/Combat/Main/InitStruct020c21dc.cpp:
-    complete
-    .text start:0x020c21dc end:0x020c2208
 
 
 
@@ -19255,9 +19231,6 @@ src/Combat/Main/DotFixedVec3.cpp:
     .text start:0x020c2df8 end:0x020c2e34
 
 
-src/Combat/Main/CrossProductFixed020c2e34.cpp:
-    complete
-    .text start:0x020c2e34 end:0x020c2eb8
 
 
 src/Combat/Main/Vec3LengthRounded.cpp:
@@ -19804,9 +19777,6 @@ src/Combat/Main/GetBoxTestResult.cpp:
     .text start:0x020c56b0 end:0x020c56dc
 
 
-src/Combat/Main/WriteGXFifoZeroBurst.cpp:
-    complete
-    .text start:0x020c56dc end:0x020c5770
 
 
 src/Combat/Main/ComputeAndLoadMatrix020c5770.cpp:
@@ -20050,9 +20020,6 @@ src/System/InterruptEnableDisable.cpp:
     complete
     .text start:0x020c6c90 end:0x020c6d48
 
-src/Combat/Main/StoreSharedMemMagicWords.cpp:
-    complete
-    .text start:0x020c6d48 end:0x020c6d7c
 
 
 src/System/GamecardBusOwnership.cpp:
@@ -20157,9 +20124,6 @@ src/System/Cache.cpp:
     complete
     .text start:0x020c824c end:0x020c8348
 
-src/Combat/Main/WaitForVCountZero.cpp:
-    complete
-    .text start:0x020c8348 end:0x020c8368
 
 
 src/Combat/Main/InitAllModules020c8368.cpp:
@@ -20389,9 +20353,6 @@ src/Combat/Main/RetrySendIpcCommand.cpp:
     .text start:0x020c98c4 end:0x020c98f0
 
 
-src/Combat/Main/ResetSystemAndBoot020c98f0.cpp:
-    complete
-    .text start:0x020c98f0 end:0x020c99ac
 
 
 src/Combat/Main/CopyFrom027ffcf4.cpp:
@@ -20504,9 +20465,6 @@ src/Combat/Main/CallAndReturnTrue020cd584.cpp:
     .text start:0x020cd584 end:0x020cd594
 
 
-src/Combat/Main/SaveDivSqrtState.cpp:
-    complete
-    .text start:0x020cd594 end:0x020cd5d4
 
 
 src/Combat/Main/InitIPCCommandDispatch020cd890.cpp:
@@ -20914,9 +20872,6 @@ src/Combat/Main/ResetDmaAndTerminateOnFlag_020d11a8.cpp:
     .text start:0x020d11a8 end:0x020d1234
 
 
-src/Combat/Main/SyncIfBufferValueChanged.cpp:
-    complete
-    .text start:0x020d1234 end:0x020d1294
 
 
 
@@ -21764,19 +21719,10 @@ src/Combat/Main/GetDataPtr02114e04_020d6c00.cpp:
     .text start:0x020d6c00 end:0x020d6c0c
 
 
-src/Combat/Main/NotifyOverlay0211e33c.cpp:
-    complete
-    .text start:0x020d6c0c end:0x020d6c34
 
 
-src/Combat/Main/GuardedNotifyOverlay0211e33c020d6c34.cpp:
-    complete
-    .text start:0x020d6c34 end:0x020d6c68
 
 
-src/Combat/Main/GuardedNotifyOverlay0211e33c020d6c68.cpp:
-    complete
-    .text start:0x020d6c68 end:0x020d6c9c
 
 
 
@@ -21786,9 +21732,6 @@ src/Combat/Main/EnableIMEReturnPrev.cpp:
     .text start:0x020d6c9c end:0x020d6cb4
 
 
-src/Combat/Main/GuardedOverlayDispatch020d6cb4.cpp:
-    complete
-    .text start:0x020d6cb4 end:0x020d6d18
 
 
 src/Combat/Main/ConstructEntryManager020d6d18.cpp:

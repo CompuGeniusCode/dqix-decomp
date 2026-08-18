@@ -1217,9 +1217,6 @@ src/Combat/Overlay_1/NotifyOrSetHeadMatchBit_02162f8c.cpp:
     .text start:0x02162f8c end:0x02163008
 
 
-src/Combat/Overlay_1/PackValuesIntoBitfield_02161374.cpp:
-    complete
-    .text start:0x02161374 end:0x021613d0
 
 
 src/Combat/Overlay_1/ReturnTrue_0215f304.cpp:
