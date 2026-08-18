@@ -4715,3 +4715,53 @@ src/Combat/Overlay_17/ProcessEventQueue_021a3ef0.cpp:
 src/Combat/Overlay_17/TeardownOverlayState_021a316c.cpp:
     complete
     .text start:0x021a316c end:0x021a3338
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d6dc0.cpp:
+    complete
+    .init start:0x021d6dc0 end:0x021d6e48
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d6e48.cpp:
+    complete
+    .init start:0x021d6e48 end:0x021d6ed0
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d6ed0.cpp:
+    complete
+    .init start:0x021d6ed0 end:0x021d6f58
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d6f58.cpp:
+    complete
+    .init start:0x021d6f58 end:0x021d6fe0
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d6fe0.cpp:
+    complete
+    .init start:0x021d6fe0 end:0x021d7068
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d7068.cpp:
+    complete
+    .init start:0x021d7068 end:0x021d70f0
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d70f0.cpp:
+    complete
+    .init start:0x021d70f0 end:0x021d7178
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d7178.cpp:
+    complete
+    .init start:0x021d7178 end:0x021d7200
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d7200.cpp:
+    complete
+    .init start:0x021d7200 end:0x021d7288
+
+
+src/Combat/Overlay_17/AccumulateFloats_021d7288.cpp:
+    complete
+    .init start:0x021d7288 end:0x021d7310
