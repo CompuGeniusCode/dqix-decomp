@@ -23846,3 +23846,8 @@ src/Combat/Main/StoreInitFnPointers_0200f29c.cpp:
 src/Combat/Main/TransferMainObjCharData_020c5a28.cpp:
     complete
     .text start:0x020c5a28 end:0x020c5a80
+
+
+src/Combat/Main/IncrementDecimalCounter0200961c.cpp:
+    complete
+    .text start:0x0200961c end:0x0200966c
