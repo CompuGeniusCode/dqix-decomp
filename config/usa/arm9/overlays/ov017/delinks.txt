@@ -4700,3 +4700,8 @@ src/Combat/Overlay_17/func_ov017_021b9bcc.cpp:
 src/Combat/Overlay_17/func_ov017_021ca1a4.cpp:
     complete
     .text start:0x021ca1a4 end:0x021ca2a0
+
+
+src/Combat/Overlay_17/ResetAllocatorAndApplyField24_021a92a0.cpp:
+    complete
+    .text start:0x021a92a0 end:0x021a9314
