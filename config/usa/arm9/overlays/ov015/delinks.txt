@@ -244,3 +244,28 @@ src/Combat/Overlay_15/MaybeUpdateSelfFieldsOnFlag_0218e498.cpp:
 src/Combat/Overlay_15/UpdateField238FlagStateC00_021925a8.cpp:
     complete
     .text start:0x021925a8 end:0x02192600
+
+
+src/Combat/Overlay_15/ApplyCombatantEffectIfActive.cpp:
+    complete
+    .text start:0x0218e4f8 end:0x0218e574
+
+
+src/Combat/Overlay_15/CheckCombatantFlag350AndMasks.cpp:
+    complete
+    .text start:0x02190c98 end:0x02190d08
+
+
+src/Combat/Overlay_15/DispatchByField_0218f1c4_0218f1c4.cpp:
+    complete
+    .text start:0x0218f1c4 end:0x0218f22c
+
+
+src/Combat/Overlay_15/IsCombatantState1a4InList.cpp:
+    complete
+    .text start:0x02190d08 end:0x02190d7c
+
+
+src/Combat/Overlay_15/ResetAndReadCombatFields_02192544.cpp:
+    complete
+    .text start:0x02192544 end:0x021925a8
