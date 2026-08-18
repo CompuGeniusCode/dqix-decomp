@@ -195,3 +195,33 @@ src/Combat/Overlay_14/InitLargeStruct_02186a70.cpp:
 src/Combat/Overlay_14/SearchAndAdvanceEntry_021873a0.cpp:
     complete
     .text start:0x021873a0 end:0x02187450
+
+
+src/Combat/Overlay_14/AdvanceMappedMemberIdState_02187b38.cpp:
+    complete
+    .text start:0x02187b38 end:0x02187c04
+
+
+src/Combat/Overlay_14/CancelPendingTasks_02184d08.cpp:
+    complete
+    .text start:0x02184d08 end:0x02184dcc
+
+
+src/Combat/Overlay_14/FindNodeIndexInList_02187228.cpp:
+    complete
+    .text start:0x02187228 end:0x021872dc
+
+
+src/Combat/Overlay_14/UpdateElementCoordFlagB_02186f10.cpp:
+    complete
+    .text start:0x02186f10 end:0x02186ff0
+
+
+src/Combat/Overlay_14/func_ov014_02186e2c.cpp:
+    complete
+    .text start:0x02186e2c end:0x02186f10
+
+
+src/Combat/Overlay_14/func_ov014_02188c34.cpp:
+    complete
+    .text start:0x02188c34 end:0x02188d10
