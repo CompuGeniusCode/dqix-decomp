@@ -1020,3 +1020,8 @@ src/Combat/Overlay_25/func_ov025_021eedb0.cpp:
 src/Combat/Overlay_25/StoreFieldIntoSub_021e6cd4.cpp:
     complete
     .text start:0x021e6cd4 end:0x021e6cf4
+
+
+src/Combat/Overlay_25/StoreHalfIntoSub_021e7450.cpp:
+    complete
+    .text start:0x021e7450 end:0x021e7470
