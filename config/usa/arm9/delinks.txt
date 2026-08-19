@@ -23500,3 +23500,8 @@ src/Combat/Main/func_020ca430.cpp:
 src/Combat/Main/func_020cf294.cpp:
     complete
     .text start:0x020cf294 end:0x020cf7e4
+
+
+src/Combat/Main/IsDebugger.cpp:
+    complete
+    .text start:0x020000d4 end:0x020000d8
