@@ -2845,3 +2845,18 @@ src/Combat/Overlay_0/ApplyClassifiedCopyAndCacheOp_021750e4.cpp:
 src/Combat/Overlay_0/ApplyReplacementModeToEntry_02174428.cpp:
     complete
     .text start:0x02174428 end:0x021744f4
+
+
+src/Combat/Overlay_0/AccumulateFloats_02183794.cpp:
+    complete
+    .init start:0x02183794 end:0x0218381c
+
+
+src/Combat/Overlay_0/AccumulateFloats_0218381c.cpp:
+    complete
+    .init start:0x0218381c end:0x021838a4
+
+
+src/Combat/Overlay_0/UpdateAccumulatorChain_02183710.cpp:
+    complete
+    .init start:0x02183710 end:0x02183794
