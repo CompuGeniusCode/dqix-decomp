@@ -23505,3 +23505,28 @@ src/Combat/Main/func_020cf294.cpp:
 src/Combat/Main/IsDebugger.cpp:
     complete
     .text start:0x020000d4 end:0x020000d8
+
+
+src/Combat/Main/RegisterOrAllocateCombatant02053c74.cpp:
+    complete
+    .text start:0x02053c74 end:0x02053cc4
+
+
+src/Combat/Main/ResetBattlePhaseController020936b0.cpp:
+    complete
+    .text start:0x020936b0 end:0x020936f8
+
+
+src/Combat/Main/_Z26ScaleByteToPercent0207b108P11Obj0207b108.cpp:
+    complete
+    .text start:0x0207b108 end:0x0207b154
+
+
+src/Combat/Main/_Z26StoreInputEmitFF1A02069834P14Struct02069834i.cpp:
+    complete
+    .text start:0x02069834 end:0x02069884
+
+
+src/Combat/Main/func_0209f24c.cpp:
+    complete
+    .text start:0x0209f24c end:0x0209f364
