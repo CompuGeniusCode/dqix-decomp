@@ -324,3 +324,23 @@ src/Combat/Overlay_15/UpdateGfxAndDispatchList_02190348.cpp:
 src/Combat/Overlay_15/func_ov015_0218df0c.cpp:
     complete
     .text start:0x0218df0c end:0x0218e02c
+
+
+src/Combat/Overlay_15/InitCombatBlock02193294.cpp:
+    complete
+    .text start:0x02193294 end:0x021933ac
+
+
+src/Combat/Overlay_15/ResetAndReloadStream_0218cb2c.cpp:
+    complete
+    .text start:0x0218cb2c end:0x0218cc24
+
+
+src/Combat/Overlay_15/func_ov015_0218f0c4.cpp:
+    complete
+    .text start:0x0218f0c4 end:0x0218f1c4
+
+
+src/Combat/Overlay_15/func_ov015_02192064.cpp:
+    complete
+    .text start:0x02192064 end:0x02192158
