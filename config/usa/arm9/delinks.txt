@@ -23415,3 +23415,88 @@ src/Combat/Main/IntrWait.cpp:
 src/Combat/Main/Halt.cpp:
     complete
     .text start:0x0200056c end:0x02000570
+
+
+src/Combat/Main/LZ77UnCompReadNormalWrite8bit.cpp:
+    complete
+    .text start:0x02000140 end:0x02000144
+
+
+src/Combat/Main/_Z28LockedLookupDispatch0206efd8PvS_.cpp:
+    complete
+    .text start:0x0206efd8 end:0x0206f01c
+
+
+src/Combat/Main/_Z28LockedLookupDispatch020709ecPvS_.cpp:
+    complete
+    .text start:0x020709ec end:0x02070a30
+
+
+src/Combat/Main/_fgeq.cpp:
+    complete
+    .text start:0x0200bf68 end:0x0200bfc4
+
+
+src/Combat/Main/_fgr.cpp:
+    complete
+    .text start:0x0200bfc4 end:0x0200c020
+
+
+src/Combat/Main/_fleq.cpp:
+    complete
+    .text start:0x0200c020 end:0x0200c088
+
+
+src/Combat/Main/_fls.cpp:
+    complete
+    .text start:0x0200c088 end:0x0200c0e4
+
+
+src/Combat/Main/func_0200bc78.cpp:
+    complete
+    .text start:0x0200bc78 end:0x0200bd10
+
+
+src/Combat/Main/func_0200bd10.cpp:
+    complete
+    .text start:0x0200bd10 end:0x0200bdb4
+
+
+src/Combat/Main/func_0200be50.cpp:
+    complete
+    .text start:0x0200be50 end:0x0200bedc
+
+
+src/Combat/Main/func_0200bedc.cpp:
+    complete
+    .text start:0x0200bedc end:0x0200bf68
+
+
+src/Combat/Main/func_020c8b44.cpp:
+    complete
+    .text start:0x020c8b44 end:0x020c8bd4
+
+
+src/Combat/Main/func_020ca390.cpp:
+    complete
+    .text start:0x020ca390 end:0x020ca3b8
+
+
+src/Combat/Main/func_020ca3b8.cpp:
+    complete
+    .text start:0x020ca3b8 end:0x020ca3ec
+
+
+src/Combat/Main/func_020ca408.cpp:
+    complete
+    .text start:0x020ca408 end:0x020ca430
+
+
+src/Combat/Main/func_020ca430.cpp:
+    complete
+    .text start:0x020ca430 end:0x020ca458
+
+
+src/Combat/Main/func_020cf294.cpp:
+    complete
+    .text start:0x020cf294 end:0x020cf7e4
