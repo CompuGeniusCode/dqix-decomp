@@ -69,3 +69,23 @@ src/Combat/Overlay_9/SyncCombatantAndFlushMatrix_02184c30.cpp:
 src/Combat/Overlay_9/func_ov009_021847ec.cpp:
     complete
     .text start:0x021847ec end:0x02184848
+
+
+src/Combat/Overlay_9/AdvanceListStep_021883cc.cpp:
+    complete
+    .text start:0x021883cc end:0x02188454
+
+
+src/Combat/Overlay_9/func_ov009_02184ca4.cpp:
+    complete
+    .text start:0x02184ca4 end:0x02184d70
+
+
+src/Combat/Overlay_9/func_ov009_021869d8.cpp:
+    complete
+    .text start:0x021869d8 end:0x02186aec
+
+
+src/Combat/Overlay_9/func_ov009_02186aec.cpp:
+    complete
+    .text start:0x02186aec end:0x02186c00
