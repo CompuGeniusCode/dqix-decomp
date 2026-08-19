@@ -479,3 +479,18 @@ src/Combat/Overlay_2/func_ov002_021619b4.cpp:
 src/Combat/Overlay_2/SetFormationEntries_0215aaa4.cpp:
     complete
     .text start:0x0215aaa4 end:0x0215ab60
+
+
+src/Combat/Overlay_2/GetInventoryItemByID.cpp:
+    complete
+    .text start:0x0215707c end:0x02157108
+
+
+src/Combat/Overlay_2/ResetOrFinalizeLoaderState_021561b0.cpp:
+    complete
+    .text start:0x021561b0 end:0x0215624c
+
+
+src/Combat/Overlay_2/func_ov002_0215ece4.cpp:
+    complete
+    .text start:0x0215ece4 end:0x0215edc8
