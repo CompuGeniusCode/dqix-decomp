@@ -49,3 +49,23 @@ src/Combat/Overlay_9/ResetFields021847c4.cpp:
 src/Combat/Overlay_9/SetStatValue021855dc.cpp:
     complete
     .text start:0x021855dc end:0x02185634
+
+
+src/Combat/Overlay_9/AdvanceStatStep_021865dc.cpp:
+    complete
+    .text start:0x021865dc end:0x021866f0
+
+
+src/Combat/Overlay_9/AdvanceStatStep_021868c4.cpp:
+    complete
+    .text start:0x021868c4 end:0x021869d8
+
+
+src/Combat/Overlay_9/SyncCombatantAndFlushMatrix_02184c30.cpp:
+    complete
+    .text start:0x02184c30 end:0x02184ca4
+
+
+src/Combat/Overlay_9/func_ov009_021847ec.cpp:
+    complete
+    .text start:0x021847ec end:0x02184848
