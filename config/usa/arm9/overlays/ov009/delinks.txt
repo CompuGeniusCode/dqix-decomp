@@ -89,3 +89,18 @@ src/Combat/Overlay_9/func_ov009_021869d8.cpp:
 src/Combat/Overlay_9/func_ov009_02186aec.cpp:
     complete
     .text start:0x02186aec end:0x02186c00
+
+
+src/Combat/Overlay_9/DispatchTypeAndInitPair_02188c2c.cpp:
+    complete
+    .text start:0x02188c2c end:0x02188d9c
+
+
+src/Combat/Overlay_9/GetPriorityGroupIndex_02188b14.cpp:
+    complete
+    .text start:0x02188b14 end:0x02188bf8
+
+
+src/Combat/Overlay_9/SyncEntryPairAndRefreshFlags_02188454.cpp:
+    complete
+    .text start:0x02188454 end:0x021885b8
