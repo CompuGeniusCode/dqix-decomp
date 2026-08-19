@@ -294,3 +294,33 @@ src/Combat/Overlay_15/func_ov015_021919e4.cpp:
 src/Combat/Overlay_15/func_ov015_02191af0.cpp:
     complete
     .text start:0x02191af0 end:0x02191ba0
+
+
+src/Combat/Overlay_15/BuildAndAppendNameEntry_0218b5c8.cpp:
+    complete
+    .text start:0x0218b5c8 end:0x0218b6bc
+
+
+src/Combat/Overlay_15/DispatchByMode7_0218f27c.cpp:
+    complete
+    .text start:0x0218f27c end:0x0218f308
+
+
+src/Combat/Overlay_15/FindNodeAtIndexAndDispatchState_02191ba0.cpp:
+    complete
+    .text start:0x02191ba0 end:0x02191c70
+
+
+src/Combat/Overlay_15/RunCombatantUpdateAndFlush_02190428.cpp:
+    complete
+    .text start:0x02190428 end:0x0219050c
+
+
+src/Combat/Overlay_15/UpdateGfxAndDispatchList_02190348.cpp:
+    complete
+    .text start:0x02190348 end:0x02190428
+
+
+src/Combat/Overlay_15/func_ov015_0218df0c.cpp:
+    complete
+    .text start:0x0218df0c end:0x0218e02c
