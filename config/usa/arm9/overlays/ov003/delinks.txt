@@ -1714,3 +1714,8 @@ src/Combat/Overlay_3/DispatchIndexedMemberFn_021537d4.cpp:
 src/Combat/Overlay_3/SetEntriesAndAlign_0215f5e8.cpp:
     complete
     .text start:0x0215f5e8 end:0x0215f650
+
+
+src/Combat/Overlay_3/AccumulateFloats_0217fbf0_0217fbf0.cpp:
+    complete
+    .init start:0x0217fbf0 end:0x0217fc78
