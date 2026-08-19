@@ -299,3 +299,38 @@ src/Combat/Overlay_16/Trans_0218e7ec.cpp:
 src/Combat/Overlay_16/Trans_0218f330.cpp:
     complete
     .text start:0x0218f330 end:0x0218f340
+
+
+src/Combat/Overlay_16/CreateDiffNode_0218e558.cpp:
+    complete
+    .text start:0x0218e558 end:0x0218e62c
+
+
+src/Combat/Overlay_16/EmitEvents_0218cf58.cpp:
+    complete
+    .text start:0x0218cf58 end:0x0218d034
+
+
+src/Combat/Overlay_16/SafeGetField_0218e660.cpp:
+    complete
+    .text start:0x0218e660 end:0x0218e678
+
+
+src/Combat/Overlay_16/SafeGetField_0218e750.cpp:
+    complete
+    .text start:0x0218e750 end:0x0218e768
+
+
+src/Combat/Overlay_16/SetDispcntModeByFlagAndToggle_0218be7c.cpp:
+    complete
+    .text start:0x0218be7c end:0x0218bec4
+
+
+src/Combat/Overlay_16/TailCallFree_0218e7b0.cpp:
+    complete
+    .text start:0x0218e7b0 end:0x0218e7bc
+
+
+src/Combat/Overlay_16/ToggleAndConfigureDisplay_0218d034.cpp:
+    complete
+    .text start:0x0218d034 end:0x0218d0d4
