@@ -23240,3 +23240,63 @@ src/Combat/Main/InitCallInitAndReturnSelf0208f4bc_020e62b4.cpp:
 src/Combat/Main/InitEntries020e5c00.cpp:
     complete
     .init start:0x020e5c00 end:0x020e5c2c
+
+
+src/Combat/Main/memcpy.cpp:
+    complete
+    .text start:0x02001a40 end:0x02001a60
+
+
+src/Combat/Main/memmove.cpp:
+    complete
+    .text start:0x02001a60 end:0x02001aac
+
+
+src/Combat/Main/memset.cpp:
+    complete
+    .text start:0x02001aac end:0x02001ac0
+
+
+src/Combat/Main/rand.cpp:
+    complete
+    .text start:0x02003d14 end:0x02003d48
+
+
+src/Combat/Main/sprintf.cpp:
+    complete
+    .text start:0x02003ce8 end:0x02003d14
+
+
+src/Combat/Main/srand.cpp:
+    complete
+    .text start:0x02003d48 end:0x02003d58
+
+
+src/Combat/Main/strchr.cpp:
+    complete
+    .text start:0x020041b8 end:0x020041f4
+
+
+src/Combat/Main/strlen.cpp:
+    complete
+    .text start:0x02003f0c end:0x02003f28
+
+
+src/Combat/Main/strncmp.cpp:
+    complete
+    .text start:0x02004184 end:0x020041b8
+
+
+src/Combat/Main/strncpy.cpp:
+    complete
+    .text start:0x02003ff0 end:0x02004040
+
+
+src/Combat/Main/strrchr.cpp:
+    complete
+    .text start:0x020041f4 end:0x0200423c
+
+
+src/Combat/Main/strstr.cpp:
+    complete
+    .text start:0x0200423c end:0x020042a8
