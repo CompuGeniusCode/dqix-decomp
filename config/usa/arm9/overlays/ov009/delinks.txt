@@ -104,3 +104,13 @@ src/Combat/Overlay_9/GetPriorityGroupIndex_02188b14.cpp:
 src/Combat/Overlay_9/SyncEntryPairAndRefreshFlags_02188454.cpp:
     complete
     .text start:0x02188454 end:0x021885b8
+
+
+src/Combat/Overlay_9/ResetAndReinitCombatState_02184848.cpp:
+    complete
+    .text start:0x02184848 end:0x02184a18
+
+
+src/Combat/Overlay_9/func_ov009_021866f0.cpp:
+    complete
+    .text start:0x021866f0 end:0x021868c4
