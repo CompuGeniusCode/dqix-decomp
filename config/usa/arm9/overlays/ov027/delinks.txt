@@ -409,3 +409,8 @@ src/Combat/Overlay_27/FinalizeDispatchRecordAndIssue_021dafc0.cpp:
 src/Combat/Overlay_27/func_ov027_021db154.cpp:
     complete
     .text start:0x021db154 end:0x021db3c0
+
+
+src/Combat/Overlay_27/RegisterCombatSlot_021da38c.cpp:
+    complete
+    .text start:0x021da38c end:0x021da61c
