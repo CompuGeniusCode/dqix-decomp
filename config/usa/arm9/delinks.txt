@@ -23340,3 +23340,68 @@ src/Combat/Main/strcmp.cpp:
 src/Combat/Main/strcpy.cpp:
     complete
     .text start:0x02003f28 end:0x02003ff0
+
+
+src/Combat/Main/GX_SendFifo48B.cpp:
+    complete
+    .text start:0x020c6914 end:0x020c6938
+
+
+src/Combat/Main/InitStruct020c21dc.cpp:
+    complete
+    .text start:0x020c21dc end:0x020c2208
+
+
+src/Combat/Main/MTX_Copy44To43_.cpp:
+    complete
+    .text start:0x020c2208 end:0x020c223c
+
+
+src/Combat/Main/SubmitFlagombatantDataA0201fca0_0201fca0.cpp:
+    complete
+    .text start:0x0201fca0 end:0x0201fd38
+
+
+src/Combat/Main/SubmitFlagombatantDataB0201fd38_0201fd38.cpp:
+    complete
+    .text start:0x0201fd38 end:0x0201fdd0
+
+
+src/Combat/Main/WaitForVCountZero.cpp:
+    complete
+    .text start:0x020c8348 end:0x020c8368
+
+
+src/Combat/Main/WriteGXFifoZeroBurst.cpp:
+    complete
+    .text start:0x020c56dc end:0x020c5770
+
+
+src/Combat/Main/func_020c976c.cpp:
+    complete
+    .text start:0x020c976c end:0x020c9778
+
+
+src/Combat/Main/func_020ca50c.cpp:
+    complete
+    .text start:0x020ca50c end:0x020ca528
+
+
+src/Combat/Main/func_020ca528.cpp:
+    complete
+    .text start:0x020ca528 end:0x020ca544
+
+
+src/Combat/Main/func_020ca544.cpp:
+    complete
+    .text start:0x020ca544 end:0x020ca568
+
+
+src/Combat/Main/func_020ca568.cpp:
+    complete
+    .text start:0x020ca568 end:0x020ca594
+
+
+src/Combat/Main/sys_exit.cpp:
+    complete
+    .text start:0x0200d8bc end:0x0200d8cc
