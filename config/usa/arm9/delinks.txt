@@ -23300,3 +23300,43 @@ src/Combat/Main/strrchr.cpp:
 src/Combat/Main/strstr.cpp:
     complete
     .text start:0x0200423c end:0x020042a8
+
+
+src/Combat/Main/AutoloadCallback.cpp:
+    complete
+    .text start:0x02000aac end:0x02000ab0
+
+
+src/Combat/Main/Trans_02046e08.cpp:
+    complete
+    .text start:0x02046e08 end:0x02046e70
+
+
+src/Combat/Main/Trans_0205cd28.cpp:
+    complete
+    .text start:0x0205cd28 end:0x0205cd6c
+
+
+src/Combat/Main/Trans_0205ce50.cpp:
+    complete
+    .text start:0x0205ce50 end:0x0205ce94
+
+
+src/Combat/Main/Trans_0207a060.cpp:
+    complete
+    .text start:0x0207a060 end:0x0207a0c8
+
+
+src/Combat/Main/strcat_02004040.cpp:
+    complete
+    .text start:0x02004040 end:0x02004070
+
+
+src/Combat/Main/strcmp.cpp:
+    complete
+    .text start:0x02004070 end:0x02004184
+
+
+src/Combat/Main/strcpy.cpp:
+    complete
+    .text start:0x02003f28 end:0x02003ff0
