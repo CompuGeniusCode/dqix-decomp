@@ -4770,3 +4770,23 @@ src/Combat/Overlay_17/AccumulateFloats_021d7288.cpp:
 src/Combat/Overlay_17/UpdateFloatChain_021d6d28.cpp:
     complete
     .init start:0x021d6d28 end:0x021d6dc0
+
+
+src/Combat/Overlay_17/func_ov017_021982ac.cpp:
+    complete
+    .text start:0x021982ac end:0x021983e0
+
+
+src/Combat/Overlay_17/func_ov017_021b4f48.cpp:
+    complete
+    .text start:0x021b4f48 end:0x021b5070
+
+
+src/Combat/Overlay_17/func_ov017_021c3fb4.cpp:
+    complete
+    .text start:0x021c3fb4 end:0x021c40ec
+
+
+src/Combat/Overlay_17/func_ov017_021cc388.cpp:
+    complete
+    .text start:0x021cc388 end:0x021cc4b8
