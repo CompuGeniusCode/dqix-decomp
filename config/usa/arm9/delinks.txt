@@ -23540,3 +23540,13 @@ src/Combat/Main/CpuSet.cpp:
 src/Combat/Main/LZ77UnCompReadByCallbackWrite16bit.cpp:
     complete
     .text start:0x020002cc end:0x020002d0
+
+
+src/Combat/Main/func_0204bc74.cpp:
+    complete
+    .text start:0x0204bc74 end:0x0204bd7c
+
+
+src/Combat/Main/func_020b33f0.cpp:
+    complete
+    .text start:0x020b33f0 end:0x020b34f8
