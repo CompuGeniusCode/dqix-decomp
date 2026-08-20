@@ -23730,3 +23730,8 @@ src/Combat/Main/Div_020006aa.s:
 src/Combat/Main/Sqrt_02000732.s:
     complete
     .text start:0x02000730 end:0x02000738
+
+
+src/Combat/Main/EmptyInterruptHandler.cpp:
+    complete
+    .text start:0x020c69c8 end:0x020c69cc
