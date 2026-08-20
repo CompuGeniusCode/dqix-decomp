@@ -7643,3 +7643,8 @@ src/Combat/Overlay_31/InvokeGuardedCallback_0221f9d0.cpp:
 src/Combat/Overlay_31/ResetAllocator_02249650.cpp:
     complete
     .init start:0x02249650 end:0x02249664
+
+
+src/Combat/Overlay_31/CountSetBits4Bytes_0221b158.cpp:
+    complete
+    .text start:0x0221b158 end:0x0221b19c
