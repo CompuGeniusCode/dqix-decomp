@@ -23690,3 +23690,19 @@ src/Combat/Main/func_020c1840.cpp:
 src/Combat/Main/func_020c1868.cpp:
     complete
     .text start:0x020c1868 end:0x020c189c
+
+src/Combat/Main/Mod_02000216.cpp:
+    complete
+    .text start:0x02000214 end:0x0200021c
+
+src/Combat/Main/RLUnCompReadByCallbackWrite16bit_0200038e.cpp:
+    complete
+    .text start:0x0200038c end:0x02000394
+
+src/Combat/Main/RLUnCompReadNormalWrite8bit_020005d2.cpp:
+    complete
+    .text start:0x020005d0 end:0x020005d8
+
+src/Combat/Main/Sqrt_02000732.cpp:
+    complete
+    .text start:0x02000730 end:0x02000738
