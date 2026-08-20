@@ -23530,3 +23530,13 @@ src/Combat/Main/_Z26StoreInputEmitFF1A02069834P14Struct02069834i.cpp:
 src/Combat/Main/func_0209f24c.cpp:
     complete
     .text start:0x0209f24c end:0x0209f364
+
+
+src/Combat/Main/CpuSet.cpp:
+    complete
+    .text start:0x020001c0 end:0x020001c4
+
+
+src/Combat/Main/LZ77UnCompReadByCallbackWrite16bit.cpp:
+    complete
+    .text start:0x020002cc end:0x020002d0
