@@ -23590,3 +23590,13 @@ src/Combat/Main/func_0209bed8.cpp:
 src/Combat/Main/func_0209f030.cpp:
     complete
     .text start:0x0209f030 end:0x0209f154
+
+
+src/Combat/Main/RunAtExitHandlers_020015e8.cpp:
+    complete
+    .text start:0x020015e8 end:0x02001710
+
+
+src/Combat/Main/func_0204a4ac.cpp:
+    complete
+    .text start:0x0204a4ac end:0x0204a5d4
