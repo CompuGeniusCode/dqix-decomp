@@ -23555,3 +23555,8 @@ src/Combat/Main/func_020b33f0.cpp:
 src/Combat/Main/HuffUnCompReadByCallback.cpp:
     complete
     .text start:0x0200062c end:0x02000630
+
+
+src/Combat/Main/SoftReset.cpp:
+    complete
+    .text start:0x0200078c end:0x02000790
