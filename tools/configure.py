@@ -106,6 +106,11 @@ DSD = str(args.dsd or os.path.join('.', str(root_path / f"dsd{EXE}")))
 OBJDIFF = os.path.join('.', str(root_path / f"objdiff-cli{EXE}"))
 CC = os.path.join('.', str(mwcc_path / "mwccarm.exe"))
 LD = os.path.join('.', str(mwcc_path / "mwldarm.exe"))
+# Assembler, for the handful of files that cannot be expressed in C: the secure-area BIOS
+# stubs need raw fill bytes emitted next to them and a second exported symbol inside one
+# object, neither of which mwccarm can do.
+AS = os.path.join('.', str(mwcc_path / "mwasmarm.exe"))
+AS_FLAGS = "-proc arm5TE"
 PYTHON = sys.executable
 
 
@@ -153,7 +158,7 @@ class Project:
     def source_object_files(self) -> list[str]:
         return [
             str(self.game_build / source_file.with_suffix(".o"))
-            for source_file in get_c_cpp_files([src_path, libs_path])
+            for source_file in get_source_files([src_path, libs_path])
         ]
 
     def arm9_lcf(self) -> Path:
@@ -216,6 +221,12 @@ def main():
             name="mwcc",
             command=mwcc_cmd,
             depfile="$basefile.d",
+        )
+        n.newline()
+
+        n.rule(
+            name="mwasm",
+            command=f'{WINE} "{AS}" {AS_FLAGS} -o $out $in',
         )
         n.newline()
 
@@ -416,6 +427,15 @@ def add_mwld_and_rom_builds(n: ninja_syntax.Writer, project: Project):
 
 
 def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: list[Path]):
+    for source_file in get_asm_files([src_path, libs_path]):
+        n.build(
+            inputs=str(source_file),
+            implicit=[AS],
+            rule="mwasm",
+            outputs=str((project.game_build / source_file).with_suffix(".o")),
+        )
+        n.newline()
+
     for source_file in get_c_cpp_files([src_path, libs_path]):
         src_obj_path = project.game_build / source_file
         cc_flags = []
@@ -449,6 +469,27 @@ def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: lis
             outputs=ctx_file,
         )
         n.newline()
+
+
+def get_source_files(dirs: list[Path]):
+    """Everything the build compiles or assembles."""
+    for f in get_c_cpp_files(dirs):
+        yield f
+    for f in get_asm_files(dirs):
+        yield f
+
+
+def get_asm_files(dirs: list[Path]):
+    for dir in dirs:
+        for root, _, files in os.walk(dir):
+            root = Path(root)
+            for file in files:
+                if is_asm(file):
+                    yield root / file
+
+
+def is_asm(name: str):
+    return Path(name).suffix in [".s"]
 
 
 def get_c_cpp_files(dirs: list[Path]):

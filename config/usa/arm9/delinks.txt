@@ -23691,18 +23691,42 @@ src/Combat/Main/func_020c1868.cpp:
     complete
     .text start:0x020c1868 end:0x020c189c
 
-src/Combat/Main/Mod_02000216.cpp:
+src/Combat/Main/GetCRC16_0200006a.s:
+    complete
+    .text start:0x02000068 end:0x02000070
+
+src/Combat/Main/Mod_02000216.s:
     complete
     .text start:0x02000214 end:0x0200021c
 
-src/Combat/Main/RLUnCompReadByCallbackWrite16bit_0200038e.cpp:
+src/Combat/Main/BitUnPack_0200026a.s:
+    complete
+    .text start:0x02000268 end:0x02000270
+
+src/Combat/Main/CpuFastSet_0200033e.s:
+    complete
+    .text start:0x0200033c end:0x02000344
+
+src/Combat/Main/RLUnCompReadByCallbackWrite16bit_0200038e.s:
     complete
     .text start:0x0200038c end:0x02000394
 
-src/Combat/Main/RLUnCompReadNormalWrite8bit_020005d2.cpp:
+src/Combat/Main/VBlankIntrWait_02000410.s:
+    complete
+    .text start:0x02000410 end:0x02000418
+
+src/Combat/Main/WaitByLoop_02000466.s:
+    complete
+    .text start:0x02000464 end:0x0200046c
+
+src/Combat/Main/RLUnCompReadNormalWrite8bit_020005d2.s:
     complete
     .text start:0x020005d0 end:0x020005d8
 
-src/Combat/Main/Sqrt_02000732.cpp:
+src/Combat/Main/Div_020006aa.s:
+    complete
+    .text start:0x020006a8 end:0x020006b0
+
+src/Combat/Main/Sqrt_02000732.s:
     complete
     .text start:0x02000730 end:0x02000738
