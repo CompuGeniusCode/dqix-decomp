@@ -7708,3 +7708,8 @@ src/Combat/Overlay_31/func_ov031_0223c308.cpp:
 src/Combat/Overlay_31/func_ov031_022410d8.cpp:
     complete
     .text start:0x022410d8 end:0x022411e4
+
+
+src/Combat/Overlay_31/ForwardPairAndNotify_0223e120.cpp:
+    complete
+    .text start:0x0223e120 end:0x0223e168
