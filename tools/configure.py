@@ -140,6 +140,31 @@ class Project:
     def dsd_configs(self) -> list[str]:
         return self.delinks_files + self.relocs_files + self.symbols_files
 
+    def check_delinked_sources(self):
+        """Every delinks.txt entry naming a source file needs that file to exist, otherwise
+        the link fails much later with just an unresolved object path from mwldarm."""
+        missing = []
+        for delinks_file in self.delinks_files:
+            for line in open(delinks_file, encoding="utf-8"):
+                line = line.strip()
+                if not line.endswith(":") or line.startswith("//"):
+                    continue
+                source_file = Path(line[:-1])
+                if source_file.suffix not in [".c", ".cpp", ".s"]:
+                    continue
+                if not source_file.is_file():
+                    missing.append((delinks_file, source_file))
+        if missing:
+            print(f"{len(missing)} source file(s) declared in delinks.txt but not on disk:")
+            for delinks_file, source_file in missing:
+                alternatives = [
+                    suffix for suffix in [".c", ".cpp", ".s"]
+                    if source_file.with_suffix(suffix).is_file()
+                ]
+                hint = f" (found {source_file.stem}{alternatives[0]})" if alternatives else ""
+                print(f"  {source_file}{hint}\n    declared in {delinks_file}")
+            exit(1)
+
     def arm9_config_yaml(self) -> Path:
         return self.game_config / "arm9" / "config.yaml"
 
@@ -182,6 +207,7 @@ class Project:
 
 def main():
     project = Project(args.version)
+    project.check_delinked_sources()
 
     with build_ninja_path.open("w") as file:
         n = ninja_syntax.Writer(file)
@@ -281,6 +307,12 @@ def main():
         n.rule(
             name="check_symbols",
             command=f"{DSD} check symbols --config-path $config_path --elf-path $elf_path --fail"
+        )
+        n.newline()
+
+        n.rule(
+            name="check_delinks",
+            command=f"{PYTHON} tools/check_delinks.py $in -s $symbols_file"
         )
         n.newline()
 
@@ -570,7 +602,17 @@ def add_check_builds(n: ninja_syntax.Writer, project: Project):
     n.newline()
 
     n.build(
-        inputs=["check_modules", "check_symbols"],
+        inputs=str(project.arm9_objects_txt()),
+        rule="check_delinks",
+        outputs="check_delinks",
+        variables={
+            "symbols_file": project.game_config / "arm9" / "symbols.txt",
+        },
+    )
+    n.newline()
+
+    n.build(
+        inputs=["check_modules", "check_symbols", "check_delinks"],
         rule="phony",
         outputs="check",
     )
