@@ -23790,3 +23790,8 @@ src/Combat/Main/InitControllerFields_02042c68.cpp:
 src/Combat/Main/func_020546c8.cpp:
     complete
     .text start:0x020546c8 end:0x02054e70
+
+
+src/Combat/Main/_Z26StoreInputEmitFF1E020698acP14Struct020698aci.cpp:
+    complete
+    .text start:0x020698ac end:0x020698fc
