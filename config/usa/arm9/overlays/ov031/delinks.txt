@@ -7713,3 +7713,13 @@ src/Combat/Overlay_31/func_ov031_022410d8.cpp:
 src/Combat/Overlay_31/ForwardPairAndNotify_0223e120.cpp:
     complete
     .text start:0x0223e120 end:0x0223e168
+
+
+src/Combat/Overlay_31/func_ov031_0222170c.cpp:
+    complete
+    .text start:0x0222170c end:0x02221ac8
+
+
+src/Combat/Overlay_31/func_ov031_02221ac8.cpp:
+    complete
+    .text start:0x02221ac8 end:0x02221e84
