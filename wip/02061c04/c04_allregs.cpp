@@ -2345,7 +2345,9 @@ extern "C" ARM int func_02061c04(void *obj, CmdMsg64 *msg, void *param3) {
         
         int bit = msg->p1;
         int one = 1;
-        ((Foo::Bar *)((char *)func_02012fe4() + 0x1840))->num |= (one << bit);
+        Foo *foo = (Foo *)func_02012fe4();
+        unsigned int v = foo->bar.num;
+        foo->bar.num = v | (one << bit);
         return one;
     }
     case 0xd4:
@@ -2498,7 +2500,7 @@ extern "C" ARM int func_02061c04(void *obj, CmdMsg64 *msg, void *param3) {
             _Z24CopyOutBattleField0x7ac0Pv((void *)&lr.fword0);
             _Z23CopyHalfwordAndTwoBytesP19SmallRecord020643e0S0_(snap, rec + 0x3c);
             _Z23CopyHalfwordAndTwoBytesP19SmallRecord020643e0S0_((char *)snap + 4, rec + 0x40);
-            snap->a_lo = ((struct SrcWord44 *)(rec + 0x44))->v24;
+            snap->a_lo = ((struct SrcWord44 *)(battle + 0x7548))->v24;
             snap->a_mid = _Z22GetFieldPercentOver307P7S_a0870(rec + 0x3c);
             snap->a_hi = _Z22GetFieldPercentOver448P7S_a090c(rec + 0x3c);
             snap->b_lo = lr.fword0;
