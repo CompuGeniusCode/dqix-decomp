@@ -23805,3 +23805,8 @@ src/Combat/Main/0207b154.cpp:
 src/Combat/Main/0208e7d0.cpp:
     complete
     .text start:0x0208e7d0 end:0x0208e824
+
+
+src/Combat/Main/BlendCombatEntries_020b3bac.cpp:
+    complete
+    .text start:0x020b3bac end:0x020b3f98
