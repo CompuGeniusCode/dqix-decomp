@@ -1,12 +1,12 @@
 #include <globaldefs.h>
 
-struct Struct02097280 {
+struct Struct0206ef94 {
     char pad[8];
     int value;
 };
 
-// USA: func_02097280
-extern "C" ARM int func_02097280(Struct02097280 *obj, char *idx, int dflt) {
+// USA: func_0206ef94
+extern "C" ARM int func_0206ef94(Struct0206ef94 *obj, char *idx, int dflt) {
     int flag = 1;
     int i = (int)(idx - (char *)0);
     if (i != -1) {
