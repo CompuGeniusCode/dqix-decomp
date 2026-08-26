@@ -23815,3 +23815,8 @@ src/Combat/Main/BlendCombatEntries_020b3bac.cpp:
 src/Combat/Main/func_02084a64.cpp:
     complete
     .text start:0x02084a64 end:0x02084e4c
+
+
+src/Combat/Main/func_02005ac4_02005ac4.cpp:
+    complete
+    .text start:0x02005ac4 end:0x02005ea0
