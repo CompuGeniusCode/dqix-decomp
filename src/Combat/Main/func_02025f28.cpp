@@ -12,14 +12,14 @@ struct Bcb8Params;
 void ForwardParamsToB8bc(struct Bcb8Params* s, int arg1, int arg2);
 
 struct Obj_0201bb78 { unsigned short field0; };
-int LookupBitFromValueRange0201bb78(struct Obj_0201bb78* obj, unsigned int val);
+extern "C" int _Z31LookupBitFromValueRange0201bb78P12Obj_0201bb78j(struct Obj_0201bb78* obj, unsigned int val);
 
-void SetElementFields0202756c(void* obj, int p1, int p2, int idx,
+void _Z24SetElementFields0202756cPviiihhthii(void* obj, int p1, int p2, int idx,
         unsigned char p5, unsigned char p6, unsigned short p7, unsigned char p8, int p9, int p10);
 
 int TestBitInByteArray(int unused, unsigned char* arr, int index);
-int HwDivideRounded020c2bf4(unsigned int numerHi, unsigned int denomLo);
-void ClampPositionToBounds0202630c(void* obj, int* pos, int margin);
+extern "C" int _Z23HwDivideRounded020c2bf4jj(unsigned int numerHi, unsigned int denomLo);
+extern "C" void _Z29ClampPositionToBounds0202630cPvPii(void* obj, int* pos, int margin);
 int GetField0x3b4Value(struct BattleStruct* battleStruct);
 
 extern "C" int _u32_div_f(int a, int b);
@@ -65,14 +65,14 @@ extern "C" ARM void func_02025f28(unsigned char* obj) {
     int p6a = 1;
     for (int i = 0; i < *(unsigned char*)(obj + 0xa99); i++) {
         struct Elem0xa9c* arr = *(struct Elem0xa9c**)(obj + 0xa9c);
-        int result = LookupBitFromValueRange0201bb78((struct Obj_0201bb78*)g, (unsigned short)(arr[i].h0 * 100));
+        int result = _Z31LookupBitFromValueRange0201bb78P12Obj_0201bb78j((struct Obj_0201bb78*)g, (unsigned short)(arr[i].h0 * 100));
         if (result == 0) continue;
         struct Elem0xa9c* e = *(struct Elem0xa9c**)(obj + 0xa9c) + i;
         if (e->b2 == 1) {
-            SetElementFields0202756c(obj, e->w4 + 0x7d000, e->w8 + 0x5d000, 0x18,
+            _Z24SetElementFields0202756cPviiihhthii(obj, e->w4 + 0x7d000, e->w8 + 0x5d000, 0x18,
                 (i + 0x55) & 0xff, p6a, 0xff, 0xff, 0x1000, 0x1000);
         } else if (e->b2 == 2) {
-            SetElementFields0202756c(obj, e->w4 + 0x7d000, e->w8 + 0x5d000, 0x17,
+            _Z24SetElementFields0202756cPviiihhthii(obj, e->w4 + 0x7d000, e->w8 + 0x5d000, 0x17,
                 (i + 0x55) & 0xff, 0, 0xff, 0xff, 0x1000, 0x1000);
         }
     }
@@ -84,8 +84,8 @@ extern "C" ARM void func_02025f28(unsigned char* obj) {
         posVec[0] = pos0.x + 0x80000;
         posVec[2] = pos0.z + 0x60000;
     } else if (((struct G8Obj*)g8)->lowNibble == 0) {
-        posVec[0] = HwDivideRounded020c2bf4(pos0.x + *(int*)((char*)g + 0x44), 0x6000) + 0x80000;
-        posVec[2] = HwDivideRounded020c2bf4(pos0.z + *(int*)((char*)g + 0x48), 0x6000) + 0x60000;
+        posVec[0] = _Z23HwDivideRounded020c2bf4jj(pos0.x + *(int*)((char*)g + 0x44), 0x6000) + 0x80000;
+        posVec[2] = _Z23HwDivideRounded020c2bf4jj(pos0.z + *(int*)((char*)g + 0x48), 0x6000) + 0x60000;
     } else {
         int g44 = *(int*)((char*)g + 0x44);
         if (g44 == 0 || *(int*)((char*)g + 0x48) == 0) {
@@ -100,10 +100,10 @@ extern "C" ARM void func_02025f28(unsigned char* obj) {
         struct Vec3i v = *(struct Vec3i*)((char*)g + 0x2774);
         v.x += 0x80000;
         v.z += 0x60000;
-        ClampPositionToBounds0202630c(obj, (int*)&v, 0x7000);
+        _Z29ClampPositionToBounds0202630cPvPii(obj, (int*)&v, 0x7000);
         v.x -= 0x4000;
         v.z -= 0x4000;
-        SetElementFields0202756c(obj, v.x, v.z, 0x19, 0x54, 0, 0xff, 0xff, 0x1000, 0x1000);
+        _Z24SetElementFields0202756cPviiihhthii(obj, v.x, v.z, 0x19, 0x54, 0, 0xff, 0xff, 0x1000, 0x1000);
     }
 
     int fieldVal = GetField0x3b4Value(battle);
@@ -118,7 +118,7 @@ extern "C" ARM void func_02025f28(unsigned char* obj) {
     int d = 0x10 - c;
     PackWordWithFlag0x40((unsigned int*)0x04001050, 0, 3, c, d);
 
-    ClampPositionToBounds0202630c(obj, posVec, 0x5000);
+    _Z29ClampPositionToBounds0202630cPvPii(obj, posVec, 0x5000);
     posVec[0] -= 0x4000;
     posVec[2] -= 0x4000;
 
@@ -126,6 +126,6 @@ extern "C" ARM void func_02025f28(unsigned char* obj) {
         short f4 = *(short*)((char*)c1 + 4);
         unsigned char p5 = (unsigned char)(f4 + 0x44);
         unsigned short p7 = (unsigned short)(f4 + 4);
-        SetElementFields0202756c(obj, posVec[0], posVec[2], 5, p5, 0, p7, 0xff, 0x1000, 0x1000);
+        _Z24SetElementFields0202756cPviiihhthii(obj, posVec[0], posVec[2], 5, p5, 0, p7, 0xff, 0x1000, 0x1000);
     }
 }

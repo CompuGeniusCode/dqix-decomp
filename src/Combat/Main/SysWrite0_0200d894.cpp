@@ -12,8 +12,8 @@ struct MirroredPointStruct_020c129c {
     int one;
 };
 
-// USA: func_020c129c
-extern "C" THUMB void InitMirroredPointStruct_020c129c(MirroredPointStruct_020c129c* out, int y, int x) {
+// USA: func_020c129c  (semantic: InitMirroredPointStruct_020c129c)
+extern "C" THUMB void func_020c129c(MirroredPointStruct_020c129c* out, int y, int x) {
     out->x0 = x;
     out->y0 = y;
     out->zero0 = 0;
