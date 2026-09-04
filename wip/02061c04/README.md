@@ -58,6 +58,25 @@ Both fixes are known:
 `0xe3`, `0xde`) differ only in literal-pool words attributed to the wrong body; every real
 instruction matches. With `shape=0` on every aligned body, the instruction count equals the ROM's.
 
+### The pointer round-trip is a third way to flip `0xe7`, at the same price
+
+`char *battle = ...; battle++;` with every later use written `(battle - 1)` clears the `0xe7`
+residue completely — `caseresidue` drops all 20 rows and the body reaches reg=0 — but the object is
+`0x27e0`, the same four bytes over as `c04_allregs.cpp`. It is structurally different from the two
+fixes above (no battle-relative address is formed anywhere), so the four bytes are the price of the
+flip itself, not of the address computation. `battle--` / `(battle + 1)` and a struct-stride form
+both land on `0x27e0` as well; round-tripping `rec` or `snap` instead is worse at `0x27e4`.
+
+### Removing the file-wide pragma is a campaign, not an edit
+
+`#pragma opt_propagation off` at line 1297 is not what the developers wrote, and the round-trip is
+the rewrite that usually replaces it (see `worker_src/core.md`). Measured here: strip it and the
+object is `0x27d0` — only 12 bytes short — but **1221 instructions differ**, mostly one recurring
+shape where the ROM stages a constant in a register before a call (`ldrb r2,[r6,#0x332]` /
+`mov r1,#1` / `mov r0,r6` / `str r1,[sp]`) and propagation sinks it to the use. The integer form of
+the round-trip does not help: `v++` … `(v - 1)` folds at propagation time, so it emits byte-identical
+code. Pointer arithmetic outlives the pass; integer arithmetic does not.
+
 So the open question is exactly this: **what makes mwcc weight `battle` over `rec` without emitting
 an instruction?** Everything free that was tried is inert — a CSE alias (`char *rec2 = battle +
 0x7504;` used for one access, folded straight back into `rec`), `(void)battle;`, retyping `rec` as a
