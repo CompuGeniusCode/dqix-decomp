@@ -23905,3 +23905,13 @@ src/Combat/Main/InitializeInterruptContextBlock_020c6ad4.cpp:
 src/Combat/Main/func_020307d0.cpp:
     complete
     .text start:0x020307d0 end:0x020309d0
+
+
+src/Combat/Main/func_02098a84.cpp:
+    complete
+    .text start:0x02098a84 end:0x02098e3c
+
+
+src/Combat/Main/func_020e2110.cpp:
+    complete
+    .text start:0x020e2110 end:0x020e2310
