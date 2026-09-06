@@ -1,0 +1,34 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+#include "Combat/Overlay_0/GetCombatantByID.h"
+#include "Util/Random.h"
+
+extern "C" int func_ov000_0215eb1c(int battle, short* table, int count, int flag);
+int PickRandomTableEntryResetCounter_021ed890(struct Random** rngPtr, int* maxAndFlag, short* table);
+
+struct Buf8_021ef7b8 { short v[8]; };
+extern struct Buf8_021ef7b8 data_ov024_021fedfc;
+
+// USA: func_ov024_021ef7b8
+extern "C" ARM int func_ov024_021ef7b8(int* a0, int a1, int a2, int* outCount, short* outArray) {
+	struct Buf8_021ef7b8 buf = data_ov024_021fedfc;
+
+	int count = func_ov000_0215eb1c(*a0, buf.v, 8, 1);
+	if (count <= 0) return 0;
+
+	*outCount = 0;
+	for (int i = 0; i < count; i++) {
+		struct CombatantStruct* member = GetCombatantByID(*a0, buf.v[i]);
+		if (!member) continue;
+		if (member->currentStats->primaryStats.agility >= 999) continue;
+		if (member->currentStats->agilityBuff >= 2) continue;
+		int idx = *outCount;
+		*outCount = idx + 1;
+		outArray[idx] = buf.v[i];
+	}
+	if (*outCount > 0) {
+		PickRandomTableEntryResetCounter_021ed890((struct Random**)a0, outCount, outArray);
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,13 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov031_0223c054(int);
+extern "C" void func_020c976c(unsigned int);
+void TerminateSystem020ce7a4(void);
+
+// USA: func_ov031_02228b78  (semantic: CheckFlagsThenTerminate_02228b78)
+extern "C" ARM void func_ov031_02228b78(void) {
+	if (func_ov031_0223c054(1) != 0) return;
+	if (func_ov031_0223c054(0) != 0) return;
+	func_020c976c(0x1000000);
+	TerminateSystem020ce7a4();
+}

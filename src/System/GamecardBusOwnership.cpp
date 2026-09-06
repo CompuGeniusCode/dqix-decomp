@@ -21,7 +21,7 @@ extern int data_021112dc;
 #pragma optimize_for_size off
 
 #if defined(jpn)
-#define func_020ca7e0 func_020cc2ac
+#define _Z10AtomicSwapiPi func_020cc2ac
 #endif
 
 extern "C"
@@ -32,7 +32,7 @@ extern "C"
     void func_020ca3ec(int val, void* dst, unsigned len);
 
     // Performs an atomic swap
-    unsigned int func_020ca7e0(unsigned int newValue, volatile unsigned int* atomic);
+    extern "C" unsigned int _Z10AtomicSwapiPi(unsigned int newValue, volatile unsigned int* atomic);
 }
 
 int TryLockGamecardBusLock(unsigned short owner, GamecardBusLock* lock, void (*onLock)(), bool strict);
@@ -137,7 +137,7 @@ int TryLockGamecardBusLock(unsigned short owner, GamecardBusLock* lock, void (*o
     else
         priorState = DisableIRQInterrupts();
 
-    int oldAtomic = func_020ca7e0(owner, &lock->atomic);
+    int oldAtomic = _Z10AtomicSwapiPi(owner, &lock->atomic);
     if (oldAtomic == 0)
     {
         if (onLock != NULL)

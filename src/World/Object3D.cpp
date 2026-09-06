@@ -15,12 +15,12 @@
 #pragma dont_reuse_strings off
 
 #if defined(jpn)
-#define func_020100bc func_0200ff18
-#define func_02010208 func_02010064
-#define func_02010218 func_02010074
-#define func_02010220 func_0201007c
-#define func_02016d8c func_02016b2c
-#define func_0202ed74 func_0202e8e4
+#define _Z18GetField0x3b0ValueP12BattleStruct func_0200ff18
+#define _Z18GetField0x3b4ValueP12BattleStruct func_02010064
+#define _Z15GetFieldAt0x3c0P12BattleStruct func_02010074
+#define _Z19GetBattleScaleCountP12BattleStruct func_0201007c
+#define _Z27ClearGlobalFlagBits02016d8cPv func_02016b2c
+#define _Z16GetPtrField0x144Pv func_0202e8e4
 #define func_02030c68 func_020307a0
 #define func_02030c9c func_020307d4
 #define func_02030e2c func_02030964
@@ -30,7 +30,7 @@
 #define func_02031278 func_02030db0
 #define func_0203ac40 func_0203a698
 #define func_020ca528 func_020cbff4
-#define func_020d8524 func_020d9e88
+#define _Z23CopyRegionAndFlushCachePvPKvj func_020d9e88
 #define func_020d1d1c func_020d37e8
 
 #define data_02108760 data_021086a4
@@ -45,18 +45,18 @@ void CreateRotationZ(Matrix3x3* out, fix32_t s, fix32_t c);
 
 extern "C"
 {
-    void* func_020100bc(BattleStruct*);
+    extern "C" void* _Z18GetField0x3b0ValueP12BattleStruct(BattleStruct*);
 
     // deltaTime for animation blending
-    fix32_t func_02010208(BattleStruct*);
+    extern "C" fix32_t _Z18GetField0x3b4ValueP12BattleStruct(BattleStruct*);
     // deltaTime for model animations
-    fix32_t func_02010218(BattleStruct*);
+    extern "C" fix32_t _Z15GetFieldAt0x3c0P12BattleStruct(BattleStruct*);
     // get some kind of deltaTime
-    int func_02010220(BattleStruct*);
+    extern "C" int _Z19GetBattleScaleCountP12BattleStruct(BattleStruct*);
     // update world matrix rotation
-    void func_02016d8c(const Matrix3x3* rotation);
+    extern "C" void _Z27ClearGlobalFlagBits02016d8cPv(const Matrix3x3* rotation);
 
-    const Matrix3x3* func_0202ed74(void*);
+    extern "C" const Matrix3x3* _Z16GetPtrField0x144Pv(void*);
 
     fix32_t func_02030c68(fix32_t); // sin(x) from lookup table, 0 <= x <= 2*pi
     fix32_t func_02030c9c(fix32_t); // cos(x) from lookup table, 0 <= x <= 2*pi
@@ -79,7 +79,7 @@ extern "C"
     void func_020d1d1c(unsigned short* out, const void* data, unsigned int length);
 
     // memcpy and flush cache
-    void func_020d8524(void*, const void*, unsigned);
+    extern "C" void _Z23CopyRegionAndFlushCachePvPKvj(void*, const void*, unsigned);
 }
 
 // if set, drawing doesn't take place. Also does something with
@@ -236,7 +236,7 @@ void Object3D::AdvanceEffects()
     if (flags_ & (1 << OBJECT3D_FLAG_5))
         return;
 
-    int deltaTimeTicks = func_02010208(GetBattleStruct());
+    int deltaTimeTicks = _Z18GetField0x3b4ValueP12BattleStruct(GetBattleStruct());
     if ((0.0f != alphaTransition_.changePerTick) ? 1 : 0)
     {
         unsigned int inheritedAlphau16 = 65535.0f * (inheritedAlpha_ / 31.0f);
@@ -276,7 +276,7 @@ void Object3D::AdvanceEffects()
 
 void Object3D::AdvanceAnimations()
 {
-    (void)func_02010220(GetBattleStruct());
+    (void)_Z19GetBattleScaleCountP12BattleStruct(GetBattleStruct());
     if (activeAnimationPackage_ == NULL)
         return;
     (this->*object3DsData.advanceProcs[activeAnimationPackage_->animationType])();
@@ -284,7 +284,7 @@ void Object3D::AdvanceAnimations()
 
 void Object3D::AdvanceAnimations_v0()
 {
-    fix16_t deltaTime = func_02010218(GetBattleStruct());
+    fix16_t deltaTime = _Z15GetFieldAt0x3c0P12BattleStruct(GetBattleStruct());
     BCFG* activeBCFG = &activeAnimationPackage_->bcfgData;
     if (activeBCFG == NULL || activeAnimationIndex_ < 0 || (flags_ & (1 << OBJECT3D_FLAG_12)))
         return;
@@ -378,7 +378,7 @@ void Object3D::AdvanceAnimations_v0()
 void Object3D::AdvanceAnimations_v1()
 {
     BattleStruct* battle = GetBattleStruct();
-    fix16_t deltaTime = func_02010218(battle);
+    fix16_t deltaTime = _Z15GetFieldAt0x3c0P12BattleStruct(battle);
     if (activeAnimationIndex_ < 0 || activeAnimationPackage_->pAnim3Ds == NULL 
         || activeAnimationPackage_->pAnim3Ds[activeAnimationIndex_].data == NULL)
         return;
@@ -391,7 +391,7 @@ void Object3D::AdvanceAnimations_v1()
         return;
     if (priorAnimationBlend_.blendTimeRemaining > 0)
     {
-        unsigned int blendDeltaTime = func_02010208(battle);
+        unsigned int blendDeltaTime = _Z18GetField0x3b4ValueP12BattleStruct(battle);
         unsigned int newTimeRemaining;
         if (priorAnimationBlend_.blendTimeRemaining < blendDeltaTime)
         {
@@ -599,7 +599,7 @@ void Object3D::PopulateRenderConfigWorld()
                 Mat3x3_Multiply(&worldRotation, &axisRotation, &worldRotation);
             }
         }
-        func_02016d8c(&worldRotation);
+        _Z27ClearGlobalFlagBits02016d8cPv(&worldRotation);
         Vector3fix multipliedScale;
         Vector3fix ownScale;
         ownScale.x = scale_[0];
@@ -617,7 +617,7 @@ void Object3D::PopulateRenderConfigWorld()
         RenderConfig::SetObjectPosition(&position_);
         if (flags_ & (1 << OBJECT3D_FLAG_19))
         {
-            const Matrix3x3* rotation = func_0202ed74(func_020100bc(GetBattleStruct()));
+            const Matrix3x3* rotation = _Z16GetPtrField0x144Pv(_Z18GetField0x3b0ValueP12BattleStruct(GetBattleStruct()));
             func_020ca528(rotation, &data_0210a010.objectRotationPosition.rotation);
             data_0210a010.flags &= ~((1 << RENDER_CONFIG_FLAG_WORLDVIEW_CACHE_VALID) | (1 << RENDER_CONFIG_FLAG_5) | (1 << RENDER_CONFIG_FLAG_2));
         }
@@ -649,7 +649,7 @@ void Object3D::PopulateRenderConfigWorld()
                     Mat3x3_Multiply(&totalRotation, &axisRotation, &totalRotation);
                 }
             }
-            func_02016d8c(&totalRotation);
+            _Z27ClearGlobalFlagBits02016d8cPv(&totalRotation);
         }
         Vector3fix scaling;
         scaling.x = scale_[0];
@@ -875,7 +875,7 @@ void Object3D::MaybeUpdateBonePositions()
 
     Matrix3x3 rotationMatrix;
     Mat3x3_WriteRotationY(&rotationMatrix, sine, cosine);
-    func_02016d8c(&rotationMatrix);
+    _Z27ClearGlobalFlagBits02016d8cPv(&rotationMatrix);
     Vector3fix scale = const_unitScale;
     RenderConfig::SetObjectScale(&scale);
     RenderConfig::SubmitToFifo();
@@ -1089,7 +1089,7 @@ bool Object3D::InternalLoadFromCHRArchive(ObjectArchiveLoadInfo* loadInfo)
                     narc.Destroy();
                     return false;
                 }
-                func_020d8524(allocation, fileBytes, allocSize);
+                _Z23CopyRegionAndFlushCachePvPKvj(allocation, fileBytes, allocSize);
                 fileBytes = allocation;
             }
             // the pointer is either allocated by us or we're promised it'll stick 
@@ -1148,7 +1148,7 @@ bool Object3D::InternalLoadFromCHRArchive(ObjectArchiveLoadInfo* loadInfo)
                     narc.Destroy();
                     return false;
                 }
-                func_020d8524(allocation, fileBytes, fileLength);
+                _Z23CopyRegionAndFlushCachePvPKvj(allocation, fileBytes, fileLength);
                 fileBytes = allocation;
             }
             Animation3D* anim3D = &animPackage->pAnim3Ds->data[fileType];

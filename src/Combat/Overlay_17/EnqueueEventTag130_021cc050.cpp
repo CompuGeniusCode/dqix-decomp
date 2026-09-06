@@ -1,0 +1,13 @@
+#include <globaldefs.h>
+
+void* GetData02100044(void);
+extern "C" void func_0205e330(void* a, void* b, int c);
+
+// USA: func_ov017_021cc050
+ARM void EnqueueEventTag130_021cc050(unsigned short a0) {
+	void* p = GetData02100044();
+	unsigned char buf[0x14];
+	buf[0] = 0x82;
+	*(unsigned short*)(buf + 4) = a0;
+	func_0205e330(p, buf, 0);
+}

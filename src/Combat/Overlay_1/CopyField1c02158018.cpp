@@ -1,0 +1,7 @@
+#include <globaldefs.h>
+
+// USA: func_ov001_02158018
+ARM int CopyField1c02158018(char* src, char* dst) {
+	*(int*)(dst + 0x68) = *(int*)(src + 0x1c);
+	return 0;
+}

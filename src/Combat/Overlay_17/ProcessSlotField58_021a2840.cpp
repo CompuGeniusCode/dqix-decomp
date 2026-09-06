@@ -1,0 +1,31 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+
+struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
+extern "C" int _ZN7Model3D7GetTEX0Ev(void* obj);
+extern "C" void _Z23StageTexFilePaletteDataPV8NSBXXTexb(int a, int b);
+extern "C" void _Z21StageTexFileImageDataPV8NSBXXTexb(int a, int b);
+
+// USA: func_ov017_021a2840
+ARM void ProcessSlotField58_021a2840(void) {
+    struct BattleStruct* battleStruct = GetBattleStruct();
+
+    int i;
+    for (i = 0; i < 0xc; i++) {
+        struct CombatantStruct* combatant = GetCombatantUnchecked(battleStruct, i + 7);
+        if (combatant == NULL) {
+            continue;
+        }
+
+        void* ptr = *(void**)((char*)combatant + 0x8);
+        if (ptr == NULL) {
+            continue;
+        }
+
+        int field58 = _ZN7Model3D7GetTEX0Ev(ptr);
+        if (field58 != 0) {
+            _Z23StageTexFilePaletteDataPV8NSBXXTexb(field58, 0);
+            _Z21StageTexFileImageDataPV8NSBXXTexb(field58, 0);
+        }
+    }
+}

@@ -7,7 +7,7 @@
 #include "System/ProcessorContext.h"
 
 #if defined(jpn)
-#define func_020d1198 func_020d2c64
+#define _Z21GetGlobalWord02112140v func_020d2c64
 
 #define data_02111304 data_02110fa4
 
@@ -23,7 +23,7 @@
 
 extern "C"
 {
-    CBool func_020d1198();
+    extern "C" CBool _Z21GetGlobalWord02112140v();
 }
 
 #define GET_FLAG_BIT(what, idx) (((what) & (1 << (idx))) ? 1 : 0)

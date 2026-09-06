@@ -1,0 +1,30 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov031_02227bc8(void);
+extern unsigned char data_ov031_02290cb8;
+extern void SetField_022274c0_022274c0(int);
+extern void RegisterCallback_02231df8(void);
+extern "C" void func_ov031_022368e0(void);
+extern "C" void func_ov031_02236878(int);
+extern "C" void func_ov031_02237b2c(int, int, int, int, int);
+extern void SetField18_02222e98(void);
+extern void AdvanceUnlessField1bActive_02231fd8(void);
+
+// USA: func_ov031_02231f54  (semantic: DispatchStateThenSetHandler_02231f54)
+extern "C" ARM void func_ov031_02231f54(void) {
+	int state = func_ov031_02227bc8();
+	switch (state) {
+	case 1:
+		data_ov031_02290cb8 = 1;
+		SetField_022274c0_022274c0((int)RegisterCallback_02231df8);
+		break;
+	case 4:
+		data_ov031_02290cb8 = 0;
+		func_ov031_022368e0();
+		func_ov031_02236878(9);
+		func_ov031_02237b2c(0xd, 1, 1, -1, 0);
+		SetField18_02222e98();
+		SetField_022274c0_022274c0((int)AdvanceUnlessField1bActive_02231fd8);
+		break;
+	}
+}

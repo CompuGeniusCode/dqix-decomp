@@ -1,0 +1,58 @@
+#include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
+#include "Memory/SafeAllocator.h"
+#include "std_library_functions.h"
+
+struct State0xbb1c;
+struct Obj0203bb3c;
+struct Bcb8Params;
+
+void ClearFields0x8(struct State0xbb1c* obj);
+extern "C" void _Z36SetupAndDispatchCharTransfer0203bb3cP11Obj0203bb3cPcP13SafeAllocatorit(struct Obj0203bb3c* obj, char* src, SafeAllocator* allocator, int category, unsigned short arg5);
+void ForwardParamsToB8bc(struct Bcb8Params* s, int arg1, int arg2);
+extern "C" int _Z28DispatchCharTransfer0203b784Piiiijj(int* arr1, int idx, int category, int addr, unsigned int len, unsigned int len2);
+void* GetData02105254(void);
+
+struct CharTileTask_02020fc4 {
+    char pad0[0x14];
+    int state;
+    char pad18[0x5c];
+    int totalSize;
+    unsigned char tileWidth;
+    unsigned char tileHeight;
+    char pad7a[0x12];
+    unsigned short charBaseOffset;
+};
+
+// USA: func_02020fc4
+extern "C" ARM void func_02020fc4(struct CharTileTask_02020fc4* task, int* taskID, SafeAllocator* allocator) {
+    BackgroundLoader* loader = BackgroundLoader::GetInstance();
+    int* charTable = (int*)GetData02105254();
+
+    if (task->state == 3) {
+        task->totalSize = 0;
+    } else {
+        void* fileData = 0;
+        unsigned int fileLength = 0;
+        loader->GetLoadedFileByID(*taskID, &fileData, &fileLength);
+        ClearFields0x8((struct State0xbb1c*)((char*)task + 0x78));
+        _Z36SetupAndDispatchCharTransfer0203bb3cP11Obj0203bb3cPcP13SafeAllocatorit((struct Obj0203bb3c*)((char*)task + 0x78), (char*)fileData, allocator, 1, 1);
+
+        int row;
+        for (row = 0; row < 0x20 / task->tileHeight; row++) {
+            int col;
+            for (col = 0; col < 0x20 / task->tileWidth; col++) {
+                ForwardParamsToB8bc((struct Bcb8Params*)((char*)task + 0x78),
+                                    col * task->tileWidth, row * task->tileHeight);
+            }
+        }
+
+        int buffer[8];
+        task->totalSize = task->tileWidth * task->tileHeight + task->charBaseOffset;
+        memset(buffer, 0, 0x20);
+        _Z28DispatchCharTransfer0203b784Piiiijj(charTable, 1, 0, (int)buffer, 0x20, 1);
+    }
+
+    BackgroundLoader::GetInstance()->RemoveTask(*taskID);
+    *taskID = -1;
+}

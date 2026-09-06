@@ -20,7 +20,7 @@ extern "C"
     void func_020a1ccc(int);
 }
 
-Ov33BackgroundLoader data_ov033_022a2a2c;
+extern Ov33BackgroundLoader data_ov033_022a2a2c;
 
 void PopulateOv33BackgroundLoader(void* fileLoadSpace, unsigned int capacity, int relativePrio)
 {
@@ -340,6 +340,3 @@ end:
     return 0;
 }
 
-Ov33BackgroundLoader::Ov33BackgroundLoader()
-{
-}

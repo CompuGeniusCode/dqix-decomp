@@ -1,0 +1,11 @@
+#include <globaldefs.h>
+
+extern "C" int func_0202cd50(int (*cb)(void), void* data, int c);
+extern "C" int func_0202ae4c(void);
+extern char data_020e73b4;
+
+// USA: func_0202b800
+ARM int SetStateToThreeAndDispatch0202b800(int* p) {
+    *p = 3;
+    return func_0202cd50(func_0202ae4c, &data_020e73b4, 0);
+}

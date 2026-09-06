@@ -1,0 +1,15 @@
+#include <globaldefs.h>
+
+ARM int TestBitAt0x34(unsigned char* obj, unsigned int index);
+
+// USA: func_020a35f8
+ARM int CountSetBitsAt0x34(unsigned char* obj) {
+    int count = 0;
+    int i;
+    for (i = 0; i < 4; i++) {
+        if (TestBitAt0x34(obj, (unsigned char)i)) {
+            count++;
+        }
+    }
+    return count;
+}

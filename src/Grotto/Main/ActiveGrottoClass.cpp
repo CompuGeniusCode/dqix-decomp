@@ -7,7 +7,7 @@
     #define func_020323c4 func_02031efc
 
     #define func_02012fe4 func_02012dac
-    #define func_0201b588 func_0201b300
+    #define _Z17IsInRange0201b588i func_0201b300
 
     #define func_020a3720 func_020a5498
     #define func_020a395c func_020a5698
@@ -24,7 +24,7 @@ extern "C"
 
     // Returns true if the value is between 40001 and 41505, respectively.
     // Most likely these are the zone IDs corresponding to grottos.
-    bool func_0201b588(unsigned short zoneID);
+    extern "C" bool _Z17IsInRange0201b588i(unsigned short zoneID);
 
     // No idea what these do, but they seem to be called before and after
     // each call to func_020a3a34.
@@ -159,7 +159,7 @@ int ActiveGrottoClass::GetFloorCount() const
 {
     GrottoStruct* grotto = GetGrottoStruct(GetBattleStruct());
     void* zone = func_02012fe4();
-    if (!func_0201b588(*(unsigned short*)zone))
+    if (!_Z17IsInRange0201b588i(*(unsigned short*)zone))
         return 0;
 
     if (grotto->activeMapData.GetMapType() == TreasureMapType_Legacy)

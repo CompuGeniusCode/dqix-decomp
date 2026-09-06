@@ -1,0 +1,178 @@
+#include <globaldefs.h>
+
+struct S021a1924;
+struct S021a6b84;
+struct S021a72dc;
+struct S021a7a5c;
+struct S021a85bc;
+struct S021a9314;
+struct S021b1d24;
+struct S021b2f4c;
+struct S021b83f0;
+struct S021beb8c;
+struct S021befcc;
+struct S021c031c;
+struct S021babf8;
+struct S021c1238;
+struct S021baeb0;
+struct S021b6b8c;
+struct Obj0217e5b0;
+struct Obj0217ef0c;
+struct Obj0217f260;
+struct Struct020e3ec0;
+struct Obj020d8484;
+struct Obj020dae98;
+struct Obj1_021c1a10;
+struct Obj1_021c30f8;
+struct Obj_021be3ec;
+struct Struct020d9fc8;
+
+void InitObj_0217e5b0(Obj0217e5b0* obj);
+void InitField1_0217ef0c(Obj0217ef0c* obj);
+void InitField1_0217f260(Obj0217f260* obj);
+void InitWithFlag020e3ec0(Struct020e3ec0* obj);
+void ShutdownObject020d8484(Obj020d8484* obj);
+void CallTwoHelpers_021bb8d8(void* obj);
+void Reset020dae08AndSetByte1(Obj020dae98* obj);
+void SetFlagByteAt0x1020d9db8(unsigned char* obj);
+void SetFlagByteAt0x1020dbd90(unsigned char* obj);
+void SetFlag1AfterCall_021c0568(unsigned char* obj);
+void SetFlagAndForward_021a99c8(unsigned char* obj);
+void RunInitAndSetFlag1_021c168c(void* obj);
+void SetFlagAndCleanupA_021ac294(unsigned char* obj);
+void SetFlagAndCleanupB_021aca00(unsigned char* obj);
+void SetFlagAndCleanupC_021adb08(unsigned char* obj);
+void InitBattleAndControllerState(void* obj);
+void SetFlag1ThenDestroy_021c1a10(Obj1_021c1a10* obj);
+void SetFlag1ThenDestroy_021c30f8(Obj1_021c30f8* obj);
+void CallHelperAndSetFlag_021a1924(S021a1924* obj);
+void CallHelperAndSetFlag_021a6b84(S021a6b84* obj);
+void CallHelperAndSetFlag_021a72dc(S021a72dc* obj);
+void CallHelperAndSetFlag_021a7a5c(S021a7a5c* obj);
+void CallHelperAndSetFlag_021a85bc(S021a85bc* obj);
+void CallHelperAndSetFlag_021a9314(S021a9314* obj);
+void CallHelperAndSetFlag_021b1d24(S021b1d24* obj);
+void CallHelperAndSetFlag_021b2f4c(S021b2f4c* obj);
+void CallHelperAndSetFlag_021b83f0(S021b83f0* obj);
+void CallHelperAndSetFlag_021beb8c(S021beb8c* obj);
+void CallHelperAndSetFlag_021befcc(S021befcc* obj);
+void CallHelperAndSetFlag_021c031c(S021c031c* obj);
+void CallTwoHelpersWithSelf_021bf5dc(void* obj);
+void ForwardGlobalAndSetFlag_021be3ec(Obj_021be3ec* obj);
+void CallIfField1cThenSetFlag_021babf8(S021babf8* obj);
+void CallIfField1cThenSetFlag_021c1238(S021c1238* obj);
+void CallIfField20ThenSetFlag_021baeb0(S021baeb0* obj);
+void CallIfField24ThenSetFlag_021b6b8c(S021b6b8c* obj);
+void CallHelpersAndSetField253_021ab67c(unsigned char* obj);
+void ClearHandleArrayAndFinalize020d9fc8(Struct020d9fc8* obj);
+
+extern "C" void func_ov004_0216fa48(void* obj);
+extern "C" void _Z13NoOp_0219fc84v(void* obj);
+extern "C" void _Z30CheckStackAndFinalize_021a5974Pc(void* obj);
+extern "C" void _Z25SetByteAtOffset1_021a7c1cPh(void* obj);
+extern "C" void _Z17SetByte1_021a9670Ph(void* obj);
+extern "C" void func_ov017_021a9fa0(void* obj);
+extern "C" void _Z22BlankFunction_021aa3f0v(void* obj);
+extern "C" void _Z17SetByte1_021acd24Ph(void* obj);
+extern "C" void func_ov017_021ae760(void* obj);
+extern "C" void _Z21TailCallInit_021aee9cPv(void* obj);
+extern "C" void _Z40ClearPendingAndDestroyAllocator_021b2200P11Obj021b2200(void* obj);
+extern "C" void _Z30ResetEntriesAndNotify_021b33d8Pv(void* obj);
+extern "C" void _Z25ClearFieldcIfSet_021b4760P11Obj021b4760(void* obj);
+extern "C" void _Z17TailCall_021b5a24Pv(void* obj);
+extern "C" void _Z18EmptyFunc_021b65dcv(void* obj);
+extern "C" void _Z13NoOp_021b8d18v(void* obj);
+extern "C" void _Z26TailCall_021b8d80_021b98f8Pv(void* obj);
+extern "C" void _Z22BlankFunction_021be09cv(void* obj);
+extern "C" void _Z37ClearFieldsAndResetAllocator_021bf398Pc(void* obj);
+extern "C" void _Z21SetByte1True_021c178cPh(void* obj);
+extern "C" void _Z17SetByte1_021c1e34Ph(void* obj);
+extern "C" void _Z33RemoveIfFieldNonNegative_021c235cPc(void* obj);
+extern "C" void _Z30ForwardAndClearField8_021c2710Ph(void* obj);
+extern "C" void _Z17SetByte1_021c2b1cPh(void* obj);
+extern "C" void _Z17SetByte1_021c32a4Ph(void* obj);
+
+struct EventNode_021a3ef0 {
+	signed char type;
+	void* next;
+};
+
+struct EventQueue_021a3ef0 {
+	EventNode_021a3ef0* head;
+	void* field4;
+};
+
+// USA: func_ov017_021a3ef0  (semantic: ProcessEventQueue_021a3ef0)
+extern "C" ARM void func_ov017_021a3ef0(EventQueue_021a3ef0* queue) {
+	EventNode_021a3ef0* node = queue->head;
+	while (node) {
+		switch (node->type) {
+		case 1: SetFlagAndCleanupC_021adb08((unsigned char*)node); break;
+		case 2: CallHelperAndSetFlag_021a1924((S021a1924*)node); break;
+		case 3: _Z13NoOp_0219fc84v(node); break;
+		case 5: _Z26TailCall_021b8d80_021b98f8Pv(node); break;
+		case 10: CallHelperAndSetFlag_021b83f0((S021b83f0*)node); break;
+		case 12: _Z30CheckStackAndFinalize_021a5974Pc(node); break;
+		case 13: CallTwoHelpersWithSelf_021bf5dc(node); break;
+		case 14: _Z13NoOp_021b8d18v(node); break;
+		case 15: CallIfField20ThenSetFlag_021baeb0((S021baeb0*)node); break;
+		case 16: CallIfField1cThenSetFlag_021babf8((S021babf8*)node); break;
+		case 17: InitObj_0217e5b0((Obj0217e5b0*)node); break;
+		case 4: CallTwoHelpers_021bb8d8(node); break;
+		case 18: CallHelperAndSetFlag_021b2f4c((S021b2f4c*)node); break;
+		case 19: _Z30ResetEntriesAndNotify_021b33d8Pv(node); break;
+		case 20: _Z25ClearFieldcIfSet_021b4760P11Obj021b4760(node); break;
+		case 21: _Z17TailCall_021b5a24Pv(node); break;
+		case 22: _Z18EmptyFunc_021b65dcv(node); break;
+		case 23: CallIfField24ThenSetFlag_021b6b8c((S021b6b8c*)node); break;
+		case 24: InitField1_0217ef0c((Obj0217ef0c*)node); break;
+		case 6: CallHelpersAndSetField253_021ab67c((unsigned char*)node); break;
+		case 28: SetFlagAndCleanupA_021ac294((unsigned char*)node); break;
+		case 30: SetFlagAndCleanupB_021aca00((unsigned char*)node); break;
+		case 31: _Z17SetByte1_021acd24Ph(node); break;
+		case 32: CallHelperAndSetFlag_021c031c((S021c031c*)node); break;
+		case 33: func_ov017_021ae760(node); break;
+		case 35: _Z21TailCallInit_021aee9cPv(node); break;
+		case 40: SetFlag1AfterCall_021c0568((unsigned char*)node); break;
+		case 41: CallIfField1cThenSetFlag_021c1238((S021c1238*)node); break;
+		case 42: InitField1_0217f260((Obj0217f260*)node); break;
+		case 43: CallHelperAndSetFlag_021b1d24((S021b1d24*)node); break;
+		case 45: _Z40ClearPendingAndDestroyAllocator_021b2200P11Obj021b2200(node); break;
+		case 46: RunInitAndSetFlag1_021c168c(node); break;
+		case 47: SetFlag1ThenDestroy_021c1a10((Obj1_021c1a10*)node); break;
+		case 48: _Z21SetByte1True_021c178cPh(node); break;
+		case 50: _Z22BlankFunction_021be09cv(node); break;
+		case 51: ForwardGlobalAndSetFlag_021be3ec((Obj_021be3ec*)node); break;
+		case 59: func_ov017_021a9fa0(node); break;
+		case 52: CallHelperAndSetFlag_021befcc((S021befcc*)node); break;
+		case 53: _Z37ClearFieldsAndResetAllocator_021bf398Pc(node); break;
+		case 54: func_ov004_0216fa48(node); break;
+		case 55: _Z17SetByte1_021c1e34Ph(node); break;
+		case 56: CallHelperAndSetFlag_021a9314((S021a9314*)node); break;
+		case 57: _Z17SetByte1_021a9670Ph(node); break;
+		case 58: SetFlagAndForward_021a99c8((unsigned char*)node); break;
+		case 60: _Z22BlankFunction_021aa3f0v(node); break;
+		case 61: CallHelperAndSetFlag_021a6b84((S021a6b84*)node); break;
+		case 62: CallHelperAndSetFlag_021a72dc((S021a72dc*)node); break;
+		case 63: CallHelperAndSetFlag_021a7a5c((S021a7a5c*)node); break;
+		case 64: _Z25SetByteAtOffset1_021a7c1cPh(node); break;
+		case 65: CallHelperAndSetFlag_021a85bc((S021a85bc*)node); break;
+		case 66: _Z33RemoveIfFieldNonNegative_021c235cPc(node); break;
+		case 67: ShutdownObject020d8484((Obj020d8484*)node); break;
+		case 68: _Z30ForwardAndClearField8_021c2710Ph(node); break;
+		case 69: _Z17SetByte1_021c2b1cPh(node); break;
+		case 70: SetFlag1ThenDestroy_021c30f8((Obj1_021c30f8*)node); break;
+		case 71: _Z17SetByte1_021c32a4Ph(node); break;
+		case 72: InitBattleAndControllerState(node); break;
+		case 73: ClearHandleArrayAndFinalize020d9fc8((Struct020d9fc8*)node); break;
+		case 74: SetFlagByteAt0x1020d9db8((unsigned char*)node); break;
+		case 75: Reset020dae08AndSetByte1((Obj020dae98*)node); break;
+		case 76: SetFlagByteAt0x1020dbd90((unsigned char*)node); break;
+		case 77: InitWithFlag020e3ec0((Struct020e3ec0*)node); break;
+		case 78: CallHelperAndSetFlag_021beb8c((S021beb8c*)node); break;
+		}
+		node = (EventNode_021a3ef0*)node->next;
+	}
+	queue->head = 0;
+	queue->field4 = 0;
+}

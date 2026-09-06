@@ -44,3 +44,6 @@ struct BattleStruct {
 };
 struct BattleStruct* GetBattleStruct();
 struct CombatantStruct* GetCombatantFromList(struct BattleStruct* battleStruct, int id);
+struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);
+void* GetPtrField0x2a04(struct BattleStruct* battleStruct);
+int GetByteField0x5721(struct BattleStruct* battleStruct);

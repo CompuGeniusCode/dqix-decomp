@@ -35,7 +35,7 @@
 #define func_020c2cf0 func_020c47bc
 #define func_020c2eb8 func_020c4984
 #define func_020c2f18 func_020c49e4
-#define func_020c54fc func_020c6fc8
+#define _Z24SubmitBlock0x40IfNotBusyi func_020c6fc8
 #define func_020ca3ec func_020cbeb8
 #define func_020ca408 func_020cbed4
 #define func_020ca430 func_020cbefc
@@ -150,18 +150,18 @@ extern "C"
     void func_020c2f18(const void*, void*);
 #endif
     // load the specified matrix into the current matrix (3x4).
-    void func_020c5188(const fix32_t*);
+    extern "C" void _Z16IssueCommand0x17i(const fix32_t*);
     // multiply the current matrix by the specified one (3x4), i.e carry
     // out GXFIFO operation 0x19
-    void func_020c51a4(const fix32_t*);
+    extern "C" void _Z16IssueCommand0x19i(const fix32_t*);
     // multiply by the specified 3x3 matrix (instruction 0x1a)
-    void func_020c51c0(const fix32_t*);
+    extern "C" void _Z16IssueCommand0x1Ai(const fix32_t*);
     // try to get the clip matrix into the pointer specified (4x4 fix32_t matrix)
     // returns -1 if still waiting, 0 if done
-    int func_020c54fc(void*);
+    extern "C" int _Z24SubmitBlock0x40IfNotBusyi(void*);
     // try to get the result matrix (current directional vector matrix)
     // returns -1 if still waiting, 0 if done
-    int func_020c552c(void*);
+    extern "C" int _Z24SubmitBlock0x80IfNotBusyi(void*);
     // memset via u32 values
     void func_020ca3ec(int value, void* dst, unsigned int len);
     // memcpy via u32 values

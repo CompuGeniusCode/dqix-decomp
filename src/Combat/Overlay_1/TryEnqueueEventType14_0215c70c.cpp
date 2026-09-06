@@ -1,0 +1,14 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov017_021d60f4(void* p);
+extern "C" void* func_ov001_0215ab20(int idx);
+void* EnqueueEventType14_0215a5f0(void* ctx);
+
+// USA: func_ov001_0215c70c
+ARM int TryEnqueueEventType14_0215c70c(void* ctx) {
+    int idx = func_ov017_021d60f4(ctx);
+    void* node = func_ov001_0215ab20(idx);
+    if (node == NULL) return 0;
+    EnqueueEventType14_0215a5f0(node);
+    return 1;
+}

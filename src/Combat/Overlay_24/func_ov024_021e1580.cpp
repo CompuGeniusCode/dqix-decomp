@@ -1,0 +1,50 @@
+#include <globaldefs.h>
+#include "Combat/Overlay_0/GetCombatantByID.h"
+
+int CheckField0x14Bit0Clear020890c0(unsigned char* obj);
+void SetByte0x78SetFlag0x200(unsigned char* obj);
+unsigned short SelectByIndexRange0to3_021da644(int idx, int a, int b);
+extern "C" void* func_ov000_0215e958(void* a0);
+void AddEntryAndIncrementCount0215a88c(void* objRaw, void* listRaw, int c);
+extern "C" void func_ov000_0215cd44(void* a, void* b, void* c, int d, int e, int f, int g);
+
+struct PackedPair_021e1580 {
+    unsigned int a : 10;
+    unsigned int b : 10;
+    unsigned int c : 10;
+    unsigned int hi : 2;
+};
+struct Flag_021e1580 { unsigned char pad : 7; unsigned char flag : 1; };
+struct Obj_021e1580 { char pad0[0xc]; void* field0xc; void* field0x10; char pad2[0x6e - 0x14]; unsigned char byte0x6e; };
+struct Field4Bits_021e1580 { unsigned int low12 : 12; unsigned int rest : 20; };
+struct Range_021e1580 {
+    char pad0[4];
+    struct Field4Bits_021e1580 field4;
+    char pad1[0x20 - 8];
+    struct PackedPair_021e1580 f20;
+    struct PackedPair_021e1580 f24;
+};
+
+// USA: func_ov024_021e1580
+ARM void* func_ov024_021e1580(struct Obj_021e1580* obj, int unused, int id, struct Range_021e1580* range, int unused2, int unused3, unsigned char flagArg) {
+	struct CombatantStruct* c = GetCombatantByID((int)obj->field0x10, id);
+	if (!c) return 0;
+	int clear = CheckField0x14Bit0Clear020890c0((unsigned char*)c->currentStats);
+	unsigned short sel;
+	if (clear != 0 && flagArg != 0) {
+		SetByte0x78SetFlag0x200((unsigned char*)c->currentStats);
+		sel = SelectByIndexRange0to3_021da644(id, range->f20.c, range->f24.a);
+	} else {
+		sel = SelectByIndexRange0to3_021da644(id, range->f24.b, range->f24.c);
+	}
+	void* entry = func_ov000_0215e958(obj->field0x10);
+	if (!entry) return 0;
+	int extracted = range->field4.low12;
+	if (extracted == 0x1fb || obj->byte0x6e == 0) {
+		AddEntryAndIncrementCount0215a88c(obj->field0x10, entry, sel);
+		obj->byte0x6e = 1;
+	}
+	struct Flag_021e1580* fl = (struct Flag_021e1580*)((char*)obj->field0xc + 0x1c);
+	func_ov000_0215cd44(obj->field0x10, entry, c, 0, 0, 0, fl->flag != 0);
+	return entry;
+}

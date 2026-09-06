@@ -724,7 +724,7 @@ void RenderCommand_7(RenderCommandHandler* handler, int modifier)
         Matrix4x4 clipMatrix;
         // get the current world * view matrix (we set projection matrix to identity, so
         // it doesn't contribute here)
-        while (func_020c54fc(&clipMatrix) != 0) {}
+        while (_Z24SubmitBlock0x40IfNotBusyi(&clipMatrix) != 0) {}
         if (data_0210a010.flags & (1 << RENDER_CONFIG_FLAG_0))
         {
             const Matrix4x3* worldView4x3 = RenderConfig::GetCombinedWorldViewMatrix();
@@ -855,7 +855,7 @@ void RenderCommand_8(RenderCommandHandler* handler, int modifier)
         GXFIFO = 0; // matrix mode 0: projection
         GXFIFO = 0; // why is this here?
         Matrix4x4 clipMatrix;
-        while (func_020c54fc(&clipMatrix) != 0) {}
+        while (_Z24SubmitBlock0x40IfNotBusyi(&clipMatrix) != 0) {}
         if (data_0210a010.flags & (1 << RENDER_CONFIG_FLAG_0))
         {
             const Matrix4x3* worldView4x3 = RenderConfig::GetCombinedWorldViewMatrix();

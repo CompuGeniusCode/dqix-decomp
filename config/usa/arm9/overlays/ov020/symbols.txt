@@ -10,11 +10,11 @@ func_ov020_0218cd98 kind:function(arm,size=0x1f4) addr:0x0218cd98
 func_ov020_0218cf8c kind:function(arm,size=0x3a0) addr:0x0218cf8c
 func_ov020_0218d32c kind:function(arm,size=0x318) addr:0x0218d32c
 func_ov020_0218d644 kind:function(arm,size=0x168) addr:0x0218d644
-func_ov020_0218d7ac kind:function(arm,size=0x54) addr:0x0218d7ac
-func_ov020_0218d800 kind:function(arm,size=0x54) addr:0x0218d800
+_Z28UpdateFieldGroup4e8_0218d7acP22FieldGroup4e8_0218d7acii kind:function(arm,size=0x54) addr:0x0218d7ac
+_Z28UpdateFieldGroup4f4_0218d800P22FieldGroup4f4_0218d800ii kind:function(arm,size=0x54) addr:0x0218d800
 func_ov020_0218d854 kind:function(arm,size=0x44) addr:0x0218d854
 func_ov020_0218d898 kind:function(arm,size=0x40) addr:0x0218d898
-func_ov020_0218d8d8 kind:function(arm,size=0x6c) addr:0x0218d8d8
+_Z39ResetAllocatorAndDispatchState_0218d8d8P18AllocGroup0218d8d8 kind:function(arm,size=0x6c) addr:0x0218d8d8
 data_ov020_0218d944 kind:data(any) addr:0x0218d944
 data_ov020_0218d950 kind:data(any) addr:0x0218d950
 data_ov020_0218d95c kind:data(any) addr:0x0218d95c
@@ -24,7 +24,6 @@ data_ov020_0218d990 kind:data(any) addr:0x0218d990
 data_ov020_0218d9b0 kind:data(any) addr:0x0218d9b0
 data_ov020_0218da90 kind:data(any) addr:0x0218da90
 __sinit_ov020_0218db90 kind:function(arm,size=0x18) addr:0x0218db90
-.p__sinit_ov020_0218db90 kind:data(word) addr:0x0218dba8
 data_ov020_0218dbc0 kind:data(any) addr:0x0218dbc0
 data_ov020_0218dbc8 kind:data(any) addr:0x0218dbc8
 data_ov020_0218dbdc kind:data(any) addr:0x0218dbdc
@@ -45,3 +44,4 @@ data_ov020_0218dcb3 kind:data(any) addr:0x0218dcb3
 data_ov020_0218dcca kind:data(any) addr:0x0218dcca
 data_ov020_0218dce2 kind:data(any) addr:0x0218dce2
 data_ov020_0218dcf8 kind:data(any) addr:0x0218dcf8
+.p__sinit_ov020_0218db90 kind:data(word) addr:0x0218dba8

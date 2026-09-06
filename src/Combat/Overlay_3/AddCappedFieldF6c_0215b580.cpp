@@ -1,0 +1,19 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+
+
+// USA: func_ov003_0215b580
+ARM int AddCappedFieldF6c_0215b580(int unused, int amount) {
+    struct BattleStruct* bs = GetBattleStruct();
+    void* p = GetPtrField0x2a04(bs);
+    int val = *(int*)((char*)p + 0xf6c);
+    if (val < -amount) {
+        return 0;
+    }
+    val += amount;
+    *(int*)((char*)p + 0xf6c) = val;
+    if ((unsigned int)val > 0x98967f) {
+        *(int*)((char*)p + 0xf6c) = 0x98967f;
+    }
+    return 1;
+}

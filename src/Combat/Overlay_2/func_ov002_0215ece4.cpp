@@ -1,0 +1,38 @@
+#include <globaldefs.h>
+
+int AppendNameTag(char* dst, int n, const char* name);
+extern "C" int _Z20AppendString02042058PcPKc(char* dst, const char* src);
+extern "C" void _Z31SetElementStateOrCreate0215b918Phiii(unsigned char* obj, int key, int b, int c);
+
+// USA: func_ov002_0215ece4  (semantic: AppendEntryTagsAndFinalize_0215ece4)
+extern "C" ARM void func_ov002_0215ece4(void* base, char* dst, int c, int productB, int clampedSum) {
+    char* obj = (char*)base;
+    char* buf;
+    int last;
+    int tag = 0;
+    int inRange = (c >= 0) && (c <= 3);
+
+    if (inRange) {
+        int i;
+        last = clampedSum - 1;
+        buf = obj + 0x1000;
+        for (i = productB; i < clampedSum; i++) {
+            void* entry = *(void**)(obj + (i << 2) + 0x2000 + 0x4a0);
+            if (entry != 0) {
+                const char* name = *(const char**)entry;
+                AppendNameTag(dst, tag, name);
+                if (i != last) {
+                    _Z20AppendString02042058PcPKc(dst, *(char**)(buf + 0xbdc));
+                }
+                tag++;
+            }
+        }
+    }
+
+    unsigned char flagByte = *(unsigned char*)(obj + 0x2000 + 0x520);
+    if (flagByte == 0) {
+        _Z31SetElementStateOrCreate0215b918Phiii((unsigned char*)obj, 0x11, 0, 0);
+        return;
+    }
+    _Z31SetElementStateOrCreate0215b918Phiii((unsigned char*)obj, 0x11, productB / 8, (flagByte + 7) / 8);
+}

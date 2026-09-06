@@ -4,9 +4,9 @@
 #pragma dont_inline on
 
 #if defined(jpn)
-#define func_02075090 func_0207621c
-#define func_020d84f8 func_020d9e5c
-#define func_020d8524 func_020d9e88
+#define _Z19ReturnFalse02075090PKc func_0207621c
+#define _Z20ClearAndInit020d84f8Pvj func_020d9e5c
+#define _Z23CopyRegionAndFlushCachePvPKvj func_020d9e88
 
 #define data_020f27c0 data_020f297c
 #define data_020f27e8 data_020f29a4
@@ -22,12 +22,12 @@ extern "C"
     // always zero. Based on where it is, and the fact that the argument
     // is a file path, maybe it used to check if the file was loaded into 
     // memory? But now it just says no
-    int func_02075090(const char*);
+    extern "C" int _Z19ReturnFalse02075090PKc(const char*);
 
     // zero memory and flush
-    void func_020d84f8(void*, unsigned int);
+    extern "C" void _Z20ClearAndInit020d84f8Pvj(void*, unsigned int);
     // memcpy and flush
-    void func_020d8524(void*, const void*, unsigned int);
+    extern "C" void _Z23CopyRegionAndFlushCachePvPKvj(void*, const void*, unsigned int);
 }
 
 struct GPCImplementationData
@@ -156,7 +156,7 @@ bool LoadAndDecompressGPCHeaderAndInnerFileInfo(GPCFile **ppGPC, ExtendedNitroVM
     outDecompressedLength = 0;
 
     ResetGPCPair(ppGPC, machine);
-    int unknownPurposeButAlwaysZero = func_02075090(gpcFilePath);
+    int unknownPurposeButAlwaysZero = _Z19ReturnFalse02075090PKc(gpcFilePath);
     {
     if (!machine.Open(gpcFilePath, unknownPurposeButAlwaysZero != 0))
         goto end;
@@ -165,7 +165,7 @@ bool LoadAndDecompressGPCHeaderAndInnerFileInfo(GPCFile **ppGPC, ExtendedNitroVM
         *pOutReadSuccessful = true;
 
     GPCFile::Header header;
-    func_020d84f8(&header, sizeof(GPCFile::Header));
+    _Z20ClearAndInit020d84f8Pvj(&header, sizeof(GPCFile::Header));
     unsigned int desiredSignature = data_020f27c0.gpc2Signature;
     header.signature = desiredSignature;
     if (!machine.Read(&header, sizeof(GPCFile::Header)))
@@ -181,7 +181,7 @@ bool LoadAndDecompressGPCHeaderAndInnerFileInfo(GPCFile **ppGPC, ExtendedNitroVM
 
     if (rightAlignOutput)
         outputBuffer = (void*)((((int)outputBuffer + outputCapacity) & ~3) - longerLength);
-    func_020d8524(outputBuffer, &header, sizeof(GPCFile::Header));
+    _Z23CopyRegionAndFlushCachePvPKvj(outputBuffer, &header, sizeof(GPCFile::Header));
     ((GPCFile::Header*)outputBuffer)->headerLength = 0;
     ((GPCFile::Header*)outputBuffer)->fileInfoLength = 0;
     unsigned int decompressProcOutputLength = 0;

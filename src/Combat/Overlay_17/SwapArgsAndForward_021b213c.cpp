@@ -1,0 +1,8 @@
+#include <globaldefs.h>
+
+extern "C" void func_ov017_021b2090(int a, int b);
+
+// USA: func_ov017_021b213c  (semantic: SwapArgsAndForward_021b213c)
+extern "C" ARM void func_ov017_021b213c(int a, int b, int c, int d) {
+	func_ov017_021b2090(*(int*)((int)&b + 0), *(int*)((int)&a + 0));
+}

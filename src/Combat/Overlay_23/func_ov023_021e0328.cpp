@@ -1,0 +1,47 @@
+#include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
+
+
+struct List0202fec8;
+
+struct InitStruct2075;
+void ClearStructFields(struct InitStruct2075* p);
+
+extern "C" void _ZN13SafeAllocator5ResetEv(void* thisPtr);
+extern "C" void func_02076080(void* a, void* b, int c, int d);
+
+// USA: func_ov023_021e0328
+extern "C" ARM int func_ov023_021e0328(void* obj) {
+    if (*(int*)((char*)obj + 0x738) == -1) {
+        return 5;
+    }
+
+    int listPtr = (int)BackgroundLoader::GetInstance();
+    if (((BackgroundLoader*)(listPtr))->GetTaskStatus((int)(*(int*)((char*)obj + 0x738)))) {
+        int out1, out2;
+        ((BackgroundLoader*)((struct List0202fec8*)listPtr))->GetLoadedFileByID((int)(*(int*)((char*)obj + 0x738)), (void**)(&out1), (unsigned int*)(&out2));
+        ClearStructFields(*(struct InitStruct2075**)((char*)obj + 0xc8));
+
+        if (out1 != 0 && out2 != 0) {
+            _ZN13SafeAllocator5ResetEv(*(void**)((char*)obj + 0x40));
+            func_02076080(*(void**)((char*)obj + 0xc8), *(void**)((char*)obj + 0x40), out1, out2);
+            *(unsigned short*)((char*)obj + 0x774) &= ~8;
+        }
+
+        ((BackgroundLoader*)(listPtr))->RemoveTask((int)(*(int*)((char*)obj + 0x738)));
+        *(int*)((char*)obj + 0x738) = -1;
+
+        int tmpC4 = *(int*)((char*)obj + 0xc4);
+        *(int*)((char*)obj + 0xc4) = *(int*)((char*)obj + 0xc8);
+        *(int*)((char*)obj + 0xc8) = tmpC4;
+
+        int tmp3c = *(int*)((char*)obj + 0x3c);
+        *(int*)((char*)obj + 0x3c) = *(int*)((char*)obj + 0x40);
+        *(int*)((char*)obj + 0x40) = tmp3c;
+
+        *(unsigned short*)((char*)obj + 0x774) |= 2;
+        return 5;
+    }
+
+    return 3;
+}

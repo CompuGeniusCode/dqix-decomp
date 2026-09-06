@@ -2,7 +2,7 @@
 
 #ifdef jpn
 #define func_020c745c func_020c8f28
-#define func_020c75a4 func_020c9070
+#define _Z21GetGlobalWord021112ecv func_020c9070
 #endif
 
 struct ResourceMutex
@@ -22,12 +22,12 @@ extern "C"
     // set up the main context
     void func_020c745c();
     // check if the main context has been set up
-    bool func_020c75a4();
+    extern "C" bool _Z21GetGlobalWord021112ecv();
 }
 
 void InitializeResourceMutex()
 {
-    if (!func_020c75a4())
+    if (!_Z21GetGlobalWord021112ecv())
         func_020c745c();
 
     ZeroInitializeMutex(&s_resourceMutex.mutex_);

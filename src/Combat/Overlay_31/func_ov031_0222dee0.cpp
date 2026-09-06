@@ -1,0 +1,40 @@
+#include <globaldefs.h>
+
+extern "C" void func_ov031_02223440(void);
+extern "C" int func_ov031_0223da58(void*);
+extern "C" extern void* _Z30TailCallElemAtIndex30_0223c7c4i(int);
+extern "C" void func_ov031_0223cbbc(int, int);
+extern "C" void _Z21SetField1014_022274d0ii(int, int);
+extern "C" void _Z22GetFields181c_02227520PiS_(int*, int*);
+extern "C" void _Z21SetField181c_0222750cii(int, int);
+extern "C" void _Z26SetField_022274c0_022274c0i(int v);
+extern "C" void func_ov031_0222ea24(void);
+extern "C" unsigned int func_ov031_0223cf70(void** a);
+
+extern "C" int LoadToMainObjStandardPalette(int arg0, int arg1, unsigned int arg2);
+extern int data_ov031_0224badc;
+
+typedef void (*Callback_022234d8)(void*, int, int);
+extern "C" void func_ov031_022234d8(int a0, Callback_022234d8 cb);
+
+extern void* data_ov031_02290c98;
+
+// USA: func_ov031_0222dee0
+extern "C" ARM void func_ov031_0222dee0(void) {
+	func_ov031_02223440();
+	func_ov031_0223da58(*(void**)((char*)data_ov031_02290c98 + 4));
+	_Z30TailCallElemAtIndex30_0223c7c4i(0);
+	func_ov031_022234d8((int)&data_ov031_0224badc, (Callback_022234d8)LoadToMainObjStandardPalette);
+	func_ov031_0223cbbc(1, 1);
+	func_ov031_0223cbbc(0, 0x15);
+
+	int local;
+	_Z22GetFields181c_02227520PiS_(&local, 0);
+	if (local >= 3) local += 1;
+
+	_Z21SetField1014_022274d0ii(2, 1);
+	_Z21SetField181c_0222750cii(0, local + 3);
+	_Z26SetField_022274c0_022274c0i((int)func_ov031_0222ea24);
+	void** slot = (void**)0x02290C98;
+	func_ov031_0223cf70(slot);
+}

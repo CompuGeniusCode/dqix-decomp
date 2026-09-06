@@ -1,0 +1,11 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov016_0218ef1c(void* p);
+
+// USA: func_ov016_0218e678
+ARM int CallIfNonNull_0218e678(void* p) {
+    if (p == NULL) {
+        return 0;
+    }
+    return func_ov016_0218ef1c(p);
+}

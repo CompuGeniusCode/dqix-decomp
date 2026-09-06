@@ -1,0 +1,9 @@
+#include <globaldefs.h>
+
+struct Obj021761ec { char pad[0xd3c]; int arr[8]; };
+
+// USA: func_ov000_021761ec
+ARM int GetClampedArrayField0xd3c(char* base, int index) {
+    if (index < 0 || index >= 8) index = 0;
+    return ((struct Obj021761ec*)(base + 0x1000))->arr[index];
+}

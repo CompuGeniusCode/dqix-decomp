@@ -1,0 +1,6 @@
+#include <globaldefs.h>
+
+// USA: func_ov023_021f9c80
+ARM void SetFieldShort78_021f9c80(void* obj, unsigned short value) {
+    *(unsigned short*)((char*)obj + 0x4e) = value;
+}

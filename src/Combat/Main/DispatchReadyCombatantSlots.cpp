@@ -1,0 +1,39 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+
+struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
+extern "C" int _ZNK8Object3D9IsVisibleEv(unsigned char* obj);
+
+struct Obj0205a148;
+void Dispatch0205a148(struct Obj0205a148* obj);
+
+struct Elem020d7638 {
+    unsigned char pad0[0xd0];
+    int field_d0;
+    unsigned char pad1[4];
+};
+
+struct Field41_020d7638 {
+    unsigned char pad0[0x41];
+    unsigned char lo5 : 5;
+    unsigned char bit5 : 1;
+    unsigned char hi2 : 2;
+};
+
+// USA: func_020d7638
+ARM void DispatchReadyCombatantSlots(struct Elem020d7638* obj) {
+    struct BattleStruct* bs = GetBattleStruct();
+    int i;
+    for (i = 0; i < 0xc; i++) {
+        struct CombatantStruct* combatant;
+        int id;
+        if (obj[i].field_d0 < 0) continue;
+        id = i;
+        if (i > 3) id = i + 0xbc;
+        combatant = GetCombatantUnchecked(bs, id);
+        if (!combatant) continue;
+        if (!_ZNK8Object3D9IsVisibleEv((unsigned char*)combatant)) continue;
+        if (!((struct Field41_020d7638*)combatant)->bit5) continue;
+        Dispatch0205a148((struct Obj0205a148*)&obj[i]);
+    }
+}

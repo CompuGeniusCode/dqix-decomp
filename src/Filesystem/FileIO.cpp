@@ -24,17 +24,17 @@
 extern "C"
 {
     // some sort of bit test of a struct member at offset 0
-    bool func_02046708(void*, unsigned int);
+    extern "C" bool _Z17TestFlags02046708P16FlagWord02046708j(void*, unsigned int);
     // returns pointer to some unknown struct (at 02114e04)
-    void* func_020d6c00();
+    extern "C" void* _Z27GetDataPtr02114e04_020d6c00v();
 
     // get system language?
-    int func_0200fb08(BattleStruct*);
+    extern "C" int _Z24NormalizeField5_0200fb08P14Struct0200fb08(BattleStruct*);
 
     // Looks like a custom implementation of strstr
-    char* func_020d2f88(char* searchString, const char* targetString);
+    extern "C" char* _Z13FindSubstringPcS_(char* searchString, const char* targetString);
     // Custom implementation of strlen
-    int func_020d2ff0(const char* str);
+    extern "C" int _Z12StringLengthPKc(const char* str);
 
     void LZ77UnCompReadNormalWrite8bit(const void* src, void* dst);
 }
@@ -65,7 +65,7 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
     
     char replacedPath[128] = { 0 };
 
-    int language = func_0200fb08((BattleStruct*)battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08((BattleStruct*)battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -105,7 +105,7 @@ void* LoadFileIntoNewAllocation(const char* path, SafeAllocator& alloc, unsigned
 
     char replacedPath[128] = { 0 };
 
-    int language = func_0200fb08(battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08(battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -334,7 +334,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     BattleStruct* battle = GetBattleStruct();
     char innerFileReplacedPath[128] = { 0 };
 
-    int language = func_0200fb08(battle);
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08(battle);
     StringReplaceLanguageTag(innerFilePath, innerFileReplacedPath, language);
 
     unsigned int metadataLength = 0;
@@ -344,7 +344,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     unsigned int storageCapacity = 0x30000;  
     
     
-    if (func_02046708(func_020d6c00(), 0x02000000))
+    if (_Z17TestFlags02046708P16FlagWord02046708j(_Z27GetDataPtr02114e04_020d6c00v(), 0x02000000))
         storageCapacity -= 0x8000;
     DECLARE_ASM_NOP();
     GPCReadPair readPair;
@@ -393,18 +393,18 @@ char* StringReplaceLanguageTag(const char* input, char* output, int language)
 
     __asm("mov copyOfOutputPtr, output");
     DECLARE_ASM_NOP();
-    char* firstTagOccurrence = func_020d2f88(copyOfOutputPtr, searchTag);
+    char* firstTagOccurrence = _Z13FindSubstringPcS_(copyOfOutputPtr, searchTag);
     
     const char* replacement = data_020f0da0[language];
 
-    int replacementStringLength = func_020d2ff0(replacement);
+    int replacementStringLength = _Z12StringLengthPKc(replacement);
     // difference between length of e.g. "en" and "<LG>" (in practice always -2)
-    int lengthDifference = func_020d2ff0(replacement) - func_020d2ff0(searchTag);
+    int lengthDifference = _Z12StringLengthPKc(replacement) - _Z12StringLengthPKc(searchTag);
     while (firstTagOccurrence != NULL)
     {
         if (lengthDifference > 0)
         {
-            int lengthRemaining = func_020d2ff0(firstTagOccurrence);
+            int lengthRemaining = _Z12StringLengthPKc(firstTagOccurrence);
             // difference > 0: replacing with a longer substring. Move everything
             // to the right of the tag to the right. For convenience, we can also
             // move the tag itself
@@ -412,14 +412,14 @@ char* StringReplaceLanguageTag(const char* input, char* output, int language)
         }
         else if (lengthDifference < 0)
         {
-            int lengthRemaining = func_020d2ff0(firstTagOccurrence);
+            int lengthRemaining = _Z12StringLengthPKc(firstTagOccurrence);
             // difference < 0: replacing with a shorter substring. Move everything
             // to the left (including the later part of the tag)
             memmove(firstTagOccurrence, firstTagOccurrence - lengthDifference, lengthDifference + lengthRemaining + 1);
         }
 
         memmove(firstTagOccurrence, replacement, replacementStringLength);
-        firstTagOccurrence = func_020d2f88(output, searchTag);
+        firstTagOccurrence = _Z13FindSubstringPcS_(output, searchTag);
     }
     return output;
 }*/

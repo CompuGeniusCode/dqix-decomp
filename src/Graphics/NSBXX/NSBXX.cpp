@@ -5,20 +5,20 @@
 #include "Memory/AllocatorUnion.h"
 
 #if defined(jpn)
-#define func_020b2a6c func_020b4538
+#define _Z28GetAlignedSizeByCode020b2a6cPhP18FormatInfo020b2a6c func_020b4538
 #endif
 
 extern "C"
 {
     // get allocation size for animation data
-    unsigned int func_020b2a6c(const void* rawAnim, NSBXXInternalModel* model);
+    extern "C" unsigned int _Z28GetAlignedSizeByCode020b2a6cPhP18FormatInfo020b2a6c(const void* rawAnim, NSBXXInternalModel* model);
 }
 
 #pragma optimize_for_size off
 
 extern "C" AnimationData* NSBXX_Model_AllocateAnimationData(AllocatorUnion* alloc, const void* rawAnim, NSBXXInternalModel* model)
 {
-    unsigned int size = func_020b2a6c(rawAnim, model);
+    unsigned int size = _Z28GetAlignedSizeByCode020b2a6cPhP18FormatInfo020b2a6c(rawAnim, model);
     return (AnimationData*)alloc->Allocate(size);
 }
 

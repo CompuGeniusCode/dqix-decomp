@@ -1,0 +1,49 @@
+#include <globaldefs.h>
+#pragma opt_propagation off
+
+struct Struct_0205d81c;
+
+struct Elem_0205d81c* FindElementByC40205d81c(struct Struct_0205d81c*, int);
+int IsField0x9cEqual3(unsigned char*);
+void* GetArrayElement02184338(void*, unsigned int);
+extern "C" void func_0205ac40(void* list, void* entry);
+
+/* Display entry fetched from the draw list; only the placement fields matter here. */
+struct CursorTag_02186db4 {
+    unsigned char pad00[0x14];
+    int posX;                   /* 0x14 */
+    int posY;                   /* 0x18 */
+    unsigned char pad1c[6];
+    unsigned char size;         /* 0x22 */
+    unsigned char pad23[3];
+    unsigned char visible;      /* 0x26 */
+};
+
+// USA: func_ov013_02186db4  (semantic: PositionElementCursor02186db4)
+extern "C" ARM void func_ov013_02186db4(void* obj) {
+    unsigned char* o = (unsigned char*)obj;
+
+    if (*(void**)(o + 0x18) == 0) return;
+
+    unsigned char* elem = (unsigned char*)FindElementByC40205d81c((struct Struct_0205d81c*)(o + 0x38), 4);
+    if (elem == 0) return;
+    if (IsField0x9cEqual3(elem) == 0) return;
+    if ((elem[0xc5] & 0x20) != 0) return;
+
+    int tagId = 0x2a;
+    if (o[0x640] != 0) tagId = 0x20;
+
+    CursorTag_02186db4* tag = (CursorTag_02186db4*)GetArrayElement02184338(*(void**)(o + 0x18), (unsigned short)tagId);
+    if (tag == 0) return;
+
+    /* Cell coordinates scale by 8 pixels, then by 0x1000 into fixed point. */
+    int dx8 = *(short*)(elem + 0xac) * 8;
+    int dy8 = *(short*)(elem + 0xae) * 8;
+    short baseX = *(short*)(o + 0x1e);
+
+    tag->posX = (short)(baseX + 3 + (short)dx8) * 0x1000;
+    tag->posY = (short)((short)dy8 + 3) * 0x1000;
+    tag->visible = 1;
+    tag->size = 0x20;
+    func_0205ac40(*(void**)(o + 0x18), tag);
+}

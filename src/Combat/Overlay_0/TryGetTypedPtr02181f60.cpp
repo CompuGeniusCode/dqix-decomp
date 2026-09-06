@@ -1,0 +1,8 @@
+#include <globaldefs.h>
+
+extern "C" int func_ov000_02181990(int, void*);
+
+// USA: func_ov000_02181f60
+ARM int TryGetTypedPtr02181f60(int a0, int a1, void* out) {
+	return func_ov000_02181990(1, out);
+}

@@ -6,16 +6,16 @@
 #include "Grotto/Overlay_17/Struct44C8.h"
 
 #ifdef jpn
-#define func_020a1df8 func_020a3b70
+#define _Z13PushInputLogAi func_020a3b70
 #define func_020a57e4 func_020a7588
 #define func_020a5b1c func_020a78c0
-#define func_020a1e54 func_020a3bcc
+#define _Z19PopStack0AndTriggeri func_020a3bcc
 #endif
 
 extern "C"
 {
-    void func_020a1df8(unsigned int);
-    void func_020a1e54(int);
+    extern "C" void _Z13PushInputLogAi(unsigned int);
+    extern "C" void _Z19PopStack0AndTriggeri(int);
 }
 
 #define TMAPLANGDATA_READ(offset, into, len) \
@@ -89,10 +89,10 @@ bool ExportDetailedTreasureMapData(const TreasureMapMetadata* from,
         to->legacy.Populate(from->QualityOrLegacyBossID, from->LegacyBossLevel, from->SeedOrMinTurns);
     }
 
-    func_020a1df8(4);
+    _Z13PushInputLogAi(4);
     to->LoadLegacyBossStats(computeLegacyStats, legacyStatsData);
     to->LoadTreasures();
-    func_020a1e54(1);
+    _Z19PopStack0AndTriggeri(1);
 
     for (int i = 0; i < 3; i++)
         to->discoveredTreasures[i] = false;

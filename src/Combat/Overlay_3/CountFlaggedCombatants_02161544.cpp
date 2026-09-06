@@ -1,0 +1,27 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+
+void* GetPtrField0x2a04(struct BattleStruct* battleStruct);
+
+// USA: func_ov003_02161544
+ARM int CountFlaggedCombatants_02161544(void* self) {
+    struct BattleStruct* bs = GetBattleStruct();
+    unsigned char* arr = (unsigned char*)GetPtrField0x2a04(bs);
+    unsigned char count = 0;
+    unsigned char i = 0;
+    while (i < arr[0xf7c]) {
+        unsigned char* p = arr + i;
+        unsigned char id = p[0xf78];
+        if (id != *(short*)((char*)self + 0x400 + 0x82)) {
+            struct CombatantStruct* c = GetCombatantFromList(bs, id);
+            if (c != NULL) {
+                int* q = *(int**)((char*)c + 0x130);
+                if (*(unsigned short*)((char*)q + 4) != 0) {
+                    count = count + 1;
+                }
+            }
+        }
+        i = i + 1;
+    }
+    return count;
+}

@@ -15,12 +15,12 @@
 #define data_020f1ef0 data_020f205c
 #define data_020f1ef4 data_020f2060
 
-#define func_020c56b0 func_020c717c
+#define _Z16GetBoxTestResultPi func_020c717c
 #endif
 
 extern "C"
 {
-    int func_020c56b0(int*);
+    extern "C" int _Z16GetBoxTestResultPi(int*);
 }
 
 extern unsigned int (*data_020f1ee8)(unsigned int, int, int);
@@ -358,7 +358,7 @@ int Model3D::TestVisible()
     GXFIFO_TEST_BOX = boxparams.u32s.c;
 
     int result;
-    while (func_020c56b0(&result) != 0) {}
+    while (_Z16GetBoxTestResultPi(&result) != 0) {}
     GXFIFO_MATRIX_POP = 1;
     return result;
 }

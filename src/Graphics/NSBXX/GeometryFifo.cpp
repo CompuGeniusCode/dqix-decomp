@@ -13,8 +13,8 @@
 #define func_020c2c38 func_020c4704
 #define func_020c2c94 func_020c4760
 #define func_020c51dc func_020c6ca8
-#define func_020c54fc func_020c6fc8
-#define func_020c552c func_020c6ff8
+#define _Z24SubmitBlock0x40IfNotBusyi func_020c6fc8
+#define _Z24SubmitBlock0x80IfNotBusyi func_020c6ff8
 #define func_020ca0a8 func_020cbb74
 #define func_020ca2ac func_020cbd78
 #define func_020ca4b4 func_020cbf80
@@ -40,8 +40,8 @@ extern "C"
     // reset various geometry registers
     void func_020c51dc();
 
-    int func_020c54fc(Matrix4x4*); // try to read clip matrix, -1 on failure
-    int func_020c552c(Matrix3x3*); // try to read vector result matrix, -1 on failure
+    extern "C" int _Z24SubmitBlock0x40IfNotBusyi(Matrix4x4*); // try to read clip matrix, -1 on failure
+    extern "C" int _Z24SubmitBlock0x80IfNotBusyi(Matrix3x3*); // try to read vector result matrix, -1 on failure
 
     void func_020ca0a8(int dmaChannel, const void* source, unsigned int length,
         DMACompletionCallback onCompletion, int callbackUserdata);
@@ -163,13 +163,13 @@ void GetCurrentPositionAndDirectionMatrices(Matrix4x3* position, Matrix3x3* dire
     if (position != NULL)
     {
         Matrix4x4 clipMatrix4x4;
-        while (func_020c54fc(&clipMatrix4x4) != 0) {}
+        while (_Z24SubmitBlock0x40IfNotBusyi(&clipMatrix4x4) != 0) {}
         Mat4x4_ConvertTo4x3(&clipMatrix4x4, position);
     }
 
     if (direction != NULL)
     {
-        while (func_020c552c(direction) != 0) {}
+        while (_Z24SubmitBlock0x80IfNotBusyi(direction) != 0) {}
     }
 
     GXFIFO_MATRIX_POP = 1;

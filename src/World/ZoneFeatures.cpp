@@ -15,7 +15,7 @@ struct Struct_020fdc20
 
 extern "C"
 {
-    void* func_02011584(BattleStruct*);
+    extern "C" void* _Z16GetPtrField0x468Pv(BattleStruct*);
     void func_0201ce10(void*);
 
     Matrix4x3 func_02030d84(fix32_t);
@@ -24,7 +24,7 @@ extern "C"
     fix32_t func_02030f30(fix32_t);
 
     // probably get zone data by name
-    unsigned short* func_0209998c(void*, const char*);
+    extern "C" unsigned short* _Z25FindElementByName0209998cP12List0209998cPKc(void*, const char*);
 
     // apply vector (v) to matrix (M)
     void func_020c2034(const Vector3fix* v, const fix32_t* M, Vector3fix* out);
@@ -156,12 +156,12 @@ int WarpScript_Opcode_68(Script::Parameter* params, int numParams)
 bool ProcessExtraOpcode69Params(Script::Parameter* param, int numParams, ZoneFeatures::Opcode68Entry& entry)
 {
     Script::Parameter* paramStart = param;
-    void* worldData = func_02011584(GetBattleStruct());
+    void* worldData = _Z16GetPtrField0x468Pv(GetBattleStruct());
     
     entry.unk_0 = (param++)->ToInt();
     if (paramStart[1].type == 0)
     {
-        unsigned short* probablyZone = func_0209998c(worldData, (param++)->ToString());
+        unsigned short* probablyZone = _Z25FindElementByName0209998cP12List0209998cPKc(worldData, (param++)->ToString());
         if (probablyZone == NULL)
             return false;
         entry.unk_1c = *probablyZone;
@@ -491,7 +491,7 @@ int WarpScript_Opcode_74(Script::Parameter* params, int numParams)
 {
     if (data_020fdc20.currentEntry == NULL)
         return 0;
-    void* worldData = func_02011584(GetBattleStruct());
+    void* worldData = _Z16GetPtrField0x468Pv(GetBattleStruct());
     switch (data_020fdc20.currentEntry->maybeType)
     {
     case 0:
@@ -535,7 +535,7 @@ int WarpScript_Opcode_74(Script::Parameter* params, int numParams)
                 {
                     const char* zoneName = (params++)->ToString();
                     numArgsConsumed++;
-                    unsigned short* maybeZoneData = func_0209998c(worldData, zoneName);
+                    unsigned short* maybeZoneData = _Z25FindElementByName0209998cP12List0209998cPKc(worldData, zoneName);
                     
                     if (maybeZoneData == NULL)
                         return 0;
@@ -637,7 +637,7 @@ int WarpScript_Opcode_74(Script::Parameter* params, int numParams)
             if (params->type == 0)
             {
                 const char* zoneName = (params++)->ToString();
-                unsigned short* maybeZoneData = func_0209998c(worldData, zoneName);
+                unsigned short* maybeZoneData = _Z25FindElementByName0209998cP12List0209998cPKc(worldData, zoneName);
                 
                 if (maybeZoneData == NULL)
                     return 0;

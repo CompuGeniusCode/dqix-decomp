@@ -1,0 +1,12 @@
+#include <globaldefs.h>
+
+extern int data_ov025_021ef988;
+extern "C" void func_ov025_021e3084(void* p);
+
+// USA: func_ov025_021e6208
+ARM int SetField_021e6208_021e6208(void* unused, int value) {
+    char* p = *(char**)((char*)&data_ov025_021ef988 + 0xc);
+    func_ov025_021e3084(p + 0x540);
+    *(int*)(p + 0x540) = value;
+    return 1;
+}

@@ -1,0 +1,11 @@
+#include <globaldefs.h>
+
+extern "C" unsigned char* func_0205ec34(void);
+
+// USA: func_020107a8
+ARM void SetField5cb4AndRecordByte1(char* obj, int v) {
+    *(int*)(obj + 0x5cb4) = v;
+    unsigned char* p = func_0205ec34();
+    unsigned char* rec = p + p[0x332] * 0x1c;
+    rec[1] = v;
+}

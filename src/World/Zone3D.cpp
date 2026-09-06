@@ -14,63 +14,63 @@
 //#define ZONE3D_EXPERIMENTAL
 
 #if defined(jpn)
-#define func_0200fdcc func_0200fc28
-#define func_0200fddc func_0200fc38
-#define func_02011584 func_020112f4
-#define func_02013750 func_02013518
-#define func_02013490 func_02013258
-#define func_0201b5b0 func_0201b328
-#define func_02053c6c func_02054fe4
-#define func_0207a5b8 func_0207b3f0
-#define func_0207b9cc func_0207c804
-#define func_0207df50 func_0207ecd0
-#define func_0208a9b4 func_0208b2a8
-#define func_02094d00 func_02096950
-#define func_02099950 func_0209b684
-#define func_020de848 func_020e01c4
+#define _Z24GetCombatantAtField0x3acP12BattleStruct func_0200fc28
+#define _Z25GetCombatantAtField0x397cP12BattleStruct func_0200fc38
+#define _Z16GetPtrField0x468Pv func_020112f4
+#define _Z22ResetBigStruct02013750Pvi func_02013518
+#define _Z13Reset02013490Pc func_02013258
+#define _Z17IsInRange0201b5b0i func_0201b328
+#define _Z15GetFieldAt0x150Ph func_02054fe4
+#define _Z24InitDefaultState0207a5b8P14Struct0207a5b8 func_0207b3f0
+#define _Z20ClearRegions0207b9ccPc func_0207c804
+#define _Z26CopyInternalFields0207df50P11Foo0207df50 func_0207ecd0
+#define _Z15GetData02108f0cv func_0208b2a8
+#define _Z23ClearThreeWords02094d00P29ClearThreeWords02094d00Struct func_02096950
+#define _Z22FindEntryByHalfwordKeyP11SearchTablei func_0209b684
+#define _Z16ZeroInit020de848Pv func_020e01c4
 
 #define data_020ef0f0 data_020ef02c
 #endif
 
 extern "C"
 {
-    void* func_02011584(BattleStruct*);
-    void func_02013454(void*);
-    void* func_0200fdcc(BattleStruct*);
-    void* func_0200fddc(BattleStruct*);
+    extern "C" void* _Z16GetPtrField0x468Pv(BattleStruct*);
+    extern "C" void _Z18InitStruct02013454Pc(void*);
+    extern "C" void* _Z24GetCombatantAtField0x3acP12BattleStruct(BattleStruct*);
+    extern "C" void* _Z25GetCombatantAtField0x397cP12BattleStruct(BattleStruct*);
 
-    void* func_02053c6c(void*);
-    void func_0205e104(const char*, SafeAllocator*, const void*, unsigned int);
-    void func_0207a5b8(void*);
+    extern "C" void* _Z15GetFieldAt0x150Ph(void*);
+    extern "C" void _Z25RunBufferedStream0205e104iiP12StreamHeaderi(const char*, SafeAllocator*, const void*, unsigned int);
+    extern "C" void _Z24InitDefaultState0207a5b8P14Struct0207a5b8(void*);
     void func_0207a614(void*, const char*);
 
     // member functions of the struct at 0x10c
-    void func_0207b98c(void*);
-    void func_0207b9cc(void*);
-    void func_0207ba0c(void*, void*, unsigned int, SafeAllocator*);
+    extern "C" void _Z12Init0207b98cPc(void*);
+    extern "C" void _Z20ClearRegions0207b9ccPc(void*);
+    extern "C" void _Z24ForwardReordered0207ba0ciiii(void*, void*, unsigned int, SafeAllocator*);
 
     // Texture functions
-    void* func_0207df50(void*);
-    void func_0207df90(void*);
-    void func_0207dfac(void*);
+    extern "C" void* _Z26CopyInternalFields0207df50P11Foo0207df50(void*);
+    extern "C" void _Z25RestorePairTables0207df90Pc(void*);
+    extern "C" void _Z24BackupPairTables0207dfacPc(void*);
 
-    void* func_0208a9b4();
-    void func_02094d00(void*);
-    Zone3D_StructPtr_8* func_02099950(void*, unsigned short id);
+    extern "C" void* _Z15GetData02108f0cv();
+    extern "C" void _Z23ClearThreeWords02094d00P29ClearThreeWords02094d00Struct(void*);
+    extern "C" Zone3D_StructPtr_8* _Z22FindEntryByHalfwordKeyP11SearchTablei(void*, unsigned short id);
 
     void func_020c9be0(); // abort() or similar
-    void func_020de848(void*);
+    extern "C" void _Z16ZeroInit020de848Pv(void*);
 
-    void func_02013490(void*);
-    void func_02013750(Zone3D*, bool);
+    extern "C" void _Z13Reset02013490Pc(void*);
+    extern "C" void _Z22ResetBigStruct02013750Pvi(Zone3D*, bool);
     void func_02014414(Zone3D*, const void*, unsigned);
     void func_02014a24(Zone3D*, void*);
-    void func_0201f040(void*, SafeAllocator*, const void*, unsigned int);
+    extern "C" void _Z36RegisterAndRunBufferedScript0201f040PvS_P12StreamHeaderj(void*, SafeAllocator*, const void*, unsigned int);
 
     // checks if zone id corresponds to a main floor of a grotto
-    bool func_0201b5b0(int id);
+    extern "C" bool _Z17IsInRange0201b5b0i(int id);
     // checks if zone id corresponds to boss floor of a grotto
-    bool func_0201b5d8(int id);
+    extern "C" bool _Z22IsValueInRange0201b5d8i(int id);
 }
 
 extern char data_020ef0f0[]; // "data/map/maplist9.bin"
@@ -112,15 +112,15 @@ void Zone3D::SwitchZone(unsigned short newID)
     BattleStruct* battle = GetBattleStruct();
     BackgroundLoader* loader = BackgroundLoader::GetInstance();
 
-    void* uVar3 = func_02011584(battle);
+    void* uVar3 = _Z16GetPtrField0x468Pv(battle);
     (void)func_ov017_0218b5b0();
-    void* iVar4 = func_0200fddc(battle);
+    void* iVar4 = _Z25GetCombatantAtField0x397cP12BattleStruct(battle);
 
     pAllocator_68_ = pAllocator_4c_;
     pAllocator_68_->Reset();
 
-    func_0207df50(unknown_ptr_50_);
-    func_02013750(this, true);
+    _Z26CopyInternalFields0207df50P11Foo0207df50(unknown_ptr_50_);
+    _Z22ResetBigStruct02013750Pvi(this, true);
 
     previousZoneID_ = currentZoneID_;
     currentZoneID_ = newID;
@@ -160,34 +160,34 @@ void Zone3D::SwitchZone(unsigned short newID)
     unknown_44_ = 0;
     unknown_48_ = 0;
 
-    func_0207a5b8(&unknown_struct_f4_[0]);
-    func_0207b9cc(&unknown_struct_10c_[0]);
-    func_020de848(&unknown_struct_2754_[0]);
+    _Z24InitDefaultState0207a5b8P14Struct0207a5b8(&unknown_struct_f4_[0]);
+    _Z20ClearRegions0207b9ccPc(&unknown_struct_10c_[0]);
+    _Z16ZeroInit020de848Pv(&unknown_struct_2754_[0]);
 
-    pUnknownStruct_8_ = func_02099950(uVar3, newID);
+    pUnknownStruct_8_ = _Z22FindEntryByHalfwordKeyP11SearchTablei(uVar3, newID);
     unknown_4_ = pUnknownStruct_8_->unknown_2_;
     if (pUnknownStruct_8_->unknown_c_low_ == 0)
     {
-        void* iVar5 = func_0200fdcc(battle);
+        void* iVar5 = _Z24GetCombatantAtField0x3acP12BattleStruct(battle);
         if (iVar5 != NULL)
         {
-            void* iVar6 = func_02053c6c(iVar5);
+            void* iVar6 = _Z15GetFieldAt0x150Ph(iVar5);
             if (iVar6 != NULL)
                 *(unsigned short*)((int)iVar6 + 0x566) = pUnknownStruct_8_->unknown_0_;
         }
     }
 
-    *(bool*)((int)func_0208a9b4() + 0x9c) = pUnknownStruct_8_->unknown_c_high_ != 0;
-    func_02094d00(&unknown_struct_2724_[0]);
+    *(bool*)((int)_Z15GetData02108f0cv() + 0x9c) = pUnknownStruct_8_->unknown_c_high_ != 0;
+    _Z23ClearThreeWords02094d00P29ClearThreeWords02094d00Struct(&unknown_struct_2724_[0]);
 
     grottoTileMapData_420_ = NULL;
 
-    if (func_0201b5b0(previousZoneID_))
+    if (_Z17IsInRange0201b5b0i(previousZoneID_))
     {
         grotto_.floorMap.Clear();
     }
 
-    if (func_0201b5b0(newID))
+    if (_Z17IsInRange0201b5b0i(newID))
     {
         isInMainGrottoFloor_23b8_ = true;
         currentGrottoFloor_23ba_ = newID % 20;
@@ -198,7 +198,7 @@ void Zone3D::SwitchZone(unsigned short newID)
         grottoTileMapData_420_ = pAllocator_68_->Allocate(0x4800);
         for (int i = 0; i < 0x100; i++)
         {
-            func_02013490((void*)((int)grottoTileMapData_420_ + i * 0x48));
+            _Z13Reset02013490Pc((void*)((int)grottoTileMapData_420_ + i * 0x48));
         }
         grotto_.ClearGenerator(false);
         grotto_.AllocateGenerator(pAllocator_68_, false);
@@ -229,7 +229,7 @@ void Zone3D::LoadMapAMBL()
 
     char filenameBuffer[20];
 
-    if (func_0201b5b0(currentZoneID_))
+    if (_Z17IsInRange0201b5b0i(currentZoneID_))
     {
         int environ = grotto_.GetActiveGrottoEnviron();
         if (environ == 0)
@@ -238,7 +238,7 @@ void Zone3D::LoadMapAMBL()
             environ = 5;
         sprintf(filenameBuffer, data_020ef106, data_020ef116, environ);
     }
-    else if (func_0201b5d8(currentZoneID_))
+    else if (_Z22IsValueInRange0201b5d8i(currentZoneID_))
     {
         int environ = grotto_.GetActiveGrottoEnviron();
         sprintf(filenameBuffer, data_020ef11f, data_020ef116, environ);
@@ -313,7 +313,7 @@ bool Zone3D::UnpackMapAMBL()
                         unsigned int decompressedSize;
                         const void* decompressed = DecompressLZ77FileIntoScratchSpace(*alloc, innerFilePtr, decompressedSize);
                         // this call is responsible for setting the top-screen map
-                        func_0205e104(string_c_, alloc, decompressed, decompressedSize);
+                        _Z25RunBufferedStream0205e104iiP12StreamHeaderi(string_c_, alloc, decompressed, decompressedSize);
                     }
                     // bpos file. From testing these seem to be a grotto thing
                     else if (strcmp(data_020ef150, extension) == 0)
@@ -372,8 +372,8 @@ bool Zone3D::ProcessBATSFile(const void* filedata, unsigned int /*filesize*/)
     SafeAllocator* allocator = pAllocator_68_;
     unsigned int decompressedLength;
     void* decompressed = DecompressLZ77FileIntoScratchSpace(*allocator, filedata, decompressedLength);
-    func_0207b98c(unknown_struct_10c_);
-    func_0207ba0c(unknown_struct_10c_, decompressed, decompressedLength, allocator);
+    _Z12Init0207b98cPc(unknown_struct_10c_);
+    _Z24ForwardReordered0207ba0ciiii(unknown_struct_10c_, decompressed, decompressedLength, allocator);
     return true;
 }
 
@@ -399,11 +399,11 @@ bool Zone3D::ProcessNSBTXFile(const void* filedata, unsigned int filesize, const
             void* decompressed = DecompressLZ77FileIntoScratchSpace(*allocator, filedata, decompressedLength);
             if (decompressed != NULL)
             {
-                func_0207df90(graphicsPtr);
+                _Z25RestorePairTables0207df90Pc(graphicsPtr);
                 modelNode->model_.SetRawFile(decompressed, decompressedLength);
                 modelNode->model_.ClearRawFileCache();
                 modelNode->model_.ProcessRawFile(Model3D::TextureStagingMode_Immediate);
-                func_0207dfac(graphicsPtr);
+                _Z24BackupPairTables0207dfacPc(graphicsPtr);
                 NSBXXTex* texture = modelNode->model_.GetTEX0();
                 if (texture != NULL)
                 {
@@ -435,7 +435,7 @@ void Zone3D::LoadMapAMDJ()
 {
     BackgroundLoader* loader = BackgroundLoader::GetInstance();
     char filenameBuffer[20];
-    if (func_0201b5b0(currentZoneID_))
+    if (_Z17IsInRange0201b5b0i(currentZoneID_))
     {
         int environ = grotto_.GetActiveGrottoEnviron();
         if (environ == 0)
@@ -444,7 +444,7 @@ void Zone3D::LoadMapAMDJ()
             environ = 5;
         sprintf(filenameBuffer, data_020ef156, data_020ef116, environ);
     }
-    else if (func_0201b5d8(currentZoneID_))
+    else if (_Z22IsValueInRange0201b5d8i(currentZoneID_))
     {
         int environ = grotto_.GetActiveGrottoEnviron();
         sprintf(filenameBuffer, data_020ef166, data_020ef116, environ);
@@ -553,7 +553,7 @@ bool Zone3D::ProcessBMDJFile(const void* filedata, unsigned int filesize, ZoneFe
     if (newStruct == NULL)
         return false;
 
-    func_02013454(newStruct);
+    _Z18InitStruct02013454Pc(newStruct);
     newStruct->unknown_0_ = misc->unk_0;
     newStruct->vec_48_ = misc->vector_4.vec;
     unsigned int decompressedLength;
@@ -561,7 +561,7 @@ bool Zone3D::ProcessBMDJFile(const void* filedata, unsigned int filesize, ZoneFe
     if (decompressed == NULL)
         return false;
 
-    func_0201f040(&newStruct->unk_4, allocator, decompressed, decompressedLength);
+    _Z36RegisterAndRunBufferedScript0201f040PvS_P12StreamHeaderj(&newStruct->unk_4, allocator, decompressed, decompressedLength);
     newStruct->pNext_ = firstBMDJStruct_41c_;
     firstBMDJStruct_41c_ = newStruct;
     return true;

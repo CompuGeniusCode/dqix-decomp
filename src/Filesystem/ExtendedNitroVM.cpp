@@ -7,8 +7,8 @@
 
 //#pragma optimize_for_size off
 #if defined(jpn)
-#define func_020d84f8 func_020d9e5c
-#define func_020d8524 func_020d9e88
+#define _Z20ClearAndInit020d84f8Pvj func_020d9e5c
+#define _Z23CopyRegionAndFlushCachePvPKvj func_020d9e88
 
 #define func_020ca95c func_020cc428
 
@@ -32,9 +32,9 @@ extern "C"
     unsigned int func_01ff860c(const char*);
 
     // Zero memory and flush cache
-    void func_020d84f8(void*, unsigned);
+    extern "C" void _Z20ClearAndInit020d84f8Pvj(void*, unsigned);
     // another memcpy-style function, cleans/invalidates the cache in destination after
-    unsigned int func_020d8524(void*, const void*, unsigned);
+    extern "C" unsigned int _Z23CopyRegionAndFlushCachePvPKvj(void*, const void*, unsigned);
 
     void DecompressA(Decompressor*, const void*, unsigned);
     void DecompressB(Decompressor*, const void*, unsigned);
@@ -63,7 +63,7 @@ unsigned int CompressionPrefix::GetDecompressedLength() const
 
 bool Decompressor::InitAndDecompress(void *out, unsigned int outCapacity, const void *in, unsigned int inLength)
 {
-    func_020d84f8(this, sizeof(Decompressor));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(Decompressor));
     if (out == NULL || in == NULL || inLength < 4)
         return false;
     
@@ -128,7 +128,7 @@ bool Decompressor::ProcessBytes(const void* input, unsigned int inputLength)
         default:
             if (inputLength >= remainingOutputBytes)
                 inputLength = remainingOutputBytes;
-            remainingOutputBytes -= func_020d8524(writeStart + probablyDecompressedSize - remainingOutputBytes, input, inputLength);
+            remainingOutputBytes -= _Z23CopyRegionAndFlushCachePvPKvj(writeStart + probablyDecompressedSize - remainingOutputBytes, input, inputLength);
             break;
         }
         CleanInvalidateCacheRange(writeStart, writeOutputPtr - writeStart);
@@ -201,7 +201,7 @@ void CacheMainFileAccessors()
 
 void ExtendedNitroVM::ZeroInitialize()
 {
-    func_020d84f8(this, sizeof(ExtendedNitroVM));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(ExtendedNitroVM));
     status = Status_NotOpen;
     isBadState = false;
 }
@@ -255,7 +255,7 @@ bool ExtendedNitroVM::Close()
     else if (NitroVM_FinishRead(&machine))
         didSomething = true;
 
-    func_020d84f8(this, sizeof(ExtendedNitroVM));
+    _Z20ClearAndInit020d84f8Pvj(this, sizeof(ExtendedNitroVM));
     status = Status_NotOpen;
     isBadState = false;
     return didSomething;
@@ -399,7 +399,7 @@ unsigned int ExtendedNitroVM::DecompressWithScratchSpace(Decompressor& decompres
     unsigned int scratchSpaceUsedAmount = (decompressor.probablyDecompressedSize + 4) & ~3;
     if (scratchSpaceUsedAmount >= scratchSpaceCapacity)
         scratchSpaceUsedAmount = scratchSpaceCapacity;
-    func_020d84f8((unsigned char*)scratchSpace + decompressor.probablyDecompressedSize, 
+    _Z20ClearAndInit020d84f8Pvj((unsigned char*)scratchSpace + decompressor.probablyDecompressedSize, 
         scratchSpaceUsedAmount - decompressor.probablyDecompressedSize);
     CleanInvalidateCacheRange(scratchSpace, scratchSpaceUsedAmount);
     outDecompressedLength = decompressor.probablyDecompressedSize;

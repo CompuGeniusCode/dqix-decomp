@@ -9,8 +9,8 @@
 #ifdef jpn
 #define func_020c9be0 func_020cb6ac
 
-#define func_020d97a8 func_020db1b4
-#define func_020d9828 func_020db234
+#define _Z22ClampAndSubmit020d97a8iiiiii func_020db1b4
+#define _Z15Forward020d9828Pv func_020db234
 
 #define data_020ef8a4 data_020ef794
 #define data_020ef908 data_020ef7f8
@@ -27,14 +27,14 @@ struct Struct_02104304
 extern "C"
 {
     // get system language
-    int func_0200fb08(BattleStruct*);
+    extern "C" int _Z24NormalizeField5_0200fb08P14Struct0200fb08(BattleStruct*);
 
     // abort() or similar
     void func_020c9be0();
 
     // Populates context with priority = relPrio + 16
-    void func_020d97a8(ProcessorContext* context, void* stackSpace, unsigned stackSize, int relPrio, const void* entry, int arg);
-    void func_020d9828(ProcessorContext* context); // thunk for MarkContextReadyAndSwitch
+    extern "C" void _Z22ClampAndSubmit020d97a8iiiiii(ProcessorContext* context, void* stackSpace, unsigned stackSize, int relPrio, const void* entry, int arg);
+    extern "C" void _Z15Forward020d9828Pv(ProcessorContext* context); // thunk for MarkContextReadyAndSwitch
 
     char* data_020ef8a4[]; // array of subdirectories within data/
 
@@ -130,10 +130,10 @@ void BackgroundLoader::Populate(void* fileLoadSpace, unsigned int spaceCapacity,
     flags_78c_0_ = true;
     flags_78c_2_ = true;
 
-    func_020d97a8(&context_, s_loaderInstanceData.contextStackSpace_,
+    _Z22ClampAndSubmit020d97a8iiiiii(&context_, s_loaderInstanceData.contextStackSpace_,
         sizeof(s_loaderInstanceData.contextStackSpace_), relativePrio,
         &BackgroundLoaderThreadFunction, (int)this);
-    func_020d9828(&context_);
+    _Z15Forward020d9828Pv(&context_);
 }
 
 void BackgroundLoader::MaybeWaitIdle()
@@ -193,7 +193,7 @@ int BackgroundLoader::QueueFileTask(const char* filename, int type, const char* 
     int newID = -1;
     LockResourceMutex();
 #if defined(usa)
-    int language = func_0200fb08(GetBattleStruct());
+    int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08(GetBattleStruct());
     char replacedFilename[80] = { 0 };
     StringReplaceLanguageTag(filename, replacedFilename, language);
 #endif

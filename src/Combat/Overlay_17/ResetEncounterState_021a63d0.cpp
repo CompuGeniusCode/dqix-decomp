@@ -1,0 +1,117 @@
+#include <globaldefs.h>
+#include "Combat/Main/BattleList.h"
+#include "Grotto/Main/GrottoStruct.h"
+
+extern "C" void* func_0202ae18(void);
+extern "C" void* func_02012fe4(void);
+extern "C" int func_0202c540(void* p);
+extern "C" void func_0205ac40(void* a, void* b);
+
+int GetIntField0x260(void* obj);
+int GetGlobalField0x1c020421a0();
+void* GetGlobalContext020daf90(void);
+int IsField0Null(void** obj);
+int IsGlobalU16InRange(void);
+
+struct Something02015a2c;
+int CheckSlotsForFlagState02015a2c(struct Something02015a2c* obj);
+
+int GetField0x50(void* obj);
+
+struct Node0x20_021a5ad0;
+void FillFieldWithEncoded_021a5ad0(struct Node0x20_021a5ad0* arr, int count, int val);
+void ClearAndEncodeField14_021a5b08(struct Node0x20_021a5ad0* arr, int count);
+
+struct Struct0200fb08;
+unsigned char NormalizeField5_0200fb08(struct Struct0200fb08* obj);
+
+GrottoStruct* GetGrottoStruct(BattleStruct* battle);
+struct CombatantStruct* GetCombatantAtField0x3ac(struct BattleStruct* battleStruct);
+
+struct Cont0205d1e0;
+struct Cont0205d228;
+struct Cont0205d274;
+void ClearBuffers0204b010OverList0x98(Cont0205d1e0*);
+void CallFunc0204c8f0OverList0x9c(Cont0205d228*);
+void CallFunc0204b04cOverList0x98(Cont0205d274*);
+extern "C" void func_0205da88(void*, int, int, int);
+struct Obj0205d2bc;
+void InitEntries0205d2bc(Obj0205d2bc*);
+
+extern unsigned short data_ov017_021d6a9e[5];
+
+// USA: func_ov017_021a63d0  (semantic: ResetEncounterState_021a63d0)
+extern "C" ARM void func_ov017_021a63d0(unsigned char* base) {
+    short buf[5];
+
+    if (*(int*)(base + 0x41c0) == 0) return;
+    if (*(int*)(base + 0x41b4) == 0) return;
+
+    void* searchObj = func_0202ae18();
+    int f260 = GetIntField0x260(GetCombatantAtField0x3ac(GetBattleStruct()));
+    int glob1c = GetGlobalField0x1c020421a0();
+    void* g = func_02012fe4();
+    void* ctx = GetGlobalContext020daf90();
+
+    if (GetGrottoStruct(GetBattleStruct())->unknown_0[0] == 0) return;
+
+    int f4080 = *(int*)(base + 0x4080);
+    if (f4080 != 0) return;
+    if (f260 != -1) return;
+
+    if (!IsField0Null(*(void***)(base + 0x36fc))) return;
+    if (func_0202c540(searchObj)) return;
+
+    GetBattleStruct();
+    if (IsGlobalU16InRange() != 0) return;
+    if (*(int*)((char*)glob1c + 0x998) != 0) return;
+    if (CheckSlotsForFlagState02015a2c((struct Something02015a2c*)g)) return;
+    if (GetField0x50(ctx)) return;
+
+    FillFieldWithEncoded_021a5ad0((struct Node0x20_021a5ad0*)(base + 0x4094), 2, 0x800);
+
+    {
+        unsigned short* dst = (unsigned short*)buf;
+        unsigned short* src = data_ov017_021d6a9e;
+        int n = 5;
+        do {
+            unsigned short* d = dst++;
+            unsigned short t = *src++;
+            *d = t;
+        } while (--n);
+    }
+
+    unsigned char count = NormalizeField5_0200fb08((struct Struct0200fb08*)GetBattleStruct());
+
+    if (*(int*)(base + 0x41b8) >= 3) {
+        void* sub = *(void**)(base + 0x4090);
+        ClearBuffers0204b010OverList0x98((Cont0205d1e0*)sub);
+        CallFunc0204c8f0OverList0x9c((Cont0205d228*)sub);
+        func_0205da88(sub, 1, 2, 1);
+        CallFunc0204b04cOverList0x98((Cont0205d274*)sub);
+        InitEntries0205d2bc((Obj0205d2bc*)sub);
+
+        unsigned char* p = *(unsigned char**)(base + 0x41c4);
+        int val40 = *(int*)(p + 0x40);
+        unsigned char* q = 0;
+        if (val40 != 0) {
+            if (*(unsigned short*)(p + 0x4e) > 6) {
+                q = (unsigned char*)val40 + 0xf0;
+            }
+        }
+
+        if (q) {
+            int val = (buf[count - 1] + 7) << 12;
+            *(int*)(q + 0x14) = val;
+            *(int*)(q + 0x18) = 0xab000;
+            q[0x22] = 0x7e;
+            q[0x26] = 0;
+            *(int*)(q + 0xc) = 0x1000;
+            *(int*)(q + 0x10) = 0x1000;
+            void* p2 = *(void**)(base + 0x41c4);
+            func_0205ac40(p2, q);
+        }
+    }
+
+    ClearAndEncodeField14_021a5b08((struct Node0x20_021a5ad0*)(base + 0x4094), 2);
+}
