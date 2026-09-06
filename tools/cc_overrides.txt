@@ -10,3 +10,5 @@ src/Combat/Overlay_25/StoreHalfAt1c_021e6374.cpp 2.0/sp2p2
 src/Combat/Overlay_25/StoreHalfAt1e_021e8064.cpp 2.0/sp2p2
 src/Combat/Overlay_28/UpdateTimerAndDispatch_021d9574.cpp 2.0/sp2p2
 src/Combat/Main/SetAngleAndTrigTable0202e9a4.cpp 2.0/sp2p2
+src/Combat/Overlay_0/TickAilmentTimers0215858c.cpp 2.0/sp2p2
+src/Combat/Overlay_0/func_ov000_0215858c.cpp 2.0/sp2p2

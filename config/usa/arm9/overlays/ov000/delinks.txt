@@ -2860,3 +2860,8 @@ src/Combat/Overlay_0/AccumulateFloats_0218381c.cpp:
 src/Combat/Overlay_0/UpdateAccumulatorChain_02183710.cpp:
     complete
     .init start:0x02183710 end:0x02183794
+
+
+src/Combat/Overlay_0/func_ov000_0215858c.cpp:
+    complete
+    .text start:0x0215858c end:0x0215985c
