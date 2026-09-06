@@ -27,7 +27,7 @@ DSD_VERSION = 'v0.6.0'
 WIBO_VERSION = '0.6.16'
 OBJDIFF_VERSION = 'v2.7.1'
 CC_OVERRIDES_PATH = "tools/cc_overrides.txt"
-MWCC_VERSION = "2.0/sp1p5"
+MWCC_VERSION = os.environ.get("DQIX_MWCC", "2.0/sp1p5")  # sp2p2 (build 137) fixes fixed-point s64 codegen but is NOT droppable in as a global here: measured 2026-09-06, sp2p2 = 15040 symbol errors against sp1p5 = 20. eakeys switched to it as part of a 165-file branch incl. dsd 0.10.2 and config/.ctor changes.
 DECOMP_ME_COMPILER = "mwcc_30_131"
 CC_FLAGS = " ".join([
     "-O2",                  # Optimize maximally, omit p: it optimizes out things that the game doesn't normally
@@ -78,11 +78,32 @@ extract_path     = root_path / "extract"
 tools_path       = root_path / "tools"
 mwcc_root        = args.compiler or tools_path / "mwccarm"
 mwcc_path        = mwcc_root / MWCC_VERSION
+# GLOBAL FLAG EXPERIMENT HOOK. The flags below are an ASSUMPTION -- nobody knows what the original
+# build used, and a per-file override only ever proved that ONE file wants something else. Setting
+# DQIX_GLOBAL_FLAGS appends to every compile so the whole game can be built at another level and
+# `ninja check` asked how many committed functions still match. Unset, behaviour is unchanged.
+_GLOBAL_EXTRA = os.environ.get("DQIX_GLOBAL_FLAGS", "").split()
+if _GLOBAL_EXTRA:
+    CC_FLAGS = CC_FLAGS + " " + " ".join(_GLOBAL_EXTRA)
+
 CC_OVERRIDES = {}
 if os.path.isfile(CC_OVERRIDES_PATH):
     for _line in open(CC_OVERRIDES_PATH, encoding="utf-8"):
         _line = _line.split("#")[0].split()
         if len(_line) == 2: CC_OVERRIDES[_line[0].replace("\\", "/")] = _line[1]
+
+# PER-FILE COMPILER FLAGS. The build could already swap the mwccarm BUILD per file; it could not
+# change the FLAGS, so a function whose translation unit was compiled at a different optimisation
+# level could never be matched -- the gate and the build were both locked to one flag set.
+# main:020b7ba0 is byte-exact under -O4 and 14 bytes out under the default. Format, one per line:
+#   src/Combat/Main/Foo_020b7ba0.cpp -O4
+CC_FLAG_OVERRIDES = {}
+CC_FLAG_OVERRIDES_PATH = "tools/cc_flag_overrides.txt"
+if os.path.isfile(CC_FLAG_OVERRIDES_PATH):
+    for _line in open(CC_FLAG_OVERRIDES_PATH, encoding="utf-8"):
+        _line = _line.split("#")[0].split()
+        if len(_line) >= 2:
+            CC_FLAG_OVERRIDES[_line[0].replace("\\", "/")] = _line[1:]
 
 
 # Includes
@@ -490,6 +511,9 @@ def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: lis
         _ovr = CC_OVERRIDES.get(str(source_file).replace("\\", "/"))
         if _ovr:
             _cc_exe = os.path.join(".", str(mwcc_root / _ovr / "mwccarm.exe"))
+        _fovr = CC_FLAG_OVERRIDES.get(str(source_file).replace("\\", "/"))
+        if _fovr:
+            cc_flags = cc_flags + list(_fovr)
         if is_cpp(source_file): cc_flags.append("-lang=c++")
         elif is_c(source_file): cc_flags.append("-lang=c")
         n.build(
