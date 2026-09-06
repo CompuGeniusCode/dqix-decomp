@@ -13,7 +13,7 @@ parser.add_argument('-version', default='usa', help="Game version (usa or jpn)")
 parser.add_argument('-w', type=str, default=DEFAULT_WIBO_PATH, dest="wine", required=False, help="Path to Wine/Wibo (linux only)")
 
 tools_dir = Path(os.path.dirname(os.path.realpath(__file__)))
-cc_path = tools_dir / 'mwccarm' / '2.0' / 'sp1p5' / 'mwccarm.exe'
+cc_path = tools_dir / 'mwccarm' / os.environ.get("DQIX_MWCC", "2.0/sp2p2") / 'mwccarm.exe'
 root_dir = tools_dir.parent
 include_dir = root_dir / 'include'
 libs_dir = root_dir / 'libs'
