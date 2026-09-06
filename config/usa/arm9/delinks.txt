@@ -13765,6 +13765,10 @@ src/Combat/Main/ScaleMatrixAndCopyTranslation020c1948.cpp:
     complete
     .text start:0x020c1948 end:0x020c197c
 
+src/Combat/Main/Mat4x3_WriteRotationZ_020c19b8.s:
+    complete
+    .text start:0x020c19b8 end:0x020c19d4
+
 src/Combat/Main/MulVec3MtxTranslate020c2034.cpp:
     complete
     .text start:0x020c2034 end:0x020c20d4
@@ -17049,6 +17053,10 @@ src/Combat/Main/func_020ca544.cpp:
 src/Combat/Main/func_020ca568.cpp:
     complete
     .text start:0x020ca568 end:0x020ca594
+
+src/Combat/Main/VectorizedMemset_020ca594.cpp:
+    complete
+    .text start:0x020ca594 end:0x020ca650
 
 src/Combat/Main/sys_exit.cpp:
     complete
