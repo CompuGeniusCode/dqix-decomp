@@ -14015,6 +14015,14 @@ src/Combat/Main/SetData020f2284.cpp:
     complete
     .text start:0x020c7dcc end:0x020c7de4
 
+src/Combat/Main/InitializeContextRegisters_020c7cb0.cpp:
+    complete
+    .text start:0x020c7cb0 end:0x020c7d34
+
+src/Combat/Main/_s32_div_f.cpp:
+    complete
+    .text start:0x0200cf44 end:0x0200d150
+
 src/Combat/Main/InitStruct020c7de4.cpp:
     complete
     .text start:0x020c7de4 end:0x020c7e0c
