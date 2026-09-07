@@ -17634,3 +17634,13 @@ src/Graphics/VRAMStaging.cpp:
     complete
     .bss start:0x0214e5e4 end:0x02153628
     .text start:0x020dc07c end:0x020dc214
+
+
+src/Combat/Main/func_0208f588.cpp:
+    complete
+    .text start:0x0208f588 end:0x0208f68c
+
+
+src/Combat/Main/func_020a1bb4.cpp:
+    complete
+    .text start:0x020a1bb4 end:0x020a1ccc
