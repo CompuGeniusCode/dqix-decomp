@@ -14023,6 +14023,34 @@ src/Combat/Main/_s32_div_f.cpp:
     complete
     .text start:0x0200cf44 end:0x0200d150
 
+src/Combat/Main/_ll_sdiv_0200cd2c.s:
+    complete
+    .text start:0x0200cd2c end:0x0200cedc
+
+src/Combat/Main/_u32_div_f_0200d150.s:
+    complete
+    .text start:0x0200d150 end:0x0200d334
+
+src/Combat/Main/func_0200f31c_0200f31c.s:
+    complete
+    .text start:0x0200f31c end:0x0200f368
+
+src/Combat/Main/SaveContext_020c7d34.s:
+    complete
+    .text start:0x020c7d34 end:0x020c7d80
+
+src/Combat/Main/func_020ca7e8_020ca7e8.s:
+    complete
+    .text start:0x020ca7e8 end:0x020ca8e8
+
+src/Combat/Main/SaveDivSqrtState_020cd594.s:
+    complete
+    .text start:0x020cd594 end:0x020cd5d4
+
+src/Combat/Main/func_020cd5d4_020cd5d4.s:
+    complete
+    .text start:0x020cd5d4 end:0x020cd610
+
 src/Combat/Main/InitStruct020c7de4.cpp:
     complete
     .text start:0x020c7de4 end:0x020c7e0c
