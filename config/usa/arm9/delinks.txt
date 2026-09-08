@@ -17649,3 +17649,8 @@ src/Combat/Main/func_020a1bb4.cpp:
 src/Combat/Main/func_020dd7ac.cpp:
     complete
     .text start:0x020dd7ac end:0x020dd8b4
+
+
+src/Combat/Main/func_020cdfd8.cpp:
+    complete
+    .text start:0x020cdfd8 end:0x020ce0fc
