@@ -17659,3 +17659,18 @@ src/Combat/Main/func_020cdfd8.cpp:
 src/Combat/Main/func_020a1ccc.cpp:
     complete
     .text start:0x020a1ccc end:0x020a1de4
+
+
+src/Combat/Main/func_02094fe4.cpp:
+    complete
+    .text start:0x02094fe4 end:0x020951d8
+
+
+src/Combat/Main/func_0209c840.cpp:
+    complete
+    .text start:0x0209c840 end:0x0209ca2c
+
+
+src/Combat/Main/func_020d03fc.cpp:
+    complete
+    .text start:0x020d03fc end:0x020d05ec
