@@ -1381,3 +1381,8 @@ src/Combat/Overlay_3/AccumulateFloats_0217fbf0_0217fbf0.cpp:
 src/Combat/Overlay_3/021767ec.cpp:
     complete
     .text start:0x021767ec end:0x021769ec
+
+
+src/Combat/Overlay_3/func_ov003_02170a7c.cpp:
+    complete
+    .text start:0x02170a7c end:0x02170b74
