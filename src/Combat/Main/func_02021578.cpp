@@ -29,29 +29,29 @@ extern "C" int func_020420e8(void* p, int flag);
 
 extern "C" void func_02020720(char* obj);
 extern "C" void func_02020838(char* obj);
-void TailForward0203b66c(char* obj);
-void InitSubObject0203bd78(char* obj);
-void InitBattleContext0203bd24(char* obj);
-void SetArraySlotFlag0203b718(void* objPtr, int mode, int idx, int fillByte);
+extern "C" void _Z19TailForward0203b66cPc(char* obj);
+extern "C" void _Z21InitSubObject0203bd78Pc(char* obj);
+extern "C" void _Z25InitBattleContext0203bd24Pc(char* obj);
+extern "C" void _Z24SetArraySlotFlag0203b718Pviii(void* objPtr, int mode, int idx, int fillByte);
 extern "C" void func_0203ba74(void* obj);
 struct Struct0205a198;
-void Init0205a198(struct Struct0205a198* p);
-void InitStruct0205a444(char* obj);
+extern "C" void _Z12Init0205a198P14Struct0205a198(struct Struct0205a198* p);
+extern "C" void _Z18InitStruct0205a444Pc(char* obj);
 
-int FormatAndCopyNames02020b98(void* obj);
+extern "C" int _Z26FormatAndCopyNames02020b98Pv(void* obj);
 extern "C" void func_02020c18(char* obj, int* handle, SafeAllocator* alloc);
-void ClearRecords02026644(char* obj);
+extern "C" void _Z20ClearRecords02026644Pc(char* obj);
 extern "C" void func_020211b0(char* obj, int* handle);
 extern "C" void func_02020aec(char* obj, int* handle, SafeAllocator* alloc);
-int InitAndCopyBuffer02023330(void* obj, int flag);
-void InitFourEntrySlots02020aa0(void* obj);
+extern "C" int _Z25InitAndCopyBuffer02023330Pvi(void* obj, int flag);
+extern "C" void _Z26InitFourEntrySlots02020aa0Pv(void* obj);
 extern "C" void func_02020fc4(void* obj, int* handle, SafeAllocator* alloc);
 extern "C" void func_020210f8(char* obj, int* handle, SafeAllocator* alloc);
 extern "C" void func_0202445c(void* obj);
 extern "C" void func_ov017_02191234(void* obj);
 void DelayThenSyncBit0(void);
 extern "C" void func_0202343c(void* obj);
-void MarkActiveCombatantSlots02026b7c(unsigned char* obj);
+extern "C" void _Z32MarkActiveCombatantSlots02026b7cPh(unsigned char* obj);
 extern "C" void func_02026bdc(void* obj, int flag);
 
 extern int data_020ef460;
@@ -98,7 +98,7 @@ extern "C" ARM void func_02021578(char* self) {
             *(const char**)((char*)&data_020ef460 + 4),
             *(const char**)((char*)&data_020ef460), (SafeAllocator*)0);
         loader->AddFence();
-        *(int*)(self + 0x9d0) = FormatAndCopyNames02020b98(self);
+        *(int*)(self + 0x9d0) = _Z26FormatAndCopyNames02020b98Pv(self);
         *(int*)(self + 0xa30) = loader->QueueLoadFileInGP2(
             *(const char**)((char*)&data_020ef460 + 8),
             &data_020ef598, (SafeAllocator*)0);
@@ -130,17 +130,17 @@ extern "C" ARM void func_02021578(char* self) {
         if (IsAxisIntWithin16((struct AxisFloats0203b5a0*)axis, 1) != 0) return;
         func_02020720(self);
         func_02020838(self);
-        TailForward0203b66c(table);
+        _Z19TailForward0203b66cPc(table);
         alloc->Reset();
-        InitSubObject0203bd78(battleCtx);
-        InitBattleContext0203bd24(battleCtx);
-        SetArraySlotFlag0203b718(table, 1, 0, 0);
-        SetArraySlotFlag0203b718(table, 1, 1, 0);
+        _Z21InitSubObject0203bd78Pc(battleCtx);
+        _Z25InitBattleContext0203bd24Pc(battleCtx);
+        _Z24SetArraySlotFlag0203b718Pviii(table, 1, 0, 0);
+        _Z24SetArraySlotFlag0203b718Pviii(table, 1, 1, 0);
         func_0203ba74(table);
         for (int i = 0; i < 0x1c; i++) {
-            Init0205a198((struct Struct0205a198*)(self + 0xe8 + i * 0x28));
+            _Z12Init0205a198P14Struct0205a198((struct Struct0205a198*)(self + 0xe8 + i * 0x28));
         }
-        InitStruct0205a444(self + 0x94);
+        _Z18InitStruct0205a444Pc(self + 0x94);
         *(unsigned char*)(self + 0xe4) = 1;
         *(char**)(self + 0xd4) = self + 0xe8;
         *(unsigned short*)(self + 0xe0) = 0x1c;
@@ -173,7 +173,7 @@ extern "C" ARM void func_02021578(char* self) {
         if (*(unsigned char*)(self + 0x779) != 0) {
             *(unsigned char*)(self + 0x9b8) = 1;
             *(unsigned char*)(self + 0x9b9) = 0;
-            ClearRecords02026644(self);
+            _Z20ClearRecords02026644Pc(self);
         }
         loader->AddFence();
         sprintf(buf, &data_020ef5b9, self + 0x548);
@@ -197,8 +197,8 @@ extern "C" ARM void func_02021578(char* self) {
         if (loader->GetTaskStatus(*(int*)(self + 0x9cc)) == 0) return;
         func_02020aec(self, (int*)(self + 0x9cc), alloc);
         memcpy(self + 0xbf0, (char*)0x6600000 + 0x2c20, 0x40);
-        InitAndCopyBuffer02023330(self, 1);
-        InitFourEntrySlots02020aa0(self);
+        _Z25InitAndCopyBuffer02023330Pvi(self, 1);
+        _Z26InitFourEntrySlots02020aa0Pv(self);
         *(signed char*)(self + 0x9c2) = *(signed char*)(self + 0x9c2) + 1;
     }
     if (*(signed char*)(self + 0x9c2) == 6) {
@@ -221,7 +221,7 @@ extern "C" ARM void func_02021578(char* self) {
         DelayThenSyncBit0();
         func_0202343c(self);
         func_0202445c(self);
-        MarkActiveCombatantSlots02026b7c((unsigned char*)self);
+        _Z32MarkActiveCombatantSlots02026b7cPh((unsigned char*)self);
         func_02026bdc(self, 0);
     }
 }
