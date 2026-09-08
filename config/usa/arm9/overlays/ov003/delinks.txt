@@ -1376,3 +1376,8 @@ src/Combat/Overlay_3/SetEntriesAndAlign_0215f5e8.cpp:
 src/Combat/Overlay_3/AccumulateFloats_0217fbf0_0217fbf0.cpp:
     complete
     .init start:0x0217fbf0 end:0x0217fc78
+
+
+src/Combat/Overlay_3/021767ec.cpp:
+    complete
+    .text start:0x021767ec end:0x021769ec
