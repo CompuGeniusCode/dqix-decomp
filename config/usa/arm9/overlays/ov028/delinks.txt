@@ -136,3 +136,8 @@ src/Combat/Overlay_28/InitAndRegister_021d9a54.cpp:
 src/Combat/Overlay_28/ResetFields_021d94e4.cpp:
     complete
     .text start:0x021d94e4 end:0x021d9530
+
+
+src/Combat/Overlay_28/func_ov028_021d9494_021d9494.cpp:
+    complete
+    .text start:0x021d9494 end:0x021d94e4
