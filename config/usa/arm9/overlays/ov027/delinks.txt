@@ -335,3 +335,8 @@ src/Combat/Overlay_27/RegisterCombatSlot_021da38c.cpp:
 src/Combat/Overlay_27/func_ov027_021d9134.cpp:
     complete
     .text start:0x021d9134 end:0x021d9618
+
+
+src/Combat/Overlay_27/func_ov027_021db524.cpp:
+    complete
+    .text start:0x021db524 end:0x021dbd7c
