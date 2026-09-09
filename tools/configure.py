@@ -25,7 +25,7 @@ args = parser.parse_args()
 GAME = "dqix"
 DSD_VERSION = 'v0.10.2'
 WIBO_VERSION = '0.6.16'
-OBJDIFF_VERSION = 'v2.7.1'
+OBJDIFF_VERSION = 'v3.8.1'
 CC_OVERRIDES_PATH = "tools/cc_overrides.txt"
 MWCC_VERSION = os.environ.get("DQIX_MWCC", "2.0/sp2p2") # minimum version required to match fixed point s64 arithmetic around 0x02030f30 (not sdk code). might need p3 or p4?
 DECOMP_ME_COMPILER = "mwcc_30_137"
@@ -258,7 +258,7 @@ def main():
 
         n.rule(
             name="mwasm",
-            command=f'{WINE} "{AS}" {AS_FLAGS} -o $out $in',
+            command=f'"{PYTHON}" tools/mwasm.py {WINE} "{AS}" {AS_FLAGS} -o $out $in',
         )
         n.newline()
 
