@@ -7,7 +7,7 @@ struct ActiveEntry02046900;
 extern "C" int CountPacEntries(struct ActiveEntry02046900* entry);
 
 struct Rec020467f0;
-extern "C" void* func_020467f0(struct Rec020467f0* rec, int index, void** out, int* out44);
+extern "C" void* GetPacEntryByIndex(struct Rec020467f0* rec, int index, void** out, int* out44);
 
 struct List0204af64;
 extern "C" void ResetBackgroundLayer(struct List0204af64* obj);
@@ -57,7 +57,7 @@ extern "C" ARM int LoadBgSlime3Screen() {
             s.lo = 1;
             s.hi = 1;
             for (int i = 0; i < count; i++) {
-                void* rec = func_020467f0((struct Rec020467f0*)recListHead, i, &dummyPtr, &dummyOut44);
+                void* rec = GetPacEntryByIndex((struct Rec020467f0*)recListHead, i, &dummyPtr, &dummyOut44);
                 if (rec) {
                     func_0204b2e0(&s, (char*)rec);
                     func_0204b3a0((struct SelfTag0204b3a0*)&s, (char*)rec);

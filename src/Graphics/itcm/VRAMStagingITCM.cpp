@@ -15,7 +15,7 @@
 #define data_020ee6e8 data_020ee7f4
 
 #define GetMultiplayerState func_0202a9d0
-#define func_0202ae24 func_0202a9dc
+#define GetGamemainEventQueue func_0202a9dc
 #define func_0202b2f0 func_0202aea0
 #define func_0205e57c func_0205f868
 #define func_020d84f8 func_020d9e5c
@@ -28,7 +28,7 @@
 extern "C"
 {
     void* GetMultiplayerState();
-    void* func_0202ae24();
+    void* GetGamemainEventQueue();
     void func_0202b2f0(void*);
     void func_0205e57c(void*);
 
@@ -685,7 +685,7 @@ void VRAMStagingManager::SendReadyDataToVRAM()
     }
 
     void* unknownPtr1 = GetMultiplayerState();
-    void* unknownPtr2 = func_0202ae24();
+    void* unknownPtr2 = GetGamemainEventQueue();
     func_0202b2f0(unknownPtr1);
     func_0205e57c(unknownPtr2);
 

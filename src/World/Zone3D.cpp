@@ -9,14 +9,14 @@
 #include "Graphics/NSBXX/NSBXX.h"
 
 #if defined(jpn)
-#define func_0200fdcc func_0200fc28
-#define func_0200fddc func_0200fc38
+#define GetMainCharacterCombatant func_0200fc28
+#define GetPlayerCombatant func_0200fc38
 #define func_02011584 func_020112f4
 #define func_0201e248 func_0201dfd4
 #define func_02013750 func_02013518
 #define func_02013490 func_02013258
 #define func_0201b5b0 func_0201b328
-#define func_02053c6c func_02054fe4
+#define GetCombatantRecord func_02054fe4
 #define func_0207a5b8 func_0207b3f0
 #define func_0207b9cc func_0207c804
 #define RewindTextureVramReservation func_0207ecd0
@@ -32,10 +32,10 @@ extern "C"
 {
     void* func_02011584(BattleStruct*);
     void func_02013454(void*);
-    void* func_0200fdcc(BattleStruct*);
-    void* func_0200fddc(BattleStruct*);
+    void* GetMainCharacterCombatant(BattleStruct*);
+    void* GetPlayerCombatant(BattleStruct*);
 
-    void* func_02053c6c(void*);
+    void* GetCombatantRecord(void*);
     void func_0205e104(const char*, SafeAllocator*, const void*, unsigned int);
 
     // Texture functions
@@ -104,7 +104,7 @@ void Zone3D::SwitchZone(unsigned short newID)
 
     void* uVar3 = func_02011584(battle);
     (void)func_ov017_0218b5b0();
-    void* iVar4 = func_0200fddc(battle);
+    void* iVar4 = GetPlayerCombatant(battle);
 
     pAllocator_68_ = pAllocator_4c_;
     pAllocator_68_->Reset();
@@ -158,10 +158,10 @@ void Zone3D::SwitchZone(unsigned short newID)
     unknown_4_ = pUnknownStruct_8_->unknown_2_;
     if (pUnknownStruct_8_->unknown_c_low_ == 0)
     {
-        void* iVar5 = func_0200fdcc(battle);
+        void* iVar5 = GetMainCharacterCombatant(battle);
         if (iVar5 != NULL)
         {
-            void* iVar6 = func_02053c6c(iVar5);
+            void* iVar6 = GetCombatantRecord(iVar5);
             if (iVar6 != NULL)
                 *(unsigned short*)((int)iVar6 + 0x566) = pUnknownStruct_8_->unknown_0_;
         }

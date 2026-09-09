@@ -6,12 +6,12 @@
 #include "Grotto/Overlay_17/Struct44C8.h"
 
 #if defined(jpn)
-#define func_020100bc func_0200ff18
-#define func_02010208 func_02010064
+#define GetActiveCamera func_0200ff18
+#define GetFrameDeltaMilliseconds func_02010064
 #define func_02010288 func_020100e4
 #define func_0202ec84 func_0202e7f4
-#define func_0205ec34 func_0205ff20
-#define func_0206dfb0 func_0206f104
+#define GetScenarioState func_0205ff20
+#define TestFlagBit func_0206f104
 #define func_0207ba28 func_0207c860
 #define func_020c54a4 func_020c6f70
 #define func_020c555c func_020c7028
@@ -77,17 +77,17 @@ static LightingManager s_lightingManager;
 extern "C"
 {
     // camera data?
-    void* func_020100bc(BattleStruct*);
+    void* GetActiveCamera(BattleStruct*);
     // one of various deltaTime counters
-    int func_02010208(BattleStruct*);
+    int GetFrameDeltaMilliseconds(BattleStruct*);
     // set day/night time
     void func_02010288(BattleStruct*, float);
 
     void func_0202ec84(void*, const Vector3fix*, int*, int*);
 
-    bool func_0206dfb0(void*, void*, int);
+    bool TestFlagBit(void*, void*, int);
 
-    char* func_0205ec34(); 
+    char* GetScenarioState(); 
 
     void func_0207ba28(LightingInfo*, int, float*, float*, float*);
 
@@ -661,13 +661,13 @@ void LightingManager::ModelTransformTintBrightnessContrast(NSBXXInternalModel *m
     int totalNumOperands;
     readPos = (uintptr_t)lightingInfo; // cursed dont look
     
-    char* struct0205ec34 = func_0205ec34();
+    char* struct0205ec34 = GetScenarioState();
 
     if (((LightingInfo*)readPos)->maybeMode_ != 1)
         return;
 
     int index;
-    if (zone->currentZoneID_ == 6401 && func_0206dfb0(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
+    if (zone->currentZoneID_ == 6401 && TestFlagBit(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
         index = 4;
     else
     {
@@ -772,7 +772,7 @@ void LightingManager::ProcessZoneChange(Zone3D *newZone)
     LightingInfo* info = &zone->lighting_;    
     battle = GetBattleStruct();
     func_ov017_0218b5b0();
-    char* struct0205ec34 = func_0205ec34();
+    char* struct0205ec34 = GetScenarioState();
 
     if (info->maybeMode_ == 2)
     {
@@ -787,7 +787,7 @@ void LightingManager::ProcessZoneChange(Zone3D *newZone)
         info->basic_.FillMissingEntries();
         
         // 6401 = id of front of starflight express
-        if (zone->currentZoneID_ == 6401 && func_0206dfb0(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
+        if (zone->currentZoneID_ == 6401 && TestFlagBit(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
         {
             index = 4;
         }
@@ -917,7 +917,7 @@ void LightingManager::RecomputeAdvancedLighting()
 
     if (lightRGBScaleTransitionDuration_ != 0)
     {
-        int newTimer = lightRGBScaleTransitionTimer_ + func_02010208(battle);
+        int newTimer = lightRGBScaleTransitionTimer_ + GetFrameDeltaMilliseconds(battle);
         if (newTimer >= lightRGBScaleTransitionDuration_)
         {
             lightRGBScaleTransitionDuration_ = 0;
@@ -1001,7 +1001,7 @@ void LightingManager::ApplyAmbientColorToModel(NSBXXInternalModel* model)
 
 void LightingManager::MaybeComputeHorizonPosition()
 {
-    void* maybeCameraData = func_020100bc(GetBattleStruct());
+    void* maybeCameraData = GetActiveCamera(GetBattleStruct());
     Vector3fix* maybeCameraTarget = (Vector3fix*)((char*)maybeCameraData + 0x12c);
     Vector3fix* maybeCameraEye = (Vector3fix*)((char*)maybeCameraData + 0x120);
 

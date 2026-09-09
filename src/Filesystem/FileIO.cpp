@@ -27,7 +27,7 @@ extern "C"
     // some sort of bit test of a struct member at offset 0
     bool func_02046708(void*, unsigned int);
     // returns pointer to some unknown struct (at 02114e04)
-    void* func_020d6c00();
+    void* GetGlobalStateFlags();
 
     // get system language?
     int GetLanguage(BattleStruct*);
@@ -35,7 +35,7 @@ extern "C"
     // Looks like a custom implementation of strstr
     char* func_020d2f88(char* searchString, const char* targetString);
     // Custom implementation of strlen
-    int func_020d2ff0(const char* str);
+    int StringLength(const char* str);
 
     void LZ77UnCompReadNormalWrite8bit(const void* src, void* dst);
 }
@@ -346,7 +346,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     unsigned int storageCapacity = 0x30000;  
     
     
-    if (func_02046708(func_020d6c00(), 0x02000000))
+    if (func_02046708(GetGlobalStateFlags(), 0x02000000))
         storageCapacity -= 0x8000;
     DECLARE_ASM_NOP();
     GPCReadPair readPair;
@@ -399,14 +399,14 @@ char* StringReplaceLanguageTag(const char* input, char* output, int language)
     
     const char* replacement = data_020f0da0[language];
 
-    int replacementStringLength = func_020d2ff0(replacement);
+    int replacementStringLength = StringLength(replacement);
     // difference between length of e.g. "en" and "<LG>" (in practice always -2)
-    int lengthDifference = func_020d2ff0(replacement) - func_020d2ff0(searchTag);
+    int lengthDifference = StringLength(replacement) - StringLength(searchTag);
     while (firstTagOccurrence != NULL)
     {
         if (lengthDifference > 0)
         {
-            int lengthRemaining = func_020d2ff0(firstTagOccurrence);
+            int lengthRemaining = StringLength(firstTagOccurrence);
             // difference > 0: replacing with a longer substring. Move everything
             // to the right of the tag to the right. For convenience, we can also
             // move the tag itself
@@ -414,7 +414,7 @@ char* StringReplaceLanguageTag(const char* input, char* output, int language)
         }
         else if (lengthDifference < 0)
         {
-            int lengthRemaining = func_020d2ff0(firstTagOccurrence);
+            int lengthRemaining = StringLength(firstTagOccurrence);
             // difference < 0: replacing with a shorter substring. Move everything
             // to the left (including the later part of the tag)
             memmove(firstTagOccurrence, firstTagOccurrence - lengthDifference, lengthDifference + lengthRemaining + 1);

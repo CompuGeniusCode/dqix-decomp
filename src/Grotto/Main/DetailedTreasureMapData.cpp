@@ -12,7 +12,7 @@
 #define func_020a1df8 func_020a3b70
 #define func_020a1e54 func_020a3bcc
 
-#define func_0200fdcc func_0200fc28
+#define GetMainCharacterCombatant func_0200fc28
 
 #define func_02075098 func_02076224
 #define func_02075248 func_02076378
@@ -27,7 +27,7 @@ extern "C"
     void func_020a1df8(unsigned int);
     void func_020a1e54(unsigned int);
 
-    unsigned int func_0200fdcc(BattleStruct*);
+    unsigned int GetMainCharacterCombatant(BattleStruct*);
     // copies character name into the buffer? (not used in jpn version)
     void func_020426bc(void*, char* buffer, int);
 
@@ -262,7 +262,7 @@ bool DetailedTreasureMapData::UpdateFollowingCompletion(bool levelledUp, unsigne
 #ifndef jpn
     // Based on how the jpn version works, I would guess this is undoing the
     // custom text encoding (e.g. lowercase a is 0x2A vs ascii 0x61)
-    void* playerRelatedPtr = *(void**)(func_0200fdcc(GetBattleStruct()) + 0x134);
+    void* playerRelatedPtr = *(void**)(GetMainCharacterCombatant(GetBattleStruct()) + 0x134);
     char asciiName[10] = { 0 };
     func_020426bc(playerRelatedPtr, asciiName, 1);
 #else

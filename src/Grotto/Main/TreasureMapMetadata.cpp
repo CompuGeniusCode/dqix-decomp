@@ -6,7 +6,7 @@
 #include <globaldefs.h>
 
 #ifdef jpn
-#define func_020100a8 func_0200ff04
+#define GetLocalPlayerCombatantId func_0200ff04
 #define func_0200ff1c func_0200fd78
 #define GetZoneState func_02012dac
 #endif
@@ -15,7 +15,7 @@ extern "C"
 {
 // Seems to return a u32 whose address is just past the end of the BattleStruct.
 // Maybe BattleStruct is just the beginning of some larger struct?
-unsigned int func_020100a8(BattleStruct*);
+unsigned int GetLocalPlayerCombatantId(BattleStruct*);
 
 // Appears to index into the CombatantList and return the pointer after checking flags.
 // For now we just return a char*, but should probably be a CombatantStruct*.
@@ -30,7 +30,7 @@ void* GetZoneState();
 unsigned short GenerateNewMapQuality()
 {
     BattleStruct* battle = GetBattleStruct();
-    char* maybeMainCharDataPtr = func_0200ff1c(battle, func_020100a8(battle));
+    char* maybeMainCharDataPtr = func_0200ff1c(battle, GetLocalPlayerCombatantId(battle));
     // Another pointless function call
     GetZoneState();
     GrottoStruct* grotto = GetGrottoStruct(battle);

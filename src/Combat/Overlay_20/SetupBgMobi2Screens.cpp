@@ -8,7 +8,7 @@ extern "C" void func_ov020_0218c7bc(int, int, int, int, int);
 extern "C" void ResetBackgroundLayer(void*);
 extern "C" void func_0204b11c(void*, int);
 extern "C" void func_0204b5b4(void*, int);
-extern "C" void func_0204b12c(void*, void*);
+extern "C" void AllocateBackgroundScreenBuffer(void*, void*);
 extern "C" void func_0204af38(void*, int, void*);
 extern "C" void SetBackgroundScroll(void*, int, int);
 extern "C" void MapVRAMBanksToSubBG(int);
@@ -19,7 +19,7 @@ extern "C" int _ZN16BackgroundLoader13QueueLoadFileEPKcP13SafeAllocator(void*, c
 extern "C" int _ZN16BackgroundLoader13GetTaskStatusEi(void*, int);
 extern "C" void _ZN16BackgroundLoader17GetLoadedFileByIDEiPPvPj(void*, int, void**, unsigned int*);
 extern "C" int CountPacEntries(void*);
-extern "C" void* func_020467f0(void*, int, void**, int*);
+extern "C" void* GetPacEntryByIndex(void*, int, void**, int*);
 extern "C" void func_0204b174(void*, void*, void*, int);
 extern "C" void _ZN16BackgroundLoader10RemoveTaskEi(void*, int);
 extern "C" void func_0204b8d0(void*, unsigned int, int, int, short, short, short, short, unsigned short);
@@ -55,7 +55,7 @@ extern "C" ARM void SetupBgMobi2Screens(struct SetupContext0218cf8c* self) {
     base[0x4b8] = base[0x4b8] & ~0xf;
     base[0x4b8] = (base[0x4b8] & ~0xf0) | 0x10;
     func_0204b5b4(base + 0x9c + 0x400, 0);
-    func_0204b12c(base + 0x9c + 0x400, &self->allocator);
+    AllocateBackgroundScreenBuffer(base + 0x9c + 0x400, &self->allocator);
     func_0204af38(base + 0x9c + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0x9c + 0x400, 0, 0);
 
@@ -67,7 +67,7 @@ extern "C" ARM void SetupBgMobi2Screens(struct SetupContext0218cf8c* self) {
     base[0x4d8] = (base[0x4d8] & ~0xf) | 1;
     base[0x4d8] = base[0x4d8] & ~0xf0;
     func_0204b5b4(base + 0xbc + 0x400, 0);
-    func_0204b12c(base + 0xbc + 0x400, &self->allocator);
+    AllocateBackgroundScreenBuffer(base + 0xbc + 0x400, &self->allocator);
     func_0204af38(base + 0xbc + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0xbc + 0x400, 0, 0);
 
@@ -88,7 +88,7 @@ extern "C" ARM void SetupBgMobi2Screens(struct SetupContext0218cf8c* self) {
     void* resultsArray[6];
     int recSizeArray[6];
     for (int idx = 0; idx < count; idx++) {
-        resultsArray[idx] = func_020467f0(fileData, idx, &recFieldScratch, &recSizeArray[idx]);
+        resultsArray[idx] = GetPacEntryByIndex(fileData, idx, &recFieldScratch, &recSizeArray[idx]);
     }
 
     Triple3 table1 = data_ov020_0218d950;

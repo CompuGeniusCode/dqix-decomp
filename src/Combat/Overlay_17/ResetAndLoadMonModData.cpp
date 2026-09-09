@@ -7,7 +7,7 @@
 
 extern "C" void* GetZoneState(void);
 struct Entry_02028bd0;
-extern "C" struct Entry_02028bd0* func_02027ca4(void);
+extern "C" struct Entry_02028bd0* GetZoneRecordTable(void);
 struct Element0x318_02028bac {
 	unsigned short kind;
 	unsigned short flags;
@@ -20,9 +20,9 @@ extern "C" struct Element0x318_02028bac* func_02028bac(struct Element0x318_02028
 struct BigRecord020289c4;
 extern "C" void func_020289c4(struct BigRecord020289c4* obj);
 extern "C" void AllocatorUnionFreeVeneer(AllocatorUnion* alloc, void* data);
-extern "C" void* func_02012d88(AllocatorUnion* alloc, unsigned int size);
+extern "C" void* AllocateRoundedToWord(AllocatorUnion* alloc, unsigned int size);
 extern "C" void func_020a8e88(void* p);
-extern "C" void func_0200fd48(struct BattleStruct* battleStruct, int id);
+extern "C" void ClearCombatantSlot(struct BattleStruct* battleStruct, int id);
 // Passed a trailing source-length argument that func_020a8e9c ignores, so the mangled
 // name is spelled out instead of being re-derived from this declaration.
 extern "C" void func_020a8e9c(
@@ -41,7 +41,7 @@ extern unsigned char fileStagingBuffer[0x30000];
 extern "C" ARM void ResetAndLoadMonModData(void) {
 	struct BattleStruct* battle = GetBattleStruct();
 	GetZoneState();
-	struct Entry_02028bd0* entryTable = func_02027ca4();
+	struct Entry_02028bd0* entryTable = GetZoneRecordTable();
 	for (int i = 0; i < 4; i++) {
 		struct Element0x318_02028bac* elem = func_02028bac((struct Element0x318_02028bac*)entryTable, i);
 		func_020289c4((struct BigRecord020289c4*)elem);
@@ -52,13 +52,13 @@ extern "C" ARM void ResetAndLoadMonModData(void) {
 		}
 	}
 	for (int id = 0x70; id <= 0x9f; id++) {
-		func_0200fd48(battle, id);
+		ClearCombatantSlot(battle, id);
 	}
 	struct Element0x318_02028bac* elem0 = func_02028bac((struct Element0x318_02028bac*)entryTable, 0);
 	unsigned int size = 0xa000;
 	elem0->flags |= 4;
 	elem0->kind = 3;
-	void* buffer = func_02012d88(&data_02114e20, size);
+	void* buffer = AllocateRoundedToWord(&data_02114e20, size);
 	elem0->allocator->CreateTypeA(buffer, size);
 	if (elem0 == NULL) return;
 	func_020a8e88(elem0->buffers);

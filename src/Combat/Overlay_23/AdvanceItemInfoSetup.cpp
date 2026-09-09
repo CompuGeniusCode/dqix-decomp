@@ -16,20 +16,20 @@ extern "C" int func_02094b4c(void);
 
 struct SubBgControlBackup02074b64;
 extern "C" void func_02074b64(struct SubBgControlBackup02074b64* obj);
-extern "C" void func_02074af4(void* p);
+extern "C" void SaveMainBGControlRegisters(void* p);
 
 struct List0202fec8;
 struct ActiveEntry02046900;
 extern "C" int CountPacEntries(struct ActiveEntry02046900* entry);
 struct Rec020467f0;
-extern "C" void* func_020467f0(struct Rec020467f0* rec, int index, void** out, int* out44);
-extern "C" void func_0205a528(void* a, void* ptr, int val, void* d);
+extern "C" void* GetPacEntryByIndex(struct Rec020467f0* rec, int index, void** out, int* out44);
+extern "C" void LoadNitroResourceBySignature(void* a, void* ptr, int val, void* d);
 extern "C" void func_020dfec0(void* dest, void* allocator, void* fileData, unsigned int size);
 
 extern "C" void func_ov023_021dcc58(void* obj);
 extern "C" ARM void func_ov023_021db2e4(volatile int* p);
 
-extern "C" void* func_02012d88(AllocatorUnion* alloc, unsigned int size);
+extern "C" void* AllocateRoundedToWord(AllocatorUnion* alloc, unsigned int size);
 extern AllocatorUnion data_02114e20;
 
 struct DataStruct_021dd59c { unsigned int pad0; void* field4; };
@@ -55,7 +55,7 @@ extern "C" ARM void AdvanceItemInfoSetup(void* objRaw) {
 
     if (*(unsigned char*)(obj + 0x777) == 0) {
         if (data_ov023_021ff9e0.field4 == 0) {
-            data_ov023_021ff9e0.field4 = func_02012d88(&data_02114e20, 0x1800);
+            data_ov023_021ff9e0.field4 = AllocateRoundedToWord(&data_02114e20, 0x1800);
         }
         if (!(*(unsigned short*)(obj + 0x774) & 0x40)) {
             *(unsigned char*)(obj + 0x777) = 2;
@@ -95,7 +95,7 @@ extern "C" ARM void AdvanceItemInfoSetup(void* objRaw) {
         if (*(signed char*)(obj + 0x77c) == 1) {
             func_02074b64((struct SubBgControlBackup02074b64*)(obj + 0x118));
         } else {
-            func_02074af4(obj + 0x118);
+            SaveMainBGControlRegisters(obj + 0x118);
         }
         *(char*)(obj + 0x17c) = *(signed char*)(obj + 0x77c);
         *(void**)(obj + 0x16c) = obj + 0x180;
@@ -112,8 +112,8 @@ extern "C" ARM void AdvanceItemInfoSetup(void* objRaw) {
             if (out1 != 0 && out2 != 0) {
                 int count = CountPacEntries((struct ActiveEntry02046900*)out1);
                 for (int i = 0; i < count; i++) {
-                    void* result = func_020467f0((struct Rec020467f0*)out1, i, &dummyOut, &fieldOut);
-                    func_0205a528(obj + 0x12c, result, fieldOut, *(void**)(obj + 0x44));
+                    void* result = GetPacEntryByIndex((struct Rec020467f0*)out1, i, &dummyOut, &fieldOut);
+                    LoadNitroResourceBySignature(obj + 0x12c, result, fieldOut, *(void**)(obj + 0x44));
                 }
             }
             *(signed char*)(obj + 0x77d) = 1;

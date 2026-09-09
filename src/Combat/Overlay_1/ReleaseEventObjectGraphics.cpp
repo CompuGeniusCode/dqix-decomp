@@ -5,8 +5,8 @@ extern "C" int func_ov017_021d60f4(void*);
 
 struct Entry_203dce4 { int flags; };
 struct EntryList_203dce4 { char pad[0xc]; struct Entry_203dce4* entries[0x20]; };
-extern "C" extern void* func_0203cf4c(void);
-extern "C" extern struct Entry_203dce4* func_0203dce4(struct EntryList_203dce4* list, int id);
+extern "C" extern void* GetFieldObjectRegistry(void);
+extern "C" extern struct Entry_203dce4* GetActorSlot(struct EntryList_203dce4* list, int id);
 extern "C" int func_02040528(int* obj);
 extern "C" void func_0203d004(void);
 extern const char strStrSpr_021657d4[];
@@ -45,9 +45,9 @@ extern "C" ARM int ReleaseEventObjectGraphics(void* self) {
         return 0;
     }
 
-    void* ctxRaw = func_0203cf4c();
+    void* ctxRaw = GetFieldObjectRegistry();
     struct EntryList_203dce4* list = (struct EntryList_203dce4*)ctxRaw;
-    struct Entry_203dce4* entry = func_0203dce4(list, data_ov001_02165880.table[id].field4);
+    struct Entry_203dce4* entry = GetActorSlot(list, data_ov001_02165880.table[id].field4);
     if (entry == NULL) {
         return 0;
     }

@@ -9,7 +9,7 @@ struct Bytes02033b88 {
 };
 
 // Sets the actor's motion state at +0xbe, keeping the outgoing one at +0xbf, then passes the object and
-// the new value to func_02033ce8; func_02033b68 is the same thing guarded so it only fires when the
+// the new value to func_02033ce8; SetActorMotionStateIfChanged is the same thing guarded so it only fires when the
 // value actually differs. func_02033dd4 rejects states of 9 and above and uses this byte as the row of
 // the 9 x 13 table at data_020ef9c4, with +0xc0 (clamped below 12) as the column, so a state picks a
 // row and something else picks the animation within it; the values index the names at data_020ef994 --

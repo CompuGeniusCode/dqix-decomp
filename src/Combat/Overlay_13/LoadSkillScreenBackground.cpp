@@ -5,7 +5,7 @@ struct List0202fec8;
 struct ActiveEntry02046900;
 extern "C" int CountPacEntries(struct ActiveEntry02046900* entry);
 struct Rec020467f0;
-extern "C" void* func_020467f0(struct Rec020467f0* rec, int index, void** out, int* out44);
+extern "C" void* GetPacEntryByIndex(struct Rec020467f0* rec, int index, void** out, int* out44);
 
 extern "C" void ResetWindowElement(void* obj);
 extern "C" void func_ov013_02187a58(void* obj, void* buf);
@@ -62,7 +62,7 @@ extern "C" ARM void LoadSkillScreenBackground(void* obj) {
             int field44;
             ((BackgroundLoader*)((struct List0202fec8*)g))->GetLoadedFileByID((int)(*(int*)(o + 0x5c)), (void**)(&out1), (unsigned int*)(&out2));
             CountPacEntries((struct ActiveEntry02046900*)out1);
-            void* end = func_020467f0((struct Rec020467f0*)out1, 0, &recOut, &field44);
+            void* end = GetPacEntryByIndex((struct Rec020467f0*)out1, 0, &recOut, &field44);
             if (end != 0) {
                 LocalBuf021878b0 buf;
                 ResetWindowElement(&buf);

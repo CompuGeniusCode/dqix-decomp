@@ -13,7 +13,7 @@ extern SafeAllocator* data_ov001_021658b8[8];
 extern char strDataMapStrChr[];
 extern "C" void _ZN8Object3D10InitializeEv(void* obj);
 extern "C" int _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo(int a, int b);
-extern "C" void func_0200fd38(struct BattleStruct* battleStruct, int id, struct CombatantStruct* combatant);
+extern "C" void RegisterCombatant(struct BattleStruct* battleStruct, int id, struct CombatantStruct* combatant);
 struct Shorts5c_374e0;
 extern "C" void _ZN8Object3D8SetScaleEiii(struct Shorts5c_374e0* obj, short a, short b, short c);
 extern "C" void _ZN8Object3D21MaybeSetBCFGAnimationEii(void* self, int a, int b);
@@ -66,7 +66,7 @@ extern "C" ARM int LoadMapModelIntoCombatantSlot(void* self) {
     ctx.flag = 1;
     _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo((int)newObj, (int)&ctx);
     BackgroundLoader::RemoveLockGlobal();
-    func_0200fd38(bs, id, (struct CombatantStruct*)newObj);
+    RegisterCombatant(bs, id, (struct CombatantStruct*)newObj);
     _ZN8Object3D8SetScaleEiii((struct Shorts5c_374e0*)newObj, 0x10a, 0x10a, 0x10a);
     _ZN8Object3D21MaybeSetBCFGAnimationEii(newObj, 0, 0);
     return 1;

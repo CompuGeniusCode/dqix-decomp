@@ -6,7 +6,7 @@ extern "C" struct CombatantStruct* func_0200ff1c(struct BattleStruct* battleStru
 
 struct Obj150_021b354c;
 extern "C" unsigned char func_ov017_021b354c(Obj150_021b354c* obj);
-extern "C" int func_02053c6c(unsigned char* obj);
+extern "C" int GetCombatantRecord(unsigned char* obj);
 
 extern int strDataPrmItembtlprmNat;
 extern short data_ov017_021d6b56;
@@ -32,7 +32,7 @@ extern "C" ARM int QueueItembtlprmLoad(struct Obj_021b3678* obj) {
     if (!combatant) {
         return 0;
     }
-    if (!func_02053c6c((unsigned char*)combatant)) {
+    if (!GetCombatantRecord((unsigned char*)combatant)) {
         return 0;
     }
 

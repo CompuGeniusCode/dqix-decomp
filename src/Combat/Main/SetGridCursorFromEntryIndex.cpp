@@ -15,8 +15,8 @@ struct SelfBB04 {
 
 // Splits a flat entry index into the page, row and column of a paged selection grid. Items per page
 // is the product of the two dimensions at +0x8 and +0xc, and the pointers at +0x24..+0x2c decide
-// which of the two the division runs over, so mode 1 in func_0205ba68 turns the same
-// grid column-major. It is the exact inverse of func_0205bb84, which rebuilds the index
+// which of the two the division runs over, so mode 1 in SetGridCursorLayout turns the same
+// grid column-major. It is the exact inverse of GetGridCursorEntryIndex, which rebuilds the index
 // that func_0205bd78 derives by hit-testing the input coordinates - seemingly the touch panel -
 // against the per-cell rectangles. Which menus use it is not established.
 extern "C" ARM void SetGridCursorFromEntryIndex(struct SelfBB04* self, int value) {

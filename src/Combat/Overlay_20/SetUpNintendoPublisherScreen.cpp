@@ -9,12 +9,12 @@ extern "C" void func_ov020_0218cd64(int, int, int, int, int);
 extern "C" void ResetBackgroundLayer(void*);
 extern "C" void func_0204b11c(void*, int);
 extern "C" void func_0204b5b4(void*, int, void*, int);
-extern "C" void func_0204b12c(void*, void*);
+extern "C" void AllocateBackgroundScreenBuffer(void*, void*);
 extern "C" void func_0204af38(void*, int, void*);
 extern "C" void SetBackgroundScroll(void*, int, int);
 extern "C" void _Z18LoadFileIntoMemoryPKcPvPj(const char*, void*, unsigned int*);
 extern "C" int CountPacEntries(void*);
-extern "C" void* func_020467f0(void*, int, void**, int*);
+extern "C" void* GetPacEntryByIndex(void*, int, void**, int*);
 extern "C" void func_0204b174(void*, void*, void*, int);
 extern "C" void func_0204b8d0(void*, unsigned int, int, int, short, short, short, short, unsigned short);
 extern "C" void UploadTilemapToBGScreen(void*, void*);
@@ -50,7 +50,7 @@ extern "C" ARM void SetUpNintendoPublisherScreen(struct ResetContext0218cd98* se
     list[0x1c] = v2;
     func_0204b5b4(list, 0, obj, v2);
 
-    func_0204b12c(base + 0xbc + 0x400, &self->allocator);
+    AllocateBackgroundScreenBuffer(base + 0xbc + 0x400, &self->allocator);
     func_0204af38(base + 0xbc + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0xbc + 0x400, 0, 0);
     BackgroundLoader::AddLockGlobal();
@@ -62,7 +62,7 @@ extern "C" ARM void SetUpNintendoPublisherScreen(struct ResetContext0218cd98* se
     for (int i = 0; i < count; i++) {
         int recSize;
         void* recField;
-        void* rec = func_020467f0(&fileStagingBuffer, i, &recField, &recSize);
+        void* rec = GetPacEntryByIndex(&fileStagingBuffer, i, &recField, &recSize);
         if (rec != 0) {
             func_0204b174(base + 0xbc + 0x400, rec, &self->allocator, recSize);
         }

@@ -8,8 +8,8 @@
 #pragma optimize_for_size off
 
 #if defined(jpn)
-#define func_020ca3b8 func_020cbe84
-#define func_020ca408 func_020cbed4
+#define MIi_CpuCopy16 func_020cbe84
+#define MIi_CpuCopy32 func_020cbed4
 
 #define data_020ed658 data_020ed764
 #define data_020ed668 data_020ed774
@@ -67,9 +67,9 @@ extern const unsigned short data_020ed668[48];
 extern "C"
 {
     // inverted memcpy via u16s
-    void func_020ca3b8(const void* src, void* dst, unsigned len);
+    void MIi_CpuCopy16(const void* src, void* dst, unsigned len);
     // inverted memcpy via u32s
-    void func_020ca408(const void* src, void* dst, unsigned len);
+    void MIi_CpuCopy32(const void* src, void* dst, unsigned len);
 }
 
 void LoadToMainBGStandardPalette(const void* data, unsigned int offset, unsigned int length)
@@ -77,7 +77,7 @@ void LoadToMainBGStandardPalette(const void* data, unsigned int offset, unsigned
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, 0x05000000 + offset, length);
     else
-        func_020ca3b8(data, (void*)(0x05000000 + offset), length);
+        MIi_CpuCopy16(data, (void*)(0x05000000 + offset), length);
 }
 
 void LoadToSubBGStandardPalette(const void* data, unsigned int offset, unsigned int length)
@@ -85,7 +85,7 @@ void LoadToSubBGStandardPalette(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, 0x05000400 + offset, length);
     else
-        func_020ca3b8(data, (void*)(0x05000400 + offset), length);
+        MIi_CpuCopy16(data, (void*)(0x05000400 + offset), length);
 }
 
 void LoadToMainObjStandardPalette(const void* data, unsigned int offset, unsigned int length)
@@ -93,7 +93,7 @@ void LoadToMainObjStandardPalette(const void* data, unsigned int offset, unsigne
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, 0x05000200 + offset, length);
     else
-        func_020ca3b8(data, (void*)(0x05000200 + offset), length);
+        MIi_CpuCopy16(data, (void*)(0x05000200 + offset), length);
 }
 
 void LoadToSubObjStandardPalette(const void* data, unsigned int offset, unsigned int length)
@@ -101,7 +101,7 @@ void LoadToSubObjStandardPalette(const void* data, unsigned int offset, unsigned
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, 0x05000600 + offset, length);
     else
-        func_020ca3b8(data, (void*)(0x05000600 + offset), length);
+        MIi_CpuCopy16(data, (void*)(0x05000600 + offset), length);
 }
 
 void LoadToMainOAM(const void* data, unsigned int offset, unsigned int length)
@@ -109,7 +109,7 @@ void LoadToMainOAM(const void* data, unsigned int offset, unsigned int length)
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, 0x07000000 + offset, length);
     else
-        func_020ca408(data, (void*)(0x07000000 + offset), length);
+        MIi_CpuCopy32(data, (void*)(0x07000000 + offset), length);
 }
 
 void LoadToSubOAM(const void* data, unsigned int offset, unsigned int length)
@@ -117,7 +117,7 @@ void LoadToSubOAM(const void* data, unsigned int offset, unsigned int length)
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, 0x07000400 + offset, length);
     else
-        func_020ca408(data, (void*)(0x07000400 + offset), length);
+        MIi_CpuCopy32(data, (void*)(0x07000400 + offset), length);
 }
 
 // not quite a match
@@ -132,7 +132,7 @@ void LoadToMainObjVRAM(const void* data, unsigned int offset, unsigned int lengt
     else
     {
         writeAddr += offset;
-        func_020ca408(data, (void*)writeAddr, length);
+        MIi_CpuCopy32(data, (void*)writeAddr, length);
     }
 }
 
@@ -148,7 +148,7 @@ void LoadToSubObjVRAM(const void* data, unsigned int offset, unsigned int length
     else
     {
         writeAddr += offset;
-        func_020ca408(data, (void*)writeAddr, length);
+        MIi_CpuCopy32(data, (void*)writeAddr, length);
     }
 }
 
@@ -158,7 +158,7 @@ void LoadToMainBG0ScreenData(const void* data, unsigned int offset, unsigned int
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG0ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -167,7 +167,7 @@ void LoadToSubBG0ScreenData(const void* data, unsigned int offset, unsigned int 
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG1ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -176,7 +176,7 @@ void LoadToMainBG1ScreenData(const void* data, unsigned int offset, unsigned int
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG1ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -185,7 +185,7 @@ void LoadToSubBG1ScreenData(const void* data, unsigned int offset, unsigned int 
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG2ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -194,7 +194,7 @@ void LoadToMainBG2ScreenData(const void* data, unsigned int offset, unsigned int
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG2ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -203,7 +203,7 @@ void LoadToSubBG2ScreenData(const void* data, unsigned int offset, unsigned int 
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG3ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -212,7 +212,7 @@ void LoadToMainBG3ScreenData(const void* data, unsigned int offset, unsigned int
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG3ScreenData(const void* data, unsigned int offset, unsigned int length)
@@ -221,7 +221,7 @@ void LoadToSubBG3ScreenData(const void* data, unsigned int offset, unsigned int 
     if (data_020f2270 != -1 && length > 28)
         DMAMemcpySynchronous16Bit(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca3b8(data, (void*)(base + offset), length);
+        MIi_CpuCopy16(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG0CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -230,7 +230,7 @@ void LoadToMainBG0CharacterData(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG0CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -239,7 +239,7 @@ void LoadToSubBG0CharacterData(const void* data, unsigned int offset, unsigned i
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG1CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -248,7 +248,7 @@ void LoadToMainBG1CharacterData(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG1CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -257,7 +257,7 @@ void LoadToSubBG1CharacterData(const void* data, unsigned int offset, unsigned i
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG2CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -266,7 +266,7 @@ void LoadToMainBG2CharacterData(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG2CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -275,7 +275,7 @@ void LoadToSubBG2CharacterData(const void* data, unsigned int offset, unsigned i
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToMainBG3CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -284,7 +284,7 @@ void LoadToMainBG3CharacterData(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void LoadToSubBG3CharacterData(const void* data, unsigned int offset, unsigned int length)
@@ -293,7 +293,7 @@ void LoadToSubBG3CharacterData(const void* data, unsigned int offset, unsigned i
     if (data_020f2270 != -1 && length > 48)
         DMAMemcpySynchronous(data_020f2270, (unsigned int)data, base + offset, length);
     else
-        func_020ca408(data, (void*)(base + offset), length);
+        MIi_CpuCopy32(data, (void*)(base + offset), length);
 }
 
 void MemoryMapMainBGExtendedPalette()
@@ -325,7 +325,7 @@ void LoadToMainBGExtendedPalette(const void* data, unsigned int offset, unsigned
     if (data_020f2270 != -1)
         DMAMemcpyAsync(data_020f2270, (unsigned int)data, dest, length, NULL, 0);
     else
-        func_020ca408(data, (void*)dest, length);
+        MIi_CpuCopy32(data, (void*)dest, length);
 }
 
 void MemoryUnmapMainBGExtendedPalette()
@@ -362,7 +362,7 @@ void LoadToMainObjExtendedPalette(const void* data, unsigned int offset, unsigne
     if (dmaChannel != -1)
         DMAMemcpyAsync(dmaChannel, (unsigned int)data, dest, length, NULL, 0);
     else
-        func_020ca408(data, (void*)dest, length);
+        MIi_CpuCopy32(data, (void*)dest, length);
 }
 
 void MemoryUnmapMainObjExtendedPalette()
@@ -385,7 +385,7 @@ void LoadToSubBGExtendedPalette(const void* data, unsigned int offset, unsigned 
     if (data_020f2270 != -1)
         DMAMemcpyAsync(data_020f2270, (unsigned int)data, 0x06898000 + offset, length, NULL, 0);
     else
-        func_020ca408(data, (void*)(0x06898000 + offset), length);
+        MIi_CpuCopy32(data, (void*)(0x06898000 + offset), length);
 }
 
 void MemoryUnmapSubBGExtendedPalette()
@@ -407,7 +407,7 @@ void LoadToSubObjExtendedPalette(const void* data, unsigned int offset, unsigned
     if (data_020f2270 != -1)
         DMAMemcpyAsync(data_020f2270, (unsigned int)data, 0x068a0000 + offset, length, NULL, 0);
     else
-        func_020ca408(data, (void*)(0x068a0000 + offset), length);
+        MIi_CpuCopy32(data, (void*)(0x068a0000 + offset), length);
 }
 
 void MemoryUnmapSubObjExtendedPalette()
@@ -460,19 +460,19 @@ void LoadToTextureImage(const void* data, unsigned int offset, unsigned int leng
         if (data_020f2270 != -1 && firstWriteSize > 48)
             DMAMemcpySynchronous(data_020f2270, (unsigned int)data, firstBlockWriteAddr, firstWriteSize);
         else
-            func_020ca408(data, (void*)firstBlockWriteAddr, firstWriteSize);
+            MIi_CpuCopy32(data, (void*)firstBlockWriteAddr, firstWriteSize);
 
         if (data_020f2270 != -1)
             DMAMemcpyAsync(data_020f2270, (unsigned int)data + firstWriteSize, secondBlockStart, length - firstWriteSize, NULL, 0);
         else
-            func_020ca408((const void*)((unsigned int)data + firstWriteSize), (void*)secondBlockStart, length - firstWriteSize);
+            MIi_CpuCopy32((const void*)((unsigned int)data + firstWriteSize), (void*)secondBlockStart, length - firstWriteSize);
         return;
     }
 
     if (data_020f2270 != -1)
         DMAMemcpyAsync(data_020f2270, (unsigned int)data, firstBlockWriteAddr, length, NULL, 0);
     else
-        func_020ca408(data, (void*)firstBlockWriteAddr, length);
+        MIi_CpuCopy32(data, (void*)firstBlockWriteAddr, length);
 }
 
 void MemoryUnmapTextureImage()
@@ -500,7 +500,7 @@ void LoadToTexturePalette(const void* data, unsigned int offset, unsigned int le
     if (dmaChannel != -1)
         DMAMemcpyAsync(dmaChannel, (unsigned int)data, writeAddr, length, NULL, 0);
     else
-        func_020ca408(data, (void*)writeAddr, length);
+        MIi_CpuCopy32(data, (void*)writeAddr, length);
 }
 
 void MemoryUnmapTexturePalette()
@@ -542,7 +542,7 @@ void LoadClearImage(const void* data, unsigned int length)
     if (dmaChannel != -1)
         DMAMemcpyAsync(dmaChannel, (unsigned int)data, writeAddr, length, NULL, 0);
     else
-        func_020ca408(data, (void*)writeAddr, length);
+        MIi_CpuCopy32(data, (void*)writeAddr, length);
 }
 
 void LoadClearDepthBuffer(const void* data, unsigned int length)
@@ -551,7 +551,7 @@ void LoadClearDepthBuffer(const void* data, unsigned int length)
     if (data_020f2270 != -1)
         DMAMemcpyAsync(data_020f2270, (unsigned int)data, writeAddr, length, NULL, 0);
     else
-        func_020ca408(data, (void*)writeAddr, length);
+        MIi_CpuCopy32(data, (void*)writeAddr, length);
 }
 
 void MemoryUnmapClearTexture()

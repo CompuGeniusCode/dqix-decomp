@@ -8,7 +8,7 @@ struct Struct020dfc40 {
     short field_c;
     int field_10;
 };
-extern "C" void func_020dfc40(Struct020dfc40* p);
+extern "C" void ResetBackgroundLoadRequest(Struct020dfc40* p);
 
 struct Slot020e5114 {
     Struct020dfc40 inner;
@@ -37,7 +37,7 @@ extern "C" ARM int LoadStandardStringAndArticleTables(void) {
     BackgroundLoader::FreeAllocationsGlobal();
     for (int i = 0; i < 2; i++) {
         Slot020e5114* slot = &data_02153694[i];
-        func_020dfc40(&slot->inner);
+        ResetBackgroundLoadRequest(&slot->inner);
         unsigned int size;
         void* fileData;
         if (i != 0) {

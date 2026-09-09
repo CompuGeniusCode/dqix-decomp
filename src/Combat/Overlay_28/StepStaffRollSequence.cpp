@@ -7,16 +7,16 @@
 extern "C" void* func_02094a00();
 extern "C" void* _Z15GetBattleStructv();
 extern "C" void* func_0200fb8c(void* battle);
-extern "C" void func_02094ab0(void*);
+extern "C" void CancelBackgroundLoadTasks(void*);
 extern "C" void func_02094b34(void*, int, int, int, int);
 extern "C" int func_02094b4c(void*);
 extern "C" void func_020dc2bc();
-extern "C" void func_02074af4(void*);
+extern "C" void SaveMainBGControlRegisters(void*);
 extern "C" unsigned int func_0203b498(unsigned int*);
 extern "C" unsigned int func_0203b4d0(unsigned int*);
 extern "C" unsigned int func_0203b508(unsigned int*);
 extern "C" void func_0203b4d8(unsigned int*, unsigned int);
-extern "C" void func_0203b228(void*, int, int);
+extern "C" void SetBothScreensBrightness(void*, int, int);
 
 struct FieldSet02097bc4;
 extern "C" void func_02097bc4(struct FieldSet02097bc4*, int);
@@ -33,7 +33,7 @@ extern "C" void LoadToSubBG1ScreenData(int, int, unsigned int);
 extern "C" void LoadToSubBG1CharacterData(int, int, unsigned int);
 
 extern "C" void func_ov028_021d98e0(void*, void*, int, int);
-extern "C" int func_0203b3c0(void*);
+extern "C" int IsScreenFadeActive(void*);
 
 extern int strDataEvsptLv5StaffrollBin;
 
@@ -51,7 +51,7 @@ extern "C" ARM void StepStaffRollSequence(unsigned char* self) {
     unsigned char state = self[0x81];
 
     if (state == 0) {
-        func_02094ab0(g);
+        CancelBackgroundLoadTasks(g);
         func_02094b34(g, 0x7a, 0x20b, 0, 0);
         self[0x81] = self[0x81] + 1;
     } else if (state == 1) {
@@ -60,7 +60,7 @@ extern "C" ARM void StepStaffRollSequence(unsigned char* self) {
         }
     } else if (state == 2) {
         func_020dc2bc();
-        func_02074af4(self + 0xc);
+        SaveMainBGControlRegisters(self + 0xc);
         *(unsigned int*)(self + 0x74) = func_0203b498((unsigned int*)word);
         *(unsigned int*)(self + 0x78) = func_0203b4d0((unsigned int*)word);
         *(unsigned int*)(self + 0x7c) = func_0203b508((unsigned int*)word);
@@ -134,9 +134,9 @@ extern "C" ARM void StepStaffRollSequence(unsigned char* self) {
         }
     } else if (state == 5) {
         self[0x81] = state + 1;
-        func_0203b228(word, 0, 0x1e);
+        SetBothScreensBrightness(word, 0, 0x1e);
     } else if (state == 6) {
-        if (func_0203b3c0(word) == 0) {
+        if (IsScreenFadeActive(word) == 0) {
             self[0x80] = 1;
             self[0x81] = 0;
         }

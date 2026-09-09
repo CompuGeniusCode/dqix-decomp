@@ -37,7 +37,7 @@
 #define func_020c2f18 func_020c49e4
 #define func_020c54fc func_020c6fc8
 #define func_020ca3ec func_020cbeb8
-#define func_020ca408 func_020cbed4
+#define MIi_CpuCopy32 func_020cbed4
 #define func_020ca430 func_020cbefc
 #define func_020ca458 func_020cbf24
 #define func_020ca7d0 func_020cc29c
@@ -165,7 +165,7 @@ extern "C"
     // memset via u32 values
     void func_020ca3ec(int value, void* dst, unsigned int len);
     // memcpy via u32 values
-    void func_020ca408(const void* src, void* dst, unsigned int numBytes);
+    void MIi_CpuCopy32(const void* src, void* dst, unsigned int numBytes);
     // repeatedly write u32s to dst (useful for hardware registers)
     void func_020ca430(const void* src, volatile void* dst, unsigned int numBytes);
     // aligned 32-byte-looped memset

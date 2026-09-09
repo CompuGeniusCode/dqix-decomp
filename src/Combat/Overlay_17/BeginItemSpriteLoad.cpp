@@ -8,9 +8,9 @@
 extern "C" void* GetZoneState(void);
 extern "C" int func_ov017_0218b5b0(void);
 extern "C" void func_ov017_0218d510(int a, void* b);
-extern "C" void* func_02012d88(AllocatorUnion* alloc, unsigned int size);
+extern "C" void* AllocateRoundedToWord(AllocatorUnion* alloc, unsigned int size);
 extern AllocatorUnion data_02114e20;
-extern "C" int func_020100a8(struct BattleStruct* battleStruct);
+extern "C" int GetLocalPlayerCombatantId(struct BattleStruct* battleStruct);
 struct Holder020159c0;
 extern "C" void func_020159c0(struct Holder020159c0* holder, int key);
 extern char strDataAniDChrNumSpr_021d7bf8[];
@@ -25,13 +25,13 @@ extern "C" ARM int BeginItemSpriteLoad(char* self) {
     if (*(unsigned short*)(self + 0x12) == 0x5617) {
         self[0x54] = 1;
         ((SafeAllocator*)(self + 0x58))->ResetAllocatorPointer();
-        ((SafeAllocator*)(self + 0x58))->CreateTypeA(func_02012d88(&data_02114e20, 0x4000), 0x4000);
+        ((SafeAllocator*)(self + 0x58))->CreateTypeA(AllocateRoundedToWord(&data_02114e20, 0x4000), 0x4000);
         ((SafeAllocator*)(self + 0x58))->Reset();
         func_ov017_0218d510(func_ov017_0218b5b0(), self + 0x58);
     } else {
         struct BattleStruct* battle = GetBattleStruct();
         void* holder = GetZoneState();
-        func_020159c0((struct Holder020159c0*)holder, (signed char)func_020100a8(battle));
+        func_020159c0((struct Holder020159c0*)holder, (signed char)GetLocalPlayerCombatantId(battle));
         char buf[0x80];
         sprintf(buf, strDataAniDChrNumSpr_021d7bf8, *(signed char*)(self + 0x17), *(signed short*)(self + 0x14));
         *(int*)(self + 0x28) = ((BackgroundLoader*)((int)BackgroundLoader::GetInstance()))->QueueLoadFile((const char*)((int)buf), (SafeAllocator*)(0));

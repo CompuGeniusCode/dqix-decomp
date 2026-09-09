@@ -10,7 +10,7 @@ extern "C" void func_ov020_0218c7bc(int, int, int, int, int);
 extern "C" void ResetBackgroundLayer(void*);
 extern "C" void func_0204b11c(void*, int);
 extern "C" void func_0204b5b4(void*, int);
-extern "C" void func_0204b12c(void*, void*);
+extern "C" void AllocateBackgroundScreenBuffer(void*, void*);
 extern "C" void func_0204af38(void*, int, void*);
 extern "C" void SetBackgroundScroll(void*, int, int);
 extern "C" int DisableSubObjVRAMBanks();
@@ -22,7 +22,7 @@ extern "C" void func_ov020_0218cd64(int, int, int, int, int);
 extern "C" void _ZN16BackgroundLoader13AddLockGlobalEv();
 extern "C" void _Z18LoadFileIntoMemoryPKcPvPj(const char*, void*, unsigned int*);
 extern "C" int CountPacEntries(void*);
-extern "C" void* func_020467f0(void*, int, void**, int*);
+extern "C" void* GetPacEntryByIndex(void*, int, void**, int*);
 extern "C" void func_0204b2e0(void*, char*);
 extern "C" void func_0204b3a0(void*, char*);
 extern "C" void UploadTilemapToBGScreen(void*, void*);
@@ -72,7 +72,7 @@ extern "C" ARM void SetupCompanyLogoScreen(struct SetupContext0218d32c* self, in
     list->lowNibble = 0;
     list->highNibble = 1;
     func_0204b5b4(list, 1);
-    func_0204b12c(base + 0x9c + 0x400, &self->allocator);
+    AllocateBackgroundScreenBuffer(base + 0x9c + 0x400, &self->allocator);
     func_0204af38(base + 0x9c + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0x9c + 0x400, 0, 0);
 
@@ -107,7 +107,7 @@ extern "C" ARM void SetupCompanyLogoScreen(struct SetupContext0218d32c* self, in
     int count = CountPacEntries((void*)&fileStagingBuffer);
 
     for (int i = 0; i < count; i++) {
-        resultsArray[i] = (char*)func_020467f0((void*)&fileStagingBuffer, i, &recFieldScratch, &sizeArr[i]);
+        resultsArray[i] = (char*)GetPacEntryByIndex((void*)&fileStagingBuffer, i, &recFieldScratch, &sizeArr[i]);
     }
 
     ResetBackgroundLayer(list3);

@@ -7,7 +7,7 @@
 extern "C" void* func_ov017_021d612c(void* obj);
 extern "C" int func_ov017_021d60f4(void* a);
 extern "C" int func_ov001_0215ad2c(int x);
-extern "C" struct CombatantStruct* func_0200fd70(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 
 struct SearchObj0202ff34;
 
@@ -55,7 +55,7 @@ extern "C" ARM int ApplyModelTexturesToCombatants(char* obj, int count) {
         int t = func_ov017_021d60f4(obj);
         obj += 0x8;
         int idx = func_ov001_0215ad2c(t);
-        struct CombatantStruct* combatant = func_0200fd70(battle, idx);
+        struct CombatantStruct* combatant = GetCombatantUnchecked(battle, idx);
         if (combatant != 0 && *(void**)((char*)combatant + 0x8) != 0) {
             _ZN7Model3D22ApplyTexturesFromModelEPS_(*(void**)((char*)combatant + 0x8), newBuf);
         }

@@ -3,7 +3,7 @@
 #include "std_library_functions.h"
 
 // Takes a working copy of the 0xb0-byte record block at game state +0x7540. Every caller follows the
-// same read, bump, write-back shape against func_020ac494: func_020ac4f8 folds elapsed
+// same read, bump, write-back shape against CopyInPlayRecords: func_020ac4f8 folds elapsed
 // time into the clocks at +0 and +0x68, and into +4 and +0x6c as well when committing, each capped
 // at 9999 hours 59 minutes 59 seconds; the others increment saturating counters elsewhere in the
 // block. Around sixty functions in ov023 (sub_menu) each read one field out of the block and hand it

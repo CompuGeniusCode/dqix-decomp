@@ -8,7 +8,7 @@ extern "C" void* func_ov017_021d612c(void* obj);
 struct TaggedValue_021d60f4 { int type; union { int i; float f; } value; };
 extern "C" int func_ov017_021d60f4(TaggedValue_021d60f4* a);
 extern "C" int func_ov001_0215ad2c(int x);
-extern "C" struct CombatantStruct* func_0200fd70(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 
 struct SearchObj0202ff34;
 
@@ -36,7 +36,7 @@ extern "C" ARM int LoadCombatantAnimationPackage(void* obj) {
     if (battle == 0) return 0;
     sprintf(buf, strDataStr_02165745, field4);
     int idx = func_ov001_0215ad2c(func_ov017_021d60f4((TaggedValue_021d60f4*)((char*)obj + 8)));
-    struct CombatantStruct* combatant = func_0200fd70(battle, idx);
+    struct CombatantStruct* combatant = GetCombatantUnchecked(battle, idx);
     if (combatant == 0) return 0;
     SafeAllocator* alloc = (SafeAllocator*)data_ov001_021658b8.field0;
     ((BackgroundLoader*)((SearchObj0202ff34*)(int)BackgroundLoader::GetInstance()))->GetLoadedFileByName((const char*)(buf), (void**)(&out1), (unsigned int*)(&out2));

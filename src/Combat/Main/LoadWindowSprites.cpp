@@ -3,7 +3,7 @@
 #include "Memory/SafeAllocator.h"
 #include "Filesystem/NarcHandle.h"
 
-extern "C" void* func_02012d88(AllocatorUnion* alloc, unsigned int size);
+extern "C" void* AllocateRoundedToWord(AllocatorUnion* alloc, unsigned int size);
 void* LoadFileIntoMemory(const char*, void*, unsigned int*);
 extern "C" void func_0202f310(char*, void*);
 
@@ -25,9 +25,9 @@ struct EntryTable0202f24c {
 // which is where the loop count comes from. The 0xf08 heap behind obj->alloc is only reset after.
 extern "C" ARM void LoadWindowSprites(struct EntryTable0202f24c* obj) {
     if (obj->alloc == 0) {
-        obj->alloc = (class SafeAllocator*)func_02012d88(&data_02114e20, 0x14);
+        obj->alloc = (class SafeAllocator*)AllocateRoundedToWord(&data_02114e20, 0x14);
         obj->alloc->ResetAllocatorPointer();
-        void* buf = func_02012d88(&data_02114e20, 0xf08);
+        void* buf = AllocateRoundedToWord(&data_02114e20, 0xf08);
         obj->alloc->CreateTypeA(buf, 0xf08);
         obj->alloc->Reset();
     } else {

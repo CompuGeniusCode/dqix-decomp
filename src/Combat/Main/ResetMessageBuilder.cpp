@@ -5,7 +5,7 @@
 // returns data_02107800+0x1c, the same text-system global the font descriptors at data_0210782c
 // hang off. The 0x400 block at +0x4ac is the sixteen 0x40-byte substitution name slots
 // SetMessageNameSlot writes, and the 0x40 block at +0x8b0 the sixteen argument words
-// func_020465c0 writes; callers reset, fill slots, then call FormatMessageText, which seems to
+// SetMessageNumberSlot writes; callers reset, fill slots, then call FormatMessageText, which seems to
 // expand the text. What the smaller fields at +0x2ec, +0x1880 and +0x19d5 hold is not established.
 extern "C" ARM void ResetMessageBuilder(void* obj) {
     *(signed char*)((char*)obj + 0x30) = -1;

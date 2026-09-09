@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" int func_02081da8(void *obj, int id);
+extern "C" int FindOpenWindowById(void *obj, int id);
 extern "C" int func_0207f0ac(void *list, int id);
 extern "C" int func_02081e18(void *obj, int x);
 extern "C" int func_02081de0(void *obj);
@@ -21,7 +21,7 @@ extern "C" ARM int OpenWindowById(void *obj, int id) {
         return 1;
     }
 
-    int a = func_02081da8(obj, id);
+    int a = FindOpenWindowById(obj, id);
     int b = func_0207f0ac((char *)obj + 0xc, id);
     if (b == 0) {
         return 1;

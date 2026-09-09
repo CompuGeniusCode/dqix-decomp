@@ -10,7 +10,7 @@ extern "C" void func_0206b974(void*, int, void*, int, int, int, int, int);
 
 // Runs the source string through six passes, ping-ponging between the fourth-argument output
 // buffer and a 0x960-byte stack scratch. The second argument is never read; the seventh is the
-// table id each pass gives func_0204254c to resolve variable-length glyphs from
+// table id each pass gives FindFontCharEntry to resolve variable-length glyphs from
 // data_0210782c[id]. func_02068418 keeps "\n" escapes and upper-cases every <...> run before
 // func_020695f4 acts on <CAP>, so source data may spell that tag either way, and unknown bytes
 // become the literal "< >" at data_020f08f4. What the fifth argument bounds is not established.

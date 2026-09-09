@@ -10,7 +10,7 @@ struct ActiveEntry02046900 {
 // NUL-terminated name in the first 0x40 bytes, then three words: header size, payload size and
 // total entry size. The chain is terminated by a zero-filled header, which is what the test on the
 // first byte is looking at, and the step is the size at 0x48.
-// func_020467f0 walks the same chain to fetch entry i and its payload length.
+// GetPacEntryByIndex walks the same chain to fetch entry i and its payload length.
 extern "C" ARM int CountPacEntries(struct ActiveEntry02046900* entry) {
     int count = 0;
     while (entry->active ? 1 : 0) {
