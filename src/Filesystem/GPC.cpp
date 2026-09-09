@@ -9,9 +9,9 @@
 #define func_020d8524 func_020d9e88
 
 #define data_020f27c0 data_020f297c
-#define data_020f27e8 data_020f29a4
-#define data_020f27f0 data_020f29ac
-#define data_020f27f8 data_020f29b4
+#define strGpc0 data_020f29a4
+#define strGpc1 data_020f29ac
+#define strGpc2 data_020f29b4
 #endif
 
 extern "C"
@@ -40,11 +40,11 @@ struct GPCImplementationData
 } extern data_020f27c0;
 
 // GPC0 signature
-extern char data_020f27e8[8];
+extern char strGpc0[8];
 // GPC1 signature
-extern char data_020f27f0[8];
+extern char strGpc1[8];
 // GPC2 signature
-extern char data_020f27f8[8];
+extern char strGpc2[8];
 
 extern "C" bool GetUnknownGP2Data_020d8fcc(void** pOutPtr, unsigned int* pOutNumber, GPCFile* gpc, const GPCFile::FileEntry* file)
 {
@@ -321,7 +321,7 @@ void CopyGPCSignature(unsigned int *dst, unsigned int *src)
 
 unsigned int* SetGPCSignatureGPC0(unsigned int* dst)
 {
-    CopyGPCSignatureFromString(dst, data_020f27e8);
+    CopyGPCSignatureFromString(dst, strGpc0);
     return dst;
 }
 
@@ -336,12 +336,12 @@ void CopyGPCSignatureFromString(unsigned int* dst, const char* src)
 
 unsigned int* SetGPCSignatureGPC1(unsigned int* dst)
 {
-    CopyGPCSignatureFromString(dst, data_020f27f0);
+    CopyGPCSignatureFromString(dst, strGpc1);
     return dst;
 }
 
 unsigned int* SetGPCSignatureGPC2(unsigned int* dst)
 {
-    CopyGPCSignatureFromString(dst, data_020f27f8);
+    CopyGPCSignatureFromString(dst, strGpc2);
     return dst;
 }

@@ -8,7 +8,7 @@
 #ifdef jpn
 #define func_020100a8 func_0200ff04
 #define func_0200ff1c func_0200fd78
-#define func_02012fe4 func_02012dac
+#define GetZoneState func_02012dac
 #endif
 
 extern "C"
@@ -22,7 +22,7 @@ unsigned int func_020100a8(BattleStruct*);
 char* func_0200ff1c(BattleStruct*, unsigned int);
 
 // returns the overland zone instance
-void* func_02012fe4();
+void* GetZoneState();
 }
 
 // USA: func_020a5cb8
@@ -32,7 +32,7 @@ unsigned short GenerateNewMapQuality()
     BattleStruct* battle = GetBattleStruct();
     char* maybeMainCharDataPtr = func_0200ff1c(battle, func_020100a8(battle));
     // Another pointless function call
-    func_02012fe4();
+    GetZoneState();
     GrottoStruct* grotto = GetGrottoStruct(battle);
 
 #ifdef jpn

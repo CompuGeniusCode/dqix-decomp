@@ -114,9 +114,9 @@ data_ov005_0215cd58 kind:data(any) addr:0x0215cd58
 data_ov005_0215cd60 kind:data(any) addr:0x0215cd60
 data_ov005_0215cd68 kind:data(any) addr:0x0215cd68
 data_ov005_0215cd74 kind:data(any) addr:0x0215cd74
-data_ov005_0215cdb4 kind:data(any) addr:0x0215cdb4
-data_ov005_0215cdcd kind:data(any) addr:0x0215cdcd
-data_ov005_0215cddd kind:data(any) addr:0x0215cddd
-data_ov005_0215cdf3 kind:data(any) addr:0x0215cdf3
+strDataBinMenuStrEqGp2 kind:data(any) addr:0x0215cdb4
+strStrEqLgNat kind:data(any) addr:0x0215cdcd
+strDataPrmItemsortGp2_0215cddd kind:data(any) addr:0x0215cddd
+strItemsortLgBin_0215cdf3 kind:data(any) addr:0x0215cdf3
 data_ov005_0215ce05 kind:data(any) addr:0x0215ce05
 data_ov005_0215ce08 kind:data(any) addr:0x0215ce08

@@ -18,8 +18,8 @@
 #define data_020e692c data_020e71d4
 
 #define data_020f0db8 data_020f0e84
-#define data_020f0dbc data_020f0e88
-#define data_0211e33c data_0211fb64
+#define strArc data_020f0e88
+#define fileStagingBuffer data_0211fb64
 #endif
 
 extern "C"
@@ -42,7 +42,7 @@ extern "C"
 
 int MakeCharUpperCase(char ch);
 
-extern unsigned char data_0211e33c[0x30000];
+extern unsigned char fileStagingBuffer[0x30000];
 
 // character to upper case lookup table
 extern const char data_020e692c[];
@@ -53,7 +53,7 @@ extern char* data_020f0da0[];
 // "ARC"
 extern char data_020f0db8[];
 // "arc:/"
-extern char data_020f0dbc[];
+extern char strArc[];
 
 extern char data_020f0dc2[]; // "<LG>" (USA only)
 
@@ -75,7 +75,7 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
 
     void* alwaysNull = NULL;
     
-    if (buffer >= data_0211e33c && buffer < &data_0211e33c[0x30000])
+    if (buffer >= fileStagingBuffer && buffer < &fileStagingBuffer[0x30000])
         BackgroundLoader::FreeAllocationsGlobal();
 
     ExtendedNitroVM reader;
@@ -149,7 +149,7 @@ bool GetFileInNarc(const void *narcBuffer, const char *targetFilePath,
         NitroVM machine;
         NitroVM_Initialize(&machine);
         unsigned int idx = firstFileIdx;
-        unsigned int prefixLength = strlen(data_020f0dbc);
+        unsigned int prefixLength = strlen(strArc);
         while (PrepareReadFileInNARCByID(&machine, &handle, idx))
         {
             char currentFilePath[80];
@@ -200,7 +200,7 @@ bool GetFileInNarcPermissive(const void *narcBuffer, const char *targetFilePath,
         {
             targetUpperCase[i] = MakeCharUpperCase(targetFilePath[i]);
         }
-        unsigned int prefixLength = strlen(data_020f0dbc);
+        unsigned int prefixLength = strlen(strArc);
         while (fileSearchMinIdx <= fileSearchMaxIdx)
         {
             int i = 0;
@@ -342,7 +342,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     unsigned int metadataLength = 0;
     unsigned int metadataLengthCopy;
     
-    unsigned char* storageSpace = data_0211e33c;
+    unsigned char* storageSpace = fileStagingBuffer;
     unsigned int storageCapacity = 0x30000;  
     
     

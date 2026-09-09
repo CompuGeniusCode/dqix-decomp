@@ -602,7 +602,7 @@ data_ov024_021fe8b6 kind:data(any) addr:0x021fe8b6
 data_ov024_021fe8f0 kind:data(any) addr:0x021fe8f0
 data_ov024_021fe910 kind:data(any) addr:0x021fe910 ambiguous
 data_ov024_021fe930 kind:data(any) addr:0x021fe930
-data_ov024_021fe970 kind:data(any) addr:0x021fe970
+strFffZ kind:data(any) addr:0x021fe970
 data_ov024_021fe974 kind:data(any) addr:0x021fe974
 data_ov024_021fe9b8 kind:data(any) addr:0x021fe9b8
 data_ov024_021fea1c kind:data(any) addr:0x021fea1c

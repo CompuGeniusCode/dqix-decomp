@@ -2,10 +2,10 @@
 #include "Util/Random.h"
 
 #ifdef jpn
-#define data_020f0d5c data_020f0e54
+#define strNoName data_020f0e54
 #endif
 
-extern char const data_020f0d5c[]; // "(no-name)"
+extern char const strNoName[]; // "(no-name)"
 
 /* note: initialized by usa:func_020e60c0, in .init */
 extern struct Random data_02108ddc;
@@ -22,7 +22,7 @@ ARM struct Random* CreateRandom(struct Random* random, char const* name, unsigne
 
 ARM void InitRandom(struct Random* random, unsigned long long lcg_state, char const* name, unsigned char unk_1C) {
     if (name == NULL) {
-        name = data_020f0d5c;
+        name = strNoName;
     }
 
     random->unk_1C = unk_1C;

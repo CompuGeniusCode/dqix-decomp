@@ -17,9 +17,9 @@
 #define func_02075098 func_02076224
 #define func_02075248 func_02076378
 
-#define data_020f1ae4 data_020f1c5c
-#define data_020f1af8 data_020f1c70
-#define data_0211e33c data_0211fb64
+#define strDataTmapParamPac data_020f1c5c
+#define strPNumDat data_020f1c70
+#define fileStagingBuffer data_0211fb64
 #endif
 
 extern "C"
@@ -1200,10 +1200,10 @@ void DetailedTreasureMapData::RegularMapData::GeneratePopupName()
 
 #endif
 
-extern char data_020f1ae4[];
-extern char data_020f1af8[];
+extern char strDataTmapParamPac[];
+extern char strPNumDat[];
 
-extern unsigned char data_0211e33c[];
+extern unsigned char fileStagingBuffer[];
 
 void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned char* providedArchive)
 {
@@ -1219,13 +1219,13 @@ void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned c
     
     BackgroundLoader::AddLockGlobal();
     unsigned int archiveSize = 0;
-    const unsigned char* usedArchive = data_0211e33c;
+    const unsigned char* usedArchive = fileStagingBuffer;
     
     if (providedArchive)
         usedArchive = providedArchive;
     else
     {
-        if (!LoadFileIntoMemory(data_020f1ae4, const_cast<unsigned char*>(usedArchive), &archiveSize))
+        if (!LoadFileIntoMemory(strDataTmapParamPac, const_cast<unsigned char*>(usedArchive), &archiveSize))
         {
             BackgroundLoader::RemoveLockGlobal();
             return;
@@ -1233,7 +1233,7 @@ void DetailedTreasureMapData::LoadLegacyBossStats(bool compute, const unsigned c
     }
 
     char innerFileName[256];
-    sprintf(innerFileName, data_020f1af8, legacy_.bossMonsterID_);
+    sprintf(innerFileName, strPNumDat, legacy_.bossMonsterID_);
     const unsigned char* innerFileData;
     unsigned int innerFileSize;
     if (!GetFileInNarc(usedArchive, innerFileName, reinterpret_cast<const void**>(&innerFileData), &innerFileSize, 0))

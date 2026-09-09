@@ -17,7 +17,7 @@
 #define data_01ffda90 data_01ffdabc
 
 #define data_020f2384 data_020f24d0
-#define data_020f27b8 data_020f2974
+#define strData_020f27b8 data_020f2974
 #endif
 
 #if defined(usa)
@@ -54,7 +54,7 @@ extern NitroFileAccessor data_01ffda90[NUM_CACHED_FILES];
 extern unsigned int data_020f2384[];
 
 // "data/"
-extern char data_020f27b8[];
+extern char strData_020f27b8[];
 
 unsigned int CompressionPrefix::GetDecompressedLength() const
 {
@@ -148,7 +148,7 @@ void CacheMainFileAccessors()
         
         for (unsigned int i = 0; i < NUM_CACHED_FILES; )
         {
-            strcpy(fullFilePath, data_020f27b8);
+            strcpy(fullFilePath, strData_020f27b8);
             strcat(fullFilePath, *pCurrentFilePath);
             unsigned int crc = 0;
             if (CreateFileAccessor(&data_01ffda90[i], fullFilePath))

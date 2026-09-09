@@ -13,8 +13,8 @@
 #define func_020d9828 func_020db234
 
 #define data_020ef8a4 data_020ef794
-#define data_020ef908 data_020ef7f8
-#define data_020ef90f data_020ef7ff
+#define strStrStrStr data_020ef7f8
+#define strData data_020ef7ff
 #endif
 
 struct Struct_02104304
@@ -38,8 +38,8 @@ extern "C"
 
     char* data_020ef8a4[]; // array of subdirectories within data/
 
-    char data_020ef908[]; // "%s%s%s"
-    char data_020ef90f[]; // "data/"
+    char strStrStrStr[]; // "%s%s%s"
+    char strData[]; // "data/"
 }
 
 void BackgroundLoader::Task::ZeroInitialize()
@@ -66,8 +66,8 @@ void BackgroundLoaderThreadFunction(BackgroundLoader *loader)
 
 bool BackgroundLoader::Task::GetFullFilename(char *outBuffer)
 {
-    sprintf(outBuffer, data_020ef908, // "%s%s%s"
-        data_020ef90f, // "data/"
+    sprintf(outBuffer, strStrStrStr, // "%s%s%s"
+        strData, // "data/"
         data_020ef8a4[containerDirectoryIndex_], // e.g. "ani/" or "bin/tbox/"
         outerFilename_);
     return true;
@@ -233,14 +233,14 @@ int BackgroundLoader::QueueFileTask(const char* filename, int type, const char* 
             bool success;
             // presumably this is used because the filename might be like
             // "ROM:/data/bin/blah.gp2" and you want to strip the "ROM:/" prefix
-            const char* pathTrueStart = strstr(replacedFilename, data_020ef90f);
+            const char* pathTrueStart = strstr(replacedFilename, strData);
             if (pathTrueStart == NULL)
                 success = false;
             else
             {
                 int subdirIdx;
                 const char* candidateSubdir;
-                const char* innerDirPtr = pathTrueStart + strlen(data_020ef90f);
+                const char* innerDirPtr = pathTrueStart + strlen(strData);
                 for (subdirIdx = 0; (candidateSubdir = data_020ef8a4[subdirIdx]) != NULL; subdirIdx++)
                 {
                     if (strstr(innerDirPtr, candidateSubdir) == innerDirPtr)

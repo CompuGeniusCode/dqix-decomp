@@ -25,7 +25,7 @@
 #define func_02099950 func_0209b684
 #define func_020de848 func_020e01c4
 
-#define data_020ef0f0 data_020ef02c
+#define strDataMapMaplist9Bin data_020ef02c
 #endif
 
 extern "C"
@@ -63,39 +63,39 @@ extern "C"
     void func_0201e248(void*);
 }
 
-extern char data_020ef0f0[]; // "data/map/maplist9.bin"
-extern char data_020ef106[]; // "%s/Z0%dM01.ambl"
-extern char data_020ef116[]; // "data/map"
-extern char data_020ef11f[]; // "%s/Z0%dM99.ambl"
-extern char data_020ef12f[]; // "%s/%s.ambl"
+extern char strDataMapMaplist9Bin[]; // "data/map/maplist9.bin"
+extern char strStrZ0NumM01Ambl[]; // "%s/Z0%dM01.ambl"
+extern char strDataMap[]; // "data/map"
+extern char strStrZ0NumM99Ambl[]; // "%s/Z0%dM99.ambl"
+extern char strStrStrAmbl[]; // "%s/%s.ambl"
 extern char data_020ef13a[]; // "ARC"
-extern char data_020ef13e[]; // ".nsbtx"
-extern char data_020ef145[]; // ".bmbl"
-extern char data_020ef14b[]; // ".dat"
-extern char data_020ef150[]; // ".bpos"
-extern char data_020ef156[]; // "%s/Z0%dM01.amdj"
-extern char data_020ef166[]; // "%s/Z0%dM99.amdj"
-extern char data_020ef176[]; // "%s/%sb.amdj"
-extern char data_020ef182[]; // "%s/%sa.amdj"
-extern char data_020ef18e[]; // "%s/%s.amdj"
-extern char data_020ef199[]; // ".bmdj"
-extern char data_020ef19f[]; // "Z0%dM0100"
-extern char data_020ef1a9[]; // "Z0%dM0101"
-extern char data_020ef1b3[]; // "Z0%dM0102"
-extern char data_020ef1bd[]; // "Z0%dM0103"
-extern char data_020ef1c7[]; // "%s/ats_%c.ambl"
-extern char data_020ef1d6[]; // "%s.bats"
-extern char data_020ef1de[]; // "ARC:/%s"
+extern char strNsbtx[]; // ".nsbtx"
+extern char strBmbl[]; // ".bmbl"
+extern char strDat[]; // ".dat"
+extern char strBpos[]; // ".bpos"
+extern char strStrZ0NumM01Amdj[]; // "%s/Z0%dM01.amdj"
+extern char strStrZ0NumM99Amdj[]; // "%s/Z0%dM99.amdj"
+extern char strStrStrBAmdj[]; // "%s/%sb.amdj"
+extern char strStrStrAAmdj[]; // "%s/%sa.amdj"
+extern char strStrStrAmdj[]; // "%s/%s.amdj"
+extern char strBmdj[]; // ".bmdj"
+extern char strZ0NumM0100[]; // "Z0%dM0100"
+extern char strZ0NumM0101[]; // "Z0%dM0101"
+extern char strZ0NumM0102[]; // "Z0%dM0102"
+extern char strZ0NumM0103[]; // "Z0%dM0103"
+extern char strStrAtsChrAmbl[]; // "%s/ats_%c.ambl"
+extern char strStrBats[]; // "%s.bats"
+extern char strArcStr[]; // "ARC:/%s"
 extern char data_020ef1e6[]; // "."
-extern char data_020ef1e8[]; // "nsbmd"
-extern char data_020ef1ee[]; // "col2"
-extern char data_020ef1f3[]; // "open"
-extern char data_020ef1f8[]; // "open2"
-extern char data_020ef1fe[]; // "close"
-extern char data_020ef204[]; // "close2"
-extern char data_020ef20b[]; // "/data/ani/d_%c%03d.spr"
-extern char data_020ef222[]; // "tsuboware"
-extern char data_020ef22c[]; // "ARC:%s"
+extern char strNsbmd_020ef1e8[]; // "nsbmd"
+extern char strCol2[]; // "col2"
+extern char strOpen[]; // "open"
+extern char strOpen2[]; // "open2"
+extern char strClose[]; // "close"
+extern char strClose2[]; // "close2"
+extern char strDataAniDChrNumSpr[]; // "/data/ani/d_%c%03d.spr"
+extern char strTsuboware[]; // "tsuboware"
+extern char strArcStr_020ef22c[]; // "ARC:%s"
 
 void Zone3D::SwitchZone(unsigned short newID)
 {
@@ -206,5 +206,5 @@ void Zone3D::SwitchZone(unsigned short newID)
         currentGrottoFloor_23ba_ = -1;
     }
 
-    mapListLoadHandle_ = loader->QueueLoadFile(data_020ef0f0, NULL);
+    mapListLoadHandle_ = loader->QueueLoadFile(strDataMapMaplist9Bin, NULL);
 }

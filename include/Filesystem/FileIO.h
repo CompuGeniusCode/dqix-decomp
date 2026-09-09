@@ -3,10 +3,10 @@
 #include "Memory/SafeAllocator.h"
 
 #ifdef jpn
-#define data_0211e33c data_0211fb64
+#define fileStagingBuffer data_0211fb64
 #endif
 
-extern unsigned char data_0211e33c[0x30000];
+extern unsigned char fileStagingBuffer[0x30000];
 
 void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength);
 void* LoadFileIntoNewAllocation(const char* path, SafeAllocator& alloc, unsigned int* outLength);
