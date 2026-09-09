@@ -9,7 +9,7 @@
     #define GetZoneState func_02012dac
     #define func_0201b588 func_0201b300
 
-    #define func_020a3720 func_020a5498
+    #define LoadTreasureMapTextData func_020a5498
     #define func_020a395c func_020a5698
     #define func_020a3a34 func_020a5770
 #endif
@@ -28,7 +28,7 @@ extern "C"
 
     // Not sure exactly what these do but it involves loading/unloading
     // data/tmap/tdata.gp2
-    void func_020a3720();
+    void LoadTreasureMapTextData();
     void func_020a395c();
 }
 
@@ -167,7 +167,7 @@ int ActiveGrottoClass::GetFloorCount() const
 
     if (overallMapData_.discoveryState_ == DiscoveryState_Invalid)
     {
-        func_020a3720();
+        LoadTreasureMapTextData();
         DetailedTreasureMapData data;
         ExportDetailedTreasureMapData(&grotto->activeMapData, &data, 1, 0);
         func_020a395c();
@@ -192,7 +192,7 @@ const char* ActiveGrottoClass::GetPopupName() const
 
     // Returning a temporary, could something go wrong here?
     // Would have to call another function after this which uses the stack.
-    func_020a3720();
+    LoadTreasureMapTextData();
     DetailedTreasureMapData data;
     ExportDetailedTreasureMapData(&grotto->activeMapData, &data, 1, 0);
     func_020a395c();
