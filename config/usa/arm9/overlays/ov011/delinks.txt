@@ -723,3 +723,8 @@ src/Combat/Overlay_11/func_ov011_02186d18.cpp:
 src/Combat/Overlay_11/InvokeTaggedHandlers_02186440.cpp:
     complete
     .text start:0x02186440 end:0x021864b0
+
+
+src/Combat/Overlay_11/func_ov011_021869b8.cpp:
+    complete
+    .text start:0x021869b8 end:0x02186b44
