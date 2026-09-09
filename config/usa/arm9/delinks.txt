@@ -17493,3 +17493,13 @@ src/Combat/Main/InitEntries020e5c00.cpp:
 //src/Graphics/VRAMAllocations.cpp:
 
 //src/System/ProcessorContext.cpp:
+
+
+src/Combat/Main/_Z17SetContextEndProcP16ProcessorContextPFviE.cpp:
+    complete
+    .text start:0x020c7ca8 end:0x020c7cb0
+
+
+src/Combat/Main/_Z18GetContextPriorityP16ProcessorContext.cpp:
+    complete
+    .text start:0x020c7b38 end:0x020c7b40
