@@ -9,3 +9,7 @@
 src/Combat/Overlay_2/QueueItemSpellAndSkillTableLoads.cpp:
 	complete
 	.text start:0x02156bc8 end:0x02156c7c
+
+src/Combat/Overlay_2/GetInventoryItemByID.cpp:
+	complete
+	.text start:0x0215707c end:0x02157108
