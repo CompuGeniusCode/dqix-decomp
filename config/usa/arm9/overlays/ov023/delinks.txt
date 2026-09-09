@@ -4,3 +4,32 @@
     .data       start:0x021fda60 end:0x021ff9e0 kind:data align:32
     .bss        start:0x021ff9e0 end:0x021fff40 kind:bss align:32
 
+
+
+src/Combat/Overlay_23/SwitchOiiItemGraphics.cpp:
+	complete
+	.text start:0x021dd4cc end:0x021dd59c
+
+src/Combat/Overlay_23/AdvanceItemInfoSetup.cpp:
+	complete
+	.text start:0x021dd59c end:0x021dd974
+
+src/Combat/Overlay_23/UpdateIiScreenBackground.cpp:
+	complete
+	.text start:0x021dfc90 end:0x021dfecc
+
+src/Combat/Overlay_23/QueueItemIconSpriteLoad.cpp:
+	complete
+	.text start:0x021e0244 end:0x021e0328
+
+src/Combat/Overlay_23/QueueIiLayoutLoad.cpp:
+	complete
+	.text start:0x021e0414 end:0x021e04e8
+
+src/Combat/Overlay_23/QueueMenuResourceFileLoad.cpp:
+	complete
+	.text start:0x021fb700 end:0x021fb76c
+
+src/Combat/Overlay_23/RequestItemSortTableLoad.cpp:
+	complete
+	.text start:0x021fc2b8 end:0x021fc30c

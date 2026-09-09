@@ -7,7 +7,7 @@
 #pragma dont_inline on
 
 #ifdef jpn
-#define func_020c9be0 func_020cb6ac
+#define FatalHalt func_020cb6ac
 
 #define func_020d97a8 func_020db1b4
 #define func_020d9828 func_020db234
@@ -27,10 +27,10 @@ struct Struct_02104304
 extern "C"
 {
     // get system language
-    int func_0200fb08(BattleStruct*);
+    int GetLanguage(BattleStruct*);
 
     // abort() or similar
-    void func_020c9be0();
+    void FatalHalt();
 
     // Populates context with priority = relPrio + 16
     void func_020d97a8(ProcessorContext* context, void* stackSpace, unsigned stackSize, int relPrio, const void* entry, int arg);
@@ -193,7 +193,7 @@ int BackgroundLoader::QueueFileTask(const char* filename, int type, const char* 
     int newID = -1;
     LockResourceMutex();
 #if defined(usa)
-    int language = func_0200fb08(GetBattleStruct());
+    int language = GetLanguage(GetBattleStruct());
     char replacedFilename[80] = { 0 };
     StringReplaceLanguageTag(filename, replacedFilename, language);
 #endif
@@ -201,7 +201,7 @@ int BackgroundLoader::QueueFileTask(const char* filename, int type, const char* 
     if (filename != NULL)
     {
         if (numPendingTasks_ >= 24)
-            func_020c9be0();
+            FatalHalt();
         else
         {   
             BackgroundLoader::Task* entry = &queuedTasks_[numPendingTasks_];
@@ -248,7 +248,7 @@ int BackgroundLoader::QueueFileTask(const char* filename, int type, const char* 
                         unsigned int subdirLength = strlen(candidateSubdir);
                         unsigned int filenameLength = strlen(innerDirPtr + subdirLength);
                         if (filenameLength + 1 > 0x18)
-                            func_020c9be0();
+                            FatalHalt();
                         entry->containerDirectoryIndex_ = subdirIdx;
                         strcpy(entry->outerFilename_, innerDirPtr + subdirLength);
                         success = true;
@@ -276,7 +276,7 @@ int BackgroundLoader::QueueOverlayTask(unsigned int id, bool load)
     int newID = -1;
     LockResourceMutex();
     if (numPendingTasks_ >= 24)
-        func_020c9be0();
+        FatalHalt();
     else
     {
         BackgroundLoader::Task* entry = &queuedTasks_[numPendingTasks_];
@@ -320,7 +320,7 @@ void BackgroundLoader::AddFence()
     if (numPendingTasks_ > 0)
     {
         if (numPendingTasks_ >= 24)
-            func_020c9be0();
+            FatalHalt();
         else
         {
             BackgroundLoader::Task* task = &queuedTasks_[numPendingTasks_];

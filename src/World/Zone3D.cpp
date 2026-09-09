@@ -19,7 +19,7 @@
 #define func_02053c6c func_02054fe4
 #define func_0207a5b8 func_0207b3f0
 #define func_0207b9cc func_0207c804
-#define func_0207df50 func_0207ecd0
+#define RewindTextureVramReservation func_0207ecd0
 #define func_0208a9b4 func_0208b2a8
 #define func_02094d00 func_02096950
 #define func_02099950 func_0209b684
@@ -39,15 +39,15 @@ extern "C"
     void func_0205e104(const char*, SafeAllocator*, const void*, unsigned int);
 
     // Texture functions
-    void* func_0207df50(void*);
-    void func_0207df90(void*);
-    void func_0207dfac(void*);
+    void* RewindTextureVramReservation(void*);
+    void RestoreVramAllocatorCursors(void*);
+    void SaveVramAllocatorState(void*);
 
     void* func_0208a9b4();
     void func_02094d00(void*);
     Zone3D_StructPtr_8* func_02099950(void*, unsigned short id);
 
-    void func_020c9be0(); // abort() or similar
+    void FatalHalt(); // abort() or similar
     void func_020de848(void*);
 
     void func_02013490(void*);
@@ -109,7 +109,7 @@ void Zone3D::SwitchZone(unsigned short newID)
     pAllocator_68_ = pAllocator_4c_;
     pAllocator_68_->Reset();
 
-    func_0207df50(unknown_ptr_50_);
+    RewindTextureVramReservation(unknown_ptr_50_);
     func_02013750(this, true);
 
     previousZoneID_ = currentZoneID_;

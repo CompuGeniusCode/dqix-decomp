@@ -45,8 +45,8 @@ struct EffectScriptData
 #define func_0200fddc func_0200fc38 
 #define func_02033fa0 func_02033ad8 
 #define func_0204be20 func_0204cc40 
-#define func_0207df90 func_0207ed10 
-#define func_0207dfac func_0207ed2c 
+#define RestoreVramAllocatorCursors func_0207ed10 
+#define SaveVramAllocatorState func_0207ed2c 
 #endif
 
 extern "C"
@@ -55,8 +55,8 @@ extern "C"
     void* func_02033fa0(void*);
     bool func_0204be20(void*);
 
-    void func_0207df90(void*);
-    void func_0207dfac(void*);
+    void RestoreVramAllocatorCursors(void*);
+    void SaveVramAllocatorState(void*);
 }
 
 void AtmosphericEffect::Initialize()
@@ -456,13 +456,13 @@ void AtmosphericEffectSet::ProcessArchive(AtmosphericEffectSet *target, SafeAllo
                 fileID++;
             }
             narc.Destroy();
-            func_0207df90(pZone50Thing);
+            RestoreVramAllocatorCursors(pZone50Thing);
             loadInfo.allocator = allocator;
             loadInfo.fileData = loopObject->archiveFileData_;
             loadInfo.unk_8 = loopObject->archiveFileSize_;
             loadInfo.unk_10 = 1;
             loopObject->object_.LoadFromCHRArchive(&loadInfo);
-            func_0207dfac(pZone50Thing);
+            SaveVramAllocatorState(pZone50Thing);
         }
     }
 

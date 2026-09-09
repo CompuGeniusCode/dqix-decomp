@@ -11,7 +11,7 @@
 
 #if defined(jpn)
 #define func_020ca458 func_020cbf24
-#define func_020c9be0 func_020cb6ac
+#define FatalHalt func_020cb6ac
 
 #define data_02111860 data_02111500
 #endif
@@ -22,7 +22,7 @@ extern "C"
     void func_020ca458(int value, void* dst, unsigned len);
 
     // abort() or fatal error or similar
-    void func_020c9be0();
+    void FatalHalt();
 }
 // is card read manager initialized
 extern int data_02111860;
@@ -49,7 +49,7 @@ void LockCardReadManager(unsigned short ownerID, int taskType)
     if (volMan->lock.owner == ownerID)
     {
         if (manager->lock.taskType != taskType)
-            func_020c9be0();
+            FatalHalt();
     }
     else
     {
@@ -71,12 +71,12 @@ void UnlockCardReadManager(unsigned short ownerID, int taskType)
     int priorState = DisableIRQInterrupts();
     if (volMan->lock.owner != ownerID || volMan->lock.multiplicity == 0)
     {
-        func_020c9be0();
+        FatalHalt();
     }
     else
     {
         if (manager->lock.taskType != taskType)
-            func_020c9be0();
+            FatalHalt();
         int multiplicity = volMan->lock.multiplicity;
         multiplicity--;
         volMan->lock.multiplicity = multiplicity;
@@ -137,7 +137,7 @@ int IsCardReadManagerInitialized()
 void VerifyCardReadManagerInitialized()
 {
     if (!IsCardReadManagerInitialized())
-        func_020c9be0();
+        FatalHalt();
 }
 
 void MarkCardReadManagerInitialized(int to)

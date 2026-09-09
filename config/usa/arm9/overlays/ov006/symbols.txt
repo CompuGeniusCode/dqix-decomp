@@ -128,7 +128,7 @@ func_ov006_0215fa1c kind:function(arm,size=0x160) addr:0x0215fa1c
 func_ov006_0215fb7c kind:function(arm,size=0x174) addr:0x0215fb7c
 func_ov006_0215fcf0 kind:function(arm,size=0x70) addr:0x0215fcf0
 func_ov006_0215fd60 kind:function(arm,size=0xd4) addr:0x0215fd60
-func_ov006_0215fe34 kind:function(arm,size=0x98) addr:0x0215fe34
+SetUpItemIconSprite kind:function(arm,size=0x98) addr:0x0215fe34
 func_ov006_0215fecc kind:function(arm,size=0x88) addr:0x0215fecc
 data_ov006_0215ff54 kind:data(any) addr:0x0215ff54
 data_ov006_0215ff5c kind:data(any) addr:0x0215ff5c

@@ -10,7 +10,7 @@
 
 #if defined(jpn)
 #define func_020c9bf0 func_020cb6bc
-#define func_020c9be0 func_020cb6ac
+#define FatalHalt func_020cb6ac
 #define func_020ca3ec func_020cbeb8
 #endif
 
@@ -20,7 +20,7 @@ extern "C"
     void func_020c9bf0();
 
     // something like abort()
-    void func_020c9be0();
+    void FatalHalt();
 
     // memset with silly signature and assuming alignment
     void func_020ca3ec(int value, void* dst, unsigned len);
@@ -115,7 +115,7 @@ void ShutdownCurrentContext()
     UnblockContexts(&context->contextsAwaitingThisCompletion);
     RemoveContextSwitchLock();
     SwitchContextUninterrupted();
-    func_020c9be0();
+    FatalHalt();
 }
 
 void ShutdownContext(ProcessorContext* context)

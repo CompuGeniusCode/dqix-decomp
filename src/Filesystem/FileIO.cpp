@@ -30,7 +30,7 @@ extern "C"
     void* func_020d6c00();
 
     // get system language?
-    int func_0200fb08(BattleStruct*);
+    int GetLanguage(BattleStruct*);
 
     // Looks like a custom implementation of strstr
     char* func_020d2f88(char* searchString, const char* targetString);
@@ -67,7 +67,7 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
     BattleStruct* battle = GetBattleStruct();
     
     char replacedPath[128] = { 0 };
-    int language = func_0200fb08((BattleStruct*)battle);
+    int language = GetLanguage((BattleStruct*)battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -107,7 +107,7 @@ void* LoadFileIntoNewAllocation(const char* path, SafeAllocator& alloc, unsigned
 
     char replacedPath[128] = { 0 };
 
-    int language = func_0200fb08(battle);
+    int language = GetLanguage(battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
     const char* replacedPath = path;
@@ -336,7 +336,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     BattleStruct* battle = GetBattleStruct();
     char innerFileReplacedPath[128] = { 0 };
 
-    int language = func_0200fb08(battle);
+    int language = GetLanguage(battle);
     StringReplaceLanguageTag(innerFilePath, innerFileReplacedPath, language);
 
     unsigned int metadataLength = 0;

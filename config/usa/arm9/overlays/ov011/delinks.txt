@@ -4,3 +4,8 @@
     .data       start:0x021889a0 end:0x02188b80 kind:data align:32
     .bss        start:0x02188b80 end:0x02188b80 kind:bss align:32
 
+
+
+src/Combat/Overlay_11/QueueMenuScriptFileLoad.cpp:
+	complete
+	.text start:0x0218554c end:0x021855cc

@@ -36,7 +36,7 @@ func_ov013_021870c0 kind:function(arm,size=0x30) addr:0x021870c0
 func_ov013_021870f0 kind:function(arm,size=0x694) addr:0x021870f0
 func_ov013_02187784 kind:function(arm,size=0xa8) addr:0x02187784
 func_ov013_0218782c kind:function(arm,size=0x84) addr:0x0218782c
-func_ov013_021878b0 kind:function(arm,size=0x1a8) addr:0x021878b0
+LoadSkillScreenBackground kind:function(arm,size=0x1a8) addr:0x021878b0
 func_ov013_02187a58 kind:function(arm,size=0x330) addr:0x02187a58
 data_ov013_02187d88 kind:data(any) addr:0x02187d88
 data_ov013_02187d8a kind:data(any) addr:0x02187d8a

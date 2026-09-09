@@ -5,3 +5,40 @@
     .data       start:0x02164b80 end:0x02165800 kind:data align:32
     .bss        start:0x02165800 end:0x02166d20 kind:bss align:32
 
+
+
+src/Combat/Overlay_1/ResolvePackLv5ArchiveForPath.cpp:
+	complete
+	.text start:0x0215ad3c end:0x0215ae1c
+
+src/Combat/Overlay_1/LoadEventStringTable.cpp:
+	complete
+	.text start:0x0215e1cc end:0x0215e27c
+
+src/Combat/Overlay_1/ApplyModelTexturesToCombatants.cpp:
+	complete
+	.text start:0x0215ef54 end:0x0215f060
+
+src/Combat/Overlay_1/EventCmdLoadStbFile.cpp:
+	complete
+	.text start:0x0215f1fc end:0x0215f2e8
+
+src/Combat/Overlay_1/LoadCombatantAnimationPackage.cpp:
+	complete
+	.text start:0x0215f344 end:0x0215f3fc
+
+src/Combat/Overlay_1/LoadMapModelIntoCombatantSlot.cpp:
+	complete
+	.text start:0x0216066c end:0x02160768
+
+src/Combat/Overlay_1/EventScriptQueueDataFileRequest.cpp:
+	complete
+	.text start:0x021612c8 end:0x02161374
+
+src/Combat/Overlay_1/SetEventDataFilePath.cpp:
+	complete
+	.text start:0x021613d0 end:0x02161408
+
+src/Combat/Overlay_1/ReleaseEventObjectGraphics.cpp:
+	complete
+	.text start:0x02161754 end:0x0216184c

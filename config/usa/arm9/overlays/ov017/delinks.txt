@@ -5,3 +5,40 @@
     .data       start:0x021d7340 end:0x021d82e0 kind:data align:32
     .bss        start:0x021d82e0 end:0x021d8a40 kind:bss align:32
 
+
+
+src/Combat/Overlay_17/ResetAndLoadMonModData.cpp:
+	complete
+	.text start:0x0219fda0 end:0x0219fec0
+
+src/Combat/Overlay_17/QueueItembtlprmLoad.cpp:
+	complete
+	.text start:0x021b3678 end:0x021b3780
+
+src/Combat/Overlay_17/RunEncmonsScriptWhenLoaded.cpp:
+	complete
+	.text start:0x021b498c end:0x021b4a88
+
+src/Combat/Overlay_17/RunEncbtlScriptForMonster.cpp:
+	complete
+	.text start:0x021b4f48 end:0x021b5070
+
+src/Combat/Overlay_17/ApplyFieldMonsterDataWhenLoaded.cpp:
+	complete
+	.text start:0x021b5250 end:0x021b5348
+
+src/Combat/Overlay_17/ApplyFldMondataAndQueueMonModdata.cpp:
+	complete
+	.text start:0x021b5348 end:0x021b5458
+
+src/Combat/Overlay_17/BeginItemSpriteLoad.cpp:
+	complete
+	.text start:0x021b5cf8 end:0x021b5dc4
+
+src/Combat/Overlay_17/RequestIneventStbEvent.cpp:
+	complete
+	.text start:0x021bba08 end:0x021bbae4
+
+src/Combat/Overlay_17/SetupEvluidaEventRequest.cpp:
+	complete
+	.text start:0x021bbae4 end:0x021bbbe4

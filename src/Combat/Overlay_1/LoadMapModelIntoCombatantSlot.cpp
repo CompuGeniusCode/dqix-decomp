@@ -1,0 +1,73 @@
+#include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
+#include "Combat/Main/BattleList.h"
+#include "Memory/SafeAllocator.h"
+#include "std_library_functions.h"
+
+extern "C" int func_ov017_021d60f4(void* a);
+extern "C" extern int func_ov001_0215ad2c(int x);
+extern "C" int func_ov017_0218b5b0(void);
+extern "C" int func_ov017_021bbbe4(void* p);
+extern "C" unsigned int func_ov001_0215a750(const char* path, void** outPtr);
+extern SafeAllocator* data_ov001_021658b8[8];
+extern char strDataMapStrChr[];
+extern "C" void _ZN8Object3D10InitializeEv(void* obj);
+extern "C" int _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo(int a, int b);
+extern "C" void func_0200fd38(struct BattleStruct* battleStruct, int id, struct CombatantStruct* combatant);
+struct Shorts5c_374e0;
+extern "C" void _ZN8Object3D8SetScaleEiii(struct Shorts5c_374e0* obj, short a, short b, short c);
+extern "C" void _ZN8Object3D21MaybeSetBCFGAnimationEii(void* self, int a, int b);
+
+struct LockCtx0216066c {
+    int unused0;
+    void* dataPtr;
+    unsigned int size;
+    SafeAllocator* allocator;
+    int flag;
+    char pad[0xc];
+};
+
+// Builds an Object3D out of data/map/<name>.chr and registers it in battleStruct->combatantList at
+// the slot the script argument names; data/map holds eighteen such archives named by zone code
+// (M01I00, C01I00, T01I00). The name is not passed in but read out of game-main state through
+// ov017's +0x3000+0x734 pointer, which presumably makes it the current map's model, though nothing
+// shows that field holds the current zone code. Negative ids fold to 159 + |id| by
+// func_ov001_0215ad2c; the loader lock is held across the read and the object is scaled to 0x10a.
+extern "C" ARM int LoadMapModelIntoCombatantSlot(void* self) {
+    char path[0x50];
+    struct LockCtx0216066c ctx;
+    void* outPtr;
+    unsigned int size;
+    struct BattleStruct* bs;
+    SafeAllocator* allocator;
+    void* newObj;
+    int base;
+    int id;
+
+    bs = GetBattleStruct();
+    (int)BackgroundLoader::GetInstance();
+    allocator = data_ov001_021658b8[0];
+    id = func_ov001_0215ad2c(func_ov017_021d60f4(self));
+    base = func_ov017_0218b5b0();
+    base = *(int*)((char*)base + 0x3000 + 0x734);
+    base = func_ov017_021bbbe4((void*)base);
+    sprintf(path, strDataMapStrChr, base + 0x4);
+    BackgroundLoader::AddLockGlobal();
+    size = func_ov001_0215a750(path, &outPtr);
+    if (size == 0) {
+        BackgroundLoader::RemoveLockGlobal();
+        return 0;
+    }
+    newObj = allocator->Allocate(0xac);
+    _ZN8Object3D10InitializeEv(newObj);
+    ctx.dataPtr = outPtr;
+    ctx.allocator = allocator;
+    ctx.size = size;
+    ctx.flag = 1;
+    _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo((int)newObj, (int)&ctx);
+    BackgroundLoader::RemoveLockGlobal();
+    func_0200fd38(bs, id, (struct CombatantStruct*)newObj);
+    _ZN8Object3D8SetScaleEiii((struct Shorts5c_374e0*)newObj, 0x10a, 0x10a, 0x10a);
+    _ZN8Object3D21MaybeSetBCFGAnimationEii(newObj, 0, 0);
+    return 1;
+}
