@@ -1,10 +1,10 @@
 #include <globaldefs.h>
+#include "Graphics/AtmosphericEffect.h"
 #include "Memory/SafeAllocator.h"
 
 extern "C" void _ZN12ZoneFeatures5ResetEv(void* obj);
 void ZeroInit020de848(void* obj);
 struct Struct0207a5b8;
-void InitDefaultState0207a5b8(struct Struct0207a5b8* s);
 void ResetFourSubStructs(char* base);
 
 struct AllocAt0x54_02013750 {
@@ -44,7 +44,7 @@ ARM void ResetBigStruct02013750(void* obj, int flag) {
     *(unsigned char*)((char*)obj + 0x834) = 0;
     _ZN12ZoneFeatures5ResetEv((char*)obj + 0x6c);
     ZeroInit020de848((char*)obj + 0x354 + 0x2400);
-    InitDefaultState0207a5b8((struct Struct0207a5b8*)((char*)obj + 0xf4));
+    ((AtmosphericEffectSet*)((struct Struct0207a5b8*)((char*)obj + 0xf4)))->Reset();
     ResetFourSubStructs((char*)obj + 0x600);
     if (!flag) {
         return;

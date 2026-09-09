@@ -8,13 +8,13 @@
 #pragma optimize_for_size off
 
 #if defined(jpn)
-#define func_020c2034 func_020c3b00
-#define func_020c2208 func_020c3cd4
-#define func_020c2c38 func_020c4704
-#define func_020c2c94 func_020c4760
+#define Mat4x3_ApplyToVector func_020c3b00
+#define Mat4x4_ConvertTo4x3 func_020c3cd4
+#define GetHardwareDividerResult func_020c4704
+#define fix32_QueueComputeReciprocal func_020c4760
 #define func_020c51dc func_020c6ca8
 #define _Z24SubmitBlock0x40IfNotBusyi func_020c6fc8
-#define _Z24SubmitBlock0x80IfNotBusyi func_020c6ff8
+#define _Z24SubmitBlock0x80IfNotBusyi _Z18MarkGBABusReleasedv
 #define func_020ca0a8 func_020cbb74
 #define func_020ca2ac func_020cbd78
 #define func_020ca4b4 func_020cbf80
@@ -25,23 +25,17 @@
 
 extern "C"
 {
-    // transform 3-dimensional vector (treated as 4D in usual way) by 4x3 matrix
-    void func_020c2034(const fix32_t* vec, const fix32_t* mat, fix32_t* outVec);
-
-    // reduce 4x4 matrix to 4x3 matrix
-    void func_020c2208(const fix32_t* in, fix32_t* out);
-
     // get high precision division result
-    int64_t func_020c2c38();
+    int64_t GetHardwareDividerResult();
 
     // prime hardware divider to calculate fixed point representation of 2^32/x
-    void func_020c2c94(fix32_t);
+    void fix32_QueueComputeReciprocal(fix32_t);
 
     // reset various geometry registers
     void func_020c51dc();
 
-    extern "C" int _Z24SubmitBlock0x40IfNotBusyi(Matrix4x4*); // try to read clip matrix, -1 on failure
-    extern "C" int _Z24SubmitBlock0x80IfNotBusyi(Matrix3x3*); // try to read vector result matrix, -1 on failure
+    int _Z24SubmitBlock0x40IfNotBusyi(Matrix4x4*); // try to read clip matrix, -1 on failure
+    int _Z24SubmitBlock0x80IfNotBusyi(Matrix3x3*); // try to read vector result matrix, -1 on failure
 
     void func_020ca0a8(int dmaChannel, const void* source, unsigned int length,
         DMACompletionCallback onCompletion, int callbackUserdata);

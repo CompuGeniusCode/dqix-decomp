@@ -42,7 +42,7 @@ ARM void DispatchField0x744FlagsAndNotify(unsigned char* src) {
     unsigned char flags = *(src + 0x2000 + 0x744);
     if (flags & 1) {
         struct GrottoStruct* grotto = GetGrottoStruct(bs);
-        grotto->unknown_09 = 2;
+        grotto->unknown_9 = 2;
         TailNode020469b4* node = *(TailNode020469b4**)(ov + 0x3000 + 0xb68);
         func_ov017_021a9bc4(node, 0);
         int extra = 0;

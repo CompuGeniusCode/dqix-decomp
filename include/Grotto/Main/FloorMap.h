@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Memory/SafeAllocator.h"
-#include "Graphics/Vector.h"
+#include "../../Graphics/Vector.h"
 
 struct GrottoTilePoint
 {
@@ -9,7 +9,7 @@ struct GrottoTilePoint
     char y;
 };
 
-// sizeof(FloorMap) == 140 == 0x8c. (Look at buffer size in
+// sizeof(FloorMap) == 140. (Look at buffer size in
 // func_ov017_021b4a88 to confirm this).
 class FloorMap
 {
@@ -25,11 +25,11 @@ public:
     GrottoTilePoint stairsUp;
     GrottoTilePoint stairsDown;
 
-    Matrix3x3 unknown1;
+    Matrix3x3 unknown1; // looks like a rotation matrix in fixed point format?
     int upStairWorldX, upStairWorldY, upStairWorldZ;
     int fpUpStairRotation; // fixed point representation
 
-    Matrix3x3 unknown2;
+    Matrix3x3 unknown2; // looks like a rotation matrix in fixed point format?
     int downStairWorldX, downStairWorldY, downStairWorldZ;
     int fpDownStairRotation;
 

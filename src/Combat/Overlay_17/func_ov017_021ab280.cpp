@@ -11,9 +11,9 @@ void CancelPendingAction020397cc(struct Obj020397cc* obj, int arg1);
 extern "C" void _ZN8Object3D10EnableFlagEi(unsigned char* obj, unsigned int mask);
 extern "C" void _ZN8Object3D11DisableFlagEi(unsigned char* obj, unsigned int mask);
 
-extern "C" int func_02030f30(int angle);
-extern "C" int func_02030c68(int angle);
-extern "C" int func_02030c9c(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
+extern "C" int _Z8fix32sini(int angle);
+extern "C" int _Z8fix32cosi(int angle);
 
 struct Vec3 { int x; int y; int z; };
 extern "C" void Vector3fix_Normalize(struct Vec3* a, struct Vec3* b);
@@ -83,10 +83,10 @@ extern "C" ARM int func_ov017_021ab280(struct Obj_021ab280* obj) {
 
         struct Vec3 dir;
         struct Vec3 saved = *(struct Vec3*)((char*)combatant + 0x44);
-        int angleY = func_02030f30(obj->pos->angle + (int)0xffffcdc3);
-        dir.x = func_02030c68(angleY);
+        int angleY = _Z22fix32ReduceAngle0To2Pii(obj->pos->angle + (int)0xffffcdc3);
+        dir.x = _Z8fix32sini(angleY);
         dir.y = 0;
-        dir.z = func_02030c9c(angleY);
+        dir.z = _Z8fix32cosi(angleY);
         Vector3fix_Normalize(&dir, &dir);
         Vector3fix_Add((struct Vec3*)&obj->pos->x, &dir, &obj->vec14);
         Vector3fix_Subtract(&obj->vec14, &saved, &dir);

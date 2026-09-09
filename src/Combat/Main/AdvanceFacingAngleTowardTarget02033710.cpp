@@ -2,12 +2,12 @@
 #include "Combat/Main/BattleList.h"
 #include "std_library_functions.h"
 
-extern "C" int func_02030f30(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
 struct S_377d4;
 extern "C" int _ZNK8Object3D25IsTransitioningAnimationsEv(struct S_377d4* obj);
 struct Bytes02033b88;
 int SetByte0xbeShiftPrev(struct Bytes02033b88* p, int val);
-extern "C" int func_02030cd8(int a, int b);
+extern "C" int _Z24fix32SignedAngleDistanceii(int a, int b);
 unsigned int GetBattleScaleCount(struct BattleStruct* battleStruct);
 extern "C" void _ZN8Vector3iaSERKS_(int* dst, int* src);
 
@@ -39,7 +39,7 @@ ARM void AdvanceFacingAngleTowardTarget(struct Obj02033710* obj) {
     unsigned int scaleCount = GetBattleScaleCount(battleStruct);
     int scaled = obj->scaleB0 * (int)scaleCount;
     struct Vec3_33710 tmp = obj->pos;
-    int d = func_02030cd8(tmp.y, obj->angleAE);
+    int d = _Z24fix32SignedAngleDistanceii(tmp.y, obj->angleAE);
     int atTarget = 1;
     if (d > 0) {
         if (d < scaled) {
@@ -57,7 +57,7 @@ ARM void AdvanceFacingAngleTowardTarget(struct Obj02033710* obj) {
             atTarget = 0;
         }
     }
-    tmp.y = func_02030f30(tmp.y);
+    tmp.y = _Z22fix32ReduceAngle0To2Pii(tmp.y);
     _ZN8Vector3iaSERKS_((int*)&obj->pos, (int*)&tmp);
     if (atTarget) {
         if (obj->flagsC4.hi) {

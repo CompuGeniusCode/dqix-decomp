@@ -361,17 +361,17 @@ int NitroVM_SearchFileOrDirectory(NitroVM* vm, const char* inPath,
     }
 
     vm->linkedHandle = accessor.handle;
-    vm->regext_d.ptr = (char*)path;
-    vm->regext_abc = *(FSRegisterTriple*)&accessor;
+    vm->args_GetFileOrDirectoryByName.path = path;
+    vm->args_GetFileOrDirectoryByName.searchDirectory = accessor;
     if (outDirData != NULL)
     {
-        vm->reg8.u32 = 1; // search for directory
-        vm->reg9.ptr = outDirData;
+        vm->args_GetFileOrDirectoryByName.searchForDirectory = 1;
+        vm->args_GetFileOrDirectoryByName.output = outDirData;
     }
     else
     {
-        vm->reg8.u32 = 0; // search for file
-        vm->reg9.ptr = outFileData;
+        vm->args_GetFileOrDirectoryByName.searchForDirectory = 0;
+        vm->args_GetFileOrDirectoryByName.output = outFileData;
     }
 
     return NitroVM_QueueCommand(vm, NITROVM_OPCODE_GET_FILE_OR_DIRECTORY_BY_NAME);
@@ -379,24 +379,23 @@ int NitroVM_SearchFileOrDirectory(NitroVM* vm, const char* inPath,
 
 int NitroVM_Read(NitroVM* vm, void* dst, int capacity, CBool async)
 {
-    // base_d is like seek / tell index, adjusted by load commands
-    int srcStart = vm->regbase_d.s32;
-    int srcEnd = vm->regbase_abc.c.s32;
+    int srcStart = vm->fileInfo.cursorPos;
+    int srcEnd = vm->fileInfo.endOffset;
     
-    int srcLength = srcEnd - srcStart;
+    int remainingLength = srcEnd - srcStart;
     
     int lengthToCopy = capacity;
     unsigned int copyOfCapacity = capacity; // unsigned fixes register stuff
     
-    if (lengthToCopy > srcLength)
-        lengthToCopy = srcLength;
+    if (lengthToCopy > remainingLength)
+        lengthToCopy = remainingLength;
     
     if (lengthToCopy < 0)
         lengthToCopy = 0;
     
-    vm->regext_abc.a.ptr = (char*)dst;
-    vm->regext_abc.b.u32 = copyOfCapacity;
-    vm->regext_abc.c.u32 = lengthToCopy;
+    vm->args_Read.destination = (char*)dst;
+    vm->args_Read.unknown = copyOfCapacity;
+    vm->args_Read.length = lengthToCopy;
     
     if (!async)
         vm->flags |= (1 << NITROVM_FLAG_SYNCHRONOUS);
@@ -406,7 +405,7 @@ int NitroVM_Read(NitroVM* vm, void* dst, int capacity, CBool async)
     if (!async)
     {
         if (NitroVM_AwaitCommandCompletion(vm))
-            lengthToCopy = vm->regbase_d.u32 - srcStart;
+            lengthToCopy = vm->fileInfo.cursorPos - srcStart;
         else
             lengthToCopy = -1;
     }

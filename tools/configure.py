@@ -27,8 +27,7 @@ DSD_VERSION = 'v0.10.2'
 WIBO_VERSION = '0.6.16'
 OBJDIFF_VERSION = 'v2.7.1'
 CC_OVERRIDES_PATH = "tools/cc_overrides.txt"
-# sp2p2 is the earliest build that folds the fixed-point s64 multiply around 0x02030f30
-MWCC_VERSION = os.environ.get("DQIX_MWCC", "2.0/sp2p2")
+MWCC_VERSION = os.environ.get("DQIX_MWCC", "2.0/sp2p2") # minimum version required to match fixed point s64 arithmetic around 0x02030f30 (not sdk code). might need p3 or p4?
 DECOMP_ME_COMPILER = "mwcc_30_137"
 CC_FLAGS = " ".join([
     "-O2",                  # Optimize maximally, omit p: it optimizes out things that the game doesn't normally
@@ -50,6 +49,9 @@ CC_FLAGS = " ".join([
     "-msgstyle gcc",        # Use GCC-like messages (some IDEs will make file names clickable)
     "-str pool,reuse"       # Pool and reuse strings within translation units
 ])
+active_function_name = "-force_active func_ov030_021d8a40"
+if args.version == "jpn":
+    active_function_name = "-force_active func_ov029_021d9300,func_ov030_021d9300"
 LD_FLAGS = " ".join([
     "-proc arm946e",        # Target processor
     "-nostdlib",            # No C/C++ standard library
@@ -170,31 +172,6 @@ class Project:
     def dsd_configs(self) -> list[str]:
         return self.delinks_files + self.relocs_files + self.symbols_files
 
-    def check_delinked_sources(self):
-        """Every delinks.txt entry naming a source file needs that file to exist, otherwise
-        the link fails much later with just an unresolved object path from mwldarm."""
-        missing = []
-        for delinks_file in self.delinks_files:
-            for line in open(delinks_file, encoding="utf-8"):
-                line = line.strip()
-                if not line.endswith(":") or line.startswith("//"):
-                    continue
-                source_file = Path(line[:-1])
-                if source_file.suffix not in [".c", ".cpp", ".s"]:
-                    continue
-                if not source_file.is_file():
-                    missing.append((delinks_file, source_file))
-        if missing:
-            print(f"{len(missing)} source file(s) declared in delinks.txt but not on disk:")
-            for delinks_file, source_file in missing:
-                alternatives = [
-                    suffix for suffix in [".c", ".cpp", ".s"]
-                    if source_file.with_suffix(suffix).is_file()
-                ]
-                hint = f" (found {source_file.stem}{alternatives[0]})" if alternatives else ""
-                print(f"  {source_file}{hint}\n    declared in {delinks_file}")
-            exit(1)
-
     def arm9_config_yaml(self) -> Path:
         return self.game_config / "arm9" / "config.yaml"
 
@@ -237,7 +214,6 @@ class Project:
 
 def main():
     project = Project(args.version)
-    project.check_delinked_sources()
 
     with build_ninja_path.open("w") as file:
         n = ninja_syntax.Writer(file)
@@ -269,13 +245,10 @@ def main():
         # -MMD excludes all includes instead of just system includes for some reason, so use -MD instead.
         mwcc_cmd = f'{WINE} "$cc_exe" {CC_FLAGS} {CC_INCLUDES} $cc_flags -d $game_version -MD -c $in -o $basedir'
         mwcc_implicit = [CC]
-        mwld_implicit = [LD]
         if platform.system != "windows":
             transform_dep = "tools/transform_dep.py"
             mwcc_cmd += f" && $python {transform_dep} $basefile.d $basefile.d"
             mwcc_implicit.append(transform_dep)
-            mwcc_implicit.append(WINE) # force wine/wibo as an actual dependency
-            mwld_implicit.append(WINE) # so it downloads first
         n.rule(
             name="mwcc",
             command=mwcc_cmd,
@@ -344,7 +317,6 @@ def main():
         )
         n.newline()
 
-
         n.rule(
             name="check_delinks",
             command=f"{PYTHON} tools/check_delinks.py $in -s $symbols_file"
@@ -361,18 +333,9 @@ def main():
         add_extract_build(n, project)
         add_delink_and_lcf_builds(n, project)
         add_mwcc_builds(n, project, mwcc_implicit)
-        add_mwld_and_rom_builds(n, project, mwld_implicit)
+        add_mwld_and_rom_builds(n, project)
         add_check_builds(n, project)
         add_objdiff_builds(n, project)
-
-        # Provide barebones alternative `ninja min` to avoid building a 
-        # decomp.me context for every source file, which makes GCC a 
-        # prerequisite for producing the ROM. Also skips the sha1 step
-        n.build(
-            inputs=["rom", "check"],
-            rule="phony",
-            outputs="min")
-        n.newline()
 
 
 def add_download_tool_builds(n: ninja_syntax.Writer):
@@ -438,14 +401,14 @@ def add_extract_build(n: ninja_syntax.Writer, project: Project):
         n.newline()
 
 
-def add_mwld_and_rom_builds(n: ninja_syntax.Writer, project: Project, mwld_implicit: list[Path]):
+def add_mwld_and_rom_builds(n: ninja_syntax.Writer, project: Project):
     lcf_file = str(project.arm9_lcf())
     objects_file = str(project.arm9_objects_txt())
     delink_file = str(project.arm9_delink_yaml())
     elf_file = str(project.arm9_o())
     n.build(
         inputs=project.source_object_files() + [lcf_file, objects_file, delink_file],
-        implicit=mwld_implicit,
+        implicit=LD,
         rule="mwld",
         outputs=elf_file,
         variables={
@@ -543,20 +506,12 @@ def add_mwcc_builds(n: ninja_syntax.Writer, project: Project, mwcc_implicit: lis
 
         extension = source_file.suffix
         ctx_file = str(project.game_build / source_file.with_suffix(f".ctx{extension}"))
-        ctx_files.append(ctx_file)
         n.build(
             inputs=str(source_file),
             rule="m2ctx",
             outputs=ctx_file,
         )
         n.newline()
-
-    n.build(
-        inputs=ctx_files,
-        rule="phony",
-        outputs="ctx",
-    )
-    n.newline()
 
 
 def get_source_files(dirs: list[Path]):

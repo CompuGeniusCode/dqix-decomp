@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 
 extern "C" void* func_02012fe4(void);
-void* GetData02107930(void);
 extern "C" int func_ov017_021d60f4(void* a);
 extern "C" void func_ov001_021601f8(void* a, void* b);
 
@@ -12,7 +12,7 @@ struct DataStruct_02160338 { char pad[0x90]; int field90; };
 // USA: func_ov001_02160338  (semantic: SetOrInitFieldTable_02160338)
 extern "C" ARM int func_ov001_02160338(void* obj) {
     Big_02160338* big = (Big_02160338*)func_02012fe4();
-    DataStruct_02160338* d = (DataStruct_02160338*)GetData02107930();
+    DataStruct_02160338* d = (DataStruct_02160338*)LightingManager::GetInstance();
     if (big->field834 != 0) {
         return 1;
     }

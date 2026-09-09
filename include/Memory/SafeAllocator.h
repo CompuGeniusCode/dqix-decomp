@@ -5,7 +5,7 @@
 // This appears to be the most abstracted form of a memory allocator,
 // and also the one used in the most high-level code. It seems to be a wrapper
 // for AllocatorUnion / the signed allocator types, with some auxiliary
-// function calls (USA: func_020d970c and func_020d974c) before and after it.
+// function calls (USA: _Z17LockResourceMutexv and _Z19UnlockResourceMutexv) before and after it.
 // These mess with the interrupt state and increment/decrement a variable
 // at a fixed location - maybe a mutex lock/unlock? Needs more investigation.
 class SafeAllocator

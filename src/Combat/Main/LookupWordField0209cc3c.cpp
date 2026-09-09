@@ -1,7 +1,7 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 
 extern "C" ARM void* func_0205ec34(void);
-ARM void* GetData02107930(void);
 int TestBitInByteArray(int unused, unsigned char* arr, int index);
 
 struct Word0209cc3c {
@@ -17,7 +17,7 @@ struct Data0209cc3c { char pad[0x98]; int field98; };
 // USA: func_0209cc3c  (semantic: LookupWordField0209cc3c)
 extern "C" ARM int func_0209cc3c(struct Obj0209cc3c* obj, unsigned short id) {
     void* self = func_0205ec34();
-    struct Data0209cc3c* data = (struct Data0209cc3c*)GetData02107930();
+    struct Data0209cc3c* data = (struct Data0209cc3c*)LightingManager::GetInstance();
     int i;
     for (i = 0; i < obj->count; i++) {
         struct Word0209cc3c* w = &obj->words[i];

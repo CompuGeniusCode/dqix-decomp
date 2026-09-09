@@ -9,7 +9,7 @@ struct Vec3 {
 extern "C" void Vector3fix_Subtract(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 extern "C" void Vector3fix_Normalize(struct Vec3* a, struct Vec3* b);
 extern "C" int fix32_Atan2(int x, int z);
-extern "C" int func_02030f30(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
 
 struct Obj02033874;
 void SetVecYFromValue02033874(struct Obj02033874* obj, int arg);
@@ -24,6 +24,6 @@ ARM void AimAndSetVecY020338d4(struct Struct020338d4* self, struct Vec3* target)
     struct Vec3 v;
     Vector3fix_Subtract(target, &self->vec, &v);
     Vector3fix_Normalize(&v, &v);
-    int angle = func_02030f30(fix32_Atan2(v.x, v.z));
+    int angle = _Z22fix32ReduceAngle0To2Pii(fix32_Atan2(v.x, v.z));
     SetVecYFromValue02033874((struct Obj02033874*)self, angle);
 }

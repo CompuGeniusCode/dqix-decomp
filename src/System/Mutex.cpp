@@ -99,7 +99,7 @@ bool TryLockMutex(Mutex* mutex)
     return success;
 }
 
-// usa: func_020c8204
+// usa: _Z27AddMutexToContextLockedListP16ProcessorContextP5Mutex
 // can be made static later
 void AddMutexToContextLockedList(ProcessorContext* context, Mutex* mutex)
 {
@@ -115,7 +115,7 @@ void AddMutexToContextLockedList(ProcessorContext* context, Mutex* mutex)
     context->lockedMutexes.pLast = mutex;
 }
 
-// usa: func_020c8228
+// usa: _Z32RemoveMutexFromContextLockedListP16ProcessorContextP5Mutex
 // can be made static later
 void RemoveMutexFromContextLockedList(ProcessorContext* context, Mutex* mutex)
 {

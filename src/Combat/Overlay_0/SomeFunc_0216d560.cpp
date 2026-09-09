@@ -5,8 +5,8 @@ struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct,
 
 struct Flags0202ecfc;
 void ClearFlag0x1At0x168(struct Flags0202ecfc* p);
-extern "C" short func_02030c68(int x);
-extern "C" short func_02030c9c(int x);
+extern "C" short _Z8fix32sini(int x);
+extern "C" short _Z8fix32cosi(int x);
 
 struct Block0202ecc8 { unsigned int v[12]; };
 struct Dst0202ecc8;
@@ -34,9 +34,9 @@ extern "C" ARM void func_ov000_0216d560(struct Obj0216d560* obj, int id) {
         struct Field50_0216d560 fieldB = *(struct Field50_0216d560*)((char*)c + 0x50);
         struct Table_0216d560 tbl;
         struct Block0202ecc8 block;
-        tbl.x = func_02030c68(fieldB.y);
+        tbl.x = _Z8fix32sini(fieldB.y);
         tbl.y = 0;
-        tbl.z = func_02030c9c(fieldB.y);
+        tbl.z = _Z8fix32cosi(fieldB.y);
         func_ov000_0216d234(&tbl, &fieldA, &block);
         CopyBlockToField0xf0((struct Dst0202ecc8*)obj, &block);
     }

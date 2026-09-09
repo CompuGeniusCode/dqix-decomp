@@ -14,13 +14,13 @@ struct Mutex
     Mutex* pPrev_;
 };
 
-// usa: func_020c805c
+// usa: _Z19ZeroInitializeMutexP5Mutex
 void ZeroInitializeMutex(Mutex* mutex);
-// usa: func_020c8074
+// usa: _Z9LockMutexP5Mutex
 void LockMutex(Mutex* mutex);
-// usa: func_020c80f8
+// usa: _Z11UnlockMutexP5Mutex
 void UnlockMutex(Mutex* mutex);
-// usa: func_020c8154
+// usa: _Z31UnlockAllMutexesLockedByContextP16ProcessorContext
 void UnlockAllMutexesLockedByContext(ProcessorContext* context);
-// usa: func_020c8190
+// usa: _Z12TryLockMutexP5Mutex
 bool TryLockMutex(Mutex* mutex);

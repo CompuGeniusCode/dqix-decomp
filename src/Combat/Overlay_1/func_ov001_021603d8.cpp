@@ -1,10 +1,10 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 
 extern "C" void* func_02012fe4(void);
-void* GetData02107930(void);
 extern "C" int func_ov017_021d60f4(void* a);
 extern "C" void func_ov001_021601f8(void* a, void* b);
-extern "C" void func_02051d28(void* d);
+extern "C" void _ZN15LightingManager25RecomputeAdvancedLightingEv(void* d);
 extern "C" void func_02016874(void* big);
 
 struct Node_021603d8 { char pad0[0x44]; int field44; char pad1[0x54 - 0x48]; struct Node_021603d8* next; };
@@ -45,7 +45,7 @@ extern int data_ov001_02164d24[];
 // USA: func_ov001_021603d8
 extern "C" ARM int func_ov001_021603d8(void* obj) {
     Big_021603d8* big = (Big_021603d8*)func_02012fe4();
-    DataStruct_021603d8* d = (DataStruct_021603d8*)GetData02107930();
+    DataStruct_021603d8* d = (DataStruct_021603d8*)LightingManager::GetInstance();
     int idx = func_ov017_021d60f4(obj);
     d->field98 = idx;
     if (!(data_ov001_02165880.field14 & 1)) {
@@ -77,7 +77,7 @@ extern "C" ARM int func_ov001_021603d8(void* obj) {
         local[3] = data_ov001_02165880.field2c;
         d->field94 = local[idx];
         d->field90 = 0;
-        func_02051d28(d);
+        _ZN15LightingManager25RecomputeAdvancedLightingEv(d);
     }
 
     big->field832 = 1;

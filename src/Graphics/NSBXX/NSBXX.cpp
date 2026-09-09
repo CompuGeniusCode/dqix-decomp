@@ -84,7 +84,7 @@ extern "C" void NSBXX_Model_AdjustPolygonAttrMask(NSBXXInternalModel* model, boo
     }
 }
 
-// func_020b700c
+// NSBXX_Model_SetMaterialDiffuseReflectionColor
 // color is 15-bits in format BBBBBGGGGGRRRRR
 extern "C" void NSBXX_Model_SetMaterialDiffuseReflectionColor(NSBXXInternalModel* model, unsigned int materialIndex, int col)
 {
@@ -93,7 +93,7 @@ extern "C" void NSBXX_Model_SetMaterialDiffuseReflectionColor(NSBXXInternalModel
     material->paramDIF_AMB_ = material->paramDIF_AMB_ & 0xffff8000 | col;
 }
 
-// func_020b708c
+// NSBXX_Model_SetMaterialAmbientReflectionColor
 // color is 15-bits in format BBBBBGGGGGRRRRR
 extern "C" void NSBXX_Model_SetMaterialAmbientReflectionColor(NSBXXInternalModel* model, unsigned int materialIndex, int col)
 {

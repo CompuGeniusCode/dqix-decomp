@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 #include "Combat/Main/BattleList.h"
 #include "Grotto/Overlay_17/Struct44C8.h"
 
@@ -12,7 +13,6 @@ void SetField0x23cTrue(void* obj);
 void ClearBitsInWord(unsigned int* obj, unsigned int mask);
 void ClearBitsInField4(unsigned int* obj, unsigned int mask);
 void SetBitsInField4(unsigned int* obj, unsigned int mask);
-void* GetData02107930(void);
 void Set3DClearColor(int color, int alpha, int depth, int polygonId, int fogEnable);
 void CallHelperFourTimesWithSelf_0218f758(void* self);
 
@@ -100,7 +100,7 @@ extern "C" ARM int func_ov017_021b2758(SelfState_021b2758* self) {
         SetBitsInField4((unsigned int*)ov, self->field0x40);
     }
 
-    Data02107930_021b2758* d = (Data02107930_021b2758*)GetData02107930();
+    Data02107930_021b2758* d = (Data02107930_021b2758*)LightingManager::GetInstance();
     int f90 = d->f90;
     int idx = d->f98;
     unsigned char* base = ctx + 0x10c;

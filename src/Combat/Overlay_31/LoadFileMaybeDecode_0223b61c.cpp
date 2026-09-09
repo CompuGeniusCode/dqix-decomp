@@ -25,7 +25,7 @@ extern "C" ARM void* func_ov031_0223b61c(char* path, unsigned int* outSize, int 
     if (!NitroVM_PrepareReadFileByPath(&vm, path))
         func_020c9be0();
 
-    unsigned int size = vm.regbase_abc.c.u32 - vm.regbase_abc.b.u32;
+    unsigned int size = vm.fileInfo.endOffset - vm.fileInfo.startOffset;
     if (outSize) *outSize = size;
 
     int allocAlign = EndsWithMatch_0223b744(path, data_ov031_0224c56c, 2) ? -4 : align;

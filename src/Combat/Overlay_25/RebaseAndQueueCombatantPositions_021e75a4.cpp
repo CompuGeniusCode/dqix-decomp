@@ -7,7 +7,7 @@ struct Vec3_02030ef0;
 
 extern "C" void* __clear(void* dst, int count);
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
-extern "C" void func_02030ef0(struct Vec3_02030ef0* src, unsigned int a, struct Vec3_02030ef0* dst);
+extern "C" void _Z22Vector3fixDivideScalarPK8Vector3iiPS_(struct Vec3_02030ef0* src, unsigned int a, struct Vec3_02030ef0* dst);
 extern "C" void _ZN8Vector3iaSERKS_(int* dst, int* src);
 struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
 void ResetFields_021de110(void* obj);
@@ -47,7 +47,7 @@ extern "C" ARM int func_ov025_021e75a4(void* unused0, void* unused1, struct Obj0
             validCount++;
         }
     }
-    func_02030ef0((struct Vec3_02030ef0*)&accum, validCount << 0xc, (struct Vec3_02030ef0*)&accum);
+    _Z22Vector3fixDivideScalarPK8Vector3iiPS_((struct Vec3_02030ef0*)&accum, validCount << 0xc, (struct Vec3_02030ef0*)&accum);
 
     slot = arr;
     for (i = 0; i < validCount; slot++, i++) {

@@ -18,7 +18,7 @@ extern "C" void func_ov031_0224185c(void);
 extern "C" ARM int func_ov031_02240338(int a, int ctx) {
 	if (GetGlobalWord021112ec()) {
 		InitStruct020c7de4(&data_ov031_022918bc, (int)&data_ov031_022918a0, 1);
-		PopulateProcessorContext(&data_ov031_022918dc, (unsigned int)func_ov031_0224185c, 0, ctx + 0x2000, 0x2000, a);
+		PopulateContext(&data_ov031_022918dc, (unsigned int)func_ov031_0224185c, 0, ctx + 0x2000, 0x2000, a);
 		MarkContextReadyAndSwitch(&data_ov031_022918dc);
 		return 1;
 	}

@@ -9,7 +9,7 @@ void RenderFlaggedIndexedEntry(struct StructAt020473c8* obj, int param1);
 
 unsigned int GetBattleScaleCount(struct BattleStruct* battleStruct);
 int GetField0x3b0Value(struct BattleStruct* battleStruct);
-extern "C" short func_02030c68(int x);
+extern "C" short _Z8fix32sini(int x);
 
 struct Obj021b6090 {
     char pad0[0x16];
@@ -31,7 +31,7 @@ extern "C" ARM void func_ov017_021b6090(struct Obj021b6090* self) {
         self->field38 += GetBattleScaleCount(battle) * 0x199;
     }
 
-    vecBuf.v[1] += func_02030c68(self->field38);
+    vecBuf.v[1] += _Z8fix32sini(self->field38);
 
     int outA, outB;
     if (ptr3b0 != NULL) {

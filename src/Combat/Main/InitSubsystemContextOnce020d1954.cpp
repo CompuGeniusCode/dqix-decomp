@@ -16,7 +16,7 @@ ARM void InitSubsystemContextOnce020d1954(void* obj) {
         ClearStruct020d19e0((char*)obj + 0xc4);
         ClearStruct020d19e0(&data_0211232c);
         *(int*)((char*)obj + 0xc0) = 0;
-        PopulateProcessorContext((ProcessorContext*)obj, (unsigned int)func_020d19f4, (unsigned int)obj, (unsigned int)&data_02112750, 0x400, 0x14);
+        PopulateContext((ProcessorContext*)obj, (unsigned int)func_020d19f4, (unsigned int)obj, (unsigned int)&data_02112750, 0x400, 0x14);
         MarkContextReadyAndSwitch((ProcessorContext*)obj);
     }
     SetIRQInterruptState(oldState);

@@ -4,7 +4,8 @@
 
 CBool CreateFileAccessor(NitroFileAccessor* outAccessor, const char* path);
 
-CBool NitroVM_PrepareRead(NitroVM* vm, NitroHandle* handle, unsigned int start, unsigned int end, unsigned int capacity);
+// I don't really know what the 5th parameter is there for, but in practice it's always -1
+CBool NitroVM_PrepareRead(NitroVM* vm, NitroHandle* handle, unsigned int start, unsigned int end, unsigned int fileID);
 
 // Sets up the appropriate registers to point to the relevant parts, so that 
 // the handle load proc can load the file
@@ -15,7 +16,7 @@ bool NitroVM_PrepareReadFileByPath(NitroVM* vm, const char* path);
 // I don't know what this function actually does, but I think it has 
 // some synchronisation purpose. It is often called at destruction time,
 // but it also sometimes gets called in the middle of a function (see e.g.
-// func_020ccffc in USA). 
+// _Z28LoadOverlayMetadataFromNitroP15OverlayMetadatabjP11NitroHandlejjjj in USA). 
 CBool NitroVM_FinishRead(NitroVM* vm);
 
 // Assuming that register base_A holds the file ID, runs command 5 to output

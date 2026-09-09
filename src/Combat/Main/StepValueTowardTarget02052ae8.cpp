@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-extern "C" int func_02030d24(int x);
+extern "C" int _Z8fix32absi(int x);
 void ConsumeCountdown0205416c(void* obj);
 
 extern "C" {
@@ -31,7 +31,7 @@ ARM void StepValueTowardTarget02052ae8(struct Obj02052ae8* obj) {
     }
 
     if (obj->field1b4 > 0 || obj->field1b8 > 0) {
-        int step = func_02030d24((int)((float)(obj->field1b4 - obj->field1b8) * 0.1f));
+        int step = _Z8fix32absi((int)((float)(obj->field1b4 - obj->field1b8) * 0.1f));
         if (step == 0) {
             obj->field1b8 = obj->field1b4;
         }

@@ -33,10 +33,10 @@ _Z20AppendEntry_021d999cP24EntryListStruct_021d999cP14Entry_021d999c kind:functi
 _Z29GetElementIfInBounds_021d99f8P18ListHeader021d99f8j kind:function(arm,size=0x20) addr:0x021d99f8
 data_ov028_021d9a34 kind:data(any) addr:0x021d9a34
 __sinit_ov028_021d9a54 kind:function(arm,size=0x2c) addr:0x021d9a54
+.p__sinit_ov028_021d9a54 kind:data(word) addr:0x021d9a80
 data_ov028_021d9aa0 kind:data(any) addr:0x021d9aa0
 data_ov028_021d9ac0 kind:data(any) addr:0x021d9ac0
 data_ov028_021d9ae0 kind:bss addr:0x021d9ae0
 data_ov028_021d9aec kind:bss addr:0x021d9aec
 data_ov028_021d9b14 kind:bss addr:0x021d9b14
 data_ov028_021d9bc4 kind:bss addr:0x021d9bc4
-.p__sinit_ov028_021d9a54 kind:data(word) addr:0x021d9a80

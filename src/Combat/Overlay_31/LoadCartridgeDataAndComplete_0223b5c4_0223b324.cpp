@@ -39,7 +39,7 @@ extern "C" ARM void func_ov031_0223b324(void) {
 		func_020c9be0();
 
 	data_ov031_02290d24.p->lockOwnerId = GenerateLockOwnerID();
-	void* image = vm.regbase_abc.b.ptr;
+	void* image = (void*)vm.fileInfo.startOffset;
 	FatFntPair_0223b324 fnt;
 	NitroVM_ReadSync(&vm, &fnt, 8);
 	FatFntPair_0223b324 fat;

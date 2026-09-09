@@ -7,17 +7,17 @@
 // various different resource-related operations. For example, it's used
 // by memory allocators and the BackgroundLoader for files
 
-// usa: func_020d96b0
+// usa: _Z23InitializeResourceMutexv
 void InitializeResourceMutex();
 
-// usa: func_020d96f4
+// usa: _Z27SetResourceMutexOperationalb
 // If set to false, lock and unlock operations on the mutex will not
 // go through. If set to true, they will behave as normal.
 // Returns the old status.
 bool SetResourceMutexOperational(bool to);
-// usa: func_020d970c
+// usa: _Z17LockResourceMutexv
 void LockResourceMutex();
-// usa: func_020d974c
+// usa: _Z19UnlockResourceMutexv
 void UnlockResourceMutex();
-// usa: func_020d9788
+// usa: _Z29SleepIfResourceMutexNotLockedj
 void SleepIfResourceMutexNotLocked(unsigned int milliseconds);

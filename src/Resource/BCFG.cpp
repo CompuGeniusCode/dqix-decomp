@@ -8,7 +8,7 @@ struct Struct_02104b10
 {
     SafeAllocator* allocator;
     BCFG* pBCFG;
-} currentBCFGScriptData;
+} static currentBCFGScriptData;
 
 int BCFGScript_Opcode_64(Script::Parameter* params, int paramCount)
 {

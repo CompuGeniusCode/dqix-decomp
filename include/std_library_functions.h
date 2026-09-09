@@ -4,6 +4,9 @@
 extern "C" {
 #endif
 
+int abs(int);
+long labs(long); // identical to abs() but also used
+
 // stdlib.h
 int rand();
 void srand(int seed);
@@ -38,7 +41,6 @@ char* strstr(const char* str, const char* substr);
 
 // stdio.h
 int sprintf(char* buffer, const char* format, ...);
-
 #ifdef __cplusplus
 }
 #endif

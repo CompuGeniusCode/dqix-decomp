@@ -6,10 +6,10 @@
 
 extern "C"
 {
-    void func_020c7c30();
+    void _Z25InterruptWaitLoopFunctionPv();
 
-    void func_020c7c08(PFNSwitchContextProc);
-    void func_020c75b4(ProcessorContext*, const void* proc, void* maybeUserdata, void* stackBottom, unsigned stackSize, int prio);
+    void _Z21SetSwitchContextProcBPFvP16ProcessorContextS0_E(PFNSwitchContextProc);
+    void _Z15PopulateContextP16ProcessorContextjjjjj(ProcessorContext*, const void* proc, void* maybeUserdata, void* stackBottom, unsigned stackSize, int prio);
 }
 
 int GenerateUniqueContextID()

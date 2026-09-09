@@ -17,7 +17,7 @@ struct Owner02040a90;
 int GetFieldFromActiveChild(struct Owner02040a90* obj);
 
 extern "C" int fix32_Atan2(int, int);
-extern "C" short func_02030f30(int);
+extern "C" short _Z22fix32ReduceAngle0To2Pii(int);
 struct Obj02033834;
 void SetVecYByMode02033834(struct Obj02033834* obj, int arg);
 
@@ -54,7 +54,7 @@ extern "C" ARM int func_ov004_021688d4(void) {
         int dx = (int)v1.v[0] - (int)v2.v[0];
         int dz = (int)v1.v[2] - (int)v2.v[2];
         int mid = fix32_Atan2(dx, dz);
-        short angle = func_02030f30(mid);
+        short angle = _Z22fix32ReduceAngle0To2Pii(mid);
         SetVecYByMode02033834((struct Obj02033834*)combatant, angle);
     }
 

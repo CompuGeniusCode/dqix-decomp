@@ -1,5 +1,9 @@
 #include "Graphics/Vector.h"
 
+#if defined(jpn)
+#define data_020e9450 data_020e955c
+#endif
+
 extern const fix16_t data_020e9450[0x10000 * 2];
 
 fix32_t fix32sin(fix32_t x)
@@ -113,6 +117,13 @@ fix32_t fix32ReduceAngle0To2Pi(fix32_t angle)
     }
 
     return angle;
+}
+
+void Vector3fix16Copy(Vector3fix16* dst, const Vector3fix16* src)
+{
+    dst->x = src->x;
+    dst->y = src->y;
+    dst->z = src->z;
 }
 
 fix32_t Vector3fixSquaredDistance(const Vector3fix* a, const Vector3fix* b)

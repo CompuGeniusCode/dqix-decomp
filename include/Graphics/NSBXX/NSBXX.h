@@ -108,6 +108,37 @@ struct NSBXXNameList
         }
         return NULL;
     }
+
+    // 12 million helper functions that build up the 'get entry' function. By 
+    // composing them we trick the compiler into still inlining them even in
+    // regular -O2
+    inline void* GetDataStart() const { return (void*)((intptr_t)this + offsetToDataStart_); }
+    inline void* GetEntryv3Helper(unsigned int index, void* dataStart) const 
+    {
+        return (void*)((intptr_t)dataStart + 4 + *(uint16_t*)dataStart * index);
+    }
+
+    inline void* GetEntryv3(unsigned int index) const
+    {
+        return GetEntryv3Helper(index, GetDataStart());
+    }
+
+    inline void* GetEntryv3Safe(unsigned int index) const
+    {
+        return (this != NULL && index < numEntries_) ? GetEntryv3(index) : NULL;
+    }
+
+    inline void* GetEntryFromPtrOffset(void* pOffset) const
+    {
+        return (void*)((intptr_t)this + *(uint32_t*)pOffset);
+    }
+
+    inline void* GetEntryFromOffsetList_v3(unsigned int index) const
+    {
+        uint32_t* pOffset;
+        return (this != NULL && (pOffset = (uint32_t*)GetEntryv3Safe(index))) ? 
+            GetEntryFromPtrOffset(pOffset) : NULL;
+    }
 };
 
 struct NSBXXInnerFileCommon {
@@ -530,6 +561,16 @@ struct NSBXXInternalModel
             return NULL;
     }
 
+    inline NSBXXNameList* GetMeshListUnsafe() const
+    {
+        return (NSBXXNameList*)((intptr_t)this + meshesOffset_);
+    }
+
+    inline NSBXXNameList* GetMeshListSafe() const
+    {
+        return (this != NULL && meshesOffset_ != 0) ? GetMeshListUnsafe() : NULL;
+    }
+
     inline NSBXXNameList* GetMeshList() const
     {
         if (this != NULL && meshesOffset_ != 0)
@@ -637,81 +678,90 @@ struct NSBXXTexPalette
 
 extern "C"
 {
-// usa: func_020b2e3c
+// usa: NSBXX_Tex_GetBlock1Length
 int NSBXX_Tex_GetBlock1Length(NSBXXTex* tex);
-// usa: func_020b2e50
+// usa: NSBXX_Tex_GetBlock2Length
 int NSBXX_Tex_GetBlock2Length(NSBXXTex* tex);
-// usa: func_020b2e64
+// usa: NSBXX_Tex_WriteImageVRAMOffsets
 void NSBXX_Tex_WriteImageVRAMOffsets(NSBXXTex* tex, int block1, int block2_3);
 // usa: func_020b28e78
 void NSBXX_Tex_LoadImageToVRAM(NSBXXTex* tex, bool needsMapping);
-// usa: func_020b2f30
+// usa: NSBXX_Tex_GetBlock4Length
 int NSBXX_Tex_GetBlock4Length(NSBXXTex* tex);
-// usa: func_020b2f44
+// usa: NSBXX_Tex_WritePaletteVRAMOffset
 void NSBXX_Tex_WritePaletteVRAMOffset(NSBXXTex* tex, int offset);
-// usa: func_020b2f4c
+// usa: NSBXX_Tex_LoadPaletteToVRAM
 void NSBXX_Tex_LoadPaletteToVRAM(NSBXXTex* tex, bool needsMapping);
 
-// usa: func_020b3184
+// usa: NSBXX_AttachTextureImageToModel
 bool NSBXX_AttachTextureImageToModel(NSBXXInternalModel* model, NSBXXTex* tex0);
-// usa: func_020b3284
+// usa: NSBXX_DetachTextureImageFromModel
 void NSBXX_DetachTextureImageFromModel(NSBXXInternalModel* model);
-// usa: func_020b33f0
+// usa: NSBXX_AttachTexturePaletteToModel
 bool NSBXX_AttachTexturePaletteToModel(NSBXXInternalModel* model, NSBXXTex* tex0);
-// usa: func_020b34f8
+// usa: NSBXX_DetachTexturePaletteFromModel
 void NSBXX_DetachTexturePaletteFromModel(NSBXXInternalModel* model);
-// usa: func_020b357c
+// usa: NSBXX_LinkTEX0ToMDL0
 int NSBXX_LinkTEX0ToMDL0(NSBXXMdl* mdl0, NSBXXTex* tex0);
-// usa: func_020b362c
+// usa: NSBXX_UnlinkTEX0FromMDL0
 void NSBXX_UnlinkTEX0FromMDL0(NSBXXMdl* mdl0);
 
-// usa: func_020b66f4
+// usa: _Z22RenderMeshWithMaterialP18NSBXXInternalModeljji
 void NSBXX_Model_DrawShadow(NSBXXInternalModel* model, unsigned int arg_2, unsigned int arg_3, unsigned int arg_4);
 
 // 
 struct AnimationData* NSBXX_Model_AllocateAnimationData(class AllocatorUnion* alloc, const void* rawAnim, NSBXXInternalModel* model);
 
-// usa: func_020b6ebc
+// usa: NSBXX_Model_SetAllMaterialFlags
 // applies to all materials of the model. If value == 0 then the bits specified
 // by mask will be cleared, otherwise they will be set
 void NSBXX_Model_SetAllMaterialFlags(NSBXXInternalModel* model, int value, unsigned int mask);
 
-// usa: func_020b7184
+// usa: NSBXX_Model_AdjustPolygonAttrMask
+// applies to all materials of the model. If value == 0 then the bits specified
+// by mask will be cleared, otherwise they will be set
+void NSBXX_Model_AdjustPolygonAttrMask(NSBXXInternalModel* model, bool setBits, unsigned int mask);
+
+// usa: NSBXX_Model_SetMaterialAlpha
 // The alpha value can be between 0-31.
 // (This function should become static later)
 void NSBXX_Model_SetMaterialAlpha(NSBXXInternalModel* model, unsigned int materialIndex, int alpha);
 
-// usa: func_020b71fc
+// usa: NSBXX_Model_GetMaterialPolygonID
 int NSBXX_Model_GetMaterialPolygonID(NSBXXInternalModel* model, unsigned int materialIndex);
 
-// usa: func_020b726c
+// usa: NSBXX_Model_SetDiffuseReflectionColor
 // color to be specified with red in bits 0-4, green in bits 5-9, blue in bits 10-14
 void NSBXX_Model_SetDiffuseReflectionColor(NSBXXInternalModel* model, int rgb);
 
-// usa: func_020b732c
+// usa: NSBXX_Model_SetAmbientReflectionColor
+// color to be specified with red in bits 0-4, green in bits 5-9, blue in bits 10-14
+void NSBXX_Model_SetAmbientReflectionColor(NSBXXInternalModel* model, int col);
+
+// usa: NSBXX_Model_SetAlpha
 // The alpha value can be between 0-31.
 void NSBXX_Model_SetAlpha(NSBXXInternalModel* model, int alpha);
 
-// usa: func_020b736c
+// usa: NSBXXNameList_Search
 // Gets the entry in a NameList given its string.
 // The string passed should be a 16-byte buffer padded with zeros, a regular
 // null-terminated string is not sufficient.
 void* NSBXXNameList_Search(NSBXXNameList* nameList, const char* name);
 
-// usa: func_020b752c
+// usa: NSBXXNameList_SearchIndex
 // Gets the index of an entry in a NameList given its string.
 // The string passed should be a 16-byte buffer padded with zeros, a regular
 // null-terminated string is not sufficient.
 int NSBXXNameList_SearchIndex(NSBXXNameList* nameList, const char* name);
 
-// usa: func_020b7694
+// usa: NSBXX_GetFirstSubfile
 // Returns a pointer to the first file within the file provided.
 // In practice, this mainly seems to be used for getting the MDL
 // out of an NSBMD, though I've also seen a use for getting a TEX
 // out of an NSBTX, so I'm giving it the more generic name for now.
 void* NSBXX_GetFirstSubfile(NSBXXContainer* nsbxx);
 
-// usa: func_020b76a4
+// usa: NSBXX_GetTEXFile
 // Returns a pointer to a TEX0 file within the file provided.
 // Assumes that the provided file either
 //  - contains multiple files, of which the second is a TEX, or

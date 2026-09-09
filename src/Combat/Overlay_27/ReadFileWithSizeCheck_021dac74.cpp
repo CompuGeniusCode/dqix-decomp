@@ -20,7 +20,7 @@ ARM CBool ReadFileWithSizeCheck_021dac74(const char* path, void* dst, int large)
     if (!NitroVM_PrepareReadFileByPath(&vm, path))
         return false;
 
-    unsigned int size = vm.regbase_abc.c.u32 - vm.regbase_abc.b.u32;
+    unsigned int size = vm.fileInfo.endOffset - vm.fileInfo.startOffset;
     if (capacity != size)
     {
         NitroVM_FinishRead(&vm);

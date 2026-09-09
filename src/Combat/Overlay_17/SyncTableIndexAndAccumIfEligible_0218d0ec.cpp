@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 #include "Combat/Main/BattleList.h"
 
 extern "C" void* func_02012fe4(void);
@@ -20,7 +21,6 @@ void EnqueueEventTag147_021cdaa0(void);
 int IsField600B4Zero_021b8b54(void* obj);
 
 struct Data02107930 { unsigned char pad0[0x94]; float accum; int tableIndex; };
-Data02107930* GetData02107930(void);
 
 float GetAccumulatedValue(struct BattleStruct* battleStruct);
 
@@ -58,7 +58,7 @@ extern "C" ARM void func_ov017_0218d0ec(unsigned char* ov) {
     if (GetHeadNodeIdOrMinusOne(*(struct HeadNode02046b24***)(ov + 0x3000 + 0x6fc)) == 4) return;
     if (GetHeadNodeIdOrMinusOne(*(struct HeadNode02046b24***)(ov + 0x3000 + 0x6fc)) == 0x16) return;
 
-    Data02107930* d = GetData02107930();
+    Data02107930* d = (Data02107930*)LightingManager::GetInstance();
     int prevIdx = d->tableIndex;
     if (prevIdx != GetSelectedTableIndex(bs)) {
         if (GetSelectedTableIndex(bs) == 1 || GetSelectedTableIndex(bs) == 0) {

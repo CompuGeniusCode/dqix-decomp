@@ -3,7 +3,7 @@
 extern "C" void func_ov023_021e6194(void* p);
 struct Words021e60c4 { unsigned int v[3]; };
 extern "C" void func_ov023_021e613c(Words021e60c4* dst, char* src);
-extern "C" int func_02030f30(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
 void InitWordsQuad_021e60e0(void* obj, unsigned int val);
 void SetFourWordBlocks_021e6088(void* obj, Words021e60c4* src);
 extern "C" int func_ov023_021e29d0(char* obj);
@@ -28,13 +28,13 @@ extern "C" ARM void func_ov023_021e463c(void* objRaw, unsigned int count) {
         int origPos = s24.v[1];
         int base = 0x1eb;
         int divisor = 12;
-        int d = func_02030f30(base - origPos);
+        int d = _Z22fix32ReduceAngle0To2Pii(base - origPos);
         int pos;
         if (d >= 0 && d < 0x3244) {
             pos = origPos + d / divisor;
             unsigned int i;
             for (i = 0; i < count - 1; i++) {
-                int dd = func_02030f30(base - pos);
+                int dd = _Z22fix32ReduceAngle0To2Pii(base - pos);
                 pos += dd / divisor;
             }
         } else if (d >= 0x3244 && d < 0x6488) {
@@ -42,13 +42,13 @@ extern "C" ARM void func_ov023_021e463c(void* objRaw, unsigned int count) {
             pos = origPos - (span - d) / divisor;
             unsigned int i;
             for (i = 0; i < count - 1; i++) {
-                int dd = func_02030f30(base - pos);
+                int dd = _Z22fix32ReduceAngle0To2Pii(base - pos);
                 pos -= (span - dd) / divisor;
             }
         }
-        int normalized = func_02030f30(pos);
+        int normalized = _Z22fix32ReduceAngle0To2Pii(pos);
         InitWordsQuad_021e60e0(*(void**)(obj + 0x128), normalized);
-        int diff = func_02030f30(0x1eb - pos);
+        int diff = _Z22fix32ReduceAngle0To2Pii(0x1eb - pos);
         int absDiff = diff < 0 ? -diff : diff;
         if (absDiff < 0x28) {
             within = 1;
@@ -58,7 +58,7 @@ extern "C" ARM void func_ov023_021e463c(void* objRaw, unsigned int count) {
             if (absD2 < 0x28) within = 1;
         }
         if (within) {
-            int n2 = func_02030f30(0x1eb);
+            int n2 = _Z22fix32ReduceAngle0To2Pii(0x1eb);
             InitWordsQuad_021e60e0(*(void**)(obj + 0x128), n2);
             *(unsigned short*)(obj + 0x634) &= ~2;
         }
@@ -91,7 +91,7 @@ extern "C" ARM void func_ov023_021e463c(void* objRaw, unsigned int count) {
             if (flag6) {
                 s18.v[1] -= (int)((float)count * 0.08f * 4096.0f);
             }
-            s18.v[1] = func_02030f30(s18.v[1]);
+            s18.v[1] = _Z22fix32ReduceAngle0To2Pii(s18.v[1]);
             SetFourWordBlocks_021e6088(*(void**)(obj + 0x128), &s18);
         }
         if (flag5) {

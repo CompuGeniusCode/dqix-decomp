@@ -33,8 +33,8 @@ extern "C"
     void func_020c9be0();
 
     // Populates context with priority = relPrio + 16
-    extern "C" void _Z22ClampAndSubmit020d97a8iiiiii(ProcessorContext* context, void* stackSpace, unsigned stackSize, int relPrio, const void* entry, int arg);
-    extern "C" void _Z15Forward020d9828Pv(ProcessorContext* context); // thunk for MarkContextReadyAndSwitch
+    void _Z22ClampAndSubmit020d97a8iiiiii(ProcessorContext* context, void* stackSpace, unsigned stackSize, int relPrio, const void* entry, int arg);
+    void _Z15Forward020d9828Pv(ProcessorContext* context); // thunk for MarkContextReadyAndSwitch
 
     char* data_020ef8a4[]; // array of subdirectories within data/
 

@@ -10,7 +10,7 @@ extern "C" void* _ZNK6Script9Parameter8ToStringEv(struct Struct02030b7c* s);
 struct TaggedValue02030b44;
 extern "C" float _ZNK6Script9Parameter7ToFloatEv(struct TaggedValue02030b44* v);
 
-extern "C" int func_02030f30(int v);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int v);
 
 extern int data_020ef2bc;
 extern int data_020fdc14;
@@ -41,7 +41,7 @@ ARM int InitFromVariantBlock0201c5fc(void* obj) {
     _ZNK6Script9Parameter5ToIntEv((struct Variant02030b0c*)(p + 0x60));
 
     *(unsigned short*)(*(char**)((char*)&data_020fdc14 + 0x4) + 0x34) =
-        (unsigned short)func_02030f30((int)(4096.0f * _ZNK6Script9Parameter7ToFloatEv((struct TaggedValue02030b44*)(p + 0x68))));
+        (unsigned short)_Z22fix32ReduceAngle0To2Pii((int)(4096.0f * _ZNK6Script9Parameter7ToFloatEv((struct TaggedValue02030b44*)(p + 0x68))));
 
     *(int*)(*(char**)((char*)&data_020fdc14 + 0x4) + 0x38) =
         (int)(4096.0f * _ZNK6Script9Parameter7ToFloatEv((struct TaggedValue02030b44*)(p + 0x70)));

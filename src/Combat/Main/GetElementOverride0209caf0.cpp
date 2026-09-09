@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 
-void* GetData02107930(void);
 extern "C" void* func_0202ae18(void);
 int CheckField0NonZero(int* obj);
 
@@ -13,7 +13,7 @@ ARM int GetElementOverride0209caf0(int id) {
     if ((unsigned int)id >= 0x2f) {
         return -1;
     }
-    obj = GetData02107930();
+    obj = LightingManager::GetInstance();
     if (*(int*)((char*)obj + 0x98) == 0) {
         v = data_020e8ed8[id];
         if (v == 3) return 4;

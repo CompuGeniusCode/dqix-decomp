@@ -19,10 +19,10 @@
 
 extern "C" {
 
-// func_020ca594 in USA, func_020cc060 in JPN.
+// VectorizedMemset in USA, func_020cc060 in JPN.
 void VectorizedMemset(void* dst, int value, unsigned int length);
 
-// func_020ca650 in USA, func_020cc11c in JPN.
+// VectorizedInvertedMemcpy in USA, func_020cc11c in JPN.
 // Note the break from convention: unlike libc memcpy, the first parameter
 // is the source and second is the destination.
 void VectorizedInvertedMemcpy(const void* src, void* dst, unsigned int length);

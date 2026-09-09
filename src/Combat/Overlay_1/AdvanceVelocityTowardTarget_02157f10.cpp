@@ -11,7 +11,7 @@ ARM unsigned int GetBattleScaleCount(struct BattleStruct* battleStruct);
 extern "C" void Vector3fix_Subtract(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 extern "C" ARM int fix32_Divide(unsigned int numerHi, unsigned int denomLo);
-extern "C" ARM void func_02030e2c(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
+extern "C" ARM void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
 
 // USA: func_ov001_02157f10  (semantic: AdvanceVelocityTowardTarget_02157f10)
 extern "C" ARM int func_ov001_02157f10(void* a, void* b) {
@@ -34,7 +34,7 @@ extern "C" ARM int func_ov001_02157f10(void* a, void* b) {
         *(int*)(pB + 0xbc) = fix32_Divide(diff.z, denom);
     }
     struct Blk3_02157f10 vel = *(struct Blk3_02157f10*)(pB + 0xb4);
-    func_02030e2c((struct Vec3Fixed02030e2c*)&vel, scale, (struct Vec3Fixed02030e2c*)&vel);
+    _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_((struct Vec3Fixed02030e2c*)&vel, scale, (struct Vec3Fixed02030e2c*)&vel);
     Vector3fix_Add((struct Vec3*)(pB + 0x4c), (struct Vec3*)&vel, (struct Vec3*)(pB + 0x4c));
     int counter = *(int*)(pB + 0x38) + GetBattleScaleCount(battleStruct);
     *(int*)(pB + 0x38) = counter;

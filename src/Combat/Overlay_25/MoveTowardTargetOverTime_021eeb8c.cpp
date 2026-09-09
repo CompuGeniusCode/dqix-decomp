@@ -13,7 +13,7 @@ void CopyVec3ToField0x44(struct Target02059f38* dst, struct Vec3_02059f38* src);
 extern "C" int Vector3fix_Distance(struct Vec3s32_020c3030* a, struct Vec3s32_020c3030* b);
 extern "C" void Vector3fix_Subtract(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
-extern "C" void func_02030e2c(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
+extern "C" void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
 extern "C" int fix32_Divide(unsigned int numerHi, unsigned int denomLo);
 
 struct MoveRequest_021eeb8c {
@@ -42,7 +42,7 @@ extern "C" ARM int func_ov025_021eeb8c(struct MoveRequest_021eeb8c* req) {
     struct Vec3 diff;
     Vector3fix_Subtract(&req->target, &curPos, &diff);
     int scale2 = fix32_Divide(step, dist);
-    func_02030e2c((struct Vec3Fixed02030e2c*)&diff, scale2, (struct Vec3Fixed02030e2c*)&diff);
+    _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_((struct Vec3Fixed02030e2c*)&diff, scale2, (struct Vec3Fixed02030e2c*)&diff);
     Vector3fix_Add(&curPos, &diff, &curPos);
     CopyVec3ToField0x44((struct Target02059f38*)combatant, (struct Vec3_02059f38*)&curPos);
     req->remaining -= elapsed;

@@ -9,7 +9,7 @@ extern "C" ARM int Vector3fix_Length(int* v);
 extern "C" ARM int fix32_Divide(unsigned int numerHi, unsigned int denomLo);
 
 struct Vec3Fixed02030e2c { int x; int y; int z; };
-extern "C" ARM void func_02030e2c(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
+extern "C" ARM void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
 
 struct Struct_0203fc5c {
     char pad[0x40];
@@ -37,7 +37,7 @@ ARM void AdvanceOrSnapToTarget0203c960(struct MoverObj0203c960* obj) {
     int dist = Vector3fix_Length((int*)&diff);
     if (obj->speed < dist) {
         int scale = fix32_Divide(obj->speed, dist);
-        func_02030e2c((struct Vec3Fixed02030e2c*)&diff, scale, (struct Vec3Fixed02030e2c*)&diff);
+        _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_((struct Vec3Fixed02030e2c*)&diff, scale, (struct Vec3Fixed02030e2c*)&diff);
         struct Vec3 sum;
         Vector3fix_Add((struct Vec3*)obj->position, &diff, &sum);
         _ZN8Vector3iaSERKS_(obj->position, (int*)&sum);

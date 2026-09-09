@@ -19,27 +19,30 @@
 
 #define data_020f0db8 data_020f0e84
 #define data_020f0dbc data_020f0e88
+#define data_0211e33c data_0211fb64
 #endif
 
 extern "C"
 {
     // some sort of bit test of a struct member at offset 0
-    extern "C" bool _Z17TestFlags02046708P16FlagWord02046708j(void*, unsigned int);
+    bool _Z17TestFlags02046708P16FlagWord02046708j(void*, unsigned int);
     // returns pointer to some unknown struct (at 02114e04)
-    extern "C" void* _Z27GetDataPtr02114e04_020d6c00v();
+    void* _Z27GetDataPtr02114e04_020d6c00v();
 
     // get system language?
     extern "C" int _Z24NormalizeField5_0200fb08P14Struct0200fb08(BattleStruct*);
 
     // Looks like a custom implementation of strstr
-    extern "C" char* _Z13FindSubstringPcS_(char* searchString, const char* targetString);
+    char* _Z13FindSubstringPcS_(char* searchString, const char* targetString);
     // Custom implementation of strlen
-    extern "C" int _Z12StringLengthPKc(const char* str);
+    int _Z12StringLengthPKc(const char* str);
 
     void LZ77UnCompReadNormalWrite8bit(const void* src, void* dst);
 }
 
 int MakeCharUpperCase(char ch);
+
+extern unsigned char data_0211e33c[0x30000];
 
 // character to upper case lookup table
 extern const char data_020e692c[];
@@ -64,7 +67,6 @@ void* LoadFileIntoMemory(const char* path, void* buffer, unsigned int* outLength
     BattleStruct* battle = GetBattleStruct();
     
     char replacedPath[128] = { 0 };
-
     int language = _Z24NormalizeField5_0200fb08P14Struct0200fb08((BattleStruct*)battle);
     StringReplaceLanguageTag(path, replacedPath, language);
 #elif defined(jpn)
@@ -155,8 +157,8 @@ bool GetFileInNarc(const void *narcBuffer, const char *targetFilePath,
             if (strcmp(currentFilePath + prefixLength, targetFilePath) == 0)
             {
                 const void* pFile = handle.GetFileByIndex(idx);
-                unsigned int endOffset = machine.regbase_abc.c.u32;
-                unsigned int startOffset = machine.regbase_abc.b.u32;
+                unsigned int endOffset = machine.fileInfo.endOffset;
+                unsigned int startOffset = machine.fileInfo.startOffset;
                 *pOutFilePtr = pFile;
                 *pOutFileSize = endOffset - startOffset;
                 strrchr(targetFilePath, '/');
@@ -174,7 +176,7 @@ bool GetFileInNarc(const void *narcBuffer, const char *targetFilePath,
 }
 
 bool GetFileInNarcPermissive(const void *narcBuffer, const char *targetFilePath,
-    const void **pOutFilePtr, unsigned int *pOutFileSize, unsigned int firstFileIdx)
+    const void **pOutFilePtr, unsigned int *pOutFileSize)
 {
     bool success = false;
     LockResourceMutex();
@@ -214,8 +216,8 @@ bool GetFileInNarcPermissive(const void *narcBuffer, const char *targetFilePath,
                 if (comparison == 0)
                 {
                     const void* pFile = handle.GetFileByIndex(midpoint);
-                    unsigned int endOffset = machine.regbase_abc.c.u32;
-                    unsigned int startOffset = machine.regbase_abc.b.u32;
+                    unsigned int endOffset = machine.fileInfo.endOffset;
+                    unsigned int startOffset = machine.fileInfo.startOffset;
                     success = true;
                     *pOutFilePtr = pFile;
                     *pOutFileSize = endOffset - startOffset;
@@ -275,8 +277,8 @@ unsigned int FindFilesInNarcBySubstring(const void* narcBuffer, const char* subs
             if (strstr(pLoopFilename, substr))
             {
                 const void* pFile = handle.GetFileByIndex(idx);
-                unsigned int endOffset = machine.regbase_abc.c.u32;
-                unsigned int startOffset = machine.regbase_abc.b.u32;
+                unsigned int endOffset = machine.fileInfo.endOffset;
+                unsigned int startOffset = machine.fileInfo.startOffset;
                 pOutFilePtrs[numFound] = pFile;
                 pOutFileSizes[numFound] = endOffset - startOffset;
                 // unused?
@@ -330,7 +332,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     if (outSize != NULL)
         *outSize = 0;
 
-    func_0202f7a8();
+    _ZN16BackgroundLoader21FreeAllocationsGlobalEv();
     BattleStruct* battle = GetBattleStruct();
     char innerFileReplacedPath[128] = { 0 };
 

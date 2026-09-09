@@ -8,7 +8,7 @@
 // in sm64ds-decomp (func_020553c0) with the same tell noted there: no compiler emits 32
 // identical non-writeback stm stores to a single fixed address (a hardware FIFO command
 // port, not memory) -- and mwcc on this codebase never batches even ordinary sequential
-// field stores into stm at all (confirmed against func_020c21dc/func_020c2208: field
+// field stores into stm at all (confirmed against Mat4x4_WriteIdentity/Mat4x4_ConvertTo4x3: field
 // writes always came out as individual str). C attempted (32x manually-unrolled
 // volatile-struct field zeroing at the same fixed pointer): mwcc emitted one str per
 // word, no stm, wrong shape -- BYTEDIFF.

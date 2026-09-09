@@ -1,13 +1,13 @@
 #include <globaldefs.h>
 
-extern "C" int func_02030f30(int);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int);
 extern "C" int fix32_Sqrt(int value);
 
 struct Vec3;
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 
 struct Mtx43_02030d84 { unsigned int v[12]; };
-extern "C" void func_02030d84(struct Mtx43_02030d84* dst, int angle);
+extern "C" void _Z15RotationMatrixYi(struct Mtx43_02030d84* dst, int angle);
 
 struct FixedVec3_2034;
 struct FixedMtx3T_2034;
@@ -31,7 +31,7 @@ extern "C" ARM void func_0202e5d8(void* obj, int angleArg, int radiusY, int heig
     struct Mtx43_02030d84 mtxCopy;
     struct Mtx43_02030d84 mtx;
 
-    rotAngle = func_02030f30(angleArg);
+    rotAngle = _Z22fix32ReduceAngle0To2Pii(angleArg);
     *(int*)((char*)obj + 0x70) = rotAngle;
     *(int*)((char*)obj + 0x74) = radiusY;
     *(int*)((char*)obj + 0x78) = heightZ;
@@ -44,7 +44,7 @@ extern "C" ARM void func_0202e5d8(void* obj, int angleArg, int radiusY, int heig
     v.y = radiusY;
     v.z = fix32_Sqrt(diff);
 
-    func_02030d84(&mtx, rotAngle);
+    _Z15RotationMatrixYi(&mtx, rotAngle);
     mtxCopy = mtx;
 
     Mat4x3_ApplyToVector((struct FixedVec3_2034*)&v, (struct FixedMtx3T_2034*)&mtxCopy, (struct FixedVec3_2034*)&v);

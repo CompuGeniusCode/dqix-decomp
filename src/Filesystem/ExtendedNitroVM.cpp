@@ -10,7 +10,7 @@
 #define _Z20ClearAndInit020d84f8Pvj func_020d9e5c
 #define _Z23CopyRegionAndFlushCachePvPKvj func_020d9e88
 
-#define func_020ca95c func_020cc428
+#define DecompressC func_020cc428
 
 #define data_01ffd998 data_01ffd9b8
 #define data_01ffd99c data_01ffd9bc
@@ -223,7 +223,7 @@ unsigned int ExtendedNitroVM::GetFileSize()
     switch (status)
     {
     case Status_Open:
-        return machine.regbase_abc.c.u32 - machine.regbase_abc.b.u32;
+        return machine.fileInfo.endOffset - machine.fileInfo.startOffset;
     case Status_2_Unknown:
         return 0;
     }

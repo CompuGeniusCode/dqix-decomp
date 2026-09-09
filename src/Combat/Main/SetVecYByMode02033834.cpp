@@ -11,7 +11,7 @@ struct Obj02033834 {
     unsigned short fc4;  // 0xc4
 };
 
-extern "C" short func_02030f30(int);
+extern "C" short _Z22fix32ReduceAngle0To2Pii(int);
 void SetVecYFromValue02033874(struct Obj02033874* obj, int arg);
 
 // USA: func_02033834
@@ -19,7 +19,7 @@ ARM void SetVecYByMode02033834(struct Obj02033834* obj, int arg) {
     if (obj->mode == 4 || obj->mode == 3) {
         SetVecYFromValue02033874((struct Obj02033874*)obj, arg);
     } else {
-        obj->fae = func_02030f30(arg);
+        obj->fae = _Z22fix32ReduceAngle0To2Pii(arg);
     }
     obj->fc4 &= ~0x8000;
 }

@@ -1,8 +1,8 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 #include "Combat/Main/BattleList.h"
 
 extern "C" void* func_02012fe4(void);
-void* GetData02107930(void);
 int GetSelectedTableIndex(struct BattleStruct* battleStruct);
 extern "C" void func_ov001_021601f8(void* a, void* b);
 
@@ -37,7 +37,7 @@ struct DataStruct02160504 { char pad0[0x94]; int field94; int field98; };
 extern "C" ARM int func_ov001_02160504(void) {
     struct BattleStruct* battle = GetBattleStruct();
     Big02160504* big = (Big02160504*)func_02012fe4();
-    DataStruct02160504* d = (DataStruct02160504*)GetData02107930();
+    DataStruct02160504* d = (DataStruct02160504*)LightingManager::GetInstance();
     if (big->field834 != 0) return 1;
     int idx = GetSelectedTableIndex(battle);
     d->field98 = idx;

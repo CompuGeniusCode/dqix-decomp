@@ -29,7 +29,7 @@ extern "C" ARM void func_ov031_022168ec(void) {
 		}
 	}
 
-	PopulateProcessorContext((ProcessorContext*)(data_ov031_0224e5e8.base + 0x1318), (unsigned int)func_ov031_02216ca0,
+	PopulateContext((ProcessorContext*)(data_ov031_0224e5e8.base + 0x1318), (unsigned int)func_ov031_02216ca0,
 		(unsigned int)&data_ov031_0224e5f0, (unsigned int)(data_ov031_0224e5e8.base + 0x1000), 0x1000, 0x10);
 	MarkContextReadyAndSwitch((ProcessorContext*)(data_ov031_0224e5e8.base + 0x1318));
 }

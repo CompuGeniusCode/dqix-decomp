@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+#include "World/LootableContainer.h"
 
-void* GetData02108e90(void);
 
 struct ElementSlot02015a2c {
     char pad[0x16];
@@ -20,7 +20,7 @@ struct Something02015a2c {
 // USA: func_02015a2c
 ARM int CheckSlotsForFlagState02015a2c(struct Something02015a2c* obj) {
     int i;
-    if (!GetData02108e90()) return 0;
+    if (!(int)LootableContainerManager::GetMainInstance()) return 0;
     if (!obj->field8) return 0;
     for (i = 0; i < obj->count; i++) {
         unsigned char f = obj->arr[i].flag;

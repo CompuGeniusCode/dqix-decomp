@@ -28,15 +28,15 @@
 extern "C"
 {
     void* func_0202ae18();
-    extern "C" void* _Z15GetData02100044v();
+    void* _Z15GetData02100044v();
     void func_0202b2f0(void*);
     void func_0205e57c(void*);
 
     // zero memory and flush cache
-    extern "C" void _Z20ClearAndInit020d84f8Pvj(void*, unsigned int);
+    void _Z20ClearAndInit020d84f8Pvj(void*, unsigned int);
 
     // gets a byte at 0x0214e4a0
-    extern "C" int _Z15GetByte0214e4a0v();
+    int _Z15GetByte0214e4a0v();
 }
 
 // seems to be one per VRAMRegion

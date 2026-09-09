@@ -5,7 +5,7 @@ extern "C" void Vector3fix_Subtract(struct Vec3* a, struct Vec3* b, struct Vec3*
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 
 struct Mtx43_02030d84 { unsigned int v[12]; };
-extern "C" ARM void func_02030d84(struct Mtx43_02030d84* dst, int angle);
+extern "C" ARM void _Z15RotationMatrixYi(struct Mtx43_02030d84* dst, int angle);
 
 struct FixedVec3_2034 { int x; int y; int z; };
 struct FixedMtx3T_2034 {
@@ -22,7 +22,7 @@ struct Point02031118 { int x; int y; int z; };
 struct Bounds02031118 { int minx; int miny; int minz; int maxx; int maxy; int maxz; };
 extern "C" ARM int func_02031118(struct Point02031118* p, struct Bounds02031118* b);
 
-extern "C" int func_02030f30(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
 
 struct BoxEntry0201e8fc {
     int cx, cy, cz;
@@ -53,8 +53,8 @@ ARM void* FindBoxContainingPoint0201e8fc(struct Container0201e8fc* obj, struct V
         if (pt->x > e->maxX || pt->z > e->maxZ) continue;
 
         Vector3fix_Subtract(pt, (struct Vec3*)e, &diff);
-        angle = func_02030f30(-(short)e->angle);
-        func_02030d84(&mtxA, angle);
+        angle = _Z22fix32ReduceAngle0To2Pii(-(short)e->angle);
+        _Z15RotationMatrixYi(&mtxA, angle);
         mtxB = mtxA;
         Mat4x3_ApplyToVector((struct FixedVec3_2034*)&diff, (struct FixedMtx3T_2034*)&mtxB, (struct FixedVec3_2034*)&diff);
         Vector3fix_Add(&diff, (struct Vec3*)e, &diff);

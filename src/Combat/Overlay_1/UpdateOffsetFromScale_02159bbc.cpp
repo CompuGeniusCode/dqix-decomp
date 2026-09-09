@@ -9,7 +9,7 @@ struct Vec3_02159bbc { int x, y, z; };
 extern "C" void Vector3fix_Subtract(Vec3_02159bbc*, Vec3_02159bbc*, Vec3_02159bbc*);
 extern "C" void Vector3fix_Add(Vec3_02159bbc*, Vec3_02159bbc*, Vec3_02159bbc*);
 extern "C" int fix32_Divide(unsigned int, unsigned int);
-extern "C" void func_02030e2c(Vec3_02159bbc*, int, Vec3_02159bbc*);
+extern "C" void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(Vec3_02159bbc*, int, Vec3_02159bbc*);
 
 struct Triple02159b94 { int c, d, e; };
 int ForwardTriple_02159b94(int a, int b, struct Triple02159b94 t);
@@ -38,7 +38,7 @@ extern "C" ARM int func_ov001_02159bbc(struct A02159bbc* a, struct B02159bbc* b)
     } else {
         Vec3_02159bbc tmp = b->outVec;
         int divScale = fix32_Divide(scaledCount, 0x2000);
-        func_02030e2c(&tmp, divScale, &tmp);
+        _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(&tmp, divScale, &tmp);
         Vec3_02159bbc sum;
         func_ov001_02164808(data_ov001_02165884, b->fwdVal, &sum);
         Vector3fix_Add(&sum, &tmp, &sum);

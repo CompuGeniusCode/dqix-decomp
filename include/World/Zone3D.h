@@ -4,7 +4,9 @@
 #include "Memory/SafeAllocator.h"
 #include "Graphics/Vector.h"
 #include "Graphics/Model3D.h"
-#include "ZoneFeatures.h"
+#include "Graphics/AtmosphericEffect.h"
+#include "Graphics/LightingInfo.h"
+#include "Grotto/Main/TileFeatures.h"
 
 struct Zone3D_StructPtr_8
 {
@@ -15,15 +17,6 @@ struct Zone3D_StructPtr_8
     char mapShortName_[7];
     unsigned char unknown_c_low_ : 4;
     unsigned char unknown_c_high_ : 1;
-};
-
-// sizeof == 0x58
-struct Zone3D_BMDJStruct
-{
-    int unknown_0_;
-    char unk_4[0x44];
-    Vector3i vec_48_;
-    Zone3D_BMDJStruct* pNext_;
 };
 
 // sizeof == 0x2824, as seen in the dynamic allocation of one
@@ -47,19 +40,23 @@ public:
     short unknown_4_;
     char unk_6[2];
     Zone3D_StructPtr_8* pUnknownStruct_8_;
-    char string_c_[10]; // holds e.g. "Z02M0100" while in a grotto
-    char unknown_16_[0x10];
-    char unknown_26_[0x10];
+    struct
+    {
+        char buffer1[10];
+        char buffer2[16];
+        char buffer3[16];
 #if defined(jpn)
-    char extraBytesJPN_36[0x20]; // not sure if extending previous or a new member
+        char jpbuffer[0x20];
 #endif
-    short unknown_36_;
-    short unknown_38_;
-    int unknown_3c_;
-    short unknown_40_;
-    char unk_42[2];
-    int unknown_44_;
-    int unknown_48_;
+        short unknown_2a_;
+        short unknown_2c_;
+        char pad_2e[2];
+        int unknown_30_;
+        short unknown_34_;
+        char pad_36[2];
+        int unknown_38_;
+        int unknown_3c_;
+    } substruct_c_;
     SafeAllocator* pAllocator_4c_;
     void* unknown_ptr_50_; // referenced in the nsbtx processor, so something graphical
     SafeAllocator internalAllocator_;
@@ -67,15 +64,15 @@ public:
 
     // Populated from BMBL and BPOS scripts, among other things holds data
     // about warps and placement of stairs/chests in grottos
-    ZoneFeatures bFeatures_;
-    char unknown_struct_f4_[0x18]; //
+    char substruct_6c_[0x88];
+    AtmosphericEffectSet atmosphericEffects_;
     // populated by BATS files.
     // If you remove it, lighting goes weird outdoors, but I don't see any 
     // change in towns / battlefields
-    char unknown_struct_10c_[0x30c];
+    LightingInfo lighting_;
     Model3DListNode* firstModel_418_;
-    Zone3D_BMDJStruct* firstBMDJStruct_41c_;
-    void* grottoTileMapData_420_; // pointer to array of stride 0x48
+    void* firstBMDJStruct_41c_;
+    void* grottoTileMapData_420_;
     int unknown_424_;
     char unk_428[4];
     unsigned char unknown_42c_;
@@ -90,7 +87,8 @@ public:
 
     short unknown_474_;
     char unknown_476_;
-    char unknown_477_;
+    // this seems to include blue and red chests
+    unsigned char numChests_;
     int unknown_478_;
     int unknown_47c_;
 
@@ -131,34 +129,6 @@ public:
     char unknown_2820_;
     char unk_2821[3];
 public:
-    // usa: func_0201383c
+    // usa: _ZN6Zone3D10SwitchZoneEt
     void SwitchZone(unsigned short newID);
-
-    // usa: func_0201403c
-    // The ambl is a NARC containing nsbtx, bmbl, dat and bpos files.
-    void LoadMapAMBL();
-    // usa: func_02014108
-    bool UnpackMapAMBL();
-    // usa: func_02014390
-    bool ProcessBMBLFile(const void* filedata, unsigned int filesize);
-    // usa: func_020143d8
-    bool ProcessBPOSFile(const void* filedata, unsigned int filesize);
-    // usa: func_02014414
-    bool ProcessBATSFile(const void* filedata, unsigned int filesize);
-    
-    // usa: func_0201445c
-    bool ProcessNSBTXFile(const void* filedata, unsigned int filesize, const char* filename);
-
-    // usa: func_020145a8
-    // The amdj is a narc containing nsbmd, nsbma (?), col2 and bmdj files.
-    void LoadMapAMDJ();
-    // usa: func_020146fc
-    bool UnpackMapAMDJ();
-    // usa: func_02014900
-    bool ProcessBMDJFile(const void* filedata, unsigned int filesize, ZoneFeatures::Opcode64Entry* misc);
-
-    // usa: func_02014b04
-    void QueueLoadATS_AMBL();
-    // usa: func_02014c04
-    bool UnpackATS_AMBL();
 };

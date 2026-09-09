@@ -460,6 +460,8 @@ compute_directly:
         *out = samples[directIndex];
 }
 
+// note: this matches with sp1p5 or pre sp2p2 but does not match with sp2p2
+// combined with the fact we need O2,p I think this was compiled separately
 void CalculateTranslationAmountSmooth(fix32_t* out, fix32_t time, NSBXXAnimationJAC::Track::ChannelNonConst* channel, NSBXXAnimationJAC* jac)
 {
     unsigned int frameIdx = time >> 12;
@@ -651,7 +653,7 @@ void CalculateScalingAmountFrameAligned(fix32_t* out, fix32_t time, NSBXXAnimati
                 {
                     int64_t highPrim = (int64_t)samples[highWeightFrame].primary_ * 3;
                     int64_t lowPrim = samples[lowWeightFrame].primary_;
-                    // it just works. (seriously, this assignment is important)
+                    // this assignment is important...
                     int64_t sumPrim = lowPrim;
                     sumPrim = highPrim + lowPrim;
                     out[0] = sumPrim >> 2;

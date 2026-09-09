@@ -7,10 +7,10 @@ extern "C" void Vector3fix_Subtract(Vec3* a, Vec3* b, Vec3* out);
 extern "C" void Vector3fix_Add(Vec3* a, Vec3* b, Vec3* out);
 
 struct Vec3_02030ef0;
-extern "C" void func_02030ef0(Vec3_02030ef0* src, unsigned int a, Vec3_02030ef0* dst);
+extern "C" void _Z22Vector3fixDivideScalarPK8Vector3iiPS_(Vec3_02030ef0* src, unsigned int a, Vec3_02030ef0* dst);
 
 struct Vec3Fixed02030e2c { int x; int y; int z; };
-extern "C" void func_02030e2c(Vec3Fixed02030e2c* in, int scale, Vec3Fixed02030e2c* out);
+extern "C" void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(Vec3Fixed02030e2c* in, int scale, Vec3Fixed02030e2c* out);
 
 unsigned int GetBattleScaleCount(struct BattleStruct* battleStruct);
 
@@ -44,10 +44,10 @@ extern "C" ARM int func_ov001_021592bc(char* req, char* state) {
     if (*(int*)(state + 0x48) <= 0) {
         Vec3 delta;
         Vector3fix_Subtract((Vec3*)(req + 0x4), (Vec3*)(state + 0x74), &delta);
-        func_02030ef0((Vec3_02030ef0*)&delta, (*(unsigned int*)(req + 0x10)) << 13, (Vec3_02030ef0*)(state + 0x94));
+        _Z22Vector3fixDivideScalarPK8Vector3iiPS_((Vec3_02030ef0*)&delta, (*(unsigned int*)(req + 0x10)) << 13, (Vec3_02030ef0*)(state + 0x94));
     } else {
         Vec3Fixed02030e2c tmp = *(Vec3Fixed02030e2c*)(state + 0x94);
-        func_02030e2c(&tmp, fixedScale, &tmp);
+        _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(&tmp, fixedScale, &tmp);
         int mode = *(int*)(req + 0x14);
         if (mode == 0) {
             Vector3fix_Add((Vec3*)(state + 0x74), (Vec3*)&tmp, (Vec3*)(state + 0x74));

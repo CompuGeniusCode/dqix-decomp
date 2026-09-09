@@ -6,7 +6,7 @@ extern "C" void func_0205e330(void* a, void* b, int c);
 struct CombatantStruct* GetCombatantWithFlag0x20(struct BattleStruct* battleStruct, int combatantId);
 
 struct Vec3s02030fc8;
-extern "C" void func_02030fc8(struct Vec3s02030fc8* dst, struct Vec3s02030fc8* src);
+extern "C" void _Z16Vector3fix16CopyP8Vector3sPKS_(struct Vec3s02030fc8* dst, struct Vec3s02030fc8* src);
 
 struct Inner021d360c {
     unsigned char a;
@@ -45,7 +45,7 @@ sendEvent:
     p->a = (unsigned char)a;
     p->b = (unsigned char)b;
     p->c = (unsigned short)c;
-    func_02030fc8((struct Vec3s02030fc8*)p->vec, (struct Vec3s02030fc8*)&d);
+    _Z16Vector3fix16CopyP8Vector3sPKS_((struct Vec3s02030fc8*)p->vec, (struct Vec3s02030fc8*)&d);
 
     func_0205e330(data, &buf, 0);
 }

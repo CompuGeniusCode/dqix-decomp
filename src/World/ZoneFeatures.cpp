@@ -16,26 +16,16 @@ struct Struct_020fdc20
 extern "C"
 {
     extern "C" void* _Z16GetPtrField0x468Pv(BattleStruct*);
-    void func_0201ce10(void*);
+    void _ZN12ZoneFeatures13Opcode68Entry5ResetEv(void*);
 
-    Matrix4x3 func_02030d84(fix32_t);
+    Matrix4x3 _Z15RotationMatrixYi(fix32_t);
 
     // some angle fiddling, reducing mod 2pi?
-    fix32_t func_02030f30(fix32_t);
+    fix32_t _Z22fix32ReduceAngle0To2Pii(fix32_t);
 
     // probably get zone data by name
     extern "C" unsigned short* _Z25FindElementByName0209998cP12List0209998cPKc(void*, const char*);
 
-    // apply vector (v) to matrix (M)
-    void func_020c2034(const Vector3fix* v, const fix32_t* M, Vector3fix* out);
-    // vector subtract a-b
-    void func_020c2dc4(const Vector3fix* a, const Vector3fix* b, Vector3fix*);
-    // inner product
-    fix32_t func_020c2df8(const Vector3fix* a, const Vector3fix* b);
-    // get euclidean length of vector
-    fix32_t func_020c2eb8(const Vector3fix* v);
-    // normalize vector
-    void func_020c2f18(const Vector3fix* in, Vector3fix* out);
 }
 
 //typedef int (*OpcodeProc)(Parameter*, int);
@@ -323,7 +313,7 @@ int WarpScript_Opcode_6b(Script::Parameter* params, int numParams)
     if (didSubtraction)
     {
         fix32_t angle = 4096.0f * (params++)->ToFloat();
-        entry.unk_22 = func_02030f30(angle);
+        entry.unk_22 = _Z22fix32ReduceAngle0To2Pii(angle);
     }
     entry.unk_20 = 4096.0f * (params++)->ToFloat();
     
@@ -373,10 +363,10 @@ int WarpScript_Opcode_6b(Script::Parameter* params, int numParams)
             params = params->ToVec3fix(&vecB);
             params = params->ToVec3fix(&vecA);
             MaybeVector4fix difference;
-            func_020c2dc4(&vecA, &vecB, &difference.vec3.vec);
-            fix32_t distance = func_020c2eb8(&difference.vec3.vec);
-            func_020c2f18(&difference.vec3.vec, &difference.vec3.vec);
-            difference.w = func_020c2df8(&difference.vec3.vec, &vecB);
+            Vector3fix_Subtract(&vecA, &vecB, &difference.vec3.vec);
+            fix32_t distance = Vector3fix_Length(&difference.vec3.vec);
+            Vector3fix_Normalize(&difference.vec3.vec, &difference.vec3.vec);
+            difference.w = Vector3fix_InnerProduct(&difference.vec3.vec, &vecB);
             Vector3fix vecC  = { 0, 0, 0 };
             if (entry.unk_2c.type4.unk_0 == 4)
             {
@@ -445,7 +435,7 @@ int WarpScript_Opcode_6e(Script::Parameter* params, int numParams)
 {
     Vector3fix tempVector;
     params = params->ToVec3fix(&tempVector);
-    fix32_t angle = func_02030f30(4096.0f * (params++)->ToFloat());
+    fix32_t angle = _Z22fix32ReduceAngle0To2Pii(4096.0f * (params++)->ToFloat());
 
     ZoneFeatures* warp = data_020fdc20.warp;
     warp->vector_70_ = tempVector;
@@ -473,7 +463,7 @@ int WarpScript_Opcode_73(Script::Parameter* params, int numParams)
     params = params->ToVec3fix(&tempVector);
     entry.unk_14.vec = tempVector;
     
-    entry.unk_22 = func_02030f30(4096.0f * (params++)->ToFloat());
+    entry.unk_22 = _Z22fix32ReduceAngle0To2Pii(4096.0f * (params++)->ToFloat());
     entry.unk_20 = 4096.0f * (params++)->ToFloat();
 
     fix32_t halfx = entry.unk_14.vec.x / 2;
@@ -595,10 +585,10 @@ int WarpScript_Opcode_74(Script::Parameter* params, int numParams)
         params = params->ToVec3fix(&vecA);
         params = params->ToVec3fix(&vecB);
         MaybeVector4fix vector4;
-        func_020c2dc4(&vecB, &vecA, &vector4.vec3.vec);
-        fix32_t distance = func_020c2eb8(&vector4.vec3.vec);
-        func_020c2f18(&vector4.vec3.vec, &vector4.vec3.vec);
-        vector4.w = func_020c2df8(&vector4.vec3.vec, &vecA);
+        Vector3fix_Subtract(&vecB, &vecA, &vector4.vec3.vec);
+        fix32_t distance = Vector3fix_Length(&vector4.vec3.vec);
+        Vector3fix_Normalize(&vector4.vec3.vec, &vector4.vec3.vec);
+        vector4.w = Vector3fix_InnerProduct(&vector4.vec3.vec, &vecA);
         Vector3fix vecC = { 0, 0, 0 };
         if (data_020fdc20.currentEntry->unk_2c.type4.unk_0 == 4)
         {
@@ -750,10 +740,10 @@ int WarpScript_Opcode_7c(Script::Parameter* params, int numParams)
     vertices[3].z = phalfz;
 
     Matrix4x3 matrix;
-    matrix = func_02030d84(entry.unk_18);
+    matrix = _Z15RotationMatrixYi(entry.unk_18);
 
     for (int i = 0; i < 4; i++)
-        func_020c2034(&vertices[i], &matrix.entries[0], &vertices[i]);
+        Mat4x3_ApplyToVector(&vertices[i], &matrix, &vertices[i]);
 
     entry.minX = vertices[0].x;
     entry.minZ = vertices[0].z;

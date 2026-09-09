@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-void IssueCommand0x19(int cmd);  // func_020c51a4
+void IssueCommand0x19(int cmd);  // _Z16IssueCommand0x19i
 extern "C" void func_02016e14(void* a, void* b, void* c, int d);
 
 // USA: func_02016db4

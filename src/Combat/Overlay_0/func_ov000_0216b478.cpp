@@ -18,7 +18,7 @@ struct Struct02030b7c;
 extern "C" void* _ZNK6Script9Parameter8ToStringEv(struct Struct02030b7c* s);
 
 struct Vec3s02030fc8 { signed short x, y, z; };
-extern "C" void func_02030fc8(struct Vec3s02030fc8* dst, struct Vec3s02030fc8* src);
+extern "C" void _Z16Vector3fix16CopyP8Vector3sPKS_(struct Vec3s02030fc8* dst, struct Vec3s02030fc8* src);
 
 struct VariantNodeTag0216b478 {
     int tag;
@@ -66,7 +66,7 @@ extern "C" ARM int func_ov000_0216b478(struct Variant02030b0c* v, int count) {
     node->byteC = (unsigned char)flagC;
     node->half18 = 0;
     node->pad10 = 0;
-    func_02030fc8(&node->vec, &zeroVec);
+    _Z16Vector3fix16CopyP8Vector3sPKS_(&node->vec, &zeroVec);
     node->flag1a = 1;
     func_ov000_02169b78(node);
     return 1;

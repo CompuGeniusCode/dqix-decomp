@@ -4,6 +4,8 @@
 
 struct Ov33BackgroundLoader : public BackgroundLoader
 {
+    Ov33BackgroundLoader();
+    ~Ov33BackgroundLoader();
     virtual int Process();
 };
 

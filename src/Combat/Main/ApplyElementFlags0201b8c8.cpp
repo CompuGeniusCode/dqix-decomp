@@ -1,6 +1,6 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 
-void* GetData02107930(void);
 struct Obj0201b600;
 struct Elem0201b600;
 struct Elem0201b600* FindElemByKeys(struct Obj0201b600*, int, short);
@@ -20,7 +20,7 @@ ARM void ApplyElementFlags0201b8c8(struct Obj0201b600* obj, int a1, int a2, int 
     int v;
     void* d;
     if (*(unsigned short*)obj != 0x170c) return;
-    d = GetData02107930();
+    d = LightingManager::GetInstance();
     e = FindElemByKeys(obj, 0, 0xa);
     if (e != NULL) SetFlag0x40AndToggle0x4((struct Struct02013380*)e, 0, a1);
     e = FindElemByKeys(obj, 0, 0xb);

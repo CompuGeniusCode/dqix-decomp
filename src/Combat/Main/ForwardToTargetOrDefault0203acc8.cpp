@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
 void* SetGlobalContext02110370(void* value);
-// func_020bc018 is a trampoline decompiled with a 1-arg signature but actually
+// _Z24CallFunc020bc548OnField0Pv is a trampoline decompiled with a 1-arg signature but actually
 // forwards a 2nd arg (r1) through its bx tail-call; reference its mangled symbol
 // directly so the required `mov r1` is emitted while resolving to the real symbol.
 extern "C" void* _Z24CallFunc020bc548OnField0Pv(void* obj, int arg);

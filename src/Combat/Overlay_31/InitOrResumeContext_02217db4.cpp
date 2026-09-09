@@ -30,6 +30,6 @@ extern "C" ARM void func_ov031_02217db4(void* s, unsigned int stackSize) {
 			return;
 		}
 	}
-	PopulateProcessorContext((ProcessorContext*)((char*)s + 0x1b38), (unsigned int)func_ov031_02218098, (unsigned int)s, (unsigned int)((char*)s + 0x1000), 0x1000, stackSize);
+	PopulateContext((ProcessorContext*)((char*)s + 0x1b38), (unsigned int)func_ov031_02218098, (unsigned int)s, (unsigned int)((char*)s + 0x1000), 0x1000, stackSize);
 	MarkContextReadyAndSwitch((ProcessorContext*)((char*)((int)s + 0x338) + 0x1800));
 }

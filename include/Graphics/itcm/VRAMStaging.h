@@ -59,7 +59,7 @@ public:
         // I don't see any other flags being used!
         unsigned short flags_;
 
-        // usa: func_01ff8ab4
+        // usa: _ZN18VRAMStagingManager22StagingSpaceAllocation15SetFlagBitValueEib
         void SetFlagBitValue(int bit, bool value);
     };
 
@@ -82,9 +82,9 @@ public:
         int wordsCopied_ : 20;
         const void* copySource_;
     
-        // usa: func_01ff8e40
+        // usa: _ZN18VRAMStagingManager4Task5ResetEv
         void Reset();
-        // usa: func_01ff8ebc
+        // usa: _ZN18VRAMStagingManager4Task15SetFlagBitValueEib
         void SetFlagBitValue(int bit, bool value);
     };
     
@@ -99,7 +99,7 @@ public:
         unsigned short numTasksPerPriority_[2];
         unsigned short numTasks_;
 
-        // usa: func_01ff96ac
+        // usa: _ZN18VRAMStagingManager23CommonVRAMRegionTaskSet5ResetEv
         // Only resets the counters as no need to clear the task index
         // buffer (when the counters increase again, its contents will
         // be overwritten)
@@ -123,43 +123,43 @@ public:
     unsigned int textureLockMask_; 
     unsigned char frameBufferIndex_; // might be bool
 
-    // usa: func_01ff8810
+    // usa: _ZN18VRAMStagingManager14ZeroInitializeEv
     void ZeroInitialize();
 
-    // usa: func_01ff8850
+    // usa: _ZN18VRAMStagingManager11GetTaskByIDEi
     Task* GetTaskByID(int id);
-    // usa: func_01ff88c4
+    // usa: _ZN18VRAMStagingManager25GetStagingSpaceAllocationEPKv
     StagingSpaceAllocation* GetStagingSpaceAllocation(const void* allocation);
 
-    // usa: func_01ff891c
+    // usa: _ZN18VRAMStagingManager22AllocateInStagingSpaceEj
     void* AllocateInStagingSpace(unsigned int length);
-    // usa: func_01ff8adc
+    // usa: _ZN18VRAMStagingManager26FreeStagingSpaceAllocationEPKv
     bool FreeStagingSpaceAllocation(const void* allocation);
-    // usa: func_01ff8b08
+    // usa: _ZN18VRAMStagingManager33FreeStagingSpaceAllocationByIndexEj
     bool FreeStagingSpaceAllocationByIndex(unsigned int idx);
-    // usa: func_01ff8b48
+    // usa: _ZN18VRAMStagingManager5StageE13VRAMSubregionPKvjjbb
     // if allocateStagingSpace is set to true, then the provided data will
     // be copied (either by memcpy or DMA) into the staging buffer
     int Stage(VRAMSubregion subregion, const void* data, unsigned int offset,
         unsigned int length, bool highPriority, bool allocateStagingSpace);
-    // usa: func_01ff8f00
+    // usa: _ZN18VRAMStagingManager14CancelTaskByIDEi
     bool CancelTaskByID(int id);
-    // usa: func_01ff8f38
+    // usa: _ZN18VRAMStagingManager22CancelAllTasksInRegionE10VRAMRegion
     void CancelAllTasksInRegion(VRAMRegion region);
-    // usa: func_01ff8fb8
+    // usa: _ZN18VRAMStagingManager22CancelOverwrittenTasksE13VRAMSubregionjj
     // any pending tasks writing to a subset of the region specified in the
     // arguments to this function can be cancelled as they won't be seen.
     // (Note that partial overlap of write regions is not sufficient here)
     void CancelOverwrittenTasks(VRAMSubregion subregion, unsigned int offset, unsigned int length);
-    // usa: func_01ff905c
+    // usa: _ZN18VRAMStagingManager14CancelAllTasksEv
     void CancelAllTasks();
-    // usa: func_01ff9098
+    // usa: _ZN18VRAMStagingManager11UpdateBanksEv
     void UpdateBanks();
-    // usa: func_01ff91ac
+    // usa: _ZN18VRAMStagingManager19SendReadyDataToVRAMEv
     void SendReadyDataToVRAM();
 }; 
 
-// usa: func_01ff96c0
+// usa: _Z24SendStagedVRAMDataToVRAMPv
 // Just calls SendReadyDataToVRAM() on the instance provided in the
 // userdata. I think this is written so it can be passed as a callback
 // to e.g. an interrupt handler

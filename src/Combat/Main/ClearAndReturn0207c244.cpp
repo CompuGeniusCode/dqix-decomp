@@ -1,9 +1,9 @@
 #include <globaldefs.h>
+#include "World/LootableContainer.h"
 
-void ClearRegion0207bcc4(char* obj);
 
 // USA: func_0207c244
-ARM char* ClearAndReturn0207c244(char* obj) {
-    ClearRegion0207bcc4(obj);
+extern "C" ARM char* _ZN24LootableContainerManagerC1Ev(char* obj) {
+    ((LootableContainerManager*)(obj))->Reset();
     return obj;
 }

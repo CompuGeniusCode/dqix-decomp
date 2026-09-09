@@ -29,7 +29,7 @@ struct Vec3Fixed02030e2c {
     int y;
     int z;
 };
-extern "C" void func_02030e2c(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
+extern "C" void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
 
 extern "C" void _ZN8Object3D11DisableFlagEi(unsigned char* obj, unsigned int mask);
 
@@ -81,7 +81,7 @@ ARM int RepelFromFlag0x800Target020781e8(struct Entity020781e8* e) {
         scale = fix32_Atan2(delta.x);
         SetVecYByMode02033834((struct Obj02033834*)e, scale);
         delta.y = 0;
-        func_02030e2c((struct Vec3Fixed02030e2c*)&delta, 0x5000, (struct Vec3Fixed02030e2c*)&delta);
+        _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_((struct Vec3Fixed02030e2c*)&delta, 0x5000, (struct Vec3Fixed02030e2c*)&delta);
         Vector3fix_Add(&e->f44, &delta, &e->f158);
     }
 

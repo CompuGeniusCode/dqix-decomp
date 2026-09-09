@@ -16,7 +16,7 @@ extern "C" void Vector3fix_Subtract(struct Vec3* a, struct Vec3* b, struct Vec3*
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 extern "C" int Vector3fix_Length(int* v);
 extern "C" void _ZN8Vector3iaSERKS_(int* dst, int* src);
-extern "C" void func_02030ef0(struct Vec3_02030ef0* src, unsigned int a, struct Vec3_02030ef0* dst);
+extern "C" void _Z22Vector3fixDivideScalarPK8Vector3iiPS_(struct Vec3_02030ef0* src, unsigned int a, struct Vec3_02030ef0* dst);
 
 struct MoveState020a1034 {
     int flag_0x0;
@@ -35,7 +35,7 @@ ARM void AdvanceVec3TowardTarget020a1034(struct MoveState020a1034* obj) {
         obj->flag_0x0 = 0;
     } else {
         struct Vec3 quotient;
-        func_02030ef0((struct Vec3_02030ef0*)&diff, obj->steps_0x24, (struct Vec3_02030ef0*)&quotient);
+        _Z22Vector3fixDivideScalarPK8Vector3iiPS_((struct Vec3_02030ef0*)&diff, obj->steps_0x24, (struct Vec3_02030ef0*)&quotient);
         Vector3fix_Add(&obj->pos_0x4, &quotient, &obj->pos_0x4);
     }
 }

@@ -1,10 +1,10 @@
 #include <globaldefs.h>
+#include "Graphics/LightingInfo.h"
 #include "Memory/SafeAllocator.h"
 #include "Grotto/Main/FloorMap.h"
 #include "Grotto/Main/ActiveGrottoClass.h"
 
 extern "C" void _ZN12ZoneFeatures5ResetEv(void* obj);
-void Init0207b98c(char* obj);
 
 extern "C" void func_0200ee94(void* obj, int a, int b, void* cb1, void* cb2);
 extern "C" void* _ZN7Model3DC1Ev(void* obj);
@@ -29,7 +29,7 @@ ARM void* InitBigStruct0201c014(void* obj) {
     ((SafeAllocator*)((char*)obj + 0x54))->ResetAllocatorPointer();
     _ZN12ZoneFeatures5ResetEv((char*)obj + 0x6c);
     *(int*)((char*)obj + 0xf4) = 0;
-    Init0207b98c((char*)obj + 0x10c);
+    ((LightingInfo*)((char*)obj + 0x10c))->Initialize();
     func_0200ee94((char*)obj + 0x498, 2, 0xac, (void*)_ZN7Model3DC1Ev, (void*)_ZN7Model3DD1Ev);
     func_0200ee94((char*)obj + 0x600, 4, 0x88, (void*)ResetNameTableThenNotify, (void*)NotifyThenResetNameTable);
     func_020982b4((char*)obj + 0x840);

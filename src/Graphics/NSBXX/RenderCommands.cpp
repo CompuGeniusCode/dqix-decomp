@@ -756,7 +756,7 @@ void RenderCommand_7(RenderCommandHandler* handler, int modifier)
         {
             GXFIFO = COMBINE_GXFIFO_COMMANDS3(GXFifoCommand_PopMatrix, GXFifoCommand_SetMatrixMode, GXFifoCommand_LoadMat4x3);
             func_020ca430(&data_020f1d78.popMatrixParameter, &GXFIFO, 8); // pass pop / matrix mode commands
-            // load the matrix returned by func_020b3a24(), inverse of func_020b39ec()
+            // load the matrix returned by _ZN12RenderConfig33GetInverseCombinedWorldViewMatrixEv(), inverse of _ZN12RenderConfig26GetCombinedWorldViewMatrixEv()
             func_020ca430(RenderConfig::GetInverseCombinedWorldViewMatrix(), &GXFIFO, 4*3 * sizeof(fix32_t));
             // the matrix to multiply by is a translation matrix, so we're composing
             // scaling with translation (remember the final operation represents

@@ -22,7 +22,7 @@ extern "C" ARM void func_ov031_0220f400(void* ctx) {
 	*(int*)(p2 + 0x24) = 0;
 	char* q = (char*)data_ov031_0224e580;
 	unsigned int priority = GetContextPriority(data_02111304.activeContext);
-	PopulateProcessorContext((ProcessorContext*)(q + 0x34), (unsigned int)func_ov031_0220f5b4, 0, (unsigned int)(q + 0x8f4), 0x800, priority);
+	PopulateContext((ProcessorContext*)(q + 0x34), (unsigned int)func_ov031_0220f5b4, 0, (unsigned int)(q + 0x8f4), 0x800, priority);
 	p = (char*)data_ov031_0224e580;
 	MarkContextStackTopUnknownSubspace((ProcessorContext*)(p + 0x34), 0x80);
 }

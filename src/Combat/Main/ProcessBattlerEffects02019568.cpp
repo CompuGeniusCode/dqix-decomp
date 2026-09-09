@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 #include "Combat/Main/BattleList.h"
 
 struct Manager_1f2a4;
@@ -8,7 +9,6 @@ struct Element_1f2a4* GetElementByIndexStride0x20(struct Manager_1f2a4* manager,
 struct Struct02013380;
 void SetFlag0x40AndToggle0x4(struct Struct02013380* obj, int unused, int clear4);
 
-void* GetData02107930(void);
 
 struct Entry02019568 {
     unsigned short field0;
@@ -18,7 +18,7 @@ struct Entry02019568 {
 // USA: func_02019568
 ARM void ProcessBattlerEffects02019568(void* a, int b) {
     GetBattleStruct();
-    void* d = GetData02107930();
+    void* d = LightingManager::GetInstance();
     int shiftAmt = *(int*)((char*)d + 0x98);
 
     void* node = *(void**)((char*)a + 0x41c);

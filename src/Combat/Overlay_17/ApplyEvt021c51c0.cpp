@@ -1,4 +1,5 @@
 #include <globaldefs.h>
+#include "Graphics/LightingManager.h"
 #include "Combat/Main/BattleList.h"
 
 void* GetField0x3f8Address(struct BattleStruct* battleStruct);
@@ -9,7 +10,6 @@ int TestBitInByteArray(int a, unsigned char* b, int c);
 extern "C" int func_0202c540(void* p);
 extern "C" void func_020103c8(int val, int arg);
 struct Data02107930;
-Data02107930* GetData02107930(void);
 
 struct Evt021c51c0 {
 	unsigned char pad0[4];
@@ -44,7 +44,7 @@ extern "C" ARM void func_ov017_021c51c0(int flag, Evt021c51c0* evt, struct Battl
 
 	if (func_0202c540(search) != 0 && flag == 0) {
 		func_020103c8((int)battleStruct, evt->fieldc);
-		GetData02107930();
+		LightingManager::GetInstance();
 	}
 
 	*(unsigned short*)((char*)h + 0xe) = evt->field10;

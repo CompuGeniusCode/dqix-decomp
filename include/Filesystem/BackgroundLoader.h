@@ -32,9 +32,9 @@ struct BackgroundLoader
         }; 
         ScratchSpaceAllocation scratchAlloc_;
 
-        // usa: func_0202f700
+        // usa: _ZN16BackgroundLoader4Task14ZeroInitializeEv
         void ZeroInitialize();
-        // usa: func_0202f760
+        // usa: _ZN16BackgroundLoader4Task15GetFullFilenameEPc
         bool GetFullFilename(char* outBuffer);
     };
 
@@ -98,83 +98,83 @@ struct BackgroundLoader
     volatile int flagMaybeGP2OperationInFlight_ : 1;
     int unknown_790_;
 
-    // usa: func_0202f798
+    // usa: _ZN16BackgroundLoader11GetInstanceEv
     static BackgroundLoader* GetInstance();
-    // usa: func_0202f7a8
+    // usa: _ZN16BackgroundLoader21FreeAllocationsGlobalEv
     static void FreeAllocationsGlobal();
-    // usa: func_0202f7c8
+    // usa: _ZN16BackgroundLoader13AddLockGlobalEv
     static void AddLockGlobal();
-    // usa: func_0202f7e8
+    // usa: _ZN16BackgroundLoader16RemoveLockGlobalEv
     static void RemoveLockGlobal();
 
-    // usa: func_0202f808
+    // usa: _ZN16BackgroundLoader17InitializeOrResetEv
     void InitializeOrReset();
-    // usa: func_0202f894
+    // usa: _ZN16BackgroundLoader8PopulateEPvji
     void Populate(void* scratchSpace, unsigned int scratchSize, int relativePrio);
-    // usa: func_0202f920
+    // usa: _ZN16BackgroundLoader13MaybeWaitIdleEv
     void MaybeWaitIdle();
-    // usa: func_0202f984
+    // usa: _ZN16BackgroundLoader7AddLockEv
     void AddLock();
-    // usa: func_0202f9b4
+    // usa: _ZN16BackgroundLoader10RemoveLockEv
     void RemoveLock();
-    // usa: func_0202fa00
+    // usa: _ZN16BackgroundLoader14RemoveAllLocksEv
     void RemoveAllLocks();
-    // usa: func_0202fa38
+    // usa: _ZN16BackgroundLoader13QueueFileTaskEPKciS1_P13SafeAllocator
     // If alloc is not null, the file will be loaded into dynamically allocated
     // memory from the allocator, otherwise, the scratch space will be used
     int QueueFileTask(const char* filename, int type, const char* innerFile, SafeAllocator* alloc);
-    // usa: func_0202fc38
+    // usa: _ZN16BackgroundLoader16QueueOverlayTaskEjb
     // Queues a load or unload of an overlay.
     int QueueOverlayTask(unsigned int id, bool load);
 
-    // usa: func_0202fcfc
+    // usa: _ZN16BackgroundLoader13QueueLoadFileEPKcP13SafeAllocator
     int QueueLoadFile(const char* filename, SafeAllocator* alloc);
-    // usa: func_0202fd14
+    // usa: _ZN16BackgroundLoader12QueueLoadGP1EPKcP13SafeAllocator
     int QueueLoadGP1(const char* filename, SafeAllocator* alloc);
-    // usa: func_0202fd2c
+    // usa: _ZN16BackgroundLoader18QueueLoadFileInGP2EPKcS1_P13SafeAllocator
     int QueueLoadFileInGP2(const char* gp2, const char* innerFile, SafeAllocator* alloc);
-    // usa: func_0202fd44
+    // usa: _ZN16BackgroundLoader16QueueLoadOverlayEj
     int QueueLoadOverlay(unsigned int id);
-    // usa: func_0202fd54
+    // usa: _ZN16BackgroundLoader8AddFenceEv
     void AddFence();
 
-    // usa: func_0202fdd0
+    // usa: _ZN16BackgroundLoader13GetTaskStatusEi
     // -1 = failed, 0 = underway/queued maybe?, 1 = successfully completed
     int GetTaskStatus(int taskID);
-    // usa: func_0202fe58
+    // usa: _ZN16BackgroundLoader8GetFlag0Ev
     int GetFlag0();
-    // usa: func_0202fe68
+    // usa: _ZN16BackgroundLoader21GetDetailedTaskStatusEi
     int GetDetailedTaskStatus(int taskID);
 
-    // usa: func_0202fec8
+    // usa: _ZN16BackgroundLoader17GetLoadedFileByIDEiPPvPj
     void GetLoadedFileByID(int taskID, void** outPtr, unsigned int* outLength);
-    // usa: func_0202ff34
+    // usa: _ZN16BackgroundLoader19GetLoadedFileByNameEPKcPPvPj
     // returns the ID of the task that loaded this file, or -1 if not loaded.
     int GetLoadedFileByName(const char* name, void** outPtr, unsigned int* outLength);
-    // usa: func_0202ffd8
+    // usa: _ZN16BackgroundLoader22GetLoadedFileInArchiveEPKcS1_PPvPj
     // returns the ID of the task that loaded this file, or -1 if not loaded.
     int GetLoadedFileInArchive(const char* archive, const char* innerFile, void** outPtr, unsigned int* outLength);
 
-    // usa: func_02030090
+    // usa: _ZN16BackgroundLoader10MaybeResetEv
     void MaybeReset();
-    // usa: func_02030110
+    // usa: _ZN16BackgroundLoader20MaybeFreeAllocationsEv
     void MaybeFreeAllocations();
-    // usa: func_020301c8
+    // usa: _ZN16BackgroundLoader10RemoveTaskEi
     void RemoveTask(int taskID);
 
-    // implicitly created: func_02030310 = Task::operator=(const Task&)
+    // implicitly created: _ZN16BackgroundLoader4TaskaSERKS0_ = Task::operator=(const Task&)
 
-    // usa: func_02030390
+    // usa: _ZN16BackgroundLoader17GetNumQueuedTasksEv
     int GetNumQueuedTasks();
-    // usa: func_02030398
+    // usa: _ZN16BackgroundLoader15GetTaskFilenameEiPc
     // returns true if a task of the specified id was found
     bool GetTaskFilename(int taskID, char* outBuffer);
 
 protected:
-    // usa: func_02030400
+    // usa: _ZN16BackgroundLoader22AllocateInScratchSpaceEPNS_4Task22ScratchSpaceAllocationEj
     void* AllocateInScratchSpace(Task::ScratchSpaceAllocation* output, unsigned int allocSize);
-    // usa: func_02030584
+    // usa: _ZN16BackgroundLoader16FreeScratchSpaceEPNS_4Task22ScratchSpaceAllocationE
     bool FreeScratchSpace(Task::ScratchSpaceAllocation* block);
-    // usa: func_020305c8
+    // usa: _ZN16BackgroundLoader15RefreshCountersEv
     void RefreshCounters();
 };

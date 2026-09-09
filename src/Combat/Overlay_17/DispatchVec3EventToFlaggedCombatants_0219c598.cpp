@@ -2,7 +2,7 @@
 #include "Combat/Main/BattleList.h"
 
 extern "C" void* func_02012fe4(void);
-extern "C" int func_02030f30(int angle);
+extern "C" int _Z22fix32ReduceAngle0To2Pii(int angle);
 extern "C" void func_020399b0(struct CombatantStruct* combatant, unsigned short arg1, int* vec3, int value);
 extern "C" int func_ov017_0218b5b0(void);
 
@@ -50,7 +50,7 @@ extern "C" ARM void func_ov017_0219c598(int* srcVec3, short* srcAngle, int force
         angle = GetSignedFieldAt0x7c((S_e820*)((char*)dataBase + 0x6c));
     }
 
-    int value = func_02030f30(angle);
+    int value = _Z22fix32ReduceAngle0To2Pii(angle);
 
     for (i = 0; i < field2a04[0xf7c]; i++) {
         struct CombatantStruct* c = GetCombatantWithFlag0x800(battleStruct, (field2a04 + i)[0xf78]);

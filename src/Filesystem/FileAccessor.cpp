@@ -22,16 +22,16 @@ CBool CreateFileAccessor(NitroFileAccessor* outAccessor, const char* path)
 }
 
 CBool NitroVM_PrepareRead(NitroVM* vm, NitroHandle* handle,
-    unsigned int start, unsigned int end, unsigned int capacity)
+    unsigned int start, unsigned int end, unsigned int fileID)
 {
     vm->linkedHandle = handle;
-    vm->regext_abc.c.u32 = capacity;
-    vm->regext_abc.a.u32 = start;
-    vm->regext_abc.b.u32 = end;
+    vm->args_SetFilePointers.fileID = fileID;
+    vm->args_SetFilePointers.startOffset = start;
+    vm->args_SetFilePointers.endOffset = end;
 
     // Operand 7 copies capacity into base_a,
     // start into base_b and base_d, end into base_c.
-    if (!NitroVM_QueueCommand(vm, NITROVM_OPCODE_COPY_REGISTERS))
+    if (!NitroVM_QueueCommand(vm, NITROVM_OPCODE_SET_FILE_POINTERS))
         return false;
 
     vm->flags = (vm->flags | (1 << NITROVM_FLAG_READ_POSITIONS_CONFIGURED)) & ~(1 << NITROVM_FLAG_SEARCH_TARGET_IS_DIRECTORY);
@@ -46,14 +46,11 @@ bool NitroVM_PrepareReadFileByID(NitroVM* vm, NitroFileAccessor volatile accesso
         return false;
 
     vm->linkedHandle = handle;
-    vm->regext_abc.a.ptr = handle;
-    vm->regext_abc.b.u32 = accessor.fileID;
-    // After this call, base_A will also hold the file ID
+    vm->args_GetFATEntry.accessor.handle = handle;
+    vm->args_GetFATEntry.accessor.fileID = accessor.fileID;
     if (!NitroVM_QueueCommand(vm, NITROVM_OPCODE_GET_FAT_ENTRY))
         return false;
 
-    // Not sure about bit 4, but bit 5 is cleared because this is a file
-    // (so command 5 can run properly)
     vm->flags = (vm->flags | (1 << NITROVM_FLAG_READ_POSITIONS_CONFIGURED)) & ~(1 << NITROVM_FLAG_SEARCH_TARGET_IS_DIRECTORY);
     return true;
 }
@@ -87,12 +84,12 @@ CBool NitroVM_WriteOutFilePath(NitroVM* vm, char* buffer, unsigned int bufferLen
 {
     if (vm->pendingCommand != NITROVM_OPCODE_GET_FILE_OR_DIRECTORY_PATH)
     {
-        vm->regext_abc.c.u16.low = 0;
-        vm->regext_abc.c.u16.high = 0;
+        vm->args_GetPath.numBytesWritten = 0;
+        vm->args_GetPath.directoryID = 0;
     }
 
-    vm->regext_abc.a.ptr = buffer;
-    vm->regext_abc.b.u32 = bufferLength;
+    vm->args_GetPath.pathOutput = buffer;
+    vm->args_GetPath.outputCapacity = bufferLength;
 
     return NitroVM_QueueCommand(vm, NITROVM_OPCODE_GET_FILE_OR_DIRECTORY_PATH);
 }
@@ -159,24 +156,24 @@ CBool NitroVM_Seek(NitroVM* vm, int offset, int whence)
     switch (whence)
     {
     case 0: // SEEK_SET
-        offset += vm->regbase_abc.b.s32;
+        offset += vm->fileInfo.startOffset;
         break;
     case 1: // SEEK_CUR
-        offset += vm->regbase_d.s32;
+        offset += vm->fileInfo.cursorPos;
         break;
     case 2: // SEEK_END
-        offset += vm->regbase_abc.c.s32;
+        offset += vm->fileInfo.endOffset;
         break;
     default:
         return false;
     }
         
-    if (offset < vm->regbase_abc.b.s32)
-        offset = vm->regbase_abc.b.s32;
-    if (offset > vm->regbase_abc.c.s32)
-        offset = vm->regbase_abc.c.s32;
+    if (offset < vm->fileInfo.startOffset)
+        offset = vm->fileInfo.startOffset;
+    if (offset > vm->fileInfo.endOffset)
+        offset = vm->fileInfo.endOffset;
 
-    vm->regbase_d.s32 = offset;
+    vm->fileInfo.cursorPos = offset;
     return true;
 }
 

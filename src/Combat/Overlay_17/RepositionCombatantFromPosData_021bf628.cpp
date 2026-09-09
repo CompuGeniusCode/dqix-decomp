@@ -8,7 +8,7 @@ extern "C" void* func_ov017_0218b5b0(void);
 int GetFieldIfFlag4(char* obj);
 void ClearIntAt0x23c(unsigned char* obj);
 void SetBitsInField4(unsigned int* obj, unsigned int mask);
-extern "C" short func_02030f30(int);
+extern "C" short _Z22fix32ReduceAngle0To2Pii(int);
 struct Obj02033834;
 void SetVecYByMode02033834(struct Obj02033834* obj, int arg);
 void SetHalf0xc6AndCopyVec3(void* obj, int* src, short val);
@@ -51,7 +51,7 @@ extern "C" ARM int func_ov017_021bf628(struct Obj_021bf628* obj) {
     if (flagPtr != 0) {
         SetBitsInField4((unsigned int*)flagPtr, 0x80);
     }
-    SetVecYByMode02033834((struct Obj02033834*)combatant, func_02030f30(pos->angle));
+    SetVecYByMode02033834((struct Obj02033834*)combatant, _Z22fix32ReduceAngle0To2Pii(pos->angle));
     struct Vec3i_021bf628 vec = ((struct CombatantPos_021bf628*)combatant)->vec44;
     int* vecPtr = (int*)&vec;
     vec.x = pos->x;

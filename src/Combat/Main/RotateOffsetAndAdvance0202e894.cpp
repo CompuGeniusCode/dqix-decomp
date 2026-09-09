@@ -6,7 +6,7 @@ extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out)
 extern "C" void _ZN8Vector3iaSERKS_(int* dst, int* src);
 
 struct Mtx43_02030d84 { unsigned int v[12]; };
-extern "C" void func_02030d84(struct Mtx43_02030d84* dst, int angle);
+extern "C" void _Z15RotationMatrixYi(struct Mtx43_02030d84* dst, int angle);
 
 struct FixedVec3_2034;
 struct FixedMtx3T_2034;
@@ -30,7 +30,7 @@ ARM void RotateOffsetAndAdvance0202e894(void* obj, int angle) {
 
     Vector3fix_Subtract((struct Vec3*)&field10Copy, (struct Vec3*)&field4Copy, (struct Vec3*)&diff);
 
-    func_02030d84(&builtMtx, angle);
+    _Z15RotationMatrixYi(&builtMtx, angle);
     mtxCopy = builtMtx;
 
     Mat4x3_ApplyToVector((struct FixedVec3_2034*)&diff, (struct FixedMtx3T_2034*)&mtxCopy, (struct FixedVec3_2034*)&diff);

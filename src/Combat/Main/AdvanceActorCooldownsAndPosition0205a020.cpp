@@ -5,7 +5,7 @@ struct Vec3 { int x; int y; int z; };
 extern "C" void Vector3fix_Add(struct Vec3* a, struct Vec3* b, struct Vec3* out);
 
 struct Vec3Fixed02030e2c { int x; int y; int z; };
-extern "C" void func_02030e2c(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
+extern "C" void _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_(struct Vec3Fixed02030e2c* in, int scale, struct Vec3Fixed02030e2c* out);
 
 struct Target02059f38;
 struct Vec3_02059f38;
@@ -54,7 +54,7 @@ ARM void AdvanceActorCooldownsAndPosition0205a020(unsigned char* p, int dt) {
         struct Vec3 pos = ((struct PosHolder0205a020*)p)->pos;
 
         struct Vec3 vel;
-        func_02030e2c((struct Vec3Fixed02030e2c*)(p + 0xc0), dt << 12, (struct Vec3Fixed02030e2c*)&vel);
+        _Z24Vector3fixMultiplyScalarPK8Vector3iiPS_((struct Vec3Fixed02030e2c*)(p + 0xc0), dt << 12, (struct Vec3Fixed02030e2c*)&vel);
         Vector3fix_Add(&pos, &vel, &pos);
         CopyVec3ToField0x44((struct Target02059f38*)p, (struct Vec3_02059f38*)&pos);
 

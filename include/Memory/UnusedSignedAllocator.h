@@ -9,7 +9,7 @@
 // 
 // There are various functions that take a SignedAllocatorHeader and call
 // a member function of HPXE/HMRFAllocator based on the signature, e.g.
-// func_02032584. These have an unused signature 0x554e5448
+// _ZN13SafeAllocator16AllocateReversedEj. These have an unused signature 0x554e5448
 // ("HTNU" or maybe "UNTH") in the binary. It seems likely that this class
 // corresponds to it, but can't be sure.
 //
