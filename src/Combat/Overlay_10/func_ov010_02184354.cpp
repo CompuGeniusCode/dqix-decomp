@@ -1,0 +1,395 @@
+#include <globaldefs.h>
+#include "Filesystem/BackgroundLoader.h"
+#include "Memory/SafeAllocator.h"
+#include "Combat/Main/BattleList.h"
+
+extern AllocatorUnion data_02114e20;
+extern int data_02108760;
+extern const char data_ov010_02184a80[];
+extern const char data_ov010_02184a95[];
+extern const char data_ov010_02184aa6[];
+
+struct Struct021842d8;
+extern "C" void _Z28ResetStateAndCleanup021842d8P14Struct021842d8(struct Struct021842d8* obj);
+
+struct Obj020397cc;
+extern "C" void _Z27CancelPendingAction020397ccP11Obj020397cci(struct Obj020397cc* obj, int arg1);
+void* AllocateAligned4(AllocatorUnion* alloc, unsigned int size);
+
+struct List020727d8 {
+    void* entries;
+    short capacity;
+    short count;
+};
+extern "C" void _Z23ResetListHeader020727d8P12List020727d8(struct List020727d8* list);
+extern "C" void func_020728ac(void* list, void* alloc, void* buffer, int length, int a4, int a5, int a6);
+
+struct TableA68;
+void* FindEntryByKey(struct TableA68* table, int key);
+
+struct Obj0205eaa0;
+extern "C" void _Z28DispatchWithShortB4_0205eaa0P11Obj0205eaa0ii(struct Obj0205eaa0* obj, int a, int b);
+extern "C" void _Z26SetForwardAndStore0205ebc0Pvii(void* obj, int a, int b);
+extern "C" void _Z34DispatchIfField0xc4NonNeg_0205ebfcPvii(void* obj, int a, int b);
+extern "C" void _Z25ForwardField0xc0_0205ebecPv(void* obj);
+
+struct ColorHolder0204bd7c;
+unsigned short ConvertColorToDecimalOffset30000(struct ColorHolder0204bd7c* obj);
+
+struct SearchEntry {
+    unsigned short key;
+    unsigned char pad2[0xc];
+    unsigned char lowPair : 2;
+    unsigned char kind : 4;
+    unsigned char highPair : 2;
+    unsigned char padf;
+};
+struct SearchTable;
+struct SearchEntry* FindEntryByHalfwordKey(struct SearchTable* table, int key);
+
+void* GetPtrField0x114(void* obj);
+void* GetPtrField0x468(void* obj);
+int GetField0x3acValue(struct BattleStruct* b);
+void* GetField0x74deForValidIndex(char* base, unsigned int index);
+unsigned char GetField0x397cValue(struct BattleStruct* battleStruct);
+struct CombatantStruct* GetCombatantWithFlag0x800(struct BattleStruct* battleStruct, int combatantId);
+struct CombatantStruct* GetCombatantUnchecked(struct BattleStruct* battleStruct, int combatantId);
+struct CombatantStruct* GetCombatantAtField0x397c(struct BattleStruct* battleStruct);
+
+struct Flags020340b4;
+void SetFlag0x80At0xc2(struct Flags020340b4* p);
+
+extern "C" void _Z30InitObjFromCombatantId020e4bf4Pvi(void* obj, int combatantId);
+extern "C" void func_02046380(void* global);
+extern "C" void func_0204500c(void* global, void* entry, int a, int b);
+extern "C" int func_020457e0(void* global);
+
+struct Foo0207df50;
+extern "C" void _Z26CopyInternalFields0207df50P11Foo0207df50(struct Foo0207df50* p);
+extern "C" void _Z25RestorePairTables0207df90Pc(char* obj);
+extern "C" void _Z24BackupPairTables0207dfacPc(char* obj);
+
+struct NodeList02057de0;
+extern "C" void* func_02057924(void);
+extern "C" int _Z29CreateAndRegisterNode02057de0P16NodeList02057de0iP13SafeAllocatorii(struct NodeList02057de0* list, int a1, SafeAllocator* alloc, int a2, int a3);
+extern "C" int _Z26FindNodeAndProcess02057fb4Pvii(void* list, int id, int params);
+
+extern "C" void _ZN8Vector3iaSERKS_(int* dst, int* src);
+
+void* GetData02108e10(void);
+extern "C" void* _Z24SearchBothTables02079e2cPci(char* p, int key);
+
+struct Obj02048350;
+extern "C" int _Z22ConsumeCounter02048350P11Obj02048350i(struct Obj02048350* obj, int amount);
+
+extern "C" void* func_0202ae18(void);
+extern "C" void* func_02012fe4(void);
+extern "C" int func_0202c508(void* obj);
+
+struct Vec3s02184354 { short x; short y; short z; };
+extern "C" void func_ov017_021d360c(int a, unsigned char b, int c, struct Vec3s02184354 d);
+
+/* Result of func_02012fe4 -- the "current move" record. */
+struct MoveRecord02184354 {
+    unsigned short id;
+    unsigned char pad2[6];
+    struct MoveInfo02184354* info;
+};
+struct MoveInfo02184354 {
+    unsigned char pad0[0xc];
+    unsigned char category : 4;
+    unsigned char categoryHi : 4;
+    unsigned char pad0d;
+    unsigned char flagsLow : 6;
+    unsigned char isSelfTargeting : 1;
+    unsigned char flagHi : 1;
+};
+
+/* Result of func_ov017_0218b5b0. */
+struct Actor02184354 {
+    unsigned char pad0[0xc];
+    unsigned char combatantId;
+};
+struct Ov17Data02184354 {
+    unsigned char pad0[0x3ba8];
+    struct Actor02184354* actorInfo;
+};
+extern "C" struct Ov17Data02184354* func_ov017_0218b5b0(void);
+
+/* Result of _Z26GetGlobalField0x1c020421a0v. */
+struct Presenter02184354 {
+    void* pParams;
+    unsigned char pad4[0x994];
+    int busy;
+};
+extern "C" struct Presenter02184354* _Z26GetGlobalField0x1c020421a0v(void);
+
+/* Result of _Z24SearchBothTables02079e2cPci. */
+struct TableEntry02184354 {
+    unsigned char pad0[8];
+    unsigned int amount : 8;
+    unsigned int amountHi : 24;
+};
+
+struct Vec3i02184354 { int x; int y; int z; };
+
+struct Params02078484 {
+    unsigned char f00;
+    unsigned char pad01[0xf];
+    unsigned char f10;
+    unsigned char b0 : 1;
+    unsigned char b1 : 1;
+    unsigned char b2 : 1;
+    unsigned char b3 : 1;
+    unsigned char b4 : 1;
+    unsigned char b5 : 1;
+    unsigned char b6 : 1;
+    unsigned char b7 : 1;
+    short f12;
+    short f14;
+    short f16;
+    short f18;
+    short f1a;
+    short f1c;
+    short pad1e;
+    int f20; int f24; int f28;
+    int f2c; int f30; int f34;
+    int f38; int f3c; int f40;
+    int f44; int f48; int f4c;
+};
+
+struct Ctx02184354 {
+    unsigned char state;
+    unsigned char visible;
+    unsigned short waitFrames;
+    int taskId;
+    int nodeId;
+    struct List020727d8 list;
+    SafeAllocator alloc;
+};
+
+// USA: func_ov010_02184354
+extern "C" ARM int func_ov010_02184354(struct Ctx02184354* obj) {
+    BackgroundLoader* loader = BackgroundLoader::GetInstance();
+    struct Presenter02184354* presenter = _Z26GetGlobalField0x1c020421a0v();
+    struct BattleStruct* bs = GetBattleStruct();
+    struct CombatantStruct* caster;
+    struct MoveRecord02184354* move;
+    struct Actor02184354* actorInfo = func_ov017_0218b5b0()->actorInfo;
+    caster = GetCombatantWithFlag0x800(bs, actorInfo->combatantId);
+    struct CombatantStruct* active = GetCombatantWithFlag0x800(bs, GetField0x397cValue(bs));
+    void* scene = func_0202ae18();
+    struct Ov17Data02184354* ov17 = func_ov017_0218b5b0();
+    move = (struct MoveRecord02184354*)func_02012fe4();
+
+    if (caster == NULL || active == NULL) {
+        _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+        return 1;
+    }
+
+    unsigned char state = obj->state;
+    if (state == 0) {
+        _Z27CancelPendingAction020397ccP11Obj020397cci((struct Obj020397cc*)active, 1);
+        void* buffer = AllocateAligned4(&data_02114e20, 0x7800);
+        if (buffer == NULL) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+        obj->alloc.CreateTypeA(buffer, 0x7800);
+        obj->taskId = loader->QueueLoadFileInGP2(data_ov010_02184a80, data_ov010_02184a95, NULL);
+        obj->state = 1;
+    } else if (state == 1) {
+        if (loader->GetTaskStatus(obj->taskId) == 0) return 0;
+        if (loader->GetDetailedTaskStatus(obj->taskId) != 2) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+        void* filePtr;
+        unsigned int fileLen;
+        loader->GetLoadedFileByID(obj->taskId, &filePtr, &fileLen);
+        _Z23ResetListHeader020727d8P12List020727d8(&obj->list);
+        func_020728ac(&obj->list, &obj->alloc, filePtr, fileLen, 0, 0, 0);
+        loader->RemoveTask(obj->taskId);
+
+        unsigned short* slot = (unsigned short*)GetField0x74deForValidIndex((char*)bs, GetField0x3acValue(bs));
+        if (slot == NULL) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+        struct MoveInfo02184354* info = move->info;
+        if (info == NULL) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+
+        unsigned char visible = 1;
+        obj->visible = visible;
+        if (info->category == 0) {
+            void* colour = GetPtrField0x114(caster);
+            if (colour != NULL) {
+                struct SearchTable* table = (struct SearchTable*)GetPtrField0x468(bs);
+                struct SearchEntry* entry = FindEntryByHalfwordKey(table,
+                    ConvertColorToDecimalOffset30000((struct ColorHolder0204bd7c*)colour));
+                if (entry != NULL) {
+                    if (entry->kind != 0) obj->visible = 0;
+                }
+            }
+        } else {
+            struct MoveInfo02184354* self = move->info;
+            if (self != NULL) {
+                if (self->isSelfTargeting == 0) visible = 0;
+                obj->visible = visible;
+            }
+        }
+
+        int key;
+        if (obj->visible == 0) {
+            obj->state = 3;
+            key = 2;
+        } else if (*slot != 0) {
+            obj->state = 2;
+            key = 1;
+        } else {
+            key = 0;
+            obj->state = 4;
+            _Z28DispatchWithShortB4_0205eaa0P11Obj0205eaa0ii((struct Obj0205eaa0*)&data_02108760, 0x64, key);
+        }
+
+        void* entry = FindEntryByKey((struct TableA68*)&obj->list, (short)key);
+        struct Vec3i02184354 casterObj;
+        _Z30InitObjFromCombatantId020e4bf4Pvi(&casterObj, actorInfo->combatantId);
+        func_02046380(presenter);
+        presenter->pParams = &casterObj;
+        func_0204500c(presenter, entry, 0, 0xe3);
+        presenter->busy = 1;
+    } else if (state == 2) {
+        if (presenter->busy != 0) return 0;
+        if (func_020457e0(presenter) == 0) {
+            void* entry = FindEntryByKey((struct TableA68*)&obj->list, 0);
+            struct Vec3i02184354 casterObj;
+            _Z30InitObjFromCombatantId020e4bf4Pvi(&casterObj, actorInfo->combatantId);
+            func_02046380(presenter);
+            presenter->pParams = &casterObj;
+            func_0204500c(presenter, entry, 0, 0xe3);
+            presenter->busy = 1;
+            _Z28DispatchWithShortB4_0205eaa0P11Obj0205eaa0ii((struct Obj0205eaa0*)&data_02108760, 0x64, 0);
+            unsigned short* slot = (unsigned short*)GetField0x74deForValidIndex((char*)bs, GetField0x3acValue(bs));
+            if (slot != NULL) *slot = 0;
+            obj->state = 4;
+        } else {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+    } else if (state == 4) {
+        obj->taskId = loader->QueueLoadFile(data_ov010_02184aa6, NULL);
+        obj->state = 5;
+        obj->waitFrames = 0;
+    } else if (state == 5) {
+        if (loader->GetTaskStatus(obj->taskId) == 0) return 0;
+        if (loader->GetDetailedTaskStatus(obj->taskId) != 2) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            return 1;
+        }
+        if (obj->waitFrames < 0xf) {
+            obj->waitFrames = obj->waitFrames + 1;
+            return 0;
+        }
+        _Z26SetForwardAndStore0205ebc0Pvii(&data_02108760, 0x74, 0x74);
+        _Z34DispatchIfField0xc4NonNeg_0205ebfcPvii(&data_02108760, 0, 0);
+
+        void* filePtr;
+        unsigned int fileLen;
+        loader->GetLoadedFileByID(obj->taskId, &filePtr, &fileLen);
+
+        char* stage = (char*)ov17 + 0x2cc;
+        struct Vec3i02184354 pos = *(struct Vec3i02184354*)((char*)caster + 0x44);
+        _Z26CopyInternalFields0207df50P11Foo0207df50((struct Foo0207df50*)(stage + 0xc40));
+        _Z25RestorePairTables0207df90Pc(stage + 0xc40);
+        void* nodes = func_02057924();
+        _Z29CreateAndRegisterNode02057de0P16NodeList02057de0iP13SafeAllocatorii((struct NodeList02057de0*)nodes, 0x11, &obj->alloc,
+                                      (int)filePtr, (int)fileLen);
+        _Z24BackupPairTables0207dfacPc(stage + 0xc40);
+
+        struct Vec3i02184354 scale;
+        scale.x = 0x10a;
+        scale.y = 0x10a;
+        scale.z = 0x10a;
+
+        struct Params02078484 params;
+        params.f00 = 0;
+        params.f10 = 1;
+        params.f12 = 0;
+        params.f14 = -1;
+        params.f16 = -1;
+        params.f18 = -1;
+        params.f1a = -1;
+        params.f1c = -0x1000;
+        params.f20 = 0;
+        params.f24 = 0;
+        params.f28 = 0;
+        params.f2c = 0;
+        params.f30 = 0;
+        params.f34 = 0;
+        params.f38 = 0;
+        params.f3c = 0;
+        params.f40 = 0;
+        params.f44 = 0x1000;
+        params.f48 = 0x1000;
+        params.f4c = 0x1000;
+        params.b0 = 0;
+        params.b1 = 0;
+        params.b2 = 1;
+        params.b3 = 0;
+        params.b4 = 0;
+        params.b5 = 0;
+        params.b6 = 0;
+        params.b7 = 0;
+
+        _ZN8Vector3iaSERKS_(&params.f2c, &pos.x);
+        _ZN8Vector3iaSERKS_(&params.f44, &scale.x);
+        obj->nodeId = _Z26FindNodeAndProcess02057fb4Pvii(nodes, 0x11, (int)&params);
+
+        struct Vec3s02184354 anchor;
+        anchor.x = (short)(pos.x >> 4);
+        anchor.y = (short)(pos.y >> 4);
+        anchor.z = (short)(pos.z >> 4);
+
+        if (func_0202c508(scene) != 0) {
+            unsigned short* slot = (unsigned short*)GetField0x74deForValidIndex((char*)bs, GetField0x3acValue(bs));
+            if (slot != NULL) {
+                slot[0] = move->id;
+                slot[1] = anchor.x;
+                slot[2] = anchor.y;
+                slot[3] = anchor.z;
+            }
+        }
+
+        struct TableEntry02184354* row =
+            (struct TableEntry02184354*)_Z24SearchBothTables02079e2cPci((char*)GetData02108e10(), 0xd2);
+        if (row != NULL) {
+            _Z22ConsumeCounter02048350P11Obj02048350i((struct Obj02048350*)caster, row->amount);
+        }
+        struct CombatantStruct* target = GetCombatantAtField0x397c(bs);
+        if (target != NULL) {
+            SetFlag0x80At0xc2((struct Flags020340b4*)target);
+        }
+        func_ov017_021d360c(0, GetField0x3acValue(bs), move->id, anchor);
+        obj->state = 3;
+    } else if (state == 3) {
+        struct BattleStruct* now = GetBattleStruct();
+        int finished = 0;
+        if (obj->visible != 0) {
+            if (GetCombatantUnchecked(now, obj->nodeId) == NULL && presenter->busy == 0) {
+                finished = 1;
+            }
+        } else {
+            if (presenter->busy == 0) finished = 1;
+        }
+        if (finished != 0) {
+            _Z28ResetStateAndCleanup021842d8P14Struct021842d8((struct Struct021842d8*)obj);
+            _Z25ForwardField0xc0_0205ebecPv(&data_02108760);
+            return 1;
+        }
+    }
+    return 0;
+}
