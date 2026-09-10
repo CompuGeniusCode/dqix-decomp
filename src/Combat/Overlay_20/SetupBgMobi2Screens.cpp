@@ -1,15 +1,15 @@
 #include <globaldefs.h>
 #include "Memory/SafeAllocator.h"
 
-extern "C" void func_020c39a0(short* out, int value);
+extern "C" void SetMasterBrightness(short* out, int value);
 
 extern "C" void MapVRAMBanksToMainBG(int);
 extern "C" void func_ov020_0218c7bc(int, int, int, int, int);
 extern "C" void ResetBackgroundLayer(void*);
-extern "C" void func_0204b11c(void*, int);
+extern "C" void SetTextBgScreenSize(void*, int);
 extern "C" void func_0204b5b4(void*, int);
 extern "C" void AllocateBackgroundScreenBuffer(void*, void*);
-extern "C" void func_0204af38(void*, int, void*);
+extern "C" void AllocateBackgroundLayerTilemaps(void*, int, void*);
 extern "C" void SetBackgroundScroll(void*, int, int);
 extern "C" void MapVRAMBanksToSubBG(int);
 extern "C" void func_ov020_0218cd64(int, int, int, int, int);
@@ -51,24 +51,24 @@ extern "C" ARM void SetupBgMobi2Screens(struct SetupContext0218cf8c* self) {
     func_ov020_0218c7bc(0, 0, 0x1f, 2, 0);
 
     ResetBackgroundLayer(base + 0x9c + 0x400);
-    func_0204b11c(base + 0x9c + 0x400, 0);
+    SetTextBgScreenSize(base + 0x9c + 0x400, 0);
     base[0x4b8] = base[0x4b8] & ~0xf;
     base[0x4b8] = (base[0x4b8] & ~0xf0) | 0x10;
     func_0204b5b4(base + 0x9c + 0x400, 0);
     AllocateBackgroundScreenBuffer(base + 0x9c + 0x400, &self->allocator);
-    func_0204af38(base + 0x9c + 0x400, 1, &self->allocator);
+    AllocateBackgroundLayerTilemaps(base + 0x9c + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0x9c + 0x400, 0, 0);
 
     MapVRAMBanksToSubBG(4);
     func_ov020_0218cd64(0, 0, 1, 1, 0);
 
     ResetBackgroundLayer(base + 0xbc + 0x400);
-    func_0204b11c(base + 0xbc + 0x400, 0);
+    SetTextBgScreenSize(base + 0xbc + 0x400, 0);
     base[0x4d8] = (base[0x4d8] & ~0xf) | 1;
     base[0x4d8] = base[0x4d8] & ~0xf0;
     func_0204b5b4(base + 0xbc + 0x400, 0);
     AllocateBackgroundScreenBuffer(base + 0xbc + 0x400, &self->allocator);
-    func_0204af38(base + 0xbc + 0x400, 1, &self->allocator);
+    AllocateBackgroundLayerTilemaps(base + 0xbc + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0xbc + 0x400, 0, 0);
 
     int taskId;
@@ -127,6 +127,6 @@ extern "C" ARM void SetupBgMobi2Screens(struct SetupContext0218cf8c* self) {
     volatile unsigned int* reg1000 = (volatile unsigned int*)0x4001000;
     *reg1000 = (*reg1000 & ~0x1f00) | 0x100;
 
-    func_020c39a0((short*)0x400006c, -16);
-    func_020c39a0((short*)0x400106c, -16);
+    SetMasterBrightness((short*)0x400006c, -16);
+    SetMasterBrightness((short*)0x400106c, -16);
 }

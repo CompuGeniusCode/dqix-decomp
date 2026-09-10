@@ -23,10 +23,10 @@ extern "C" void func_02097bc4(struct FieldSet02097bc4*, int);
 extern "C" void func_02097c18(void*, int, int, int, int, int, int, int);
 
 extern "C" void ResetBackgroundLayer(void*);
-extern "C" void func_0204b11c(void*, int);
+extern "C" void SetTextBgScreenSize(void*, int);
 extern "C" void SetBackgroundScroll(void*, int, int);
-extern "C" void func_0204b2e0(void*, char*);
-extern "C" void func_0204b3a0(void*, char*);
+extern "C" void PrepareBgBlockForUpload(void*, char*);
+extern "C" void UploadBgResourceByTag(void*, char*);
 
 extern "C" void LoadToSubBGStandardPalette(int, int, unsigned int);
 extern "C" void LoadToSubBG1ScreenData(int, int, unsigned int);
@@ -79,11 +79,11 @@ extern "C" ARM void StepStaffRollSequence(unsigned char* self) {
         v = v & 0xff;
         v = (v & ~0xf0) | 0x10;
         list[0x1c] = v;
-        func_0204b11c(list, 0);
+        SetTextBgScreenSize(list, 0);
         SetBackgroundScroll(list, 0, 0);
         int tag = *(int*)((char*)word + 0x2c);
-        func_0204b2e0(list, (char*)tag);
-        func_0204b3a0(list, (char*)tag);
+        PrepareBgBlockForUpload(list, (char*)tag);
+        UploadBgResourceByTag(list, (char*)tag);
 
         unsigned short tmpVal = 0x67f5;
         memcpy(buf40, &tmpVal, 2);

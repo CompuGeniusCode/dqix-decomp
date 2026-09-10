@@ -13,7 +13,7 @@ extern "C" unsigned int GetSubBG0ScreenBase(void);
 extern "C" unsigned int GetMainBG3ScreenBase(void);
 extern "C" void* GetZoneState(void);
 struct Actor0209c3b4;
-extern "C" void func_0209c3b4(struct Actor0209c3b4* actor, int val);
+extern "C" void PlayBgm(struct Actor0209c3b4* actor, int val);
 extern "C" void func_0209ca70(void* obj, int val);
 extern "C" void func_020dc2bc(void);
 extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePath, unsigned int* outSize);
@@ -36,7 +36,7 @@ extern "C" ARM int LoadItemNameTableForMenu() {
     void* g = GetZoneState();
     Bits0215bf94* p2 = *(Bits0215bf94**)((char*)g + 8);
     unsigned char v = ((Bits0215bf94*)((char*)p2 + 0xd))->low7;
-    func_0209c3b4((struct Actor0209c3b4*)&data_02109bf4, v);
+    PlayBgm((struct Actor0209c3b4*)&data_02109bf4, v);
     func_0209ca70(&data_02109bf4, data_ov004_021707d8.ptr[0x2d]);
     func_020dc2bc();
     BackgroundLoader::AddLockGlobal();

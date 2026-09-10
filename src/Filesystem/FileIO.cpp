@@ -25,7 +25,7 @@
 extern "C"
 {
     // some sort of bit test of a struct member at offset 0
-    bool func_02046708(void*, unsigned int);
+    bool TestGlobalStateFlags(void*, unsigned int);
     // returns pointer to some unknown struct (at 02114e04)
     void* GetGlobalStateFlags();
 
@@ -346,7 +346,7 @@ extern "C" void* ExtractFileFromGP2(const char* gp2Path, const char* innerFilePa
     unsigned int storageCapacity = 0x30000;  
     
     
-    if (func_02046708(GetGlobalStateFlags(), 0x02000000))
+    if (TestGlobalStateFlags(GetGlobalStateFlags(), 0x02000000))
         storageCapacity -= 0x8000;
     DECLARE_ASM_NOP();
     GPCReadPair readPair;

@@ -2,15 +2,15 @@
 #include "Filesystem/BackgroundLoader.h"
 #include "Memory/SafeAllocator.h"
 
-extern "C" void func_020c39a0(short* out, int value);
+extern "C" void SetMasterBrightness(short* out, int value);
 
 extern "C" void MapVRAMBanksToSubBG(int);
 extern "C" void func_ov020_0218cd64(int, int, int, int, int);
 extern "C" void ResetBackgroundLayer(void*);
-extern "C" void func_0204b11c(void*, int);
+extern "C" void SetTextBgScreenSize(void*, int);
 extern "C" void func_0204b5b4(void*, int, void*, int);
 extern "C" void AllocateBackgroundScreenBuffer(void*, void*);
-extern "C" void func_0204af38(void*, int, void*);
+extern "C" void AllocateBackgroundLayerTilemaps(void*, int, void*);
 extern "C" void SetBackgroundScroll(void*, int, int);
 extern "C" void _Z18LoadFileIntoMemoryPKcPvPj(const char*, void*, unsigned int*);
 extern "C" int CountPacEntries(void*);
@@ -35,13 +35,13 @@ struct ResetContext0218cd98 {
 extern "C" ARM void SetUpNintendoPublisherScreen(struct ResetContext0218cd98* self) {
     unsigned char* base = (unsigned char*)self;
 
-    func_020c39a0((short*)0x400106c, -16);
+    SetMasterBrightness((short*)0x400106c, -16);
     self->allocator.Reset();
     MapVRAMBanksToSubBG(4);
     func_ov020_0218cd64(0, 1, 1, 1, 0);
 
     ResetBackgroundLayer(base + 0xbc + 0x400);
-    func_0204b11c(base + 0xbc + 0x400, 0);
+    SetTextBgScreenSize(base + 0xbc + 0x400, 0);
 
     unsigned char* obj = base + 0xbc;
     unsigned char* list = obj + 0x400;
@@ -51,7 +51,7 @@ extern "C" ARM void SetUpNintendoPublisherScreen(struct ResetContext0218cd98* se
     func_0204b5b4(list, 0, obj, v2);
 
     AllocateBackgroundScreenBuffer(base + 0xbc + 0x400, &self->allocator);
-    func_0204af38(base + 0xbc + 0x400, 1, &self->allocator);
+    AllocateBackgroundLayerTilemaps(base + 0xbc + 0x400, 1, &self->allocator);
     SetBackgroundScroll(base + 0xbc + 0x400, 0, 0);
     BackgroundLoader::AddLockGlobal();
 
@@ -79,6 +79,6 @@ extern "C" ARM void SetUpNintendoPublisherScreen(struct ResetContext0218cd98* se
     volatile unsigned int* reg1000 = (volatile unsigned int*)0x4001000;
     *reg1000 = (*reg1000 & ~0x1f00) | 0x100;
 
-    func_020c39a0((short*)0x400006c, -16);
-    func_020c39a0((short*)0x400106c, -16);
+    SetMasterBrightness((short*)0x400006c, -16);
+    SetMasterBrightness((short*)0x400106c, -16);
 }

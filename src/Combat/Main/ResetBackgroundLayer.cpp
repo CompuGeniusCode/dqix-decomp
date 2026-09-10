@@ -21,7 +21,7 @@ struct List0204af64 {
 // Clears a background-layer descriptor: the CHAR chunk header fields func_0204a8f4 copies in, the
 // 0xffff id at +0xe, the three words at +0x10..+0x18 and the engine/BG nibbles at +0x1c. Only the
 // descriptor is touched; no hardware register is written. The nibbles are what make this a
-// per-engine, per-BG layer - func_0204b3a0 dispatches them through three parallel tables, one each
+// per-engine, per-BG layer - UploadBgResourceByTag dispatches them through three parallel tables, one each
 // for CHAR, PALT and SCRN, and func_02020cb8 sets them to (1,1) before calling SetBackgroundScroll. The
 // words at +0x10..+0x18 are not established; the caller then puts 0x6000 in +0x0 and 0xfffe in +0xe.
 extern "C" ARM void ResetBackgroundLayer(struct List0204af64* obj) {

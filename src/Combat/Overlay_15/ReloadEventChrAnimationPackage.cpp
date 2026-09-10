@@ -14,7 +14,7 @@ extern "C" void _ZN8Object3D25LoadFromCCHROrCMOTArchiveEP21ObjectArchiveLoadInfo
 extern "C" int _ZN8Object3D21MaybeSetBCFGAnimationEii(void* obj, int id, int flags);
 
 struct Struct_203dafc;
-extern "C" void func_0203dafc(struct Struct_203dafc* obj);
+extern "C" void ClearObjectArchiveLoadInfo(struct Struct_203dafc* obj);
 
 struct Params02036804 {
     int flag;
@@ -56,7 +56,7 @@ extern "C" ARM void ReloadEventChrAnimationPackage(void* self, int val) {
 
         if (buffer != 0) {
             struct Params02036804 params;
-            func_0203dafc((struct Struct_203dafc*)&params);
+            ClearObjectArchiveLoadInfo((struct Struct_203dafc*)&params);
             params.alloc = &allocator;
             params.data = &fileStagingBuffer;
             params.size = length;

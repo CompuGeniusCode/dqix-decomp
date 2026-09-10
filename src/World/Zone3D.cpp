@@ -11,7 +11,7 @@
 #if defined(jpn)
 #define GetMainCharacterCombatant func_0200fc28
 #define GetPlayerCombatant func_0200fc38
-#define func_02011584 func_020112f4
+#define GetZoneTable func_020112f4
 #define func_0201e248 func_0201dfd4
 #define func_02013750 func_02013518
 #define func_02013490 func_02013258
@@ -30,7 +30,7 @@
 
 extern "C"
 {
-    void* func_02011584(BattleStruct*);
+    void* GetZoneTable(BattleStruct*);
     void func_02013454(void*);
     void* GetMainCharacterCombatant(BattleStruct*);
     void* GetPlayerCombatant(BattleStruct*);
@@ -58,7 +58,7 @@ extern "C"
     // checks if zone id corresponds to a main floor of a grotto
     bool func_0201b5b0(int id);
     // checks if zone id corresponds to boss floor of a grotto
-    bool func_0201b5d8(int id);
+    bool IsGrottoBossFloorZoneId(int id);
 
     void func_0201e248(void*);
 }
@@ -102,7 +102,7 @@ void Zone3D::SwitchZone(unsigned short newID)
     BattleStruct* battle = GetBattleStruct();
     BackgroundLoader* loader = BackgroundLoader::GetInstance();
 
-    void* uVar3 = func_02011584(battle);
+    void* uVar3 = GetZoneTable(battle);
     (void)func_ov017_0218b5b0();
     void* iVar4 = GetPlayerCombatant(battle);
 

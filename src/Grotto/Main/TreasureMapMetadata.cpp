@@ -7,7 +7,7 @@
 
 #ifdef jpn
 #define GetLocalPlayerCombatantId func_0200ff04
-#define func_0200ff1c func_0200fd78
+#define GetCombatantWithFlag0x100 func_0200fd78
 #define GetZoneState func_02012dac
 #endif
 
@@ -19,7 +19,7 @@ unsigned int GetLocalPlayerCombatantId(BattleStruct*);
 
 // Appears to index into the CombatantList and return the pointer after checking flags.
 // For now we just return a char*, but should probably be a CombatantStruct*.
-char* func_0200ff1c(BattleStruct*, unsigned int);
+char* GetCombatantWithFlag0x100(BattleStruct*, unsigned int);
 
 // returns the overland zone instance
 void* GetZoneState();
@@ -30,7 +30,7 @@ void* GetZoneState();
 unsigned short GenerateNewMapQuality()
 {
     BattleStruct* battle = GetBattleStruct();
-    char* maybeMainCharDataPtr = func_0200ff1c(battle, GetLocalPlayerCombatantId(battle));
+    char* maybeMainCharDataPtr = GetCombatantWithFlag0x100(battle, GetLocalPlayerCombatantId(battle));
     // Another pointless function call
     GetZoneState();
     GrottoStruct* grotto = GetGrottoStruct(battle);

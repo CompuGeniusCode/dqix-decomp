@@ -15,7 +15,7 @@ extern "C" void SaveVramAllocatorState(char* obj);
 extern "C" void _ZN8Object3D8SetScaleEPK8Vector3i(unsigned char* dst, int* src);
 
 struct Struct_203dafc;
-extern "C" void func_0203dafc(struct Struct_203dafc* obj);
+extern "C" void ClearObjectArchiveLoadInfo(struct Struct_203dafc* obj);
 
 struct Params02036804 {
     int flag;
@@ -65,7 +65,7 @@ extern "C" ARM int LoadCharaSubModel(void* self, int* desc) {
         ok = 0;
     } else {
         struct Params02036804 params;
-        func_0203dafc((struct Struct_203dafc*)&params);
+        ClearObjectArchiveLoadInfo((struct Struct_203dafc*)&params);
         void* allocPtr = *(void**)((char*)self + 8);
         unsigned int sz = length;
         void* dataPtr = &fileStagingBuffer;

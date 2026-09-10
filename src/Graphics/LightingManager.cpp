@@ -9,7 +9,7 @@
 #define GetActiveCamera func_0200ff18
 #define GetFrameDeltaMilliseconds func_02010064
 #define func_02010288 func_020100e4
-#define func_0202ec84 func_0202e7f4
+#define ProjectWorldPointToScreen func_0202e7f4
 #define GetScenarioState func_0205ff20
 #define TestFlagBit func_0206f104
 #define func_0207ba28 func_0207c860
@@ -83,7 +83,7 @@ extern "C"
     // set day/night time
     void func_02010288(BattleStruct*, float);
 
-    void func_0202ec84(void*, const Vector3fix*, int*, int*);
+    void ProjectWorldPointToScreen(void*, const Vector3fix*, int*, int*);
 
     bool TestFlagBit(void*, void*, int);
 
@@ -1013,7 +1013,7 @@ void LightingManager::MaybeComputeHorizonPosition()
     Vector3fixMultiplyScalar(&cameraRay, 2048 << 12, &cameraRay);
     int pixelX, pixelY;
     // convert world coordinates to pixel value
-    func_0202ec84(maybeCameraData, &cameraRay, &pixelX, &pixelY);
+    ProjectWorldPointToScreen(maybeCameraData, &cameraRay, &pixelX, &pixelY);
     if (pixelY < 192 && pixelY > 0)
     {
         gradientCenterNorm_ = fix32_Divide(pixelY << 12, 191 << 12);

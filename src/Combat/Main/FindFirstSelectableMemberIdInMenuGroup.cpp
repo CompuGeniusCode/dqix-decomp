@@ -2,7 +2,7 @@
 
 struct List0207f0ac;
 struct Entry0207f0ac;
-extern "C" Entry0207f0ac* func_0207f0ac(List0207f0ac* list, int id);
+extern "C" Entry0207f0ac* FindWindowRecordById(List0207f0ac* list, int id);
 
 struct List0207f6ac;
 struct Entry0207f6ac;
@@ -34,7 +34,7 @@ struct CombatEntry02080468 {
 // a missing or empty group gives -1.
 extern "C" ARM short FindFirstSelectableMemberIdInMenuGroup(void* obj, int id) {
     short result = -1;
-    Group02080468* group = (Group02080468*)func_0207f0ac((List0207f0ac*)((char*)obj + 0xc), id);
+    Group02080468* group = (Group02080468*)FindWindowRecordById((List0207f0ac*)((char*)obj + 0xc), id);
     if (group != NULL) {
         unsigned char i;
         for (i = 0; i < group->count; i++) {

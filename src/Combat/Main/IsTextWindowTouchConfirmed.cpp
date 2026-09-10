@@ -6,7 +6,7 @@ struct Elem_0205d81c;
 
 extern "C" int func_0205bd20(struct Struct_0205bd20* s);
 extern "C" struct Elem_0205d81c* FindTextWindowById(struct Struct_0205d81c* s, int key);
-extern "C" int func_0204c7cc(unsigned char* obj);
+extern "C" int IsWindowDrawn(unsigned char* obj);
 
 struct Obj_0205da38 {
     char pad0[0xb0];
@@ -24,7 +24,7 @@ extern "C" ARM int IsTextWindowTouchConfirmed(struct Obj_0205da38* a) {
     if (func_0205bd20((struct Struct_0205bd20*)((char*)a + 0x4)) == 0) goto ret0;
     e = (unsigned char*)FindTextWindowById((struct Struct_0205d81c*)a, a->fb0);
     if (e == NULL) goto ret0;
-    if (func_0204c7cc(e) == 0) goto ret0;
+    if (IsWindowDrawn(e) == 0) goto ret0;
     if (e[0xc5] & 2) return 1;
 ret0:
     return 0;

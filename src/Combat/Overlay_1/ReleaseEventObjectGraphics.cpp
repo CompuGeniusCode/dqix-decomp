@@ -7,7 +7,7 @@ struct Entry_203dce4 { int flags; };
 struct EntryList_203dce4 { char pad[0xc]; struct Entry_203dce4* entries[0x20]; };
 extern "C" extern void* GetFieldObjectRegistry(void);
 extern "C" extern struct Entry_203dce4* GetActorSlot(struct EntryList_203dce4* list, int id);
-extern "C" int func_02040528(int* obj);
+extern "C" int GetActorRecord(int* obj);
 extern "C" void func_0203d004(void);
 extern const char strStrSpr_021657d4[];
 
@@ -53,7 +53,7 @@ extern "C" ARM int ReleaseEventObjectGraphics(void* self) {
     }
 
     if (*(int*)((char*)entry + 0x14) != 0) {
-        int field = func_02040528((int*)entry);
+        int field = GetActorRecord((int*)entry);
         EmptyStubFn_02161754 stub = (EmptyStubFn_02161754)func_0203d004;
         struct Container02040404* c = (struct Container02040404*)stub(ctxRaw);
         char buf[0x10];

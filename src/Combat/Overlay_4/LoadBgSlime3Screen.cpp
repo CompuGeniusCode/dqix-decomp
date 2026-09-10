@@ -12,10 +12,10 @@ extern "C" void* GetPacEntryByIndex(struct Rec020467f0* rec, int index, void** o
 struct List0204af64;
 extern "C" void ResetBackgroundLayer(struct List0204af64* obj);
 
-extern "C" void func_0204b2e0(void* obj, char* str);
+extern "C" void PrepareBgBlockForUpload(void* obj, char* str);
 
 struct SelfTag0204b3a0;
-extern "C" void func_0204b3a0(struct SelfTag0204b3a0* self, char* str);
+extern "C" void UploadBgResourceByTag(struct SelfTag0204b3a0* self, char* str);
 
 struct LocalListStruct02163144 {
     unsigned char pad0[0x1c];
@@ -32,7 +32,7 @@ extern char strDataAniBgSlime3Pac_02170542;
 // directory: bg_slime.bncg, .bncl and .bnsc are tiles, palette and screen map for one static image.
 // The first call zeroes the sub engine's BG0 and BG1 scroll registers and queues the file, so the
 // image lands on the sub screen; later calls poll the task and hand every record in the pac to
-// func_0204b2e0 and func_0204b3a0. Returns 1 while loading, 0 when done. Its
+// PrepareBgBlockForUpload and UploadBgResourceByTag. Returns 1 while loading, 0 when done. Its
 // only reference is a table load at 0x02170494; what the background is for is not established.
 extern "C" ARM int LoadBgSlime3Screen() {
     int ret = 1;
@@ -59,8 +59,8 @@ extern "C" ARM int LoadBgSlime3Screen() {
             for (int i = 0; i < count; i++) {
                 void* rec = GetPacEntryByIndex((struct Rec020467f0*)recListHead, i, &dummyPtr, &dummyOut44);
                 if (rec) {
-                    func_0204b2e0(&s, (char*)rec);
-                    func_0204b3a0((struct SelfTag0204b3a0*)&s, (char*)rec);
+                    PrepareBgBlockForUpload(&s, (char*)rec);
+                    UploadBgResourceByTag((struct SelfTag0204b3a0*)&s, (char*)rec);
                 }
             }
             ((BackgroundLoader*)(data4))->RemoveTask((int)(data_ov004_021707e8.handle));

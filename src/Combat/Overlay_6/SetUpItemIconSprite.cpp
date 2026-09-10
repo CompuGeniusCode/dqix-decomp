@@ -5,7 +5,7 @@
 struct InitStruct02075cdcStruct;
 extern "C" void func_02075cdc(struct InitStruct02075cdcStruct* s);
 extern "C" void* func_0203bd08(void);
-extern "C" void* func_0203be4c(void);
+extern "C" void* GetSubScreenOamBuffer(void);
 struct StructDE234_020de234;
 extern "C" unsigned short func_020de234(struct StructDE234_020de234* p, int preferMid);
 
@@ -29,7 +29,7 @@ extern "C" ARM void SetUpItemIconSprite(char* self, struct StructDE234_020de234*
     *(unsigned char*)(self + 0x416) = 1;
 
     func_0203bd08();
-    void* p = func_0203be4c();
+    void* p = GetSubScreenOamBuffer();
     *(char**)(self + 0x3cc) = (char*)p + 0x1b8;
 
     *(int*)(self + 0x3f0) = 0x10000;

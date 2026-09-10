@@ -1,9 +1,9 @@
 #include <globaldefs.h>
 #include "Combat/Main/BattleList.h"
 
-extern "C" struct CombatantStruct* func_0200ff1c(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);
 
-extern "C" void* func_02010828(struct BattleStruct* battleStruct);
+extern "C" void* GetPlayerData(struct BattleStruct* battleStruct);
 extern "C" int GetCombatantRecord(unsigned char* obj);
 
 inline char* AddOffset204(char* p) { return p + 0x204; }
@@ -19,16 +19,16 @@ extern "C" ARM int GetInventoryItemByID(void* self, int idx, int kind) {
     }
     struct BattleStruct* battle = GetBattleStruct();
     if (kind == 5) {
-        char* p = (char*)func_02010828(battle);
+        char* p = (char*)GetPlayerData(battle);
         char* table = AddOffsetC00(AddOffset204(p));
         return *(short*)(table + 0xc + idx * 2);
     }
     if (kind == 4) {
-        char* p = (char*)func_02010828(battle);
+        char* p = (char*)GetPlayerData(battle);
         return *(short*)(p + 0xc + idx * 2);
     }
     signed char id = *(signed char*)((char*)self + 0x1c20);
-    struct CombatantStruct* combatant = func_0200ff1c(battle, id);
+    struct CombatantStruct* combatant = GetCombatantWithFlag0x100(battle, id);
     if (combatant == 0) {
         return -1;
     }

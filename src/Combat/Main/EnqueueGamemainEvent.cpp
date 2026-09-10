@@ -1,12 +1,12 @@
 #include <globaldefs.h>
 
-extern "C" void func_020d8654(void);
+extern "C" void SuspendVCountMatchIrq(void);
 extern "C" void func_020d84e4(void);
 extern "C" void func_020d84e8(void);
 extern "C" void* GetMultiplayerState(void);
-extern "C" void func_020d8694(void);
+extern "C" void PopVCountInterruptState(void);
 extern "C" void FatalHalt(void);
-extern "C" int func_0202b7d8(int* obj);
+extern "C" int IsMultiplayerActive(int* obj);
 
 struct QNode0205e1e4 {
     char pad[0x18];
@@ -57,10 +57,10 @@ struct SpinBlock_0205e330 {
 extern "C" ARM void EnqueueGamemainEvent(unsigned char* obj, struct Struct0205e3ec* arg1, short arg2) {
     struct QNode0205e1e4* node;
 
-    func_020d8654();
+    SuspendVCountMatchIrq();
     func_020d84e4();
 
-    if (func_0202b7d8((int*)GetMultiplayerState())) {
+    if (IsMultiplayerActive((int*)GetMultiplayerState())) {
         node = func_0205e1e4((struct QList0205e1e4*)(obj + 0x1500));
         if (node != NULL) {
             func_0205e3ec((struct Struct0205e3ec*)node, arg1);
@@ -78,5 +78,5 @@ extern "C" ARM void EnqueueGamemainEvent(unsigned char* obj, struct Struct0205e3
     }
 
     func_020d84e8();
-    func_020d8694();
+    PopVCountInterruptState();
 }

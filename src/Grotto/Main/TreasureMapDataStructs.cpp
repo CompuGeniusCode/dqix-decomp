@@ -9,14 +9,14 @@
 #define func_020a1df8 func_020a3b70
 #define func_020a57e4 func_020a7588
 #define func_020a5b1c func_020a78c0
-#define func_020a1e54 func_020a3bcc
+#define PopOverlayStackAndReload func_020a3bcc
 #endif
 
 extern "C"
 {
     // some relation to loading overlays
     void func_020a1df8(unsigned int);
-    void func_020a1e54(int);
+    void PopOverlayStackAndReload(int);
 }
 
 #define TMAPLANGDATA_READ(offset, into, len) \
@@ -93,7 +93,7 @@ bool ExportDetailedTreasureMapData(const TreasureMapMetadata* from,
     func_020a1df8(4);
     to->LoadLegacyBossStats(computeLegacyStats, legacyStatsData);
     to->LoadTreasures();
-    func_020a1e54(1);
+    PopOverlayStackAndReload(1);
 
     for (int i = 0; i < 3; i++)
         to->discoveredTreasures_[i] = false;

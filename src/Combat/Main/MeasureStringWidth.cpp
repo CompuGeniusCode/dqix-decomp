@@ -1,7 +1,7 @@
 #include <globaldefs.h>
 
 extern int data_020e7a94[];
-extern "C" int func_020424e4(int key, int tableIdx);
+extern "C" int FindFontCharIndex(int key, int tableIdx);
 extern "C" void* func_020425b4(int idx, int tableIdx);
 extern "C" int func_020425e4(int a, int b, int tableIdx);
 
@@ -29,7 +29,7 @@ extern "C" ARM int MeasureStringWidth(char* str, int id) {
     for (;;) {
         if (*str == 0) break;
         int delta = mask + 1;
-        int idx = func_020424e4((int)str, id);
+        int idx = FindFontCharIndex((int)str, id);
         if (idx < 0) {
             state = resetState;
             str++;

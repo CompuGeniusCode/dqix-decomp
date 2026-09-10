@@ -10,7 +10,7 @@
 
 #ifdef jpn
 #define func_020a1df8 func_020a3b70
-#define func_020a1e54 func_020a3bcc
+#define PopOverlayStackAndReload func_020a3bcc
 
 #define GetMainCharacterCombatant func_0200fc28
 
@@ -25,11 +25,11 @@
 extern "C"
 {
     void func_020a1df8(unsigned int);
-    void func_020a1e54(unsigned int);
+    void PopOverlayStackAndReload(unsigned int);
 
     unsigned int GetMainCharacterCombatant(BattleStruct*);
     // copies character name into the buffer? (not used in jpn version)
-    void func_020426bc(void*, char* buffer, int);
+    void EncodeTextToFontCharCodes(void*, char* buffer, int);
 
     // Based on where it's called, this is probably returning a language-
     // dependent string for "Lv. " (at least, if called with 1011 as arg).
@@ -235,7 +235,7 @@ void DetailedTreasureMapData::RegularMapData::Populate(unsigned short newseed, u
     GenerateNameBuffers();
     GeneratePopupName();
     
-    func_020a1e54(1);
+    PopOverlayStackAndReload(1);
 }
 
 unsigned short DetailedTreasureMapData::LegacyBossMapData::MaybeGetCurrentAlternateID() const
@@ -264,7 +264,7 @@ bool DetailedTreasureMapData::UpdateFollowingCompletion(bool levelledUp, unsigne
     // custom text encoding (e.g. lowercase a is 0x2A vs ascii 0x61)
     void* playerRelatedPtr = *(void**)(GetMainCharacterCombatant(GetBattleStruct()) + 0x134);
     char asciiName[10] = { 0 };
-    func_020426bc(playerRelatedPtr, asciiName, 1);
+    EncodeTextToFontCharCodes(playerRelatedPtr, asciiName, 1);
 #else
     // 0200fc28 is the address in the japanese version
     char* asciiName = *(char**)(func_0200fc28(GetBattleStruct()) + 0x134);

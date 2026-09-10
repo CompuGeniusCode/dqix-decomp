@@ -3,7 +3,7 @@
 #include "std_library_functions.h"
 #include "Combat/Main/BattleList.h"
 
-extern "C" struct CombatantStruct* func_0200ff1c(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);
 
 struct Ctx021e8344 { char pad[0xc]; void* target; };
 extern struct Ctx021e8344 data_ov025_021ef988;
@@ -27,7 +27,7 @@ extern "C" ARM int QueueOuenChrForGender(void* unused0, struct Param021e8344* ct
     func_ov025_021e8a54((char*)data_ov025_021ef988.target);
     struct BattleStruct* bs = GetBattleStruct();
     int id = *(unsigned short*)((char*)ctx->field0x10 + 0x20);
-    struct CombatantStruct* c = func_0200ff1c(bs, id);
+    struct CombatantStruct* c = GetCombatantWithFlag0x100(bs, id);
     struct Inner021e8344* c2 = *(struct Inner021e8344**)((char*)c + 0x150);
     char ch = 'm';
     if (c2->flag == 1) {

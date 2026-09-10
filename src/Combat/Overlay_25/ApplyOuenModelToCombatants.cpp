@@ -3,7 +3,7 @@
 #include "std_library_functions.h"
 #include "Combat/Main/BattleList.h"
 
-extern "C" struct CombatantStruct* func_0200ff1c(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);
 
 extern "C" void* func_ov025_021e8a54(char* obj);
 extern "C" int ResolveCharaArchiveForPath(char* s, char* out2, char* out1);
@@ -40,7 +40,7 @@ extern "C" ARM int ApplyOuenModelToCombatants(struct Param021e83c4* p, struct Ct
     func_ov025_021e8a54((char*)data_ov025_021ef988.target);
 
     int cid = *(unsigned short*)((char*)ctx->field0x10 + 0x20);
-    struct CombatantStruct* c = func_0200ff1c(bs, cid);
+    struct CombatantStruct* c = GetCombatantWithFlag0x100(bs, cid);
     struct Inner021e83c4* c2 = *(struct Inner021e83c4**)((char*)c + 0x150);
     char ch = 'm';
     if (c2->flag == 1) {

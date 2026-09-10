@@ -25,6 +25,14 @@ src/Combat/Main/GetLanguage.cpp:
 	complete
 	.text start:0x0200fb08 end:0x0200fb40
 
+src/Combat/Main/SetGameModeRequest.cpp:
+	complete
+	.text start:0x0200fb94 end:0x0200fb9c
+
+src/Combat/Main/GetGameMode.cpp:
+	complete
+	.text start:0x0200fb9c end:0x0200fba4
+
 src/Combat/Main/GetZoneTransitionRequest.cpp:
 	complete
 	.text start:0x0200fd0c end:0x0200fd14
@@ -65,9 +73,17 @@ src/Combat/Main/GetMonsterCombatant.cpp:
 	complete
 	.text start:0x0200fea4 end:0x0200fee0
 
+src/Combat/Main/GetCombatantWithFlag0x100.cpp:
+	complete
+	.text start:0x0200ff1c end:0x0200ff58
+
 src/Combat/Main/GetCombatantWithFlag0x1000.cpp:
 	complete
 	.text start:0x0200ff58 end:0x0200ff94
+
+src/Combat/Main/GetCombatantChecked.cpp:
+	complete
+	.text start:0x0200ff94 end:0x0200ffc0
 
 src/Combat/Main/IsCombatantModStatsFlag0x14Bit0Set.cpp:
 	complete
@@ -85,6 +101,10 @@ src/Combat/Main/GetActiveCamera.cpp:
 	complete
 	.text start:0x020100bc end:0x020100c4
 
+src/Combat/Main/SetActiveCamera.cpp:
+	complete
+	.text start:0x020100c4 end:0x020100cc
+
 src/Combat/Main/GetCameraIfFlag4.cpp:
 	complete
 	.text start:0x020100f8 end:0x02010124
@@ -97,9 +117,33 @@ src/Combat/Main/GetFrameTimeStep.cpp:
 	complete
 	.text start:0x02010220 end:0x02010228
 
+src/Combat/Main/GetTimeOfDayPhase.cpp:
+	complete
+	.text start:0x0201035c end:0x02010364
+
+src/Combat/Main/IsNotNight.cpp:
+	complete
+	.text start:0x020103b4 end:0x020103c8
+
+src/Combat/Main/GetPlayerData.cpp:
+	complete
+	.text start:0x02010828 end:0x02010834
+
+src/Combat/Main/GetSkillTableStatBonus.cpp:
+	complete
+	.text start:0x0201137c end:0x020113a8
+
+src/Combat/Main/CopyOutLocalPlayerCombatantIds.cpp:
+	complete
+	.text start:0x02011494 end:0x020114c0
+
 src/Combat/Main/CopyOutCombatantIdList.cpp:
 	complete
 	.text start:0x020114ec end:0x02011518
+
+src/Combat/Main/GetZoneTable.cpp:
+	complete
+	.text start:0x02011584 end:0x02011590
 
 src/Grotto/Main/GrottoNameDataFile.cpp:
     complete
@@ -141,9 +185,25 @@ src/Grotto/Main/GenerateObjectPosition.cpp:
     complete
     .text start:0x0201a188 end:0x0201a300
 
+src/Combat/Main/IsGrottoZoneId.cpp:
+	complete
+	.text start:0x0201b588 end:0x0201b5b0
+
+src/Combat/Main/IsGrottoBossFloorZoneId.cpp:
+	complete
+	.text start:0x0201b5d8 end:0x0201b600
+
 src/Grotto/Main/TileFeatures.cpp:
     complete
     .text start:0x0201ea54 end:0x0201ebc4
+
+src/Combat/Main/GetCombatantLevel.cpp:
+	complete
+	.text start:0x0202053c end:0x02020554
+
+src/Combat/Main/SetMapIconSprite.cpp:
+	complete
+	.text start:0x0202756c end:0x020275e4
 
 src/Combat/Main/GetZoneRecordTable.cpp:
 	complete
@@ -161,6 +221,22 @@ src/Combat/Main/GetGamemainEventQueue.cpp:
 	complete
 	.text start:0x0202ae24 end:0x0202ae30
 
+src/Combat/Main/EndMultiplayerSession.cpp:
+	complete
+	.text start:0x0202b0f4 end:0x0202b1f4
+
+src/Combat/Main/IsMultiplayerActive.cpp:
+	complete
+	.text start:0x0202b7d8 end:0x0202b7ec
+
+src/Combat/Main/GetMultiplayerPlayerRecord.cpp:
+	complete
+	.text start:0x0202c178 end:0x0202c19c
+
+src/Combat/Main/IsMultiplayerMemberPresent.cpp:
+	complete
+	.text start:0x0202c1c0 end:0x0202c1e8
+
 src/Combat/Main/IsHostOrSinglePlayer.cpp:
 	complete
 	.text start:0x0202c508 end:0x0202c540
@@ -169,9 +245,25 @@ src/Combat/Main/IsMultiplayerLocalSlotNonZero.cpp:
 	complete
 	.text start:0x0202c540 end:0x0202c578
 
+src/Combat/Main/IsMultiplayerPlayerFlag0x100eSet.cpp:
+	complete
+	.text start:0x0202c578 end:0x0202c5bc
+
+src/Combat/Main/RecordWirelessErrorCode.cpp:
+	complete
+	.text start:0x0202c848 end:0x0202c864
+
+src/Combat/Main/SetCameraOrbit.cpp:
+	complete
+	.text start:0x0202e5d8 end:0x0202e694
+
 src/Combat/Main/SetAngleHeightDistanceFromVec.cpp:
 	complete
 	.text start:0x0202e694 end:0x0202e6a8
+
+src/Combat/Main/ProjectWorldPointToScreen.cpp:
+	complete
+	.text start:0x0202ec84 end:0x0202ecc8
 
 src/Combat/Main/LoadWindowSprites.cpp:
 	complete
@@ -229,6 +321,10 @@ src/World/Object3D.cpp:
     .data start:0x020efaa8 end:0x020efb44
     .bss start:0x02104b18 end:0x02104b60
 
+src/Combat/Main/ClearCombatantMovePath.cpp:
+	complete
+	.text start:0x02039d24 end:0x02039d48
+
 src/Combat/Main/IsCombatantMotionActive.cpp:
 	complete
 	.text start:0x02039d7c end:0x02039d84
@@ -249,21 +345,45 @@ src/Combat/Main/SetBothScreensBrightness.cpp:
 	complete
 	.text start:0x0203b228 end:0x0203b250
 
+src/Combat/Main/IsSubScreenFadeActive.cpp:
+	complete
+	.text start:0x0203b3ac end:0x0203b3c0
+
 src/Combat/Main/IsScreenFadeActive.cpp:
 	complete
 	.text start:0x0203b3c0 end:0x0203b400
+
+src/Combat/Main/GetBgTransferState.cpp:
+	complete
+	.text start:0x0203b628 end:0x0203b634
+
+src/Combat/Main/GetSubScreenOamBuffer.cpp:
+	complete
+	.text start:0x0203be4c end:0x0203be58
 
 src/Combat/Main/GetFieldObjectRegistry.cpp:
 	complete
 	.text start:0x0203cf4c end:0x0203cf58
 
+src/Combat/Main/ClearObjectArchiveLoadInfo.cpp:
+	complete
+	.text start:0x0203dafc end:0x0203db24
+
 src/Combat/Main/GetActorSlot.cpp:
 	complete
 	.text start:0x0203dce4 end:0x0203dd10
 
+src/Combat/Main/FindFieldObjectById.cpp:
+	complete
+	.text start:0x0203df78 end:0x0203dfdc
+
 src/Combat/Main/LoadSprFileIntoCacheEntry.cpp:
 	complete
 	.text start:0x0203fce0 end:0x0203fd5c
+
+src/Combat/Main/GetActorRecord.cpp:
+	complete
+	.text start:0x02040528 end:0x02040530
 
 src/Combat/Main/AppendXPosTag.cpp:
 	complete
@@ -305,13 +425,29 @@ src/Combat/Main/GetMessageWork.cpp:
 	complete
 	.text start:0x020421a0 end:0x020421b0
 
+src/Combat/Main/FindFontCharIndex.cpp:
+	complete
+	.text start:0x020424e4 end:0x0204254c
+
 src/Combat/Main/FindFontCharEntry.cpp:
 	complete
 	.text start:0x0204254c end:0x020425b4
 
+src/Combat/Main/EncodeTextToFontCharCodes.cpp:
+	complete
+	.text start:0x020426bc end:0x02042764
+
+src/Combat/Main/DecodeFontCharCodesToText.cpp:
+	complete
+	.text start:0x02042764 end:0x02042804
+
 src/Combat/Main/ResetMessageDisplayState.cpp:
 	complete
 	.text start:0x02043204 end:0x02043224
+
+src/Combat/Main/AdvanceMessageText.cpp:
+	complete
+	.text start:0x0204359c end:0x020435a8
 
 src/Combat/Main/GetMessageChoiceIndex.cpp:
 	complete
@@ -341,6 +477,10 @@ src/Combat/Main/ClearGlobalStateFlags.cpp:
 	complete
 	.text start:0x020466f4 end:0x02046708
 
+src/Combat/Main/TestGlobalStateFlags.cpp:
+	complete
+	.text start:0x02046708 end:0x0204671c
+
 src/Combat/Main/GetPacEntryByIndex.cpp:
 	complete
 	.text start:0x020467f0 end:0x0204684c
@@ -353,29 +493,69 @@ src/Combat/Main/ResetListNodeHeader.cpp:
 	complete
 	.text start:0x0204693c end:0x02046958
 
+src/Combat/Main/RemoveNodeFromList.cpp:
+	complete
+	.text start:0x02046a8c end:0x02046b08
+
 src/Combat/Main/IsListEmpty.cpp:
 	complete
 	.text start:0x02046b08 end:0x02046b1c
+
+src/Combat/Main/GetListHeadId.cpp:
+	complete
+	.text start:0x02046b24 end:0x02046b38
 
 src/Combat/Main/QueueEffectEv999991500Load.cpp:
 	complete
 	.text start:0x02046c98 end:0x02046cc8
 
+src/Combat/Main/ResetAniSprIfLoaded.cpp:
+	complete
+	.text start:0x02047230 end:0x0204724c
+
 src/Combat/Main/LoadAniSprFile.cpp:
 	complete
 	.text start:0x02047a78 end:0x02047b30
+
+src/Combat/Main/GetCombatantFormationSlot.cpp:
+	complete
+	.text start:0x020493a4 end:0x020493b8
+
+src/Combat/Main/AllocateBackgroundLayerTilemaps.cpp:
+	complete
+	.text start:0x0204af38 end:0x0204af64
 
 src/Combat/Main/ResetBackgroundLayer.cpp:
 	complete
 	.text start:0x0204af64 end:0x0204afb4
 
+src/Combat/Main/ResetBackgroundLayerTilemaps.cpp:
+	complete
+	.text start:0x0204afb4 end:0x0204b010
+
+src/Combat/Main/ClearBackgroundScreenBuffer.cpp:
+	complete
+	.text start:0x0204b010 end:0x0204b04c
+
 src/Combat/Main/UploadTilemapToBGScreen.cpp:
 	complete
 	.text start:0x0204b0e8 end:0x0204b11c
 
+src/Combat/Main/SetTextBgScreenSize.cpp:
+	complete
+	.text start:0x0204b11c end:0x0204b12c
+
 src/Combat/Main/AllocateBackgroundScreenBuffer.cpp:
 	complete
 	.text start:0x0204b12c end:0x0204b174
+
+src/Combat/Main/PrepareBgBlockForUpload.cpp:
+	complete
+	.text start:0x0204b2e0 end:0x0204b3a0
+
+src/Combat/Main/UploadBgResourceByTag.cpp:
+	complete
+	.text start:0x0204b3a0 end:0x0204b4c0
 
 src/Combat/Main/SetBackgroundScroll.cpp:
 	complete
@@ -393,6 +573,10 @@ src/Combat/Main/AllocateWindowTilemap.cpp:
 	complete
 	.text start:0x0204c7a8 end:0x0204c7cc
 
+src/Combat/Main/IsWindowDrawn.cpp:
+	complete
+	.text start:0x0204c7cc end:0x0204c7e0
+
 src/Combat/Main/IsWindowElementActive.cpp:
 	complete
 	.text start:0x0204c7e0 end:0x0204c804
@@ -404,6 +588,14 @@ src/Graphics/LightingManager.cpp:
     .ctor start:0x020eeb48 end:0x020eeb4c
     .data start:0x020f030c end:0x020f0420
     .bss start:0x0210791c end:0x021079cc
+
+src/Combat/Main/GetCombatantEquippedItemId.cpp:
+	complete
+	.text start:0x02052df8 end:0x02052e14
+
+src/Combat/Main/GetEquippedItemIds.cpp:
+	complete
+	.text start:0x02052e2c end:0x02052e44
 
 src/Combat/Main/HasQueuedSigusa.cpp:
 	complete
@@ -417,9 +609,21 @@ src/Combat/Main/SpawnBeffById.cpp:
 	complete
 	.text start:0x02057fb4 end:0x02057fd8
 
+src/Combat/Main/ClearAnimationEntryList.cpp:
+	complete
+	.text start:0x0205a234 end:0x0205a244
+
 src/Combat/Main/StartAnimationByKey.cpp:
 	complete
 	.text start:0x0205a370 end:0x0205a3ac
+
+src/Combat/Main/FindAnimationByKey.cpp:
+	complete
+	.text start:0x0205a3d0 end:0x0205a42c
+
+src/Combat/Main/InitCellResource.cpp:
+	complete
+	.text start:0x0205a444 end:0x0205a494
 
 src/Combat/Main/LoadNitroResourceBySignature.cpp:
 	complete
@@ -449,6 +653,22 @@ src/Combat/Main/MoveGridCursorToEntry.cpp:
 	complete
 	.text start:0x0205bcdc end:0x0205bd04
 
+src/Combat/Main/EnableTextWindowTouchCursor.cpp:
+	complete
+	.text start:0x0205cef8 end:0x0205cf04
+
+src/Combat/Main/SetTextWindowPool.cpp:
+	complete
+	.text start:0x0205cf78 end:0x0205cfd4
+
+src/Combat/Main/InitMenuGridState.cpp:
+	complete
+	.text start:0x0205cfd4 end:0x0205d048
+
+src/Combat/Main/UpdateTextWindowSet.cpp:
+	complete
+	.text start:0x0205d0e0 end:0x0205d1e0
+
 src/Combat/Main/ClearBgTilemaps.cpp:
 	complete
 	.text start:0x0205d1e0 end:0x0205d228
@@ -465,6 +685,10 @@ src/Combat/Main/UploadAllBGScreenData.cpp:
 	complete
 	.text start:0x0205d2bc end:0x0205d304
 
+src/Combat/Main/SetTextWindowTextById.cpp:
+	complete
+	.text start:0x0205d5d0 end:0x0205d67c
+
 src/Combat/Main/CloseWindows.cpp:
 	complete
 	.text start:0x0205d6a0 end:0x0205d6e4
@@ -477,9 +701,21 @@ src/Combat/Main/FindTextWindowById.cpp:
 	complete
 	.text start:0x0205d81c end:0x0205d888
 
+src/Combat/Main/FindCurrentTextWindow.cpp:
+	complete
+	.text start:0x0205d8c4 end:0x0205d904
+
 src/Combat/Main/IsTextWindowTouchConfirmed.cpp:
 	complete
 	.text start:0x0205da38 end:0x0205da88
+
+src/Combat/Main/BindBackgroundLayerToNextWindow.cpp:
+	complete
+	.text start:0x0205de24 end:0x0205deb4
+
+src/Combat/Main/SetActiveTextWindowId.cpp:
+	complete
+	.text start:0x0205dee8 end:0x0205def8
 
 src/Combat/Main/EnqueueGamemainEvent.cpp:
 	complete
@@ -493,9 +729,29 @@ src/Combat/Main/PlaySoundEffect.cpp:
 	complete
 	.text start:0x0205eaa0 end:0x0205eabc
 
+src/Combat/Main/LoadSeGroupAndSelectSeqArc.cpp:
+	complete
+	.text start:0x0205ebc0 end:0x0205ebec
+
+src/Combat/Main/FreeSeGroup.cpp:
+	complete
+	.text start:0x0205ebec end:0x0205ebfc
+
+src/Combat/Main/PlaySeFromSelectedSeqArc.cpp:
+	complete
+	.text start:0x0205ebfc end:0x0205ec20
+
 src/Combat/Main/GetScenarioState.cpp:
 	complete
 	.text start:0x0205ec34 end:0x0205ec40
+
+src/Combat/Main/RunEventRecordCommands.cpp:
+	complete
+	.text start:0x020649b0 end:0x020649f4
+
+src/Combat/Main/SetFlagBit.cpp:
+	complete
+	.text start:0x0206df6c end:0x0206dfb0
 
 src/Combat/Main/TestFlagBit.cpp:
 	complete
@@ -505,13 +761,29 @@ src/Combat/Main/LoadMonsterDataTable.cpp:
 	complete
 	.text start:0x0206efd8 end:0x0206f01c
 
+src/Combat/Main/FindMonsterRecordById.cpp:
+	complete
+	.text start:0x0206f4f0 end:0x0206f504
+
+src/Combat/Main/InitZoneChangeRequest.cpp:
+	complete
+	.text start:0x02070378 end:0x020703c8
+
 src/Combat/Main/LoadMonsterBattleDataTable.cpp:
 	complete
 	.text start:0x020709ec end:0x02070a30
 
+src/Combat/Main/FindMonsterBattleDataById.cpp:
+	complete
+	.text start:0x02070fd0 end:0x02070fe4
+
 src/Combat/Main/RunEventListScriptForEventId.cpp:
 	complete
 	.text start:0x02071574 end:0x02071688
+
+src/Combat/Main/FindMessageStringById.cpp:
+	complete
+	.text start:0x02072a68 end:0x02072aa8
 
 src/Util/Random.cpp:
 	complete
@@ -532,6 +804,10 @@ src/Combat/Main/CritRateCalculation.cpp:
 src/Combat/Main/SaveMainBGControlRegisters.cpp:
 	complete
 	.text start:0x02074af4 end:0x02074b64
+
+src/Combat/Main/RestoreMainBGControlRegisters.cpp:
+	complete
+	.text start:0x02074bd0 end:0x02074bf4
 
 src/Filesystem/FileIO.cpp:
     complete
@@ -574,9 +850,17 @@ src/Combat/Main/_ZN24LootableContainerManagerC1Ev.cpp:
 	complete
 	.text start:0x0207c244 end:0x0207c258
 
+src/Combat/Main/GetItemIdListForCategory.cpp:
+	complete
+	.text start:0x0207c5f8 end:0x0207c60c
+
 src/Combat/Main/ResetItemTableAccessor.cpp:
 	complete
 	.text start:0x0207cbe8 end:0x0207cc0c
+
+src/Combat/Main/ReserveTextureVramRegion.cpp:
+	complete
+	.text start:0x0207de48 end:0x0207df50
 
 src/Combat/Main/RewindTextureVramReservation.cpp:
 	complete
@@ -606,6 +890,10 @@ src/Graphics/Model3D.cpp:
     complete
     .text start:0x0207e264 end:0x0207ed1c
 
+src/Combat/Main/FindWindowRecordById.cpp:
+	complete
+	.text start:0x0207f0ac end:0x0207f100
+
 src/Combat/Main/FindMenuItemById.cpp:
 	complete
 	.text start:0x0207f6ac end:0x0207f700
@@ -625,6 +913,22 @@ src/Combat/Main/ResetAllWindows.cpp:
 src/Combat/Main/FindFirstSelectableMemberIdInMenuGroup.cpp:
 	complete
 	.text start:0x02080468 end:0x020804fc
+
+src/Combat/Main/ShowWindowById.cpp:
+	complete
+	.text start:0x02080c20 end:0x02080c3c
+
+src/Combat/Main/SetMenuItemTextPalette.cpp:
+	complete
+	.text start:0x02080cc0 end:0x02080cec
+
+src/Combat/Main/SetMenuItemMessageId.cpp:
+	complete
+	.text start:0x0208103c end:0x02081058
+
+src/Combat/Main/SetWindowFlag2ById.cpp:
+	complete
+	.text start:0x02081164 end:0x02081198
 
 src/Combat/Main/OpenWindowById.cpp:
 	complete
@@ -686,6 +990,10 @@ src/Combat/Main/CancelBackgroundLoadTasks.cpp:
 	complete
 	.text start:0x02094ab0 end:0x02094b2c
 
+src/Combat/Main/GetQuestOrderTable.cpp:
+	complete
+	.text start:0x02094d6c end:0x02094d78
+
 src/Combat/Main/BeginLoadQuestOrderTable.cpp:
 	complete
 	.text start:0x02095e90 end:0x02095ee0
@@ -726,9 +1034,21 @@ src/Combat/Main/OpenBgmStreamLargeRegion.cpp:
 	complete
 	.text start:0x0209c2b8 end:0x0209c2e0
 
+src/Combat/Main/SetBgmVolume.cpp:
+	complete
+	.text start:0x0209c2e0 end:0x0209c3ac
+
+src/Combat/Main/PlayBgm.cpp:
+	complete
+	.text start:0x0209c3b4 end:0x0209c480
+
 src/Combat/Main/StopCurrentBgm.cpp:
 	complete
 	.text start:0x0209c678 end:0x0209c6bc
+
+src/Combat/Main/IsMusicEffectPlaying.cpp:
+	complete
+	.text start:0x0209ca2c end:0x0209ca68
 
 src/Combat/Main/RunMapBgmScript.cpp:
 	complete
@@ -745,6 +1065,18 @@ src/Combat/Main/ReleaseROMFileTablesForAllocation.cpp:
 src/Combat/Main/RunTitleDataScript.cpp:
 	complete
 	.text start:0x020a13e4 end:0x020a147c
+
+src/Combat/Main/PopOverlayStackAndReload.cpp:
+	complete
+	.text start:0x020a1e54 end:0x020a1eb0
+
+src/Combat/Main/PopOverlayStack1AndReload.cpp:
+	complete
+	.text start:0x020a1f4c end:0x020a1fa8
+
+src/Combat/Main/SetCameraFlags.cpp:
+	complete
+	.text start:0x020a28a0 end:0x020a28b0
 
 src/Combat/Main/IsPartyMemberPresent.cpp:
 	complete
@@ -893,6 +1225,10 @@ src/Graphics/NSBXX/RenderCommandProcs.cpp:
     complete
     .text start:0x020b99b0 end:0x020bb424
 
+src/Combat/Main/UpdateSoundEngine.cpp:
+	complete
+	.text start:0x020bbd9c end:0x020bbdcc
+
 src/Combat/Main/Mat3x3_ApplyScale.cpp:
 	complete
 	.text start:0x020c11a4 end:0x020c1264
@@ -989,6 +1325,10 @@ src/Combat/Main/Vector3fix_Distance.cpp:
 	complete
 	.text start:0x020c3030 end:0x020c30ac
 
+src/Combat/Main/SetMasterBrightness.cpp:
+	complete
+	.text start:0x020c39a0 end:0x020c39c8
+
 src/System/VRAM.cpp:
     complete
     .text start:0x020c3a4c end:0x020c4c74
@@ -1057,6 +1397,10 @@ src/Combat/Main/WaitForNextVBlank.cpp:
 	complete
 	.text start:0x020c9820 end:0x020c983c
 
+src/Combat/Main/CopyWifiMacAddress.cpp:
+	complete
+	.text start:0x020c99ac end:0x020c99c8
+
 src/Combat/Main/FatalHalt.cpp:
 	complete
 	.text start:0x020c9be0 end:0x020c9bf0
@@ -1111,6 +1455,10 @@ src/Filesystem/CardReadManager.cpp:
     complete
     .text start:0x020d084c end:0x020d0fc4
 
+src/Combat/Main/QueueArm7Command.cpp:
+	complete
+	.text start:0x020d217c end:0x020d21c0
+
 src/Combat/Main/StringLength.cpp:
 	complete
 	.text start:0x020d2ff0 end:0x020d3018
@@ -1123,6 +1471,10 @@ src/Combat/Main/SetArm7ReplyCallback.cpp:
 	complete
 	.text start:0x020d404c end:0x020d4064
 
+src/Combat/Main/GetWirelessArm9Work.cpp:
+	complete
+	.text start:0x020d41d8 end:0x020d41e8
+
 src/Combat/Main/GetGlobalStateFlags.cpp:
 	complete
 	.text start:0x020d6c00 end:0x020d6c0c
@@ -1134,6 +1486,18 @@ src/Combat/Main/LoadEb04Models.cpp:
 src/Combat/Main/GetPendingMessageQueue.cpp:
 	complete
 	.text start:0x020d7a50 end:0x020d7a5c
+
+src/Combat/Main/ClearPendingMessageQueue.cpp:
+	complete
+	.text start:0x020d7aa0 end:0x020d7b04
+
+src/Combat/Main/SuspendVCountMatchIrq.cpp:
+	complete
+	.text start:0x020d8654 end:0x020d8694
+
+src/Combat/Main/PopVCountInterruptState.cpp:
+	complete
+	.text start:0x020d8694 end:0x020d86d0
 
 src/Filesystem/ExtendedNitroVM.cpp:
     complete
@@ -1193,6 +1557,14 @@ src/Combat/Main/GetStringByTextId.cpp:
 src/Combat/Main/CopyLocalizedStringFromArchive.cpp:
 	complete
 	.text start:0x020e04f4 end:0x020e0574
+
+src/Combat/Main/ResetMenuSelection.cpp:
+	complete
+	.text start:0x020e25e8 end:0x020e2604
+
+src/Combat/Main/ResetArticleContext.cpp:
+	complete
+	.text start:0x020e46c4 end:0x020e46d8
 
 src/Combat/Main/LoadStandardStringAndArticleTables.cpp:
 	complete

@@ -2,7 +2,7 @@
 #include "Filesystem/BackgroundLoader.h"
 #include "Combat/Main/BattleList.h"
 
-extern "C" struct CombatantStruct* func_0200ff1c(struct BattleStruct* battleStruct, int combatantId);
+extern "C" struct CombatantStruct* GetCombatantWithFlag0x100(struct BattleStruct* battleStruct, int combatantId);
 
 struct Obj150_021b354c;
 extern "C" unsigned char func_ov017_021b354c(Obj150_021b354c* obj);
@@ -28,7 +28,7 @@ struct Obj_021b3678 {
 extern "C" ARM int QueueItembtlprmLoad(struct Obj_021b3678* obj) {
     struct BattleStruct* bs = GetBattleStruct();
     int field4 = (int)BackgroundLoader::GetInstance();
-    struct CombatantStruct* combatant = func_0200ff1c(bs, obj->id);
+    struct CombatantStruct* combatant = GetCombatantWithFlag0x100(bs, obj->id);
     if (!combatant) {
         return 0;
     }

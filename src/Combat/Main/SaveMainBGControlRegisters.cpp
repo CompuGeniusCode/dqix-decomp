@@ -16,7 +16,7 @@ struct MainBgControlBackup02074af4 {
 // at +0x10 to say the copy is there, doing nothing if it already is. The pool literal 0x04000008
 // makes the halfwords BG0CNT through BG3CNT; they land at +0, +4, +8 and +0xc. func_02074b64 is the
 // same routine for the sub engine at 0x04001008, writing the odd halfwords behind +0x11, and
-// func_02074bd0 and func_02074bf4 put the main and sub sets back and clear the two flags.
+// RestoreMainBGControlRegisters and func_02074bf4 put the main and sub sets back and clear the two flags.
 extern "C" ARM void SaveMainBGControlRegisters(struct MainBgControlBackup02074af4* obj) {
     if (obj->initialized != 0) return;
     unsigned short* const reg = (unsigned short*)0x4000008;

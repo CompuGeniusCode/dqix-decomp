@@ -12,7 +12,7 @@ struct Foo0207df50 {
 // Rewinds this context's texture VRAM cursors to where they stood before its region was reserved,
 // which frees everything allocated inside the region. The struct carries two snapshots of the five
 // texture image pools from VRAMAllocations.cpp (freeStart_ and freeEnd_ of each, 0x28 bytes) and
-// two of the palette allocator pair data_0210cf88; func_0207de48 seeds both before reserving,
+// two of the palette allocator pair data_0210cf88; ReserveTextureVramRegion seeds both before reserving,
 // RestoreVramAllocatorCursors installs the working copy at +0x28/+0x60 into the live allocators and SaveVramAllocatorState
 // captures it back. Zone3D::SwitchZone calls this before rebuilding a zone.
 extern "C" ARM void RewindTextureVramReservation(struct Foo0207df50 *p) {

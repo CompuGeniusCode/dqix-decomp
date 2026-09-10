@@ -11,7 +11,7 @@ struct Elem0205a370 {
 
 struct Container0205a3d0;
 
-extern "C" extern struct Elem0205a370* func_0205a3d0(struct Container0205a3d0*, int);
+extern "C" extern struct Elem0205a370* FindAnimationByKey(struct Container0205a3d0*, int);
 
 // Starts the keyed animation playing, rewinding it first if it had already run to its end.
 // func_0205a254 is the per-frame tick: it advances an entry only while bit 1 of +0x15 is set, which is
@@ -20,7 +20,7 @@ extern "C" extern struct Elem0205a370* func_0205a3d0(struct Container0205a3d0*, 
 // state 1 at the end, a loop wraps +0x10 to 0 -- so state 1 is finished and state 2 playing, and
 // clearing +0x10 and +0x12 here is the rewind of frame and elapsed time.
 extern "C" ARM void StartAnimationByKey(struct Container0205a3d0* c, int key) {
-    struct Elem0205a370* e = func_0205a3d0(c, key);
+    struct Elem0205a370* e = FindAnimationByKey(c, key);
     if (e == NULL) return;
     if (e->flags15 & 1) {
         e->unk10 = 0;

@@ -7,7 +7,7 @@
     #define func_020323c4 func_02031efc
 
     #define GetZoneState func_02012dac
-    #define func_0201b588 func_0201b300
+    #define IsGrottoZoneId func_0201b300
 
     #define LoadTreasureMapTextData func_020a5498
     #define func_020a395c func_020a5698
@@ -24,7 +24,7 @@ extern "C"
 
     // Returns true if the value is between 40001 and 41505, respectively.
     // Most likely these are the zone IDs corresponding to grottos.
-    bool func_0201b588(unsigned short zoneID);
+    bool IsGrottoZoneId(unsigned short zoneID);
 
     // Not sure exactly what these do but it involves loading/unloading
     // data/tmap/tdata.gp2
@@ -159,7 +159,7 @@ int ActiveGrottoClass::GetFloorCount() const
 {
     GrottoStruct* grotto = GetGrottoStruct(GetBattleStruct());
     void* zone = GetZoneState();
-    if (!func_0201b588(*(unsigned short*)zone))
+    if (!IsGrottoZoneId(*(unsigned short*)zone))
         return 0;
 
     if (grotto->activeMapData.GetMapType() == TreasureMapType_Legacy)
