@@ -81,14 +81,26 @@ extern "C" ARM void func_02021578(char* self) {
     char buf[0x40];
     char local[0x430];
 
+    BackgroundLoader* loader;
+    void* axis;
+    int i0;
+    int i1;
+    int i2;
+    struct Modes02012fe4* modes;
+    char* battleCtx;
+    char* table;
+    SafeAllocator* alloc;
+    int state;
+
     GetBattleStruct();
-    BackgroundLoader* loader = BackgroundLoader::GetInstance();
-    struct Modes02012fe4* modes = *(struct Modes02012fe4**)((char*)func_02012fe4() + 8);
-    void* axis = func_ov017_0218b5b0();
-    char* battleCtx = (char*)func_0203bd08();
-    char* table = (char*)GetData02105254();
-    int state = *(signed char*)(self + 0x9c2);
-    SafeAllocator* alloc = (SafeAllocator*)((char*)axis + 0x128);
+    loader = BackgroundLoader::GetInstance();
+    modes = *(struct Modes02012fe4**)((char*)func_02012fe4() + 8);
+    axis = func_ov017_0218b5b0();
+    battleCtx = (char*)func_0203bd08();
+    table = (char*)GetData02105254();
+    state = *(signed char*)(self + 0x9c2);
+    alloc = (SafeAllocator*)((char*)axis + 0x114);
+    alloc++;
 
     if (state == 0) {
         *(unsigned char*)(self + 0x9c7) = 0;
@@ -137,8 +149,8 @@ extern "C" ARM void func_02021578(char* self) {
         _Z24SetArraySlotFlag0203b718Pviii(table, 1, 0, 0);
         _Z24SetArraySlotFlag0203b718Pviii(table, 1, 1, 0);
         func_0203ba74(table);
-        for (int i = 0; i < 0x1c; i++) {
-            _Z12Init0205a198P14Struct0205a198((struct Struct0205a198*)(self + 0xe8 + i * 0x28));
+        for (i0 = 0; i0 < 0x1c; i0++) {
+            _Z12Init0205a198P14Struct0205a198((struct Struct0205a198*)(self + 0xe8 + i0 * 0x28));
         }
         _Z18InitStruct0205a444Pc(self + 0x94);
         *(unsigned char*)(self + 0xe4) = 1;
@@ -179,10 +191,10 @@ extern "C" ARM void func_02021578(char* self) {
         sprintf(buf, &data_020ef5b9, self + 0x548);
         *(int*)(self + 0x9d4) = loader->QueueLoadFileInGP2(
             *(const char**)((char*)&data_020ef460 + 8), buf, (SafeAllocator*)0);
-        for (int i = 0; i < *(int*)(self + 0x24); i++) {
+        for (i1 = 0; i1 < *(int*)(self + 0x24); i1++) {
             sprintf(buf, &data_020ef5b9,
-                    (*(struct Entry02021578**)(self + 0x20))[i].name);
-            *(int*)(self + 0x9d8 + i * 4) = loader->QueueLoadFileInGP2(
+                    (*(struct Entry02021578**)(self + 0x20))[i1].name);
+            *(int*)(self + 0x9d8 + i1 * 4) = loader->QueueLoadFileInGP2(
                 *(const char**)((char*)&data_020ef460 + 8), buf, (SafeAllocator*)0);
         }
         *(signed char*)(self + 0x9c2) = *(signed char*)(self + 0x9c2) + 1;
@@ -196,7 +208,8 @@ extern "C" ARM void func_02021578(char* self) {
     if (*(signed char*)(self + 0x9c2) == 5) {
         if (loader->GetTaskStatus(*(int*)(self + 0x9cc)) == 0) return;
         func_02020aec(self, (int*)(self + 0x9cc), alloc);
-        memcpy(self + 0xbf0, (char*)0x6600000 + 0x2c20, 0x40);
+        char* vram = (char*)0x6600000;
+        memcpy(self + 0xbf0, vram + 0x2c20, 0x40);
         _Z25InitAndCopyBuffer02023330Pvi(self, 1);
         _Z26InitFourEntrySlots02020aa0Pv(self);
         *(signed char*)(self + 0x9c2) = *(signed char*)(self + 0x9c2) + 1;
@@ -207,8 +220,8 @@ extern "C" ARM void func_02021578(char* self) {
         *(signed char*)(self + 0x9c2) = *(signed char*)(self + 0x9c2) + 1;
     }
     if (*(signed char*)(self + 0x9c2) == 7) {
-        for (int i = 0; i < *(int*)(self + 0x24); i++) {
-            if (loader->GetTaskStatus(*(int*)(self + 0x9d8 + i * 4)) == 0) return;
+        for (i2 = 0; i2 < *(int*)(self + 0x24); i2++) {
+            if (loader->GetTaskStatus(*(int*)(self + 0x9d8 + i2 * 4)) == 0) return;
         }
         func_020210f8(self, (int*)(self + 0x9d8), alloc);
         func_0202445c(self);

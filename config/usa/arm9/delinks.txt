@@ -17503,3 +17503,13 @@ src/Combat/Main/_Z17SetContextEndProcP16ProcessorContextPFviE.cpp:
 src/Combat/Main/_Z18GetContextPriorityP16ProcessorContext.cpp:
     complete
     .text start:0x020c7b38 end:0x020c7b40
+
+
+src/Combat/Main/func_02021578.cpp:
+    complete
+    .text start:0x02021578 end:0x02021b84
+
+
+src/Combat/Main/func_020227dc.cpp:
+    complete
+    .text start:0x020227dc end:0x02022b90
