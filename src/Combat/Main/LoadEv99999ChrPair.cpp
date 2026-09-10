@@ -6,7 +6,7 @@ struct Pair020daa58 { int a; int b; };
 
 extern "C" void RestoreVramAllocatorCursors(char* obj);
 extern "C" void SaveVramAllocatorState(char* obj);
-extern "C" int func_02057924(void);
+extern "C" int GetBeffManager(void);
 extern "C" int func_02057e6c(int, int, int, int, int, int);
 extern const char strEv99999NumChr;
 
@@ -17,7 +17,7 @@ extern const char strEv99999NumChr;
 // itself. The destination's pair tables are restored before each install and backed up again
 // afterwards, and a missing member is skipped.
 extern "C" ARM int LoadEv99999ChrPair(Pair020daa58* obj, GPCFile* gpc, int val1, int val2) {
-    int x = func_02057924();
+    int x = GetBeffManager();
     int fd;
     int a = obj->a;
     int b = obj->b;

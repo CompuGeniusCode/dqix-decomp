@@ -15,6 +15,10 @@ src/Combat/Overlay_1/LoadEventStringTable.cpp:
 	complete
 	.text start:0x0215e1cc end:0x0215e27c
 
+src/Combat/Overlay_1/QueueEventAssetLoad.cpp:
+	complete
+	.text start:0x0215ec94 end:0x0215ed2c
+
 src/Combat/Overlay_1/ApplyModelTexturesToCombatants.cpp:
 	complete
 	.text start:0x0215ef54 end:0x0215f060
@@ -26,6 +30,10 @@ src/Combat/Overlay_1/EventCmdLoadStbFile.cpp:
 src/Combat/Overlay_1/LoadCombatantAnimationPackage.cpp:
 	complete
 	.text start:0x0215f344 end:0x0215f3fc
+
+src/Combat/Overlay_1/DespawnActor.cpp:
+	complete
+	.text start:0x0215f740 end:0x0215f854
 
 src/Combat/Overlay_1/LoadMapModelIntoCombatantSlot.cpp:
 	complete

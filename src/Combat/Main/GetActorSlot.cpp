@@ -10,7 +10,7 @@ struct EntryList_203dce4 {
 };
 
 // Fetches one of the 32 actor slots hanging off the list at +0xc, refusing the slot when bit
-// 0x8000 of the flag word at its offset 0 is set. The slots hold scene actors: func_ov001_0215f740
+// 0x8000 of the flag word at its offset 0 is set. The slots hold scene actors: DespawnActor
 // tears one down by destroying the Object3D at +0x18 or releasing the "%s.spr" sprite it names,
 // and func_0203e524 sweeps all 32 comparing world positions. There is one such
 // list, reached through GetFieldObjectRegistry. What 0x8000 marks is not established; callers that

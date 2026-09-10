@@ -16,7 +16,7 @@ struct List02046a8c {
 };
 
 // The tail is rebuilt by walking from the head, so removing a node is O(n) in the list length. It
-// is the list the curated IsListEmpty works on, and the one func_020469b4 (0x020469b4, still a
+// is the list the curated IsListEmpty works on, and the one AppendNodeToTail (0x020469b4, still a
 // labeling-pass name, not curated) appends to; gamemain keeps its queues in it, at work+0x3704,
 // where func_020e3b8c pairs the two, and at work+0x3000+0x6fc. A node that is not
 // in the list is left alone, and so is its header.
