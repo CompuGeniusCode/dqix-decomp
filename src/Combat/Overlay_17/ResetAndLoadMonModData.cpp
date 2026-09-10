@@ -6,67 +6,71 @@
 #include "Memory/SafeAllocator.h"
 
 extern "C" void* GetZoneState(void);
-struct Entry_02028bd0;
-extern "C" struct Entry_02028bd0* GetZoneRecordTable(void);
-struct Element0x318_02028bac {
-	unsigned short kind;
+struct ZoneSlot;
+extern "C" struct ZoneSlot* GetZoneRecordTable(void);
+struct ZoneSlot {
+	unsigned short zoneId;
 	unsigned short flags;
-	unsigned char unk4[0xc];
+	unsigned char unknown4[0xc];
 	SafeAllocator* allocator;
-	unsigned char unk14[0x2f8];
+	unsigned char unknown14[0x2f8];
 	unsigned char buffers[0xc];
 };
-extern "C" struct Element0x318_02028bac* func_02028bac(struct Element0x318_02028bac* base, int index);
-struct BigRecord020289c4;
-extern "C" void func_020289c4(struct BigRecord020289c4* obj);
+extern "C" struct ZoneSlot* func_02028bac(struct ZoneSlot* base, int index);
+struct ZoneSlot;
+extern "C" void func_020289c4(struct ZoneSlot* slot);
 extern "C" void AllocatorUnionFreeVeneer(AllocatorUnion* alloc, void* data);
 extern "C" void* AllocateRoundedToWord(AllocatorUnion* alloc, unsigned int size);
 extern "C" void func_020a8e88(void* p);
-extern "C" void ClearCombatantSlot(struct BattleStruct* battleStruct, int id);
+extern "C" void ClearCombatantSlot(struct BattleStruct* battleStruct, int combatantId);
 // Passed a trailing source-length argument that func_020a8e9c ignores, so the mangled
 // name is spelled out instead of being re-derived from this declaration.
 extern "C" void func_020a8e9c(
-	void* obj, SafeAllocator* allocator, void* src, unsigned int srcSize);
+	void* buffers, SafeAllocator* allocator, void* src, unsigned int srcSize);
 
 extern AllocatorUnion data_02114e20;
 extern const char strDataPrmMonModdataNat[];
 extern unsigned char fileStagingBuffer[0x30000];
 #pragma opt_propagation off
 
-// Tears the four entry-table slots down, releasing their allocators, clears combatant slots 0x70
-// through 0x9f, then turns slot 0 into a 0xa000 arena of kind 3 and deserializes
-// data/prm/mon_moddata.nat into it. That file is 438 records of 0x40 bytes, the same 438 count as
-// mon_btldata.nat, so it is indexed by monster species; what "moddata" abbreviates is not
-// established. The caller only comes here when the slot is already kind 3, so this is a reload.
+// Tears the four zone slots down, releasing their allocators, clears combatant slots 0x70 through
+// 0x9f, then turns slot 0 into a 0xa000 arena stamped 3 and deserializes data/prm/mon_moddata.nat
+// into it. That file is 438 records of 0x40 bytes, the same 438 count as mon_btldata.nat, so it is
+// indexed by monster species; what "moddata" abbreviates is not established. The caller only comes
+// here when the slot already carries 3, so this is a reload. The halfword at +0 that carries it is
+// the key FindZoneSlotById searches this same four-entry 0x318-byte table by and GetZoneRecordTable
+// reads as a zone id, which is why it is spelled that way here; that a monster-data arena should
+// sit under zone id 3 is not otherwise corroborated. The two loops line up: FindZoneSlotById puts a
+// slot's twelve combatants at 0x70 + slot * 12, so 0x70 through 0x9f is all four slots' combatants.
 extern "C" ARM void ResetAndLoadMonModData(void) {
 	struct BattleStruct* battle = GetBattleStruct();
 	GetZoneState();
-	struct Entry_02028bd0* entryTable = GetZoneRecordTable();
-	for (int i = 0; i < 4; i++) {
-		struct Element0x318_02028bac* elem = func_02028bac((struct Element0x318_02028bac*)entryTable, i);
-		func_020289c4((struct BigRecord020289c4*)elem);
-		void* signedAlloc = (void*)elem->allocator->GetSignedAllocator();
+	struct ZoneSlot* zoneSlots = GetZoneRecordTable();
+	for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+		struct ZoneSlot* slot = func_02028bac((struct ZoneSlot*)zoneSlots, slotIndex);
+		func_020289c4((struct ZoneSlot*)slot);
+		void* signedAlloc = (void*)slot->allocator->GetSignedAllocator();
 		if (signedAlloc) {
-			elem->allocator->Destroy();
+			slot->allocator->Destroy();
 			AllocatorUnionFreeVeneer(&data_02114e20, signedAlloc);
 		}
 	}
-	for (int id = 0x70; id <= 0x9f; id++) {
-		ClearCombatantSlot(battle, id);
+	for (int combatantId = 0x70; combatantId <= 0x9f; combatantId++) {
+		ClearCombatantSlot(battle, combatantId);
 	}
-	struct Element0x318_02028bac* elem0 = func_02028bac((struct Element0x318_02028bac*)entryTable, 0);
+	struct ZoneSlot* slot0 = func_02028bac((struct ZoneSlot*)zoneSlots, 0);
 	unsigned int size = 0xa000;
-	elem0->flags |= 4;
-	elem0->kind = 3;
+	slot0->flags |= 4;
+	slot0->zoneId = 3;
 	void* buffer = AllocateRoundedToWord(&data_02114e20, size);
-	elem0->allocator->CreateTypeA(buffer, size);
-	if (elem0 == NULL) return;
-	func_020a8e88(elem0->buffers);
+	slot0->allocator->CreateTypeA(buffer, size);
+	if (slot0 == NULL) return;
+	func_020a8e88(slot0->buffers);
 	BackgroundLoader::AddLockGlobal();
 	unsigned int fileSize;
 	if (LoadFileIntoMemory(strDataPrmMonModdataNat, fileStagingBuffer, &fileSize) != NULL) {
 		func_020a8e9c(
-			elem0->buffers, elem0->allocator, fileStagingBuffer, fileSize);
+			slot0->buffers, slot0->allocator, fileStagingBuffer, fileSize);
 	}
 	BackgroundLoader::RemoveLockGlobal();
 }

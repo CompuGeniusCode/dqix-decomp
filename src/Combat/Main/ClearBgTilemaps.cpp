@@ -1,13 +1,13 @@
 #include <globaldefs.h>
 
-struct Obj0204b010 { char b[0x20]; };
-extern "C" void ClearBackgroundScreenBuffer(Obj0204b010*, void*);
+struct BackgroundLayer { char unknown0[0x20]; };
+extern "C" void ClearBackgroundScreenBuffer(BackgroundLayer*, void*);
 
-struct Cont0205d1e0 {
-    char pad0[0x98];
-    Obj0204b010* list98;
-    char pad9c[0x16];
-    unsigned char countB2;
+struct TextWindowManager {
+    char unknown0[0x98];
+    BackgroundLayer* bgLayers;
+    char unknown9c[0x16];
+    unsigned char bgLayerCount;
 };
 
 // Blanks the tilemap of every background layer this object owns. ClearBackgroundScreenBuffer memsets an
@@ -15,10 +15,13 @@ struct Cont0205d1e0 {
 // 0x800/0x1000/0x1000/0x2000 and 0x200/0x800/0x2000/0x8000 -- the DS text and extended affine
 // map sizes for the four BGxCNT screen-size codes -- so +0x1f is the layer kind and +0x18 its
 // screen size. The layer count is the byte at +0xb2, the same one UploadAllBGScreenData iterates.
-extern "C" ARM void ClearBgTilemaps(Cont0205d1e0* obj) {
-    unsigned char i;
-    if (obj->list98 == NULL) return;
-    for (i = 0; i < obj->countB2; i++) {
-        ClearBackgroundScreenBuffer(&obj->list98[i], NULL);
+// The same object carries the 0xe0-byte text windows at +0x9c with their live count at +0xb4 and
+// the active window id at +0xb0, and FindCurrentTextWindow null-checks this very bgLayers pointer
+// before looking one up, which is what ties the two halves together.
+extern "C" ARM void ClearBgTilemaps(TextWindowManager* manager) {
+    unsigned char layer;
+    if (manager->bgLayers == NULL) return;
+    for (layer = 0; layer < manager->bgLayerCount; layer++) {
+        ClearBackgroundScreenBuffer(&manager->bgLayers[layer], NULL);
     }
 }

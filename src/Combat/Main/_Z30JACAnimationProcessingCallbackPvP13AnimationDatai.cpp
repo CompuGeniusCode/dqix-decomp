@@ -1,27 +1,33 @@
 #include <globaldefs.h>
 
-struct DispatchTarget020b78bc {
-    char pad0[4];
-    unsigned short field4;
+struct NSBXXAnimationJAC {
+    char signature[4];
+    unsigned short numFrames;
 };
 
-struct DispatchArgs020b78bc {
-    int field0;
-    int pad4;
-    struct DispatchTarget020b78bc* field8;
+struct AnimationData {
+    int time;
+    int weight;
+    struct NSBXXAnimationJAC* rawData;
 };
 
-extern "C" void _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(struct DispatchTarget020b78bc* target, int a1, int a2, int a3);
+extern "C" void _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(struct NSBXXAnimationJAC* target, int trackIndex, int time, int renderData);
 
-// USA: func_020b78bc
-extern "C" ARM void _Z30JACAnimationProcessingCallbackPvP13AnimationDatai(int a0, struct DispatchArgs020b78bc* args, int a2) {
-    struct DispatchTarget020b78bc* target = args->field8;
-    int value = args->field0;
-    int limit = target->field4 << 12;
-    if (value >= limit) {
-        value = limit - 1;
-    } else if (value < 0) {
-        value = 0;
+// The AnimationData callback for J.AC joint animations: clamps the animation time to the
+// animation's own length and hands it to CalculateBoneMatrixRenderDataFromJAC. Time is fix32 with
+// twelve fraction bits, so the frame count at +0x4 of the J.AC shifted left twelve is one past the
+// end and the clamp lands on that minus one; a negative time is pulled up to 0. The parameter order
+// is the awkward part: the void* the AnimationData::Callback signature passes first is the
+// BoneMatrixRenderData the callee wants last, and the int passed last is the track index it wants
+// second. The weight at +0x4 of AnimationData plays no part here.
+extern "C" ARM void _Z30JACAnimationProcessingCallbackPvP13AnimationDatai(int renderData, struct AnimationData* args, int trackIndex) {
+    struct NSBXXAnimationJAC* target = args->rawData;
+    int time = args->time;
+    int endTime = target->numFrames << 12;
+    if (time >= endTime) {
+        time = endTime - 1;
+    } else if (time < 0) {
+        time = 0;
     }
-    _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(target, a2, value, a0);
+    _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(target, trackIndex, time, renderData);
 }

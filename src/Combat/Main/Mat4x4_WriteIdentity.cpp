@@ -1,6 +1,6 @@
 #include <globaldefs.h>
 
-struct Mtx44_020c21dc {
+struct Mtx44 {
     int _[16];
 };
 

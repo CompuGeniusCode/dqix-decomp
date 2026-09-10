@@ -19,9 +19,9 @@ void CalculateRotationSmooth(Matrix3x3* out, fix32_t time, NSBXXAnimationJAC::Tr
 bool GetMatrixFromIndex(Matrix3x3* out, intptr_t pivotList, intptr_t basisList, int index);
 
 // USA: func_020b7ba0
-extern "C" void _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(NSBXXAnimationJAC* jac, int arg, fix32_t time, BoneMatrixRenderData* bmrd)
+extern "C" void _Z36CalculateBoneMatrixRenderDataFromJACP17NSBXXAnimationJACiiP20BoneMatrixRenderData(NSBXXAnimationJAC* jac, int trackIndex, fix32_t time, BoneMatrixRenderData* bmrd)
 {
-    NSBXXAnimationJAC::Track* track = (NSBXXAnimationJAC::Track*)((intptr_t)jac + jac->trackOffsets_[arg]);
+    NSBXXAnimationJAC::Track* track = (NSBXXAnimationJAC::Track*)((intptr_t)jac + jac->trackOffsets_[trackIndex]);
 
     NSBXXBoneMatrix::Scaling scaleData;
 

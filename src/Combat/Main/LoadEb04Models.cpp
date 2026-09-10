@@ -3,49 +3,51 @@
 #include "Memory/SafeAllocator.h"
 #include "std_library_functions.h"
 
-extern "C" void RestoreVramAllocatorCursors(char* obj);
-extern "C" void SaveVramAllocatorState(char* obj);
+extern "C" void RestoreVramAllocatorCursors(char* vramCursorState);
+extern "C" void SaveVramAllocatorState(char* vramCursorState);
 
-struct Obj020553ac;
-extern "C" void func_020553ac(struct Obj020553ac* obj);
-extern "C" int func_020553ec(void* obj, int typeId, void* alloc, void* fileData, unsigned int fileSize);
+struct ModelNode;
+extern "C" void func_020553ac(struct ModelNode* model);
+extern "C" int func_020553ec(void* model, int typeId, void* alloc, void* fileData, unsigned int fileSize);
 
-struct Node020d6d90 {
-    unsigned char pad[0x1ec];
-    struct Node020d6d90* next;
+struct ModelNode {
+    unsigned char unknown0[0x1ec];
+    struct ModelNode* next;
 };
 
-struct NameEntry020d6d90 { char name[12]; };
-struct NamesTable020d6d90 { NameEntry020d6d90 items[6]; };
-extern const NamesTable020d6d90 strEb0400Chr;
+struct ModelFileName { char name[12]; };
+struct ModelFileNameTable { ModelFileName items[6]; };
+extern const ModelFileNameTable strEb0400Chr;
 
-struct TypeTable020d6d90 { int items[6]; };
-extern const TypeTable020d6d90 data_020ee218;
+struct ModelTypeIdTable { int items[6]; };
+extern const ModelTypeIdTable data_020ee218;
 
-struct Obj020d6d90 {
-    char pad0[0xa20];
-    Node020d6d90* head;
-    char pad1[0xa3c - 0xa24];
+struct ModelListHolder {
+    char unknown0[0xa20];
+    ModelNode* head;
+    char unknowna24[0xa3c - 0xa24];
     unsigned char flagA3c;
 };
 
 // Pulls the five eb04 models out of the NARC it is handed and chains them onto the list at +0xa20.
 // The name table at 0x020ee230 is "eb0400.chr", "eb0430.chr", "eb0440.chr", "eb0420.chr" and
-// "eb0410.chr", paired with the type ids 0..4 at 0x020ee218; each is copied into allocator memory,
-// loaded through Object3D::LoadFromCHRArchive between SaveVramAllocatorState and
-// RestoreVramAllocatorCursors, and the flag at +0xa3c is cleared. The one caller is battle setup
+// "eb0410.chr", followed by an empty sixth entry that ends the loop, paired with the type ids 0..4
+// at 0x020ee218; each is copied into allocator memory, loaded through Object3D::LoadFromCHRArchive
+// between RestoreVramAllocatorCursors and SaveVramAllocatorState, and the flag at +0xa3c is
+// cleared. A node is the same 0x1f0-byte record func_02057de0 allocates for a .beff: func_020553ac
+// puts an Object3D at +0x14 and the chain pointer sits at +0x1ec. The one caller is battle setup
 // opening data/bin/btarc.nsarc, the only archive holding them; what they depict is not established.
-extern "C" ARM int LoadEb04Models(Obj020d6d90* obj, const void* narc, SafeAllocator* alloc, char* pairTablesBuf) {
-    TypeTable020d6d90 types;
-    NamesTable020d6d90 names;
-    NameEntry020d6d90* nameEntry;
+extern "C" ARM int LoadEb04Models(ModelListHolder* holder, const void* narc, SafeAllocator* alloc, char* vramCursorState) {
+    ModelTypeIdTable types;
+    ModelFileNameTable names;
+    ModelFileName* nameEntry;
     int* typeEntry;
-    Node020d6d90* prev;
+    ModelNode* prev;
 
-    obj->flagA3c = 0;
-    obj->head = NULL;
+    holder->flagA3c = 0;
+    holder->head = NULL;
 
-    RestoreVramAllocatorCursors(pairTablesBuf);
+    RestoreVramAllocatorCursors(vramCursorState);
 
     names = strEb0400Chr;
     types = data_020ee218;
@@ -58,18 +60,18 @@ extern "C" ARM int LoadEb04Models(Obj020d6d90* obj, const void* narc, SafeAlloca
         unsigned int fileSize;
         const void* fileData;
         if (GetFileInNarc(narc, nameEntry->name, &fileData, &fileSize, 0)) {
-            Node020d6d90* node = (Node020d6d90*)alloc->Allocate(0x1f0);
+            ModelNode* model = (ModelNode*)alloc->Allocate(0x1f0);
             void* dataBuf = alloc->Allocate(fileSize);
-            if (node != NULL && dataBuf != NULL) {
+            if (model != NULL && dataBuf != NULL) {
                 memcpy(dataBuf, (void*)fileData, fileSize);
-                func_020553ac((struct Obj020553ac*)node);
-                if (func_020553ec(node, *typeEntry, alloc, dataBuf, fileSize) != 0) {
+                func_020553ac((struct ModelNode*)model);
+                if (func_020553ec(model, *typeEntry, alloc, dataBuf, fileSize) != 0) {
                     if (prev != NULL) {
-                        prev->next = node;
+                        prev->next = model;
                     } else {
-                        obj->head = node;
+                        holder->head = model;
                     }
-                    prev = node;
+                    prev = model;
                 }
             }
         }
@@ -77,6 +79,6 @@ extern "C" ARM int LoadEb04Models(Obj020d6d90* obj, const void* narc, SafeAlloca
         typeEntry++;
     }
 
-    SaveVramAllocatorState(pairTablesBuf);
+    SaveVramAllocatorState(vramCursorState);
     return 1;
 }

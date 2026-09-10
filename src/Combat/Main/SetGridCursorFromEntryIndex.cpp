@@ -1,16 +1,16 @@
 #include <globaldefs.h>
 
-struct SelfBB04 {
-    int f0;
-    char pad4[4];
-    int f8;
-    int fc;
-    char pad10[4];
-    int f14;
-    char pad18[0x24 - 0x18];
-    int* f24;
-    int* f28;
-    int* f2c;
+struct GridCursor {
+    int entryCount;
+    char unknown4[4];
+    int dimA;
+    int dimB;
+    char fillOrder[4];
+    int page;
+    char unknown18[0x24 - 0x18];
+    int* innerCount;
+    int* outerCoord;
+    int* innerCoord;
 };
 
 // Splits a flat entry index into the page, row and column of a paged selection grid. Items per page
@@ -18,14 +18,17 @@ struct SelfBB04 {
 // which of the two the division runs over, so mode 1 in SetGridCursorLayout turns the same
 // grid column-major. It is the exact inverse of GetGridCursorEntryIndex, which rebuilds the index
 // that func_0205bd78 derives by hit-testing the input coordinates - seemingly the touch panel -
-// against the per-cell rectangles. Which menus use it is not established.
-extern "C" ARM void SetGridCursorFromEntryIndex(struct SelfBB04* self, int value) {
-    if (value < 0) return;
-    if (value >= self->f0) return;
-    int product = self->fc * self->f8;
-    if (product == 0) return;
-    self->f14 = value / product;
-    value = value % product;
-    *self->f2c = value % *self->f24;
-    *self->f28 = value / *self->f24;
+// against the per-cell rectangles. The count it bounds-checks against at +0x0 is the one
+// SetGridItemCountAndClampCursor sets, and the bytes skipped here are the fill order at +0x10 and
+// the coordinate pair at +0x18/+0x1c that the pointers at +0x28 and +0x2c alias. Which menus use it
+// is not established.
+extern "C" ARM void SetGridCursorFromEntryIndex(struct GridCursor* cursor, int entryIndex) {
+    if (entryIndex < 0) return;
+    if (entryIndex >= cursor->entryCount) return;
+    int entriesPerPage = cursor->dimB * cursor->dimA;
+    if (entriesPerPage == 0) return;
+    cursor->page = entryIndex / entriesPerPage;
+    entryIndex = entryIndex % entriesPerPage;
+    *cursor->innerCoord = entryIndex % *cursor->innerCount;
+    *cursor->outerCoord = entryIndex / *cursor->innerCount;
 }

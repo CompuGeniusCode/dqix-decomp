@@ -1,34 +1,39 @@
 #include <globaldefs.h>
 
-struct ByteHeader0204693c;
-extern "C" void ResetListNodeHeader(struct ByteHeader0204693c* p);
+struct ListNodeHeader;
+extern "C" void ResetListNodeHeader(struct ListNodeHeader* p);
 
-struct Node02046a8c {
-    char unk0[2];
+struct ListNode {
+    char unknown0[2];
     unsigned char inList;
-    char unk3;
-    struct Node02046a8c* next;
+    char unknown3;
+    struct ListNode* next;
 };
 
-struct List02046a8c {
-    struct Node02046a8c* head;
-    struct Node02046a8c* tail;
+struct NodeList {
+    struct ListNode* head;
+    struct ListNode* tail;
 };
 
 // The tail is rebuilt by walking from the head, so removing a node is O(n) in the list length. It
 // is the list the curated IsListEmpty works on, and the one AppendNodeToTail (0x020469b4, still a
 // labeling-pass name, not curated) appends to; gamemain keeps its queues in it, at work+0x3704,
 // where func_020e3b8c pairs the two, and at work+0x3000+0x6fc. A node that is not
-// in the list is left alone, and so is its header.
-extern "C" ARM void RemoveNodeFromList(struct List02046a8c* list, struct Node02046a8c* node) {
-    struct Node02046a8c* cur = list->head;
+// in the list is left alone, and so is its header. unknown0 covers the two bytes ResetListNodeHeader
+// blanks alongside inList, the first of them the signed char id GetListHeadId returns and the reset
+// sets to -1. AppendNodeToTail and func_020469f8 both set inList; unknown3 is cleared by
+// func_020469f8 on the head it displaces and, as AppendNodeToTail's comment records, set by the
+// undecompiled func_02046968 on the node that stops a pop, which is all that is established about
+// that byte.
+extern "C" ARM void RemoveNodeFromList(struct NodeList* list, struct ListNode* nodeToRemove) {
+    struct ListNode* cur = list->head;
     if (cur == 0) return;
-    if (cur == node) {
-        list->head = node->next;
+    if (cur == nodeToRemove) {
+        list->head = nodeToRemove->next;
     } else {
-        struct Node02046a8c* next = cur->next;
+        struct ListNode* next = cur->next;
         if (next == 0) return;
-        while (next != node) {
+        while (next != nodeToRemove) {
             if (next == 0) return;
             cur = next;
             next = next->next;
@@ -41,5 +46,5 @@ extern "C" ARM void RemoveNodeFromList(struct List02046a8c* list, struct Node020
         list->tail = cur;
         cur = cur->next;
     }
-    ResetListNodeHeader((struct ByteHeader0204693c*)node);
+    ResetListNodeHeader((struct ListNodeHeader*)nodeToRemove);
 }

@@ -1,14 +1,14 @@
 #include <globaldefs.h>
-extern "C" void func_0204c8f0(struct Struct0204c8f0*);
+extern "C" void func_0204c8f0(struct TextWindowEntry*);
 
-struct Elem0205d228 { char b[0xe0]; };
+struct TextWindow { char unknown0[0xe0]; };
 
-struct Cont0205d228 {
-    char pad0[0x98];
-    void* list98;
-    Elem0205d228* list9c;
-    char padA0[0x13];
-    unsigned char countB3;
+struct TextWindowSet {
+    char unknown0[0x98];
+    void* bgLayers;
+    TextWindow* windows;
+    char unknowna0[0x13];
+    unsigned char windowPoolSize;
 };
 
 // Runs func_0204c8f0 over every text window -- the array FindTextWindowById searches, 0xe0-byte
@@ -17,10 +17,12 @@ struct Cont0205d228 {
 // set, bit 0 of +0xc5 is set and bit 0x20 is clear, then hands +0xac/+0xae, +0xc8, +0xc0 and +0xc2
 // to the background-layer path; func_0204b620 is not decompiled, so what that path does with them
 // is not established. One of a trio with ClearBgTilemaps and FlushBgScreenBufferCaches over the array at +0x98.
-extern "C" ARM void UpdateAllTextWindows(Cont0205d228* obj) {
-    unsigned char i;
-    if (obj->list98 == NULL || obj->list9c == NULL) return;
-    for (i = 0; i < obj->countB3; i++) {
-        func_0204c8f0((struct Struct0204c8f0*)(&obj->list9c[i]));
+// The count it runs to is the size of the pool SetTextWindowPool handed over rather than the number
+// of windows open, which is the separate byte at +0xb4, so unused slots are visited too.
+extern "C" ARM void UpdateAllTextWindows(TextWindowSet* windowSet) {
+    unsigned char window;
+    if (windowSet->bgLayers == NULL || windowSet->windows == NULL) return;
+    for (window = 0; window < windowSet->windowPoolSize; window++) {
+        func_0204c8f0((struct TextWindowEntry*)(&windowSet->windows[window]));
     }
 }
