@@ -1,12 +1,12 @@
 #include <globaldefs.h>
 
-struct Field150Table02052e2c {
-    char pad[0x488];
-    short entries[1];
+struct CharacterRecord {
+    char unknown0[0x488];
+    short equippedItemIds[10];
 };
-struct Field150Holder02052e2c {
-    char pad[0x150];
-    struct Field150Table02052e2c* table;
+struct Combatant {
+    char unknown0[0x150];
+    struct CharacterRecord* record;
 };
 
 // Returns a character's equipped item ids: ten halfwords at +0x488 of the record hung off the
@@ -15,7 +15,7 @@ struct Field150Holder02052e2c {
 // there with FindItemRecordById; func_020dd718 scans all ten for a given item. The
 // setter func_02052d7c dirties a global appearance bit for every index but 7 and 8, which seem to be
 // the non-visible slots. func_02052e14 is a byte-identical accessor.
-extern "C" ARM short* GetEquippedItemIds(struct Field150Holder02052e2c* obj) {
-    struct Field150Table02052e2c* table = obj->table;
-    return table ? &table->entries[0] : NULL;
+extern "C" ARM short* GetEquippedItemIds(struct Combatant* combatant) {
+    struct CharacterRecord* record = combatant->record;
+    return record ? &record->equippedItemIds[0] : NULL;
 }
