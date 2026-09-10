@@ -1,51 +1,51 @@
 #include <globaldefs.h>
 
-struct Object3DState0208f588 {
+struct Object3DState {
     unsigned char storage[0xac];
 };
 
-struct ObjectArchiveLoadInfo0208f588 {
+struct ObjectArchiveLoadInfo {
     int unused0;
     void* data;
     unsigned int size;
     void* allocator;
-    int flag;
-    int pad14;
-    int pad18;
-    int pad1c;
+    int copyIntoAllocation;
+    int unknown14;
+    int unknown18;
+    int packageId;
 };
 
-struct ModeFlags02012fe4 {
-    unsigned char pad0[0xc];
+struct ZoneModeFlags {
+    unsigned char unknown0[0xc];
     unsigned char mode : 4;
     unsigned char high : 4;
 };
 
-struct Context02012fe4 {
-    unsigned char pad0[8];
-    struct ModeFlags02012fe4* flags;
+struct ZoneState {
+    unsigned char unknown0[8];
+    struct ZoneModeFlags* flags;
 };
 
-struct ArchiveHolder0208f588 {
+struct ModelArchiveHolder {
     void* data;
     unsigned int size;
-    struct Object3DState0208f588 object;
+    struct Object3DState object;
     unsigned char loaded;
     unsigned char ready;
 };
 
-struct ArchivePath0208f588 {
+struct ArchivePath {
     char text[0x28];
 };
 
-extern const struct ArchivePath0208f588 strDataCharaSubS202Chr;
+extern const struct ArchivePath strDataCharaSubS202Chr;
 
-extern "C" void _ZN8Object3D7DestroyEv(struct Object3DState0208f588* obj);
-extern "C" void _ZN8Object3D10InitializeEv(struct Object3DState0208f588* obj);
-extern "C" struct Context02012fe4* GetZoneState(void);
+extern "C" void _ZN8Object3D7DestroyEv(struct Object3DState* obj);
+extern "C" void _ZN8Object3D10InitializeEv(struct Object3DState* obj);
+extern "C" struct ZoneState* GetZoneState(void);
 extern "C" void* _Z25LoadFileIntoNewAllocationPKcR13SafeAllocatorPj(const char* path, void* allocator, unsigned int* outSize);
-extern "C" void _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo(struct Object3DState0208f588* obj, struct ObjectArchiveLoadInfo0208f588* info);
-extern "C" void _ZN8Object3D10MakeHiddenEv(struct Object3DState0208f588* obj);
+extern "C" void _ZN8Object3D18LoadFromCHRArchiveEP21ObjectArchiveLoadInfo(struct Object3DState* obj, struct ObjectArchiveLoadInfo* info);
+extern "C" void _ZN8Object3D10MakeHiddenEv(struct Object3DState* obj);
 
 extern "C" void RestoreVramAllocatorCursors(char* obj);
 extern "C" void SaveVramAllocatorState(char* obj);
@@ -55,11 +55,13 @@ extern "C" void SaveVramAllocatorState(char* obj);
 // is 0. Which character s202 is has not been established - the ROM holds 405 files in
 // data/chara_sub, about half of them sNNN.chr. RestoreVramAllocatorCursors runs on the third argument's pair
 // tables before the load and SaveVramAllocatorState after it; which way they move, and why, is not
-// established. Its one caller is func_ov017_021a2fa0.
-extern "C" ARM int LoadCharaSubS202Model(struct ArchiveHolder0208f588* self, void* allocator, char* pairObj) {
+// established. Its one caller is func_ov017_021a2fa0. The load info is the eight-word
+// ObjectArchiveLoadInfo of include/World/Object3D.h and only the file, its length and the allocator
+// are filled in: the copy-into-allocation word at +0x10 and the package id at +0x1c stay 0.
+extern "C" ARM int LoadCharaSubS202Model(struct ModelArchiveHolder* self, void* allocator, char* pairObj) {
     unsigned int size;
-    struct ArchivePath0208f588 path;
-    struct ObjectArchiveLoadInfo0208f588 info;
+    struct ArchivePath path;
+    struct ObjectArchiveLoadInfo info;
     void* data;
 
     self->loaded = 0;
@@ -83,10 +85,10 @@ extern "C" ARM int LoadCharaSubS202Model(struct ArchiveHolder0208f588* self, voi
     info.unused0 = 0;
     info.data = 0;
     info.size = 0;
-    info.flag = 0;
-    info.pad14 = 0;
-    info.pad18 = 0;
-    info.pad1c = 0;
+    info.copyIntoAllocation = 0;
+    info.unknown14 = 0;
+    info.unknown18 = 0;
+    info.packageId = 0;
     info.allocator = allocator;
     info.data = self->data;
     info.size = self->size;

@@ -2,28 +2,28 @@
 #include "Filesystem/BackgroundLoader.h"
 
 struct ResetStruct {
-    int w0;
-    int w4;
-    int w8;
-    int wc;
-    int w10;
-    int w14;
-    int w18;
-    int w1c;
-    int w20;
-    int w24;
-    int w28;
-    char pad[0x400];
+    int unknown0;
+    int unknown4;
+    int unknown8;
+    int unknownc;
+    int unknown10;
+    int unknown14;
+    int unknown18;
+    int unknown1c;
+    int unknown20;
+    int unknown24;
+    int unknown28;
+    char unknown2c[0x400];
     unsigned char b42c;
 };
-extern "C" int _ZN6Script10InitializeEv(struct ResetStruct* s);
+extern "C" int _ZN6Script10InitializeEv(struct ResetStruct* script);
 
 struct StreamHeader;
 struct StreamState;
-extern "C" int _ZN6Script4LoadEPKvj(struct StreamState* s, struct StreamHeader* buffer, int length);
+extern "C" int _ZN6Script4LoadEPKvj(struct StreamState* script, struct StreamHeader* buffer, int length);
 
-struct Struct02030774;
-extern "C" int _ZN6Script7ExecuteEv(struct Struct02030774* p);
+struct ScriptState;
+extern "C" int _ZN6Script7ExecuteEv(struct ScriptState* p);
 
 extern "C" void _ZN6Script15SetOpcodeLookupEPNS_17OpcodeLookupEntryE(void* p, void* q);
 extern "C" void func_ov015_0218b828();
@@ -34,11 +34,13 @@ extern int strDataBinCharaview4Bin;
 extern void* data_ov015_02194560;
 extern int data_ov015_02193fa0;
 
-// Runs the charaview screen's script to completion: data/bin/charaview4.bin unless the caller
-// names another file. The script is read into the shared staging buffer and executed inline, so
-// the global loader lock is held for the whole run rather than across a queued load. "self" is
-// parked in data_ov015_02194560, presumably because the opcode handlers in data_ov015_02193fa0
-// have no other way to reach it.
+// Runs the script that drives the charaview screen to completion: data/bin/charaview4.bin unless
+// the caller names another file. The script is read into the shared staging buffer and executed
+// inline, so the global loader lock is held for the whole run rather than across a queued load.
+// "self" is parked in data_ov015_02194560, presumably because the opcode handlers in
+// data_ov015_02193fa0 have no other way to reach it. The script object is the 0x430-byte block
+// every other Run*Script builds on the stack too; only its size is established, so the eleven
+// leading words stay unknown.
 extern "C" ARM void RunCharaviewScript(void* self, const char* path) {
     func_ov015_0218b828();
     BackgroundLoader::AddLockGlobal();
@@ -54,11 +56,11 @@ extern "C" ARM void RunCharaviewScript(void* self, const char* path) {
     if (buffer != 0) {
         data_ov015_02194560 = self;
 
-        struct ResetStruct local;
-        _ZN6Script10InitializeEv(&local);
-        _ZN6Script15SetOpcodeLookupEPNS_17OpcodeLookupEntryE(&local, &data_ov015_02193fa0);
-        _ZN6Script4LoadEPKvj((struct StreamState*)&local, (struct StreamHeader*)buffer, length);
-        _ZN6Script7ExecuteEv((struct Struct02030774*)&local);
+        struct ResetStruct script;
+        _ZN6Script10InitializeEv(&script);
+        _ZN6Script15SetOpcodeLookupEPNS_17OpcodeLookupEntryE(&script, &data_ov015_02193fa0);
+        _ZN6Script4LoadEPKvj((struct StreamState*)&script, (struct StreamHeader*)buffer, length);
+        _ZN6Script7ExecuteEv((struct ScriptState*)&script);
     }
 
     BackgroundLoader::RemoveLockGlobal();
