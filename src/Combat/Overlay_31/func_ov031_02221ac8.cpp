@@ -24,8 +24,6 @@ extern "C" const unsigned int data_ov031_02246910[256];   // Td4
 
 // USA: func_ov031_02221ac8
 #pragma optimize_for_size off
-#pragma opt_propagation off
-#pragma opt_common_subs off
 extern "C" THUMB void func_ov031_02221ac8(const unsigned int *rk, int Nr,
                                            const unsigned char *ct, unsigned char *pt) {
     unsigned int s0, s1, s2, s3, t0, t1, t2, t3;

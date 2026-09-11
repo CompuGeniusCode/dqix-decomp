@@ -8,7 +8,6 @@ extern "C" ARM double func_02008848(double x);              // atan
 
 // USA: func_02005ac4
 #pragma optimize_for_size off
-#pragma opt_common_subs off
 extern "C" ARM double func_02005ac4(double y, double x) {
     int hx = ((int*)&x)[1];
     int hy = ((int*)&y)[1];
@@ -83,5 +82,4 @@ extern "C" ARM double func_02005ac4(double y, double x) {
                                        3.1415926535897931160e+00);
     }
 }
-#pragma opt_common_subs reset
 #pragma optimize_for_size reset

@@ -27,7 +27,6 @@
 // residual spans both (9 runs), so those numbers understate what a symmetric change does.
 // The remaining idea is to remove a survivor without changing code size -- the 0x40 memcpy
 // size pinned in fp is the best candidate and struct-copy was the wrong way to attack it.
-#pragma opt_propagation off
 #include <globaldefs.h>
 #include "std_library_functions.h"
 

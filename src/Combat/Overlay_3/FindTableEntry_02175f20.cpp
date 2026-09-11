@@ -5,7 +5,6 @@ unsigned char GetTableByte0207ca94(int index);
 int FindNthPositiveShort0207c6b8(unsigned char* obj, unsigned int index, int target);
 
 // USA: func_ov003_02175f20  (semantic: FindTableEntry_02175f20)
-#pragma opt_propagation off
 extern "C" ARM int func_ov003_02175f20(void* obj) {
     struct BattleStruct* bs = GetBattleStruct();
     void* p = GetPtrField0x2a04(bs);
@@ -15,6 +14,7 @@ extern "C" ARM int func_ov003_02175f20(void* obj) {
     short v3 = *(short*)((char*)obj + 0x100e);
     short v2 = *(short*)((char*)obj + 0x1014);
     unsigned char* argPtr = (unsigned char*)p + 0x1d4;
-    short idx2 = v2 * 5 + (short)(v3 - 295);
+    short idx2 = (short)(v3 - 295);
+    idx2 = v2 * 5 + idx2;
     return FindNthPositiveShort0207c6b8(argPtr, cnt, idx2);
 }

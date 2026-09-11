@@ -4,7 +4,6 @@ void* GetPointerFromArray0xbd0(unsigned char* obj, unsigned int index);
 signed short GetShortFromArray0xc10(unsigned char* obj, unsigned int index);
 
 // USA: func_0207c6b8
-#pragma opt_propagation off
 ARM int FindNthPositiveShort0207c6b8(unsigned char* obj, unsigned int index, int target) {
     signed short* arr = (signed short*)GetPointerFromArray0xbd0(obj, index);
     if (arr == NULL) {
